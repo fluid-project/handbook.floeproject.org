@@ -1,0 +1,834 @@
+/* General styling */
+docs-fonts ?= "OpenSans-Light", Arial, Helvetica;
+docs-header-font ?= "RobotoSlab";
+button-focus ?= 0.2rem solid #0000CB;
+link-color ?= #0000CB;
+link-hover-color ?= #fff;
+link-hover-background ?= #0000CB;
+
+/* Main Content Area */
+docs-body-background ?= #fff;
+docs-content-note-border ?= #000;
+
+/* Header and Footer */
+header-footer-color ?= #000;
+header-footer-background ?= #C5E0C5;
+header-footer-link ?= #00444D;
+header-footer-hover-color ?= #fff;
+header-footer-hover-background ?= #00444D;
+header-footer-focus ?= 0.2rem solid #00444D;
+header-nav-link ?= #00444D;
+header-active-category ?= 0.2rem solid #00444D;
+
+/* Logo */
+logo-color ?= #00444D;
+logo-background ?= #C5E0C5;
+logo-hover-color ?= #C5E0C5;
+logo-hover-background ?= #00444D;
+logo-focus ?= 0.2rem solid #fff;
+logo-font-path ?= "../fonts/logo";
+logo-unicode ?= "\e91f";
+
+/* Table of Contents Sidebar */
+toc-background ?= #efefef;
+toc-item-color ?= #000;
+toc-active-color ?= #efefef;
+toc-active-background ?= #000;
+toc-item-hover-color ?= #000;
+toc-item-hover-background ?= #efefef;
+toc-item-hover-border ?= 0.2rem solid #000;
+toc-border-color ?= #cfcfcf;
+
+/* Table of Contents Hide-Show ribbon */
+hideShow-background ?= #efefef;
+hideShow-color ?= link-color;
+hideShow-focus ?= 0.2rem solid link-color;
+hideShow-hover-color ?= #efefef;
+hideShow-hover-background ?= link-color;
+
+/* Article Body area */
+articleBody-color ?= #000;
+articleBody-background ?= #fff;
+
+figure-caption-border ?= #fff;
+figure-background ?= #efefef;
+
+/* Code Blocks */
+code-block-background ?= #efefef;
+code-block-border ?= 0.1rem dotted #ddd;
+code-block-color ?= #000;
+code-block-link-color ?= #0000CB;
+
+/* Tables */
+table-border-color ?= #e7e7e7;
+
+/* UIO Table of Contents */
+uio-toc-background ?= #efefef;
+
+/* Transition Time */
+// use the same time on transitions so everything moves the same time.
+transitionTime ?= 0.5s;
+
+/* Mixins */
+// generate the ribbon "tail" of the hideShow ribbon.
+contrastHideShowRibbonColor(foreground, background) {
+    border-bottom: 2.2rem solid foreground;
+    border-right: 2.1rem solid background;
+    border-top: 2.3rem solid foreground;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "RobotoSlab";
+    src: url("../fonts/RobotoSlab-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "RobotoSlab-Bold";
+    src: url("../fonts/RobotoSlab-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "github";
+    src: url("../fonts/github-1.eot#iefix") format("embedded-opentype"),
+         url("../fonts/github-1.ttf"),
+         url("../fonts/github-1.eot");
+}
+
+@font-face {
+    font-family: "logo";
+    src: url(logo-font-path + ".eot#iefix") format("embedded-opentype"),
+         url(logo-font-path + ".ttf"),
+         url(logo-font-path + ".eot");
+}
+
+html body {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: docs-fonts;
+}
+
+.docs-template-container {
+    min-width: 30rem;
+    background-color: docs-body-background;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.docs-template pre {
+    white-space: pre-wrap;
+}
+
+.docs-template td {
+    vertical-align: top;
+}
+
+.docs-template a {
+    color: link-color;
+    text-decoration: underline;
+}
+
+/* override foundation, so UIO's line-spacing will work */
+.docs-template h1, .docs-template h2, .docs-template h3, .docs-template h4, .docs-template h5, .docs-template h6,
+.docs-template p,
+.docs-template table tbody tr td,
+.docs-template table tr td,
+.docs-template ul,
+.docs-template dl {
+   line-height: inherit;
+}
+
+.fl-prefsEditor-buttons button:focus,
+.docs-template a:focus {
+    outline: button-focus;
+}
+
+/* Skip links */
+#skip {
+    float: left;
+    height: 0rem;
+}
+
+#skip a,
+#skip a:hover,
+#skip a:visited {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
+#skip a:active,
+#skip a:focus {
+    height: auto;
+    width: auto;
+    left: auto;
+}
+
+/* Header and Footer */
+.docs-template-header,
+.docs-template-footer {
+    background-color: header-footer-background;
+    color: header-footer-color;
+    font-family: docs-fonts;
+}
+
+.docs-template-header p,
+.docs-template-footer p {
+    margin-bottom: 0;
+}
+
+.docs-template-header a,
+.docs-template-footer a {
+    color: header-footer-link;
+}
+
+.docs-template-header a:focus,
+.docs-template-footer a:focus {
+    outline: header-footer-focus;
+}
+
+.docs-template-header a:hover,
+.docs-template-footer a:hover {
+    color: header-footer-hover-color;
+    background: header-footer-hover-background;
+}
+
+.docs-template-header {
+    font-size: 1.1rem;
+    text-align: right;
+    line-height: 2;
+    max-width: 100%;
+}
+
+.docs-template-header a {
+    text-decoration: none;
+}
+
+.docs-template-header .docs-template-logo {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+    text-align: left;
+    background: logo-background;
+}
+
+.docs-template-header .docs-template-logo a {
+    padding: 1rem;
+    color: logo-color;
+}
+
+.docs-template-header .docs-template-logo a:hover {
+    background: logo-hover-background;
+    color: logo-hover-color;
+}
+
+.docs-template-header .docs-template-logo a:focus {
+    border: logo-focus;
+}
+
+.docs-template-header .docs-template-logoText:before {
+    font-family: "logo";
+    content: logo-unicode;
+    font-size: 2rem;
+    text-align: bottom;
+    padding-right: 0.2rem;
+}
+
+.docs-template-header nav {
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
+.docs-template-header nav a {
+    color: header-nav-link;
+    padding: 0.2rem;
+    margin: 0 1rem;
+}
+
+.docs-template-category-active {
+    border-bottom: header-active-category;
+}
+
+.docs-template-footer {
+    padding: 2rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.docs-template-footer p {
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 40em) {
+    .docs-template-header {
+        line-height: inherit;
+        padding-right: 0;
+
+    }
+
+    .docs-template-header .docs-template-logo {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .docs-template-header nav {
+        margin-top: 0;
+    }
+
+    .docs-template-header nav a {
+        color: header-nav-link;
+        padding: 0.2rem;
+    }
+}
+
+/* Main body area - contains sidebar and article, excludes header and footer */
+.docs-template-mainBody {
+    margin: 0;
+    position: relative;
+}
+
+/* the article body */
+.docs-template-articleBody  {
+    padding: 5.5rem 2rem 6rem 2rem;
+    color: articleBody-color;
+    background: articleBody-background;
+    transition: width transitionTime;
+
+    // make article wider to take more room.
+    width: 91.66%;
+}
+
+.docs-core-sidebar-visibility .docs-template-articleBody {
+    // put width back to the same as Foundation's medium-8
+    width: 70%;
+    transition: width transitionTime;
+}
+
+.docs-template-articleBody * {
+    font-size: 1.2rem;
+}
+
+.docs-template-articleBody ul,
+.docs-template-articleBody ol {
+    margin: 0 2.5rem;
+}
+
+.docs-template-articleBody li {
+    margin: 0.4rem 0 ;
+}
+
+.docs-template-articleBody a:hover {
+    color: link-hover-color;
+    background: link-hover-background;
+}
+
+.docs-template-articleBody pre code {
+    font-weight: normal;
+    border: code-block-border;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.docs-template-articleBody code {
+    font-weight: normal;
+    color: code-block-color;
+    background-color: code-block-background;
+    font-size: inherit;
+}
+
+.docs-template-articleBody code a,
+.docs-template-articleBody a code {
+    font-size: inherit;
+    border-bottom: 0.1rem dotted code-block-link-color;
+    color: code-block-link-color;
+    background: 0;
+}
+
+.docs-template-articleBody table td {
+    border: 1rem solid table-border-color;
+}
+
+/* Table of Contents */
+.docs-template-TOC-container {
+    background: toc-background;
+    border-right: 0.2rem solid toc-border-color;
+    transition: width transitionTime;
+
+    // hide the TOC initially
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0;
+    width: 1px;
+}
+
+.docs-core-sidebar-visibility .docs-template-TOC-container {
+    // put width back to the same as Foundation's medium-3
+    overflow: auto;
+    padding: 1.5rem;
+    width: 25%;
+    transition: width transitionTime;
+}
+
+.docs-template-TOC-hideShow {
+    line-height: 2.3rem !important; // prevent UIO from changing this.
+    margin: -4.4rem 0 0 -2rem;
+    padding: 0.5rem;
+    min-width: 9rem;
+    width: 9rem;
+    background: hideShow-background;
+    z-index: 1;
+}
+
+.docs-template-TOC-hideShow:after {
+    contrastHideShowRibbonColor(hideShow-background, docs-body-background)
+    content: "";
+    position:absolute;
+    right: -2rem; // shift position right to match the width of the border above.
+    display:block;
+    top: 0;
+}
+
+.docs-template-TOC-hideShow a {
+    color: hideShow-color;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    background: hideShow-background;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.docs-template-TOC-hideShow a:before {
+    content: "\2630";
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.docs-template-TOC-hideShow a:hover {
+    color: hideShow-hover-color;
+    background: hideShow-hover-background;
+}
+
+.docs-template-TOC-hideShow a:focus {
+    outline: hideShow-focus;
+}
+
+.docs-template-TOC {
+    width: 100%;
+    transition: width transitionTime;
+}
+
+.docs-template-TOC a {
+    display: inline-block;
+}
+
+.docs-template-TOC ul {
+    list-style-type: none;
+}
+
+.docs-template-TOC li {
+    padding: 0.6rem 0.2rem 0.6rem 0;
+}
+
+.docs-template-TOC .docs-template-category {
+    font-family: 'OpenSans-Bold';
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.docs-template-TOC .docs-template-sectionName {
+    font-weight: normal;
+    font-size: 1rem;
+    margin:0;
+}
+
+.docs-template-TOC .docs-template-TOC-item {
+    padding: 0.2rem;
+    border: none;
+    color: toc-item-color;
+    display:inline-block;
+    width:100%;
+}
+
+.docs-template-TOC a:focus,
+.docs-template-TOC a:hover {
+    color: toc-item-hover-color;
+    background: toc-item-hover-background;
+    outline: toc-item-hover-border;
+    text-decoration: none;
+}
+
+.docs-template-TOC .docs-template-TOC-item.docs-template-TOC-active {
+    color: toc-active-color;
+    background: toc-active-background;
+}
+
+/* Main Content Area */
+.docs-template-note {
+    border-left: solid;
+    border-left-width: 0.3rem;
+    border-color: docs-content-note-border;
+    padding-left: 0.4rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.docs-template-githubLink {
+    margin-bottom: 2rem;
+}
+
+.docs-template-githubLink a:before {
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: "github";
+    content: "\e600";
+    font-size: 1.3rem;
+    padding-right: 0.5rem;
+}
+
+.docs-template-articleBody h1 {
+    font-size: 3.0rem;
+    font-family: docs-header-font;
+}
+
+.docs-template-articleBody h2 {
+    font-size: 2.5rem;
+    font-family: docs-header-font;
+}
+
+.docs-template-articleBody h3 {
+    font-size: 1.5rem;
+    font-family: docs-header-font;
+}
+
+.docs-template-articleBody > p:first-child {
+    font-size: 1.4rem;
+}
+
+.docs-template-paragraphBullets {
+    font-size: 1.3rem;
+}
+
+.docs-template-paragraphBullets li {
+    padding-bottom: 0.25rem;
+}
+
+.docs-template-articleBody figure {
+    background: figure-background;
+    text-align: center;
+
+    em {
+        font-weight: bold;
+    }
+
+    figcaption, img {
+        padding: 1rem;
+    }
+
+    figcaption {
+        border-top: 0.2rem solid figure-caption-border;
+    }
+
+    figcaption a {
+        outline: initial;
+        color: link-color;
+        background: link-background;
+        display: inline;
+    }
+
+    figcaption a:hover {
+        color: link-hover-color;
+        background: link-hover-background;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    a {
+        display: block;
+    }
+
+    a:hover {
+        background: figure-background;
+        // override the default link hover style.
+    }
+
+    a:hover img {
+        outline: 0.2rem solid link-hover-background;
+    }
+}
+
+/* Infusion UIO */
+
+.fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
+    margin-right: 2rem;
+}
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-reset {
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+    height: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.docs-template-uio-toc {
+    background: uio-toc-background;
+}
+
+.docs-template-uio-toc ul {
+    list-style-type: none;
+}
+
+.docs-template-uio-toc li {
+    margin: 0.8rem 0;
+}
+
+.docs-template.fl-text-larger .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+.docs-template.fl-text-larger .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset{
+    height: 2.5rem;
+}
+.docs-template.fl-text-larger .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide {
+    min-width: 13rem;
+}
+
+/* Styles for high-contrast themes */
+.fl-theme-yb .docs-template-fluidLogoText::before {
+    color: #ff0 !important;
+}
+.fl-theme-wb .docs-template-fluidLogoText::before {
+    color: #ffffff !important;
+}
+.fl-theme-by .docs-template-fluidLogoText::before,
+.fl-theme-bw .docs-template-fluidLogoText::before {
+    color: #000000 !important;
+}
+.fl-theme-lgdg .docs-template-fluidLogoText::before {
+    color: #bdbdbb !important;
+}
+
+.fl-theme-bw a:focus,
+.fl-theme-bw .fl-prefsEditor-buttons button:focus,
+.fl-theme-by a:focus,
+.fl-theme-by .fl-prefsEditor-buttons button:focus {
+    outline: 0.2rem solid #000000 !important;
+}
+
+.fl-theme-wb a:focus,
+.fl-theme-wb .fl-prefsEditor-buttons button:focus {
+    outline: 0.2rem solid #ffffff !important;
+}
+.fl-theme-yb a:focus,
+.fl-theme-yb .fl-prefsEditor-buttons button:focus {
+    outline: 0.2rem solid #ff0 !important;
+}
+.fl-theme-lgdg a:focus,
+.fl-theme-lgdg .fl-prefsEditor-buttons button:focus {
+    outline: 0.2rem solid #bdbdbb !important;
+}
+
+// inverted colours.
+.fl-theme-bw .docs-template-container a:hover,
+.fl-theme-bw .docs-template-container a:hover .docs-template-TOC-item,
+.fl-theme-bw .fl-prefsEditor-buttons button:hover,
+.fl-theme-bw .docs-template-header a:hover:before,
+.fl-theme-bw .docs-template-TOC-hideShow,
+.fl-theme-bw .docs-template-TOC-hideShow a,
+.fl-theme-bw .docs-template-header,
+.fl-theme-bw .docs-template-header div,
+.fl-theme-bw .docs-template-header nav,
+.fl-theme-bw .docs-template-header a,
+.fl-theme-bw .docs-template-footer,
+.fl-theme-bw .docs-template-footer a,
+.fl-theme-bw .docs-template-footer p {
+    color: #ffffff !important;
+    background: #000000 !important;
+}
+
+.fl-theme-wb .docs-template-container a:hover,
+.fl-theme-wb .docs-template-container a:hover .docs-template-TOC-item,
+.fl-theme-wb .fl-prefsEditor-buttons button:hover,
+.fl-theme-wb .docs-template-header a:hover:before,
+.fl-theme-wb .docs-template-TOC-hideShow,
+.fl-theme-wb .docs-template-TOC-hideShow a,
+.fl-theme-wb .docs-template-header,
+.fl-theme-wb .docs-template-header div,
+.fl-theme-wb .docs-template-header nav,
+.fl-theme-wb .docs-template-header a,
+.fl-theme-wb .docs-template-footer,
+.fl-theme-wb .docs-template-footer a,
+.fl-theme-wb .docs-template-footer p {
+    color: #000000 !important;
+    background: #ffffff !important;
+}
+
+.fl-theme-by .docs-template-container a:hover,
+.fl-theme-by .docs-template-container a:hover .docs-template-TOC-item,
+.fl-theme-by .fl-prefsEditor-buttons button:hover,
+.fl-theme-by .docs-template-header a:hover:before,
+.fl-theme-by .docs-template-TOC-hideShow,
+.fl-theme-by .docs-template-TOC-hideShow a,
+.fl-theme-by .docs-template-header,
+.fl-theme-by .docs-template-header div,
+.fl-theme-by .docs-template-header nav,
+.fl-theme-by .docs-template-header a,
+.fl-theme-by .docs-template-footer,
+.fl-theme-by .docs-template-footer a,
+.fl-theme-by .docs-template-footer p {
+    color: #ff0 !important;
+    background: #000000 !important;
+}
+
+.fl-theme-yb .docs-template-container a:hover,
+.fl-theme-yb .docs-template-container a:hover .docs-template-TOC-item,
+.fl-theme-yb .fl-prefsEditor-buttons button:hover,
+.fl-theme-yb .docs-template-header a:hover:before,
+.fl-theme-yb .docs-template-TOC-hideShow,
+.fl-theme-yb .docs-template-TOC-hideShow a,
+.fl-theme-yb .docs-template-header,
+.fl-theme-yb .docs-template-header div,
+.fl-theme-yb .docs-template-header nav,
+.fl-theme-yb .docs-template-header a,
+.fl-theme-yb .docs-template-footer,
+.fl-theme-yb .docs-template-footer a,
+.fl-theme-yb .docs-template-footer p {
+    color: #000000 !important;
+    background: #ff0 !important;
+}
+
+.fl-theme-lgdg .docs-template-container a:hover,
+.fl-theme-lgdg .docs-template-container a:hover .docs-template-TOC-item,
+.fl-theme-lgdg .fl-prefsEditor-buttons button:hover,
+.fl-theme-lgdg .docs-template-header a:hover:before,
+.fl-theme-lgdg .docs-template-TOC-hideShow,
+.fl-theme-lgdg .docs-template-TOC-hideShow a,
+.fl-theme-lgdg .docs-template-header,
+.fl-theme-lgdg .docs-template-header div,
+.fl-theme-lgdg .docs-template-header nav,
+.fl-theme-lgdg .docs-template-header a,
+.fl-theme-lgdg .docs-template-footer,
+.fl-theme-lgdg .docs-template-footer a,
+.fl-theme-lgdg .docs-template-footer p {
+    color: #555555 !important;
+    background: #bdbdbb !important;
+}
+
+// Hide show button contrast styling
+
+.fl-theme-bw .docs-template-TOC-hideShow a:focus,
+.fl-theme-bw .docs-template-TOC-hideShow a:hover {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.fl-theme-bw .docs-template-TOC-hideShow:after {
+    contrastHideShowRibbonColor(#000, #fff);
+}
+
+.fl-theme-wb .docs-template-TOC-hideShow:after {
+    contrastHideShowRibbonColor(#fff, #000);
+}
+
+.fl-theme-yb .docs-template-TOC-hideShow:after {
+    contrastHideShowRibbonColor(#ff0, #000);
+}
+
+.fl-theme-by .docs-template-TOC-hideShow:after {
+    contrastHideShowRibbonColor(#000, #ff0);
+}
+
+.fl-theme-lgdg .docs-template-TOC-hideShow:after {
+    contrastHideShowRibbonColor(#bdbdbb, #555);
+}
+
+// Header focus styling
+.fl-theme-bw .docs-template-header a:hover,
+.fl-theme-bw .docs-template-header a:focus,
+.fl-theme-bw .docs-template-footer a:hover,
+.fl-theme-bw .docs-template-footer a:focus {
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow:
+        0 0 0 0.2rem #000,
+        0 0 0 0.4rem #fff;
+}
+
+.fl-theme-wb .docs-template-header a:hover,
+.fl-theme-wb .docs-template-header a:focus,
+.fl-theme-wb .docs-template-footer a:hover,
+.fl-theme-wb .docs-template-footer a:focus {
+    background: #000 !important;
+    color: #fff !important;
+    box-shadow:
+        0 0 0 0.2rem #fff,
+        0 0 0 0.4rem #000;
+}
+
+.fl-theme-by .docs-template-header a:hover,
+.fl-theme-by .docs-template-header a:focus,
+.fl-theme-by .docs-template-footer a:hover,
+.fl-theme-by .docs-template-footer a:focus {
+    background: #ff0 !important;
+    color: #000 !important;
+    box-shadow:
+        0 0 0 0.2rem #000,
+        0 0 0 0.4rem #ff0;
+}
+
+.fl-theme-yb .docs-template-header a:hover,
+.fl-theme-yb .docs-template-header a:focus,
+.fl-theme-yb .docs-template-footer a:hover,
+.fl-theme-yb .docs-template-footer a:focus {
+    background: #000 !important;
+    color: #ff0 !important;
+    box-shadow:
+        0 0 0 0.2rem #ff0,
+        0 0 0 0.4rem #000;
+}
+
+.fl-theme-lgdg .docs-template-header a:hover,
+.fl-theme-lgdg .docs-template-header a:focus,
+.fl-theme-lgdg .docs-template-footer a:hover,
+.fl-theme-lgdg .docs-template-footer a:focus {
+    background: #555 !important;
+    color: #bdbdbb !important;
+    box-shadow:
+        0 0 0 0.2rem #bdbdbb,
+        0 0 0 0.4rem #555;
+}
+
+.fl-theme-bw .docs-template-category-active {
+    border-color: #fff !important;
+}
+
+.fl-theme-wb .docs-template-category-active,
+.fl-theme-yb .docs-template-category-active {
+    border-color: #000 !important;
+}
+
+.fl-theme-by .docs-template-category-active {
+    border-color: #ff0 !important;
+}
+
+.fl-theme-lgdg .docs-template-category-active {
+    border-color: #555 !important;
+}
