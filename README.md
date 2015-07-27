@@ -15,7 +15,7 @@ This project contains the content needed to build and deploy a copy of the Inclu
 Periodically `docs-template` will have updates. To update:
 
 ```
-git remote add docs-template  https://github.com/jhung/docs-template \\\ (TODO: update this URL)
+git remote add docs-template  https://github.com/fluid-project/docs-template
 git fetch docs-template
 git merge docs-template/master
 npm update
