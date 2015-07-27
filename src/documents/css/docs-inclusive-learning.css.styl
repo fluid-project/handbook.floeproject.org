@@ -1,0 +1,108 @@
+/* General styling */
+docs-fonts = "OpenSans-Light", Arial, Helvetica;
+docs-header-font = "RobotoSlab";
+button-focus = 0.2rem solid #0000CB;
+link-color = #0000CB;
+link-hover-color = #fff;
+link-hover-background = #0000CB;
+
+/* Main Content Area */
+docs-body-background = #f2f2f2;
+docs-content-note-border = #000;
+
+/* Header and Footer */
+header-footer-color = #fff;
+header-footer-background = #2F5508;
+header-footer-link = #FFFF78;
+header-footer-hover-color = #2F5508;
+header-footer-hover-background = #fff;
+header-footer-focus = 0.2rem solid #fff;
+header-nav-link = #fff;
+header-active-category = 0.2rem solid #fff;
+
+/* Logo */
+logo-color = #fff;
+logo-background = #2F5508;
+logo-hover-color = #2F5508;
+logo-hover-background = #fff;
+logo-focus = 0.2rem solid #fff;
+logo-font-path = "../fonts/floe-logo";
+logo-unicode = "\e600";
+
+/* Table of Contents Sidebar */
+toc-background = #fff;
+toc-item-color = #275287;
+toc-active-color = #fff;
+toc-active-background = #275287;
+toc-item-hover-color = #fff;
+toc-item-hover-background = toc-background;
+toc-item-hover-border = 0.2rem solid #275287;
+//toc-border-color = #cfcfcf;
+
+/* Table of Contents Hide-Show ribbon */
+hideShow-background = #275287;
+hideShow-color = #fff;
+hideShow-focus = 0.2rem solid #fff;
+hideShow-hover-color = #275287;
+hideShow-hover-background = #fff;
+
+/* Article Body area */
+articleBody-color = #000;
+articleBody-background = #f2f2f2;
+
+figure-caption-border = #f2f2f2;
+figure-background = #fff;
+
+/* Code Blocks */
+code-block-background = #fff;
+code-block-border = 0.1rem dotted #aaa;
+code-block-color = #000;
+code-block-link-color = #0000CB;
+
+/* Tables */
+table-border-color = #e7e7e7;
+
+/* UIO Table of Contents */
+uio-toc-background = #efefef;
+
+@import "docs-template.css.styl";
+
+@font-face {
+    font-family: "DroidSans";
+    src: url("../fonts/DroidSans.ttf") format('truetype');
+}
+
+.docs-template-start-logo {
+    font-family: "DroidSans";
+    line-height: 1rem;
+    letter-spacing: auto;
+    margin-top: 0;
+}
+
+.docs-template-start-logoText {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.ildh-tagline {
+    font-size: 0.8rem;
+    display: block;
+    font-weight: normal;
+    padding-left: 2rem;
+    color: logo-color;
+}
+
+.link-external:after {
+    content: "\2192";
+    text-decoration: none;
+}
+
+.ildh-subheader {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.ildh-related {
+    margin-left: 3rem;
+}

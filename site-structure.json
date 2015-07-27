@@ -1,89 +1,81 @@
 [
     {
-        "category": "Fruits",
+        "category": "Introduction",
         "categoryHref":"/index.html",
-        "sections":
-        [
-            {
-                "sectionName": "Citrus",
-                "pages":
-                [
-                    { "pageName": "Oranges", "href": "/Oranges.html"},
-                    { "pageName": "Limes", "href": "/Limes.html" }
-                ]
-            },
-            {
-                "sectionName": "Berries",
-                "pages":
-                [
-                    { "pageName": "Cranberries", "href": "/Cranberries.html" }
-                ]
-            }
-        ]
-    },
-    {
-        "category": "Veggies",
-        "categoryHref": "/index-veggies.html",
-        "sections":
-        [
-            {
-                "sectionName":"Root Vegegies",
-                "pages":
-                [
-                    { "pageName": "Potato", "href": "/Potato.html" },
-                    { "pageName": "Carrots", "href": "/Carrots.html"}
-                ]
-            }
-        ]
-    },
-    {
-        "category": "Desserts",
-        "categoryHref": "/index-desserts.html",
         "sections":
         [
             {
                 "sectionName":"",
                 "pages":
                 [
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"},
-                    { "pageName": "Black Forest", "href": "/BlackForest.html" },
-                    { "pageName": "Cheese Cake", "href": "/CheeseCake.html"},
-                    { "pageName": "Ice cream", "href": "/IceCream.html" },
-                    { "pageName": "Cookies", "href": "/Cookies.html"}
+                    {"pageName": "Introduction", "href":"/index.html"},
+                    {"pageName": "Why is This Important?", "href":"/WhyIsThisImportant.html"},
+                    {"pageName": "What is the Approach?", "href":"/WhatIsTheApproach.html"}
                 ]
             }
-
+        ]
+    },
+    {
+        "category": "Methods",
+        "categoryHref": "/Methods.html",
+        "sections":
+        [
+            {
+                "sectionName":"",
+                "pages":
+                [
+                    { "pageName": "Inclusive Learning", "href": "/InclusiveLearning.html" },
+                    { "pageName": "Accessibility Principles", "href": "/AccessibilityPrinciples.html"},
+                    { "pageName": "Techniques", "href": "/Techniques.html"},
+                    { "pageName": "Metadata", "href": "/Metadata.html"},
+                    { "pageName": "Learner Needs and Preferences", "href": "/LearnerNeedsAndPreferences.html"},
+                    { "pageName": "Video Content and Learning", "href": "/VideoContentAndLearning.html"},
+                    { "pageName": "Audio Content and Learning", "href": "/AudioContentAndLearning.html"},
+                    { "pageName": "Authoring of Content", "href": "/AuthoringOfContent.html"},
+                    { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"}
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Accessible Standardized Testing",
+        "categoryHref": "/AccessibleStandardizedTesting.html",
+        "sections":
+        [
+            {
+                "sectionName":"",
+                "pages":
+                [
+                    { "pageName": "General Guidelines", "href": "/GeneralGuidelines.html" },
+                    { "pageName": "Functional Considerations", "href": "/FunctionalConsiderations.html"},
+                    { "pageName": "Standardized Test Types", "href": "/StandardizedTestTypes.html"},
+                    { "pageName": "Standardized Test Tools", "href": "/StandardizedTestTools.html"}
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Inclusive EPUB 3",
+        "categoryHref": "/InclusiveEPUB3.html",
+        "sections":
+        [
+            {
+                "sectionName":"",
+                "pages":
+                [
+                    { "pageName": "Semantic Markup in EPUB 3", "href": "/SemanticMarkupInEPUB3.html" },
+                    { "pageName": "WAI-ARIA", "href": "/WAI-ARIA.html"},
+                    { "pageName": "Visual Styles", "href": "/VisualStyles.html"},
+                    { "pageName": "Graphics and Multimedia", "href": "/GraphicsAndMultimedia.html"},
+                    { "pageName": "Scripts", "href": "/Scripts.html"},
+                    { "pageName": "Mathematics", "href": "/Mathematics.html"},
+                    { "pageName": "Narrations and Text-to-Speech", "href": "/NarrationsAndTextToSpeech.html"},
+                    { "pageName": "Accessibility Metadata", "href": "/AccessibilityMetadata.html"},
+                    { "pageName": "Testing and Validation", "href": "/TestingAndValidation.html"},
+                    { "pageName": "Case Study: Exemplar", "href": "/CaseStudyExemplar.html"},
+                    { "pageName": "EPUB 3 Resources", "href": "/EPUB3Resources.html"}
+                ]
+            }
         ]
     }
 ]
