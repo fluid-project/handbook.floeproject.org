@@ -10,7 +10,7 @@ This project contains the content needed to build and deploy a copy of the Inclu
 4. Run docpad: `docpad run`
 5. Confirm everything is working by loading `http://localhost:9778/` in a web browser.
 
-# Getting Updates
+# Getting Updates for Your Custom Site
 
 Periodically `docs-template` will have updates. To update:
 
@@ -22,7 +22,6 @@ npm update
 ```
 
 # Deploy to GitHub Pages
-
 ```
 docpad deploy-ghpages --env static
 ```

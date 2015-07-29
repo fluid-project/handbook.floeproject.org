@@ -1,10 +1,10 @@
 /* General styling */
 docs-fonts = "OpenSans-Light", Arial, Helvetica;
 docs-header-font = "RobotoSlab";
-button-focus = 0.2rem solid #0000CB;
-link-color = #0000CB;
+button-focus = 0.2rem solid #275287;
+link-color = #275287;
 link-hover-color = #fff;
-link-hover-background = #0000CB;
+link-hover-background = #275287;
 
 /* Main Content Area */
 docs-body-background = #f2f2f2;
@@ -12,18 +12,26 @@ docs-content-note-border = #000;
 
 /* Header and Footer */
 header-footer-color = #fff;
-header-footer-background = #2F5508;
+header-footer-background = #105156;
 header-footer-link = #FFFF78;
-header-footer-hover-color = #2F5508;
+header-footer-hover-color = #105156;
 header-footer-hover-background = #fff;
 header-footer-focus = 0.2rem solid #fff;
 header-nav-link = #fff;
 header-active-category = 0.2rem solid #fff;
 
+/* Skip Links */
+skip-color = #fff;
+skip-background = #105156;
+skip-focus-outer-border ?= #fff;
+skip-focus-inner-border ?= #105156;
+skip-hover-color = #105156;
+skip-hover-background = #fff;
+
 /* Logo */
 logo-color = #fff;
-logo-background = #2F5508;
-logo-hover-color = #2F5508;
+logo-background = #105156;
+logo-hover-color = #105156;
 logo-hover-background = #fff;
 logo-focus = 0.2rem solid #fff;
 logo-font-path = "../fonts/floe-logo";
@@ -57,7 +65,7 @@ figure-background = #fff;
 code-block-background = #fff;
 code-block-border = 0.1rem dotted #aaa;
 code-block-color = #000;
-code-block-link-color = #0000CB;
+code-block-link-color = #275287;
 
 /* Tables */
 table-border-color = #e7e7e7;
@@ -72,37 +80,49 @@ uio-toc-background = #efefef;
     src: url("../fonts/DroidSans.ttf") format('truetype');
 }
 
-.docs-template-start-logo {
-    font-family: "DroidSans";
-    line-height: 1rem;
-    letter-spacing: auto;
-    margin-top: 0;
-}
+.docs-ildh {
+    .docs-template-articleBody {
+        h1, h2, h3 {
+            margin-top: 1rem;
+        }
+    }
 
-.docs-template-start-logoText {
-    font-weight: bold;
-    display: inline-block;
-}
+    .docs-template-logo {
+       font-family: "DroidSans";
+       letter-spacing: auto;
+       margin: 0.5rem 0;
+       padding-left: 0.5rem;
+   }
 
-.ildh-tagline {
-    font-size: 0.8rem;
-    display: block;
-    font-weight: normal;
-    padding-left: 2rem;
-    color: logo-color;
-}
+   .docs-template-logo a {
+       padding: 0;
+   }
 
-.link-external:after {
-    content: "\2192";
-    text-decoration: none;
-}
+   .docs-template-header .docs-template-logo .docs-template-logoText {
+       font-weight: bold;
+       display: inline-block;
+       padding: 0;
+   }
 
-.ildh-subheader {
-    display: block;
-    font-size: 1rem;
-    font-style: italic;
-}
+   .ildh-tagline {
+       font-size: 0.8rem;
+       display: block;
+       font-weight: normal;
+       color: logo-color;
+   }
 
-.ildh-related {
-    margin-left: 3rem;
+   .link-external:after {
+       content: "\2192";
+       text-decoration: none;
+   }
+
+   .ildh-subheader {
+       display: block;
+       font-size: 1rem;
+       font-style: italic;
+   }
+
+   .ildh-related {
+       margin-left: 3rem;
+   }
 }

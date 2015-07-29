@@ -18,7 +18,7 @@
         <script type="text/javascript" src="{{{getRelativeUrl '/lib/infusion/infusion-uio.js' document.url}}}"></script>
         <script type="text/javascript" src="{{{getRelativeUrl '/js/DocsCore.js' document.url}}}"></script>
     </head>
-    <body class="docs-template docs-core-sidebar-visibility">
+    <body class="docs-template docs-ildh docs-core-sidebar-visibility">
 
         <div class="container docs-template-container">
 
@@ -56,7 +56,7 @@
                     {{! Highlight the (active) category the document belongs to. }}
                     {{#each siteStructure}}
                         {{#ifEqual category ../document.category}}
-                            <a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}" class="docs-template-category-active">{{category}}</a>
+                            <a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}" class="docs-template-category-active" aria-label="Currently on Category: {{category}}">{{category}}</a>
                         {{else}}
                             <a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}">{{category}}</a>
                         {{/ifEqual}}
@@ -77,7 +77,7 @@
                                         {{#each pages}}
                                             <li>
                                                 {{#ifEqual href ../../../../document.url}}
-                                                    <span class="docs-template-TOC-item docs-template-TOC-active">{{pageName}}</span>
+                                                    <a href="{{getRelativeUrl href ../../../../../document.url}}" aria-label="Currently on: {{pageName}}"><span class="docs-template-TOC-item docs-template-TOC-active">{{pageName}}</span></a>
                                                 {{else}}
                                                     <a href="{{getRelativeUrl href ../../../../../document.url}}"><span class="docs-template-TOC-item">{{pageName}}</span></a>
                                                 {{/ifEqual}}
@@ -93,7 +93,7 @@
                 <article id="content" class="docs-template-articleBody small-12 medium-8 column" tabindex="-1">
 
                     <div class="small-4 medium-1 column docs-template-TOC-hideShow">
-                        <a href="#" class="docs-corec-topics" aria-label="Hide or Show List of Topics">Topics</a>
+                        <a href="#" class="docs-corec-topics" title="Visually Hide or Show List of Topics" aria-label="Visually Hide or Show List of Topics">Topics</a>
                     </div>
 
                     <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
