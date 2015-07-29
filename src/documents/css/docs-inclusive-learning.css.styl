@@ -18,6 +18,9 @@ header-footer-hover-color = #105156;
 header-footer-hover-background = #fff;
 header-footer-focus = 0.2rem solid #fff;
 header-nav-link = #fff;
+header-nav-background = #185D5E;
+header-nav-border-top = none;
+header-nav-border-bottom = 0.1rem solid #cfcfcf;
 header-active-category = 0.2rem solid #fff;
 
 /* Skip Links */
@@ -90,15 +93,11 @@ uio-toc-background = #efefef;
     .docs-template-logo {
        font-family: "DroidSans";
        letter-spacing: auto;
-       margin: 0.5rem 0;
-       padding-left: 0.5rem;
-   }
-
-   .docs-template-logo a {
-       padding: 0;
+       margin: 0.2rem 0 1rem 0;
    }
 
    .docs-template-header .docs-template-logo .docs-template-logoText {
+       line-height: 1;
        font-weight: bold;
        display: inline-block;
        padding: 0;
@@ -109,6 +108,7 @@ uio-toc-background = #efefef;
        display: block;
        font-weight: normal;
        color: logo-color;
+       margin: 0;
    }
 
    .link-external:after {
@@ -124,5 +124,15 @@ uio-toc-background = #efefef;
 
    .ildh-related {
        margin-left: 3rem;
+   }
+
+   a:hover,
+   a:hover span {
+       border-radius: 0.2rem;
+   }
+
+   //don't round the corners if the item is active.
+   a:hover span.docs-template-TOC-active {
+       border-radius: 0;
    }
 }
