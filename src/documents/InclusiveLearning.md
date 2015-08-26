@@ -38,7 +38,7 @@ Learning needs that affect learning can include:
 
 <figure>
 <a href="/images/Floe_concept_design_mindmap.png">
-<img src="/images/thumbs/400px-Floe_concept_design_mindmap.png" alt="Floe concept design mindmap" />
+<img src="{{{getRelativeUrl '/images/thumbs/400px-Floe_concept_design_mindmap.png' document.url}}}" alt="Floe concept design mindmap" />
 </a>
 <figcaption>
 *Figure:* Floe concept design mindmap
