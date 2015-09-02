@@ -4,8 +4,10 @@
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <title>{{document.title}} | Documentation Template</title>
+        <link rel="icon" type="image/png" href="{{{getRelativeUrl '/images/favico.png' document.url}}}">
+
         <link rel="stylesheet" href="{{{getRelativeUrl '/css/normalize.css' document.url}}}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+        <link rel="stylesheet" href="{{{getRelativeUrl '/css/foundation.min.css' document.url}}}">
         <link rel="stylesheet" href="{{{getRelativeUrl '/css/highlightjs-custom.css' document.url}}}">
         <link rel="stylesheet" href="{{{getRelativeUrl '/lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css' document.url}}}">
 
@@ -13,8 +15,6 @@
         <link rel="stylesheet" type="text/css" href="{{{getRelativeUrl '/lib/infusion/src/framework/preferences/css/PrefsEditor.css' document.url}}}" />
         <link rel="stylesheet" type="text/css" href="{{{getRelativeUrl '/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css' document.url}}}" />
         <link rel="stylesheet" href="{{{getRelativeUrl '/css/docs-template.css' document.url}}}">
-
-        <link rel="icon" type="image/png" href="{{{getRelativeUrl '/images/favico.png' document.url}}}">
 
         <script type="text/javascript" src="{{{getRelativeUrl '/lib/infusion/infusion-uio.js' document.url}}}"></script>
         <script type="text/javascript" src="{{{getRelativeUrl '/js/DocsCore.js' document.url}}}"></script>
@@ -32,7 +32,7 @@
             <!-- END skip link -->
 
 
-            <header class="row docs-template-header docs-template-header fl-inverted-color">
+            <header class="row fl-inverted-color">
 
                 <!-- BEGIN markup for Preference Editor -->
                 <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
@@ -49,8 +49,8 @@
                 </div>
                 <!-- END markup for Preference Editor -->
 
-                <div class="docs-template-logo small-12 column">
-                    <a class="docs-template-logoText" href="{{{getRelativeUrl '/index.html' document.url}}}" title="Documentation Template">Documentation Template</a>
+                <div class="small-12 column docs-template-header">
+                    <a class="docs-template-logo" href="{{{getRelativeUrl '/index.html' document.url}}}" title="Documentation Template">Documentation Template</a>
 
                     {{! Show the menu for mobile screens }}
                     <nav class="right show-for-small-only docs-template-nav-mobile">
@@ -71,18 +71,20 @@
                     </nav>
                 </div>
 
-                <nav class="small-12 column show-for-medium-up">
-                    <ul class="inline-list right">
-                    {{! Highlight the (active) category the document belongs to. }}
-                    {{#each siteStructure}}
-                        {{#ifEqual category ../document.category}}
-                            <li class="docs-template-category-active"><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}" aria-label="Currently on Category: {{category}}">&#9616; {{category}}</a></li>
-                        {{else}}
-                            <li><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}">{{category}}</a></li>
-                        {{/ifEqual}}
-                    {{/each}}
-                    </ul>
-                </nav>
+                <div class="docs-template-header">
+                    <nav class="small-12 column show-for-medium-up">
+                        <ul class="inline-list right">
+                        {{! Highlight the (active) category the document belongs to. }}
+                        {{#each siteStructure}}
+                            {{#ifEqual category ../document.category}}
+                                <li class="docs-template-category-active"><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}" aria-label="Currently on Category: {{category}}">&#9616; {{category}}</a></li>
+                            {{else}}
+                                <li><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}">{{category}}</a></li>
+                            {{/ifEqual}}
+                        {{/each}}
+                        </ul>
+                    </nav>
+                </div>
             </header>
 
             <div id="topics" class="docs-template-topics-container small-8 medium-3 column">
@@ -97,9 +99,9 @@
                                     {{#each pages}}
                                         <li>
                                             {{#ifEqual href ../../../../document.url}}
-                                                <a href="{{getRelativeUrl href ../../../../../document.url}}" aria-label="Currently on: {{pageName}}"><span class="docs-template-topics-item docs-template-topics-active"><span aria-hidden="true">&#9616;</span> {{pageName}}</span></a>
+                                                <span class="docs-template-topics-active-icon" aria-hidden="true">&#9616;</span> <a href="{{getRelativeUrl href ../../../../../document.url}}" aria-label="Currently on: {{pageName}}" class="docs-template-topics-active">{{pageName}}</a>
                                             {{else}}
-                                                <a href="{{getRelativeUrl href ../../../../../document.url}}"><span class="docs-template-topics-item">{{pageName}}</span></a>
+                                                <a href="{{getRelativeUrl href ../../../../../document.url}}">{{pageName}}</a>
                                             {{/ifEqual}}
                                         </li>
                                     {{/each}}
