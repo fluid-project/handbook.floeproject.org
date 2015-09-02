@@ -89,7 +89,7 @@ transitionTime ?= 0.5s;
 foregroundColor - the foreground colour of the contrast theme.
 backgroundColor - the background colour of the contrast theme.*/
 contrastThemeHideShowRibbonColor(foregroundColor, backgroundColor) {
-    border-bottom: 2.2rem solid foregroundColor;
+    border-bottom: 2.18rem solid foregroundColor;
     border-right: 2.1rem solid backgroundColor;
     border-top: 2.2rem solid foregroundColor;
 }
@@ -841,6 +841,10 @@ html body {
 
     .docs-core-sidebar-visibility .docs-template-articleBody {
         width: 50%;
+    }
+
+    .docs-template-404 .docs-template-articleBody {
+        width: 100%;
     }
 
     .docs-template-articleBody h1 {
