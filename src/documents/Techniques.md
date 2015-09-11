@@ -36,7 +36,7 @@ Supporting flexible styling can be as simple as using Cascading Style Sheets (CS
 
 
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/uiOptions/demo.html" class="link-external">Learner Options</a> (sometimes known as UI Options)
+* <a href="http://build.fluidproject.org/infusion/demos/uiOptions/demo.html" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
 
 ## Support keyboard control of functions and navigation
 
@@ -82,4 +82,4 @@ Prominent open formats include HTML and CSS for Web-based content, as well as Op
 
 Where possible, the use of open formats will help ensure that content can meet the needs of a diverse range of users and improve its compatibility and longevity.
 
-The <a href="http://adod.idrc.ocad.ca/" class="link-external">Accessible Digital Office Document (ADOD) Project</a> offers guidance and techniques on how to author accessible documents using common office applications.
+The <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="link-external">Accessible Digital Office Document (ADOD) Project</a> offers guidance and techniques on how to author accessible documents using common office applications.

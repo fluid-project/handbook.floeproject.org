@@ -8,7 +8,7 @@
                 "sectionName":"",
                 "pages":
                 [
-                    {"pageName": "Introduction", "href":"/index.html"},
+                    {"pageName": "Welcome to the Inclusive Learning Design Handbook", "href":"/index.html"},
                     {"pageName": "Why is This Important?", "href":"/WhyIsThisImportant.html"},
                     {"pageName": "What is the Approach?", "href":"/WhatIsTheApproach.html"}
                 ]
@@ -46,6 +46,7 @@
                 "sectionName":"",
                 "pages":
                 [
+                    { "pageName": "Introduction to Accessible Standardized Testing", "href": "/AccessibleStandardizedTesting.html"},
                     { "pageName": "General Guidelines", "href": "/GeneralGuidelines.html" },
                     { "pageName": "Functional Considerations", "href": "/FunctionalConsiderations.html"},
                     { "pageName": "Standardized Test Types", "href": "/StandardizedTestTypes.html"},
@@ -63,11 +64,12 @@
                 "sectionName":"",
                 "pages":
                 [
+                    { "pageName": "Introduction to Inclusive EPUB 3", "href": "/InclusiveEPUB3.html" },
                     { "pageName": "Semantic Markup in EPUB 3", "href": "/SemanticMarkupInEPUB3.html" },
                     { "pageName": "WAI-ARIA", "href": "/WAI-ARIA.html"},
                     { "pageName": "Visual Styles", "href": "/VisualStyles.html"},
                     { "pageName": "Graphics and Multimedia", "href": "/GraphicsAndMultimedia.html"},
-                    { "pageName": "Scripts", "href": "/Scripts.html"},
+                    { "pageName": "Scripting in EPUB 3", "href": "/ScriptingInEPUB3.html"},
                     { "pageName": "Mathematics", "href": "/Mathematics.html"},
                     { "pageName": "Narrations and Text-to-Speech", "href": "/NarrationsAndTextToSpeech.html"},
                     { "pageName": "Accessibility Metadata", "href": "/AccessibilityMetadata.html"},

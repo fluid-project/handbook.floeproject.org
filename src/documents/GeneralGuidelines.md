@@ -48,7 +48,7 @@ category: Accessible Standardized Testing
    * A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
 
 ##Resources##
-* http://www.heinemann.com/shared/onlineresources/E03052/Accessible_Assessment_sample.pdf
-* http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp
-* http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm
-* http://assist-it.org.uk/assets/pdf/AAA.pdf#page=70
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.heinemann.com/shared/onlineresources/E03052/Accessible_Assessment_sample.pdf">http://www.heinemann.com/shared/onlineresources/E03052/Accessible_Assessment_sample.pdf</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp">http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm">http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://assist-it.org.uk/assets/pdf/AAA.pdf">http://assist-it.org.uk/assets/pdf/AAA.pdf</a> - see page 70.

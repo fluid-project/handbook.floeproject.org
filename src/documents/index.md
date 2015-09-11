@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Welcome to the Inclusive Learning Design Handbook
 layout: default
 category: Introduction
 ---
@@ -16,7 +16,7 @@ Contributions to the Handbook are welcome and encouraged from all:
 * Create alternative presentations of the Handbook, including versions suitable for mobile devices or offline reading
 * Derive, remix, and reuse the Handbook's content
 
-All content in the Handbook is licensed under the <a href="http://creativecommons.org/licenses/by/2.5/ca/" class="link-external">Creative Commons 2.5 Canada License</a>.
+All content in the Handbook is licensed under the <a href="http://creativecommons.org/licenses/by/2.5/ca/" rel="nofollow" target="_blank" class="link-external">Creative Commons 2.5 Canada License</a>.
 
 ## Who is this for?
 
@@ -28,13 +28,13 @@ In the spirit of OER, if you use this handbook you are also a contributor to thi
 
 ## Floe and Partners
 
-* <a href="http://floeproject.org/" class="link-external">Floe Project</a>
-* <a href="http://gpii.net/" class="link-external">Global Public Inclusive Infrastructure</a>
-* <a href="http://www.oercommons.org/" class="link-external">OER Commons</a>
-* <a href="http://www.iskme.org/" class="link-external">ISKME</a>
+* <a href="http://www.floeproject.org/" rel="nofollow" target="_blank" class="link-external">Floe Project</a>
+* <a href="http://gpii.net/" rel="nofollow" target="_blank" class="link-external">Global Public Inclusive Infrastructure</a>
+* <a href="https://www.oercommons.org/" rel="nofollow" target="_blank" class="link-external">OER Commons</a>
+* <a href="http://www.iskme.org/" rel="nofollow" target="_blank" class="link-external">ISKME</a>
 
 ## Credits
 
-The Floe Inclusive Learning Design Handbook, part of the <a class="link-external" href="http://www.floeproject.org/">Floe Project</a>, is produced by the <a href="http://idrc.ocadu.ca/" class="link-external">Inclusive Design Research Centre</a> at <a href="http://ocadu.ca" class="link-external">OCAD University</a>.
+The Floe Inclusive Learning Design Handbook, part of the <a rel="nofollow" target="_blank" class="link-external" href="http://www.floeproject.org/">Floe Project</a>, is produced by the <a href="http://idrc.ocadu.ca/" rel="nofollow" target="_blank" class="link-external">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca" rel="nofollow" target="_blank" class="link-external">OCAD University</a>.
 
-Floe is funded by a grant from <a href="http://www.hewlett.org/" class="link-external">The William and Flora Hewlett Foundation</a>.
+Floe is funded by a grant from <a href="http://www.hewlett.org/" rel="nofollow" target="_blank" class="link-external">The William and Flora Hewlett Foundation</a>.

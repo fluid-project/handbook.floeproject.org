@@ -1,12 +1,12 @@
 ---
-title: Inclusive EPUB 3
+title: Introduction to Inclusive EPUB 3
 layout: default
 category: Inclusive EPUB 3
 ---
 
 The Inclusive EPUB 3 guide is intended for content creators and educators who wish to use EPUB 3 and are interested in making their published content broadly usable by a full spectrum of users.
 
-This guide covers a broad range of topics that will help make an EPUB 3 book more usable in different contexts. The information provided illustrates how concepts may be applied but won't make you an "expert" - you are encouraged use this guide as a starting point and to follow the resources provided to gain additional insight.
+This guide covers a broad range of topics that will help make an EPUB 3 book more usable in different contexts. The information provided illustrates how concepts may be applied but won't make you an "expert" - you are encouraged to use this guide as a starting point and to follow the resources provided to gain additional insight.
 
 ## What is Inclusivity and how is it different from accessibility? ##
 
@@ -38,9 +38,9 @@ What does EPUB offer?
 
 * Special semantics which help give basic HTML elements additional functions or meaning when used in an EPUB reading system.
 * A "spine" which defines the author's intended path through the content. This may be different than a table of contents, as a table of contents may include references to content not considered part of the author's primary path. An example of this scenario would be a textbook with diagrams in boxes or content in the sidebar - the EPUB spine may choose to skip over this material, even though it may appear in the book's table of content.
-* Metadata which describe the content (i.e. author, language, etc.). This metadata typically contains <a href="http://dublincore.org/" class="link-external">Dublin Core metadata</a>, but can contain any metadata as long as the schema is defined. <a href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php" class="link-external">Schema.org accessibility metadata</a>, which describes accessibility features and modalities of the EPUB book, is supported.
+* Metadata which describe the content (i.e. author, language, etc.). This metadata typically contains <a href="http://dublincore.org/" class="link-external">Dublin Core metadata</a>, but can contain any metadata as long as the schema is defined. <a href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php" rel="nofollow" target="_blank" class="link-external">Schema.org accessibility metadata</a>, which describes accessibility features and modalities of the EPUB book, is supported.
 
-EPUB is an open format managed by the <a href="http://idpf.org/" class="link-external">International Digital Publishing Forum</a> (or IDPF) - a group of industry stakeholders who are primarily technology and content providers. The latest version of the EPUB specification is EPUB 3.
+EPUB is an open format managed by the <a href="http://idpf.org/" rel="nofollow" target="_blank" class="link-external">International Digital Publishing Forum</a> (or IDPF) - a group of industry stakeholders who are primarily technology and content providers. The latest version of the EPUB specification is EPUB 3.
 
 ## Why Choose EPUB 3 over HTML5? ##
 
@@ -50,7 +50,7 @@ EPUB 3 is a viable content distribution format because it:
 
 * allows ease of offline access to content,
 * provides native content ordering and navigation,
-* is being consumed by an increasingly large group of people, at an increasing rate, as a result of the prominence of e-readers ([source](http://www.emarketer.com/Article/Tablets-Ereaders-Lead-More-Book-Reading/1010307)),
+* is being consumed by an increasingly large group of people, at an increasing rate, as a result of the prominence of e-readers <a href="http://www.emarketer.com/Article/Tablets-Ereaders-Lead-More-Book-Reading/1010307" rel="nofollow" target="_blank" class="link-external">source</a>,
 * offers additional semantics that help describe text structure and function, and
 * helps give content authors a platform to seamlessly include rich features such as text-to-speech, content narration, and media alternatives.
 
@@ -60,7 +60,7 @@ EPUB 3 books are increasingly diverse and complex; similarly, so are its end use
 
 To improve an EPUB 3 book's utility across all these devices, environments, and contexts - the following is a guide to help an EPUB 3 author create more inclusive publications.
 
-Broadly, the approach to making an inclusive EPUB 3 publicaion takes the following into account (we will go into more detail on each point shortly):
+Broadly, the approach to making an inclusive EPUB 3 publication takes the following into account (we will go into more detail on each point shortly):
 
 * Content is composed and structured in well-formed HTML 5 using standards-compliant formatting and appropriate usage of HTML 5 semantic markup and tags.
 * Visual styling is done using CSS 2.1 with sensitivity to reader platforms with monochromatic, aural, or tactile displays.

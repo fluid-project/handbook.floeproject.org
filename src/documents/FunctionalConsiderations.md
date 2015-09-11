@@ -73,7 +73,7 @@ Allow flexibility in the timing of an assessment. Generally, these are chosen fo
 * Complete the test over multiple days
    *  Careful scheduling is needed for multiple test sessions to make sure that computers are available and the test security is not an issue if students who have responded to the same test items have opportunities to interact with each other between test sessions.
 ##Resources##
-* http://www.ateassessments.org/
-* http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp
-* http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm
-* http://www.parentcenterhub.org/repository/assessment-accommodations/
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.ateassessments.org/">http://www.ateassessments.org/</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp">http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm">http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.parentcenterhub.org/repository/assessment-accommodations/">http://www.parentcenterhub.org/repository/assessment-accommodations/</a>

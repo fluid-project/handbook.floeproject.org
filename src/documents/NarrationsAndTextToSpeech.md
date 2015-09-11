@@ -16,17 +16,17 @@ To add media overlays to an EPUB 3 book, you would follow these basic steps:
 3. Create another file (in XHTML) which associates the text with the recorded audio.
 
 
-Matt Garrish has written an excellent resource called "<a class="link-external" href="http://epubzone.org/news/epub-3-media-overlays"> EPUB 3 Media Overlays</a>" which explains how media overlays work in EPUB 3 and how to add it to your own work.
+Matt Garrish has written an excellent resource called "<a rel="nofollow" target="_blank" class="link-external" href="http://epubzone.org/news/epub-3-media-overlays"> EPUB 3 Media Overlays</a>" which explains how media overlays work in EPUB 3 and how to add it to your own work.
 
 For information about lessons learned by the Floe team while implementing media overlays in an exemplar EPUB resource, see [Case study: Exemplar](/CaseStudyExemplar.html).
 
 ## Further reading ##
 
-* <a class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/overlays/overview.php"> "Media Overlays Overview" IDPF</a>
-* <a class="link-external" href="http://epubzone.org/news/epub-3-media-overlays"> "EPUB 3 Media Overlays" by Matt Garrish, EPUB Zone</a>
-* <a class="link-external" href="http://vimeo.com/53999718"> "Readium: EPUB Media Overlays 3.0" by Youji Sakai (Video)</a>
-* <a class="link-external" href="https://code.google.com/p/epub-samples/downloads/detail?name=moby-dick-mo-20120214.epub"> "Moby Dick with Media Overlays for first two chapters" epub samples project</a>
-* <a class="link-external" href="http://www.daisy.org/tobi/creating-or-modifying-epub-media-overlays"> "Creating or Modifying EPUB Media Overlays" Tobi DAISY Multimedia</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/overlays/overview.php"> "Media Overlays Overview" IDPF</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://epubzone.org/news/epub-3-media-overlays"> "EPUB 3 Media Overlays" by Matt Garrish, EPUB Zone</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://vimeo.com/53999718"> "Readium: EPUB Media Overlays 3.0" by Youji Sakai (Video)</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="https://code.google.com/p/epub-samples/downloads/detail?name=moby-dick-mo-20120214.epub"> "Moby Dick with Media Overlays for first two chapters" epub samples project</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.daisy.org/tobi/creating-or-modifying-epub-media-overlays"> "Creating or Modifying EPUB Media Overlays" Tobi DAISY Multimedia</a>
 
 ## Text-to-Speech ##
 
@@ -34,11 +34,11 @@ Another feature EPUB 3 offers is the ability for book creators to specify inform
 
 TTS in EPUB 3 consists of 3 working parts:
 
-* an <a class="link-external" href="http://www.w3.org/TR/CSS2/aural.html"> aural style sheet</a> to give content clarity and richness (such as different voice and intonation on different page elements, or pauses after reading headers),
-* <a class="link-external" href="http://www.w3.org/TR/speech-synthesis/"> SSML</a> (Speech Synthesis Markup Language) mark-up to provide information on pronunciation, volume, pitch, rate, etc., and
-* <a class="link-external" href="http://www.w3.org/TR/pronunciation-lexicon/"> PLS</a> (Pronunciation Lexicon Specification) information, which defines pronunciation of special words (i.e. medical terms).
+* an <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/TR/CSS2/aural.html"> aural style sheet</a> to give content clarity and richness (such as different voice and intonation on different page elements, or pauses after reading headers),
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/TR/speech-synthesis/"> SSML</a> (Speech Synthesis Markup Language) mark-up to provide information on pronunciation, volume, pitch, rate, etc., and
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/TR/pronunciation-lexicon/"> PLS</a> (Pronunciation Lexicon Specification) information, which defines pronunciation of special words (i.e. medical terms).
 
-The following is an example of content using SSML, some Aural Styles, and the word "acetaminophen" defined by PLS: (example adapted from <a class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/tts/ssml.php"> EPUB 3 Accessibility Guidelines: SSML</a>)
+The following is an example of content using SSML, some Aural Styles, and the word "acetaminophen" defined by PLS: (example adapted from <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/tts/ssml.php"> EPUB 3 Accessibility Guidelines: SSML</a>)
 
 ```
 <html xmlns:ssml="http://www.w3.org/2001/10/synthesis" ssml:alphabet="x-sampa">
@@ -89,6 +89,6 @@ A similar strategy would work on other units of measure:
 
 ### Further reading ###
 
-* <a class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/tts/overview.php"> "Text to Speech Overview" by IDPF</a>
-* <a class="link-external" href="http://epubzone.org/news/epub-3-text-to-speech-tts"> "EPUB 3: Text to Speech" by Matt Garrish, EPUB Zone</a>
-* <a class="link-external" href="http://www.w3.org/TR/CSS2/aural.html"> "Appendix A. Aural style sheets" W3C</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/tts/overview.php"> "Text to Speech Overview" by IDPF</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://epubzone.org/news/epub-3-text-to-speech-tts"> "EPUB 3: Text to Speech" by Matt Garrish, EPUB Zone</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/TR/CSS2/aural.html"> "Appendix A. Aural style sheets" W3C</a>

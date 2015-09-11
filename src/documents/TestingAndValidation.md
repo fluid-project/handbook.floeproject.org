@@ -18,19 +18,19 @@ The following table represents a sampling of systems to consider testing with:
    * Apple iPad
    * Amazon Kindle Fire
 * Reader Software:
-   * Readium for Chrome browswer - <a class="link-external" href="http://readium.org/">http://readium.org/</a>
+   * Readium for Chrome browswer - <a rel="nofollow" target="_blank" class="link-external" href="http://readium.org/">http://readium.org/</a>
    * iBooks for Mac OS X and iOS -
-   * Lucifox for Firefox browser - <a class="link-external" href="http://lucidor.org/lucifox/">http://lucidor.org/lucifox/</a>
-   * Calibre for Mac OS X and Windows - <a class="link-external" href="http://calibre-ebook.com/">http://calibre-ebook.com/</a>
-   * Universal Book Reader for Android - <a class="link-external" href="http://www.mobisystems.com/android/ub-reader/">http://www.mobisystems.com/android/ub-reader/</a>
+   * Lucifox for Firefox browser - <a rel="nofollow" target="_blank" class="link-external" href="http://lucidor.org/lucifox/">http://lucidor.org/lucifox/</a>
+   * Calibre for Mac OS X and Windows - <a rel="nofollow" target="_blank" class="link-external" href="http://calibre-ebook.com/">http://calibre-ebook.com/</a>
+   * Universal Book Reader for Android - <a rel="nofollow" target="_blank" class="link-external" href="http://www.mobisystems.com/android/ub-reader/">http://www.mobisystems.com/android/ub-reader/</a>
 * Screen Readers:
-   * NVDA for Windows - <a class="link-external" href="http://www.nvaccess.org/">http://www.nvaccess.org/</a>
+   * NVDA for Windows - <a rel="nofollow" target="_blank" class="link-external" href="http://www.nvaccess.org/">http://www.nvaccess.org/</a>
    * VoiceOver for Mac OS and iOS
 
 There are a number of reasons why it is important to test a variety of systems and to never assume that because the experience in one system is acceptable, it will be acceptable in other systems, for example:
 
-* `aria-label` and `aria-labelledby` are ignored by NVDA when used on `<math>` elements (<a class="link-external" href="http://community.nvda-project.org/ticket/4422">reference link</a>), but are read aloud by Apple's VoiceOver.
-* MathML is rendered fine in Calibre, iBooks, and Lucifox, but appears improperly in Readium (<a class="link-external" href="http://idpf.org/forum/topic-1618"> reference link</a>).
+* `aria-label` and `aria-labelledby` are ignored by NVDA when used on `<math>` elements (<a rel="nofollow" target="_blank" class="link-external" href="http://community.nvda-project.org/ticket/4422">reference link</a>), but are read aloud by Apple's VoiceOver.
+* MathML is rendered fine in Calibre, iBooks, and Lucifox, but appears improperly in Readium (<a rel="nofollow" target="_blank" class="link-external" href="http://idpf.org/forum/topic-1618"> reference link</a>).
 * `&lt;mover&gt;` MathML elements are pronounced as "underneath" instead of "over" in Apple's VoiceOver.
 
 As when building a website, cross-system testing is important to ensure the message and content you want to convey comes across accurately.
@@ -39,5 +39,5 @@ As when building a website, cross-system testing is important to ensure the mess
 
 Validating an EPUB file will ensure that it conforms to the EPUB specification.
 
-* Online validator: http://validator.idpf.org/ (maximum 10MB)
-* Locally-run validator: https://github.com/idpf/epubcheck
+* Online validator: <a rel="nofollow" target="_blank" class="link-external" href="http://validator.idpf.org/">http://validator.idpf.org/</a> (maximum 10MB)
+* Locally-run validator: <a rel="nofollow" target="_blank" class="link-external" href="https://github.com/idpf/epubcheck">http://validator.idpf.org/</a>

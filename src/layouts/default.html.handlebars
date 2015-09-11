@@ -19,9 +19,9 @@
 
         <script type="text/javascript" src="{{{getRelativeUrl '/lib/infusion/infusion-uio.js' document.url}}}"></script>
         <script type="text/javascript" src="{{{getRelativeUrl '/js/DocsCore.js' document.url}}}"></script>
-        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script type="text/javascript" src="{{{getRelativeUrl '/lib/jqueryui/jquery-ui.min.js' document.url}}}"></script>
     </head>
-    <body class="docs-template docs-ildh docs-core-sidebar-visibility">
+    <body class="docs-template docs-inclusiveLearning docs-core-sidebar-visibility">
 
         <div class="container docs-template-container">
 
@@ -33,7 +33,7 @@
             <!-- END skip link -->
 
 
-            <header class="row fl-inverted-color">
+            <header class="ignore-toc row fl-inverted-color">
 
                 <!-- BEGIN markup for Preference Editor -->
                 <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
@@ -51,8 +51,13 @@
                 <!-- END markup for Preference Editor -->
 
                 <div class="small-12 column docs-template-header">
-                    <a class="docs-template-logo" href="{{{getRelativeUrl '/index.html' document.url}}}" title="Floe Project">floe</a>
-                    <h1 class="ildh-tagline">The Inclusive Learning Design Handbook</h1>
+                    <a class="docs-template-logo" href="{{{getRelativeUrl '/index.html' document.url}}}" title="Home: Floe Inclusive Learning Design Handbook">
+                        <span class="show-for-sr">Floe Project: Inclusive Learning Design Handbook</span>
+                        <h1 aria-hidden="true">
+                            floe
+                            <span class="inclusiveLearning-tagline">The Inclusive Learning<br/>Design Handbook</span>
+                        </h1>
+                    </a>
 
                     {{! Show the menu for mobile screens }}
                     <nav class="right show-for-small-only docs-template-nav-mobile">
@@ -89,7 +94,7 @@
                 </div>
             </header>
 
-            <div id="topics" class="docs-template-topics-container small-8 medium-3 column">
+            <div id="topics" class="ignore-toc docs-template-topics-container small-8 medium-3 column">
                 <nav id="tableOfContents" class="docs-template-topics" tabindex="-1">
                     {{#each siteStructure}}
                         {{! Output only the table of contents matching the current document's category }}
@@ -101,7 +106,7 @@
                                     {{#each pages}}
                                         <li>
                                             {{#ifEqual href ../../../../document.url}}
-                                                <span class="docs-template-topics-active-icon" aria-hidden="true">&#9616;</span> <a href="{{getRelativeUrl href ../../../../../document.url}}" aria-label="Currently on: {{pageName}}" class="docs-template-topics-active">{{pageName}}</a>
+                                                <a href="{{getRelativeUrl href ../../../../../document.url}}" aria-label="Currently on: {{pageName}}" class="docs-template-topics-active">{{pageName}}</a>
                                             {{else}}
                                                 <a href="{{getRelativeUrl href ../../../../../document.url}}">{{pageName}}</a>
                                             {{/ifEqual}}
@@ -123,17 +128,17 @@
 
                 <h1>{{document.title}}</h1>
 
-                <p class="docs-template-githubLink"><a href="{{getGithubLocation}}" target="_blank">Edit this Page on GitHub</a></p>
+                <p class="docs-template-githubLink"><a href="{{getGithubLocation}}" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
 
                 <div class="docs-template-articleContent">
                     {{{rewriteMdLinks content}}}
                 </div>
             </article>
 
-            <footer class="row docs-template-footer">
-                <p>The Floe Inclusive Learning Design Handbook, part of the <a class="link-external" target="_blank" href="http://www.floeproject.org/">Floe Project</a>, is produced by the <a href="http://idrc.ocadu.ca/" class="link-external">Inclusive Design Research Centre</a> at <a href="http://ocadu.ca" class="link-external">OCAD University</a>.</p>
-                <p>Floe is funded by a grant from <a href="http://www.hewlett.org/" target="_blank" class="link-external">The William and Flora Hewlett Foundation</a>.</p>
-                <p>Licensed under <a href="http://creativecommons.org/licenses/by/2.5/ca/" target="_blank" class="link-external">Creative Commons Attribution 2.5 Canada</a>.</p>
+            <footer class="row docs-template-footer fl-inverted-color">
+                <p>The Floe Inclusive Learning Design Handbook, part of the <a class="link-external" rel="nofollow" target="_blank" href="http://www.floeproject.org/">Floe Project</a>, is produced by the <a href="http://idrc.ocadu.ca/" class="link-external">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca" class="link-external">OCAD University</a>.</p>
+                <p>Floe is funded by a grant from <a href="http://www.hewlett.org/" rel="nofollow" target="_blank" class="link-external">The William and Flora Hewlett Foundation</a>.</p>
+                <p>Licensed under <a href="http://creativecommons.org/licenses/by/2.5/ca/" rel="nofollow" target="_blank" class="link-external">Creative Commons Attribution 2.5 Canada</a>.</p>
             </footer>
 
             <script type="text/javascript">

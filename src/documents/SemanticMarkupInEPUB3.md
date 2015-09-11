@@ -4,7 +4,7 @@ layout: default
 category: Inclusive EPUB 3
 ---
 
-EPUB 3 books can be created from HTML5, and the same principles for creating well-formed, semantically sound web content apply. For an EPUB 3 author, there are two tools available: <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" class="link-external">HTML 5 semantic elements</a>, and <a href="http://www.idpf.org/accessibility/guidelines/content/semantics/epub-type.php" class="link-external">`epub:type`</a>.
+EPUB 3 books can be created from HTML5, and the same principles for creating well-formed, semantically sound web content apply. For an EPUB 3 author, there are two tools available: <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" rel="nofollow" target="_blank" class="link-external">HTML 5 semantic elements</a>, and <a href="http://www.idpf.org/accessibility/guidelines/content/semantics/epub-type.php" rel="nofollow" target="_blank" class="link-external">`epub:type`</a>.
 
 HTML 5 semantic markup gives meaning to otherwise anonymous containers or text structures. For example, you can use the `<section>` element to denote changes in topic, or `<aside>` to indicate content that is secondary in importance.
 
@@ -22,11 +22,11 @@ Here is an example:
 </section>
 ```
 
-The "EPUB 3 Content Document" article by Matt Garrish is a great place to start learning about semantics in EPUB 3:  <a href="http://epubzone.org/news/epub-3-content-documents" class="link-external">http://epubzone.org/news/epub-3-content-documents</a>.
+The "EPUB 3 Content Document" article by Matt Garrish is a great place to start learning about semantics in EPUB 3:  <a href="http://epubzone.org/news/epub-3-content-documents" rel="nofollow" target="_blank" class="link-external">http://epubzone.org/news/epub-3-content-documents</a>.
 
 ## Further reading ##
 
-* <a href="http://www.idpf.org/accessibility/guidelines/content/semantics/epub-type.php" class="link-external">"The epub:type attribute" - by IDPF</a>
-* <a href="http://html5doctor.com/lets-talk-about-semantics/" class="link-external"> "Let's Talk about Semantics" - by Mike Robinson, html5doctor.com</a>
-* <a href="http://www.idpf.org/epub/vocab/structure/" class="link-external"> "EPUB 3 Structural Semantics Vocabulary" - by IDPF</a>
-* <a href="http://www.heliconbooks.com/article/epub3sem" class="link-external"> "EPUB 3 semantic tags" - by Helicon Books</a>
+* <a href="http://www.idpf.org/accessibility/guidelines/content/semantics/epub-type.php" rel="nofollow" target="_blank" class="link-external">"The epub:type attribute" - by IDPF</a>
+* <a href="http://html5doctor.com/lets-talk-about-semantics/" rel="nofollow" target="_blank" class="link-external"> "Let's Talk about Semantics" - by Mike Robinson, html5doctor.com</a>
+* <a href="http://www.idpf.org/epub/vocab/structure/" rel="nofollow" target="_blank" class="link-external"> "EPUB 3 Structural Semantics Vocabulary" - by IDPF</a>
+* <a href="http://www.heliconbooks.com/article/epub3sem" rel="nofollow" target="_blank" class="link-external"> "EPUB 3 semantic tags" - by Helicon Books</a>

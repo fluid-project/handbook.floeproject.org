@@ -58,7 +58,7 @@ A challenge for all users is finding the information they want on websites and w
 
 ##User Interface simplification##
 
-Floe's <a href="http://wiki.fluidproject.org/pages/viewpage.action?pageId=29959408" class="link-external">User Interface Options</a> makes it possible for users to change the size of fonts, and change the colors that are used so that text is easier to read for them. Here are some other ways users can control your presentation.
+Floe's <a href="http://wiki.fluidproject.org/pages/viewpage.action?pageId=29959408" rel="nofollow" target="_blank" class="link-external">User Interface Options</a> makes it possible for users to change the size of fonts, and change the colors that are used so that text is easier to read for them. Here are some other ways users can control your presentation.
 
 * Let users ask for definitions or explanations of unfamiliar terms and abbreviations.
 
@@ -70,7 +70,7 @@ Floe's <a href="http://wiki.fluidproject.org/pages/viewpage.action?pageId=299594
 
 * Make interactions as simple and clear as possible.
 
-Floe has conducted some early design work showing <a href="http://wiki.fluidproject.org/display/fluid/%28Floe%29+Content+simplification+conceptualization" class="link-external">UI simplification around content</a>.
+Floe has conducted some early design work showing <a href="http://wiki.fluidproject.org/display/fluid/%28Floe%29+Content+simplification+conceptualization" rel="nofollow" target="_blank" class="link-external">UI simplification around content</a>.
 
 ##Issues and Controversies##
 

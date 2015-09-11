@@ -5,7 +5,7 @@ category: Inclusive EPUB 3
 ---
 Traditionally, math is challenging to render and to make accessible - thankfully in EPUB, there are techniques we can employ to provide multiple ways of perceiving and understanding math notation.
 
-To encode math and math notations, we will be using MathML 3.0 which is a W3C specification (Link: <a class="link-external" href="http://www.w3.org/Math/">W3C Math Home</a>) that is widely supported by modern-day EPUB reader systems. To see how MathML works, let's use this physics formula for the force of gravity as an example: f<sub>g</sub> = mg.
+To encode math and math notations, we will be using MathML 3.0 which is a W3C specification (Link: <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/Math/">W3C Math Home</a>) that is widely supported by modern-day EPUB reader systems. To see how MathML works, let's use this physics formula for the force of gravity as an example: f<sub>g</sub> = mg.
 
 ```
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -21,7 +21,7 @@ To encode math and math notations, we will be using MathML 3.0 which is a W3C sp
 </math>
 ```
 
-When viewed in an EPUB the formula looks great as seen in the following image: ![Image of the equation F subscript g equals m times g](/images/Equation.png)
+When viewed in an EPUB the formula looks great as seen in the following image: ![Image of the equation F subscript g equals m times g]({{{getRelativeUrl '/images/Equation.png' document.url}}})
 
 However, for someone using a screen reader or another accessibility tool, the formula may appear or sound like "f g equals m g" which is ambiguous. Is that "f g as in f *times* g" or is it "fg a variable"? To clear up any misunderstanding, it is recommended that a literal description be added using the `aria-label` property. It is important to not interpret or impart meaning to the description as this may cause some confusion - be as literal as possible and add just enough information to remove ambiguity.
 

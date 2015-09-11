@@ -29,7 +29,7 @@ The categorization questions require the user to organize elements into categori
 Ordering/Ranking/Sequencing is a drag-and-drop task in which the student must move the elements on the screen to put them in the correct order.
 
 ##Interactive Questions##
-###Interactive Questions###
+###What are Interactive Questions?###
 Include videos, animations, coloring, graphing, games, puzzles or any other type of question that requires high levels of interaction between user and the interface.
 ###Field Simulations###
 Offers simulations of real problems or exercises.
@@ -142,6 +142,6 @@ This item requires  examination on a given topic requiring a written analysis or
 </table>
 
 ##Resources##
-* http://www.ateassessments.org/
-* http://www.caacentre.ac.uk/
-* http://assist-it.org.uk/assets/pdf/AAA.pdf#page=70
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.ateassessments.org/">http://www.ateassessments.org/</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.caacentre.ac.uk/">http://www.caacentre.ac.uk/</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://assist-it.org.uk/assets/pdf/AAA.pdf">http://assist-it.org.uk/assets/pdf/AAA.pdf</a> - see page 70.

@@ -16,7 +16,7 @@ Although we strive to be inclusive, some types of content have their challenges.
 
 ## Further reading ##
 
-* <a class="link-external" href="http://toc.oreilly.com/2013/02/and-along-with-epub-3-new-css.html"> "... and along with new EPUB 3: New CSS" by Nellie McKesson, O'Reilly</a>
-* <a class="link-external" href="http://www.idpf.org/epub/301/spec/epub-publications.html#sec-package-metadata-fxl"> "Fixed-Layout Properties" by IDPF</a>
-* <a class="link-external" href="http://www.ibm.com/developerworks/library/x-richlayoutepub/"> "Create rich-layout publications in EPUB 3 with HTML5, CSS3, and MathML" by Liza Daly, IBM Developer Works</a>
-* <a class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/style/color.php"> "EPUB Stylesheets" by IDPF</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://toc.oreilly.com/2013/02/and-along-with-epub-3-new-css.html"> "... and along with new EPUB 3: New CSS" by Nellie McKesson, O'Reilly</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/epub/301/spec/epub-publications.html#sec-package-metadata-fxl"> "Fixed-Layout Properties" by IDPF</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.ibm.com/developerworks/library/x-richlayoutepub/"> "Create rich-layout publications in EPUB 3 with HTML5, CSS3, and MathML" by Liza Daly, IBM Developer Works</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/style/color.php"> "EPUB Stylesheets" by IDPF</a>
