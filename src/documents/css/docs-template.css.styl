@@ -94,7 +94,7 @@ contrastThemeHideShowRibbonColor(foregroundColor, backgroundColor) {
     border-top: 2.2rem solid foregroundColor;
 }
 
-/* Generate the parts which have inverted styles for contrast themes.
+/* Generate the parts which are within a .fl-inverted-color class.
 foregroundColor - the foreground colour of the contrast theme.
 backgroundColor - the background colour of the contrast theme.*/
 contrastThemeInverted(foregroundColor, backgroundColor) {
@@ -108,6 +108,7 @@ contrastThemeInverted(foregroundColor, backgroundColor) {
     }
 
     a:hover,
+    a:hover code,
     .docs-template-logo:focus,
     .docs-template-logo:hover,
     .ui-state-focus,
@@ -118,6 +119,11 @@ contrastThemeInverted(foregroundColor, backgroundColor) {
     .fl-prefsEditor-buttons button:focus,
     .fl-prefsEditor-buttons button:hover {
          background: backgroundColor !important;
+         color: foregroundColor !important;
+     }
+
+     .docs-template-category-active a:hover span {
+         background: none !important;
          color: foregroundColor !important;
      }
 }
@@ -132,6 +138,7 @@ contrastTheme(foregroundColor, backgroundColor) {
 
     .docs-template-topics-hideShow:before,
     a:hover,
+    a:hover code,
     a:hover .docs-template-topics-active-icon,
     a:hover .docs-template-topics-item {
         background-color: foregroundColor !important;
@@ -396,8 +403,13 @@ html body {
 
 .ui-state-active .docs-template-nav-mobile-icon,
 .ui-state-focus .docs-template-nav-mobile-icon {
-    background-color: header-nav-color;
+    background-color: header-nav-link;
     color: header-nav-background;
+}
+
+.ui-state-active .docs-template-dropDown a {
+    color: header-nav-link;
+    background-color: header-nav-background;
 }
 
 .docs-template .docs-template-dropDown-header {
@@ -469,6 +481,11 @@ html body {
     //////////////////////////////////////////////////////////////
     // FLUID-5732.
     // transition: width transitionTime;
+}
+
+.docs-template-404.docs-core-sidebar-visibility .docs-template-articleBody {
+    width: 100%;
+    max-width: none;
 }
 
 .docs-template-articleBody * {
@@ -564,7 +581,7 @@ html body {
     z-index: 1;
 
     &:after {
-        contrastHideShowRibbonColor(hideShow-background, docs-body-background)
+        contrastThemeHideShowRibbonColor(hideShow-background, docs-body-background)
         content: "";
         position:absolute;
         right: 0;
@@ -615,9 +632,15 @@ html body {
         display: inline-block;
         color: topics-item-color;
 
-        .docs-template-topics-active {
+        &.docs-template-topics-active {
             color: topics-active-color;
             background: topics-active-background;
+        }
+
+        &.docs-template-topics-active:before {
+            content: "\2590";
+            display: inline-block;
+            margin-right: 0.2rem;
         }
 
         &:hover {
@@ -751,6 +774,11 @@ html body {
     }
 }
 
+.docs-template-404 .docs-template-articleBody {
+    width: 100%;
+    max-width: none;
+}
+
 /* Infusion UIO */
 
 .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
@@ -845,6 +873,7 @@ html body {
 
     .docs-template-404 .docs-template-articleBody {
         width: 100%;
+        max-width: none;
     }
 
     .docs-template-articleBody h1 {

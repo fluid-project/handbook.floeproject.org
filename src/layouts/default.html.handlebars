@@ -32,7 +32,7 @@
             <!-- END skip link -->
 
 
-            <header class="row fl-inverted-color">
+            <header class="ignore-for-TOC row fl-inverted-color">
 
                 <!-- BEGIN markup for Preference Editor -->
                 <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
@@ -87,7 +87,7 @@
                 </div>
             </header>
 
-            <div id="topics" class="docs-template-topics-container small-8 medium-3 column">
+            <div id="topics" class="ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
                 <nav id="tableOfContents" class="docs-template-topics" tabindex="-1">
                     {{#each siteStructure}}
                         {{! Output only the table of contents matching the current document's category }}
@@ -99,7 +99,7 @@
                                     {{#each pages}}
                                         <li>
                                             {{#ifEqual href ../../../../document.url}}
-                                                <span class="docs-template-topics-active-icon" aria-hidden="true">&#9616;</span> <a href="{{getRelativeUrl href ../../../../../document.url}}" aria-label="Currently on: {{pageName}}" class="docs-template-topics-active">{{pageName}}</a>
+                                                <a href="{{getRelativeUrl href ../../../../../document.url}}" aria-label="Currently on: {{pageName}}" class="docs-template-topics-active">{{pageName}}</a>
                                             {{else}}
                                                 <a href="{{getRelativeUrl href ../../../../../document.url}}">{{pageName}}</a>
                                             {{/ifEqual}}
@@ -122,7 +122,7 @@
 
                 <h1>{{document.title}}</h1>
 
-                <p class="docs-template-githubLink"><a href="{{getGithubLocation}}" target="_blank">Edit this Page on GitHub</a></p>
+                <p class="docs-template-githubLink"><a href="{{getGithubLocation}}" rel="nofollow" target="_blank" class="link-external">Edit this Page on GitHub</a></p>
 
                 <div class="docs-template-articleContent">
                     {{{rewriteMdLinks content}}}
@@ -131,8 +131,8 @@
             </article>
 
             <footer class="row docs-template-footer fl-inverted-color">
-                <p>Created by the <a href="http://fluidproject.org/" target="_blank">Fluid Project</a>,<br/>
-                a project of the <a href="http://idrc.ocad.ca/" target="_blank">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca/" target="_blank">OCAD University</a>.</p>
+                <p>Created by the <a href="http://fluidproject.org/" rel="nofollow" target="_blank">Fluid Project</a>,<br/>
+                a project of the <a href="http://idrc.ocad.ca/" rel="nofollow" target="_blank">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca/" target="_blank">OCAD University</a>.</p>
             </footer>
 
             <script type="text/javascript">
