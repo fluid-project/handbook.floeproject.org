@@ -4,53 +4,53 @@ layout: default
 category: Accessible Standardized Testing
 ---
 
-##Multiple Choice Questions##
-###Single Select Questions###
+## Multiple Choice Questions
+### Single Select Questions
 A traditional multiple choice question is one in which a student chooses one answer from a number of choices supplied.
-###Multi-Select Questions###
+### Multi-Select Questions
 These questions allow user to choose more than one response option from a number of provided choices.
-###True/False Questions###
+### True/False Questions
 A true-false questions is a specialized form of the multiple-choice format in which there are only two possible alternatives. These questions can be used when the test designer wishes to measure a student's ability to identify whether statements of fact are accurate or not.
 
-##Labeling Questions##
-###Graphic Labeling###
+## Labeling Questions
+### Graphic Labeling
 The graphic labeling task requires user to drag-and-drop labels to the correct location on an image or diagram (e.g. Venn Diagram). This type of question can be manipulated on a computer with a mouse or trackball or on a touch screen tablet.
-###One to One Labeling###
+### One to One Labeling
 For this drag and drop task, the user selects a label from a list at the top of the screen and drags it to the correct location on the screen. Once the label has been used, it cannot be reused unless it is first moved back to the top of the screen.
-###Unlimited Labeling###
+### Unlimited Labeling
 This item is similar to one-to-one labeling except that labels can be reused. The user clicks or touches the label and drags it to the correct location.
 
-##Grouping and Ordering Questions##
-###Matching Items###
+## Grouping and Ordering Questions
+### Matching Items
 With matching, the student matches each label with its correct response by clicking or touching one element in each column in turn. When the option in the second column is chosen, a line appears marking the connection between the two. Each option can be paired only once.
-###Categorizing Items###
+### Categorizing Items
 The categorization questions require the user to organize elements into categories. There are two interfaces for this type of questions. In the drag-and-drop interface, the user clicks or touches an element and drags it into the correct category using a mouse or touch screen. With the click-to-select interface, the user clicks or selects an element to select it. Then, the user clicks or touches the category label, and the element appears in that category.
-###Ordering/Ranking Items###
+### Ordering/Ranking Items
 Ordering/Ranking/Sequencing is a drag-and-drop task in which the student must move the elements on the screen to put them in the correct order.
 
-##Interactive Questions##
-###What are Interactive Questions?###
+## Interactive Questions
+### What are Interactive Questions?
 Include videos, animations, coloring, graphing, games, puzzles or any other type of question that requires high levels of interaction between user and the interface.
-###Field Simulations###
+### Field Simulations#
 Offers simulations of real problems or exercises.
 
-##Combination of Multiple Tools##
-###Matrix###
+## Combination of Multiple Tools
+### Matrix
 The matrix questions combines elements from multiple choice questions and categorizations types, and allow users to assign elements to categories or groups.
-###Assertion Reason###
+### Assertion Reason
 The assertion-reason item combines elements of multiple choice and true/false question types, and allows you to test more complicated issues and requires a higher level of learning.
 The question consists of two statements, an assertion and a reason. The student must first determine whether each statement is true. If both are true, the student must next determine whether the reason correctly explains the assertion. There is one option for each possible outcome.
 
-##Text Based Questions##
-###Constructed Response###
+## Text Based Questions
+### Constructed Response
 The text match question requires a student to supply an answer to a question or complete a blank within a brief piece of text, using words, symbols or numbers.
-###Select Text###
+### Select Text
 A word/ Code/ Phrase is out of keeping with the rest of package.  This item requires user to select one or more words, phrases, or sentences from a passage. When user selects an option, its appearance changes to verify that it has been selected.
-###Essay Questions###
+### Essay Questions
 This item requires  examination on a given topic requiring a written analysis or explanation, usually of a specified length from a sentence to multiple pages.
 
 
-##Accessibility Considerations##
+## Accessibility Considerations
 
 <table>
 <tr>
@@ -141,7 +141,7 @@ This item requires  examination on a given topic requiring a written analysis or
 </tr>
 </table>
 
-##Resources##
+## Resources
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.ateassessments.org/">http://www.ateassessments.org/</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.caacentre.ac.uk/">http://www.caacentre.ac.uk/</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://assist-it.org.uk/assets/pdf/AAA.pdf">http://assist-it.org.uk/assets/pdf/AAA.pdf</a> - see page 70.

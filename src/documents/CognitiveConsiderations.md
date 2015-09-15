@@ -6,13 +6,13 @@ category: Methods
 ---
 
 
-##Introduction##
+## Introduction
 
 Cognitive considerations are particularly relevant to Web-based material. Most agree that the Web can present information in a way that overwhelms. Research and innovation in areas like visualization, text simplification, and generally interface design are squarely concerned with making Web content more approachable, readable, and digestible.
 
 This is another area where accessibility and inclusivity should enter the conversation. Inclusively-designed Web content can address the needs of a large audience while also addressing the needs of those with particular needs in cognitive, language, and learning areas. And as we contend elsewhere, many of the techniques described are useful for making information clearer and more easily used for all audiences.
 
-##Considerations - Starting points##
+## Considerations - Starting points
 
 * Some users have trouble understanding text, especially unusual words and complicated sentences.
 
@@ -20,7 +20,7 @@ This is another area where accessibility and inclusivity should enter the conver
 
 * Some users have trouble skimming text to find what they are looking for.
 
-##Text and/or Content simplification##
+## Text and/or Content simplification
 
 While there are many problems users may face, there are a few general design approaches that will help many users. Most of these approaches will make your content better for all users, and none of them will make your content worse.
 
@@ -56,7 +56,7 @@ A challenge for all users is finding the information they want on websites and w
 
 * Make it possible for users to shape your presentation to fit them.
 
-##User Interface simplification##
+## User Interface simplification
 
 Floe's <a href="http://wiki.fluidproject.org/pages/viewpage.action?pageId=29959408" rel="nofollow" target="_blank" class="link-external">User Interface Options</a> makes it possible for users to change the size of fonts, and change the colors that are used so that text is easier to read for them. Here are some other ways users can control your presentation.
 
@@ -72,7 +72,7 @@ Floe's <a href="http://wiki.fluidproject.org/pages/viewpage.action?pageId=299594
 
 Floe has conducted some early design work showing <a href="http://wiki.fluidproject.org/display/fluid/%28Floe%29+Content+simplification+conceptualization" rel="nofollow" target="_blank" class="link-external">UI simplification around content</a>.
 
-##Issues and Controversies##
+## Issues and Controversies
 
 There has been disagreement within the Web Accessibility community about how to address accessibility for people with cognitive, language, and learning disabilities.
 
