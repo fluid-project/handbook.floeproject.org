@@ -209,6 +209,7 @@ html body {
 }
 
 .docs-template td {
+    border: 0.5rem solid table-border-color;
     vertical-align: top;
 }
 
@@ -449,7 +450,6 @@ html body {
     max-width: 100%;
 
     p {
-        font-size: 0.8rem;
         margin-bottom: 0;
     }
 }
@@ -527,10 +527,6 @@ html body {
     border-bottom: 0.1rem dotted code-block-link-color;
     color: code-block-link-color;
     background: 0;
-}
-
-.docs-template-articleBody table td {
-    border: 1rem solid table-border-color;
 }
 
 /* Topics list */
@@ -769,7 +765,7 @@ html body {
         // override the default link hover style.
     }
 
-    a:hover img {
+    a:hover {
         outline: 0.2rem solid link-hover-background;
     }
 }
