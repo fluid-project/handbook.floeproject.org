@@ -274,7 +274,7 @@ html body {
     display: none;
 }
 
-.docs-core-sidebar-visibility .docs-template-skip-topics {
+.docs-core-sidebar-expanded .docs-template-skip-topics {
     display: initial;
 }
 
@@ -474,7 +474,7 @@ html body {
     width: 91.66%;
 }
 
-.docs-core-sidebar-visibility .docs-template-articleBody {
+.docs-core-sidebar-expanded .docs-template-articleBody {
     // put width back to the same as Foundation's medium-8
     width: 70%;
 
@@ -483,7 +483,7 @@ html body {
     // transition: width transitionTime;
 }
 
-.docs-template-404.docs-core-sidebar-visibility .docs-template-articleBody {
+.docs-template-404.docs-core-sidebar-expanded .docs-template-articleBody {
     width: 100%;
     max-width: none;
 }
@@ -549,7 +549,7 @@ html body {
     width: 1px;
 }
 
-.docs-core-sidebar-visibility .docs-template-topics-container {
+.docs-core-sidebar-expanded .docs-template-topics-container {
     overflow: auto;
     padding: 1.5rem;
     width: 25%; // put width back to the same as Foundation's medium-3
@@ -563,7 +563,7 @@ html body {
     -webkit-flex-grow: 2;
 }
 
-.docs-core-sidebar-visibility .docs-template-topics {
+.docs-core-sidebar-expanded .docs-template-topics {
     display: initial; // restore tabbability of topics
 }
 
@@ -571,8 +571,8 @@ html body {
     line-height: 2.3rem !important; // prevent UIO from changing this.
     margin: -4.4rem 0 0 -2rem;
     padding: 0.5rem;
-    min-width: 9rem;
-    width: 9rem;
+    min-width: 12.5rem;
+    width: 12.5rem;
     background: hideShow-background;
     z-index: 1;
 
@@ -859,11 +859,11 @@ html body {
         padding: 0.2rem;
     }
 
-    .docs-core-sidebar-visibility .docs-template-topics-container {
+    .docs-core-sidebar-expanded .docs-template-topics-container {
         width: 50%;
     }
 
-    .docs-core-sidebar-visibility .docs-template-articleBody {
+    .docs-core-sidebar-expanded .docs-template-articleBody {
         width: 50%;
     }
 
