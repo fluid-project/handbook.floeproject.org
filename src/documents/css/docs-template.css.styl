@@ -89,9 +89,9 @@ transitionTime ?= 0.5s;
 foregroundColor - the foreground colour of the contrast theme.
 backgroundColor - the background colour of the contrast theme.*/
 contrastThemeHideShowRibbonColor(foregroundColor, backgroundColor) {
-    border-bottom: 2.18rem solid foregroundColor;
+    border-bottom: 2.16rem solid foregroundColor;
     border-right: 2.1rem solid backgroundColor;
-    border-top: 2.2rem solid foregroundColor;
+    border-top: 2.16rem solid foregroundColor;
 }
 
 /* Generate the parts which are within a .fl-inverted-color class.
@@ -132,6 +132,11 @@ contrastThemeInverted(foregroundColor, backgroundColor) {
 foregroundColor - the foreground colour of the contrast theme.
 backgroundColor - the background colour of the contrast theme.*/
 contrastTheme(foregroundColor, backgroundColor) {
+    a:hover,
+    a {
+        transition: none;
+    }
+
     a:focus {
         outline: 0.2rem solid foregroundColor !important;
     }
@@ -151,6 +156,21 @@ contrastTheme(foregroundColor, backgroundColor) {
 
     .docs-template-topics-hideShow:after {
         contrastThemeHideShowRibbonColor(foregroundColor, backgroundColor)
+    }
+
+    figure a:hover {
+        outline: none !important;
+    }
+
+    figure a:hover img {
+        background-color: foregroundColor !important;
+    }
+
+    .docs-template-topics-hideShow a:focus,
+    .docs-template-topics-hideShow a:hover {
+        outline: none !important;
+        background-color: backgroundColor !important;
+        color: foregroundColor !important;
     }
 }
 
@@ -216,6 +236,11 @@ html body {
 .docs-template a {
     color: link-color;
     text-decoration: underline;
+    transition: backgroundColor 0.15s, background 0.15s, color 0.15s;
+}
+
+.docs-template a:hover {
+    transition: backgroundColor 0.15s, background 0.15s, color 0.15s;
 }
 
 /* override foundation, so UIO's line-spacing will work */
@@ -468,7 +493,7 @@ html body {
 
     //////////////////////////////////////////////////////////////
     // FLUID-5732.
-    // transition: width transitionTime;
+    //transition: width transitionTime;
 
     // make article wider to take more room.
     width: 91.66%;
@@ -476,11 +501,11 @@ html body {
 
 .docs-core-sidebar-expanded .docs-template-articleBody {
     // put width back to the same as Foundation's medium-8
-    width: 70%;
+    width: 75%;
 
     //////////////////////////////////////////////////////////////
     // FLUID-5732.
-    // transition: width transitionTime;
+    //transition: width transitionTime;
 }
 
 .docs-template-404.docs-core-sidebar-expanded .docs-template-articleBody {
@@ -570,9 +595,11 @@ html body {
 .docs-template-topics-hideShow {
     line-height: 2.3rem !important; // prevent UIO from changing this.
     margin: -4.4rem 0 0 -2rem;
-    padding: 0.5rem;
-    min-width: 12.5rem;
-    width: 12.5rem;
+    padding: 0.2rem;
+    min-width: 13rem;
+    $hideShowWidth = 14rem;
+    width: $hideShowWidth;
+    transition: width 0.2s;
     background: hideShow-background;
     z-index: 1;
 
@@ -593,22 +620,32 @@ html body {
         color: hideShow-color;
     }
 
+    &:hover,
+    &:focus {
+        width: $hideShowWidth + 1rem;
+        transition: width 0.2s;
+        outline: none;
+    }
+
     a {
         color: hideShow-color;
         margin-right: 0rem;
         margin-top: 0rem;
         background: hideShow-background;
-        padding: 0.5rem;
+        padding: 0.8rem;
         display: inline-block;
+        min-width: 11.2rem;
+        text-align: center;
     }
 
+    a:focus,
     a:hover {
         color: hideShow-hover-color;
         background: hideShow-hover-background;
     }
 
     a:focus {
-        outline: hideShow-focus;
+        outline: none;
     }
 }
 
@@ -763,9 +800,6 @@ html body {
     a:hover {
         background: figure-background;
         // override the default link hover style.
-    }
-
-    a:hover {
         outline: 0.2rem solid link-hover-background;
     }
 }
