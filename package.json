@@ -6,7 +6,6 @@
   "bugs": "http://issues.fluidproject.org/browse/FLUID",
   "homepage": "http://www.fluidproject.org/",
   "dependencies": {
-    "docpad": "~6.78.3",
     "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-highlightjs": "~2.3.0",
