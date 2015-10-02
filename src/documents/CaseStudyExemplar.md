@@ -19,7 +19,7 @@ This resource demonstrates the following accessibility features:
 * The interactive physics simulation in Chapter 3 can be played using a mouse. A keyboard-accessible version of the simulation has been developed, but it does not function properly within the EPUB document. Work is underway to address this (documented under issue  <a href="http://issues.fluidproject.org/browse/FLOE-287" rel="nofollow" target="_blank" class="link-external"> FLOE-287</a>).
 * The interactive physics simulation will load in iBooks on Mac OS 10.10 Yosemite, but not on Mac OS 10.9 Mavericks.
 
-In creating this exemplar, Pandoc (link: http://johnmacfarlane.net/pandoc/) was initially used to create an EPUB from HTML files. While Pandoc was excellent in converting HTML 5 into an EPUB 3 container, the output was unsuitable for handling desirable inclusive EPUB features, such as Media Overlays and WAI-ARIA markup. For a detailed (and somewhat technical) look at using Pandoc in creating an inclusive EPUB, see <a href="http://wiki.fluidproject.org/display/fluid/Experiences+with+Pandoc" rel="nofollow" target="_blank" class="link-external">Fluid Wiki - Experiences with Pandoc</a>.
+In creating this exemplar, Pandoc (link: <a href="http://johnmacfarlane.net/pandoc/" rel="nofollow" target="_blank" class="link-external">http://johnmacfarlane.net/pandoc/</a>) was initially used to create an EPUB from HTML files. While Pandoc was excellent in converting HTML 5 into an EPUB 3 container, the output was unsuitable for handling desirable inclusive EPUB features, such as Media Overlays and WAI-ARIA markup. For a detailed (and somewhat technical) look at using Pandoc in creating an inclusive EPUB, see <a href="http://wiki.fluidproject.org/display/fluid/Experiences+with+Pandoc" rel="nofollow" target="_blank" class="link-external">Fluid Wiki - Experiences with Pandoc</a>.
 
 The rest of this page provides some technical information about how the exemplar EPUB resource was created and some lessons learned along the way.
 
@@ -49,9 +49,9 @@ EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost al
 ## Scripts ##
 The interactive simulation we used in the exemplar EPUB is taken from <a href="http://phet.colorado.edu/" rel="nofollow" target="_blank" class="link-external"> PhET</a>, specificially the Forces and Motion simulation:
 
-* Online demo: http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html
-* Source code on github: https://github.com/phetsims/forces-and-motion-basics
-* Phet development overview: http://bit.ly/phet-development-overview
+* Online demo: <a href="http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" rel="nofollow" target="_blank" class="link-external">http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html</a>
+* Source code on github: <a href="https://github.com/phetsims/forces-and-motion-basics" rel="nofollow" target="_blank" class="link-external">https://github.com/phetsims/forces-and-motion-basics</a>
+* Phet development overview: <a href="http://bit.ly/phet-development-overview" rel="nofollow" target="_blank" class="link-external">http://bit.ly/phet-development-overview</a>
 
 In order to use scripts in EPUB, CDATA blocks need to be added. However this will break the HTML in browsers.
 ```
@@ -74,7 +74,7 @@ The following process was used to create the Media Overlays for the Inclusive EP
 
 2. Ensure there's an ID attribute on any HTML element you want highlighted.
 
-3. Record an audio narration of the text. We used the free tool Audacity http://audacity.sourceforge.net/
+3. Record an audio narration of the text. We used the <a href="http://audacityteam.org/" rel="nofollow" target="_blank" class="link-external">free audio editing tool Audacity</a>.
 
 4. Identify start and end timecodes for the blocks of audio corresponding to the granularity level you chose:
 * In Audacity, select the wave segment for the audio in question

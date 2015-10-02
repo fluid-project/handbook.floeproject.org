@@ -28,14 +28,14 @@ Here is the example provided by IDPF:
 </metadata>
 ```
 
-Source: <a rel="nofollow" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php"> http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php</a>
+Source: <a rel="nofollow" class="link-external" target="_blank" href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php"> http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php</a>
 
 
 What if your publication has two embedded videos, but only one has captions - how would you write metadata in this case? Since only some of the videos are captioned, it’s incorrect to specify accessibilityFeature:captions in the metadata.xml file.
 
 To specify metadata to a *part* of your publication, you would embed microdata directly into the HTML of the content itself. The following example illustrates how metadata would be created for embedded content.
 
-###Example: Embedded video without any metadata###
+### Example: Embedded video without any metadata ###
 
     <video>
     <source src="movie.mp4" type="video/mp4">
@@ -45,7 +45,7 @@ To specify metadata to a *part* of your publication, you would embed microdata d
     </video>
 
 
-###Example: Embedded video with basic metadata###
+### Example: Embedded video with basic metadata ###
 
 ```
 <video itemscope itemtype="http://schema.org/Movie">
@@ -60,7 +60,7 @@ To specify metadata to a *part* of your publication, you would embed microdata d
 </video>
 ```
 
-###Example: Embedded video with more descriptive metadata###
+### Example: Embedded video with more descriptive metadata ###
 
 ```
 <video itemscope itemtype="http://schema.org/Movie">
@@ -81,4 +81,4 @@ To specify metadata to a *part* of your publication, you would embed microdata d
   </span>
 </video>
 ```
-Source: <a rel="nofollow" class="link-external" href="http://wiki.fluidproject.org/display/fluid/Encoding+Accessibility+Metadata+for+Floe+-+Tables+and+Examples"> Encoding Accessibility Metadata for Floe</a>
+Source: <a rel="nofollow" class="link-external" target="_blank" href="http://wiki.fluidproject.org/display/fluid/Encoding+Accessibility+Metadata+for+Floe+-+Tables+and+Examples"> Encoding Accessibility Metadata for Floe</a>

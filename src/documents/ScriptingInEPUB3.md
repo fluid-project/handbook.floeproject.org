@@ -21,9 +21,6 @@ Using a similar approach to handling embedded media, the following are recommend
 can help identify invalid UTF-8 characters.
 
 ### Further reading
-*
-<a rel="nofollow" target="_blank" class="link-external"href="http://www.idpf.org/accessibility/guidelines/content/script/pe.php" rel="nofollow">"EPUB 3 Accessibility Guidelines: Scripted Interactivity - Progressive Enhancement" by IDPF.</a>
-*
-<a rel="nofollow" target="_blank" class="link-external" href="http://epubzone.org/news/epub-3-and-interactivity" rel="nofollow">"EPUB 3 and Interactivity", by Liza Daly, EPUB Zone.</a>
-*
-<a rel="nofollow" target="_blank" class="link-external" href="http://www.slideshare.net/jimmckeeth/java-script-interactive-widgets-for-ibooks-author-and-the-ipad" rel="nofollow">"Hacking iBooks and EPUB with Javascript!", by Jim McKeeth.</a>
+* <a rel="nofollow" target="_blank" class="link-external"href="http://www.idpf.org/accessibility/guidelines/content/script/pe.php" rel="nofollow">"EPUB 3 Accessibility Guidelines: Scripted Interactivity - Progressive Enhancement" by IDPF.</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://epubzone.org/news/epub-3-and-interactivity" rel="nofollow">"EPUB 3 and Interactivity", by Liza Daly, EPUB Zone.</a>
+* <a rel="nofollow" target="_blank" class="link-external" href="http://www.slideshare.net/jimmckeeth/java-script-interactive-widgets-for-ibooks-author-and-the-ipad" rel="nofollow">"Hacking iBooks and EPUB with Javascript!", by Jim McKeeth.</a>

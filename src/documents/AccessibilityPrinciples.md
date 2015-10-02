@@ -13,7 +13,7 @@ Also see [LearnerNeedsAndPreferences](/LearnerNeedsAndPreferences.html).
 
 Floe defines Inclusive Design as design that considers the full range of human diversity with respect to ability, language, culture, gender, age and other forms of human difference.
 
-Disability is the mismatch between the needs and preferences of the user and the system or environment. Accessibility, then, is the ability of the system or environment to accommodate the needs and preferences of each individual. To further understand these definitions and what it means for content creation, adaptation, and usability, look at the Floe work describing <a href="https://wiki.fluidproject.org/x/9YcNAQ">some user states and contexts</a>.
+Disability is the mismatch between the needs and preferences of the user and the system or environment. Accessibility, then, is the ability of the system or environment to accommodate the needs and preferences of each individual. To further understand these definitions and what it means for content creation, adaptation, and usability, look at the Floe work describing <a href="https://wiki.fluidproject.org/x/9YcNAQ" rel="nofollow" target="_blank" class="link-external">some user states and contexts</a>.
 
 ## Where to Begin?
 
@@ -23,11 +23,11 @@ In either case, making content more inclusive begins with understanding what kin
 
 Understanding the standards for making web content accessible is a great place to start.
 
-The <a href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines</a> are particularly important to Web content creators of text, images, forms, sounds, and more. Below is an introduction to its basic principles.
+The <a href="http://www.w3.org/TR/WCAG20/" rel="nofollow" target="_blank" class="link-external">Web Content Accessibility Guidelines</a> are particularly important to Web content creators of text, images, forms, sounds, and more. Below is an introduction to its basic principles.
 
 ## Accessibility Principles
 
-While individual resources might not be able to satisfy each principle exhaustively for every learner in all situations, the collective diversity of resources enabled through Floe could meet the needs and preferences of all learners. </p>
+While individual resources might not be able to satisfy each principle exhaustively for every learner in all situations, the collective diversity of resources enabled through Floe could meet the needs and preferences of all learners.
 
 ### Perceivability: Content should be consumable
 

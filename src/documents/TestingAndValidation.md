@@ -19,7 +19,7 @@ The following table represents a sampling of systems to consider testing with:
    * Amazon Kindle Fire
 * Reader Software:
    * Readium for Chrome browswer - <a rel="nofollow" target="_blank" class="link-external" href="http://readium.org/">http://readium.org/</a>
-   * iBooks for Mac OS X and iOS -
+* iBooks for Mac OS X and iOS - <a href="https://www.apple.com/ca/ibooks/" rel="nofollow" target="_blank" class="link-external">https://www.apple.com/ca/ibooks/</a>
    * Lucifox for Firefox browser - <a rel="nofollow" target="_blank" class="link-external" href="http://lucidor.org/lucifox/">http://lucidor.org/lucifox/</a>
    * Calibre for Mac OS X and Windows - <a rel="nofollow" target="_blank" class="link-external" href="http://calibre-ebook.com/">http://calibre-ebook.com/</a>
    * Universal Book Reader for Android - <a rel="nofollow" target="_blank" class="link-external" href="http://www.mobisystems.com/android/ub-reader/">http://www.mobisystems.com/android/ub-reader/</a>
@@ -35,7 +35,7 @@ There are a number of reasons why it is important to test a variety of systems a
 
 As when building a website, cross-system testing is important to ensure the message and content you want to convey comes across accurately.
 
-##Validation##
+## Validation ##
 
 Validating an EPUB file will ensure that it conforms to the EPUB specification.
 
