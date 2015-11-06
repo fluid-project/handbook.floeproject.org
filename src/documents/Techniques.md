@@ -14,7 +14,7 @@ An inclusive learning experience is one that matches the needs of the individual
 * linguistic or cultural preferences;
 * technical, financial or environmental constraints.
 
-One way for an OER delivery system to accommodate these needs is to flexibly adjust the properties of a resource to match the needs and preferences of the user, or in some cases, to locate alternative resources. In order to accomplish this, a system must have enough information about a resource to assess whether or not it matches the user's needs. This information can be provided using [metadata](/Metadata.html).
+One way for an OER delivery system to accommodate these needs is to flexibly adjust the properties of a resource to match the needs and preferences of the user, or in some cases, to locate alternative resources. In order to accomplish this, a system must have enough information about a resource to assess whether or not it matches the user's needs. This information can be provided using [metadata](Metadata.html).
 
 ## Allow the creation of variations and enhancements
 
@@ -26,7 +26,7 @@ While it is difficult for a content creator to produce all the possible variatio
 
 For a learning environment to adapt to the needs of the individual learner, those needs must be known. The resource delivery system can enable each learner, or their support team, to identify the learner’s functional learning needs and to store them in a learning profile.
 
-The [AccessForAll](/AccessForAll.html) specification provides an interoperable format for learning profiles designed to work with the AccessForAll metadata format. By supporting both formats, an OER delivery system will be able to automatically optimize the learning experience for each individual learner according to his/her own personal needs.
+The [AccessForAll](AccessForAll.html) specification provides an interoperable format for learning profiles designed to work with the AccessForAll metadata format. By supporting both formats, an OER delivery system will be able to automatically optimize the learning experience for each individual learner according to his/her own personal needs.
 
 ## Support flexible styling
 
@@ -36,7 +36,7 @@ Supporting flexible styling can be as simple as using Cascading Style Sheets (CS
 
 
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/uiOptions/demo.html" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
+* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
 
 ## Support keyboard control of functions and navigation
 
@@ -63,7 +63,7 @@ A text caption makes the information in the audio content available to these lea
 
 <span class="ildh-related">
 Floe examples:
-* [Authoring of content](/AuthoringOfContent.html)
+* [Authoring of content](AuthoringOfContent.html)
 </span>
 
 ## Separate text that can be read in the interface from underlying code

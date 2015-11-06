@@ -38,7 +38,7 @@ Math notation and equations is traditionally challenging to make accessible and 
 * given a literal translation to clarify notation
 * elaborated with longer descriptions and definitions to give an additional avenue for understanding
 
-Refer to the [Mathematics](/Mathematics.html) section for techniques to adding inclusive math content to EPUB.
+Refer to the [Mathematics](Mathematics.html) section for techniques to adding inclusive math content to EPUB.
 
 ## Further reading: ##
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/WAI/intro/aria"> WAI-ARIA W3C Web Accessibility Initiative Aria Overview</a>

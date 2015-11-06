@@ -29,6 +29,7 @@
                     { "pageName": "Techniques", "href": "/Techniques.html"},
                     { "pageName": "Metadata", "href": "/Metadata.html"},
                     { "pageName": "Access for All", "href": "/AccessForAll.html"},
+                    { "pageName": "Schema.org Accessibility Properties", "href": "/SchemaOrgAccessibilityProperties.html"},
                     { "pageName": "Learner Needs and Preferences", "href": "/LearnerNeedsAndPreferences.html"},
                     { "pageName": "Video Content and Learning", "href": "/VideoContentAndLearning.html"},
                     { "pageName": "Audio Content and Learning", "href": "/AudioContentAndLearning.html"},
