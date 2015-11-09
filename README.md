@@ -10,9 +10,9 @@ This project contains the content needed to build and deploy a copy of the Inclu
 4. Run docpad: `docpad run`
 5. Confirm everything is working by loading `http://localhost:9778/` in a web browser.
 
-# Getting Updates for Your Custom Site
+# Getting Updates from docs-template for the Inclusive Learning Design Handbook
 
-Periodically `docs-template` will have updates. To update:
+Periodically `docs-template` will have updates. It is suggested you keep up to update with these changes:
 
 ```
 git remote add docs-template  https://github.com/fluid-project/docs-template
@@ -20,6 +20,8 @@ git fetch docs-template
 git merge docs-template/master
 npm update
 ```
+
+Conflicts are expected to occur when merging in changes from `docs-template` to your custom site. Manually resolve each conflict.
 
 # Deploy to GitHub Pages
 ```
