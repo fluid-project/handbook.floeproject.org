@@ -36,13 +36,13 @@ Supporting flexible styling can be as simple as using Cascading Style Sheets (CS
 
 
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
+* <a href="http://build.fluidproject.org/infusion/demos/uiOptions/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
 
 ## Support keyboard control of functions and navigation
 
 Many learners cannot or prefer not to use a mouse. This may be because of a mobility or visual impairment, because they are using a mobile device that only has a keypad, or perhaps they are using a laptop and find the trackpad awkward. Non-mouse users should still be able to interact with OERs.
 
-OER creators can ensure that anything that can be accomplished using a mouse can also be accomplished using the keyboard. This includes navigation as well as any interactions with dynamic content. In HTML, for example, the tabindex attribute can be used to ensure that items are focusable using the Tab key, and any actions that happen when a learner clicks on an item should also be activatable using the `Space` or `Enter` key.
+OER creators can ensure that anything that can be accomplished using a mouse can also be accomplished using the keyboard. This includes navigation as well as any interactions with dynamic content. In HTML, for example, the `tabindex` attribute can be used to ensure that items are focusable using the Tab key, and any actions that happen when a learner clicks on an item should also be usable with the `Space` or `Enter` key.
 
 ## Provide audio or text descriptions of non-text information presented in videos, graphics or images
 
