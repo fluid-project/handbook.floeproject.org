@@ -5,9 +5,9 @@ category: Methods
 ---
 ## What Makes Content Accessible?</span>
 
-The Floe approach to [inclusive learning](/InclusiveLearning.html) emphasizes a "one size fits one" approach. Instead of having a single resource that tries to be accessible to every possible need and preference (i.e., "one size fits all"), Floe encourages a diversity of individualized resources that meet the diverse needs and preferences of leaners through transformation, supplementation, and remixing of existing resources.
+The Floe approach to [inclusive learning](InclusiveLearning.html) emphasizes a "one size fits one" approach. Instead of having a single resource that tries to be accessible to every possible need and preference (i.e., "one size fits all"), Floe encourages a diversity of individualized resources that meet the diverse needs and preferences of leaners through transformation, supplementation, and remixing of existing resources.
 
-Also see [LearnerNeedsAndPreferences](/LearnerNeedsAndPreferences.html).
+Also see [Learner Needs and Preferences](LearnerNeedsAndPreferences.html).
 
 ## Understanding Accessibility and Inclusivity</span>
 
@@ -17,7 +17,7 @@ Disability is the mismatch between the needs and preferences of the user and the
 
 ## Where to Begin?
 
-If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more adaptable, and more configurable to individual learner needs. Of course, [authoring content](/AuthoringOfContent.html) in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable. There are also options for making materials more accessible "after the fact" (see [Video content and learning](/VideoContentAndLearning.html), [Audio content and learning](/AudioContentAndLearning.html), [Cognitive considerations](/Cognitive_considerations.html)).
+If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more adaptable, and more configurable to individual learner needs. Of course, [authoring content](AuthoringOfContent.html) in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable. There are also options for making materials more accessible "after the fact" (see [Video content and learning](VideoContentAndLearning.html), [Audio content and learning](AudioContentAndLearning.html), [Cognitive considerations](CognitiveConsiderations.html)).
 
 In either case, making content more inclusive begins with understanding what kinds of alternatives are needed, and realizing that inclusivity and accessibility are achieved through awareness, adaptation, collaboration, and flexibility. There is no definitive checklist, no machine that churns out accessible materials. With awareness and the tools (like those made through Floe), we can commit to making our materials more inclusive and more accessible.
 
@@ -41,7 +41,7 @@ Some ways this can be accomplished:
 Floe examples:
 * <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a>
 (sometimes known as UI Options)
-* [Video content and learning](/VideoContentAndLearning.html)
+* [Video content and learning](VideoContentAndLearning.html)
 * <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="link-external">ADOD</a>
 
 ### Understandability: Content should be plain and clear to comprehend
@@ -55,9 +55,9 @@ Some things that can be done:
 *  Make content appear and operate in predictable ways.
 
 Floe examples:
-* [Cognitive considerations](/CognitiveConsiderations.html)
+* [Cognitive considerations](CognitiveConsiderations.html)
 * <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
-* [Video content and learning](/VideoContentAndLearning.html)
+* [Video content and learning](VideoContentAndLearning.html)
 
 ### Operability: Interactions should be operable by everyone
 
@@ -73,7 +73,7 @@ Floe examples:
 
 Floe examples:
 * <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
-* [Video content and learning](/VideoContentAndLearning.html)
+* [Video content and learning](VideoContentAndLearning.html)
 
 ### Robustness: Resources should be compatible with tools now and later
 
