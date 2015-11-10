@@ -12,7 +12,7 @@ This project contains the content needed to build and deploy a copy of the Inclu
 
 # Getting Updates from docs-template for the Inclusive Learning Design Handbook
 
-Periodically `docs-template` will have updates. It is suggested you keep up to update with these changes:
+Periodically `docs-template` will have updates. It is suggested you keep up to date with these changes:
 
 ```
 git remote add docs-template  https://github.com/fluid-project/docs-template
@@ -21,7 +21,7 @@ git merge docs-template/master
 npm update
 ```
 
-Conflicts are expected to occur when merging in changes from `docs-template` to your custom site. Manually resolve each conflict.
+Conflicts may occur when merging in changes from `docs-template` to your custom site. Manually resolve each conflict.
 
 # Deploy to GitHub Pages
 ```
