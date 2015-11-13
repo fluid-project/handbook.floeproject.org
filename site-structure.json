@@ -34,7 +34,8 @@
                     { "pageName": "Video Content and Learning", "href": "/VideoContentAndLearning.html"},
                     { "pageName": "Audio Content and Learning", "href": "/AudioContentAndLearning.html"},
                     { "pageName": "Authoring of Content", "href": "/AuthoringOfContent.html"},
-                    { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"}
+                    { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"},
+                    { "pageName": "Web Games and Simulations", "href": "/WebGamesAndSimulations.html"}
                 ]
             }
         ]
