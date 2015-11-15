@@ -22,6 +22,12 @@ The key to making embedded media understood in a wide variety of situations is t
 * Provide captions in plain text as a transcript, or use the `<track>` element to add synchronized captions to audio and video.
 * Multiple `<track>` elements can be used to provide alternate audio tracks in different languages or to provide audio descriptions. Note that some platforms may not support `<track>` elements.
 
+## Poet Image Description Tool
+
+The Poet Image Description Tool is a web-based tool for creating and providing guidelines to writing image descriptions for images in existing DAISY and EPUB books. This tool has resources to help content authors create image descriptions following an extended NCAM guideline. There is also a math editor which transcribes math into readable format,
+
+See: Poet Image Description Tool at <a href="http://diagramcenter.org/development/poet.html" rel="nofollow" target="_blank" class="link-external">http://diagramcenter.org/development/poet.html</a>.
+
 ## Further reading ##
 
 * <a rel="nofollow" target="_blank" class="link-external" href="http://chimera.labs.oreilly.com/books/1234000000770/ch03.html"> "`<audio>`/`<video>` for Publishers" O'Reilly Media, Inc</a>

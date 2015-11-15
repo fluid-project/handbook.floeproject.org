@@ -89,8 +89,14 @@ Some methods in providing a more inclusive experience of charts and graphs:
 If using a table of data:
 
 * Follow best practices for table formatting (i.e. proper use of table headers, no table nesting). <a href="https://www.webaccessibility.com/best_practices.php?technology_platform_id=8" rel="nofollow" target="_blank" class="link-external">See Data Table Best Practices at WebAccessibility.com</a>
-* Any math, symbols, units, or acronyms defined
+* Any math, symbols, units, or acronyms defined. For additional information about making math accessible, see [Mathematics](Mathematics.html).
 * Tables can be cumbersome to navigate (like with screen readers, small mobile displays, or screen magnifiers). Simplify and separate data tables if possible.
+
+## Poet Image Description Tool for Graphs
+
+The Poet Image Description Tool is a web-based tool for creating and providing guidelines to writing image descriptions for images in existing DAISY and EPUB books. This tool has resources and tools to help content authors create good image descriptions following an extended NCAM guideline. There is also a math editor which transcribes math into readable format,
+
+See: Poet Image Description Tool at <a href="http://diagramcenter.org/development/poet.html" rel="nofollow" target="_blank" class="link-external">http://diagramcenter.org/development/poet.html</a>.
 
 ##  Cognitive
 
@@ -127,7 +133,7 @@ You want to get your users into the experience as quickly as possible:
 
 Make sure that symbols, math notation, and other glyphs have the desired textual output. For example: 1/2 should read as “one half” and not “one slash two”.
 
-* Consider using MathML for math notations. See example: [Mathematics](Mathematics.html)
+* Consider using MathML for math notations. See example: [Mathematics](Mathematics.html).
 * Acronyms and abbreviations should use the <abbr> element with the relevant aria properties. For example:
     * <abbr role="text" title="kilograms" aria-label="kilograms">kg</abbr>
     * <abbr role="text" title="miles per hour" aria-label="miles per hour">mph</abbr>
