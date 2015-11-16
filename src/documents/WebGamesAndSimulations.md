@@ -77,17 +77,17 @@ Some methods for providing more inclusive experience of charts and graphs:
 
 * Provide alternatives to charts. Give text descriptions and interpretations of the data, give a table of data.
 * A good description identifies:
-    * What is being shown (i.e. the purpose of the chart)
+    * What is being shown (i.e. the purpose of the chart).
     * Describe the values (relative sizes and differences between values).
     * Describe any patterns to may help us understand the data.
     * Summarize the trend / data pattern.
 * Also see:
-    * PSU’s chart accessibility guide - <a href="http://accessibility.psu.edu/images/charts/" rel="nofollow" target="_blank" class="link-external">http://accessibility.psu.edu/images/charts/</a>
-    * W3C's guide on describing complex images - <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>
+    * PSU’s chart accessibility guide - <a href="http://accessibility.psu.edu/images/charts/" rel="nofollow" target="_blank" class="link-external">http://accessibility.psu.edu/images/charts/</a>.
+    * W3C's guide on describing complex images - <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>.
 
 If using a table of data:
 
-* Follow best practices for table formatting (i.e. proper use of table headers, no table nesting). <a href="https://www.webaccessibility.com/best_practices.php?technology_platform_id=8" rel="nofollow" target="_blank" class="link-external">See Data Table Best Practices at WebAccessibility.com</a>
+* Follow best practices for table formatting (i.e. proper use of table headers, no table nesting). <a href="https://www.webaccessibility.com/best_practices.php?technology_platform_id=8" rel="nofollow" target="_blank" class="link-external">See Data Table Best Practices at WebAccessibility.com</a>.
 * Any math, symbols, units, or acronyms defined. For additional information about making math accessible, see [Mathematics](Mathematics.html).
 * Tables can be cumbersome to navigate (like with screen readers, small mobile displays, or screen magnifiers). Simplify and separate data tables if possible.
 
