@@ -24,7 +24,7 @@ The key to making embedded media understood in a wide variety of situations is t
 
 ## Poet Image Description Tool
 
-The Poet Image Description Tool is a web-based tool for creating and providing guidelines to writing image descriptions for images in existing DAISY and EPUB books. This tool has resources to help content authors create image descriptions following an extended NCAM guideline. There is also a math editor which transcribes math into readable format,
+The Poet Image Description Tool is a web-based tool for creating image descriptions in existing DAISY and EPUB books. This tool has resources and tools to help content authors create good image descriptions following an extended NCAM guideline. There is also a math editor which transcribes math into readable format.
 
 See: Poet Image Description Tool at <a href="http://diagramcenter.org/development/poet.html" rel="nofollow" target="_blank" class="link-external">http://diagramcenter.org/development/poet.html</a>.
 
