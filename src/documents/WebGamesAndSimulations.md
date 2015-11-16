@@ -123,7 +123,7 @@ For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" r
 Many users, not just users of screen readers, use the keyboard to interact with their computer. Some users may be using a keypad, a joystick mapped to keys, or a single-switch to navigate a virtual keyboard. A succinct keyboard interaction will help these learners focus on the content and not the mechanics of interaction.
 
 * Tab order should be consistent with existing user experiences and conventions. Generally tab order follows reading order for your region (e.g. left-to-right, top-to-bottom).
-* Many screen readers have their own keys related to navigation and interaction - use custom hotkeys with caution.
+* Many screen readers have their own keys related to navigation and interaction. Therefore if your application has implemented its own keyboard interaction, it may conflict with keys used by assistive technologies. To understand the different modes a screen reader can navigate and consume content, visit "<a href="http://tink.uk/understanding-screen-reader-interaction-modes/" rel="nofollow" target="_blank" class="link-external">Understanding screen reader interaction modes</a>" on tink.uk.
 * Default browser focus styling is often too subtle to be noticeable by many users. It is recommended to use focus styling that is more noticeable by either using a thicker border or better colour contrast.
 
 You want to get your users into the experience as quickly as possible:
