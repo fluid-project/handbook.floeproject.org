@@ -104,14 +104,13 @@ Information should be presented in a clear concise manner, and where possible st
 * Instructions should be clear and concise, using a language that is appropriate.
 * If there is any possibility of confusion, make help readily available.
 * Avoid really dense content and interactions. Leverage semantic markup such as `<section>` elements with proper `<h1>` headings to help group content into navigable chunks.
-* Consider presenting information as needed, rather than presenting it all up front.
-* For example: Instead of printing instructions up front in plain text, instructions on how to use a control may be better presented when the user is hovering or focused on that control (like a tooltip). This helps reduce cognitive load and gives information only when it's needed.
+* Consider presenting information as needed, rather than presenting it all up front. Instructions may be better presented in context of the button or action (like a tooltip). This helps reduce cognitive load and gives information only when it's needed.
 
 For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" rel="nofollow" target="_blank" class="link-external">Designing interfaces to meet the needs of users with cognitive disabilities</a>.
 
 ##  Visual Perception
 
-* Do not rely on colour to convey meaning. If this is unavoidable, provide a text label or text descriptions.
+* Do not rely on colour alone to convey meaning. If this is unavoidable, provide a text label or text descriptions.
 * Avoid using transition / animation effects on content that is critical to the outcomes of the game. These effects may be missed or misunderstood.
 * Use opacity, transparency, alpha channels with caution. These effects may make it more difficult for some users to distinguish content from the background.
 
@@ -119,24 +118,24 @@ For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" r
 
 Many users, not just users of screen readers, use the keyboard to interact with their computer. Some users may be using a keypad, a joystick mapped to keys, or a single-switch to navigate a virtual keyboard. A succinct keyboard interaction will help these learners focus on the content and not the mechanics of interaction.
 
-* Tab order should be consistent with existing user experiences and conventions. Generally tab order follows reading order for your region (i.e. left-to-right, top-to-bottom).
-* Use custom hotkeys with caution as many screen readers have their own keys related to navigation and interaction.
-* Default browser focus styling is often too subtle to be noticeable by many users. It is recommended to use focus styling that is more noticeable by either using a thicker border and better colour contrast.
+* Tab order should be consistent with existing user experiences and conventions. Generally tab order follows reading order for your region (e.g. left-to-right, top-to-bottom).
+* Mny screen readers have their own keys related to navigation and interaction - use custom hotkeys with caution.
+* Default browser focus styling is often too subtle to be noticeable by many users. It is recommended to use focus styling that is more noticeable by either using a thicker border or better colour contrast.
 
 You want to get your users into the experience as quickly as possible:
-* If there is a group of navigation elements such as a site menu, navigation breadcrumb, or other common "header" features up front - use accessibility "skip" links to jump to the main content. Also using HTML 5 semantic markup such as `<nav>` and `<header>` will help screen readers identify content and be able to skip past them if needed.
-* To add a skip link to your content, see this article on WebAIM: <a href="http://webaim.org/techniques/skipnav/" rel="nofollow" target="_blank" class="link-external">http://webaim.org/techniques/skipnav/</a>
-* Tab order should properly "cycle around" when tabbing through. Watch for focus traps or hidden elements which may break the game for users.
+* If there is a group of navigation elements such as a site menu, navigation breadcrumb, or other common "header" features up front, use accessibility "skip" links to jump to the main content. Also using HTML 5 semantic markup such as `<nav>` and `<header>` will help screen readers identify content and be able to skip past them if needed.
+    * To add a skip link to your content, see this article on WebAIM: <a href="http://webaim.org/techniques/skipnav/" rel="nofollow" target="_blank" class="link-external">http://webaim.org/techniques/skipnav/</a>
+* When tabbing through - focus should "wrap around" to the start of the tab order when the end has been reached. Watch for focus traps or hidden elements which may confuse or break the game for users.
 
 ##  Images, Symbols, Math, Icons, and Glyphs
 
-Make sure that symbols, math notation, and other glyphs have the desired textual output. For example: 1/2 should read as “one half” and not “one slash two”.
+Make sure that symbols, math notation, and other glyphs have the desired textual output when read by a screen reader. For example: "1/2" should read as “one half” and not “one slash two”.
 
 * Consider using MathML for math notations. See example: [Mathematics](Mathematics.html).
 * Acronyms and abbreviations should use the <abbr> element with the relevant aria properties. For example:
-    * <abbr role="text" title="kilograms" aria-label="kilograms">kg</abbr>
-    * <abbr role="text" title="miles per hour" aria-label="miles per hour">mph</abbr>
-    * Also see:  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr rel="nofollow" target="_blank" class="link-external"
+    * `<abbr role="text" title="kilograms" aria-label="kilograms">kg</abbr>`
+    * `<abbr role="text" title="miles per hour" aria-label="miles per hour">mph</abbr>`
+    * Also see:  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" rel="nofollow" target="_blank" class="link-external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr</a>
 
 * For icons and symbols, use alt-text (if it is an image) and aria-label <a href="http://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects"</a>
 * If images are in the background and are cosmetic, they do not require text descriptions. Provide text descriptions for visual content that is important to the interaction.
