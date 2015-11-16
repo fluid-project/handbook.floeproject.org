@@ -73,23 +73,24 @@ Punctuation helps a screen reader know when to pause, or give proper emphasis.
 
 Charts and graphs are an excellent way to convey data in a meaningful way. However, charts and graphs typically favour a student who is capable of perceiving the content and can cognitively process the information.
 
-Some methods for providing more inclusive experience of charts and graphs:
+To make charts and graphs more inclusive:
 
 * Provide alternatives to charts. Give text descriptions and interpretations of the data, give a table of data.
-* A good description identifies:
-    * What is being shown (i.e. the purpose of the chart).
-    * Describe the values (relative sizes and differences between values).
-    * Describe any patterns to may help us understand the data.
-    * Summarize the trend / data pattern.
-* Also see:
-    * PSU’s chart accessibility guide - <a href="http://accessibility.psu.edu/images/charts/" rel="nofollow" target="_blank" class="link-external">http://accessibility.psu.edu/images/charts/</a>.
-    * W3C's guide on describing complex images - <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>.
+* Write a good description:
+    * Identifies what is being shown (i.e. the purpose of the chart).
+    * Describes the values (relative sizes and differences between values).
+    * Describes any patterns to may help us understand the data.
+    * Summarizes the trend / data pattern.
+
+For additional resources on describing complex diagrams, see:
+* PSU’s chart accessibility guide - <a href="http://accessibility.psu.edu/images/charts/" rel="nofollow" target="_blank" class="link-external">http://accessibility.psu.edu/images/charts/</a>.
+* W3C's guide on describing complex images - <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>.
 
 If using a table of data:
 
 * Follow best practices for table formatting (i.e. proper use of table headers, no table nesting). <a href="https://www.webaccessibility.com/best_practices.php?technology_platform_id=8" rel="nofollow" target="_blank" class="link-external">See Data Table Best Practices at WebAccessibility.com</a>.
-* Any math, symbols, units, or acronyms defined. For additional information about making math accessible, see [Mathematics](Mathematics.html).
-* Tables can be cumbersome to navigate (like with screen readers, small mobile displays, or screen magnifiers). Simplify and separate data tables if possible.
+* Define any math, symbols, units, or acronyms. For additional information about making math accessible, see [Mathematics](Mathematics.html).
+* Simplify and separate data tables if possible. Tables can be cumbersome to navigate (like with screen readers, small mobile displays, or screen magnifiers), so splitting and simplifying can be helpful.
 
 ## Poet Image Description Tool for Graphs
 
@@ -104,6 +105,9 @@ Information should be presented in a clear concise manner, and where possible st
 * Instructions should be clear and concise, using a language that is appropriate.
 * If there is any possibility of confusion, make help readily available.
 * Avoid really dense content and interactions. Leverage semantic markup such as `<section>` elements with proper `<h1>` headings to help group content into navigable chunks.
+* Consider presenting information as needed, rather than presenting it all up front.
+    * For example, instead of printing instructions up front in text, instructions may be better presented when the user is hovering or focused on that control (like a tooltip). This helps reduce cognitive load and gives information only when it's needed.
+
 * Consider presenting information as needed, rather than presenting it all up front. Instructions may be better presented in context of the button or action (like a tooltip). This helps reduce cognitive load and gives information only when it's needed.
 
 For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" rel="nofollow" target="_blank" class="link-external">Designing interfaces to meet the needs of users with cognitive disabilities</a>.
@@ -119,7 +123,7 @@ For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" r
 Many users, not just users of screen readers, use the keyboard to interact with their computer. Some users may be using a keypad, a joystick mapped to keys, or a single-switch to navigate a virtual keyboard. A succinct keyboard interaction will help these learners focus on the content and not the mechanics of interaction.
 
 * Tab order should be consistent with existing user experiences and conventions. Generally tab order follows reading order for your region (e.g. left-to-right, top-to-bottom).
-* Mny screen readers have their own keys related to navigation and interaction - use custom hotkeys with caution.
+* Many screen readers have their own keys related to navigation and interaction - use custom hotkeys with caution.
 * Default browser focus styling is often too subtle to be noticeable by many users. It is recommended to use focus styling that is more noticeable by either using a thicker border or better colour contrast.
 
 You want to get your users into the experience as quickly as possible:
