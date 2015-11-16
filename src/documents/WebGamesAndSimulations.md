@@ -4,22 +4,22 @@ layout: default
 category: Methods
 ---
 
-Interactive games can provide rich learning experiences for many students - but for some, these games are a accessibility and inclusivity challenge. This guide aims at giving some practical techniques to help improve the inclusiveness and accessibility of interactive content whether retrofitting existing content or creating a new game from scratch.
+Interactive games can provide rich learning experiences for many students - but for some, these games are an accessibility and inclusivity challenge. This guide aims at giving some practical techniques to help improve the inclusiveness and accessibility of interactive content whether retrofitting existing content or creating a new game from scratch.
 
 **Scope of this Guide:** This guide deals with interactive games built using standard web technologies such as HTML5, CSS, SVG, and JavaScript. By using established web standards, the content you create has a higher chance of being understood by assistive technologies.
 
 ## Orienting the User
 
-Regardless of the modality used for interaction, a logical, predictable structure helps users focus on learning and the experience instead of getting stuck on the interaction. Consistency and predicability is important.
+Regardless of the modality used for interaction, a logical, predictable structure helps users focus on learning instead of getting stuck on the interaction. Consistency and predicability is important.
 
 Help orient the user by:
 
-* having a consistent structure.
-* describe the scene and setting so non-visual users can understand their context.
-* identifying the actors and interactive parts.
-* giving meaningful and predictable landmarks for the user.
-* use progress and status indicators as necessary.
-* try to keep the structure stable. Be mindful about removing items completely from the structure - consider disabling elements rather than removing them.
+* having a consistent structure;
+* describing the scene and setting so non-visual users can understand their context;
+* identifying the actors and interactive parts;
+* giving meaningful and predictable landmarks for the user;
+* using progress and status indicators as necessary;
+* trying to keep the structure stable. Be mindful about removing items completely from the structure - consider disabling elements rather than removing them.
 
 ## Player Choices and Controls
 
@@ -27,21 +27,21 @@ Some people make choices easily, while others require more time before making de
 
 If presenting learners with multiple choices that affect the outcome of a game:
 
-* If possible, make choices forgiving: give opportunity for users to recover from or change their choices.
+* If possible, make choices forgiving: give opportunity for users to recover from, or change their choices.
 * Avoid player choices which require decisions within a time limit or provide options to disable such features.
 
 Other best practices are:
 * Label each button and control. Labels should use simple terminology and define any terms if necessary.
 * Labels should state simply what the button will do. If longer descriptions are needed, use an `aria-describedby` property.
 * Buttons, links, controls should make it clear what the outcome would be. For example: A choice called "I'm out of here" could be changed to "I'm out of here - quit game", or simply "Quit".
-* In some cases text where text labels are not visible (example: icon buttons that do not have visible text labels), consider using this technique for making invisible content for screen readers: <a href="http://webaim.org/techniques/css/invisiblecontent/" rel="nofollow" target="_blank" class="link-external">"Invisible Content Just for Screen Reader Users" on WebAim.org</a>.
+* For graphical buttons, like icons on a toolbar, use `aria-labelledby` to label the button and then use a technique to hide the text visually. The following article shows how to visibly hide content, but keeping it accessible:  <a href="http://webaim.org/techniques/css/invisiblecontent/" rel="nofollow" target="_blank" class="link-external">"Invisible Content Just for Screen Reader Users" on WebAim.org</a>.
 
 ## Communicating Events and Actions with Text and Sound
 
 A large part of interactive content are the events that happen during and after a user performs an action. Often these occur as on-screen visuals, animations, and transitions. The following are some techniques for creating an equivalent experience for non-sighted learners:
 
-* Use ARIA live-regions to communicate changes to the interface.
-* Use ARIA `describedby` to write text descriptions of what has happened.
+* Use `aria-live` regions to communicate changes to the interface. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" rel="nofollow" target="_blank" class="link-external">"Aria Live Regions" article on Mozilla Developers</a> gives an overview of how `aria-live` is used.
+* Use ARIA `describedby` to write text descriptions of what has happened. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute" rel="nofollow" target="_blank" class="link-external">"Using the aria-describedby attribute" article on Mozilla Developers</a> shows how `describedby` can be used.
 * Consider use of various sounds to convey meaning. For example, to convey proximity of one object to another, use a tone of increasing pitch like a Theremin (visit <a href="https://en.wikipedia.org/wiki/Theremin" rel="nofollow" target="_blank" class="link-external">Theremin on Wikipedia</a>).
     * To find out more about how sound can be used to enhance learning, see <a href="https://wiki.fluidproject.org/display/fluid/Floe+Sonification+Work" rel="nofollow" target="_blank" class="link-external">Floe Sonification Work on the Fluid Project Wiki</a>.
 
@@ -56,8 +56,7 @@ Follow a good structure and use semantic markup:
 ## Visuals
 
 * Provide text descriptions for important visuals: images should have alt-text and longer text descriptions if necessary. Use `aria-describedby` or `longdesc` as required. See: <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>
-* Content contained in the background (using background CSS property), :before or :after elements are ignored by screen readers. Do not put important content within these elements. Use standard elements like `<image>`, `<div>`, `<figure>`, etc. as needed.
-* Images which are in the background should be cosmetic and not critical to the outcomes. Use `<img>` and `<figure>` as necessary for important graphics / images.
+* Content contained in the background (using background CSS property), :before or :after elements are ignored by screen readers. Do not put important content within these elements. Use `<figure>` and `<figcaption>` pattern as necessary for important graphics / images.
 * Ensure good contrast in colours and details. You can check your colours by using the <a href="http://webaim.org/resources/contrastchecker/" rel="nofollow" target="_blank" class="link-external">WebAIM Color Contrast Checker</a>.
 
 ## Punctuation
@@ -74,7 +73,7 @@ Punctuation helps a screen reader know when to pause, or give proper emphasis.
 
 Charts and graphs are an excellent way to convey data in a meaningful way. However, charts and graphs typically favour a student who is capable of perceiving the content and can cognitively process the information.
 
-Some methods in providing a more inclusive experience of charts and graphs:
+Some methods for providing more inclusive experience of charts and graphs:
 
 * Provide alternatives to charts. Give text descriptions and interpretations of the data, give a table of data.
 * A good description identifies:
