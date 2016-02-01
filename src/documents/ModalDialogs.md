@@ -7,15 +7,17 @@ category: Methods
 
 ## What are Modal Dialogs
 
-A modal dialog is an interaction where the user is forced to take an action required before proceeding to another activity. Typically modal dialogs are visually displayed as a child window which interrupts the user's workflow until it is dismissed.
+A modal dialog is an interaction where the user is forced to take an action required before proceeding to another activity. Typically modal dialogs are visually displayed as a child window which interrupts the user's workflow until it is addressed.
+
+Typically these are windows or "pop-ups" which block any further interaction until a control (like an "OK" button) is selected.
 
 ## Why Should You Care?
 
 Modal dialogs should be used cautiously because they create a cognitive burden by:
 
-1. causing the opposite result since dialogs are often dismissed without consideration <sup>1</sup>,
-2. interrupting workflow and making the task longer to complete <sup>2</sup>, and
-3. increasing error rate by distracting the user <sup>3</sup>.
+1. causing the opposite result since dialogs are often dismissed without consideration <sup><a href="#footnote_1" aria-label="Footnote 1">1</a></sup>,
+2. interrupting workflow and making the task longer to complete <sup><a href="#footnote_2" aria-label="Footnote 2">2</a></sup>, and
+3. increasing error rate by distracting the user <sup><a href="#footnote_3" aria-label="Footnote 3">3</a></sup>.
 
 The way a dialog is implemented can also cause problems by:
 
@@ -45,23 +47,21 @@ Like modal dialogs, modal containers should be used cautiously because of the ac
 Generally speaking, if a lot of content or interaction is being done through a modal interaction, consider implementing the interaction outside of a modal and on its own web page. This helps make it clear to all users what the interaction should be - a modal interface should not be a substitute for content that is better suited for separate web page.
 
 ## Decision Table for Using Modal Interactions and Alternatives
-
 The following table can help you decide when to use a modal interaction.
 
 <table>
     <tr>
         <th>Forced Interaction</th>
-        <th>Simple Message</th>
+        <th>Interaction Complexity</th>
         <th>Number of Choices</th>
         <th>Solution</th>
     </tr>
-
     <tr>
         <td>
             No
         </td>
         <td>
-            Yes
+            Simple
         </td>
         <td>
             2+
@@ -70,28 +70,26 @@ The following table can help you decide when to use a modal interaction.
             Menu, expanding container, accordion, drawer
         </td>
     </tr>
-
     <tr>
         <td>
             Yes
         </td>
         <td>
-            No
+            Complex
         </td>
         <td>
             2+
         </td>                
         <td>
-            Web page
+            Separate web page
         </td>
     </tr>
-
     <tr>
         <td>
             Yes
         </td>
         <td>
-            Yes
+            Simple
         </td>
         <td>
             1
@@ -100,13 +98,12 @@ The following table can help you decide when to use a modal interaction.
             Alert box
         </td>
     </tr>
-
     <tr>
         <td>
             Yes
         </td>
         <td>
-            Yes
+            Simple
         </td>
         <td>
             2 to 3
@@ -153,8 +150,9 @@ If the purpose of a dialog is to force the user to take immediate action - succe
 4. Use controls appropriate for the interaction - i.e. don't have a "Cancel" or "Close" option if the purpose is to have the user make an affirmative choice.
 5. Avoid using labels which are not appropriate or assumes a user's state. For example labels like "Okay", "I got it", "Get me out of here" may not be appropriate or understood - keep labels simple and to-the-point.
 6. Clearly indicate focus with sufficient contrast and style.
+7. Avoid using words like "Click" or "Press" when giving instructions.
 
-## HTML and ARIA Accessibility Guidelines for Modal Dialogs
+## Accessibility Guidelines for Implementing Modal Dialogs
 
 To improve the semantics and accessibility of modal dialogs, the following HTML and ARIA markup is recommended.
 
@@ -168,7 +166,15 @@ To improve the semantics and accessibility of modal dialogs, the following HTML 
 * `aria-hidden`: set to `true` when the dialog is not perceivable, set to `false` when the dialog is perceivable.
 * `aria-labelledby`: the `<article>` container should be labelled by the `<header>` element.
 * `aria-describedby`: the `<article>` container should be described by the contents of the dialog.
-* `role="dialog"`: the `<article>` container role should be
+* `role="dialog"` or `role="alertdialog"`: the `<article>` container role should have either one of these roles.
+  * `alertdialog` is a special case where the outcome may cause a problem or data loss. For example, the user has attempted to delete an email message.
+  * `dialog` is used for other cases like when the user is inputing information, or making a choice that can be reverted.
+
+### Managing Focus
+
+To restrict focus to just the modal dialog, you will need to use Javascript to put focus on the dialog container (i.e. the `<article>` element) and then force focus back onto the dialog if the focus leaves.
+
+The article ["Making an accessible dialog box" by Nicholas C. Zakas](https://www.nczonline.net/blog/2013/02/12/making-an-accessible-dialog-box/) outlines the Javascript required to manage the dialog interaction correctly.
 
 ### Modal Dialog Markup Example
 
@@ -179,10 +185,17 @@ To improve the semantics and accessibility of modal dialogs, the following HTML 
         <input type="button" value="Yes">
     </article>
 
+## Modal Forms
+
+Sometimes it is desirable to put a form within a modal dialog like a login prompt, or filling out a contact information form.
+
+In such situations keep the interaction simple, and only use a small number of input fields (4 fields maximum).
+
 ## Implementation Resources
 * [Using the dialog role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role), Mozilla Devloper Network.
 * [Making Modal Windows Better for Everyone](https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyone/), Smashing Magazine 2014.
 * [Advanced Aria Tip 2 Accessible Modal Dialogs](https://www.marcozehe.de/2015/02/05/advanced-aria-tip-2-accessible-modal-dialogs/), Marco's Accessibility Blog 2015.
+* [jQuery UI Modal Dialog](https://jqueryui.com/dialog/#default), jQuery UI.
 
 ## Implementation Alternatives
 * [jQuery UI Accordion](https://jqueryui.com/accordion/), jQuery.
@@ -192,6 +205,6 @@ To improve the semantics and accessibility of modal dialogs, the following HTML 
 
 ## Footnotes:
 
-1. R. Bohme and S. Kopsell. [Trained to accept? A field experiment on consent dialogs](http://dmrussell.net/CHI2010/docs/p2403.pdf). CHI, 2010.
-2. Kristen H. Goodell, Caroline G.L. Cao, and Steven D. Schwaitzberg. [Effects of Cognitive Distraction on Performance of Laparoscopic Surgical Tasks ](http://online.liebertpub.com/doi/abs/10.1089/lap.2006.16.94). Journal of Laparoendoscopic & Advanced Surgical Techniques. April 2006, 16(2): 94-98. doi:10.1089/lap.2006.16.94.
-3. Elizabeth Flynn. [Impact of interruptions and distractions on dispensing errors in an ambulatory care pharmacy.](https://www.ncbi.nlm.nih.gov/pubmed/10683129). American Journal of Health-System Pharmacy. 1999 Jul 1;56(13):1319-25.
+1. <span id="footnote_1"></span>R. Bohme and S. Kopsell. [Trained to accept? A field experiment on consent dialogs](http://dmrussell.net/CHI2010/docs/p2403.pdf). CHI, 2010.
+2. <span id="footnote_2"></span>Kristen H. Goodell, Caroline G.L. Cao, and Steven D. Schwaitzberg. [Effects of Cognitive Distraction on Performance of Laparoscopic Surgical Tasks ](http://online.liebertpub.com/doi/abs/10.1089/lap.2006.16.94). Journal of Laparoendoscopic & Advanced Surgical Techniques. April 2006, 16(2): 94-98. doi:10.1089/lap.2006.16.94.
+3. <span id="footnote_3"></span>Elizabeth Flynn. [Impact of interruptions and distractions on dispensing errors in an ambulatory care pharmacy.](https://www.ncbi.nlm.nih.gov/pubmed/10683129). American Journal of Health-System Pharmacy. 1999 Jul 1;56(13):1319-25.
