@@ -1,5 +1,5 @@
 ---
-title: Accessible Modal Dialogs and Containers
+title: Accessible Modal Dialogs
 subheader:
 layout: default
 category: Methods
