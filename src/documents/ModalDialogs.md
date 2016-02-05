@@ -11,9 +11,16 @@ A modal dialog is an interaction where the user is forced to take an action requ
 
 Typically these are windows or "pop-ups" which block any further interaction until a control (like an "OK" button) is selected.
 
+<figure>
+[![Screen capture of a modal login dialog.](/images/thumbs/400px-Modal-Dialog-example.jpg)](/images/Modal-Dialog-example.jpg)
+<figcaption>
+*Figure:* A modal dialog is a child window that blocks all interaction with other content until the dialog is dismissed. Source: http://www.shop.ca/
+</figcaption>
+</figure>
+
 ## Why Should You Care?
 
-Modal dialogs should be used cautiously because they create a cognitive burden by:
+Modal interactions, such as modal dialogs, should be used cautiously because they create a cognitive burden by:
 
 1. causing the opposite result since dialogs are often dismissed without consideration <sup><a href="#footnote_1" aria-label="Footnote 1">1</a></sup>,
 2. interrupting workflow and making the task longer to complete <sup><a href="#footnote_2" aria-label="Footnote 2">2</a></sup>, and
@@ -28,10 +35,10 @@ The way a dialog is implemented can also cause problems by:
 
 ## Why are Modal Interactions Typically Inaccessible?
 
-Modal interactions, not just dialogs, that force the user along a particular interaction path are often considered inaccessible. The most common issues are:
+Modal interactions are often considered inaccessible. The most common issues are:
 
 1. Poor communication of intention (semantics) for assistive technologies - is it a dialog or just another paragraph?
-2. Improper handling of Focus control, allowing the user is able to access content intended to be blocked.
+2. Improper handling of focus control, allowing the user is able to access content intended to be blocked.
 3. Dialogs are not announced to assistive technologies.
 4. Unclear indication which content is blocked from interaction.
 5. Insufficient contrast between the dialog container and the outlying content - a faded background or alpha channel blending may not be sufficient contrast (Reference [WCAG 2.0 Contrast](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)).
@@ -41,6 +48,13 @@ Some of these accessibility issues can be overcome through proper implementation
 ## Using Modal Containers
 
 A popular use of a modal interaction is to use a modal container which focuses the user to a particular interaction path while maintaining their context. For example, an image gallery lightbox is a popular implementation of such an interaction.
+
+<figure>
+[![Screen capture of a lightbox.](/images/thumbs/300px-Modal-Dialog-lightbox.png)](/images/Modal-Dialog-lightbox.png)
+<figcaption>
+*Figure:* Screen capture of a lightbox dialog displaying a larger image amoung smaller thumbnails of images. Source: http://fancybox.net/
+</figcaption>
+</figure>
 
 Like modal dialogs, modal containers should be used cautiously because of the accessibility issues they may cause (see [Why are Modal Interactions Typically Inaccessible?](#Why_are_Modal_Interactions_Typically Inaccessible?)).
 
@@ -116,6 +130,13 @@ The following table can help you decide when to use a modal interaction.
 
 If it is not necessary to force the user along an interaction path,
 then consider using a collapsing menu, or an expandable container like an accordion or drawer.
+
+<figure>
+![Screen capture of an accordion panel.](/images/Modal-Dialog-accordion.png)
+<figcaption>
+*Figure:* An accordion panel allows content to be visually hidden and shown on-demand. Source: https://jqueryui.com/accordion/
+</figcaption>
+</figure>
 
 If it is necessary to force the user along an interaction path, and the message is not simple or contains a lot of choices or interaction,
 then consider using a separate web page.
