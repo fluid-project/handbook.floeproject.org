@@ -34,6 +34,7 @@
                     { "pageName": "Video Content and Learning", "href": "/VideoContentAndLearning.html"},
                     { "pageName": "Audio Content and Learning", "href": "/AudioContentAndLearning.html"},
                     { "pageName": "Web Games and Simulations", "href": "/WebGamesAndSimulations.html"},
+                    { "pageName": "Accessible Modal Dialogs", "href": "/ModalDialogs.html"},
                     { "pageName": "Authoring of Content", "href": "/AuthoringOfContent.html"},
                     { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"}
                 ]
