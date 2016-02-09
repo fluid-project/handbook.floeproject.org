@@ -3,7 +3,7 @@
   "description": "Strategies and best practices for inclusive learning content.",
   "version": "0.0.1-SNAPSHOT",
   "author": "Floe Project",
-  "bugs": "https://issues.fluidproject.org/browse/FLUID/component/10080/?selectedTab=com.atlassian.jira.jira-projects-plugin:component-summary-panel",
+  "bugs": "https://issues.fluidproject.org/browse/FLUID/component/10080/",
   "homepage": "http://www.floeproject.org/",
   "dependencies": {
     "docpad-plugin-ghpages": "~2.4.4",
