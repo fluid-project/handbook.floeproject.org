@@ -14,7 +14,7 @@ Typically these are windows or "pop-ups" which block any further interaction unt
 <figure>
 [![Screen capture of a modal login dialog.](/images/thumbs/400px-Modal-Dialog-example.jpg)](/images/Modal-Dialog-example.jpg)
 <figcaption>
-*Figure:* A modal dialog is a child window that blocks all interaction with other content until the dialog is dismissed. Source: http://www.shop.ca/
+*Figure 1:* A modal dialog is a child window that blocks all interaction with other content until the dialog is dismissed. Source: http://www.shop.ca/
 </figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ A popular use of a modal interaction is to use a modal container which focuses t
 <figure>
 [![Screen capture of a lightbox.](/images/thumbs/300px-Modal-Dialog-lightbox.png)](/images/Modal-Dialog-lightbox.png)
 <figcaption>
-*Figure:* Screen capture of a lightbox dialog displaying a larger image amoung smaller thumbnails of images. Source: http://fancybox.net/
+*Figure 2:* Screen capture of a lightbox dialog displaying a larger image amoung smaller thumbnails of images. Source: http://fancybox.net/
 </figcaption>
 </figure>
 
@@ -134,7 +134,7 @@ then consider using a collapsing menu, or an expandable container like an accord
 <figure>
 ![Screen capture of an accordion panel.](/images/Modal-Dialog-accordion.png)
 <figcaption>
-*Figure:* An accordion panel allows content to be visually hidden and shown on-demand. Source: https://jqueryui.com/accordion/
+*Figure 3:* An accordion panel allows content to be visually hidden and shown on-demand. Source: https://jqueryui.com/accordion/
 </figcaption>
 </figure>
 
