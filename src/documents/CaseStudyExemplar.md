@@ -6,7 +6,7 @@ category: Inclusive EPUB 3
 
 The Floe project developed an EPUB 3 resource that exemplifies best practices for creating inclusive EPUB resources:
 
-<a class="link-external" href="https://idrc.cachefly.net/floeproject.org/ebooks/InclusiveEPUB-physics.epub"> Download the EPUB</a>
+<a href="https://idrc.cachefly.net/floeproject.org/ebooks/InclusiveEPUB-physics.epub" rel="nofollow" target="_blank" class="link-external"> Download the EPUB</a>
 
 This resource demonstrates the following accessibility features:
 * ARIA attributes and other HTML markup to support screen readers;
@@ -16,14 +16,14 @@ This resource demonstrates the following accessibility features:
 * accessibility metadata.
 
 ## Notes: ##
-* The interactive physics simulation in Chapter 3 can be played using a mouse. A keyboard-accessible version of the simulation has been developed, but it does not function properly within the EPUB document. Work is underway to address this (documented under issue  <a class="link-external" href="http://issues.fluidproject.org/browse/FLOE-287"> FLOE-287</a>).
+* The interactive physics simulation in Chapter 3 can be played using a mouse. A keyboard-accessible version of the simulation has been developed, but it does not function properly within the EPUB document. Work is underway to address this (documented under issue  <a href="http://issues.fluidproject.org/browse/FLOE-287" rel="nofollow" target="_blank" class="link-external"> FLOE-287</a>).
 * The interactive physics simulation will load in iBooks on Mac OS 10.10 Yosemite, but not on Mac OS 10.9 Mavericks.
 
-In creating this exemplar, Pandoc (link: http://johnmacfarlane.net/pandoc/) was initially used to create an EPUB from HTML files. While Pandoc was excellent in converting HTML 5 into an EPUB 3 container, the output was unsuitable for handling desirable inclusive EPUB features, such as Media Overlays and WAI-ARIA markup. For a detailed (and somewhat technical) look at using Pandoc in creating an inclusive EPUB, see http://wiki.fluidproject.org/display/fluid/Experiences+with+Pandoc">.
+In creating this exemplar, Pandoc (link: <a href="http://johnmacfarlane.net/pandoc/" rel="nofollow" target="_blank" class="link-external">http://johnmacfarlane.net/pandoc/</a>) was initially used to create an EPUB from HTML files. While Pandoc was excellent in converting HTML 5 into an EPUB 3 container, the output was unsuitable for handling desirable inclusive EPUB features, such as Media Overlays and WAI-ARIA markup. For a detailed (and somewhat technical) look at using Pandoc in creating an inclusive EPUB, see <a href="http://wiki.fluidproject.org/display/fluid/Experiences+with+Pandoc" rel="nofollow" target="_blank" class="link-external">Fluid Wiki - Experiences with Pandoc</a>.
 
 The rest of this page provides some technical information about how the exemplar EPUB resource was created and some lessons learned along the way.
 
-<a class="link-external" href="https://github.com/jhung/EPUB/tree/FLOE-240-2"> View the github repository containing the resources used to build the EPUB</a>
+<a href="https://github.com/jhung/EPUB/tree/FLOE-240-2" rel="nofollow" target="_blank" class="link-external"> View the github repository containing the resources used to build the EPUB</a>
 
 ## Semantic markup - HTML 5 semantics and epub type ##
 EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost all definitions of semantics, structure and processing behaviors from the HTML5 specification. This means that you can create valid HTML5 documents and update the head of the document to define it as XML and declare the epub namespace.
@@ -47,11 +47,11 @@ EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost al
 ```
 
 ## Scripts ##
-The interactive simulation we used in the exemplar EPUB is taken from <a class="link-external" href="http://phet.colorado.edu/"> PhET</a>, specificially the Forces and Motion simulation:
+The interactive simulation we used in the exemplar EPUB is taken from <a href="http://phet.colorado.edu/" rel="nofollow" target="_blank" class="link-external"> PhET</a>, specificially the Forces and Motion simulation:
 
-* Online demo: http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html
-* Source code on github: https://github.com/phetsims/forces-and-motion-basics
-* Phet development overview: http://bit.ly/phet-development-overview
+* Online demo: <a href="http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" rel="nofollow" target="_blank" class="link-external">http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html</a>
+* Source code on github: <a href="https://github.com/phetsims/forces-and-motion-basics" rel="nofollow" target="_blank" class="link-external">https://github.com/phetsims/forces-and-motion-basics</a>
+* Phet development overview: <a href="http://bit.ly/phet-development-overview" rel="nofollow" target="_blank" class="link-external">http://bit.ly/phet-development-overview</a>
 
 In order to use scripts in EPUB, CDATA blocks need to be added. However this will break the HTML in browsers.
 ```
@@ -74,7 +74,7 @@ The following process was used to create the Media Overlays for the Inclusive EP
 
 2. Ensure there's an ID attribute on any HTML element you want highlighted.
 
-3. Record an audio narration of the text. We used the free tool Audacity http://audacity.sourceforge.net/
+3. Record an audio narration of the text. We used the <a href="http://audacityteam.org/" rel="nofollow" target="_blank" class="link-external">free audio editing tool Audacity</a>.
 
 4. Identify start and end timecodes for the blocks of audio corresponding to the granularity level you chose:
 * In Audacity, select the wave segment for the audio in question
@@ -139,7 +139,7 @@ The Floe team discovered that none of the EPUB readers or operating system voici
 ```
 
 ## Accessibility metadata ##
-Add <a class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php"> Schema.org accessibility metadata</a> to the package.opf file describing the features of the EPUB:
+Add <a href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php" rel="nofollow" target="_blank" class="link-external"> Schema.org accessibility metadata</a> to the package.opf file describing the features of the EPUB:
 ```
 <package … >
     …
@@ -164,8 +164,8 @@ Until validators recognize the schema: prefix, you must declare it in the packag
 ## Testing and validation ##
 
 The exemplar EPUB was tested and validated using:
-* <a class="link-external" href="http://readium.org/"> Readium for Chrome web browser</a>
+* <a href="http://readium.org/" rel="nofollow" target="_blank" class="link-external"> Readium for Chrome web browser</a>
 * iBooks for Mac OS X
-* <a class="link-external" href="https://addons.mozilla.org/en-US/firefox/addon/lucifox/"> Lucifox for Firefox</a>
-* <a class="link-external" href="http://validator.w3.org"> W3C Validator</a>
-* <a class="link-external" href="http://validator.idpf.org/"> EPUB Check</a>
+* <a href="https://addons.mozilla.org/en-US/firefox/addon/lucifox/" rel="nofollow" target="_blank" class="link-external"> Lucifox for Firefox</a>
+* <a href="http://validator.w3.org" rel="nofollow" target="_blank" class="link-external"> W3C Validator</a>
+* <a href="http://validator.idpf.org/" rel="nofollow" target="_blank" class="link-external"> EPUB Check</a>

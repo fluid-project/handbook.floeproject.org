@@ -8,7 +8,7 @@
                 "sectionName":"",
                 "pages":
                 [
-                    {"pageName": "Introduction", "href":"/index.html"},
+                    {"pageName": "Welcome to the Inclusive Learning Design Handbook", "href":"/index.html"},
                     {"pageName": "Why is This Important?", "href":"/WhyIsThisImportant.html"},
                     {"pageName": "What is the Approach?", "href":"/WhatIsTheApproach.html"}
                 ]
@@ -17,7 +17,7 @@
     },
     {
         "category": "Methods",
-        "categoryHref": "/Methods.html",
+        "categoryHref": "/InclusiveLearning.html",
         "sections":
         [
             {
@@ -28,9 +28,13 @@
                     { "pageName": "Accessibility Principles", "href": "/AccessibilityPrinciples.html"},
                     { "pageName": "Techniques", "href": "/Techniques.html"},
                     { "pageName": "Metadata", "href": "/Metadata.html"},
+                    { "pageName": "Access for All", "href": "/AccessForAll.html"},
+                    { "pageName": "Schema.org Accessibility Properties", "href": "/SchemaOrgAccessibilityProperties.html"},
                     { "pageName": "Learner Needs and Preferences", "href": "/LearnerNeedsAndPreferences.html"},
                     { "pageName": "Video Content and Learning", "href": "/VideoContentAndLearning.html"},
                     { "pageName": "Audio Content and Learning", "href": "/AudioContentAndLearning.html"},
+                    { "pageName": "Web Games and Simulations", "href": "/WebGamesAndSimulations.html"},
+                    { "pageName": "Accessible Modal Dialogs", "href": "/ModalDialogs.html"},
                     { "pageName": "Authoring of Content", "href": "/AuthoringOfContent.html"},
                     { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"}
                 ]
@@ -46,6 +50,7 @@
                 "sectionName":"",
                 "pages":
                 [
+                    { "pageName": "Introduction to Accessible Standardized Testing", "href": "/AccessibleStandardizedTesting.html"},
                     { "pageName": "General Guidelines", "href": "/GeneralGuidelines.html" },
                     { "pageName": "Functional Considerations", "href": "/FunctionalConsiderations.html"},
                     { "pageName": "Standardized Test Types", "href": "/StandardizedTestTypes.html"},
@@ -63,11 +68,12 @@
                 "sectionName":"",
                 "pages":
                 [
+                    { "pageName": "Introduction to Inclusive EPUB 3", "href": "/InclusiveEPUB3.html" },
                     { "pageName": "Semantic Markup in EPUB 3", "href": "/SemanticMarkupInEPUB3.html" },
                     { "pageName": "WAI-ARIA", "href": "/WAI-ARIA.html"},
                     { "pageName": "Visual Styles", "href": "/VisualStyles.html"},
                     { "pageName": "Graphics and Multimedia", "href": "/GraphicsAndMultimedia.html"},
-                    { "pageName": "Scripts", "href": "/Scripts.html"},
+                    { "pageName": "Scripting in EPUB 3", "href": "/ScriptingInEPUB3.html"},
                     { "pageName": "Mathematics", "href": "/Mathematics.html"},
                     { "pageName": "Narrations and Text-to-Speech", "href": "/NarrationsAndTextToSpeech.html"},
                     { "pageName": "Accessibility Metadata", "href": "/AccessibilityMetadata.html"},

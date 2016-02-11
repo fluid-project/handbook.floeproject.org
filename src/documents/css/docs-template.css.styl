@@ -5,6 +5,8 @@ button-focus ?= 0.2rem solid #0000CB;
 link-color ?= #0000CB;
 link-hover-color ?= #fff;
 link-hover-background ?= #0000CB;
+site-width ?= 80rem; // the width of the entire site.
+site-border ?= 0.1rem solid #ccc; // the borders that appear when site-width exceeded.
 
 /* Main Content Area */
 docs-body-background ?= #fff;
@@ -18,26 +20,39 @@ header-footer-hover-color ?= #fff;
 header-footer-hover-background ?= #00444D;
 header-footer-focus ?= 0.2rem solid #00444D;
 header-nav-link ?= #00444D;
-header-active-category ?= 0.2rem solid #00444D;
+header-nav-background ?= #e4eee4;
+header-nav-hover-color ?= #e4eee4;
+header-nav-hover-background ?= #00444D;
+header-nav-border-top ?= 0.1rem dotted #fff;
+header-nav-border-bottom ?= 0.1rem solid #cfcfcf;
+header-menu-border ?= 0.2rem solid #cfcfcf;
+
+/* Skip Links */
+skip-color ?= #00444D;
+skip-background ?= #C5E0C5;
+skip-focus-outer-border ?= #00444D;
+skip-focus-inner-border ?= #C5E0C5;
+skip-hover-color ?= #C5E0C5;
+skip-hover-background ?= #00444D;
 
 /* Logo */
 logo-color ?= #00444D;
 logo-background ?= #C5E0C5;
 logo-hover-color ?= #C5E0C5;
 logo-hover-background ?= #00444D;
-logo-focus ?= 0.2rem solid #fff;
+logo-focus ?= 0.2rem solid #00444D;
 logo-font-path ?= "../fonts/logo";
 logo-unicode ?= "\e91f";
 
 /* Table of Contents Sidebar */
-toc-background ?= #efefef;
-toc-item-color ?= #000;
-toc-active-color ?= #efefef;
-toc-active-background ?= #000;
-toc-item-hover-color ?= #000;
-toc-item-hover-background ?= #efefef;
-toc-item-hover-border ?= 0.2rem solid #000;
-toc-border-color ?= #cfcfcf;
+topics-background ?= #efefef;
+topics-item-color ?= #000;
+topics-active-color ?= #000;
+topics-active-background ?= #efefef;
+topics-item-hover-color ?= #fff;
+topics-item-hover-background ?= #000;
+topics-item-focus-border ?= 0.2rem solid #000;
+topics-border-color ?= #cfcfcf; // right border of topics container
 
 /* Table of Contents Hide-Show ribbon */
 hideShow-background ?= #efefef;
@@ -63,18 +78,100 @@ code-block-link-color ?= #0000CB;
 table-border-color ?= #e7e7e7;
 
 /* UIO Table of Contents */
-uio-toc-background ?= #efefef;
-
-/* Transition Time */
-// use the same time on transitions so everything moves the same time.
-transitionTime ?= 0.5s;
+uio-topics-background ?= #efefef;
 
 /* Mixins */
-// generate the ribbon "tail" of the hideShow ribbon.
-contrastHideShowRibbonColor(foreground, background) {
-    border-bottom: 2.2rem solid foreground;
-    border-right: 2.1rem solid background;
-    border-top: 2.3rem solid foreground;
+/* Generate the ribbon "tail" of the hideShow ribbon.
+foregroundColor - the foreground colour of the contrast theme.
+backgroundColor - the background colour of the contrast theme.*/
+contrastThemeHideShowRibbonColor(foregroundColor, backgroundColor) {
+    border-bottom: 2.10rem solid foregroundColor;
+    border-right: 2.1rem solid backgroundColor;
+    border-top: 2.11rem solid foregroundColor;
+}
+
+/* Generate the parts which are within a .fl-inverted-color class.
+foregroundColor - the foreground colour of the contrast theme.
+backgroundColor - the background colour of the contrast theme.*/
+contrastThemeInverted(foregroundColor, backgroundColor) {
+    button:focus,
+    a:focus {
+        outline: 0.2rem solid backgroundColor !important;
+        background: foregroundColor;
+    }
+
+    button:hover {
+        outline: none !important;
+    }
+
+    a:hover,
+    a:hover *,
+    .ui-state-focus,
+    .ui-state-hover,
+    .ui-state-active,
+    .ui-state-active .docs-template-nav-mobile-icon,
+    .ui-state-focus .docs-template-nav-mobile-icon,
+    button:hover {
+         background: backgroundColor !important;
+         color: foregroundColor !important;
+     }
+
+     .docs-template-category-active {
+         font-weight: bold !important;
+
+         &.ui-state-focus,
+         &.ui-state-focus span {
+             color: backgroundColor !important;
+             background: foregroundColor !important;
+         }
+
+         span:before {
+             color: backgroundColor !important;
+         }
+     }
+}
+
+/* Generate the contrast theme styles for docs-template.
+foregroundColor - the foreground colour of the contrast theme.
+backgroundColor - the background colour of the contrast theme.*/
+contrastTheme(foregroundColor, backgroundColor) {
+    a:hover,
+    a {
+        transition: none;
+    }
+
+    a:focus {
+        outline: 0.2rem solid foregroundColor !important;
+    }
+
+    .docs-template-topics-hideShow:before,
+    a:hover,
+    a:hover code,
+    a:hover .docs-template-topics-item {
+        background-color: foregroundColor !important;
+        color: backgroundColor !important;
+    }
+
+    .fl-inverted-color {
+        contrastThemeInverted(foregroundColor, backgroundColor)
+    }
+
+    .docs-template-topics-hideShow:after {
+        contrastThemeHideShowRibbonColor(foregroundColor, backgroundColor)
+    }
+
+    figure a:hover {
+        outline: none !important;
+    }
+
+    figure a:hover img {
+        background-color: foregroundColor !important;
+    }
+
+    .docs-template-topics-hideShow a:hover {
+        background-color: backgroundColor !important;
+        color: foregroundColor !important;
+    }
 }
 
 @font-face {
@@ -119,12 +216,13 @@ html body {
 }
 
 .docs-template-container {
-    min-width: 30rem;
     background-color: docs-body-background;
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
+    max-width: site-width;
+    margin: 0 auto;
 }
 
 .docs-template pre {
@@ -132,12 +230,18 @@ html body {
 }
 
 .docs-template td {
+    border: 0.5rem solid table-border-color;
     vertical-align: top;
 }
 
 .docs-template a {
     color: link-color;
     text-decoration: underline;
+    transition: backgroundColor 0.15s, background 0.15s, color 0.15s;
+}
+
+.docs-template a:hover {
+    transition: backgroundColor 0.15s, background 0.15s, color 0.15s;
 }
 
 /* override foundation, so UIO's line-spacing will work */
@@ -153,12 +257,18 @@ html body {
 .fl-prefsEditor-buttons button:focus,
 .docs-template a:focus {
     outline: button-focus;
+    text-decoration: none;
 }
 
 /* Skip links */
 #skip {
     float: left;
     height: 0rem;
+}
+
+#skip a {
+    color: skip-color;
+    background: skip-background;
 }
 
 #skip a,
@@ -170,6 +280,8 @@ html body {
     position: absolute;
     top: auto;
     width: 1px;
+    color: skip-hover-color;
+    background: skip-hover-background;
 }
 
 #skip a:active,
@@ -177,91 +289,220 @@ html body {
     height: auto;
     width: auto;
     left: auto;
+    border: 0.5rem solid skip-focus-inner-border;
+    outline: 0.2rem solid skip-focus-outer-border;
+    color: skip-hover-color;
+    background: skip-hover-background;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.docs-template-skip-topics {
+    display: none;
+}
+
+.docs-core-sidebar-expanded .docs-template-skip-topics {
+    display: initial;
+}
+
+/* OVERRIDE JQUERY UI WIDGET THEME */
+
+.ui-icon-blank {
+    display: none;
+}
+
+.ui-menu.ui-widget-content {
+    background: header-footer-background;
+    color: header-footer-color;
+    border: none;
+}
+
+.ui-menu .ui-menu-item {
+    background: header-footer-backkground;
+    border: none;
+    padding: 0 0.3rem;
 }
 
 /* Header and Footer */
+.docs-template header {
+    background-color: header-footer-background;
+    margin: 0;
+    max-width: none;
+}
+
 .docs-template-header,
 .docs-template-footer {
     background-color: header-footer-background;
     color: header-footer-color;
     font-family: docs-fonts;
-}
 
-.docs-template-header p,
-.docs-template-footer p {
-    margin-bottom: 0;
-}
+    a {
+        color: header-footer-link;
+    }
 
-.docs-template-header a,
-.docs-template-footer a {
-    color: header-footer-link;
-}
+    a:focus {
+        outline: header-footer-focus;
+    }
 
-.docs-template-header a:focus,
-.docs-template-footer a:focus {
-    outline: header-footer-focus;
-}
-
-.docs-template-header a:hover,
-.docs-template-footer a:hover {
-    color: header-footer-hover-color;
-    background: header-footer-hover-background;
+    a:hover {
+       color: header-footer-hover-color;
+       background: header-footer-hover-background;
+   }
 }
 
 .docs-template-header {
-    font-size: 1.1rem;
-    text-align: right;
-    line-height: 2;
     max-width: 100%;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        color: inherit;
+    }
+
+    .inline-list {
+       margin-bottom: 0;
+       overflow: initial;
+    }
+
+    nav {
+        padding: 0.2rem 1rem;
+        background-color: header-nav-background;
+        border-top: header-nav-border-top;
+        border-bottom: header-nav-border-bottom;
+    }
+
+    nav.show-for-small-only {
+        background: header-footer-background;
+        border: none;
+        padding: 0;
+    }
+
+    nav li {
+        padding-bottom: 0.2rem;
+    }
+
+    nav span,
+    nav a {
+        color: header-nav-link;
+        padding: 0.2rem 1rem;
+        margin: 0;
+    }
 }
 
-.docs-template-header a {
-    text-decoration: none;
-}
-
-.docs-template-header .docs-template-logo {
+.docs-template-logo {
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
-    margin-top: 2rem;
-    text-align: left;
+    margin-bottom: 0.2rem;
     background: logo-background;
-}
-
-.docs-template-header .docs-template-logo a {
-    padding: 1rem;
+    padding: 0.3rem;
     color: logo-color;
+    display: inline-block;
+
+    &:hover {
+        background: logo-hover-background;
+        color: logo-hover-color;
+    }
+
+    &:focus {
+        outline: logo-focus;
+    }
+
+    &:before {
+        font-family: "logo";
+        content: logo-unicode;
+        font-size: 2rem;
+        text-align: bottom;
+        padding-right: 0.2rem;
+    }
+
+    h1 {
+        display: inline-block;
+        margin: 0;
+    }
 }
 
-.docs-template-header .docs-template-logo a:hover {
-    background: logo-hover-background;
-    color: logo-hover-color;
+.docs-template-tagline {
+    font-size: 1rem;
+    display: block;
+    font-weight: normal;
+    color: inherit;
+    margin: 0;
+    display: inline-block;
 }
 
-.docs-template-header .docs-template-logo a:focus {
-    border: logo-focus;
+.docs-template-nav-mobile {
+    padding: 0 0.5rem;
 }
 
-.docs-template-header .docs-template-logoText:before {
-    font-family: "logo";
-    content: logo-unicode;
-    font-size: 2rem;
-    text-align: bottom;
-    padding-right: 0.2rem;
+.docs-template-nav-mobile-icon {
+    color: header-footer-color;
 }
 
-.docs-template-header nav {
-    margin: 0 0 0.5rem 0;
-    padding: 0.5rem 0;
+.docs-template-nav-mobile-icon:before {
+    content: "\2630";
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
 }
 
-.docs-template-header nav a {
+.ui-state-active .docs-template-nav-mobile-icon,
+.ui-state-focus .docs-template-nav-mobile-icon {
+    background-color: header-nav-link;
+    color: header-nav-background;
+}
+
+.ui-state-active .docs-template-dropDown a {
     color: header-nav-link;
+    background-color: header-nav-background;
+}
+
+.docs-template .docs-template-dropDown-header {
     padding: 0.2rem;
-    margin: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.docs-template-dropDown {
+    padding: 1rem;
+
+    li {
+        background: header-nav-background;
+    }
+
+    .ui-menu-item {
+        padding: 0.8rem;
+    }
+}
+
+.docs-template-dropDown-header.ui-state-hover,
+.docs-template-dropDown-header.ui-state-focus,
+.docs-template-dropDown-header.ui-state-active,
+.docs-template-dropDown li.ui-state-hover,
+.docs-template-dropDown li.ui-state-focus,
+.docs-template-dropDown li.ui-state-hover a,
+.docs-template-dropDown li.ui-state-focus a {
+    color: header-nav-hover-color;
+    background: header-nav-hover-background;
+}
+
+.docs-template-dropDown-header .docs-template-category-active {
+    &.ui-state-focus,
+    &.ui-state-focus span {
+        color: header-nav-link;
+        background: header-nav-background;
+    }
 }
 
 .docs-template-category-active {
-    border-bottom: header-active-category;
+    span:before {
+        color: header-nav-link;
+        content: "\2590";
+        display: inline-block;
+        margin-right: 0.2rem;
+    }
 }
 
 .docs-template-footer {
@@ -269,31 +510,9 @@ html body {
     font-size: 1.1rem;
     text-align: center;
     max-width: 100%;
-}
 
-.docs-template-footer p {
-    font-size: 0.8rem;
-}
-
-@media only screen and (max-width: 40em) {
-    .docs-template-header {
-        line-height: inherit;
-        padding-right: 0;
-
-    }
-
-    .docs-template-header .docs-template-logo {
-        font-size: 1.2rem;
-        margin-top: 1rem;
-    }
-
-    .docs-template-header nav {
-        margin-top: 0;
-    }
-
-    .docs-template-header nav a {
-        color: header-nav-link;
-        padding: 0.2rem;
+    p {
+        margin-bottom: 0;
     }
 }
 
@@ -308,16 +527,19 @@ html body {
     padding: 5.5rem 2rem 6rem 2rem;
     color: articleBody-color;
     background: articleBody-background;
-    transition: width transitionTime;
 
     // make article wider to take more room.
     width: 91.66%;
 }
 
-.docs-core-sidebar-visibility .docs-template-articleBody {
+.docs-core-sidebar-expanded .docs-template-articleBody {
     // put width back to the same as Foundation's medium-8
-    width: 70%;
-    transition: width transitionTime;
+    width: 75%;
+}
+
+.docs-template-404.docs-core-sidebar-expanded .docs-template-articleBody {
+    width: 100%;
+    max-width: none;
 }
 
 .docs-template-articleBody * {
@@ -361,125 +583,144 @@ html body {
     background: 0;
 }
 
-.docs-template-articleBody table td {
-    border: 1rem solid table-border-color;
-}
+/* Topics list */
+.docs-template-topics-container {
+    background: topics-background;
+    border-right: 0.2rem solid topics-border-color;
 
-/* Table of Contents */
-.docs-template-TOC-container {
-    background: toc-background;
-    border-right: 0.2rem solid toc-border-color;
-    transition: width transitionTime;
+    flex-grow: 0;
+    -webkit-flex-grow: 0;
 
-    // hide the TOC initially
+    // hide the topics initially
     overflow: hidden;
     padding-right: 0;
     padding-left: 0;
     width: 1px;
 }
 
-.docs-core-sidebar-visibility .docs-template-TOC-container {
-    // put width back to the same as Foundation's medium-3
+.docs-core-sidebar-expanded .docs-template-topics-container {
     overflow: auto;
     padding: 1.5rem;
-    width: 25%;
-    transition: width transitionTime;
+    width: 25%; // put width back to the same as Foundation's medium-3
+    flex-grow: 2;
+    -webkit-flex-grow: 2;
 }
 
-.docs-template-TOC-hideShow {
+.docs-core-sidebar-expanded .docs-template-topics {
+    display: initial; // restore tabbability of topics
+}
+
+.docs-template-topics-hideShow {
     line-height: 2.3rem !important; // prevent UIO from changing this.
     margin: -4.4rem 0 0 -2rem;
-    padding: 0.5rem;
-    min-width: 9rem;
-    width: 9rem;
+    padding: 0.6rem;
+    min-width: 13rem;
     background: hideShow-background;
     z-index: 1;
+
+    &:after {
+        contrastThemeHideShowRibbonColor(hideShow-background, docs-body-background)
+        content: "";
+        position:absolute;
+        right: 0;
+        display:block;
+        top: 0;
+    }
+
+    &:before {
+        content: "\2630";
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: inline-block;
+        color: hideShow-color;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+    a {
+        color: hideShow-color;
+        margin-right: 0rem;
+        margin-top: 0rem;
+        background: hideShow-background;
+        padding: 0.4rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+    a:hover {
+        color: hideShow-hover-color;
+        background: hideShow-hover-background;
+    }
+
+    a:focus {
+        outline: 0.2rem solid hideShow-color;
+    }
 }
 
-.docs-template-TOC-hideShow:after {
-    contrastHideShowRibbonColor(hideShow-background, docs-body-background)
-    content: "";
-    position:absolute;
-    right: -2rem; // shift position right to match the width of the border above.
-    display:block;
-    top: 0;
-}
-
-.docs-template-TOC-hideShow a {
-    color: hideShow-color;
-    margin-right: 0rem;
-    margin-top: 0rem;
-    background: hideShow-background;
-    padding: 0.5rem;
-    display: inline-block;
+.docs-template-topics {
     width: 100%;
+    display: none;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        padding: 0.6rem 0.2rem 0.6rem 0;
+    }
+
+    .docs-template-topics-active:before {
+        content: "\2590";
+        display: inline-block;
+        margin-right: 0.2rem;
+    }
+
+    a {
+        display: inline-block;
+        color: topics-item-color;
+
+        &:hover {
+            background: topics-item-hover-background;
+            text-decoration: none;
+            color: topics-item-hover-color;
+        }
+
+        &:focus {
+            outline: topics-item-focus-border;
+        }
+    }
+
+    .docs-template-topics-active {
+        color: topics-active-color;
+        background: topics-active-background;
+        display: inline-block;
+    }
+
+    .docs-template-category {
+        font-family: 'OpenSans-Bold';
+        margin-bottom: 1rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+        word-wrap: break-word;
+    }
+
+    .docs-template-sectionName {
+        font-weight: normal;
+        font-size: 1rem;
+        margin:0;
+    }
 }
 
-.docs-template-TOC-hideShow a:before {
-    content: "\2630";
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.docs-template-TOC-hideShow a:hover {
-    color: hideShow-hover-color;
-    background: hideShow-hover-background;
-}
-
-.docs-template-TOC-hideShow a:focus {
-    outline: hideShow-focus;
-}
-
-.docs-template-TOC {
-    width: 100%;
-    transition: width transitionTime;
-}
-
-.docs-template-TOC a {
-    display: inline-block;
-}
-
-.docs-template-TOC ul {
-    list-style-type: none;
-}
-
-.docs-template-TOC li {
-    padding: 0.6rem 0.2rem 0.6rem 0;
-}
-
-.docs-template-TOC .docs-template-category {
-    font-family: 'OpenSans-Bold';
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-.docs-template-TOC .docs-template-sectionName {
-    font-weight: normal;
-    font-size: 1rem;
-    margin:0;
-}
-
-.docs-template-TOC .docs-template-TOC-item {
+.docs-template-topics-item {
     padding: 0.2rem;
     border: none;
-    color: toc-item-color;
+    color: topics-item-color;
     display:inline-block;
     width:100%;
-}
-
-.docs-template-TOC a:focus,
-.docs-template-TOC a:hover {
-    color: toc-item-hover-color;
-    background: toc-item-hover-background;
-    outline: toc-item-hover-border;
-    text-decoration: none;
-}
-
-.docs-template-TOC .docs-template-TOC-item.docs-template-TOC-active {
-    color: toc-active-color;
-    background: toc-active-background;
+    text-decoration: inherit;
 }
 
 /* Main Content Area */
@@ -493,7 +734,7 @@ html body {
 }
 
 .docs-template-githubLink {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .docs-template-githubLink a:before {
@@ -505,20 +746,15 @@ html body {
     padding-right: 0.5rem;
 }
 
-.docs-template-articleBody h1 {
-    font-size: 3.0rem;
-    font-family: docs-header-font;
-}
-
-.docs-template-articleBody h2 {
-    font-size: 2.5rem;
-    font-family: docs-header-font;
-}
-
+.docs-template-articleBody h1,
+.docs-template-articleBody h2,
 .docs-template-articleBody h3 {
-    font-size: 1.5rem;
     font-family: docs-header-font;
 }
+
+.docs-template-articleBody h1 { font-size: 3.0rem; }
+.docs-template-articleBody h2 { font-size: 2.5rem; }
+.docs-template-articleBody h3 { font-size: 1.5rem; }
 
 .docs-template-articleBody > p:first-child {
     font-size: 1.4rem;
@@ -571,14 +807,20 @@ html body {
     a:hover {
         background: figure-background;
         // override the default link hover style.
-    }
-
-    a:hover img {
         outline: 0.2rem solid link-hover-background;
     }
 }
 
+.docs-template-404 .docs-template-articleBody {
+    width: 100%;
+    max-width: none;
+}
+
 /* Infusion UIO */
+
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide {
+    min-width: 7rem;
+}
 
 .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-buttons {
     margin-right: 2rem;
@@ -612,223 +854,100 @@ html body {
 }
 
 /* Styles for high-contrast themes */
-.fl-theme-yb .docs-template-fluidLogoText::before {
-    color: #ff0 !important;
-}
-.fl-theme-wb .docs-template-fluidLogoText::before {
-    color: #ffffff !important;
-}
-.fl-theme-by .docs-template-fluidLogoText::before,
-.fl-theme-bw .docs-template-fluidLogoText::before {
-    color: #000000 !important;
-}
-.fl-theme-lgdg .docs-template-fluidLogoText::before {
-    color: #bdbdbb !important;
+.fl-theme-bw,
+.fl-theme-wb,
+.fl-theme-by,
+.fl-theme-yb,
+.fl-theme-lgdg {
+    a:hover .docs-template-topics-item {
+        outline: none !important;
+    }
 }
 
-.fl-theme-bw a:focus,
-.fl-theme-bw .fl-prefsEditor-buttons button:focus,
-.fl-theme-by a:focus,
-.fl-theme-by .fl-prefsEditor-buttons button:focus {
-    outline: 0.2rem solid #000000 !important;
+.fl-theme-bw {
+    contrastTheme(#000, #fff)
 }
 
-.fl-theme-wb a:focus,
-.fl-theme-wb .fl-prefsEditor-buttons button:focus {
-    outline: 0.2rem solid #ffffff !important;
-}
-.fl-theme-yb a:focus,
-.fl-theme-yb .fl-prefsEditor-buttons button:focus {
-    outline: 0.2rem solid #ff0 !important;
-}
-.fl-theme-lgdg a:focus,
-.fl-theme-lgdg .fl-prefsEditor-buttons button:focus {
-    outline: 0.2rem solid #bdbdbb !important;
+.fl-theme-by {
+    contrastTheme(#000, #ff0)
 }
 
-// inverted colours.
-.fl-theme-bw .docs-template-container a:hover,
-.fl-theme-bw .docs-template-container a:hover .docs-template-TOC-item,
-.fl-theme-bw .fl-prefsEditor-buttons button:hover,
-.fl-theme-bw .docs-template-header a:hover:before,
-.fl-theme-bw .docs-template-TOC-hideShow,
-.fl-theme-bw .docs-template-TOC-hideShow a,
-.fl-theme-bw .docs-template-header,
-.fl-theme-bw .docs-template-header div,
-.fl-theme-bw .docs-template-header nav,
-.fl-theme-bw .docs-template-header a,
-.fl-theme-bw .docs-template-footer,
-.fl-theme-bw .docs-template-footer a,
-.fl-theme-bw .docs-template-footer p {
-    color: #ffffff !important;
-    background: #000000 !important;
+.fl-theme-wb {
+    contrastTheme(#fff, #000)
 }
 
-.fl-theme-wb .docs-template-container a:hover,
-.fl-theme-wb .docs-template-container a:hover .docs-template-TOC-item,
-.fl-theme-wb .fl-prefsEditor-buttons button:hover,
-.fl-theme-wb .docs-template-header a:hover:before,
-.fl-theme-wb .docs-template-TOC-hideShow,
-.fl-theme-wb .docs-template-TOC-hideShow a,
-.fl-theme-wb .docs-template-header,
-.fl-theme-wb .docs-template-header div,
-.fl-theme-wb .docs-template-header nav,
-.fl-theme-wb .docs-template-header a,
-.fl-theme-wb .docs-template-footer,
-.fl-theme-wb .docs-template-footer a,
-.fl-theme-wb .docs-template-footer p {
-    color: #000000 !important;
-    background: #ffffff !important;
+.fl-theme-yb {
+    contrastTheme(#ff0, #000)
 }
 
-.fl-theme-by .docs-template-container a:hover,
-.fl-theme-by .docs-template-container a:hover .docs-template-TOC-item,
-.fl-theme-by .fl-prefsEditor-buttons button:hover,
-.fl-theme-by .docs-template-header a:hover:before,
-.fl-theme-by .docs-template-TOC-hideShow,
-.fl-theme-by .docs-template-TOC-hideShow a,
-.fl-theme-by .docs-template-header,
-.fl-theme-by .docs-template-header div,
-.fl-theme-by .docs-template-header nav,
-.fl-theme-by .docs-template-header a,
-.fl-theme-by .docs-template-footer,
-.fl-theme-by .docs-template-footer a,
-.fl-theme-by .docs-template-footer p {
-    color: #ff0 !important;
-    background: #000000 !important;
+.fl-theme-lgdg {
+    contrastTheme(#bdbdbb, #555)
 }
 
-.fl-theme-yb .docs-template-container a:hover,
-.fl-theme-yb .docs-template-container a:hover .docs-template-TOC-item,
-.fl-theme-yb .fl-prefsEditor-buttons button:hover,
-.fl-theme-yb .docs-template-header a:hover:before,
-.fl-theme-yb .docs-template-TOC-hideShow,
-.fl-theme-yb .docs-template-TOC-hideShow a,
-.fl-theme-yb .docs-template-header,
-.fl-theme-yb .docs-template-header div,
-.fl-theme-yb .docs-template-header nav,
-.fl-theme-yb .docs-template-header a,
-.fl-theme-yb .docs-template-footer,
-.fl-theme-yb .docs-template-footer a,
-.fl-theme-yb .docs-template-footer p {
-    color: #000000 !important;
-    background: #ff0 !important;
+// Mobile and small screens
+@media only screen and (max-width: 40em) {
+
+    .docs-template-logo {
+        font-size: 1rem;
+    }
+
+    .docs-template-logo:before {
+        font-size: 1rem;
+    }
+
+    .docs-template-header nav {
+        margin-top: 0;
+    }
+
+    .docs-template-header nav span,
+    .docs-template-header nav a {
+        color: header-nav-link;
+        padding: 0.2rem;
+    }
+
+    .docs-template-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .docs-core-sidebar-expanded .docs-template-topics-container {
+        width: 50%;
+    }
+
+    .docs-core-sidebar-expanded .docs-template-articleBody {
+        width: 50%;
+    }
+
+    .docs-template-topics-hideShow {
+        min-width: 10.8rem;
+        a {
+            font-size: 0.9rem;
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+        }
+    }
+
+    .docs-template-404 .docs-template-articleBody {
+        width: 100%;
+        max-width: none;
+    }
+
+    .docs-template-articleBody h1 {
+        font-size: 2.0rem;
+    }
+
+    .docs-template-articleBody h2 {
+        font-size: 1.5rem;
+    }
+
+    .docs-template-articleBody h3 {
+        font-size: 1.2rem;
+    }
 }
 
-.fl-theme-lgdg .docs-template-container a:hover,
-.fl-theme-lgdg .docs-template-container a:hover .docs-template-TOC-item,
-.fl-theme-lgdg .fl-prefsEditor-buttons button:hover,
-.fl-theme-lgdg .docs-template-header a:hover:before,
-.fl-theme-lgdg .docs-template-TOC-hideShow,
-.fl-theme-lgdg .docs-template-TOC-hideShow a,
-.fl-theme-lgdg .docs-template-header,
-.fl-theme-lgdg .docs-template-header div,
-.fl-theme-lgdg .docs-template-header nav,
-.fl-theme-lgdg .docs-template-header a,
-.fl-theme-lgdg .docs-template-footer,
-.fl-theme-lgdg .docs-template-footer a,
-.fl-theme-lgdg .docs-template-footer p {
-    color: #555555 !important;
-    background: #bdbdbb !important;
-}
-
-// Hide show button contrast styling
-
-.fl-theme-bw .docs-template-TOC-hideShow a:focus,
-.fl-theme-bw .docs-template-TOC-hideShow a:hover {
-    background: #fff !important;
-    color: #000 !important;
-}
-
-.fl-theme-bw .docs-template-TOC-hideShow:after {
-    contrastHideShowRibbonColor(#000, #fff);
-}
-
-.fl-theme-wb .docs-template-TOC-hideShow:after {
-    contrastHideShowRibbonColor(#fff, #000);
-}
-
-.fl-theme-yb .docs-template-TOC-hideShow:after {
-    contrastHideShowRibbonColor(#ff0, #000);
-}
-
-.fl-theme-by .docs-template-TOC-hideShow:after {
-    contrastHideShowRibbonColor(#000, #ff0);
-}
-
-.fl-theme-lgdg .docs-template-TOC-hideShow:after {
-    contrastHideShowRibbonColor(#bdbdbb, #555);
-}
-
-// Header focus styling
-.fl-theme-bw .docs-template-header a:hover,
-.fl-theme-bw .docs-template-header a:focus,
-.fl-theme-bw .docs-template-footer a:hover,
-.fl-theme-bw .docs-template-footer a:focus {
-    background: #fff !important;
-    color: #000 !important;
-    box-shadow:
-        0 0 0 0.2rem #000,
-        0 0 0 0.4rem #fff;
-}
-
-.fl-theme-wb .docs-template-header a:hover,
-.fl-theme-wb .docs-template-header a:focus,
-.fl-theme-wb .docs-template-footer a:hover,
-.fl-theme-wb .docs-template-footer a:focus {
-    background: #000 !important;
-    color: #fff !important;
-    box-shadow:
-        0 0 0 0.2rem #fff,
-        0 0 0 0.4rem #000;
-}
-
-.fl-theme-by .docs-template-header a:hover,
-.fl-theme-by .docs-template-header a:focus,
-.fl-theme-by .docs-template-footer a:hover,
-.fl-theme-by .docs-template-footer a:focus {
-    background: #ff0 !important;
-    color: #000 !important;
-    box-shadow:
-        0 0 0 0.2rem #000,
-        0 0 0 0.4rem #ff0;
-}
-
-.fl-theme-yb .docs-template-header a:hover,
-.fl-theme-yb .docs-template-header a:focus,
-.fl-theme-yb .docs-template-footer a:hover,
-.fl-theme-yb .docs-template-footer a:focus {
-    background: #000 !important;
-    color: #ff0 !important;
-    box-shadow:
-        0 0 0 0.2rem #ff0,
-        0 0 0 0.4rem #000;
-}
-
-.fl-theme-lgdg .docs-template-header a:hover,
-.fl-theme-lgdg .docs-template-header a:focus,
-.fl-theme-lgdg .docs-template-footer a:hover,
-.fl-theme-lgdg .docs-template-footer a:focus {
-    background: #555 !important;
-    color: #bdbdbb !important;
-    box-shadow:
-        0 0 0 0.2rem #bdbdbb,
-        0 0 0 0.4rem #555;
-}
-
-.fl-theme-bw .docs-template-category-active {
-    border-color: #fff !important;
-}
-
-.fl-theme-wb .docs-template-category-active,
-.fl-theme-yb .docs-template-category-active {
-    border-color: #000 !important;
-}
-
-.fl-theme-by .docs-template-category-active {
-    border-color: #ff0 !important;
-}
-
-.fl-theme-lgdg .docs-template-category-active {
-    border-color: #555 !important;
+// Larger screens
+@media only screen and (min-width: site-width) {
+    .docs-template-container {
+        border-left: site-border;
+        border-right: site-border;
+    }
 }

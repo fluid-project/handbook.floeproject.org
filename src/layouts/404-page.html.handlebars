@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>{{document.title}} | Inclusive Learning Design Handbook</title>
+
+        {{! FLUID-5639:
+        github pages serves this 404 document in place of the requested missing
+        document. Thus we do not know in advance the path to the local
+        Foundation and CSS files.
+
+        Therefore we use links to the CDN version of Foundation, and an
+        absolute reference to the CSS file.
+
+        https://issues.fluidproject.org/browse/FLUID-5639 }}
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+        <link rel="stylesheet" href="/lib/infusion/src/lib/jquery/ui/css/default-theme/jquery.ui.theme.css">
+
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+        <link rel="stylesheet" href="/css/docs-template.css">
+        <link rel="stylesheet" href="/css/docs-inclusive-learning.css">
+
+        <link rel="icon" type="image/png" href="/images/favico.png">
+
+        <script type="text/javascript" src="/lib/infusion/infusion-uio.js"></script>
+        <script type="text/javascript" src="/js/DocsCore.js"></script>
+        <script type="text/javascript" src="{{{getRelativeUrl '/lib/jqueryui/jquery-ui.min.js' document.url}}}"></script>
+    </head>
+
+    <body class="docs-template docs-inclusiveLearning docs-template-404">
+        <!-- Skip Link -->
+        <div id="skip">
+            <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+        </div>
+        <!-- END skip link -->
+
+        <header class="row fl-inverted-color">
+
+            <!-- BEGIN markup for Preference Editor -->
+            <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+                <!-- This is the div that will contain the Preference Editor component -->
+                <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+
+                <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+                <div class="fl-panelBar">
+                    <span class="fl-prefsEditor-buttons">
+                        <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                        <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+                    </span>
+                </div>
+            </div>
+            <!-- END markup for Preference Editor -->
+
+            <div class="small-12 column docs-template-header">
+                <a class="docs-template-logo" href="{{{getRelativeUrl '/index.html' document.url}}}" title="Home: Inclusive Learning Design Handbook">Inclusive Learning Design Handbook</a>
+
+                {{! Show the menu for mobile screens }}
+                <nav class="right show-for-small-only docs-template-nav-mobile">
+                    <ul id="menu">
+                        <li class="docs-template-dropDown-header"><span class="docs-template-nav-mobile-icon"></span>
+                            <ul class="docs-template-dropDown">
+                                {{! Highlight the (active) category the document belongs to. }}
+                                {{#each siteStructure}}
+                                    {{#ifEqual category ../document.category}}
+                                        <li class="docs-template-category-active"><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}" aria-label="Currently on Category: {{category}}"><span aria-hidden="true">&#9616;</span> {{category}}</a></li>
+                                    {{else}}
+                                        <li><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}">{{category}}</a></li>
+                                    {{/ifEqual}}
+                                {{/each}}
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="docs-template-header">
+                <nav class="small-12 column show-for-medium-up">
+                    <ul class="inline-list right">
+                    {{! Highlight the (active) category the document belongs to. }}
+                    {{#each siteStructure}}
+                        {{#ifEqual category ../document.category}}
+                            <li class="docs-template-category-active"><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}" aria-label="Currently on Category: {{category}}">&#9616; {{category}}</a></li>
+                        {{else}}
+                            <li><a href="{{{getRelativeUrl categoryHref ../../document.url}}}" title="{{category}}">{{category}}</a></li>
+                        {{/ifEqual}}
+                    {{/each}}
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <article id="content" class="row docs-template-articleBody" tabindex="-1">
+            <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+            <h1>{{document.title}}</h1>
+
+            <div class="docs-template-articleContent">
+                {{{rewriteMdLinks content}}}
+            </div>
+        </article>
+
+        <footer class="row docs-template-footer fl-inverted-color">
+            <p>The Floe Inclusive Learning Design Handbook, part of the <a class="link-external" rel="nofollow" target="_blank" href="http://www.floeproject.org/">Floe Project</a>, is produced by the <a href="http://idrc.ocadu.ca/" rel="nofollow" target="_blank" class="link-external">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca" rel="nofollow" target="_blank" class="link-external">OCAD University</a>.</p>
+            <p>Floe is funded by a grant from <a href="http://www.hewlett.org/" rel="nofollow" target="_blank" class="link-external">The William and Flora Hewlett Foundation</a>.</p>
+            <p>Licensed under <a href="http://creativecommons.org/licenses/by/2.5/ca/" rel="nofollow" target="_blank" class="link-external">Creative Commons Attribution 2.5 Canada</a>.</p>
+        </footer>
+
+        <script type="text/javascript">
+            docsCore.init("/./");
+            jQuery( "#menu" ).menu({
+                position: {my: "right top", at: "right bottom"},
+                icons: {submenu:"ui-icon-blank"}
+            });
+        </script>
+    </body>
+</html>

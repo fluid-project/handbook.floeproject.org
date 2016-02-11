@@ -1,18 +1,17 @@
 {
-  "name": "docs-template",
-  "description": "Templates, styles, and sample content for a documentation website.",
+  "name": "docs-inclusive-learning",
+  "description": "Strategies and best practices for inclusive learning content.",
   "version": "0.0.1-SNAPSHOT",
-  "author": "Fluid Project",
-  "bugs": "http://issues.fluidproject.org/browse/FLUID",
-  "homepage": "http://www.fluidproject.org/",
+  "author": "Floe Project",
+  "bugs": "https://issues.fluidproject.org/browse/FLUID/component/10080/",
+  "homepage": "http://www.floeproject.org/",
   "dependencies": {
-    "docs-core": "jhung/docs-core",
-    "docpad": "~6.78.1",
     "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-highlightjs": "~2.3.0",
     "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-stylus": "~2.9.0"
+    "docpad-plugin-stylus": "~2.10.0",
+    "docs-core": "fluid-project/docs-core"
   },
   "licenses": [
     {
