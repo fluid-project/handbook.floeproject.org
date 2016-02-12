@@ -64,7 +64,7 @@ Techniques and approaches to supporting accessible SVG include:
 * Use the `title` and `desc` elements made available by SVG for providing text alternatives
 * Make use of `aria-labelledby`, `aria-labels`, `aria-describedby`, `aria-describes` and other ARIA attributes to indicate related elements both within the SVG and between the SVG and the rest of the document
 * If using SVG for animated or interactive elements, use ARIA attributes and provide keyboard alternatives to interaction; some guidance for games and simulations using SVG can be found at  the[Inclusive Learning Design Handbook entry on Web Games and Simulations](/WebGamesAndSimulations.html)
-* Where possible consider the use of [CSS to manage the visual appearance of SVG elements](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/SVG_and_CSS) as a means of separating presentation from structure and content; this will make adaptation to alternative presentations easier
+* Where possible, consider the use of [CSS to manage the visual appearance of SVG elements](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/SVG_and_CSS) as a means of separating presentation from structure and content; this will make adaptation to alternative presentations easier
 
 ## Caveats
 
