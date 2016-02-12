@@ -7,7 +7,7 @@ category: Methods
 
 ## What is SVG?
 
-SVG (Scalable Vector Graphics) is a means of describing vector graphics in markup on a web page. Vector graphics can be advantageous for inclusive design because they can be easily resized, scaled up or down to different resolutions without loss of quality, and tagged with additional semantics that make them compatible with assistive technologies such as screen readers.
+SVG (Scalable Vector Graphics) is a means of describing vector graphics in markup on a web page. This can be advantageous for inclusive design because vector graphics can be easily resized, and scaled up or down to different resolutions without loss of quality. SVG can also be augmented with additional semantics that make them compatible with assistive technologies such as screen readers.
 
 ## Simple SVG Example
 
