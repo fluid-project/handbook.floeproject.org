@@ -15,7 +15,7 @@ SVG (Scalable Vector Graphics) is a means of describing vector graphics using XM
 ```
 <svg width="10em" height="5em" viewBox="0 0 1200 400"
      xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <desc>Two small blue rectangles</desc>
+  <desc>Two small rectangles, one red, one green.</desc>
   <rect x="300" y="150" width="400" height="200"
         fill="red" stroke="black" stroke-width="5" />
   <rect x="725" y="150" width="400" height="200"
@@ -26,7 +26,7 @@ SVG (Scalable Vector Graphics) is a means of describing vector graphics using XM
 
 <svg width="10em" height="5em" viewBox="0 0 1200 400"
      xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <desc>Two small rectangles, one blue, one yellow</desc>
+  <desc>Two small rectangles, one red, one green.</desc>
   <rect x="300" y="150" width="400" height="200"
         fill="red" stroke="black" stroke-width="5" />
   <rect x="800" y="150" width="400" height="200"
