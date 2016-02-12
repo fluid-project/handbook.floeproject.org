@@ -35,7 +35,7 @@ SVG (Scalable Vector Graphics) is a means of describing vector graphics using XM
 
 ## Traditional Web Image Accessibility
 
-The familiar `<img>` image tag embeds an existing image file onto a web page. Access is typically provided to such images through alternate textual description by the `alt` attribute. Images are one of the most common and familiar challenges in web accessibility and are well-covered by the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
+The familiar `<img>` image tag embeds an existing image file onto a web page. Access is typically provided to such images through alternate textual description by the `alt` attribute. Images are one of the most common and familiar challenges in web accessibility and are well-covered by the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/).
 
 SVGs are a very different approach to images on webpages, and require somewhat different approaches to accessibility to follow the [Accessibility Principles](/AccessibilityPrinciples.html) of perceivability, understandability and operability. Rather than embedding bitmap image files directly, they supply markup to describe an image and rely on the end user's browser to interpret them and render the image.
 
@@ -62,9 +62,9 @@ Techniques and approaches to supporting accessible SVG include:
 * Use `aria-role` to describe the role of SVG content in the page. This can avoid unexpected or confusing behaviour by ATs interpreting the markup
   * for example, a fuctionally static image created from a combination of SVG elements may have individual elements read by a screen reader. Assigning `aria-role="image"` can prevent this behaviour and allow a screen reader to interpret and convey the image as a single image element, with appropriate alternate text description
 * Use the `title` and `desc` elements made available by SVG for providing text alternatives
-* Make use of `aria-labelledby`, `aria-labels`, `aria-describedby`, `aria-describes` and other ARIA attributes to indicate related elements both within the SVG and between the SVG and the rest of the document
+* Don't make use of `aria-labelledby`, `aria-labels`, `aria-describedby`, `aria-describes` and other ARIA attributes to indicate related elements both within the SVG and between the SVG and the rest of the document
 * If using SVG for animated or interactive elements, use ARIA attributes and provide keyboard alternatives to interaction; some guidance for games and simulations using SVG can be found at  the[Inclusive Learning Design Handbook entry on Web Games and Simulations](/WebGamesAndSimulations.html)
-* Where possible, consider the use of [CSS to manage the visual appearance of SVG elements](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/SVG_and_CSS) as a means of separating presentation from structure and content; this will make adaptation to alternative presentations easier
+* Where possible consider the use of [CSS to manage the visual appearance of SVG elements](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/SVG_and_CSS) as a means of separating presentation from structure and content; this will make adaptation to alternative presentations easier
 
 ## Caveats
 
