@@ -70,7 +70,7 @@ Techniques and approaches to supporting accessible SVG include:
 
 SVG is a large and complex non-HTML technology, albeit one that is supported by modern web browsers well enough to offer many useful possibilities. However
 
-* Complex or advanced uses of SVG should be considered with [reference to browser support for specialized features](http://caniuse.com/#cats=SVG)
+* Complex uses of SVG should be considered with [reference to browser support for specialized features](http://caniuse.com/#cats=SVG), especially if you are interested in supporting older browsers, or advanced effects such as filters and path clipping
 * If features can be implemented or information presented using only HTML, this is probably preferable to using SVG; however, SVG has many capabilities unavailable in HTML for handling advanced graphics rendering
 * Consider whether or not it makes sense to provide an alternative presentation using HTML to any SVG content, such as a data table for data rendered in a chart as is found in the [FLOE Chart Authoring Tool](http://build.fluidproject.org/chartAuthoring/demos/)
 
