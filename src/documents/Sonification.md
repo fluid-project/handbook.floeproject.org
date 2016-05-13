@@ -51,3 +51,5 @@ Sonification research to date has been highly experimental, and we still aren't 
 * The 2011 <a href="http://sonification.de/handbook/" target="_blank" class="link-external">Sonification Handbook</a> is an open access book with contributions from many researchers.
 
 * The <a href="http://www.icad.org/" target="_blank" class="link-external">International Community for Auditory Display</a> brings together researchers from many different fields interested in sonification.
+
+* The <a href="http://sonify.psych.gatech.edu/" target="_blank" class="link-external">Georgia Tech Sonification Lab</a> is a research group focused on sonification.
