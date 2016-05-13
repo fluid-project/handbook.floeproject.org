@@ -44,6 +44,14 @@ Sonification research to date has been highly experimental, and we still aren't 
 * Explore various facets of audio perception when building sonifications, such as pitch, loudness and duration.
 * Build tools with the expectation that diverse users will need the ability to customize sonification preferences in the same way they need the ability to customize visual preferences.
 
+## Tools, technology and examples
+
+* The Floe <a href="http://build.fluidproject.org/chartAuthoring/demos/" target="_blank" class="link-external">Floe chart authoring tool</a> includes sonification components built using open web technologies and the <a href="http://flockingjs.org/" target="_blank" class="link-external">Flocking</a> audio synthesis framework.
+
+* The <a href="http://www.open-shelf.ca/columns/sonification-special-issue/" target="_blank" class="link-external">Sonification special issue</a> of <a href="http://www.open-shelf.ca/" target="_blank" class="link-external">Open Shelf</a> includes a number of examples sonification from the library world.
+
+* The <a href="http://sonify.psych.gatech.edu/" target="_blank" class="link-external">Georgia Tech Sonification Lab</a> has created a number of tools as part of their research, such as the <a href="http://sonify.psych.gatech.edu/research/sonification_sandbox/index.html" target="_blank" class="link-external">Sonification Sandbox</a>
+
 ## Resources
 
 * The <a href="https://wiki.fluidproject.org/display/fluid/%28Floe%29+Sonification" target="_blank" class="link-external">Floe Sonification wiki page</a> and its subpages and links include much more information, including a literature review.
