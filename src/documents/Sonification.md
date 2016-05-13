@@ -7,13 +7,16 @@ category: Methods
 
 ## What is Sonification?
 
-Sonification is a general term for conveying information or data through non-speech audio &mdash; compare to the much better-known term "visualization". Many of us are familiar with simple sonification as an aspect of the user interface of computers or other digital devices, such as alert sounds when receiving new email.
+Sonification is a general term for conveying information or data through non-speech audio &mdash, similar to how the term "visualization" expresses the concept of conveying information or data graphically. Alert sounds for events such as receiving new email or program errors are simple forms of sonification commonly used in user interfaces for computers and other devices.
 
-*Data sonification* is an analogous audio technique to *data visualization* where structured data is converted into another form in order to communicate aspects of often-complex information clearly and efficiently, to support specific analysis of aspects of the data, or to show patterns and relationships in the data.
+*Data sonification* is an analogous audio technique to *data visualization* where structured data is converted into sound to try to:
+* communicate aspects of often-complex information clearly and efficiently
+* support specific analysis of aspects of the data
+* show patterns and relationships in the data
 
 ## The Case for Sonification in Open Educational Resources
 
-While visualization is commonly used in many areas of education, sonification is a more theoretical and experimental area. This makes it both challenging and exciting as a potential means of supporting ["the creation of variations and enhancements"](/Techniques.html#AllowTheCreationOfVariationsAndEnhancements) in OER.
+While sonification is traditionally a theoretical and experimental area, it has rich potential as a means of supporting ["the creation of variations and enhancements"](/Techniques.html#AllowTheCreationOfVariationsAndEnhancements) in OER.
 
 Sonification's most obvious audience would seem to be the learner with visual impairments, but it can also be appreciated by those with cognitive impairments, learning disabilities, or a preference for audio presentation. It can help supplement data visualizations or open new areas for discussion, research and learning.
 
