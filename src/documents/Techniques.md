@@ -16,6 +16,7 @@ An inclusive learning experience is one that matches the needs of the individual
 
 One way for an OER delivery system to accommodate these needs is to flexibly adjust the properties of a resource to match the needs and preferences of the user, or in some cases, to locate alternative resources. In order to accomplish this, a system must have enough information about a resource to assess whether or not it matches the user's needs. This information can be provided using [metadata](Metadata.html).
 
+<a name="AllowTheCreationOfVariationsAndEnhancements"></a>
 ## Allow the creation of variations and enhancements
 
 To better support personalization of the learning experience, learning content can be presented in several forms: textual content, visual content, tactile content and auditory content; theoretical discussions and hands-on exercises; culturally sensitive examples; rich, media-dense content and low-bandwidth content to name a few.
