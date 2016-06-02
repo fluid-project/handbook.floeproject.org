@@ -32,7 +32,9 @@ The <a href="http://build.fluidproject.org/chartAuthoring/demos/" target="_blank
 
 ### Sonification, Visualization and Underlying Data
 
-Placing sonification alongside the more familiar paradigm of data visualization explicitly surfaces that charts and graphs are a derived representation of a data set, and that one way OERs can support diverse learners and meet the [Accessibility Principles](/AccessiblityPrinciples.html) of perceivability and understandability is to make underlying data sets available wherever possible when presenting information in charts, graphs or other derived forms.
+Placing sonification alongside the more familiar paradigm of data visualization explicitly surfaces that charts and graphs are a derived representation of a data set.
+
+Thus, one way OERs can support diverse learners and meet the [Accessibility Principles](/AccessiblityPrinciples.html) of perceivability and understandability is to make underlying data sets available wherever possible when presenting information in charts, graphs or other derived forms.
 
 When underlying data is available in OERs, this allows the possibility for others to transform the OER in ways the content creator may not have envisioned in order to best serve individual learner needs.
 
@@ -41,7 +43,11 @@ When underlying data is available in OERs, this allows the possibility for other
 Sonification research to date has been highly experimental, and we still aren't certain how best to use sonification as part of building inclusive OERs. However, some general guidelines that have emerged:
 
 * As with other forms of presentation, support the possibility of adaptation to individual learner needs by building with open frameworks and approaches, and preserving access to source data.
-* Explore various facets of audio perception when building sonifications, such as pitch, loudness and duration.
+* Explore various facets of audio perception when building sonifications, such as:
+  * pitch
+  * loudness
+  * duration
+  * spatial arrangement (left / right, surround / virtual sound environments)
 * Build tools with the expectation that diverse users will need the ability to customize sonification preferences in the same way they need the ability to customize visual preferences.
 
 ## Tools, technology and examples
