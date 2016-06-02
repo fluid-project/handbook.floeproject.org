@@ -7,7 +7,7 @@ category: Methods
 
 ## What is Sonification?
 
-Sonification is a general term for conveying information or data through non-speech audio &mdash, similar to how the term "visualization" expresses the concept of conveying information or data graphically. Alert sounds for events such as receiving new email or program errors are simple forms of sonification commonly used in user interfaces for computers and other devices.
+Sonification is a general term for conveying information or data through non-speech audio &mdash; similar to how the term "visualization" expresses the concept of conveying information or data graphically. Alert sounds for events such as receiving new email or program errors are simple forms of sonification commonly used in user interfaces for computers and other devices.
 
 *Data sonification* is an analogous audio technique to *data visualization* where structured data is converted into sound to try to:
 * communicate aspects of often-complex information clearly and efficiently
@@ -22,7 +22,7 @@ Sonification's most obvious audience would seem to be the learner with visual im
 
 ### Floe Work
 
-The Floe team is experimenting with sonification and building authoring tools to support it as part of its work in exploring multimodal content creation and presentation in OERs.
+The Floe team is experimenting with sonification and building authoring tools to support it as part of the project's work in exploring multimodal content creation and presentation in OERs.
 
 The <a href="http://build.fluidproject.org/chartAuthoring/demos/" target="_blank" class="link-external">Floe chart authoring tool</a> is a multimodal authoring tool that produces three forms of content from user-entered data data:
 
