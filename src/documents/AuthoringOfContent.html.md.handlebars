@@ -10,7 +10,7 @@ Inclusive learning content is a product of authoring tools and environments that
 ## Take Away
 Whenever possible, try to find an authoring tool that promotes the creation of alternatives and preferences.
 
-## Case Study: OER Commons Authoring Environment
+## Case Study 1: OER Commons Authoring Environment
 Floe and ISKME collaboratively designed an open education resource authoring environment that is easy to use; is inclusive to a diversity of different users; and both offers and gently suggests authors to create layered, malleable content.
 
 The authoring environment is sensitive to Floe's Learner Options (see [Learner needs and preferences](LearnerNeedsAndPreferences.html)), and morphs its authoring environment according to the author's preferences. [Figure 4](#Figure4) and [Figure 5](#Figure5) show the editing environment in high contrast and with large interface elements, respectively.
@@ -73,6 +73,69 @@ Moreover, the authoring environment provides an easy way for authors to add cont
 </figcaption>
 </figure>
 
+## Case Study 2: Floe Chart Authoring Tool
+
+### The Challenge
+
+Charts and graphs are highly visual representations of information, thus, they are often accessible only to individuals who can perceive and process information visually. Users/learners who rely on other modalities for accessing, understanding and using data representations often experience difficulty accessing chart information. Many of these charts and graphs are created by authoring tools or proprietary design software that do not support the creation of accessible outputs. As a result, the exported charts and graphs are flat images that are not accessible by screen readers and scanning software, and it is not possible to navigate their content using a keyboard. One solution that is often used to mitigate the inaccessibility of these visual tools is the addition of descriptive text or information tables along with each chart or graph. However, listening to descriptive text or tabular data does not provide the same rich experience as the visual expression of a chart or graph.
+
+### The Floe Chart Authoring Tool
+
+To address this challenge, the IDRC research team has focused on building a customizable chart authoring tool interface that will enable educational resource authors to create accessible, multi-modal charts/graphs and embed the output in their desired content. This project is ongoing and consists of several phases. This case study focuses on one aspect of the project: the authoring of an accessible and multi-modal pie chart. By starting with a fairly simple data set the research team wanted to set a foundation for future chart authoring work.
+
+At the time of writing this case study, the authoring tool can produce pie charts with two different types of sonifications and generated from data entered by chart creators. The charts are built entirely in open-source web technologies including Javascript and the browser speech and audio APIs. The IDRC research team expects to continue development to accommodate different styles of charts and different sonification approaches, along with the export, sharing and remixing of sonified charts in a web context.
+
+To access the latest demo of the Floe chart authoring tool please select <a href="http://build.fluidproject.org/chartAuthoring/demos/#" target="_blank" class="link-external">this link</a>.
+
+### The Floe Chart Authoring Tool Interface
+
+This authoring interface consists of 4 main sections, two of which are editable. The first section includes two editable text fields - one for entering the chart title and one for a brief description. The second section contains an editable table of values from which the pie chart is generated. It allows user entry of segment text labels and their corresponding values. The third section contains both the visual and sonified versions of the pie chart that are generated from the information entered in the table. Each segment of the pie is presented with a different colour, a text label showing its percentage value, and an audio representation. The final section is an audio/visual legend that describes what each segment of the pie represents. In the legend, each segment colour is shown along with its corresponding text label and value in percent.
+
+At the code level, the tool makes use of open source libraries including the Fluid Project’s <a href="http://fluidproject.org/infusion.html" target="_blank" class="link-external">Infusion</a>, the Infusion-based <a href="http://flockingjs.org/" target="_blank" class="link-external">Flocking</a> audio synthesis library, and the <a href="https://d3js.org" target="_blank" class="link-external">D3</a> data visualization library. By using only open-source libraries and inherent advanced functionality of modern browsers such as speech and audio synthesis, the tool’s architecture models the same principles of openness embodied by OERs. The code is transparent, modular, modifiable and extensible.
+
+### Default State
+A default pie chart is generated when the author first opens the tool interface, as seen in figure 8. This default pie chart will allow authors to discover the editable elements of the interface, enable them to experiment with the default pie chart sonification, and provide a preview of what the final pie chart will sound and look like.
+
+<figure>
+<a name="Figure8"></a>
+[![The default state for the Floe Chart Authoring Tool]({{{getRelativeUrl  '/images/thumbs/400px-Chart-Authoring-Default-State.png' document.url}}})]({{{getRelativeUrl '/images/Chart-Authoring-Default-State.png' document.url}}})
+<figcaption>
+*Figure 8:* A default pie chart is created when the user first opens the Chart Authoring Tool interface.
+</figcaption>
+</figure>
+
+### User Interaction
+The Floe chart authoring environment is compatible with screen readers and can be navigated and interacted with by mouse, keyboard or other input devices.
+
+As the author enters (or edits, or deletes) text labels in the table, they are immediately updated in the legend. As the author enters (or edits, or deletes) numerical values in the table, the total value and corresponding percentages are calculated and updated in both the table and the legend.
+
+While the chart sonification plays, a black stroke appears around the corresponding pie segment as well as around the visual legend item, in order to show the connection between the audio and visual versions of the pie (shown in figure 9).
+
+<figure>
+<a name="Figure9"></a>
+[![The Floe Chart Authoring tool playing the sonification.]({{{getRelativeUrl '/images/thumbs/400px-Chart-Authoring-Playing-Sonification.png' document.url}}})]({{{getRelativeUrl '/images/Chart-Authoring-Playing-Sonification.png' document.url}}})
+<figcaption>
+*Figure 9:* The chart sonification plays and a black border appears around the relevant segments in the pie chart and legend.
+</figcaption>
+</figure>
+
+As shown in figure 10, selecting the reset button will erase all the information including the chart title and description as well as the data entered in the table.
+
+<figure>
+<a name="Figure10"></a>
+[![The Floe Chart Authoring tool in its reset state.]({{{getRelativeUrl '/images/thumbs/400px-Chart-Authoring-Reset-State.png' document.url}}})]({{{getRelativeUrl '/images/Chart-Authoring-Reset-State.png' document.url}}})
+<figcaption>
+*Figure 10:* When the Chart Authoring Tool is reset, all information and data is erased.
+</figcaption>
+</figure>
+
+
+### The Long-Term Vision
+
+* Integration of the User Interface Options (UIO) panel with the Floe chart authoring tool. This will give chart authors the ability to customize their authoring environment based on their unique needs and preferences.
+* Ample end-user configurability for sonifications as well as visual representations. In this way the authoring tool will itself produce artifacts that can be further modified or re-authored by the audience. So far, user testing validates our sense that for sonification to be useful it must accommodate a diverse range of end-user tastes and preferences, and that what works best for one user may not for another.
+
+
 ## Accessible Office Documents
 
 The <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="link-external">Accessible Digital Office Document (ADOD) Project</a> offers guidance and techniques on how to author accessible documents using common office applications.
@@ -83,21 +146,21 @@ The <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="li
 <figure>
 [![cnx.org OER authoring environment]({{{getRelativeUrl '/images/thumbs/500px-Connexions-authoring-environment.jpg' document.url}}})]({{{getRelativeUrl '/images/Connexions-authoring-environment.jpg' document.url}}})
 <figcaption>
-*Figure 8:* cnx.org OER authoring environment
+*Figure 11:* cnx.org OER authoring environment
 </figcaption>
 </figure>
 
 <figure>
 [![MediaWiki authoring environment]({{{getRelativeUrl '/images/thumbs/500px-Wikipedia-authoring-environment.jpg' document.url}}})]({{{getRelativeUrl '/images/Wikipedia-authoring-environment.jpg' document.url}}})
 <figcaption>
-*Figure 9:* MediaWiki authoring environment.
+*Figure 12:* MediaWiki authoring environment.
 </figcaption>
 </figure>
 
 <figure>
 [![Wordpress authoring environment]({{{getRelativeUrl '/images/thumbs/500px-Wordpress-authoring-environment.jpg' document.url}}})]({{{getRelativeUrl '/images/Wordpress-authoring-environment.jpg' document.url}}})
 <figcaption>
-*Figure 10:* Wordpress authoring environment.
+*Figure 13:* Wordpress authoring environment.
 </figcaption>
 </figure>
 
