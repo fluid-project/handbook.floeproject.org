@@ -38,7 +38,8 @@
                     { "pageName": "SVG and Accessibility", "href": "/SVGAndAccessibility.html"},
                     { "pageName": "Sonification", "href": "/Sonification.html"},
                     { "pageName": "Authoring of Content", "href": "/AuthoringOfContent.html"},
-                    { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"}
+                    { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"},
+                    { "pageName": "Inclusive Making and Hacking", "href": "/InclusiveMakingAndHacking.html"}
                 ]
             }
         ]
