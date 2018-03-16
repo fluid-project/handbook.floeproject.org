@@ -25,6 +25,7 @@
                 "pages":
                 [
                     { "pageName": "Inclusive Learning", "href": "/InclusiveLearning.html" },
+                    { "pageName": "Creating Inclusive Learning Experiences", "href": "/CreatingInclusiveLearningExperiences.html" },
                     { "pageName": "Accessibility Principles", "href": "/AccessibilityPrinciples.html"},
                     { "pageName": "Techniques", "href": "/Techniques.html"},
                     { "pageName": "Metadata", "href": "/Metadata.html"},
