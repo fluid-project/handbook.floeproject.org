@@ -1,8 +1,8 @@
 ---
-title: Techniques
+title: General Considerations
 subheader: Various practical tips to making learning resources more inclusive and accessible
 layout: default
-category: Methods
+category: Approaches
 ---
 
 ## Label resources to indicate what learning needs the resource addresses

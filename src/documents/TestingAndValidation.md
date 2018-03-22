@@ -1,7 +1,7 @@
 ---
 title: Testing and Validation
 layout: default
-category: Inclusive EPUB 3
+category: Tools
 ---
 
 There is a wide spectrum of EPUB reader systems currently available, each with different capabilities. Some reader systems support scripting, some do not. One reader system supports webm video, while another has a built-in voice synthesizer.

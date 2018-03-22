@@ -1,7 +1,7 @@
 ---
 title: Scripting in EPUB 3
 layout: default
-category: Inclusive EPUB 3
+category: Tools
 ---
 
 Scripting in EPUB 3 should be considered an optional feature, and the main content of the book should be understandable without scripting. According to IDPF:

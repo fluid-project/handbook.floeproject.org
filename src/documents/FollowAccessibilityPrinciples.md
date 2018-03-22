@@ -1,21 +1,8 @@
 ---
-title: Accessibility Principles
+title: Where to Begin?
 layout: default
-category: Methods
+category: Approaches
 ---
-## What Makes Content Accessible?</span>
-
-The Floe approach to [inclusive learning](InclusiveLearning.html) emphasizes a "one size fits one" approach. Instead of having a single resource that tries to be accessible to every possible need and preference (i.e., "one size fits all"), Floe encourages a diversity of individualized resources that meet the diverse needs and preferences of leaners through transformation, supplementation, and remixing of existing resources.
-
-Also see [Learner Needs and Preferences](LearnerNeedsAndPreferences.html).
-
-## Understanding Accessibility and Inclusivity</span>
-
-Floe defines Inclusive Design as design that considers the full range of human diversity with respect to ability, language, culture, gender, age and other forms of human difference.
-
-Disability is the mismatch between the needs and preferences of the user and the system or environment. Accessibility, then, is the ability of the system or environment to accommodate the needs and preferences of each individual. To further understand these definitions and what it means for content creation, adaptation, and usability, look at the Floe work describing <a href="https://wiki.fluidproject.org/x/9YcNAQ" rel="nofollow" target="_blank" class="link-external">some user states and contexts</a>.
-
-## Where to Begin?
 
 If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more adaptable, and more configurable to individual learner needs. Of course, [authoring content](AuthoringOfContent.html) in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable. There are also options for making materials more accessible "after the fact" (see [Video content and learning](VideoContentAndLearning.html), [Audio content and learning](AudioContentAndLearning.html), [Cognitive considerations](CognitiveConsiderations.html)).
 
@@ -79,27 +66,6 @@ Floe examples:
 
 * Maximize compatibility with current and future user tools.
 * Learning resources should gracefully degrade when using older tools, and progressively enhance when using modern tools.
-
-## Tools for evaluating accessibility of content
-
-* <a href="http://www.w3.org/WAI/ER/tools/complete" rel="nofollow" target="_blank" class="link-external">A complete list of Web Accessibility Evaluation Tools from the W3C</a>
-
-### Authoring
-* <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="link-external">How to make common word processing documents more accessible</a>
-* <a href="https://www.readability.com/addons"rel="nofollow" target="_blank" class="link-external">An example of a Mozilla browser plugin for removing clutter</a>
-
-### Checking code
-* <a href="http://www.read-able.com/" rel="nofollow" target="_blank" class="link-external">Calculate the readability of a web page</a>
-* <a href="http://validator.w3.org/" rel="nofollow" target="_blank" class="link-external">W3C tool for validating markup by URI</a>
-* <a href="http://jigsaw.w3.org/css-validator/" rel="nofollow" target="_blank" class="link-external">W3C tool for validating CSS by URI</a>
-* <a href="http://achecker.ca/" rel="nofollow" target="_blank" class="link-external">Evaluate the accessibility of web pages or HTML</a>
-
-### Checking color
-* <a href="http://colorfilter.wickline.org" rel="nofollow" target="_blank" class="link-external">http://colorfilter.wickline.org</a>
-* <a href="http://vischeck.com" rel="nofollow" target="_blank" class="link-external">http://vischeck.com</a>
-* <a href="http://gmazzocato.altervista.org/colorwheel/wheel.php" rel="nofollow" target="_blank" class="link-external">http://gmazzocato.altervista.org/colorwheel/wheel.php</a>
-* <a href="http://www.snook.ca/technical/colour_contrast/colour.html" rel="nofollow" target="_blank" class="link-external">http://www.snook.ca/technical/colour_contrast/colour.html</a>
-* <a href="http://webaim.org/resources/contrastchecker/" rel="nofollow" target="_blank" class="link-external">http://webaim.org/resources/contrastchecker/</a>
 
 ### Standards
 

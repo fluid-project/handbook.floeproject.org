@@ -1,7 +1,7 @@
 ---
 title: Functional Considerations
 layout: default
-category: Accessible Standardized Testing
+category: Approaches
 ---
 There are many ways to assure a standardized test is designed in a way that accommodates a broader range of users with or without special needs. Some of these considerations are listed below.
 

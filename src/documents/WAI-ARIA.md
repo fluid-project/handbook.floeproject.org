@@ -1,7 +1,7 @@
 ---
 title: WAI-ARIA
 layout: default
-category: Inclusive EPUB 3
+category: Tools
 ---
 While HTML 5 semantic markup and epub:type go a long way to help your publication's structure and content be understood by reader systems, there are times when WAI-ARIA  is needed to help convey relationships and function of elements on a page.
 

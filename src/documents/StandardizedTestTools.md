@@ -1,7 +1,7 @@
 ---
 title: Standardized Test Tools
 layout: default
-category: Accessible Standardized Testing
+category: Approaches
 ---
 
 ## Multiple Choice Questions
