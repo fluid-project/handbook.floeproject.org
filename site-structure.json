@@ -24,8 +24,8 @@
                 "sectionName":"",
                 "pages":
                 [
+                  { "pageName": "Accessibility Principles", "href": "/AccessibilityPrinciples.html"},
                     { "pageName": "Inclusive Learning", "href": "/InclusiveLearning.html" },
-                    { "pageName": "Accessibility Principles", "href": "/AccessibilityPrinciples.html"},
                     { "pageName": "Techniques", "href": "/Techniques.html"},
                     { "pageName": "Metadata", "href": "/Metadata.html"},
                     { "pageName": "Access for All", "href": "/AccessForAll.html"},
