@@ -1,7 +1,7 @@
 ---
 title: Standardized Test Types
 layout: default
-category: Accessible Standardized Testing
+category: Approaches
 ---
 
 ## Low-stakes Tests

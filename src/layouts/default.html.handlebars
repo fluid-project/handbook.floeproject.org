@@ -105,7 +105,9 @@
                         {{#ifEqual category ../document.category}}
                             <h2 class="docs-template-category">{{category}}</h2>
                             {{#each sections}}
-                                <h3 class="docs-template-sectionName">{{sectionName}}</h3>
+                                <span class="docs-template-sectionName">
+                                  <h4>{{sectionName}}</h4>
+                                </span>
                                 <ul>
                                     {{#each pages}}
                                         <li>

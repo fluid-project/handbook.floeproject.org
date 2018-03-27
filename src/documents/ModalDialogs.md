@@ -2,7 +2,7 @@
 title: Accessible Modal Dialogs
 subheader:
 layout: default
-category: Methods
+category: Approaches
 ---
 
 ## What are Modal Dialogs

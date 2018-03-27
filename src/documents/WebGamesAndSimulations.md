@@ -1,7 +1,7 @@
 ---
 title: Web Games and Simulations
 layout: default
-category: Methods
+category: Approaches
 ---
 
 Interactive games can provide rich learning experiences for many students - but for some, these games are an accessibility and inclusivity challenge. This guide aims at giving some practical techniques to help improve the inclusiveness and accessibility of interactive content whether retrofitting existing content or creating a new game from scratch.

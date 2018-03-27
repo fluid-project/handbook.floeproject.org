@@ -2,17 +2,14 @@
 title: Cognitive Considerations
 subheader: Much of the following is borrowed largely from Clayton Lewis (http://spot.colorado.edu/~clayton/)
 layout: default
-category: Methods
+category: Approaches
 ---
-
-
-## Introduction
 
 Cognitive considerations are particularly relevant to Web-based material. Most agree that the Web can present information in a way that overwhelms. Research and innovation in areas like visualization, text simplification, and generally interface design are squarely concerned with making Web content more approachable, readable, and digestible.
 
 This is another area where accessibility and inclusivity should enter the conversation. Inclusively-designed Web content can address the needs of a large audience while also addressing the needs of those with particular needs in cognitive, language, and learning areas. And as we contend elsewhere, many of the techniques described are useful for making information clearer and more easily used for all audiences.
 
-## Considerations - Starting points
+## Starting points
 
 * Some users have trouble understanding text, especially unusual words and complicated sentences.
 

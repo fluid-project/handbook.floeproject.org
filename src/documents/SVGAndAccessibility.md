@@ -2,7 +2,7 @@
 title: SVG and Accessibility
 subheader:
 layout: default
-category: Methods
+category: Approaches
 ---
 
 ## What is SVG?

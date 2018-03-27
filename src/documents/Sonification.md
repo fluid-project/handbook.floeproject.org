@@ -2,7 +2,7 @@
 title: Sonification
 subheader:
 layout: default
-category: Methods
+category: Approaches
 ---
 
 ## What is Sonification?

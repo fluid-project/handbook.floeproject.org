@@ -1,7 +1,7 @@
 ---
 title: Semantic Markup in EPUB 3
 layout: default
-category: Inclusive EPUB 3
+category: Tools
 ---
 
 EPUB 3 books can be created from HTML5, and the same principles for creating well-formed, semantically sound web content apply. For an EPUB 3 author, there are two tools available: <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" rel="nofollow" target="_blank" class="link-external">HTML 5 semantic elements</a>, and <a href="http://www.idpf.org/accessibility/guidelines/content/semantics/epub-type.php" rel="nofollow" target="_blank" class="link-external">`epub:type`</a>.

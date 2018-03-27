@@ -1,7 +1,7 @@
 ---
 title: General Guidelines
 layout: default
-category: Accessible Standardized Testing
+category: Approaches
 ---
 
 ## Before designing the test

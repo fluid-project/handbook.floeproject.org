@@ -1,20 +1,15 @@
 ---
-title: Inclusive Learning
-subheader: Introduction to the Floe Model of Learning Content
+title: How to achieve Inclusive Education?
 layout: default
-category: Approaches
+category: Perspectives
 ---
+Inclusive education or accessibility is achieved by a sufficiently diverse and flexible pool of OER to address the diversity of learners, as well as a way to find and deliver resources that address each learner’s individual needs.
 
-## Motivation: learners learn differently
+OER can meet the legislative and policy commitments to accessible education by expanding the pool of resources to include derivatives that meet the needs of learners who cannot access the currently available resources and by designing resources that can be easily reconfigured. This will also make OER more accessible to learners who speak diverse languages, have diverse educational backgrounds, or have diverse cultural perspectives.
 
-We have heard that students feel disenfranchised, do not see education as relevant, see the system as too inflexible and do not feel that their needs are being recognized or met. The learner most in need of a new approach to education is the marginalized learner. To reach that learner, learning must be inclusive. Society must ensure that no members are marginalized or excluded from educational opportunities.
+The Floe project is working with OER projects globally to create supports to enable the delivery of inclusive learning using OER.
 
-If our goal is to optimize learning for all learners we must recognize that learners learn differently. There is neither a single take on learning nor a best way to teach a concept. Learning outcomes research shows that learners learn best when the learning experience is personalized to their learning needs. Learning breakdown and drop out occurs when students face barriers to learning, feel disadvantaged by the learning experience offered or feel that their personal learning needs are ignored. We must take a flexible and multi-modal approach to teaching and learning.
-
-For additional information, visit the
-<a class="link-external" rel="nofollow" target="_blank" href="http://www.slideshare.net/jesshmitchell/floe-project">Floe Project presentations on Slideshare</a>.
-
-## Solution: Customization and personalization, and demands with matching.
+## Customization and personalization, and demands with matching
 
 Open Educational Resources have the advantage of being “born-digital” and can therefore harness the potential mutability or plasticity of digital delivery systems and digital content to assist in addressing the diversity of learning needs. Unfortunately many of our resources are not designed to take advantage of this plasticity and constrain the flexibility needed to tailor the experience to diverse learners.
 
@@ -42,6 +37,12 @@ Learning needs that affect learning can include:
 *Figure 1:* Floe concept design mindmap illustrates the many different ideas and parts which work together to enable a one-size-fits-one education.
 </figcaption>
 </figure>
+
+
+To learn more, see the Inclusive Design Guide:
+* Insight: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/insights/PersonalDiscovery.html">Personal Discovery</a>
+* Practice: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/practices/DesignForAdaptabilityAndFlexibility.html">Design for Adaptability and Flexibility</a>
+* Practice: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/practices/DesignForUncertainty.html">Design for Uncertainty</a>
 
 ## Benefit of openness
 
@@ -87,4 +88,6 @@ That is the work that Floe focuses on. To further understand what Floe is workin
 </figcaption>
 </figure>
 
-Fluid Studios was a place for innovation, exploring mutability of interfaces, automating augmentation, and experimentation. Students, instructors, researchers, developers, and designers used the space to try new approaches to inclusivity. Participants have since gone on pursue their own initiatives and Fluid Studios was taken offline in 2015.
+To learn more, see the Inclusive Design Guide:
+* Insight: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/insights/UserContinuedDesign.html">User-Continued Design</a>
+* Practice: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/practices/WorkOpenly.html">Work Openly</a>
