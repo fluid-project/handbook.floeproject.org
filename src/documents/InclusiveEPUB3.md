@@ -1,7 +1,7 @@
 ---
 title: Inclusive EPUB 3
 layout: default
-category: Tools
+category: Techniques
 ---
 
 The Inclusive EPUB 3 guide is intended for content creators and educators who wish to use EPUB 3 and are interested in making their published content broadly usable by a full spectrum of users.

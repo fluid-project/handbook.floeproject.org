@@ -1,7 +1,7 @@
 ---
 title: Narrations and Text-to-Speech
 layout: default
-category: Tools
+category: Techniques
 ---
 Media overlays and text-to-speech in EPUB 3 are powerful features that unlock the ability for users to listen to the contents of the book, instead of just reading it.
 

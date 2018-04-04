@@ -1,7 +1,7 @@
 ---
 title: Accessibility Metadata
 layout: default
-category: Tools
+category: Techniques
 ---
 The information captured by accessibility metadata can be useful to many users; describing a publication as containing transcripts, large print, or having text-to-speech allows users to quickly find what they want, and gives creators a way of differentiating themselves.
 

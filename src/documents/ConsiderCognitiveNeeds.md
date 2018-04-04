@@ -1,5 +1,5 @@
 ---
-title: Cognitive Considerations
+title: Consider Cognitive Needs
 subheader: Much of the following is borrowed largely from Clayton Lewis (http://spot.colorado.edu/~clayton/)
 layout: default
 category: Approaches

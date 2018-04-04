@@ -1,7 +1,7 @@
 ---
 title: Visual Styles
 layout: default
-category: Tools
+category: Techniques
 ---
 Visual styling in EPUB 3 books should be approached differently than styling for a webpage residing on the Internet. Generally, styling for an EPUB 3 publication should:
 

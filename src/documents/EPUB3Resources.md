@@ -1,7 +1,7 @@
 ---
 title: EPUB 3 Resources
 layout: default
-category: Tools
+category: Techniques
 ---
 
 1. EPUB3 Overview - <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/epub/30/spec/epub30-overview.html">www.idpf.org/epub/30/spec/epub30-overview.html</a> - answers basic questions about what is EPUB, what it is capable of, and how it can be used.

@@ -1,7 +1,7 @@
 ---
 title: Case Study: Exemplar
 layout: default
-category: Tools
+category: Techniques
 ---
 
 The Floe project developed an EPUB 3 resource that exemplifies best practices for creating inclusive EPUB resources:

@@ -1,5 +1,5 @@
 ---
-title: How to achieve Inclusive Education?
+title: Achieving Inclusive Education
 layout: default
 category: Perspectives
 ---
