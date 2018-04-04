@@ -1,7 +1,7 @@
 ---
 title: Graphics and Multimedia
 layout: default
-category: Tools
+category: Techniques
 ---
 The notion of a "typical end user" is increasingly difficult to define. With EPUB 3 and eBooks easily accessible through different devices, even users who were once described as "typical" find themselves in situations where their ability to consume or comprehend content is affected by their environment or context. The challenge for EPUB 3 authors is to create content that is robust and can adapt to the wide spectrum of users and their situations.
 

@@ -1,14 +1,14 @@
 [
-    {
+       {
         "category": "Introduction",
-        "categoryHref":"/index.html",
+        "categoryHref":"/introduction.html",
         "sections":
         [
             {
                 "sectionName":"",
                 "pages":
                 [
-                    {"pageName": "Welcome to the Inclusive Learning Design Handbook", "href":"/index.html"}
+                    {"pageName": "Where to begin?", "href":"/introduction.html"}
                 ]
             }
         ]
@@ -16,7 +16,7 @@
 
     {
         "category": "Perspectives",
-        "categoryHref": "/UnderstandingAccessibilityandInclusivity.html",
+        "categoryHref": "/PerspectivesOverview.html",
         "sections":
         [
             {
@@ -33,7 +33,7 @@
 
     {
         "category": "Approaches",
-        "categoryHref": "/FollowAccessibilityPrinciples.html",
+        "categoryHref": "/ApproachesOverview.html",
         "sections":
         [
             {
@@ -42,22 +42,21 @@
                 [
                     { "pageName": "Follow Accessibility Principles", "href": "/FollowAccessibilityPrinciples.html"},
                     { "pageName": "Meet Learner Needs and Preferences", "href": "/MeetLearnerNeedsAndPreferences.html"},
-                    { "pageName": "Consider Cognitive Needs", "href": "/ConsiderCognitiveNeeds.html"},
-                    { "pageName": "General Considerations", "href": "/Techniques.html"}
+                    { "pageName": "Consider Cognitive Needs", "href": "/ConsiderCognitiveNeeds.html"}
                 ]
             },
             {
                 "sectionName":"Inclusive Authoring",
                 "pages":
                 [
+                    { "pageName": "General Considerations", "href": "/Techniques.html"},
                     { "pageName": "Metadata", "href": "/Metadata.html"},
                     { "pageName": "Video Content and Learning", "href": "/VideoContentAndLearning.html"},
                     { "pageName": "Audio Content and Learning", "href": "/AudioContentAndLearning.html"},
                     { "pageName": "Web Games and Simulations", "href": "/WebGamesAndSimulations.html"},
                     { "pageName": "Accessible Modal Dialogs", "href": "/ModalDialogs.html"},
                     { "pageName": "SVG and Accessibility", "href": "/SVGAndAccessibility.html"},
-                    { "pageName": "Sonification", "href": "/Sonification.html"},
-                    { "pageName": "Authoring of Content", "href": "/AuthoringOfContent.html"}
+                    { "pageName": "Sonification", "href": "/Sonification.html"}
                 ]
             },
             {
@@ -68,7 +67,7 @@
                 ]
             },
             {
-              "sectionName":"Inclusive Co-Creation",
+              "sectionName":"Co-Creation",
               "pages":
               [
                  { "pageName": "Inclusive Making and Hacking", "href": "/InclusiveMakingAndHacking.html"}
@@ -79,30 +78,23 @@
     },
 
     {
-        "category": "Tools",
-        "categoryHref": "/InclusiveEPUB3.html",
+        "category": "Techniques",
+        "categoryHref": "/TechniquesOverview.html",
         "sections":
         [
             {
-                "sectionName":"Content Authoring",
+                "sectionName":"Authoring Content",
                 "pages":
                 [
-                    { "pageName": "Inclusive EPUB 3", "href": "/InclusiveEPUB3.html" }
+                    { "pageName": "Inclusive EPUB 3", "href": "/InclusiveEPUB3.html" },
+                    { "pageName": "Inclusive Authoring Environments", "href": "/AuthoringOfContent.html"}
                 ]
-            },
-            {
-                  "sectionName":"Specifications and Markup Structures",
-                  "pages":
-                  [
-                    { "pageName": "Access for All", "href": "/AccessForAll.html"},
-                    { "pageName": "Schema.org Accessibility Properties", "href": "/SchemaOrgAccessibilityProperties.html"}
-                  ]
             },
             {
                   "sectionName":"Testing and Evaluation",
                   "pages":
                   [
-                    { "pageName": "Tools for Evaluating Accessibility of Content", "href": "/ToolsforEvaluatingAccessibilityofContent.html"}
+                    { "pageName": "Accessibility Assessment Tools", "href": "/AccessibilityAssessmentTools.html"}
                   ]
             }
 

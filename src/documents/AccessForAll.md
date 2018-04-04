@@ -1,7 +1,7 @@
 ---
 title: Access for All
 layout: default
-category: Methods
+category: Techniques
 ---
 AccessForAll accessibility promotes an inclusive learning experience by enabling the matching of the characteristics of resources to the needs and preferences of individual learners. In circumstances where resources might not be, or even where they are, suitable for all learners, it enables the discovery of appropriate resources. AccessForAll is an approach to accessibility and inclusion that emphasizes personalization by providing support for systems of transformable, flexible resources that each meet different needs.
 

@@ -1,7 +1,7 @@
 ---
-title: Tools for evaluating accessibility of content
+title: Accessibility Assessment Tools
 layout: default
-category: Tools
+category: Techniques
 ---
 * <a href="http://www.w3.org/WAI/ER/tools/complete" rel="nofollow" target="_blank" class="link-external">A complete list of Web Accessibility Evaluation Tools from the W3C</a>
 
