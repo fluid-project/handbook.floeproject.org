@@ -41,3 +41,18 @@ Validating an EPUB file will ensure that it conforms to the EPUB specification.
 
 * Online validator: <a rel="nofollow" target="_blank" class="link-external" href="http://validator.idpf.org/">http://validator.idpf.org/</a> (maximum 10MB)
 * Locally-run validator: <a rel="nofollow" target="_blank" class="link-external" href="https://github.com/idpf/epubcheck">http://validator.idpf.org/</a>
+
+
+## Topics:
+* [Inclusive EPUB3](InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)
