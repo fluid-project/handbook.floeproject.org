@@ -57,13 +57,13 @@ Broadly, the approach to making an inclusive EPUB 3 publication takes the follow
 
 ## Topics:
 * [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
-* [WAI-ARIA](FunctionalWAI-ARIA.html)
+* [WAI-ARIA](WAI-ARIA.html)
 * [Visual Styles](VisualStyles.html)
 * [Graphics and Multimedia](GraphicsAndMultimedia.html)
 * [Scripting in EPUB 3](ScriptingInEPUB3.html)
 * [Mathematics](Mathematics.html)
 * [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
-* [Accessibility Metadata](Accessibility Metadata.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
 * [Testing and Validation](TestingAndValidation.html)
 * [Case Study Exemplar](CaseStudyExemplar.html)
 * [EPUB 3 Resources](EPUB3Resources.html)
