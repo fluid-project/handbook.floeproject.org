@@ -27,12 +27,12 @@ To learn more, see the Inclusive Design Guide:
 
 ## What is Accessible?</span>
 
-An accessible learning experience (or OER) is a learning experience that matches the needs of the individual learner or the learners within a group. Thus a resource cannot be labeled as accessible or inaccessible until we know the context, the learning goal and the learner (or learners). An OER may be accessible to one group of learners and not another. See Accessibility principles for more information.
+An accessible learning experience is a learning experience that matches the needs of the individual learner or the learners within a group. Thus a resource cannot be labeled as accessible or inaccessible until we know the context, the learning goal and the learner (or learners). An Open Education Resource (OER) may be accessible to one group of learners and not another. See Accessibility principles for more information.
 
 
 ## What Makes Content Accessible?</span>
 
-The Floe approach to [inclusive learning](InclusiveLearning.html) emphasizes a "one size fits one" approach. Instead of having a single resource that tries to be accessible to every possible need and preference (i.e., "one size fits all"), Floe encourages a diversity of individualized resources that meet the diverse needs and preferences of leaners through transformation, supplementation, and remixing of existing resources.
+The Floe approach to [inclusive learning](InclusiveLearning.html) emphasizes a "one size fits one" approach. Instead of having a single resource that tries to meet every possible need and preference (i.e., "one size fits all"), Floe encourages a diversity of individualized resources that meet the diverse needs and preferences of leaners through transformation, supplementation, and remixing of existing resources.
 
 Also see [Meet Learner Needs and Preferences](MeetLearnerNeedsAndPreferences.html)
 

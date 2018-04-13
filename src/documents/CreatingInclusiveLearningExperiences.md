@@ -1,7 +1,7 @@
 ---
-title: Creating Inclusive Learning Experiences
+title: Create Inclusive Learning Experiences
 layout: default
-category: Perspectives
+category: Approaches
 ---
 This section aims to develop design guidelines and methods for building positive and constructive environments for self-learning and self-reflection with learners who have diverse learning needs and preferences.
 
