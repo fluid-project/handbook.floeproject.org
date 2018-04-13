@@ -24,8 +24,7 @@
                 "pages":
                 [
                     { "pageName": "Understanding Accessibility and Inclusivity", "href": "/UnderstandingAccessibilityandInclusivity.html"},
-                    { "pageName": "Achieving Inclusive Education", "href": "/AchievingInclusiveEducation.html"},
-                    { "pageName": "Creating Inclusive Learning Experiences", "href": "/CreatingInclusiveLearningExperiences.html"}
+                    { "pageName": "Achieving Inclusive Education", "href": "/AchievingInclusiveEducation.html"}
                 ]
             }
         ]
@@ -42,7 +41,8 @@
                 [
                     { "pageName": "Follow Accessibility Principles", "href": "/FollowAccessibilityPrinciples.html"},
                     { "pageName": "Meet Learner Needs and Preferences", "href": "/MeetLearnerNeedsAndPreferences.html"},
-                    { "pageName": "Consider Cognitive Needs", "href": "/ConsiderCognitiveNeeds.html"}
+                    { "pageName": "Consider Cognitive Needs", "href": "/ConsiderCognitiveNeeds.html"},
+                    { "pageName": "Create Inclusive Learning Experiences", "href": "/CreatingInclusiveLearningExperiences.html"}
                 ]
             },
             {
