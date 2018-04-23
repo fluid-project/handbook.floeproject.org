@@ -1,28 +1,12 @@
 ---
-title: Introduction to Inclusive EPUB 3
+title: Inclusive EPUB 3
 layout: default
-category: Inclusive EPUB 3
+category: Techniques
 ---
 
 The Inclusive EPUB 3 guide is intended for content creators and educators who wish to use EPUB 3 and are interested in making their published content broadly usable by a full spectrum of users.
 
 This guide covers a broad range of topics that will help make an EPUB 3 book more usable in different contexts. The information provided illustrates how concepts may be applied but won't make you an "expert" - you are encouraged to use this guide as a starting point and to follow the resources provided to gain additional insight.
-
-## What is Inclusivity and how is it different from accessibility? ##
-
-Technology has enabled users, of all abilities, access to information in many different environments and contexts - they are no longer limited in where and how they access information. Because of this freedom, users are now finding themselves in a wide range of situations where their ability to access information depends on many factors - both internal and external:
-
-* Is the user in a library where she can not listen to audio at a reasonable volume without being disruptive?
-* Is the user on a noisy, cramped subway train where network connectivity is limited, there is a lot of ambient noise, and mobility is restricted?
-* Is the user unable to concentrate fully to the task but still needs a particular piece of information on his mobile device - how can this be done?
-
-Inclusiveness, or the practice of inclusivity, is the belief that the design of a "thing" – whether it is a piece of technology, an everyday object, or even information itself – should be mindful of a broad range of users, their variable abilities, their variety of environments, situations, and contexts.
-
-Inclusiveness is different from accessibility in that inclusivity doesn't specifically address a particular need or problem - rather inclusivity provides a spectrum of tools and features that the end user can choose from to fit his or her requirements in the given context. In short, Inclusiveness is not prescriptive since the user chooses how best to help themselves.
-
-The challenge for content creators is: How do you create content that allows for flexible usage?
-
-EPUB 3 is an open content distribution format which has many features that allow a broad range of users to consume content in a variety of situations. This guide outlines some of the different features of EPUB 3 that will make your content usable, robust, and resilient.
 
 ## What is EPUB? ##
 
@@ -70,3 +54,16 @@ Broadly, the approach to making an inclusive EPUB 3 publication takes the follow
 * Text-to-speech is facilitated and enhanced by using special audio markup and aural styles.
 * Content is translated to other languages.
 * Good descriptive metadata is available that includes accessibility information.
+
+## Topics:
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)

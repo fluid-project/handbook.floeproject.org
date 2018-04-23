@@ -1,7 +1,7 @@
 ---
 title: Case Study: Exemplar
 layout: default
-category: Inclusive EPUB 3
+category: Techniques
 ---
 
 The Floe project developed an EPUB 3 resource that exemplifies best practices for creating inclusive EPUB resources:
@@ -169,3 +169,18 @@ The exemplar EPUB was tested and validated using:
 * <a href="https://addons.mozilla.org/en-US/firefox/addon/lucifox/" rel="nofollow" target="_blank" class="link-external"> Lucifox for Firefox</a>
 * <a href="http://validator.w3.org" rel="nofollow" target="_blank" class="link-external"> W3C Validator</a>
 * <a href="http://validator.idpf.org/" rel="nofollow" target="_blank" class="link-external"> EPUB Check</a>
+
+
+## Topics:
+* [Inclusive EPUB3](InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)

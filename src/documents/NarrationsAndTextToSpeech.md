@@ -1,7 +1,7 @@
 ---
 title: Narrations and Text-to-Speech
 layout: default
-category: Inclusive EPUB 3
+category: Techniques
 ---
 Media overlays and text-to-speech in EPUB 3 are powerful features that unlock the ability for users to listen to the contents of the book, instead of just reading it.
 
@@ -92,3 +92,18 @@ A similar strategy would work on other units of measure:
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/tts/overview.php"> "Text to Speech Overview" by IDPF</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://epubzone.org/news/epub-3-text-to-speech-tts"> "EPUB 3: Text to Speech" by Matt Garrish, EPUB Zone</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/TR/CSS2/aural.html"> "Appendix A. Aural style sheets" W3C</a>
+
+
+## Topics:
+* [Inclusive EPUB3](InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)

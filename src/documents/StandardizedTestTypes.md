@@ -1,7 +1,7 @@
 ---
 title: Standardized Test Types
 layout: default
-category: Accessible Standardized Testing
+category: Approaches
 ---
 
 ## Low-stakes Tests
@@ -65,3 +65,11 @@ Self assessment evaluate one's actions, attitudes or performance at a job or lea
 ## Resources
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.imsglobal.org/accessibility/accessiblevers/sec9.html">http://www.imsglobal.org/accessibility/accessiblevers/sec9.html</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.cmu.edu/teaching/assessment/basics/formative-summative.html">http://www.cmu.edu/teaching/assessment/basics/formative-summative.html</a>
+
+
+## Topics
+* [Accessible Standardized Testing](AccessibleStandardizedTesting.html)
+* [General Guidelines](GeneralGuidelines.html)
+* [Functional Considerations](FunctionalConsiderations.html)
+* [Standardized Test Types](StandardizedTestTypes.html)
+* [Standardized Test Tools](StandardizedTestTools.html)

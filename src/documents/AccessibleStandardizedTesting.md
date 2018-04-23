@@ -1,7 +1,7 @@
 ---
-title: Introduction to Accessible Standardized Testing
+title: Accessible Standardized Testing
 layout: default
-category: Accessible Standardized Testing
+category: Approaches
 ---
 
 This section aims to develop design guidelines for building accessible standardized testing tools for Open Education Resource (OER) authors.

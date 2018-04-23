@@ -1,7 +1,7 @@
 ---
 title: Accessibility Metadata
 layout: default
-category: Inclusive EPUB 3
+category: Techniques
 ---
 The information captured by accessibility metadata can be useful to many users; describing a publication as containing transcripts, large print, or having text-to-speech allows users to quickly find what they want, and gives creators a way of differentiating themselves.
 
@@ -82,3 +82,18 @@ To specify metadata to a *part* of your publication, you would embed microdata d
 </video>
 ```
 Source: <a rel="nofollow" class="link-external" target="_blank" href="http://wiki.fluidproject.org/display/fluid/Encoding+Accessibility+Metadata+for+Floe+-+Tables+and+Examples"> Encoding Accessibility Metadata for Floe</a>
+
+
+## Topics:
+* [Inclusive EPUB3](InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)

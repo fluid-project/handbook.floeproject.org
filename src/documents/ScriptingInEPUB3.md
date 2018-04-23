@@ -1,7 +1,7 @@
 ---
 title: Scripting in EPUB 3
 layout: default
-category: Inclusive EPUB 3
+category: Techniques
 ---
 
 Scripting in EPUB 3 should be considered an optional feature, and the main content of the book should be understandable without scripting. According to IDPF:
@@ -24,3 +24,17 @@ can help identify invalid UTF-8 characters.
 * <a rel="nofollow" target="_blank" class="link-external"href="http://www.idpf.org/accessibility/guidelines/content/script/pe.php" rel="nofollow">"EPUB 3 Accessibility Guidelines: Scripted Interactivity - Progressive Enhancement" by IDPF.</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://epubzone.org/news/epub-3-and-interactivity" rel="nofollow">"EPUB 3 and Interactivity", by Liza Daly, EPUB Zone.</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.slideshare.net/jimmckeeth/java-script-interactive-widgets-for-ibooks-author-and-the-ipad" rel="nofollow">"Hacking iBooks and EPUB with Javascript!", by Jim McKeeth.</a>
+
+## Topics:
+* [Inclusive EPUB3](InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)

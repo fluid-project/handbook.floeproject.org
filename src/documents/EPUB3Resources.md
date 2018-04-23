@@ -1,7 +1,7 @@
 ---
 title: EPUB 3 Resources
 layout: default
-category: Inclusive EPUB 3
+category: Techniques
 ---
 
 1. EPUB3 Overview - <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/epub/30/spec/epub30-overview.html">www.idpf.org/epub/30/spec/epub30-overview.html</a> - answers basic questions about what is EPUB, what it is capable of, and how it can be used.
@@ -20,3 +20,19 @@ category: Inclusive EPUB 3
 14. Accessibility Screening Methodology Guidelines and Checklist by Daisy Consortium - <a rel="nofollow" target="_blank" class="link-external" href="http://www.daisy.org/accessibility-screening-methodology-guidelines-and-checklist.html">http://www.daisy.org/accessibility-screening-methodology-guidelines-and-checklist.html</a> - a checklist to help evaluate the accessibility features of a reader system
 15. Poet Image Description Tool - <a href="http://diagramcenter.org/development/poet.html" rel="nofollow" target="_blank" class="link-external">http://diagramcenter.org/development/poet.html</a>. A web-based tool for creating and providing guidelines to writing image descriptions for images in existing DAISY and EPUB books.
 16. MathML Cloud Tool - <a href="http://mathmlcloud.org/" rel="nofollow" target="_blank" class="link-external">http://mathmlcloud.org</a>. A math conversion tool that creates both images and alternative descriptions of math equations on the fly.
+
+
+
+## Topics:
+* [Inclusive EPUB3](InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)

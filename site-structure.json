@@ -1,91 +1,108 @@
 [
-    {
+       {
         "category": "Introduction",
-        "categoryHref":"/index.html",
+        "categoryHref":"/introduction.html",
         "sections":
         [
             {
                 "sectionName":"",
                 "pages":
                 [
-                    {"pageName": "Welcome to the Inclusive Learning Design Handbook", "href":"/index.html"},
-                    {"pageName": "Why is This Important?", "href":"/WhyIsThisImportant.html"},
-                    {"pageName": "What is the Approach?", "href":"/WhatIsTheApproach.html"}
+                    {"pageName": "Where to begin?", "href":"/introduction.html"}
                 ]
             }
         ]
     },
+
     {
-        "category": "Methods",
-        "categoryHref": "/InclusiveLearning.html",
+        "category": "Perspectives",
+        "categoryHref": "/PerspectivesOverview.html",
         "sections":
         [
             {
                 "sectionName":"",
                 "pages":
                 [
-                    { "pageName": "Inclusive Learning", "href": "/InclusiveLearning.html" },
-                    { "pageName": "Creating Inclusive Learning Experiences", "href": "/CreatingInclusiveLearningExperiences.html" },
-                    { "pageName": "Accessibility Principles", "href": "/AccessibilityPrinciples.html"},
-                    { "pageName": "Techniques", "href": "/Techniques.html"},
+                    { "pageName": "Understanding Accessibility and Inclusivity", "href": "/UnderstandingAccessibilityandInclusivity.html"},
+                    { "pageName": "Achieving Inclusive Education", "href": "/AchievingInclusiveEducation.html"},
+                    { "pageName": "The Three Dimensions of Incluisve Design: Part One", "href": "/TheThreeDimensionsPartOne.html"},
+                    { "pageName": "The Three Dimensions of Incluisve Design, Part Two", "href": "/TheThreeDimensionsPartTwo.html"},
+                    { "pageName": "The Three Dimensions of Incluisve Design, Part Three", "href": "/TheThreeDimensionsPartThree.html"},
+                    { "pageName": "If you want the best design, ask strangers to help", "href": "/askstrangerstohelp.html"},
+                    { "pageName": "If you are unique (and aren’t we all), numbers are not our friends", "href": "/NumbersAreNotOurFriends.html"}
+                ]
+            }
+        ]
+    },
+
+    {
+        "category": "Approaches",
+        "categoryHref": "/ApproachesOverview.html",
+        "sections":
+        [
+            {
+                "sectionName":"Best Practices",
+                "pages":
+                [
+                    { "pageName": "Follow Accessibility Principles", "href": "/FollowAccessibilityPrinciples.html"},
+                    { "pageName": "Meet Learner Needs and Preferences", "href": "/MeetLearnerNeedsAndPreferences.html"},
+                    { "pageName": "Consider Cognitive Needs", "href": "/ConsiderCognitiveNeeds.html"},
+                    { "pageName": "Create Inclusive Learning Experiences", "href": "/CreatingInclusiveLearningExperiences.html"}
+                ]
+            },
+            {
+                "sectionName":"Inclusive Authoring",
+                "pages":
+                [
+                    { "pageName": "General Considerations", "href": "/Techniques.html"},
                     { "pageName": "Metadata", "href": "/Metadata.html"},
-                    { "pageName": "Access for All", "href": "/AccessForAll.html"},
-                    { "pageName": "Schema.org Accessibility Properties", "href": "/SchemaOrgAccessibilityProperties.html"},
-                    { "pageName": "Learner Needs and Preferences", "href": "/LearnerNeedsAndPreferences.html"},
                     { "pageName": "Video Content and Learning", "href": "/VideoContentAndLearning.html"},
                     { "pageName": "Audio Content and Learning", "href": "/AudioContentAndLearning.html"},
                     { "pageName": "Web Games and Simulations", "href": "/WebGamesAndSimulations.html"},
                     { "pageName": "Accessible Modal Dialogs", "href": "/ModalDialogs.html"},
                     { "pageName": "SVG and Accessibility", "href": "/SVGAndAccessibility.html"},
-                    { "pageName": "Sonification", "href": "/Sonification.html"},
-                    { "pageName": "Authoring of Content", "href": "/AuthoringOfContent.html"},
-                    { "pageName": "Cognitive Considerations", "href": "/CognitiveConsiderations.html"},
-                    { "pageName": "Inclusive Making and Hacking", "href": "/InclusiveMakingAndHacking.html"}
+                    { "pageName": "Sonification", "href": "/Sonification.html"}
                 ]
+            },
+            {
+                "sectionName":"Inclusive Assessment",
+                "pages":
+                [
+                  { "pageName": "Accessible Standardized Testing", "href": "/AccessibleStandardizedTesting.html"}
+                ]
+            },
+            {
+              "sectionName":"Co-Creation",
+              "pages":
+              [
+                 { "pageName": "Inclusive Making and Hacking", "href": "/InclusiveMakingAndHacking.html"}
+              ]
             }
+
         ]
     },
+
     {
-        "category": "Accessible Standardized Testing",
-        "categoryHref": "/AccessibleStandardizedTesting.html",
+        "category": "Techniques",
+        "categoryHref": "/TechniquesOverview.html",
         "sections":
         [
             {
-                "sectionName":"",
+                "sectionName":"Authoring Content",
                 "pages":
                 [
-                    { "pageName": "Introduction to Accessible Standardized Testing", "href": "/AccessibleStandardizedTesting.html"},
-                    { "pageName": "General Guidelines", "href": "/GeneralGuidelines.html" },
-                    { "pageName": "Functional Considerations", "href": "/FunctionalConsiderations.html"},
-                    { "pageName": "Standardized Test Types", "href": "/StandardizedTestTypes.html"},
-                    { "pageName": "Standardized Test Tools", "href": "/StandardizedTestTools.html"}
+                    { "pageName": "Inclusive EPUB 3", "href": "/InclusiveEPUB3.html" },
+                    { "pageName": "Inclusive Authoring Environments", "href": "/AuthoringOfContent.html"}
                 ]
-            }
-        ]
-    },
-    {
-        "category": "Inclusive EPUB 3",
-        "categoryHref": "/InclusiveEPUB3.html",
-        "sections":
-        [
+            },
             {
-                "sectionName":"",
-                "pages":
-                [
-                    { "pageName": "Introduction to Inclusive EPUB 3", "href": "/InclusiveEPUB3.html" },
-                    { "pageName": "Semantic Markup in EPUB 3", "href": "/SemanticMarkupInEPUB3.html" },
-                    { "pageName": "WAI-ARIA", "href": "/WAI-ARIA.html"},
-                    { "pageName": "Visual Styles", "href": "/VisualStyles.html"},
-                    { "pageName": "Graphics and Multimedia", "href": "/GraphicsAndMultimedia.html"},
-                    { "pageName": "Scripting in EPUB 3", "href": "/ScriptingInEPUB3.html"},
-                    { "pageName": "Mathematics", "href": "/Mathematics.html"},
-                    { "pageName": "Narrations and Text-to-Speech", "href": "/NarrationsAndTextToSpeech.html"},
-                    { "pageName": "Accessibility Metadata", "href": "/AccessibilityMetadata.html"},
-                    { "pageName": "Testing and Validation", "href": "/TestingAndValidation.html"},
-                    { "pageName": "Case Study: Exemplar", "href": "/CaseStudyExemplar.html"},
-                    { "pageName": "EPUB 3 Resources", "href": "/EPUB3Resources.html"}
-                ]
+                  "sectionName":"Testing and Evaluation",
+                  "pages":
+                  [
+                    { "pageName": "Accessibility Assessment Tools", "href": "/AccessibilityAssessmentTools.html"}
+                  ]
             }
-        ]
+
+         ]
     }
 ]

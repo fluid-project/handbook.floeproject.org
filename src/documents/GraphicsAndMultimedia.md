@@ -1,7 +1,7 @@
 ---
 title: Graphics and Multimedia
 layout: default
-category: Inclusive EPUB 3
+category: Techniques
 ---
 The notion of a "typical end user" is increasingly difficult to define. With EPUB 3 and eBooks easily accessible through different devices, even users who were once described as "typical" find themselves in situations where their ability to consume or comprehend content is affected by their environment or context. The challenge for EPUB 3 authors is to create content that is robust and can adapt to the wide spectrum of users and their situations.
 
@@ -33,3 +33,17 @@ See: Poet Image Description Tool at <a href="http://diagramcenter.org/developmen
 * <a rel="nofollow" target="_blank" class="link-external" href="http://chimera.labs.oreilly.com/books/1234000000770/ch03.html"> "`<audio>`/`<video>` for Publishers" O'Reilly Media, Inc</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/xhtml/video.php"> "EPUB 3 Accessibility Guidelines: Video", by IDPF</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/xhtml/audio.php"> "EPUB 3 Accessibility Guidelines: Audio", by IDPF</a>
+
+## Topics:
+* [Inclusive EPUB3](InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](WAI-ARIA.html)
+* [Visual Styles](VisualStyles.html)
+* [Graphics and Multimedia](GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](ScriptingInEPUB3.html)
+* [Mathematics](Mathematics.html)
+* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](AccessibilityMetadata.html)
+* [Testing and Validation](TestingAndValidation.html)
+* [Case Study Exemplar](CaseStudyExemplar.html)
+* [EPUB 3 Resources](EPUB3Resources.html)

@@ -1,7 +1,7 @@
 ---
 title: Functional Considerations
 layout: default
-category: Accessible Standardized Testing
+category: Approaches
 ---
 There are many ways to assure a standardized test is designed in a way that accommodates a broader range of users with or without special needs. Some of these considerations are listed below.
 
@@ -78,3 +78,11 @@ Allow flexibility in the timing of an assessment. Generally, these are chosen fo
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp">http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm">http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm</a>
 * <a rel="nofollow" target="_blank" class="link-external" href="http://www.parentcenterhub.org/repository/assessment-accommodations/">http://www.parentcenterhub.org/repository/assessment-accommodations/</a>
+
+
+## Topics
+* [Accessible Standardized Testing](AccessibleStandardizedTesting.html)
+* [General Guidelines](GeneralGuidelines.html)
+* [Functional Considerations](FunctionalConsiderations.html)
+* [Standardized Test Types](StandardizedTestTypes.html)
+* [Standardized Test Tools](StandardizedTestTools.html)
