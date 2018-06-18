@@ -6,11 +6,12 @@
   "bugs": "https://issues.fluidproject.org/browse/FLUID/component/10080/",
   "homepage": "http://www.floeproject.org/",
   "dependencies": {
+    "docpad": "^6.79.4",
     "docpad-plugin-ghpages": "~2.4.4",
-    "docpad-plugin-handlebars": "~2.3.0",
+    "docpad-plugin-handlebars": "^2.4.0",
     "docpad-plugin-highlightjs": "~2.3.0",
     "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-stylus": "~2.10.0",
+    "docpad-plugin-stylus": "^2.13.0",
     "docs-core": "fluid-project/docs-core"
   },
   "licenses": [
