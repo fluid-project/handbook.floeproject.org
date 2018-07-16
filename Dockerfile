@@ -7,7 +7,7 @@ RUN apk add --no-cache git
 USER node
 
 # Install npm dependencies
-COPY --chown=node package.json /app/package.json
+COPY --chown=node package.json package-lock.json /app/
 WORKDIR /app
 RUN npm install
 
