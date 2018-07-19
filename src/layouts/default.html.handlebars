@@ -21,13 +21,13 @@
         <script type="text/javascript" src="{{{getRelativeUrl '/lib/jqueryui/jquery-ui.min.js' document.url}}}"></script>
     </head>
 
-    <body class="docs-template docs-inclusiveLearning {{#if document.category}}docs-core-sidebar-expanded{{else}}no-category{{/if}}">
+    <body class="docs-template docs-inclusiveLearning docs-core-sidebar-expanded {{#if document.noSidebar}}no-sidebar{{/if}}">
 
         <div class="container docs-template-container">
 
             <!-- Skip Link -->
             <nav id="skip" class="fl-inverted-color">
-                {{#if document.category}}
+                {{#if document.noSidebar}}
                 <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
                 {{/if}}
                 <a href="#content" class="docs-template-skip-content">Skip to Content</a>
@@ -100,7 +100,7 @@
                 </div>
             </header>
 
-            {{#if document.category}}
+            {{#unless document.noSidebar}}
             <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
                 <nav id="topics" class="docs-template-topics" tabindex="-1">
                     {{#each siteStructure}}
@@ -127,14 +127,14 @@
                     {{/each}}
                 </nav>
             </div>
-            {{/if}}
+            {{/unless}}
 
             <div class="docs-template-articleBody small-12 medium-8 column">
-                {{#if document.category}}
+                {{#unless document.noSidebar}}
                 <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
                     <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
                 </div>
-                {{/if}}
+                {{/unless}}
 
                 <article id="content">
                     <h1>{{document.title}}</h1>
