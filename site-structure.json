@@ -76,7 +76,8 @@
               "sectionName":"Co-Creation",
               "pages":
               [
-                 { "pageName": "Inclusive Making and Hacking", "href": "/InclusiveMakingAndHacking.html"}
+                 { "pageName": "Inclusive Making and Hacking", "href": "/InclusiveMakingAndHacking.html"},
+                 { "pageName": "Create-a-Thon", "href": "/Create-a-Thon.html"}
               ]
             }
 
