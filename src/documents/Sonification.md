@@ -34,7 +34,7 @@ The <a href="http://build.fluidproject.org/chartAuthoring/demos/" target="_blank
 
 Placing sonification alongside the more familiar paradigm of data visualization explicitly surfaces that charts and graphs are a derived representation of a data set.
 
-Thus, one way OERs can support diverse learners and meet the [Accessibility Principles](/AccessiblityPrinciples.html) of perceivability and understandability is to make underlying data sets available wherever possible when presenting information in charts, graphs or other derived forms.
+Thus, one way OERs can support diverse learners and meet the [Accessibility Principles](/FollowAccessibilityPrinciples.html) of perceivability and understandability is to make underlying data sets available wherever possible when presenting information in charts, graphs or other derived forms.
 
 When underlying data is available in OERs, this allows the possibility for others to transform the OER in ways the content creator may not have envisioned in order to best serve individual learner needs.
 
