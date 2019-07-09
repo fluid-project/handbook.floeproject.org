@@ -7,7 +7,7 @@ category: Techniques
 
 ### Authoring
 * <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="link-external">How to make common word processing documents more accessible</a>
-* <a href="https://www.readability.com/addons"rel="nofollow" target="_blank" class="link-external">An example of a Mozilla browser plugin for removing clutter</a>
+* <a href="https://www.readability.com/addons" rel="nofollow" target="_blank" class="link-external">An example of a Mozilla browser plugin for removing clutter</a>
 
 ### Checking code
 * <a href="http://www.read-able.com/" rel="nofollow" target="_blank" class="link-external">Calculate the readability of a web page</a>
