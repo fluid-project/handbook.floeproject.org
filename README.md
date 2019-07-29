@@ -5,7 +5,7 @@ This project contains the content needed to build and deploy a copy of the Inclu
 # To Build
 
 1. Clone this repository.
-2. From within the project's directory, install DocPad if it isn't already installed: `sudo npm install -g docpad`
+2. From within the project's directory, install DocPad if it isn't already installed: `npm install -g docpad@6.79.4` (Note: Docpad version 6.79.4 is required to resolve issues with current versions of Node. See `https://issues.fluidproject.org/browse/FLUID-6324`).
 3. Get the required node modules: `npm install`
 4. Run docpad: `docpad run`
 5. Confirm everything is working by loading `http://localhost:9778/` in a web browser.
