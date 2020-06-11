@@ -3,7 +3,6 @@ FROM node:12.18.0-alpine AS builder
 WORKDIR /app
 
 RUN apk add --no-cache git 
-#    printf "{\n  subscribed: false\n  subscribeTryAgain: false\n  tos: true\n  identified: true\n}" > ~/.docpad.cson
 
 COPY package.json ./
 
