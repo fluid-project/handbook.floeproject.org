@@ -46,6 +46,8 @@ Once you have Docker installed, run the following commands to build a Docker ima
 
 The handbook will be available at [http://localhost:8000](http://localhost:8000)
 
+* To stop and remove the container: `docker rm -f ildh`
+
 If you make changes to the Handbook, repeat the steps to build the image and start a new container.
 
 ## License Information
