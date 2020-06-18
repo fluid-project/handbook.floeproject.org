@@ -10,7 +10,7 @@ category: Approaches
 An inclusive learning experience is one that matches the needs of the individual learner. Some of the needs that can affect learning include:
 
 * sensory, motor, cognitive, emotional and social constraints;
-* individual learning styles and approaches;
+* individual learning preferences and approaches;
 * linguistic or cultural preferences;
 * technical, financial or environmental constraints.
 
@@ -27,7 +27,7 @@ While it is difficult for a content creator to produce all the possible variatio
 
 For a learning environment to adapt to the needs of the individual learner, those needs must be known. The resource delivery system can enable each learner, or their support team, to identify the learner’s functional learning needs and to store them in a learning profile.
 
-The [AccessForAll](AccessForAll.html) specification provides an interoperable format for learning profiles designed to work with the AccessForAll metadata format. By supporting both formats, an OER delivery system will be able to automatically optimize the learning experience for each individual learner according to his/her own personal needs.
+The [AccessForAll](AccessForAll.html) specification provides an interoperable format for learning profiles designed to work with the AccessForAll metadata format. By supporting both formats, an OER delivery system will be able to automatically optimize the learning experience for each individual learner according to their own personal needs.
 
 ## Support flexible styling
 
@@ -47,7 +47,7 @@ OER creators can ensure that anything that can be accomplished using a mouse can
 
 ## Provide audio or text descriptions of non-text information presented in videos, graphics or images
 
-OERs increasingly make use of video, graphics and images. However, many learners require an alternative to visual information: they may have a visual impairment, or they may learn better through auditory or textual information; they might have insufficient bandwidth to receive high-density media, or they may be using a hand-held device with a screen too small for the content.
+OERs increasingly make use of video, graphics and images. However, many learners require an alternative to visual information: they may have a visual impairment, or they may learn a particular concept better through auditory or textual information; they might have insufficient bandwidth to receive high-density media, or they may be using a hand-held device with a screen too small for the content.
 
 By providing textual or auditory descriptions of any non-text information present in videos, graphics or images, OER creators will support learners who may be using technologies or configurations that can substitute or supplement the display with these descriptions, allowing learners to personalize the learning experience.
 
@@ -77,7 +77,7 @@ By storing all user-facing strings separately from the mark-up or code that disp
 
 Open formats are typically published freely and don't require software developers or users to pay licensing royalties to use them in a variety of applications. As a result, open formats make it easier for content to be used and exchanged freely within different operating systems, applications, and software tools.
 
-Open formats can help to make learning content more inclusive by allowing users to choose the applications and tools that suit them best. With open formats, users can transform, convert, or style the content in ways that are most appropriate for individual needs and learning styles. In contrast, proprietary formats often restrict the user's ability to convert content and produce alternative renderings, which can be a substantial accessibility barrier. Assistive technologies typically also have enhanced support for open formats—for example, content created using Web-based formats is typically more accessible than proprietary tools like Adobe's Flash.
+Open formats can help to make learning content more inclusive by allowing users to choose the applications and tools that suit them best. With open formats, users can transform, convert, or style the content in ways that are most appropriate for individual needs and learning preferences. In contrast, proprietary formats often restrict the user's ability to convert content and produce alternative renderings, which can be a substantial accessibility barrier. Assistive technologies typically also have enhanced support for open formats—for example, content created using Web-based formats is typically more accessible than proprietary tools like Adobe's Flash.
 
 Prominent open formats include HTML and CSS for Web-based content, as well as OpenOffice's Open Document Format (ODF) for word processing, spreadsheets, and presentations. By nature of being broadly supported across many platforms, open formats help avoid the risk of vendor lock-in, incompatibilities, and the upgrade expenses familiar with propriety formats. Additionally, they tend to be more future-proof, ensuring that content will have a greater longevity and compatibility now and into the future.
 
