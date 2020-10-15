@@ -1,6 +1,5 @@
 ---
 title: Inclusive EPUB 3
-layout: default
 category: Techniques
 ---
 
@@ -22,9 +21,9 @@ What does EPUB offer?
 
 * Special semantics which help give basic HTML elements additional functions or meaning when used in an EPUB reading system.
 * A "spine" which defines the author's intended path through the content. This may be different than a table of contents, as a table of contents may include references to content not considered part of the author's primary path. An example of this scenario would be a textbook with diagrams in boxes or content in the sidebar - the EPUB spine may choose to skip over this material, even though it may appear in the book's table of content.
-* Metadata which describe the content (i.e. author, language, etc.). This metadata typically contains <a href="http://dublincore.org/" rel="nofollow" target="_blank" class="link-external">Dublin Core metadata</a>, but can contain any metadata as long as the schema is defined. <a href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php" rel="nofollow" target="_blank" class="link-external">Schema.org accessibility metadata</a>, which describes accessibility features and modalities of the EPUB book, is supported.
+* Metadata which describe the content (i.e. author, language, etc.). This metadata typically contains <a href="http://dublincore.org/" rel="nofollow" class="link-external">Dublin Core metadata</a>, but can contain any metadata as long as the schema is defined. <a href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php" rel="nofollow" class="link-external">Schema.org accessibility metadata</a>, which describes accessibility features and modalities of the EPUB book, is supported.
 
-EPUB is an open format managed by the <a href="http://idpf.org/" rel="nofollow" target="_blank" class="link-external">International Digital Publishing Forum</a> (or IDPF) - a group of industry stakeholders who are primarily technology and content providers. The latest version of the EPUB specification is EPUB 3.
+EPUB is an open format managed by the <a href="http://idpf.org/" rel="nofollow" class="link-external">International Digital Publishing Forum</a> (or IDPF) - a group of industry stakeholders who are primarily technology and content providers. The latest version of the EPUB specification is EPUB 3.
 
 ## Why Choose EPUB 3 over HTML5? ##
 
@@ -34,7 +33,7 @@ EPUB 3 is a viable content distribution format because it:
 
 * allows ease of offline access to content,
 * provides native content ordering and navigation,
-* is being consumed by an increasingly large group of people, at an increasing rate, as a result of the prominence of e-readers <a href="http://www.pewinternet.org/2014/01/16/e-reading-rises-as-device-ownership-jumps/" rel="nofollow" target="_blank" class="link-external">source</a>,
+* is being consumed by an increasingly large group of people, at an increasing rate, as a result of the prominence of e-readers <a href="http://www.pewinternet.org/2014/01/16/e-reading-rises-as-device-ownership-jumps/" rel="nofollow" class="link-external">source</a>,
 * offers additional semantics that help describe text structure and function, and
 * helps give content authors a platform to seamlessly include rich features such as text-to-speech, content narration, and media alternatives.
 

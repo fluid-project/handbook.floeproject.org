@@ -1,6 +1,5 @@
 ---
 title: WAI-ARIA
-layout: default
 category: Techniques
 ---
 While HTML 5 semantic markup and epub:type go a long way to help your publication's structure and content be understood by reader systems, there are times when WAI-ARIA  is needed to help convey relationships and function of elements on a page.
@@ -41,12 +40,12 @@ Math notation and equations is traditionally challenging to make accessible and 
 Refer to the [Mathematics](Mathematics.html) section for techniques to adding inclusive math content to EPUB.
 
 ## Further reading: ##
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.w3.org/WAI/intro/aria"> WAI-ARIA W3C Web Accessibility Initiative Aria Overview</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"> "Highly Accessible Interactive EPUB" - by Liza Daly, Threepress / Ibis Reader</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/script/aria.php"> "WAI-ARIA & Custom Controls" - by IDPF</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"> "ARIA" - by Mozilla Developer Network</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://oaa-accessibility.org/examples/"> "Open AJAX Examples" - by Open Ajax Alliance</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://alistapart.com/article/the-accessibility-of-wai-aria"> "The Accessibility of WAI-ARIA" - by Detlev Fischer, A List Apart</a>
+* <a rel="nofollow" class="link-external" href="http://www.w3.org/WAI/intro/aria"> WAI-ARIA W3C Web Accessibility Initiative Aria Overview</a>
+* <a rel="nofollow" class="link-external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"> "Highly Accessible Interactive EPUB" - by Liza Daly, Threepress / Ibis Reader</a>
+* <a rel="nofollow" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/script/aria.php"> "WAI-ARIA & Custom Controls" - by IDPF</a>
+* <a rel="nofollow" class="link-external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"> "ARIA" - by Mozilla Developer Network</a>
+* <a rel="nofollow" class="link-external" href="http://oaa-accessibility.org/examples/"> "Open AJAX Examples" - by Open Ajax Alliance</a>
+* <a rel="nofollow" class="link-external" href="http://alistapart.com/article/the-accessibility-of-wai-aria"> "The Accessibility of WAI-ARIA" - by Detlev Fischer, A List Apart</a>
 
 ## Topics:
 * [Inclusive EPUB3](InclusiveEPUB3.html)

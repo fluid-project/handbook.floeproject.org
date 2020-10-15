@@ -1,6 +1,5 @@
 ---
 title: Perspectives
-layout: default
 category: Perspectives
 ---
 

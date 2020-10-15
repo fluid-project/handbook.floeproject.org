@@ -1,11 +1,10 @@
 ---
 title: Understanding Accessibility and Inclusivity
-layout: default
 category: Perspectives
 ---
 Floe defines Inclusive Design as design that considers the full range of human diversity with respect to ability, language, culture, gender, age and other forms of human difference.
 
-Disability is the mismatch between the needs and preferences of the user and the system or environment. Accessibility, then, is the ability of the system or environment to accommodate the needs and preferences of each individual. To further understand these definitions and what it means for content creation, adaptation, and usability, look at the Floe work describing <a href="https://wiki.fluidproject.org/x/9YcNAQ" rel="nofollow" target="_blank" class="link-external">some user states and contexts</a>.
+Disability is the mismatch between the needs and preferences of the user and the system or environment. Accessibility, then, is the ability of the system or environment to accommodate the needs and preferences of each individual. To further understand these definitions and what it means for content creation, adaptation, and usability, look at the Floe work describing <a href="https://wiki.fluidproject.org/x/9YcNAQ" rel="nofollow" class="link-external">some user states and contexts</a>.
 
 ## What is Inclusivity and how is it different from accessibility?</span>
 
@@ -20,9 +19,9 @@ Inclusiveness, or the practice of inclusivity, is the belief that the design of 
 Inclusiveness is different from accessibility in that inclusivity doesn't specifically address a particular need or problem - rather inclusivity provides a spectrum of tools and features that the end user can choose from to fit his or her requirements in the given context. In short, Inclusiveness is not prescriptive since the user chooses how best to help themselves.
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/insights/DisabilityAsMismatch.html">Disability As Mismatch</a>
-* Activity: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/activities/VirtuousTornado.html">Virtuous Tornado</a>
-* Activity: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/activities/InclusiveDesignMapping.html">Inclusive Design Mapping</a>
+* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/DisabilityAsMismatch.html">Disability As Mismatch</a>
+* Activity: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/activities/VirtuousTornado.html">Virtuous Tornado</a>
+* Activity: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/activities/InclusiveDesignMapping.html">Inclusive Design Mapping</a>
 
 
 ## What is Accessible?</span>
@@ -37,4 +36,4 @@ The Floe approach to [inclusive learning](InclusiveLearning.html) emphasizes a "
 Also see [Meet Learner Needs and Preferences](MeetLearnerNeedsAndPreferences.html)
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/insights/OneSizeFitsOne.html">One-Size-Fits-One</a>
+* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/OneSizeFitsOne.html">One-Size-Fits-One</a>

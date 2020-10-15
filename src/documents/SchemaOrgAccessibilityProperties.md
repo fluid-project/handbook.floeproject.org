@@ -1,11 +1,10 @@
 ---
 title: Schema.org Accessibility Properties
-layout: default
 category: Techniques
 ---
 In December, 2013, the W3C Schema.org process accepted a proposal for a set of accessibility metadata terms based on the [AccessForAll](AccessForAll.html) specification. The accessibility metadata is now a part of the Schema.org CreativeWork properties.
 
-<a href="http://schema.org" rel="nofollow" target="_blank" class="link-external">Schema.org</a> was created by a consortium of large search engines (including Google, Yahoo, etc.) as a collection of schemas that can be used to add semantic information to content and improve search results. The inclusion of accessibility metadata in the Schema.org collection would help people to easily find content that meets their individual needs and preferences.
+<a href="http://schema.org" rel="nofollow" class="link-external">Schema.org</a> was created by a consortium of large search engines (including Google, Yahoo, etc.) as a collection of schemas that can be used to add semantic information to content and improve search results. The inclusion of accessibility metadata in the Schema.org collection would help people to easily find content that meets their individual needs and preferences.
 
 This accessibility  metadata can be embedded directly in the markup of any web content. The example below shows how a page that includes a video and audio file might use the accessibility metadata properties:
 
@@ -35,4 +34,4 @@ This accessibility  metadata can be embedded directly in the markup of any web c
    </div>
 ```
 
-You can find the complete list of proposed properties, as well as more information and examples, at <a href="http://www.a11ymetadata.org/" rel="nofollow" target="_blank" class="link-external">http://www.a11ymetadata.org/</a>.
+You can find the complete list of proposed properties, as well as more information and examples, at <a href="http://www.a11ymetadata.org/" rel="nofollow" class="link-external">http://www.a11ymetadata.org/</a>.

@@ -1,6 +1,5 @@
 ---
 title: Accessible Standardized Testing
-layout: default
 category: Approaches
 ---
 

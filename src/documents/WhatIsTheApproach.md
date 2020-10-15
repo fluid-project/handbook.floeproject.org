@@ -1,6 +1,5 @@
 ---
 title: What is the Approach?
-layout: default
 category: Introduction
 ---
 
@@ -16,7 +15,7 @@ Learning needs that affect learning can include:
 * linguistic or cultural preferences,
 * technical, financial or environmental constraints.
 
-Some learners are more constrained than others and are therefore less able to adapt to the learning experience or environment offered; for this reason the learning environment or experience must be more flexible. To learn more about potential learner constraints, read the <a href="https://wiki.fluidproject.org/display/fluid/%28Floe%29+User+states+and+contexts" rel="nofollow" target="_blank" class="link-external">Floe user states and contexts</a> work.
+Some learners are more constrained than others and are therefore less able to adapt to the learning experience or environment offered; for this reason the learning environment or experience must be more flexible. To learn more about potential learner constraints, read the <a href="https://wiki.fluidproject.org/display/fluid/%28Floe%29+User+states+and+contexts" rel="nofollow" class="link-external">Floe user states and contexts</a> work.
 
 ## What is Accessible?
 

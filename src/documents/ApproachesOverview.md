@@ -1,6 +1,5 @@
 ---
 title: Approaches
-layout: default
 category: Approaches
 ---
 

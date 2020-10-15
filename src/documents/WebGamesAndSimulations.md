@@ -1,6 +1,5 @@
 ---
 title: Web Games and Simulations
-layout: default
 category: Approaches
 ---
 
@@ -34,30 +33,30 @@ Other best practices are:
 * Label each button and control. Labels should use simple terminology and define any terms if necessary.
 * Labels should state simply what the button will do. If longer descriptions are needed, use an `aria-describedby` property.
 * Buttons, links, controls should make it clear what the outcome would be. For example: A choice called "I'm out of here" could be changed to "I'm out of here - quit game", or simply "Quit".
-* For graphical buttons, like icons on a toolbar, use `aria-labelledby` to label the button and then use a technique to hide the text visually. The following article shows how to visibly hide content, but keeping it accessible:  <a href="http://webaim.org/techniques/css/invisiblecontent/" rel="nofollow" target="_blank" class="link-external">"Invisible Content Just for Screen Reader Users" on WebAim.org</a>.
+* For graphical buttons, like icons on a toolbar, use `aria-labelledby` to label the button and then use a technique to hide the text visually. The following article shows how to visibly hide content, but keeping it accessible:  <a href="http://webaim.org/techniques/css/invisiblecontent/" rel="nofollow" class="link-external">"Invisible Content Just for Screen Reader Users" on WebAim.org</a>.
 
 ## Communicating Events and Actions with Text and Sound
 
 A large part of interactive content are the events that happen during and after a user performs an action. Often these occur as on-screen visuals, animations, and transitions. The following are some techniques for creating an equivalent experience for non-sighted learners:
 
-* Use `aria-live` regions to communicate changes to the interface. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" rel="nofollow" target="_blank" class="link-external">"Aria Live Regions" article on Mozilla Developers</a> gives an overview of how `aria-live` is used.
-* Use ARIA `describedby` to write text descriptions of what has happened. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute" rel="nofollow" target="_blank" class="link-external">"Using the aria-describedby attribute" article on Mozilla Developers</a> shows how `describedby` can be used.
-* Consider use of various sounds to convey meaning. For example, to convey proximity of one object to another, use a tone of increasing pitch like a Theremin (visit <a href="https://en.wikipedia.org/wiki/Theremin" rel="nofollow" target="_blank" class="link-external">Theremin on Wikipedia</a>).
-    * To find out more about how sound can be used to enhance learning, see <a href="https://wiki.fluidproject.org/display/fluid/Floe+Sonification+Work" rel="nofollow" target="_blank" class="link-external">Floe Sonification Work on the Fluid Project Wiki</a>.
+* Use `aria-live` regions to communicate changes to the interface. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" rel="nofollow" class="link-external">"Aria Live Regions" article on Mozilla Developers</a> gives an overview of how `aria-live` is used.
+* Use ARIA `describedby` to write text descriptions of what has happened. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute" rel="nofollow" class="link-external">"Using the aria-describedby attribute" article on Mozilla Developers</a> shows how `describedby` can be used.
+* Consider use of various sounds to convey meaning. For example, to convey proximity of one object to another, use a tone of increasing pitch like a Theremin (visit <a href="https://en.wikipedia.org/wiki/Theremin" rel="nofollow" class="link-external">Theremin on Wikipedia</a>).
+    * To find out more about how sound can be used to enhance learning, see <a href="https://wiki.fluidproject.org/display/fluid/Floe+Sonification+Work" rel="nofollow" class="link-external">Floe Sonification Work on the Fluid Project Wiki</a>.
 
 ##  Content Accessibility / Screen Readers
 
 Follow a good structure and use semantic markup:
-* <a href="http://webaim.org/techniques/screenreader/" rel="nofollow" target="_blank" class="link-external">WebAim.org - Designing for Screen Reader Compatibility</a>
+* <a href="http://webaim.org/techniques/screenreader/" rel="nofollow" class="link-external">WebAim.org - Designing for Screen Reader Compatibility</a>
 * [Inclusive Learning Design Handbook - Accessibility Principles](AccessibilityPrinciples.html)
-* Make sure to use HTML 5 semantic markup wherever possible: i.e. `<article>`, `<section>`, `<figure>`, `<aside>`, `<header>`, `<footer>`. For more information, see: <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" rel="nofollow" target="_blank" class="link-external">https://developer.mozilla.org/en/docs/Web/HTML/Element</a>
-* Use WAI-ARIA to improve accessibility. See: <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" rel="nofollow" target="_blank" class="link-external">Mozilla Developer ARIA - good resource for learning, examples, blogs</a>.
+* Make sure to use HTML 5 semantic markup wherever possible: i.e. `<article>`, `<section>`, `<figure>`, `<aside>`, `<header>`, `<footer>`. For more information, see: <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" rel="nofollow" class="link-external">https://developer.mozilla.org/en/docs/Web/HTML/Element</a>
+* Use WAI-ARIA to improve accessibility. See: <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" rel="nofollow" class="link-external">Mozilla Developer ARIA - good resource for learning, examples, blogs</a>.
 
 ## Visuals
 
-* Provide text descriptions for important visuals: images should have alt-text and longer text descriptions if necessary. Use `aria-describedby` or `longdesc` as required. See: <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>
+* Provide text descriptions for important visuals: images should have alt-text and longer text descriptions if necessary. Use `aria-describedby` or `longdesc` as required. See: <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>
 * Content contained in the background (using background CSS property), :before or :after elements are ignored by screen readers. Do not put important content within these elements. Use `<figure>` and `<figcaption>` pattern as necessary for important graphics / images.
-* Ensure good contrast in colours and details. You can check your colours by using the <a href="http://webaim.org/resources/contrastchecker/" rel="nofollow" target="_blank" class="link-external">WebAIM Color Contrast Checker</a>.
+* Ensure good contrast in colours and details. You can check your colours by using the <a href="http://webaim.org/resources/contrastchecker/" rel="nofollow" class="link-external">WebAIM Color Contrast Checker</a>.
 
 ## Punctuation
 
@@ -83,12 +82,12 @@ To make charts and graphs more inclusive:
     * Summarizes the trend / data pattern.
 
 For additional resources on describing complex diagrams, see:
-* PSU’s chart accessibility guide - <a href="http://accessibility.psu.edu/images/charts/" rel="nofollow" target="_blank" class="link-external">http://accessibility.psu.edu/images/charts/</a>.
-* W3C's guide on describing complex images - <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>.
+* PSU’s chart accessibility guide - <a href="http://accessibility.psu.edu/images/charts/" rel="nofollow" class="link-external">http://accessibility.psu.edu/images/charts/</a>.
+* W3C's guide on describing complex images - <a href="http://www.w3.org/WAI/tutorials/images/complex/" rel="nofollow" class="link-external">http://www.w3.org/WAI/tutorials/images/complex/</a>.
 
 If using a table of data:
 
-* Follow best practices for table formatting (i.e. proper use of table headers, no table nesting). <a href="https://www.webaccessibility.com/best_practices.php?technology_platform_id=8" rel="nofollow" target="_blank" class="link-external">See Data Table Best Practices at WebAccessibility.com</a>.
+* Follow best practices for table formatting (i.e. proper use of table headers, no table nesting). <a href="https://www.webaccessibility.com/best_practices.php?technology_platform_id=8" rel="nofollow" class="link-external">See Data Table Best Practices at WebAccessibility.com</a>.
 * Define any math, symbols, units, or acronyms. For additional information about making math accessible, see [Mathematics](Mathematics.html).
 * Simplify and separate data tables if possible. Tables can be cumbersome to navigate (like with screen readers, small mobile displays, or screen magnifiers), so splitting and simplifying can be helpful.
 
@@ -96,7 +95,7 @@ If using a table of data:
 
 The Poet Image Description Tool is a web-based tool for creating image descriptions in existing DAISY and EPUB books. This tool has resources and tools to help content authors create good image descriptions following an extended NCAM guideline. There is also a math editor which transcribes math into readable format.
 
-See: Poet Image Description Tool at <a href="http://diagramcenter.org/development/poet.html" rel="nofollow" target="_blank" class="link-external">http://diagramcenter.org/development/poet.html</a>.
+See: Poet Image Description Tool at <a href="http://diagramcenter.org/development/poet.html" rel="nofollow" class="link-external">http://diagramcenter.org/development/poet.html</a>.
 
 ##  Cognitive
 
@@ -110,7 +109,7 @@ Information should be presented in a clear concise manner, and where possible st
 
 * Consider presenting information as needed, rather than presenting it all up front. Instructions may be better presented in context of the button or action (like a tooltip). This helps reduce cognitive load and gives information only when it's needed.
 
-For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" rel="nofollow" target="_blank" class="link-external">Designing interfaces to meet the needs of users with cognitive disabilities</a>.
+For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" rel="nofollow" class="link-external">Designing interfaces to meet the needs of users with cognitive disabilities</a>.
 
 ##  Visual Perception
 
@@ -123,12 +122,12 @@ For related information, see: <a href="https://wiki.fluidproject.org/x/D4DpAg" r
 Many users, not just users of screen readers, use the keyboard to interact with their computer. Some users may be using a keypad, a joystick mapped to keys, or a single-switch to navigate a virtual keyboard. A succinct keyboard interaction will help these learners focus on the content and not the mechanics of interaction.
 
 * Tab order should be consistent with existing user experiences and conventions. Generally tab order follows reading order for your region (e.g. left-to-right, top-to-bottom).
-* Many screen readers have their own keys related to navigation and interaction. Therefore if your application has implemented its own keyboard interaction, it may conflict with keys used by assistive technologies. To understand the different modes a screen reader can navigate and consume content, visit "<a href="http://tink.uk/understanding-screen-reader-interaction-modes/" rel="nofollow" target="_blank" class="link-external">Understanding screen reader interaction modes</a>" on tink.uk.
+* Many screen readers have their own keys related to navigation and interaction. Therefore if your application has implemented its own keyboard interaction, it may conflict with keys used by assistive technologies. To understand the different modes a screen reader can navigate and consume content, visit "<a href="http://tink.uk/understanding-screen-reader-interaction-modes/" rel="nofollow" class="link-external">Understanding screen reader interaction modes</a>" on tink.uk.
 * Default browser focus styling is often too subtle to be noticeable by many users. It is recommended to use focus styling that is more noticeable by either using a thicker border or better colour contrast.
 
 You want to get your users into the experience as quickly as possible:
 * If there is a group of navigation elements such as a site menu, navigation breadcrumb, or other common "header" features up front, use accessibility "skip" links to jump to the main content. Also using HTML 5 semantic markup such as `<nav>` and `<header>` will help screen readers identify content and be able to skip past them if needed.
-    * To add a skip link to your content, see this article on WebAIM: <a href="http://webaim.org/techniques/skipnav/" rel="nofollow" target="_blank" class="link-external">http://webaim.org/techniques/skipnav/</a>
+    * To add a skip link to your content, see this article on WebAIM: <a href="http://webaim.org/techniques/skipnav/" rel="nofollow" class="link-external">http://webaim.org/techniques/skipnav/</a>
 * When tabbing through - focus should "wrap around" to the start of the tab order when the end has been reached. Watch for focus traps or hidden elements which may confuse or break the game for users.
 
 ##  Images, Symbols, Math, Icons, and Glyphs
@@ -139,9 +138,9 @@ Make sure that symbols, math notation, and other glyphs have the desired textual
 * Acronyms and abbreviations should use the <abbr> element with the relevant aria properties. For example:
     * `<abbr role="text" title="kilograms" aria-label="kilograms">kg</abbr>`
     * `<abbr role="text" title="miles per hour" aria-label="miles per hour">mph</abbr>`
-    * Also see:  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" rel="nofollow" target="_blank" class="link-external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr</a>
+    * Also see:  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" rel="nofollow" class="link-external">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr</a>
 
-* For icons and symbols, use alt-text (if it is an image) and aria-label <a href="http://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects" rel="nofollow" target="_blank" class="link-external">http://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects"</a>
+* For icons and symbols, use alt-text (if it is an image) and aria-label <a href="http://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects" rel="nofollow" class="link-external">http://www.w3.org/WAI/GL/wiki/Using_aria-label_to_provide_labels_for_objects"</a>
 * If images are in the background and are cosmetic, they do not require text descriptions. Provide text descriptions for visual content that is important to the interaction.
 * Avoid using standard characters to create graphics as each character is read back individually. Example: -> is read back as "hyphen greater than" although the author likely intended it to be a right-pointing arrow.
 

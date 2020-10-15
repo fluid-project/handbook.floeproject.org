@@ -1,7 +1,6 @@
 ---
 title: Sonification
 subheader:
-layout: default
 category: Approaches
 ---
 
@@ -24,7 +23,7 @@ Sonification's most obvious audience would seem to be the learner with visual im
 
 The Floe team is experimenting with sonification and building authoring tools to support it as part of the project's work in exploring multimodal content creation and presentation in OERs.
 
-The <a href="http://build.fluidproject.org/chartAuthoring/demos/" target="_blank" class="link-external">Floe chart authoring tool</a> is a multimodal authoring tool that produces three forms of content from user-entered data:
+The <a href="http://build.fluidproject.org/chartAuthoring/demos/" class="link-external">Floe chart authoring tool</a> is a multimodal authoring tool that produces three forms of content from user-entered data:
 
 * A pie chart (data visualization)
 * A data table that also functions as the pie chart's legend
@@ -72,22 +71,22 @@ A desire to customize, control or change aspects of the sonification was repeate
 
 Although many users were able to interpret the sonified information to some degree, comprehending chart data via sound was a new experience for most. In several cases users expressed the need for a gradual and sequential learning process to ensure familiarity with different concepts and approaches to sonification. Users felt that, given time to gain some experience with and to learn the vocabulary of sonification, they would be able to more effectively interpret sonified data and choose their preferred method of consuming information through sound. The design approach to sonification must support this learning curve.
 
-For further details regarding the user testing process and results please visit the article "<a href="https://wiki.fluidproject.org/pages/viewpage.action?pageId=89063433" target="_blank" class="link-external">User Testing of Sonified Pie Chart Data</a>" on the Fluid Wiki.
+For further details regarding the user testing process and results please visit the article "<a href="https://wiki.fluidproject.org/pages/viewpage.action?pageId=89063433" class="link-external">User Testing of Sonified Pie Chart Data</a>" on the Fluid Wiki.
 
 ## Tools, technology and examples
 
-* The Floe <a href="http://build.fluidproject.org/chartAuthoring/demos/" target="_blank" class="link-external">Floe chart authoring tool</a> includes sonification components built using open web technologies and the <a href="http://flockingjs.org/" target="_blank" class="link-external">Flocking</a> audio synthesis framework.
+* The Floe <a href="http://build.fluidproject.org/chartAuthoring/demos/" class="link-external">Floe chart authoring tool</a> includes sonification components built using open web technologies and the <a href="http://flockingjs.org/" class="link-external">Flocking</a> audio synthesis framework.
 
-* The <a href="http://www.open-shelf.ca/columns/sonification-special-issue/" target="_blank" class="link-external">Sonification special issue</a> of <a href="http://www.open-shelf.ca/" target="_blank" class="link-external">Open Shelf</a> includes a number of examples sonification from the library world.
+* The <a href="http://www.open-shelf.ca/columns/sonification-special-issue/" class="link-external">Sonification special issue</a> of <a href="http://www.open-shelf.ca/" class="link-external">Open Shelf</a> includes a number of examples sonification from the library world.
 
-* The <a href="http://sonify.psych.gatech.edu/" target="_blank" class="link-external">Georgia Tech Sonification Lab</a> has created a number of tools as part of their research, such as the <a href="http://sonify.psych.gatech.edu/research/sonification_sandbox/index.html" target="_blank" class="link-external">Sonification Sandbox</a>
+* The <a href="http://sonify.psych.gatech.edu/" class="link-external">Georgia Tech Sonification Lab</a> has created a number of tools as part of their research, such as the <a href="http://sonify.psych.gatech.edu/research/sonification_sandbox/index.html" class="link-external">Sonification Sandbox</a>
 
 ## Resources
 
-* The <a href="https://wiki.fluidproject.org/display/fluid/%28Floe%29+Sonification" target="_blank" class="link-external">Floe Sonification wiki page</a> and its subpages and links include much more information, including a literature review.
+* The <a href="https://wiki.fluidproject.org/display/fluid/%28Floe%29+Sonification" class="link-external">Floe Sonification wiki page</a> and its subpages and links include much more information, including a literature review.
 
-* The 2011 <a href="http://sonification.de/handbook/" target="_blank" class="link-external">Sonification Handbook</a> is an open access book with contributions from many researchers.
+* The 2011 <a href="http://sonification.de/handbook/" class="link-external">Sonification Handbook</a> is an open access book with contributions from many researchers.
 
-* The <a href="http://www.icad.org/" target="_blank" class="link-external">International Community for Auditory Display</a> brings together researchers from many different fields interested in sonification.
+* The <a href="http://www.icad.org/" class="link-external">International Community for Auditory Display</a> brings together researchers from many different fields interested in sonification.
 
-* The <a href="http://sonify.psych.gatech.edu/" target="_blank" class="link-external">Georgia Tech Sonification Lab</a> is a research group focused on sonification.
+* The <a href="http://sonify.psych.gatech.edu/" class="link-external">Georgia Tech Sonification Lab</a> is a research group focused on sonification.

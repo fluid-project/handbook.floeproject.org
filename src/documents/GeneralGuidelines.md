@@ -1,6 +1,5 @@
 ---
 title: General Guidelines
-layout: default
 category: Approaches
 ---
 
@@ -48,10 +47,10 @@ category: Approaches
    * A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
 
 ## Resources
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.heinemann.com/shared/onlineresources/E03052/Accessible_Assessment_sample.pdf">http://www.heinemann.com/shared/onlineresources/E03052/Accessible_Assessment_sample.pdf</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp">http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm">http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://assist-it.org.uk/assets/pdf/AAA.pdf">http://assist-it.org.uk/assets/pdf/AAA.pdf</a> - see page 70.
+* <a rel="nofollow" class="link-external" href="http://www.heinemann.com/shared/onlineresources/E03052/Accessible_Assessment_sample.pdf">http://www.heinemann.com/shared/onlineresources/E03052/Accessible_Assessment_sample.pdf</a>
+* <a rel="nofollow" class="link-external" href="http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp">http://www.tbs-sct.gc.ca/ws-nw/wa-aw/wa-aw-assess-methd-eng.asp</a>
+* <a rel="nofollow" class="link-external" href="http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm">http://www.cehd.umn.edu/NCEO/onlinepubs/Policy15.htm</a>
+* <a rel="nofollow" class="link-external" href="http://assist-it.org.uk/assets/pdf/AAA.pdf">http://assist-it.org.uk/assets/pdf/AAA.pdf</a> - see page 70.
 
 
 ## Topics

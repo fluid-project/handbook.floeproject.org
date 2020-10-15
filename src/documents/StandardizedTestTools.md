@@ -1,6 +1,5 @@
 ---
 title: Standardized Test Tools
-layout: default
 category: Approaches
 ---
 
@@ -142,9 +141,9 @@ This item requires  examination on a given topic requiring a written analysis or
 </table>
 
 ## Resources
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.ateassessments.org/">http://www.ateassessments.org/</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.caacentre.ac.uk/">http://www.caacentre.ac.uk/</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://assist-it.org.uk/assets/pdf/AAA.pdf">http://assist-it.org.uk/assets/pdf/AAA.pdf</a> - see page 70.
+* <a rel="nofollow" class="link-external" href="http://www.ateassessments.org/">http://www.ateassessments.org/</a>
+* <a rel="nofollow" class="link-external" href="http://www.caacentre.ac.uk/">http://www.caacentre.ac.uk/</a>
+* <a rel="nofollow" class="link-external" href="http://assist-it.org.uk/assets/pdf/AAA.pdf">http://assist-it.org.uk/assets/pdf/AAA.pdf</a> - see page 70.
 
 
 ## Topics

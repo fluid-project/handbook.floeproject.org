@@ -1,6 +1,5 @@
 ---
 title: Create Inclusive Learning Experiences
-layout: default
 category: Approaches
 ---
 This section aims to develop design guidelines and methods for building positive and constructive environments for self-learning and self-reflection with learners who have diverse learning needs and preferences.
@@ -20,7 +19,7 @@ Learners who have disengaged from their learning groups or communities in the pa
 Welcoming diversity and rethinking why and how we assign value to knowledge can contribute to building the self-worth of participants in a learning community. Discussing differences in thinking styles, ways of knowing, skillsets, knowledge bases, and how we can all learn from those differences helps learners recognize that they play a significant role in their own learning and that their contribution to a group is equally valuable. Supporting ideas that are partially formed motivates learners to actively engage in an activity and freely express themselves.
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/insights/DisabilityAsMismatch.html">Disability as Mismatch</a>
+* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/DisabilityAsMismatch.html">Disability as Mismatch</a>
 
 
 
@@ -42,8 +41,8 @@ The following list of questions can be used as a starting point for these conver
 A great example is the [Platohedro](http://platohedro.org/platohedro/) project based in Medellín, Colombia, a community house supporting children, teenagers and young people who might have been disengaged from their conventional learning path due to learning differences, poverty, violence, or any other existing challenges in their context. This project has developed a creative platform to promote art experimentations, knowledge sharing tools, and technology appropriation techniques that are open, participatory and collaborative in order to help individuals re-integrate with their community, and give them control over the topics and forms that are key to self-expression and creativity. People who participate in this project are able to gain self knowledge, help one another build self-confidence, and explore their goals and motivations through hands-on workshops, experimentations, and technical hackathons.
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/insights/UserContinuedDesign.html">User-continued Design</a>
-* Practice: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/practices/CommunicateMultimodally.html">Communicate Multimodally</a>
+* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/UserContinuedDesign.html">User-continued Design</a>
+* Practice: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/practices/CommunicateMultimodally.html">Communicate Multimodally</a>
 
 
 ## Foster learners’ independence
@@ -58,7 +57,7 @@ To this end, the PhET project and the Inclusive Design Research Centre conducted
 This project is expanding the ways students can learn from simulations and has the potential to transform the development and use of interactive learning resources to create more inclusive classrooms. It provides built-in features to sense and perceive these highly visual and interactive simulations in multiple ways. As a result, it not only opens up access to those with visual impairments, but it also amplifies the learning experience for many students (as reinforcement of a primary visual sense, or by tapping into a greater perceptual sensitivity) and provides an opportunity for self exploration of alternative communication modes.
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/insights/PersonalDiscovery.html">Personal Discovery</a>
+* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/PersonalDiscovery.html">Personal Discovery</a>
 
 
 ## Engage learners’ support network
@@ -69,4 +68,4 @@ Providing opportunities for learners to collaboratively work with their support 
 A great example can be drawn from the work of Karisma, an activist group working on finding digital technology solutions for youth with identified and unidentified learning differences in Fresno, a small town in the coffee region of Colombia. Through projects such as [Fresno Posible and Real Campestre](http://fresnoposible.blogspot.ca/), this group is working with school teachers as well as with teenagers with learning differences to identify their learning needs and to identify and develop the technology that can support those needs.
 
 To learn more, see the Inclusive Design Guide:
-* Practice: <a class="link-external" rel="nofollow" target="_blank" href="https://guide.inclusivedesign.ca/practices/FocusOnFunctionalNeedsAndPreferences.html">Focus on Functional Needs and Preferences</a>
+* Practice: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/practices/FocusOnFunctionalNeedsAndPreferences.html">Focus on Functional Needs and Preferences</a>

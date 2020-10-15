@@ -1,0 +1,8 @@
+                                    <!-- Highlight the (active) category the document belongs to. -->
+                                    {% for collection in siteStructure %}
+                                        {% if collection.category === category %}
+                                            <li class="docs-template-category-active"><span aria-label="Currently on Category: {{ collection.category }}">{{ collection.category }}</span></li>
+                                        {% else %}
+                                            <li><a href="{{ collection.categoryHref }}" title="{{ collection.category }}">{{ collection.category }}</a></li>
+                                        {% endif %}
+                                    {% endfor %}

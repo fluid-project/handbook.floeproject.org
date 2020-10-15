@@ -1,6 +1,5 @@
 ---
 title: Follow Accessibility Principles
-layout: default
 category: Approaches
 ---
 
@@ -16,10 +15,10 @@ Some ways this can be accomplished:
 *  Provide text alternatives for non-text content (e.g., captions and other alternatives for multimedia)
 
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a>
+* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" class="link-external">Learner Options</a>
 (sometimes known as UI Options)
 * [Video content and learning](VideoContentAndLearning.html)
-* <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="link-external">ADOD</a>
+* <a href="http://adod.idrc.ocad.ca/" rel="nofollow" class="link-external">ADOD</a>
 
 ### Understandability: Content should be plain and clear to comprehend
 
@@ -33,7 +32,7 @@ Some things that can be done:
 
 Floe examples:
 * [Cognitive considerations](CognitiveConsiderations.html)
-* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
+* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" class="link-external">Learner Options</a> (sometimes known as UI Options)
 * [Video content and learning](VideoContentAndLearning.html)
 
 ### Operability: Interactions should be operable by everyone
@@ -49,7 +48,7 @@ Floe examples:
   * Other inputs: switch, eye tracking, etc.
 
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
+* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" class="link-external">Learner Options</a> (sometimes known as UI Options)
 * [Video content and learning](VideoContentAndLearning.html)
 
 ### Robustness: Resources should be compatible with tools now and later
@@ -63,12 +62,12 @@ Floe works with many international standards organizations to ensure that emergi
 
 The W3C develops web-related standards, the best known of which is probably HTML. The W3C process attempts to ensure accessibility is considered in all of its standards; in addition, several accessibility-focused standards have been produced. These are:
 
-* <a href="http://www.w3.org/WAI/intro/aria" rel="nofollow" target="_blank" class="link-external">Accessible Rich Internet Applications (ARIA)</a>: defines a technology for making dynamic web applications more accessible.
-* <a href="http://www.w3.org/TR/WCAG20/" rel="nofollow" target="_blank" class="link-external">Web Content Accessibility Guidelines (WCAG)</a>: guidelines for creating accessible web sites.
-* <a href="http://www.w3.org/TR/WAI-AUTOOLS/" rel="nofollow" target="_blank" class="link-external">Authoring Tool Accessibility (ATAG)</a>: guidelines for developing authoring tools that encourage and support authors to create accessible web sites.
-* <a href="http://www.w3.org/WAI/intro/uaag.php" rel="nofollow" target="_blank" class="link-external">User Agent Accessibility Guidelines (UAAG)</a>: guidelines for developers of browsers, media players, etc. that facilitate accessible use.
+* <a href="http://www.w3.org/WAI/intro/aria" rel="nofollow" class="link-external">Accessible Rich Internet Applications (ARIA)</a>: defines a technology for making dynamic web applications more accessible.
+* <a href="http://www.w3.org/TR/WCAG20/" rel="nofollow" class="link-external">Web Content Accessibility Guidelines (WCAG)</a>: guidelines for creating accessible web sites.
+* <a href="http://www.w3.org/TR/WAI-AUTOOLS/" rel="nofollow" class="link-external">Authoring Tool Accessibility (ATAG)</a>: guidelines for developing authoring tools that encourage and support authors to create accessible web sites.
+* <a href="http://www.w3.org/WAI/intro/uaag.php" rel="nofollow" class="link-external">User Agent Accessibility Guidelines (UAAG)</a>: guidelines for developers of browsers, media players, etc. that facilitate accessible use.
 
 
 Floe also works with:
-* <a href="http://www.imsglobal.org/accessibility/" rel="nofollow" target="_blank" class="link-external">IMS Global Learning Consortium</a>: Floe has been involved with ensuring inclusive design considerations are part of IMS Standards and has led the AccessForAll standard development.
-* <a href="http://www.iso.org/iso/catalogue_detail?csnumber=41521" rel="nofollow" target="_blank" class="link-external">International Organization for Standardization (ISO)</a>: Floe has been most involved with the development of ISO/IEC 24751 Individualized adaptability and accessibility in e-learning, education and training, which is based on the IMS AccessForAll standard.
+* <a href="http://www.imsglobal.org/accessibility/" rel="nofollow" class="link-external">IMS Global Learning Consortium</a>: Floe has been involved with ensuring inclusive design considerations are part of IMS Standards and has led the AccessForAll standard development.
+* <a href="http://www.iso.org/iso/catalogue_detail?csnumber=41521" rel="nofollow" class="link-external">International Organization for Standardization (ISO)</a>: Floe has been most involved with the development of ISO/IEC 24751 Individualized adaptability and accessibility in e-learning, education and training, which is based on the IMS AccessForAll standard.

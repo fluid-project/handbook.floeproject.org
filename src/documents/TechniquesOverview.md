@@ -1,6 +1,5 @@
 ---
 title: Techniques
-layout: default
 category: Techniques
 ---
 

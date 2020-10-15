@@ -1,6 +1,5 @@
 ---
 title: Standardized Test Types
-layout: default
 category: Approaches
 ---
 
@@ -63,8 +62,8 @@ Self assessment evaluate one's actions, attitudes or performance at a job or lea
 * Cognitive load
 
 ## Resources
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.imsglobal.org/accessibility/accessiblevers/sec9.html">http://www.imsglobal.org/accessibility/accessiblevers/sec9.html</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.cmu.edu/teaching/assessment/basics/formative-summative.html">http://www.cmu.edu/teaching/assessment/basics/formative-summative.html</a>
+* <a rel="nofollow" class="link-external" href="http://www.imsglobal.org/accessibility/accessiblevers/sec9.html">http://www.imsglobal.org/accessibility/accessiblevers/sec9.html</a>
+* <a rel="nofollow" class="link-external" href="http://www.cmu.edu/teaching/assessment/basics/formative-summative.html">http://www.cmu.edu/teaching/assessment/basics/formative-summative.html</a>
 
 
 ## Topics

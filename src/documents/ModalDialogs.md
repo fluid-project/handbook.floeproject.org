@@ -1,7 +1,6 @@
 ---
 title: Accessible Modal Dialogs
 subheader:
-layout: default
 category: Approaches
 ---
 
