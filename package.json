@@ -1,7 +1,7 @@
 {
   "name": "docs-inclusive-learning",
   "description": "Strategies and best practices for inclusive learning content.",
-  "version": "0.0.1-SNAPSHOT",
+  "version": "0.1.0",
   "author": "Floe Project",
   "bugs": "https://issues.fluidproject.org/browse/FLUID/component/10080/",
   "homepage": "http://www.floeproject.org/",
