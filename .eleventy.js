@@ -24,6 +24,22 @@ module.exports = function (config) {
 	config.addPassthroughCopy({"node_modules/docs-core/src/static/css": "assets/styles"})
 	config.addPassthroughCopy({"node_modules/docs-core/src/static/lib": "lib"})
 
+	// BrowserSync
+	config.setBrowserSyncConfig({
+		callbacks: {
+			ready: (error, browserSync) => {
+				const content404 = fs.readFileSync('dist/404.html');
+
+				browserSync.addMiddleware('*', (request, response) => {
+					// Provides the 404 content without redirect.
+					response.write(content404);
+					response.writeHead(404);
+					response.end();
+				});
+			}
+		}
+	});
+
 	return {
 		dir: {
 		  input: 'src',
@@ -35,7 +51,6 @@ module.exports = function (config) {
         // you can configure this in the file's header.
         // See: https://www.11ty.dev/docs/languages/#templateengineoverride-examples
         htmlTemplateEngine: false,
-        markdownTemplateEngine: "hbs",
         passthroughFileCopy: true
  	};
 };

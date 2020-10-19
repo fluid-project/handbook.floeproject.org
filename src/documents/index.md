@@ -1,15 +1,15 @@
 ---
 title: Welcome to the Inclusive Learning Design Handbook
-permalink: index.html
+permalink: /index.html
 ---
 
 The Floe Inclusive Learning Design Handbook is a free Open Educational Resource (OER) designed to assist teachers, content creators, Web developers, and others in creating adaptable and personalizable educational resources that can accommodate a diversity of learning preferences and individual needs.
 This is a work in progress and we are constantly adding more content to this handbook. The information in this handbook is structured in the following sections:
 
-* [Introduction](introduction.html): Provides an introduction to the handbook and describes who can benefit from using it
-* [Perspectives](PerspectivesOverview.html): Contains articles that discuss the main issues related to education and inclusive learning
-* [Approaches](ApproachesOverview.html): Provides best practices, guidelines and resources for creating inclusive content and learning experiences
-* [Techniques](TechniquesOverview.html): Contains practical tools and techniques to produce inclusive content and assess its accessibility
+* [Introduction](/introduction.html): Provides an introduction to the handbook and describes who can benefit from using it
+* [Perspectives](/PerspectivesOverview.html): Contains articles that discuss the main issues related to education and inclusive learning
+* [Approaches](/ApproachesOverview.html): Provides best practices, guidelines and resources for creating inclusive content and learning experiences
+* [Techniques](/TechniquesOverview.html): Contains practical tools and techniques to produce inclusive content and assess its accessibility
 
 ## Get Involved
 

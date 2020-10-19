@@ -1,4 +1,4 @@
 {
-    "permalink": "{{ page.fileSlug }}.html",
-    "layout": "default"
+    "layout": "default",
+    "permalink": "{{ page.filePathStem }}.html"
 }
