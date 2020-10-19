@@ -3,8 +3,7 @@ title: If you want the best design, ask strangers to help
 category: Perspectives
 ---
 
-__ Editor’s Note: Jutta Treviranus is a leader in inclusive design; she started and directs OCAD University’s Inclusive Design Research Centre, heads the Inclusive Design Institute and founded the first inclusive design graduate program at OCAD U. In this post, Jutta explains the costs and impacts on the edge and the unrepresented when identity clustering and cookie cutter approaches to digital inclusion occur.__
-
+_Editor’s Note: Jutta Treviranus is a leader in inclusive design; she started and directs OCAD University’s Inclusive Design Research Centre, heads the Inclusive Design Institute and founded the first inclusive design graduate program at OCAD U. In this post, Jutta explains the costs and impacts on the edge and the unrepresented when identity clustering and cookie cutter approaches to digital inclusion occur._
 
 Last spring Hillary Hartley joined the Ontario Government as the first Chief Digital Officer, [assigned](https://www.ontario.ca/page/ontario-digital-service-key-priorities) to design, develop and deploy a friendly, efficient, effective, accessible, inclusive and participatory online government. A tall order, even for someone that [has experience wrangling the US administration.](https://www.thestar.com/news/queenspark/2017/03/27/ontarios-new-chief-digitial-officer-dumps-trump.html)
 
@@ -90,7 +89,6 @@ The scatterplot showing people who have difficulty using the design and people t
 
 In inclusive design we recommend inviting people that can’t use or have difficulty using your current design to help you redesign. Companies that hope to create more useful [machine intelligence](https://www.technologyreview.com/s/608986/forget-killer-robotsbias-is-the-real-ai-danger/) are also beginning to realize the advantages of machine intelligence that [recognizes and understands the full range of diversity](http://www.cbc.ca/radio/spark/362-machine-learning-outliers-smart-device-ownership-and-more-1.4279433/ai-s-problem-with-disability-and-diversity-1.4279444) and not just the dominant patterns.
 
-
 ## Humans and Categories
 
 I want to add a proviso or qualifier. One thing we also need to unlearn is our unconscious reliance on a deeply ingrained human competency. It is a human competency that has figured in the debate about what distinguishes human intelligence from machine intelligence. A problem that stumped artificial intelligence machines but that is easy for most two-year-olds is to classify or sort things like cats from dogs (try articulating rules you would use to tell a cat from a dog). Search for the meme [“dogs or muffins”](https://medium.freecodecamp.org/chihuahua-or-muffin-my-search-for-the-best-computer-vision-api-cbda4d6b425d) and you will see further examples. Our sorting and classifying abilities are stellar and ingrained. We also love opposites, binaries or polarities. You may have fond memories of kindergarten exercises and Sesame Street songs that ask you to identify opposites. It is no wonder that we apply these skills so unconsciously and ubiquitously. However, issues arise when we impose this categorization on people. People are complex, multi-dimensional and evolving. Trying to fit people into classificatory boxes is very problematic.
@@ -98,7 +96,6 @@ I want to add a proviso or qualifier. One thing we also need to unlearn is our u
 A common practice when trying to achieve a more inclusive design is to rely on categories of people to achieve representation. The simplest variant is to create binaries: able-bodied and disabled, male and female, for example. More sophisticated variants are to include representation from a list of human categories: people who are blind, Deaf, wheelchair users; or a colour wheel of racial origin. What is wrong with this as a way of achieving better representation? People are complex, variable and multi-dimensional. The classifier used to sort the person may not be the most important characteristic that informs the perspective or needs they bring.
 
 More importantly, if the goal is to cover the 80% of the design space needed to reach the peripheral 20%, creating categories is not going to work. People will fall through the cracks and will be stranded at the edges of our chosen categories. This will drive a wedge between people that are included and people that continue to be marginalized. Where does my gender fluid young niece fit in the categories of men and women? Where does my friend who has a rare progressive disability fit in the categories we have created to sort people who experience disabilities? The further out to the periphery you get the greater your difference.
-
 
 <figure>
 <a name="Figure5"></a>

@@ -2,8 +2,8 @@
 title: What is the Approach?
 category: Introduction
 ---
-
 <a id="whoIsExcluded"></a>
+
 ## Who is Currently Excluded?
 
 All learners potentially face barriers to learning. These can be seen as a product of a mismatch between the needs of the learner and the learning experience and environment.
@@ -15,11 +15,11 @@ Learning needs that affect learning can include:
 * linguistic or cultural preferences,
 * technical, financial or environmental constraints.
 
-Some learners are more constrained than others and are therefore less able to adapt to the learning experience or environment offered; for this reason the learning environment or experience must be more flexible. To learn more about potential learner constraints, read the <a href="https://wiki.fluidproject.org/display/fluid/%28Floe%29+User+states+and+contexts" rel="nofollow" class="link-external">Floe user states and contexts</a> work.
+Some learners are more constrained than others and are therefore less able to adapt to the learning experience or environment offered; for this reason the learning environment or experience must be more flexible. To learn more about potential learner constraints, read the [Floe user states and contexts](https://wiki.fluidproject.org/display/fluid/%28Floe%29+User+states+and+contexts) work.
 
 ## What is Accessible?
 
-An accessible learning experience (or OER) is a learning experience that matches the needs of the individual learner or the learners within a group. Thus a resource cannot be labeled as accessible or inaccessible until we know the context, the learning goal and the learner (or learners). An OER may be accessible to one group of learners and not another. See [Accessibility principles](AccessibilityPrinciples.html) for more information.
+An accessible learning experience (or OER) is a learning experience that matches the needs of the individual learner or the learners within a group. Thus a resource cannot be labeled as accessible or inaccessible until we know the context, the learning goal and the learner (or learners). An OER may be accessible to one group of learners and not another. See [Accessibility principles](/AccessibilityPrinciples.html) for more information.
 
 ## How Do We Achieve Inclusive Education?
 

@@ -4,12 +4,14 @@ subheader: "Floe references: OER Commons authoring tool, Universal Subtitles, Le
 category: Techniques
 ---
 
-Inclusive learning content is a product of authoring tools and environments that promote the creation of content alternatives and preferences (see [Metadata](Metadata.html), [Learner needs and preferences](LearnerNeedsAndPreferences.html), [Audio content and learning](AudioContentAndLearning.html), [Video content and learning](VideoContentAndLearning.html)). Consumers of open educational resources quickly become authors when they rework, edit, or remix existing content. It becomes critical, then, that these authoring environments both offer and gently suggest to authors the creation of layered, malleable content.
+Inclusive learning content is a product of authoring tools and environments that promote the creation of content alternatives and preferences (see [Metadata](/Metadata.html), [Learner needs and preferences](/LearnerNeedsAndPreferences.html), [Audio content and learning](/AudioContentAndLearning.html), [Video content and learning](/VideoContentAndLearning.html)). Consumers of open educational resources quickly become authors when they rework, edit, or remix existing content. It becomes critical, then, that these authoring environments both offer and gently suggest to authors the creation of layered, malleable content.
 
 ## Take Away
+
 Whenever possible, try to find an authoring tool that promotes the creation of alternatives and preferences.
 
 ## Case Study 1: OER Commons Authoring Environment
+
 Floe and ISKME collaboratively designed an open education resource authoring environment that is easy to use; is inclusive to a diversity of different users; and both offers and gently suggests authors to create layered, malleable content.
 
 The authoring environment is sensitive to Floe's Learner Options (see [Learner needs and preferences](LearnerNeedsAndPreferences.html)), and morphs its authoring environment according to the author's preferences. [Figure 4](#Figure4) and [Figure 5](#Figure5) show the editing environment in high contrast and with large interface elements, respectively.
@@ -84,15 +86,16 @@ To address this challenge, the IDRC research team has focused on building a cust
 
 At the time of writing this case study, the authoring tool can produce pie charts with two different types of sonifications and generated from data entered by chart creators. The charts are built entirely in open-source web technologies including Javascript and the browser speech and audio APIs. The IDRC research team expects to continue development to accommodate different styles of charts and different sonification approaches, along with the export, sharing and remixing of sonified charts in a web context.
 
-To access the latest demo of the Floe chart authoring tool please select <a href="http://build.fluidproject.org/chartAuthoring/demos/#" class="link-external">this link</a>.
+To access the latest demo of the Floe chart authoring tool please select [this link](http://build.fluidproject.org/chartAuthoring/demos/#).
 
 ### The Floe Chart Authoring Tool Interface
 
 This authoring interface consists of 4 main sections, two of which are editable. The first section includes two editable text fields - one for entering the chart title and one for a brief description. The second section contains an editable table of values from which the pie chart is generated. It allows user entry of segment text labels and their corresponding values. The third section contains both the visual and sonified versions of the pie chart that are generated from the information entered in the table. Each segment of the pie is presented with a different colour, a text label showing its percentage value, and an audio representation. The final section is an audio/visual legend that describes what each segment of the pie represents. In the legend, each segment colour is shown along with its corresponding text label and value in percent.
 
-At the code level, the tool makes use of open source libraries including the Fluid Project’s <a href="http://fluidproject.org/infusion.html" class="link-external">Infusion</a>, the Infusion-based <a href="http://flockingjs.org/" class="link-external">Flocking</a> audio synthesis library, and the <a href="https://d3js.org" class="link-external">D3</a> data visualization library. By using only open-source libraries and inherent advanced functionality of modern browsers such as speech and audio synthesis, the tool’s architecture models the same principles of openness embodied by OERs. The code is transparent, modular, modifiable and extensible.
+At the code level, the tool makes use of open source libraries including the Fluid Project’s [Infusion](http://fluidproject.org/infusion.html), the Infusion-based [Flocking](http://flockingjs.org/) audio synthesis library, and the [D3](https://d3js.org) data visualization library. By using only open-source libraries and inherent advanced functionality of modern browsers such as speech and audio synthesis, the tool’s architecture models the same principles of openness embodied by OERs. The code is transparent, modular, modifiable and extensible.
 
 ### Default State
+
 A default pie chart is generated when the author first opens the tool interface, as seen in figure 8. This default pie chart will allow authors to discover the editable elements of the interface, enable them to experiment with the default pie chart sonification, and provide a preview of what the final pie chart will sound and look like.
 
 <figure>
@@ -104,6 +107,7 @@ A default pie chart is generated when the author first opens the tool interface,
 </figure>
 
 ### User Interaction
+
 The Floe chart authoring environment is compatible with screen readers and can be navigated and interacted with by mouse, keyboard or other input devices.
 
 As the author enters (or edits, or deletes) text labels in the table, they are immediately updated in the legend. As the author enters (or edits, or deletes) numerical values in the table, the total value and corresponding percentages are calculated and updated in both the table and the legend.
@@ -128,17 +132,14 @@ As shown in figure 10, selecting the reset button will erase all the information
 </figcaption>
 </figure>
 
-
 ### The Long-Term Vision
 
 * Integration of the User Interface Options (UIO) panel with the Floe chart authoring tool. This will give chart authors the ability to customize their authoring environment based on their unique needs and preferences.
 * Ample end-user configurability for sonifications as well as visual representations. In this way the authoring tool will itself produce artifacts that can be further modified or re-authored by the audience. So far, user testing validates our sense that for sonification to be useful it must accommodate a diverse range of end-user tastes and preferences, and that what works best for one user may not for another.
 
-
 ## Accessible Office Documents
 
-The <a href="http://adod.idrc.ocad.ca/" rel="nofollow" class="link-external">Accessible Digital Office Document (ADOD) Project</a> offers guidance and techniques on how to author accessible documents using common office applications.
-
+The [Accessible Digital Office Document (ADOD) Project](http://adod.idrc.ocad.ca/) offers guidance and techniques on how to author accessible documents using common office applications.
 
 ## Comparisons of Authoring Environments
 
@@ -163,6 +164,6 @@ The <a href="http://adod.idrc.ocad.ca/" rel="nofollow" class="link-external">Acc
 </figcaption>
 </figure>
 
-ISKME:  More images of the OER Commons authoring environment are available at <a href="http://wiki.fluidproject.org/pages/viewpage.action?pageId=29950022" rel="nofollow" class="link-external">OER Commons authoring tool high fidelity mockups</a>
+ISKME: More images of the OER Commons authoring environment are available at [OER Commons authoring tool high fidelity mockups](http://wiki.fluidproject.org/pages/viewpage.action?pageId=29950022)
 
-UI Options: <a href="http://wiki.fluidproject.org/display/fluid/%28Floe%29+UI+Options+Design+Mockups%2C+B.1" rel="nofollow" class="link-external">(Floe) UI Options Design Mockups</a>
+UI Options: [(Floe) UI Options Design Mockups](http://wiki.fluidproject.org/display/fluid/%28Floe%29+UI+Options+Design+Mockups%2C+B.1)

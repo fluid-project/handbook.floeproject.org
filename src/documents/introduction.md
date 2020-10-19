@@ -28,8 +28,8 @@ Learning outcomes research shows that learners learn best when the learning expe
 Digital content and digital delivery mechanisms can be harnessed to assist in addressing the diversity of learning needs because of their inherent flexibility. These mutable learning resources can be personally configured, adapted, and shared yielding a greater diversity of learning resources to address the broad range of learning needs.
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/OneSizeFitsOne.html">One-Size-Fits-One</a>
-* Activity: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/activities/VirtuousTornado.html">Virtuous Tornado</a>
+* Insight: [One-Size-Fits-One](https://guide.inclusivedesign.ca/insights/OneSizeFitsOne.html)
+* Activity: [Virtuous Tornado](https://guide.inclusivedesign.ca/activities/VirtuousTornado.html)
 
 
 
@@ -44,9 +44,9 @@ Learning needs that affect learning can include:
 * linguistic or cultural preferences,
 * technical, financial or environmental constraints.
 
-Some learners are more constrained than others and are therefore less able to adapt to the learning experience or environment offered; for this reason the learning environment or experience must be more flexible. To learn more about potential learner constraints, read the <a href="https://wiki.fluidproject.org/display/fluid/%28Floe%29+User+states+and+contexts" rel="nofollow" class="link-external">Floe user states and contexts</a> work.
+Some learners are more constrained than others and are therefore less able to adapt to the learning experience or environment offered; for this reason the learning environment or experience must be more flexible. To learn more about potential learner constraints, read the [Floe user states and contexts](https://wiki.fluidproject.org/display/fluid/%28Floe%29+User+states+and+contexts) work.
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/DisabilityAsMismatch.html">Disability As Mismatch</a>
-* Practice: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/practices/DesignForAdaptabilityAndFlexibility.html">Design for Adaptability and Flexibility</a>
-* Practice: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/practices/FocusOnFunctionalNeedsAndPreferences.html">Focus on Functional Needs and Preferences</a>
+* Insight: [Disability As Mismatch](https://guide.inclusivedesign.ca/insights/DisabilityAsMismatch.html)
+* Practice: [Design for Adaptability and Flexibility](https://guide.inclusivedesign.ca/practices/DesignForAdaptabilityAndFlexibility.html)
+* Practice: [Focus on Functional Needs and Preferences](https://guide.inclusivedesign.ca/practices/FocusOnFunctionalNeedsAndPreferences.html)

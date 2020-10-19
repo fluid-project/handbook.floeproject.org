@@ -62,7 +62,6 @@ Donella Meadows, the late prescient systems thinker listed 12 ways to intervene 
 2. The mindset or paradigm out of which the system — its goals, structure, rules, delays, parameters — arises.
 1. The power to transcend paradigms.
 
-
 <figure>
 <a name="Figure2"></a>
 [![Figure 2. Virtuous Cycle of Digital Inclusion”](/assets/images/VirtuousCycles-01.png)](/assets/images/VirtuousCycles-01.png)
@@ -90,7 +89,6 @@ One of the activities employed in inclusive design is the “[grandparent, toddl
 A defensive phenomenon that can quickly degrade any effort is polarization. Polarization within a society tends to result in greater and greater extremes. This prevents either side from advancing because it prevents self-critique. It promotes rigid adherence to the espoused position of the side you belong to. Any self-criticism or proposals for alternative strategies are viewed as causing vulnerability and as providing the opposite side a target for attack. Rather than welcoming constructive critique, each side uses blame to fortify the polarity that they are defending, so that neither side evolves.
 
 As mentioned in Part One, inclusive design is itself an antidote to polarization. I liken it to a pendulum, the further you push it in one direction the further it swings in the opposite direction. Add one or more sideways pushes or diverse perspectives to the pendulum and it stays away from the extremes. Employing another physical image, if you have a platform balanced on a point, the best way to keep it balanced or in equilibrium is to distribute many weights across the whole platform. If you have this diverse distribution, the impact of the loss of one weight won’t have as catastrophic an effect. An inclusively designed system recruits the energy and participation of many agents, coming from many perspectives to push the pendulum or balance the platform.
-
 
 ## Riding Waves and the Last Frontiers
 

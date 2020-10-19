@@ -11,7 +11,6 @@ category: Perspectives
 </figcaption>
 </figure>
 
-
 Humans have been counting since before recorded history. Apparently, even some [animals use rudimentary counting](http://www.bbc.com/future/story/20121128-animals-that-can-count). With the ascendance of “Big Data” and the proliferation of connected internet-of-things sensors and monitors we are automatically counting more and more aspects of our life. This leads to more, and larger numbers.
 
 <figure>

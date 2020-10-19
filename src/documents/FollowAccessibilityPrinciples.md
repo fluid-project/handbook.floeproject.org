@@ -11,44 +11,48 @@ Content should be made available in different and adjustable modalities so that 
 
 Some ways this can be accomplished:
 
-*  Augmenting existing modalities: make things easier to see and hear (e.g., adding options to increase/decrease contrast, provide larger text, change volume, etc.)
-*  Provide text alternatives for non-text content (e.g., captions and other alternatives for multimedia)
+* Augmenting existing modalities: make things easier to see and hear (e.g., adding options to increase/decrease contrast, provide larger text, change volume, etc.)
+* Provide text alternatives for non-text content (e.g., captions and other alternatives for multimedia)
 
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" class="link-external">Learner Options</a>
+
+* [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/)
 (sometimes known as UI Options)
 * [Video content and learning](VideoContentAndLearning.html)
-* <a href="http://adod.idrc.ocad.ca/" rel="nofollow" class="link-external">ADOD</a>
+* [ADOD](http://adod.idrc.ocad.ca/)
 
 ### Understandability: Content should be plain and clear to comprehend
 
-*  Different learners have different thresholds for wading through the complexity of the content, and complexity of the content's articulation/presentation
-*  Write content material that isn't unnecessarily difficult to understand
+* Different learners have different thresholds for wading through the complexity of the content, and complexity of the content's articulation/presentation
+* Write content material that isn't unnecessarily difficult to understand
 
 Some things that can be done:
-*  Provide a mechanism for content simplification: content prioritization, linearization, and reduction of non-essential clutter
-*  Make text readable and understandable
-*  Make content appear and operate in predictable ways.
+
+* Provide a mechanism for content simplification: content prioritization, linearization, and reduction of non-essential clutter
+* Make text readable and understandable
+* Make content appear and operate in predictable ways.
 
 Floe examples:
+
 * [Cognitive considerations](CognitiveConsiderations.html)
-* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" class="link-external">Learner Options</a> (sometimes known as UI Options)
+* [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
 * [Video content and learning](VideoContentAndLearning.html)
 
 ### Operability: Interactions should be operable by everyone
 
-*  Make sure that the resource is usable using different inputs (both a combination of different inputs, and individual inputs)
-*  Be sensitive to different levels of dexterity when using inputs
-*  Make all functionality available from a keyboard.
-*  Give users enough time to read and use content.
-*  Do not use content that causes seizures.
-*  Help users navigate and find content.
-*  Examples of inputs:
+* Make sure that the resource is usable using different inputs (both a combination of different inputs, and individual inputs)
+* Be sensitive to different levels of dexterity when using inputs
+* Make all functionality available from a keyboard.
+* Give users enough time to read and use content.
+* Do not use content that causes seizures.
+* Help users navigate and find content.
+* Examples of inputs:
   * Common inputs: mouse, keyboard
   * Other inputs: switch, eye tracking, etc.
 
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/prefsFramework/" rel="nofollow" class="link-external">Learner Options</a> (sometimes known as UI Options)
+
+* [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
 * [Video content and learning](VideoContentAndLearning.html)
 
 ### Robustness: Resources should be compatible with tools now and later
@@ -62,12 +66,12 @@ Floe works with many international standards organizations to ensure that emergi
 
 The W3C develops web-related standards, the best known of which is probably HTML. The W3C process attempts to ensure accessibility is considered in all of its standards; in addition, several accessibility-focused standards have been produced. These are:
 
-* <a href="http://www.w3.org/WAI/intro/aria" rel="nofollow" class="link-external">Accessible Rich Internet Applications (ARIA)</a>: defines a technology for making dynamic web applications more accessible.
-* <a href="http://www.w3.org/TR/WCAG20/" rel="nofollow" class="link-external">Web Content Accessibility Guidelines (WCAG)</a>: guidelines for creating accessible web sites.
-* <a href="http://www.w3.org/TR/WAI-AUTOOLS/" rel="nofollow" class="link-external">Authoring Tool Accessibility (ATAG)</a>: guidelines for developing authoring tools that encourage and support authors to create accessible web sites.
-* <a href="http://www.w3.org/WAI/intro/uaag.php" rel="nofollow" class="link-external">User Agent Accessibility Guidelines (UAAG)</a>: guidelines for developers of browsers, media players, etc. that facilitate accessible use.
-
+* [Accessible Rich Internet Applications (ARIA)](http://www.w3.org/WAI/intro/aria): defines a technology for making dynamic web applications more accessible.
+* [Web Content Accessibility Guidelines (WCAG)](http://www.w3.org/TR/WCAG20/): guidelines for creating accessible web sites.
+* [Authoring Tool Accessibility (ATAG)](http://www.w3.org/TR/WAI-AUTOOLS/): guidelines for developing authoring tools that encourage and support authors to create accessible web sites.
+* [User Agent Accessibility Guidelines (UAAG)](http://www.w3.org/WAI/intro/uaag.php): guidelines for developers of browsers, media players, etc. that facilitate accessible use.
 
 Floe also works with:
-* <a href="http://www.imsglobal.org/accessibility/" rel="nofollow" class="link-external">IMS Global Learning Consortium</a>: Floe has been involved with ensuring inclusive design considerations are part of IMS Standards and has led the AccessForAll standard development.
-* <a href="http://www.iso.org/iso/catalogue_detail?csnumber=41521" rel="nofollow" class="link-external">International Organization for Standardization (ISO)</a>: Floe has been most involved with the development of ISO/IEC 24751 Individualized adaptability and accessibility in e-learning, education and training, which is based on the IMS AccessForAll standard.
+
+* [IMS Global Learning Consortium](http://www.imsglobal.org/accessibility/): Floe has been involved with ensuring inclusive design considerations are part of IMS Standards and has led the AccessForAll standard development.
+* [International Organization for Standardization (ISO)](http://www.iso.org/iso/catalogue_detail?csnumber=41521): Floe has been most involved with the development of ISO/IEC 24751 Individualized adaptability and accessibility in e-learning, education and training, which is based on the IMS AccessForAll standard.

@@ -13,7 +13,6 @@ The three dimensions of the framework are:
 
 3. Realize that you are designing in a complex adaptive system.
 
-
 <figure>
 <a name="Figure1"></a>
 [![Figure 1. Co-designing in a diverse team”](/assets/images/DiverseTeam.jpg)](/assets/images/DiverseTeam.jpg)
@@ -47,7 +46,6 @@ One of the first lessons I learned is that no amount of background research and 
 ## Inverse Effects
 
 One of the distressing phenomena I observed during my career was the degree to which excelling in the respected design methods often led to worse design for the individuals that most depended on a good design. The more the designers engaged in rigorous research, or observation behind one-way mirrors, or focus groups with token representatives of high incidence disability groups, the more the designers failed to ‘get’ these pioneers and what was needed in the design. It was almost like the research and rigor was a shield to really understanding, while at the same time bolstering professional stature and distance.
-
 
 <figure>
 <a name="Figure2"></a>

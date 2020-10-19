@@ -37,11 +37,11 @@ Learning needs that affect learning can include:
 </figcaption>
 </figure>
 
-
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/PersonalDiscovery.html">Personal Discovery</a>
-* Practice: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/practices/DesignForAdaptabilityAndFlexibility.html">Design for Adaptability and Flexibility</a>
-* Practice: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/practices/DesignForUncertainty.html">Design for Uncertainty</a>
+
+* Insight: [Personal Discovery](https://guide.inclusivedesign.ca/insights/PersonalDiscovery.html)
+* Practice: [Design for Adaptability and Flexibility](https://guide.inclusivedesign.ca/practices/DesignForAdaptabilityAndFlexibility.html)
+* Practice: [Design for Uncertainty](https://guide.inclusivedesign.ca/practices/DesignForUncertainty.html)
 
 ## Benefit of openness
 
@@ -52,9 +52,9 @@ Open content allows for the remixing of content which allows for the creation of
 * Potential cost (and effort)-savings through sharing
 * Depth of materials from multiple authors (additive approach)
 * Content licenses that keep content alive and open
-<a class="link-external" rel="nofollow" href="http://creativecommons.org/education">CC-By Education</a>
+[CC-By Education](http://creativecommons.org/education)
 * Universities adopting open access policies
-<a class="link-external" rel="nofollow" href="http://archive.news.ku.edu/2011/august/3/openaccess.shtml">COAPI</a>
+[COAPI](http://archive.news.ku.edu/2011/august/3/openaccess.shtml)
 
 Floe's approach helps further enable open content by making the process of sharing, modifying, and augmenting easier and more direct.
 
@@ -78,7 +78,7 @@ To achieve this requires:
 3. resources that are amenable to transformation, and a pool of alternative equivalent resources, and
 4. a method of matching learner needs with the appropriate learning experience
 
-That is the work that Floe focuses on. To further understand what Floe is working on, visit the <a class="link-external" rel="nofollow" href="https://wiki.fluidproject.org/x/lYlnAQ">Floe Scenario narrative</a>.
+That is the work that Floe focuses on. To further understand what Floe is working on, visit the [Floe Scenario narrative](https://wiki.fluidproject.org/x/lYlnAQ).
 
 <figure>
 [![Screenshot of the Fluid Studios website](/assets/images/Fluid-studios.png)](/assets/images/Fluid-studios.png)
@@ -88,5 +88,6 @@ That is the work that Floe focuses on. To further understand what Floe is workin
 </figure>
 
 To learn more, see the Inclusive Design Guide:
-* Insight: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/insights/UserContinuedDesign.html">User-Continued Design</a>
-* Practice: <a class="link-external" rel="nofollow" href="https://guide.inclusivedesign.ca/practices/WorkOpenly.html">Work Openly</a>
+
+* Insight: [User-Continued Design](https://guide.inclusivedesign.ca/insights/UserContinuedDesign.html)
+* Practice: [Work Openly](https://guide.inclusivedesign.ca/practices/WorkOpenly.html)

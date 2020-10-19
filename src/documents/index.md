@@ -21,11 +21,10 @@ Contributions to the Handbook are welcome and encouraged from all:
 * Create alternative presentations of the Handbook, including versions suitable for mobile devices or offline reading
 * Derive, remix, and reuse the Handbook's content
 
-All content in the Handbook is licensed under the <a href="http://creativecommons.org/licenses/by/2.5/ca/" rel="nofollow" class="link-external">Creative Commons 2.5 Canada License</a>.
-
+All content in the Handbook is licensed under the [Creative Commons 2.5 Canada License](http://creativecommons.org/licenses/by/2.5/ca/).
 
 ## Credits
 
-The Floe Inclusive Learning Design Handbook, part of the <a rel="nofollow" class="link-external" href="http://www.floeproject.org/">Floe Project</a>, is produced by the <a href="http://idrc.ocadu.ca/" rel="nofollow" class="link-external">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca" rel="nofollow" class="link-external">OCAD University</a>.
+The Floe Inclusive Learning Design Handbook, part of the [Floe Project](http://www.floeproject.org/), is produced by the [Inclusive Design Research Centre](http://idrc.ocadu.ca/) at [OCAD University](http://www.ocadu.ca).
 
-Floe is funded by a grant from <a href="http://www.hewlett.org/" rel="nofollow" class="link-external">The William and Flora Hewlett Foundation</a>.
+Floe is funded by a grant from [The William and Flora Hewlett Foundation](http://www.hewlett.org/).

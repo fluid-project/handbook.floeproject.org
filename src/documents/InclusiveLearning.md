@@ -10,8 +10,7 @@ We have heard that students feel disenfranchised, do not see education as releva
 
 If our goal is to optimize learning for all learners we must recognize that learners learn differently. There is neither a single take on learning nor a best way to teach a concept. Learning outcomes research shows that learners learn best when the learning experience is personalized to their learning needs. Learning breakdown and drop out occurs when students face barriers to learning, feel disadvantaged by the learning experience offered or feel that their personal learning needs are ignored. We must take a flexible and multi-modal approach to teaching and learning.
 
-For additional information, visit the
-<a class="link-external" rel="nofollow" href="http://www.slideshare.net/jesshmitchell/floe-project">Floe Project presentations on Slideshare</a>.
+For additional information, visit the [Floe Project presentations on Slideshare](http://www.slideshare.net/jesshmitchell/floe-project).
 
 ## Solution: Customization and personalization, and demands with matching.
 
@@ -51,9 +50,9 @@ Open content allows for the remixing of content which allows for the creation of
 * Potential cost (and effort)-savings through sharing
 * Depth of materials from multiple authors (additive approach)
 * Content licenses that keep content alive and open
-<a class="link-external" rel="nofollow" href="http://creativecommons.org/education">CC-By Education</a>
+[CC-By Education](http://creativecommons.org/education)
 * Universities adopting open access policies
-<a class="link-external" rel="nofollow" href="http://archive.news.ku.edu/2011/august/3/openaccess.shtml">COAPI</a>
+[COAPI](http://archive.news.ku.edu/2011/august/3/openaccess.shtml)
 
 Floe's approach helps further enable open content by making the process of sharing, modifying, and augmenting easier and more direct.
 
@@ -77,7 +76,7 @@ To achieve this requires:
 3. resources that are amenable to transformation, and a pool of alternative equivalent resources, and
 4. a method of matching learner needs with the appropriate learning experience
 
-That is the work that Floe focuses on. To further understand what Floe is working on, visit the <a class="link-external" rel="nofollow" href="https://wiki.fluidproject.org/x/lYlnAQ">Floe Scenario narrative</a>.
+That is the work that Floe focuses on. To further understand what Floe is working on, visit the [Floe Scenario narrative](https://wiki.fluidproject.org/x/lYlnAQ).
 
 <figure>
 [![Screenshot of the Fluid Studios website](/assets/images/Fluid-studios.png)](/assets/images/Fluid-studios.png)

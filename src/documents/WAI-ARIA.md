@@ -32,31 +32,35 @@ Even though scripting is optional in EPUB 3, scripting can be used to add meanin
 
 WAI-ARIA goes a long way to help users and reader systems understand the relationships and interactions between contents on a page, especially if the EPUB 3 book is using scripting.
 
-##WAI-ARIA and Math##
+## WAI-ARIA and Math
+
 Math notation and equations is traditionally challenging to make accessible and comprehensible, but this can be improved thanks to some WAI-ARIA markup. With WAI-ARIA, math content can be:
+
 * given a literal translation to clarify notation
 * elaborated with longer descriptions and definitions to give an additional avenue for understanding
 
-Refer to the [Mathematics](Mathematics.html) section for techniques to adding inclusive math content to EPUB.
+Refer to the [Mathematics](/Mathematics.html) section for techniques to adding inclusive math content to EPUB.
 
-## Further reading: ##
-* <a rel="nofollow" class="link-external" href="http://www.w3.org/WAI/intro/aria"> WAI-ARIA W3C Web Accessibility Initiative Aria Overview</a>
-* <a rel="nofollow" class="link-external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"> "Highly Accessible Interactive EPUB" - by Liza Daly, Threepress / Ibis Reader</a>
-* <a rel="nofollow" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/script/aria.php"> "WAI-ARIA & Custom Controls" - by IDPF</a>
-* <a rel="nofollow" class="link-external" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"> "ARIA" - by Mozilla Developer Network</a>
-* <a rel="nofollow" class="link-external" href="http://oaa-accessibility.org/examples/"> "Open AJAX Examples" - by Open Ajax Alliance</a>
-* <a rel="nofollow" class="link-external" href="http://alistapart.com/article/the-accessibility-of-wai-aria"> "The Accessibility of WAI-ARIA" - by Detlev Fischer, A List Apart</a>
+## Further reading:
+
+* [WAI-ARIA W3C Web Accessibility Initiative Aria Overview](http://www.w3.org/WAI/intro/aria)
+* ["Highly Accessible Interactive EPUB" - by Liza Daly, Threepress / Ibis Reader](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+* ["WAI-ARIA & Custom Controls" - by IDPF](http://www.idpf.org/accessibility/guidelines/content/script/aria.php)
+* ["ARIA" - by Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+* ["Open AJAX Examples" - by Open Ajax Alliance](http://oaa-accessibility.org/examples/)
+* ["The Accessibility of WAI-ARIA" - by Detlev Fischer, A List Apart](http://alistapart.com/article/the-accessibility-of-wai-aria)
 
 ## Topics:
-* [Inclusive EPUB3](InclusiveEPUB3.html)
-* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
-* [WAI-ARIA](WAI-ARIA.html)
-* [Visual Styles](VisualStyles.html)
-* [Graphics and Multimedia](GraphicsAndMultimedia.html)
-* [Scripting in EPUB 3](ScriptingInEPUB3.html)
-* [Mathematics](Mathematics.html)
-* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
-* [Accessibility Metadata](AccessibilityMetadata.html)
-* [Testing and Validation](TestingAndValidation.html)
-* [Case Study Exemplar](CaseStudyExemplar.html)
-* [EPUB 3 Resources](EPUB3Resources.html)
+
+* [Inclusive EPUB3](/InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](/SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](/WAI-ARIA.html)
+* [Visual Styles](/VisualStyles.html)
+* [Graphics and Multimedia](/GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](/ScriptingInEPUB3.html)
+* [Mathematics](/Mathematics.html)
+* [Narrations and Text to Speech](/NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](/AccessibilityMetadata.html)
+* [Testing and Validation](/TestingAndValidation.html)
+* [Case Study Exemplar](/CaseStudyExemplar.html)
+* [EPUB 3 Resources](/EPUB3Resources.html)

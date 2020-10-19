@@ -2,9 +2,8 @@
 title: Approaches
 category: Approaches
 ---
-
-
 The content of this section is organized in the following areas:
+
 * Best Practices
 * Inclusive Authoring
 * Inclusive Assessment
