@@ -28,15 +28,16 @@ The rest of this page provides some technical information about how the exemplar
 EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost all definitions of semantics, structure and processing behaviors from the HTML5 specification. This means that you can create valid HTML5 documents and update the head of the document to define it as XML and declare the epub namespace.
 
 ### Original HTML:
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
     ...
 ```
 
-###Modified to be EPUB 3 compatible:###
-```
+### Modified to be EPUB 3 compatible:
+
+```html
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -45,7 +46,8 @@ EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost al
     ...
 ```
 
-## Scripts ##
+## Scripts
+
 The interactive simulation we used in the exemplar EPUB is taken from <a href="http://phet.colorado.edu/" rel="nofollow" class="link-external"> PhET</a>, specificially the Forces and Motion simulation:
 
 * Online demo: <a href="http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" rel="nofollow" class="link-external">http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html</a>
@@ -53,7 +55,7 @@ The interactive simulation we used in the exemplar EPUB is taken from <a href="h
 * Phet development overview: <a href="http://bit.ly/phet-development-overview" rel="nofollow" class="link-external">http://bit.ly/phet-development-overview</a>
 
 In order to use scripts in EPUB, CDATA blocks need to be added. However this will break the HTML in browsers.
-```
+```html
 <script>
    <!CDATA[
    var code = document.getElementById('code');
@@ -88,13 +90,13 @@ The following process was used to create the Media Overlays for the Inclusive EP
 ```
 
 6. Convert timecodes into SMIL <code>&lt;par&gt;</code> elements as per EPUB overlay specification using <code>awk</code>:
-```
+```bash
 > awk -f convert.awk -v htmlFile=01-velocity.html -v audioFile=audio/01-velocity.mp3 \
        01-velocity-timecodes.txt > 01-velocity.smil
 ```
 
 7. Add the appropriate SMIL header and footer to the output of the awk script, as well as any desired <code><seq></code> elements.
-```
+```xml
 <smil
      xmlns="http://www.w3.org/ns/SMIL"
      xmlns:epub="http://www.idpf.org/2007/ops"
@@ -108,7 +110,7 @@ The following process was used to create the Media Overlays for the Inclusive EP
 
 8. Edit the manifest file <code>content.opf</code> as necessary:
 * add duration metadata to the top of the document, inside the <code>&lt;meta&gt;</code> element:
-```
+```html
 <meta property="media:duration">0:00:59.000</meta>
 <meta property="media:duration" refines="#ch001_overlay">0:00:59.000</meta>
 ```
@@ -116,13 +118,13 @@ The following process was used to create the Media Overlays for the Inclusive EP
 * add <code>&lt;item&gt;</code> elements for the new files, ensuring to include the correct mime type:
    * the SMIL file
    * the audio recording(s)
-```
+```html
 <item id="ch001_overlay" href="01-velocity.smil" media-type="application/smil+xml"/>
 <item id="ch001_overlay_mp3" href="audio/01-velocity.mp3" media-type="audio/mpeg" />
 ```
 
 * add a <code>media-overlay</code> attribute to <code>&lt;item&gt;s</code> for the html file(s), referencing the ID of the relevant SMIL file:
-```
+```html
 <item id="ch001_xhtml" href="ch001.xhtml" media-type="application/xhtml+xml"
       properties="mathml" media-overlay="ch001_overlay" />
 ```
@@ -131,7 +133,7 @@ The following process was used to create the Media Overlays for the Inclusive EP
 
 The Floe team discovered that none of the EPUB readers or operating system voicing technologies we tested honoured the lexicons or SSML. We found that some screen readers honour the <code>title</code> attribute of the <code>&lt;abbr&gt;</code> tag, and others the <code>aria-label</code>, so those were used to provide proper spoken versions of units, math, etc., as illustrated below.
 
-```
+```html
 <abbr role="text"
       title="metres per second"
       aria-label="meters per second">m/s</abbr>
@@ -139,7 +141,7 @@ The Floe team discovered that none of the EPUB readers or operating system voici
 
 ## Accessibility metadata ##
 Add <a href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php" rel="nofollow" class="link-external"> Schema.org accessibility metadata</a> to the package.opf file describing the features of the EPUB:
-```
+```xml
 <package … >
     …
     <meta property="schema:accessibilityFeature">tableOfContents</meta>
@@ -151,7 +153,7 @@ Add <a href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.or
 
 Note: The Schema.org accessibility property ''accessibilityFeature'' does not yet have a value that can convey the fact that an EPUB contains an audio narration through the media overlay, but such a value is being proposed.
 
-###IMPORTANT NOTE:###
+### IMPORTANT NOTE: ###
 Until validators recognize the schema: prefix, you must declare it in the package.opf file:
 ```
 <package …

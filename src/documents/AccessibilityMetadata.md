@@ -10,7 +10,7 @@ To describe the accessibility features of an EPUB 3 publication as a *whole*, th
 
 Here is the example provided by IDPF:
 
-```
+```html
 <metadata>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
@@ -36,17 +36,18 @@ To specify metadata to a *part* of your publication, you would embed microdata d
 
 ### Example: Embedded video without any metadata ###
 
-    <video>
-    <source src="movie.mp4" type="video/mp4">
+```html
+<video>
+<source src="movie.mp4" type="video/mp4">
 
-    <!-- the Caption -->
-    <track src="http://www.example.com/captions.srt" kind="subtitles" srclang="fr-CA">
-    </video>
-
+<!-- the Caption -->
+<track src="http://www.example.com/captions.srt" kind="subtitles" srclang="fr-CA">
+</video>
+```
 
 ### Example: Embedded video with basic metadata ###
 
-```
+```html
 <video itemscope itemtype="http://schema.org/Movie">
    <meta itemprop="accessibilityFeature" content="captions" />
     <source src="movie.mp4" type="video/mp4" />
@@ -61,7 +62,7 @@ To specify metadata to a *part* of your publication, you would embed microdata d
 
 ### Example: Embedded video with more descriptive metadata ###
 
-```
+```html
 <video itemscope itemtype="http://schema.org/Movie">
   <meta itemprop="accessibilityFeature" content="highContrast" />
   <meta itemprop="accessibilityFeature" content="signLanguage" />

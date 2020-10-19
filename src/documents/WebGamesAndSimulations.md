@@ -146,14 +146,16 @@ Make sure that symbols, math notation, and other glyphs have the desired textual
 
 Unicode characters offer a few common glyphs which can be used in place of image icons. If using Unicode characters, something like the following code snippet would be helpful:
 
-```
 HTML:
 
+```html
 <span aria-labelledby="left-arrow">&larr;</span>
 <span id="left-arrow" class="hidden">Left arrow</span>
+```
 
 CSS:
 
+```css
 .hidden {
     position:absolute;
     left:-10000px;

@@ -39,7 +39,7 @@ TTS in EPUB 3 consists of 3 working parts:
 
 The following is an example of content using SSML, some Aural Styles, and the word "acetaminophen" defined by PLS: (example adapted from <a rel="nofollow" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/tts/ssml.php"> EPUB 3 Accessibility Guidelines: SSML</a>)
 
-```
+```html
 <html xmlns:ssml="http://www.w3.org/2001/10/synthesis" ssml:alphabet="x-sampa">
     ...
     <head>
@@ -78,7 +78,7 @@ For example: `The brick weighs 5 lbs.`
 
 In this case we would want to say "pounds" and not "libs", nor do we want to spell out "L-B-S".  Using `<abbr>` and `aria-label`, we can define what we want said.
 
-```
+```html
 The brick weighs <abbr role="text" title="pounds" aria-label="pounds">lbs.</abbr>
 ```
 

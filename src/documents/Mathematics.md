@@ -6,7 +6,7 @@ Traditionally, math is challenging to render and to make accessible - thankfully
 
 To encode math and math notations, we will be using MathML 3.0 which is a W3C specification (Link: <a rel="nofollow" class="link-external" href="http://www.w3.org/Math/">W3C Math Home</a>) that is widely supported by modern-day EPUB reader systems. To see how MathML works, let's use this physics formula for the force of gravity as an example: f<sub>g</sub> = mg.
 
-```
+```html
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 	<mrow>
 		<msub>
@@ -26,7 +26,7 @@ However, for someone using a screen reader or another accessibility tool, the fo
 
 In our example f<sub>g</sub> = mg example, a good literal description would be: "f subscript g equals m times g".
 
-```
+```html
 <math xmlns="http://www.w3.org/1998/Math/MathML"
     aria-label="f subscript g equals m times g">
     <mrow>
@@ -47,7 +47,7 @@ This is a good start, however someone may not be familiar with the subject matte
 
 Using the `aria-describedby` property, we can link math formulas and equations to a more detailed explanation.
 
-```
+```html
 <math xmlns="http://www.w3.org/1998/Math/MathML"
     aria-label="f subscript g equals m times g"
     aria-describedby="formulaDescription">
@@ -71,7 +71,7 @@ Using the `aria-describedby` property, we can link math formulas and equations t
 
 To ensure that standard compliant reader systems understand your math content, we wrap the `<math></math>` content in a container (a `<span>`, `<div>`, or `<p>`) and give it a math role.
 
-```
+```html
 <span role="math">
     <math xmlns="http://www.w3.org/1998/Math/MathML"
         aria-label="f subscript g equals m times g"
@@ -108,10 +108,10 @@ Units and measurements poses their own unique challenge as units are often writt
 <a href="https://www.mathmlcloud.org/" rel="nofollow" class="link-external">MathML Cloud</a> is a tool which converts math notation into readable text and other formats. MathML Cloud can take math notation in ASCII text, MathML or Latex notation, and output a text equivalent, PNG, SVG, and MML which can be embedded into EPUB 3 and HTML.
 
 <figure>
-	[![Screen capture of the MathML Cloud tool converting a math equation from ASCII into SVG, MML, and PNG formats.](/assets/images/thumbs/400px-MathMLCloud.png)](/assets/images/MathMLCloud.png)
-	<figcaption>
-		The image shows the MathML interface converting an equation into different formats. Try MathMLCloud at <a href="https://www.mathmlcloud.org/" rel="nofollow" class="link-external">https://www.mathmlcloud.org/</a>
-	</figcaption>
+[![Screen capture of the MathML Cloud tool converting a math equation from ASCII into SVG, MML, and PNG formats.](/assets/images/thumbs/400px-MathMLCloud.png)](/assets/images/MathMLCloud.png)
+<figcaption>
+The image shows the MathML interface converting an equation into different formats. Try MathMLCloud at <a href="https://www.mathmlcloud.org/" rel="nofollow" class="link-external">https://www.mathmlcloud.org/</a>
+</figcaption>
 </figure>
 
 Related: <a href="http://benetech.org/our-programs/literacy/born-accessible/mathml-cloud/" rel="nofollow" class="link-external">MathML Cloud Project Description</a>

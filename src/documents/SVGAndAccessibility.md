@@ -11,7 +11,7 @@ SVG (Scalable Vector Graphics) is a means of describing vector graphics in marku
 ## Simple SVG Example
 
 ### Source Code
-```
+```html
 <svg width="10em" height="5em" viewBox="0 0 1200 400"
      xmlns="http://www.w3.org/2000/svg" version="1.1">
   <desc>Two small rectangles, one red, one green.</desc>

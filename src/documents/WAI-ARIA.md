@@ -6,7 +6,7 @@ While HTML 5 semantic markup and epub:type go a long way to help your publicatio
 
 WAI-ARIA is used primarily with scripting, but it can also be used to describe the roles and functions of elements on a page. For example, a list of text items used as a toolbar or navigation menu can be described using WAI-ARIA this way:
 
-```
+```html
 <nav>
     <ul class="buttons" title="Website navigation">
         <li id="Home" aria-labelledby="navigation_home" aria-controls="my_content" aria-pressed="false" tabindex="0" role="button">Home</li>
@@ -22,7 +22,7 @@ WAI-ARIA is used primarily with scripting, but it can also be used to describe t
 
 Even though scripting is optional in EPUB 3, scripting can be used to add meaningful interactions to an otherwise static EPUB 3 book. If scripting is used in EPUB 3, WAI-ARIA can help describe content that is controlled or updated dynamically. For example, consider the case of a script on the page which behaves like a timer that begins counting down to zero once the user presses a button. Typically, the area that counts down the seconds would not be accessible to users using audio only, but with WAI-ARIA, you can describe the updating numbers this way:
 
-```
+```html
 <div id="region1Container">
     <label id="live1Label" for="liveregion1">Seconds left</label>:
     <div id="liveregion1" class="region" aria-relevant="all" aria-atomic="true"

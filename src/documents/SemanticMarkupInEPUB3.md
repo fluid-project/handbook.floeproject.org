@@ -11,7 +11,7 @@ EPUB 3 also provides semantics more suitable for publications. In addition to us
 
 Here is an example:
 
-```
+```html
 <section epub:type="chapter">
    <h1>Chapter 1: At the Start</h1>
     We always start with a good idea.

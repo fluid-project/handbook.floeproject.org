@@ -8,7 +8,7 @@ In December, 2013, the W3C Schema.org process accepted a proposal for a set of a
 
 This accessibility  metadata can be embedded directly in the markup of any web content. The example below shows how a page that includes a video and audio file might use the accessibility metadata properties:
 
-```
+```html
    <h1>Martin Luther King's Speech: 'I Have a Dream'</h1>
 
    <div id="videoMLK" itemprop="video">
