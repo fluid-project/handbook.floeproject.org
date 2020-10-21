@@ -1,4 +1,3 @@
-const getSize = require('image-size');
 const jsdom = require('jsdom');
 const MarkdownIt = require("markdown-it");
 const { JSDOM } = jsdom;
