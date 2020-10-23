@@ -1,15 +1,17 @@
-const jsdom = require('jsdom');
+"use strict";
+
+const jsdom = require("jsdom");
 const MarkdownIt = require("markdown-it");
 const { JSDOM } = jsdom;
 
 module.exports = (value, outputPath) => {
-	if (outputPath && outputPath.includes('.html')) {
-		const DOM = new JSDOM(value, {
-			resources: 'usable'
-		});
+    if (outputPath && outputPath.includes(".html")) {
+        const DOM = new JSDOM(value, {
+            resources: "usable"
+        });
 
         const document = DOM.window.document;
-        
+
         const md = new MarkdownIt({
             html: true,
             breaks: true,
@@ -17,15 +19,15 @@ module.exports = (value, outputPath) => {
         });
 
         const figures = [
-			...document.querySelectorAll('article figure')
+            ...document.querySelectorAll("article figure")
         ];
 
         const captions = [
-			...document.querySelectorAll('article figcaption')
+            ...document.querySelectorAll("article figcaption")
         ];
-        
-		const links = [
-			...document.querySelectorAll('article a')
+
+        const links = [
+            ...document.querySelectorAll("article a")
         ];
 
         if (captions.length > 0) {
@@ -40,21 +42,21 @@ module.exports = (value, outputPath) => {
             });
         }
 
-		if (links.length > 0) {
-			links.forEach(link => {
-				if (
-					!link.href.startsWith('/') &&
-					!link.href.startsWith('#') &&
-					(!['localhost', 'handbook.floeproject.org'].includes(link.host))
-				) {
-                    link.setAttribute('rel', 'nofollow external');
-                    link.classList.add('link-external');
-				}
-			});
-		}
+        if (links.length > 0) {
+            links.forEach(link => {
+                if (
+                    !link.href.startsWith("/") &&
+					!link.href.startsWith("#") &&
+					(!["localhost", "handbook.floeproject.org"].includes(link.host))
+                ) {
+                    link.setAttribute("rel", "nofollow external");
+                    link.classList.add("link-external");
+                }
+            });
+        }
 
-		return '<!DOCTYPE html>\r\n' + document.documentElement.outerHTML;
-	}
+        return "<!DOCTYPE html>\r\n" + document.documentElement.outerHTML;
+    }
 
-	return value;
+    return value;
 };
