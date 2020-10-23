@@ -34,4 +34,6 @@ If you make changes to the website, repeat step 2 to build the website and uploa
 
 ## License Information
 
-The Inclusive Learning Design Handbook is licensed under Creative Commons Attribution 2.5 Canada- [http://creativecommons.org/licenses/by/2.5/ca/](http://creativecommons.org/licenses/by/2.5/ca/)
+The Inclusive Learning Design Handbook's code is licensed under the [BSD 3-Clause](https://raw.githubusercontent.com/fluid-project/docs-inclusive-learning/blob/main/LICENSE.md) license.
+
+The Inclusive Learning Design Handbook's content is licensed under the [Creative Commons Attribution 3.0](http://creativecommons.org/licenses/by/3.0/) license.
