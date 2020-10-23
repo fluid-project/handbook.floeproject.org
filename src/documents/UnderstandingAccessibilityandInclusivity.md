@@ -1,6 +1,10 @@
 ---
 title: Understanding Accessibility and Inclusivity
 category: Perspectives
+eleventyNavigation:
+    parent: Perspectives
+    key: Understanding Accessibility and Inclusivity
+    order: 1
 ---
 Floe defines Inclusive Design as design that considers the full range of human diversity with respect to ability, language, culture, gender, age and other forms of human difference.
 

@@ -1,6 +1,10 @@
 ---
 title: "The Three Dimensions of Inclusive Design: Part Two"
 category: Perspectives
+eleventyNavigation:
+    parent: Perspectives
+    key: "The Three Dimensions of Inclusive Design: Part Two"
+    order: 4
 ---
 
 This work "_The Three Dimensions of Inclusive Design: Part Two_", is a reproduction of "[_The Three Dimensions of Inclusive Design, Part Two_](https://medium.com/@jutta.trevira/the-three-dimensions-of-inclusive-design-part-two-7cacd12b79f1)" by Jutta Treviranus, used under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). This is the second part of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and increasingly connected world. [Part One can be found here](TheThreeDimensionsPartOne.html). [Part Three can be found here](TheThreeDimensionsPartThree.html).

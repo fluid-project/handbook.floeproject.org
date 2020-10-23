@@ -1,6 +1,10 @@
 ---
 title: If you want the best design, ask strangers to help
 category: Perspectives
+eleventyNavigation:
+    parent: Perspectives
+    key: If you want the best design, ask strangers to help
+    order: 6
 ---
 
 _Editor’s Note: Jutta Treviranus is a leader in inclusive design; she started and directs OCAD University’s Inclusive Design Research Centre, heads the Inclusive Design Institute and founded the first inclusive design graduate program at OCAD U. In this post, Jutta explains the costs and impacts on the edge and the unrepresented when identity clustering and cookie cutter approaches to digital inclusion occur._

@@ -1,22 +1,13 @@
-                    {% for collection in siteStructure %}
-                        {% if collection.category === category %}
-                            <!-- Output only the table of contents matching the current document's category -->
-                            <h2 class="docs-template-category">{{ collection.category }}</h2>
-                            {% for section in collection.sections %}
-                                <span class="docs-template-sectionName">
-                                  <h4>{{ section.sectionName }}</h4>
-                                </span>
-                                <ul>
-                                    {% for topicPage in section.pages %}
-                                        <li>
-                                            {% if topicPage.href === page.url %}
-                                                <span aria-label="Currently on: {{ topicPage.pageName }}" class="docs-template-topics-active">{{ topicPage.pageName }}</span>
-                                            {% else %}
-                                                <a href="{{ topicPage.href }}">{{ topicPage.pageName }}</a>
-                                            {% endif %}
-                                        </li>
-                                    {% endfor %}
-                                </ul>
+                    {% set topicPages = collections.all | eleventyNavigation(category) %}
+
+                    <h2 class="docs-template-category">{{ category }}</h2>
+                    {% for item in topicPages %}
+                        <span class="docs-template-sectionName">
+                            <h4>{{ item.key }}</h4>
+                        </span>
+                        <ul>
+                            {% for subItem in item.children %}
+                                <li><a href="{{ subItem.url }}"{% if subItem.url === page.url %} aria-current="page"{% endif %}>{{ subItem.key }}</a></li>
                             {% endfor %}
-                        {% endif %}
+                        </ul>
                     {% endfor %}

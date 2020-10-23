@@ -488,21 +488,11 @@ html body {
     background: header-nav-hover-background;
 }
 
-.docs-template-dropDown-header .docs-template-category-active {
-    &.ui-state-focus,
-    &.ui-state-focus span {
-        color: header-nav-link;
-        background: header-nav-background;
-    }
-}
-
-.docs-template-category-active {
-    span:before {
-        color: header-nav-link;
-        content: "\2590";
-        display: inline-block;
-        margin-right: 0.2rem;
-    }
+[aria-current="page"]:before {
+    color: header-nav-link;
+    content: "\2590";
+    display: inline-block;
+    margin-right: 0.2rem;
 }
 
 .docs-template-footer {
@@ -672,12 +662,6 @@ html body {
         padding: 0.6rem 0.2rem 0.6rem 0;
     }
 
-    .docs-template-topics-active:before {
-        content: "\2590";
-        display: inline-block;
-        margin-right: 0.2rem;
-    }
-
     a {
         display: inline-block;
         color: topics-item-color;
@@ -693,10 +677,14 @@ html body {
         }
     }
 
-    .docs-template-topics-active {
+    [aria-current="page"] {
         color: topics-active-color;
         background: topics-active-background;
         display: inline-block;
+    }
+
+    [aria-current="page"]::before {
+        color: topics-active-color;
     }
 
     .docs-template-category {

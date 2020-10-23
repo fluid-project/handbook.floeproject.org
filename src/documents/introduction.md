@@ -1,12 +1,14 @@
 ---
 title: Where to begin?
 category: Introduction
+eleventyNavigation:
+    key: Introduction
+    order: 1
 ---
 
-If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more adaptable, and more configurable to individual learner needs. Of course, [authoring content](AuthoringOfContent.html) in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable. There are also options for making materials more accessible "after the fact" (see [Video content and learning](VideoContentAndLearning.html), [Audio content and learning](AudioContentAndLearning.html), [Cognitive considerations](CognitiveConsiderations.html)).
+If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more adaptable, and more configurable to individual learner needs. Of course, [authoring content](/AuthoringOfContent.html) in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable. There are also options for making materials more accessible "after the fact" (see [Video content and learning](/VideoContentAndLearning.html), [Audio content and learning](/AudioContentAndLearning.html), [Cognitive considerations](/CognitiveConsiderations.html)).
 
 In either case, making content more inclusive begins with understanding what kinds of alternatives are needed, and realizing that inclusivity and accessibility are achieved through awareness, adaptation, collaboration, and flexibility. There is no definitive checklist, no machine that churns out accessible materials. With awareness and the tools (like those made through Floe), we can commit to making our materials more inclusive and more accessible.
-
 
 ## Who is this for?
 
@@ -15,7 +17,6 @@ This handbook is intended for anyone producing, revising, re-purposing or reusin
 The tips and advice apply whether you are creating curriculum resources for preschoolers, graduate curriculum or life long learning resources. The handbook also applies whether you are creating simple text-based resources, animations, applets, simulations or full production videos.
 
 In the spirit of OER, if you use this handbook you are also a contributor to this handbook. We welcome all input.
-
 
 ## Why is this important?
 
@@ -28,10 +29,9 @@ Learning outcomes research shows that learners learn best when the learning expe
 Digital content and digital delivery mechanisms can be harnessed to assist in addressing the diversity of learning needs because of their inherent flexibility. These mutable learning resources can be personally configured, adapted, and shared yielding a greater diversity of learning resources to address the broad range of learning needs.
 
 To learn more, see the Inclusive Design Guide:
+
 * Insight: [One-Size-Fits-One](https://guide.inclusivedesign.ca/insights/OneSizeFitsOne.html)
 * Activity: [Virtuous Tornado](https://guide.inclusivedesign.ca/activities/VirtuousTornado.html)
-
-
 
 ## Who is currently excluded?
 
@@ -47,6 +47,7 @@ Learning needs that affect learning can include:
 Some learners are more constrained than others and are therefore less able to adapt to the learning experience or environment offered; for this reason the learning environment or experience must be more flexible. To learn more about potential learner constraints, read the [Floe user states and contexts](https://wiki.fluidproject.org/display/fluid/%28Floe%29+User+states+and+contexts) work.
 
 To learn more, see the Inclusive Design Guide:
+
 * Insight: [Disability As Mismatch](https://guide.inclusivedesign.ca/insights/DisabilityAsMismatch.html)
 * Practice: [Design for Adaptability and Flexibility](https://guide.inclusivedesign.ca/practices/DesignForAdaptabilityAndFlexibility.html)
 * Practice: [Focus on Functional Needs and Preferences](https://guide.inclusivedesign.ca/practices/FocusOnFunctionalNeedsAndPreferences.html)

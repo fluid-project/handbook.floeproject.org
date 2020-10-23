@@ -1,6 +1,10 @@
 ---
 title: Accessibility Assessment Tools
 category: Techniques
+eleventyNavigation:
+    parent: Testing and Evaluation
+    key: Accessibility Assessment Tools
+    order: 1
 ---
 * [A complete list of Web Accessibility Evaluation Tools from the W3C](http://www.w3.org/WAI/ER/tools/complete)
 

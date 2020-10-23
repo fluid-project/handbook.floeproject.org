@@ -1,6 +1,10 @@
 ---
 title: Achieving Inclusive Education
 category: Perspectives
+eleventyNavigation:
+    parent: Perspectives
+    key: Achieving Inclusive Education
+    order: 2
 ---
 Inclusive education or accessibility is achieved by a sufficiently diverse and flexible pool of OER to address the diversity of learners, as well as a way to find and deliver resources that address each learner’s individual needs.
 
