@@ -122,7 +122,7 @@ Because we are guided and grounded by the co-designers, and engage in iterative 
 
 <figure>
 <a name="Figure5"></a>
-[![Figure 5. The Virtuous Tornado”](/assets/images/tornado for guide activity-01.png)](/assets/images/tornado for guide activity-01.png)
+[![Figure 5. The Virtuous Tornado”](/assets/images/tornado_for_guide_activity-01.png)](/assets/images/tornado_for_guide_activity-01.png)
 <figcaption>
 *Figure 5:* The Virtuous Tornado
 </figcaption>
