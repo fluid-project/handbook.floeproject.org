@@ -75,7 +75,7 @@ During our 25-year history my team has employed [co-design with edge users and e
 
 <figure>
 <a name="Figure3"></a>
-[![Figure 3. The Co-designers”](/assets/images/2_Scatterplot Graphic of Human Needs-Regions.png)](/assets/images/2_Scatterplot Graphic of Human Needs-Regions.png)
+[![Figure 3. The Co-designers”](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)
 <figcaption>
 *Figure 3:* The Co-designers
 </figcaption>

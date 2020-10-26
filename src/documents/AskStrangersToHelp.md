@@ -55,7 +55,7 @@ The 80/20 rule is apt if you want to serve the status quo. Another way of thinki
 
 <figure>
 <a name="Figure2"></a>
-[![Figure 2. A scatterplot of needs of any given population, the distribution is like an exploding star.”](/assets/images/1_Scatterplot Graphic of Human Needs-Regions.png)](/assets/images/1_Scatterplot Graphic of Human Needs-Regions.png)
+[![Figure 2. A scatterplot of needs of any given population, the distribution is like an exploding star.”](/assets/images/1_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/1_Scatterplot_Graphic_of_Human_Needs-Regions.png)
 <figcaption>
 *Figure 2:* A scatterplot of needs of any given population, the distribution is like an exploding star.
 </figcaption>
@@ -83,7 +83,7 @@ My advice would be to design with the difficult 20% first.
 
 <figure>
 <a name="Figure4"></a>
-[![Figure 4. The scatterplot showing people who have difficulty using the design and people that can’t use the design, out at the periphery.”](/assets/images/2_Scatterplot Graphic of Human Needs-Regions.png)](/assets/images/2_Scatterplot Graphic of Human Needs-Regions.png)
+[![Figure 4. The scatterplot showing people who have difficulty using the design and people that can’t use the design, out at the periphery.”](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)
 <figcaption>
 *Figure 4:* The scatterplot showing people who have difficulty using the design and people that can’t use the design, out at the periphery.
 </figcaption>
@@ -103,7 +103,7 @@ More importantly, if the goal is to cover the 80% of the design space needed to 
 
 <figure>
 <a name="Figure5"></a>
-[![Figure 5. Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling through the cracks.”](/assets/images/3_Scatterplot Graphic of Human Needs-Regions.png)](/assets/images/3_Scatterplot Graphic of Human Needs-Regions.png)
+[![Figure 5. Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling through the cracks.”](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)
 <figcaption>
 *Figure 5:* Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling through the cracks.
 </figcaption>
