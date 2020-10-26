@@ -1,6 +1,10 @@
 ---
 title: Create-a-Thon
 category: Approaches
+eleventyNavigation:
+  parent: Co-Creation
+  key: Create-a-Thon
+  order: 2
 ---
 A Create-a-Thon (CaT) brings together a diverse group of people in order to collaboratively contribute to the collective design of a system, product or service. A CaT may also be considered as a form of collective creativity or participatory design, all of which are fundamentally processes that include both the expertise of system/product/service designers and the situated expertise of users—those impacted by change to or creation of new systems, products and services (Sanders and Stappers). Integral to a CaT is the meaningful involvement of a diverse group of participants, including individuals whose needs aren’t met (who find a product or service impossible or difficult to use), as well as people whose insights are not typically represented elsewhere because they do not fit into a construct of “typical”, “average”, or the envisioned “target audience”.
 

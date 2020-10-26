@@ -2,6 +2,10 @@
 title: Audio Content and Learning
 subheader: "Floe references: Floe Audio Player Concept"
 category: Approaches
+eleventyNavigation:
+    parent: Inclusive Authoring
+    key: Audio Content and Learning
+    order: 4
 ---
 
 Audio as a learning medium has been, and continues to be, used pervasively. Audiobooks, lecture recordings, podcasts, and other audio content provide learners with rich content that they can listen to both at home and on the go.

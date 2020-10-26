@@ -1,6 +1,10 @@
 ---
 title: Metadata
 category: Approaches
+eleventyNavigation:
+    parent: Inclusive Authoring
+    key: Metadata
+    order: 2
 ---
 
 Content authors can use metadata to provide information about what needs a resource can accommodate. [AccessForAll](/AccessForAll.html) metadata provides an interoperable framework for providing this information. It can be used to describe, among other things:

@@ -2,6 +2,10 @@
 title: SVG and Accessibility
 subheader:
 category: Approaches
+eleventyNavigation:
+    parent: Inclusive Authoring
+    key: SVG and Accessiblity
+    order: 7
 ---
 
 ## What is SVG?

@@ -1,6 +1,10 @@
 ---
 title: Inclusive Making and Hacking
 category: Approaches
+eleventyNavigation:
+  parent: Co-Creation
+  key: Inclusive Making and Hacking
+  order: 1
 ---
 Hackathons, makeathons and similar community-oriented participatory technology events have become very popular in recent years, both in traditional learning contexts such as schools, colleges and universities, and in the broader world. Ideas of "hacking" and "making" have also been popularized as approaches to creatively and collaboratively solve problems in society, business and government.
 

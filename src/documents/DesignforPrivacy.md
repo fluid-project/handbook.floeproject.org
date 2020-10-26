@@ -1,6 +1,10 @@
 ---
 title: Design for Privacy
 category: Approaches
+eleventyNavigation:
+  parent: Best Practices
+  key: Design for Privacy
+  order: 5
 ---
 Many of us rely on technology and “smart” services to provide accessibility and convenience in our everyday lives. For example, devices that allow voice commands to control lighting or other appliances in our homes can significantly improve the accessibility of an interior space. Services that remember our log-in or purchasing information can make it much easier to access those services on a regular basis. However, the use of these services come with the cost and associated risk of sharing personal information online. Those of us who can benefit most from smart services, including persons with disabilities and persons who are aging, are often the most vulnerable to the misuse of private information - for example, through denial of medical insurance, jobs and services, or fraud.
 

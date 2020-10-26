@@ -2,6 +2,10 @@
 title: Consider Cognitive Needs
 subheader: Much of the following is borrowed largely from Clayton Lewis (http://spot.colorado.edu/~clayton/)
 category: Approaches
+eleventyNavigation:
+  parent: Best Practices
+  key: Consider Cognitive Needs
+  order: 3
 ---
 
 Cognitive considerations are particularly relevant to Web-based material. Most agree that the Web can present information in a way that overwhelms. Research and innovation in areas like visualization, text simplification, and generally interface design are squarely concerned with making Web content more approachable, readable, and digestible.

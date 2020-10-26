@@ -2,7 +2,8 @@
 title: Where to begin?
 category: Introduction
 eleventyNavigation:
-    key: Introduction
+    parent: Introduction
+    key: Where to begin?
     order: 1
 ---
 

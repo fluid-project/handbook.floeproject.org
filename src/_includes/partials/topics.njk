@@ -1,7 +1,12 @@
                     {% set topicPages = collections.all | eleventyNavigation(category) %}
 
                     <h2 class="docs-template-category">{{ category }}</h2>
+                    <ul>
                     {% for item in topicPages %}
+                        <li>
+                        {% if item.url %}
+                        <a href="{{ item.url }}"{% if item.url === page.url %} aria-current="page"{% endif %}>{{ item.key }}</a>
+                        {% else %}
                         <span class="docs-template-sectionName">
                             <h4>{{ item.key }}</h4>
                         </span>
@@ -10,4 +15,7 @@
                                 <li><a href="{{ subItem.url }}"{% if subItem.url === page.url %} aria-current="page"{% endif %}>{{ subItem.key }}</a></li>
                             {% endfor %}
                         </ul>
+                        {% endif %}
+                        </li>
                     {% endfor %}
+                    </ul>

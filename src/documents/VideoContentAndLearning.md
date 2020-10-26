@@ -2,6 +2,10 @@
 title: Video Content and Learning
 subheader: "Floe references: Floe Video Player"
 category: Approaches
+eleventyNavigation:
+    parent: Inclusive Authoring
+    key: Video Content and Learning
+    order: 3
 ---
 
 Video as a learning medium has become increasingly popular on the web. Many sites now even cater solely to video learning content (e.g., Academic Earth, TED Talks, Khan Academy). With the use of video as a compact and compelling medium, however, comes the responsibility of making it an effective platform for users with a myriad of different needs and preferences.

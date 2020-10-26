@@ -1,6 +1,10 @@
 ---
 title: Create Inclusive Learning Experiences
 category: Approaches
+eleventyNavigation:
+  parent: Best Practices
+  key: Create Inclusive Learning Experiences
+  order: 4
 ---
 This section aims to develop design guidelines and methods for building positive and constructive environments for self-learning and self-reflection with learners who have diverse learning needs and preferences.
 

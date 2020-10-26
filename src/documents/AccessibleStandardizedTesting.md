@@ -1,6 +1,10 @@
 ---
 title: Accessible Standardized Testing
 category: Approaches
+eleventyNavigation:
+  parent: Inclusive Assessment
+  key: Accessible Standardized Testing
+  order: 1
 ---
 This section aims to develop design guidelines for building accessible standardized testing tools for Open Education Resource (OER) authors.
 

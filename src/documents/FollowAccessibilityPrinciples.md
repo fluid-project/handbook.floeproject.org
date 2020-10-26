@@ -1,6 +1,10 @@
 ---
 title: Follow Accessibility Principles
 category: Approaches
+eleventyNavigation:
+  parent: Best Practices
+  key: Follow Accessibility Principles
+  order: 1
 ---
 
 While individual resources might not be able to satisfy each principle exhaustively for every learner in all situations, the collective diversity of resources enabled through Floe could meet the needs and preferences of all learners.
