@@ -108,7 +108,7 @@ If you have a complex problem that requires community adoption and participation
 ## Mapping Success
 <figure>
 <a name="Figure4"></a>
-[![Figure 4. Inclusive Design Mapping Tool”](/assets/images/Inclusive Design Mapping Tool-04.png)](/assets/images/Inclusive Design Mapping Tool-04.png)
+[![Figure 4. Inclusive Design Mapping Tool”](/assets/images/Inclusive_Design_Mapping_Tool-04.png)](/assets/images/Inclusive_Design_Mapping_Tool-04.png)
 <figcaption>
 *Figure 4:* Inclusive Design Mapping Tool
 </figcaption>
