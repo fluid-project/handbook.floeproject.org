@@ -70,7 +70,7 @@ The same idea of natural language supplementation can be applied to any piece of
 The following list is not exhaustive:
 
 <figure>
-[![Mind map of Floe transformation space](/assets/images/thumbs/240px-Floe_transformation_space-large.png)](/images/Floe_transformation_space-large.png)
+[![Mind map of Floe transformation space](/assets/images/thumbs/240px-Floe_transformation_space-large.png)](/assets/images/Floe_transformation_space-large.png)
 <figcaption>
 *Figure 3:* This diagram shows possible alternatives, transformations and customizations for different kinds of content.
 </figcaption>

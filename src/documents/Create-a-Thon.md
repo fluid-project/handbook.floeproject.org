@@ -17,7 +17,7 @@ The main objectives of holding a CaT event are:
 To avoid the burden or influence of prior project decisions or inherent biases, the structure of the CaT should aim to create an open and inviting environment where non-expert participants can contribute fully and equitably. This can be accomplished by designing the event with the standpoint that a variety of expertise, ability, cultural and socio-economic statuses contribute unique perspectives and ultimately build better outcomes. To fully practice inclusive design, Create-a-Thons can be applied at several points throughout a design process, and not simply at the beginning.
 
 <figure>
-[![An image showing a group of four people participating in a Create-a-Thon, using building toys.](/images/thumbs/CaT-01.jpg)](/images/CaT-01.jpg)
+[![An image showing a group of four people participating in a Create-a-Thon, using building toys.](/assets/images/thumbs/CaT-01.jpg)](/assets/images/CaT-01.jpg)
 <figcaption>
 *Figure 1:* A group collaborates together to build a marble track based on some basic requirements.</figcaption>
 </figure>
@@ -37,7 +37,7 @@ Participant stories generated at a Create-a-Thon are a collection of perspective
 Although CaTs share similarities with other participatory design approaches, such as hackathons, design jams, and design charrettes, it has its unique structure and appeals to a broader and more diverse group of people. Hackathons commonly bring together the "technical" end of the spectrum either by focusing on digitally-based design solutions or engineering physical artifacts. Design jams and design charrettes mostly engage designers, architects, planners and people with related design expertise to work on designing of the products, services or built environment. CaTs, on the other hand, aim to be broader than a traditional Hackathon or a design jam. CaTs encompass all forms of design mediums (industrial, interior, graphic and digital) and seek to generate ideas and stories that inform the shape of a solution rather than attempting to create a solution or an artifact itself. The CaT structure also encourages removing the line between the experts and non-experts, allows everyone to participate equally, and considers each individual contribution as important as the others.
 
 <figure>
-[![An image of a Create-a-Thon participant describing their group's design.](/images/thumbs/CaT-02.jpg)](/images/CaT-02.jpg)
+[![An image of a Create-a-Thon participant describing their group's design.](/assets/images/thumbs/CaT-02.jpg)](/assets/images/CaT-02.jpg)
 <figcaption>
 *Figure 2:* A participant shares their group's design after being given the task of creating a software version of the physical marble track toy.</figcaption>
 </figure>

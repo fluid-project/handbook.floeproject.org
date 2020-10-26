@@ -15,7 +15,7 @@ A modal dialog is an interaction where the user is forced to take an action requ
 Typically these are windows or "pop-ups" which block any further interaction until a control (like an "OK" button) is selected.
 
 <figure>
-[![Screen capture of a modal login dialog.](/images/thumbs/400px-Modal-Dialog-example.jpg)](/images/Modal-Dialog-example.jpg)
+[![Screen capture of a modal login dialog.](/assets/images/thumbs/400px-Modal-Dialog-example.jpg)](/assets/images/Modal-Dialog-example.jpg)
 <figcaption>
 *Figure 1:* A modal dialog is a child window that blocks all interaction with other content until the dialog is dismissed. Source: http://www.shop.ca/
 </figcaption>
@@ -53,7 +53,7 @@ Some of these accessibility issues can be overcome through proper implementation
 A popular use of a modal interaction is to use a modal container which focuses the user to a particular interaction path while maintaining their context. For example, an image gallery lightbox is a popular implementation of such an interaction.
 
 <figure>
-[![Screen capture of a lightbox.](/images/thumbs/300px-Modal-Dialog-lightbox.png)](/images/Modal-Dialog-lightbox.png)
+[![Screen capture of a lightbox.](/assets/images/thumbs/300px-Modal-Dialog-lightbox.png)](/assets/images/Modal-Dialog-lightbox.png)
 <figcaption>
 *Figure 2:* Screen capture of a lightbox dialog displaying a larger image amoung smaller thumbnails of images. Source: http://fancybox.net/
 </figcaption>
@@ -136,7 +136,7 @@ If it is not necessary to force the user along an interaction path,
 then consider using a collapsing menu, or an expandable container like an accordion or drawer.
 
 <figure>
-![Screen capture of an accordion panel.](/images/Modal-Dialog-accordion.png)
+![Screen capture of an accordion panel.](/assets/images/Modal-Dialog-accordion.png)
 <figcaption>
 *Figure 3:* An accordion panel allows content to be visually hidden and shown on-demand. Source: https://jqueryui.com/accordion/
 </figcaption>
