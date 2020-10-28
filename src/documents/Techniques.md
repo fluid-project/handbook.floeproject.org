@@ -1,8 +1,11 @@
 ---
 title: General Considerations
 subheader: Various practical tips to making learning resources more inclusive and accessible
-layout: default
 category: Approaches
+eleventyNavigation:
+    parent: Inclusive Authoring
+    key: General Considerations
+    order: 1
 ---
 
 ## Label resources to indicate what learning needs the resource addresses
@@ -14,9 +17,10 @@ An inclusive learning experience is one that matches the needs of the individual
 * linguistic or cultural preferences;
 * technical, financial or environmental constraints.
 
-One way for an OER delivery system to accommodate these needs is to flexibly adjust the properties of a resource to match the needs and preferences of the user, or in some cases, to locate alternative resources. In order to accomplish this, a system must have enough information about a resource to assess whether or not it matches the user's needs. This information can be provided using [metadata](Metadata.html).
+One way for an OER delivery system to accommodate these needs is to flexibly adjust the properties of a resource to match the needs and preferences of the user, or in some cases, to locate alternative resources. In order to accomplish this, a system must have enough information about a resource to assess whether or not it matches the user's needs. This information can be provided using [metadata](/Metadata.html).
 
 <a name="AllowTheCreationOfVariationsAndEnhancements"></a>
+
 ## Allow the creation of variations and enhancements
 
 To better support personalization of the learning experience, learning content can be presented in several forms: textual content, visual content, tactile content and auditory content; theoretical discussions and hands-on exercises; culturally sensitive examples; rich, media-dense content and low-bandwidth content to name a few.
@@ -27,7 +31,7 @@ While it is difficult for a content creator to produce all the possible variatio
 
 For a learning environment to adapt to the needs of the individual learner, those needs must be known. The resource delivery system can enable each learner, or their support team, to identify the learner’s functional learning needs and to store them in a learning profile.
 
-The [AccessForAll](AccessForAll.html) specification provides an interoperable format for learning profiles designed to work with the AccessForAll metadata format. By supporting both formats, an OER delivery system will be able to automatically optimize the learning experience for each individual learner according to their own personal needs.
+The [AccessForAll](/AccessForAll.html) specification provides an interoperable format for learning profiles designed to work with the AccessForAll metadata format. By supporting both formats, an OER delivery system will be able to automatically optimize the learning experience for each individual learner according to their own personal needs.
 
 ## Support flexible styling
 
@@ -35,9 +39,9 @@ For many learners, the only barrier to accessing OERs is the presentation of the
 
 Supporting flexible styling can be as simple as using Cascading Style Sheets (CSS) to control the visual presentation of content. If the presentation is separate from the content, then alternate style-sheets can be substituted to adjust the display for each individual user according to his/her own needs. A clean separation of the semantic content from the presentation can also support more involved styling, including changing of the layout of the content (for example, linearizing or simplifying the layout for display on a mobile device).
 
-
 Floe examples:
-* <a href="http://build.fluidproject.org/infusion/demos/uiOptions/" rel="nofollow" target="_blank" class="link-external">Learner Options</a> (sometimes known as UI Options)
+
+* [Learner Options](http://build.fluidproject.org/infusion/demos/uiOptions/) (sometimes known as UI Options)
 
 ## Support keyboard control of functions and navigation
 
@@ -51,10 +55,9 @@ OERs increasingly make use of video, graphics and images. However, many learners
 
 By providing textual or auditory descriptions of any non-text information present in videos, graphics or images, OER creators will support learners who may be using technologies or configurations that can substitute or supplement the display with these descriptions, allowing learners to personalize the learning experience.
 
-<span class="ildh-related">
 Floe examples:
-* [Audio content and learning](AudioContentAndLearning.html)
-</span>
+
+* [Audio content and learning](/AudioContentAndLearning.html)
 
 ## Provide text captions of information presented in audio format
 
@@ -62,10 +65,9 @@ Some learners are unable to adequately perceive the audio content of a learning 
 
 A text caption makes the information in the audio content available to these learners. Text captions have the additional benefit of being indexable and searchable, improving the discoverability of a resource.
 
-<span class="ildh-related">
 Floe examples:
+
 * [Authoring of content](AuthoringOfContent.html)
-</span>
 
 ## Separate text that can be read in the interface from underlying code
 
@@ -83,4 +85,4 @@ Prominent open formats include HTML and CSS for Web-based content, as well as Op
 
 Where possible, the use of open formats will help ensure that content can meet the needs of a diverse range of users and improve its compatibility and longevity.
 
-The <a href="http://adod.idrc.ocad.ca/" rel="nofollow" target="_blank" class="link-external">Accessible Digital Office Document (ADOD) Project</a> offers guidance and techniques on how to author accessible documents using common office applications.
+The [Accessible Digital Office Document (ADOD) Project](http://adod.idrc.ocad.ca/) offers guidance and techniques on how to author accessible documents using common office applications.

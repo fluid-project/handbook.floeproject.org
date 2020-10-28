@@ -1,11 +1,12 @@
 ---
 title: Approaches
-layout: default
 category: Approaches
+eleventyNavigation:
+    key: Approaches
+    order: 3
 ---
-
-
 The content of this section is organized in the following areas:
+
 * Best Practices
 * Inclusive Authoring
 * Inclusive Assessment

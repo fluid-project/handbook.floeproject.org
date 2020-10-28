@@ -1,6 +1,5 @@
 ---
 title: Accessibility Metadata
-layout: default
 category: Techniques
 ---
 The information captured by accessibility metadata can be useful to many users; describing a publication as containing transcripts, large print, or having text-to-speech allows users to quickly find what they want, and gives creators a way of differentiating themselves.
@@ -11,7 +10,7 @@ To describe the accessibility features of an EPUB 3 publication as a *whole*, th
 
 Here is the example provided by IDPF:
 
-```
+```html
 <metadata>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">MathML</meta>
@@ -28,26 +27,26 @@ Here is the example provided by IDPF:
 </metadata>
 ```
 
-Source: <a rel="nofollow" class="link-external" target="_blank" href="http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php"> http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php</a>
-
+Source: [http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php](http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php)
 
 What if your publication has two embedded videos, but only one has captions - how would you write metadata in this case? Since only some of the videos are captioned, it’s incorrect to specify accessibilityFeature:captions in the metadata.xml file.
 
 To specify metadata to a *part* of your publication, you would embed microdata directly into the HTML of the content itself. The following example illustrates how metadata would be created for embedded content.
 
-### Example: Embedded video without any metadata ###
+### Example: Embedded video without any metadata
 
-    <video>
-    <source src="movie.mp4" type="video/mp4">
+```html
+<video>
+<source src="movie.mp4" type="video/mp4">
 
-    <!-- the Caption -->
-    <track src="http://www.example.com/captions.srt" kind="subtitles" srclang="fr-CA">
-    </video>
-
-
-### Example: Embedded video with basic metadata ###
-
+<!-- the Caption -->
+<track src="http://www.example.com/captions.srt" kind="subtitles" srclang="fr-CA">
+</video>
 ```
+
+### Example: Embedded video with basic metadata
+
+```html
 <video itemscope itemtype="http://schema.org/Movie">
    <meta itemprop="accessibilityFeature" content="captions" />
     <source src="movie.mp4" type="video/mp4" />
@@ -60,9 +59,9 @@ To specify metadata to a *part* of your publication, you would embed microdata d
 </video>
 ```
 
-### Example: Embedded video with more descriptive metadata ###
+### Example: Embedded video with more descriptive metadata
 
-```
+```html
 <video itemscope itemtype="http://schema.org/Movie">
   <meta itemprop="accessibilityFeature" content="highContrast" />
   <meta itemprop="accessibilityFeature" content="signLanguage" />
@@ -81,19 +80,20 @@ To specify metadata to a *part* of your publication, you would embed microdata d
   </span>
 </video>
 ```
-Source: <a rel="nofollow" class="link-external" target="_blank" href="http://wiki.fluidproject.org/display/fluid/Encoding+Accessibility+Metadata+for+Floe+-+Tables+and+Examples"> Encoding Accessibility Metadata for Floe</a>
 
+Source: [Encoding Accessibility Metadata for Floe](http://wiki.fluidproject.org/display/fluid/Encoding+Accessibility+Metadata+for+Floe+-+Tables+and+Examples)
 
 ## Topics:
-* [Inclusive EPUB3](InclusiveEPUB3.html)
-* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
-* [WAI-ARIA](WAI-ARIA.html)
-* [Visual Styles](VisualStyles.html)
-* [Graphics and Multimedia](GraphicsAndMultimedia.html)
-* [Scripting in EPUB 3](ScriptingInEPUB3.html)
-* [Mathematics](Mathematics.html)
-* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
-* [Accessibility Metadata](AccessibilityMetadata.html)
-* [Testing and Validation](TestingAndValidation.html)
-* [Case Study Exemplar](CaseStudyExemplar.html)
-* [EPUB 3 Resources](EPUB3Resources.html)
+
+* [Inclusive EPUB3](/InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](/SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](/WAI-ARIA.html)
+* [Visual Styles](/VisualStyles.html)
+* [Graphics and Multimedia](/GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](/ScriptingInEPUB3.html)
+* [Mathematics](/Mathematics.html)
+* [Narrations and Text to Speech](/NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](/AccessibilityMetadata.html)
+* [Testing and Validation](/TestingAndValidation.html)
+* [Case Study Exemplar](/CaseStudyExemplar.html)
+* [EPUB 3 Resources](/EPUB3Resources.html)

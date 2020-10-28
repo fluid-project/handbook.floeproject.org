@@ -1,6 +1,5 @@
 ---
 title: Why is This Important?
-layout: default
 category: Introduction
 ---
 

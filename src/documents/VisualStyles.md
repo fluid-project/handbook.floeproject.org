@@ -1,6 +1,5 @@
 ---
 title: Visual Styles
-layout: default
 category: Techniques
 ---
 Visual styling in EPUB 3 books should be approached differently than styling for a webpage residing on the Internet. Generally, styling for an EPUB 3 publication should:
@@ -14,23 +13,24 @@ Using a gentle approach to visual styling ensures that EPUB 3 content is inclusi
 
 Although we strive to be inclusive, some types of content have their challenges. Books that rely heavily on illustrations, graphics, or imagery (like children's books) cannot be reflowed, reformatted, or customized easily; in the next section we will discuss some solutions to make your content more usable and accessible.
 
-## Further reading ##
+## Further reading
 
-* <a rel="nofollow" target="_blank" class="link-external" href="http://toc.oreilly.com/2013/02/and-along-with-epub-3-new-css.html"> "... and along with new EPUB 3: New CSS" by Nellie McKesson, O'Reilly</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/epub/301/spec/epub-publications.html#sec-package-metadata-fxl"> "Fixed-Layout Properties" by IDPF</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.ibm.com/developerworks/library/x-richlayoutepub/"> "Create rich-layout publications in EPUB 3 with HTML5, CSS3, and MathML" by Liza Daly, IBM Developer Works</a>
-* <a rel="nofollow" target="_blank" class="link-external" href="http://www.idpf.org/accessibility/guidelines/content/style/color.php"> "EPUB Stylesheets" by IDPF</a>
+* ["... and along with new EPUB 3: New CSS" by Nellie McKesson, O'Reilly](http://toc.oreilly.com/2013/02/and-along-with-epub-3-new-css.html)
+* ["Fixed-Layout Properties" by IDPF](http://www.idpf.org/epub/301/spec/epub-publications.html#sec-package-metadata-fxl)
+* ["Create rich-layout publications in EPUB 3 with HTML5, CSS3, and MathML" by Liza Daly, IBM Developer Works](http://www.ibm.com/developerworks/library/x-richlayoutepub/)
+* ["EPUB Stylesheets" by IDPF](http://www.idpf.org/accessibility/guidelines/content/style/color.php)
 
 ## Topics:
-* [Inclusive EPUB3](InclusiveEPUB3.html)
-* [Semantic Markup in EPUB 3](SemanticMarkupInEPUB3.html)
-* [WAI-ARIA](WAI-ARIA.html)
-* [Visual Styles](VisualStyles.html)
-* [Graphics and Multimedia](GraphicsAndMultimedia.html)
-* [Scripting in EPUB 3](ScriptingInEPUB3.html)
-* [Mathematics](Mathematics.html)
-* [Narrations and Text to Speech](NarrationsAndTextToSpeech.html)
-* [Accessibility Metadata](AccessibilityMetadata.html)
-* [Testing and Validation](TestingAndValidation.html)
-* [Case Study Exemplar](CaseStudyExemplar.html)
-* [EPUB 3 Resources](EPUB3Resources.html)
+
+* [Inclusive EPUB3](/InclusiveEPUB3.html)
+* [Semantic Markup in EPUB 3](/SemanticMarkupInEPUB3.html)
+* [WAI-ARIA](/WAI-ARIA.html)
+* [Visual Styles](/VisualStyles.html)
+* [Graphics and Multimedia](/GraphicsAndMultimedia.html)
+* [Scripting in EPUB 3](/ScriptingInEPUB3.html)
+* [Mathematics](/Mathematics.html)
+* [Narrations and Text to Speech](/NarrationsAndTextToSpeech.html)
+* [Accessibility Metadata](/AccessibilityMetadata.html)
+* [Testing and Validation](/TestingAndValidation.html)
+* [Case Study Exemplar](/CaseStudyExemplar.html)
+* [EPUB 3 Resources](/EPUB3Resources.html)

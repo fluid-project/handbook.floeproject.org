@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+{% include 'partials/head.njk' %}
+    </head>
+
+    <body class="docs-template docs-inclusiveLearning{{ '' if category else ' no-sidebar' }}">
+
+        <div class="container docs-template-container">
+
+            <!-- Skip Link -->
+            <nav id="skip" class="fl-inverted-color">
+                {% if category %}
+                <a href="#topics" class="docs-template-skip-topics">Skip to Topics</a>
+                {% endif %}
+                <a href="#content" class="docs-template-skip-content">Skip to Content</a>
+            </nav>
+            <!-- END skip link -->
+
+            {% include 'partials/header.njk' %}
+            
+            {% if category %}
+            <div class="docs-corec-sidebar-bar ignore-for-TOC docs-template-topics-container small-8 medium-3 column">
+                <nav id="topics" class="docs-template-topics" tabindex="-1">
+                    {% include 'partials/topics.njk' %}
+                </nav>
+            </div>
+            {% endif %}
+
+            <div class="docs-template-articleBody small-12 medium-8 column">
+                {% if category %}
+                <div class="small-4 medium-1 column docs-template-topics-hideShow fl-inverted-color">
+                    <a href="#" class="docs-corec-sidebar-toggle">Topics</a>
+                </div>
+                {% endif %}
+
+                <article id="content">
+                    <h1>{{ title }}</h1>
+
+                    <div class="flc-toc-tocContainer docs-template-uio-toc"> </div>
+
+                    <div class="docs-template-articleContent">
+                        {{ content | safe }}
+                    </div>
+
+                    <p class="docs-template-githubLink"><a href="https://github.com/fluid-project/docs-inclusive-learning/edit/main/src/documents{{ page.url | replace('.html', '.md') if page.url !== '/' else '/index.md' }}" rel="nofollow" class="link-external">Edit this Page on GitHub</a></p>
+                </article>
+
+            </div>
+
+            {% include 'partials/footer.njk' %}
+        </div> <!-- end container -->
+
+    </body>
+</html>
