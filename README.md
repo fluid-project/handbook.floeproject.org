@@ -1,5 +1,7 @@
 # Inclusive Learning Design Handbook
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45b40684-190c-4339-bde5-bd7ab28142e6/deploy-status)](https://app.netlify.com/sites/floe-handbook/deploys)
+
 This project contains the content needed to build and deploy a copy of the Inclusive Learning Design Handbook.
 
 ## Usage
