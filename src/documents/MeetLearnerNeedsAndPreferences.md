@@ -43,7 +43,7 @@ Examples of supplementation include:
 * Providing descriptions for photos, figures, diagrams, and other images
 
 <figure>
-[![Screenshot of Video player with transcript on](/assets/images/thumbs/400px-Videoplayer-captions-transcripts.jpg)](images/thumbs/400px-Videoplayer-captions-transcripts.jpg)
+[![Screenshot of Video player with transcript on](/assets/images/thumbs/400px-Videoplayer-captions-transcripts.jpg)](/assets/images/thumbs/400px-Videoplayer-captions-transcripts.jpg)
 <figcaption>
 *Figure 2:* A screen of the Floe Video player with transcripts displayed
 </figcaption>
