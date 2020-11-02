@@ -38,7 +38,7 @@ Some things that can be done:
 
 Floe examples:
 
-* [Cognitive considerations](CognitiveConsiderations.html)
+* [Cognitive considerations](ConsiderCognitiveNeeds.html)
 * [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
 * [Video content and learning](VideoContentAndLearning.html)
 

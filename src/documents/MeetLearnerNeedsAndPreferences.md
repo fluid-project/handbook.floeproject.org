@@ -7,7 +7,7 @@ eleventyNavigation:
   key: Meet Learner Needs and Preferences
   order: 2
 ---
-The key principle behind [inclusive learning](/InclusiveLearning.html) is the ability for learning resources to be malleable and transformable with respect to learner needs and preferences. This enables learners who have articulated their particular needs and preferences (whether implicitly or explicitly) to be given learning content in a format that they can fully interact with, understand, and consume (see [Accessibility principles](/AccessibilityPrinciples.html) for perceivable, operable, understandable, and robust content).
+The key principle behind [inclusive learning](/InclusiveLearning.html) is the ability for learning resources to be malleable and transformable with respect to learner needs and preferences. This enables learners who have articulated their particular needs and preferences (whether implicitly or explicitly) to be given learning content in a format that they can fully interact with, understand, and consume (see [Accessibility principles](/FollowAccessibilityPrinciples.html) for perceivable, operable, understandable, and robust content).
 
 Learners should be able to articulate their needs and preferences, and have returned to them content packaged in a way that meets those requirements.
 

@@ -57,7 +57,7 @@ We encourage those considering hacking and making in learning contexts to be awa
 
 ### Asking Who Is Excluded
 
-Hackathon events can unintentionally [exclude participants](WhatIsTheApproach.md#whoIsExcluded) through limitations in their design. How do we redesign our approach to running, promoting and recruiting for our events? What strategies can help us avoid inadvertent exclusion?
+Hackathon events can unintentionally [exclude participants](/WhatIsTheApproach.html#whoIsExcluded) through limitations in their design. How do we redesign our approach to running, promoting and recruiting for our events? What strategies can help us avoid inadvertent exclusion?
 
 This is especially critical for hackathons trying to tackle issues faced by people with disabilities, under the principle of [*Nothing About Us Without Us*](https://en.wikipedia.org/wiki/Nothing_About_Us_Without_Us). This principle is also of broader value in considering inclusion in hackathons targeting social problems - we cannot hope to focus on topics and solutions that are relevant, important and engaging without working together with those most directly affected.
 
