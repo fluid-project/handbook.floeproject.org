@@ -101,7 +101,7 @@ The following process was used to create the Media Overlays for the Inclusive EP
 5. Export Audacity's label file. Each line in the output label file will contain `start time, end time, label`. The file
    will look something like this:
 
-```txt
+```bash
 0.185760        9.102222        c01p0002
 9.380862        11.702857        c01h02
 11.702857        15.185850        c01list001item001
