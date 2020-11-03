@@ -42,7 +42,7 @@ SVG (Scalable Vector Graphics) is a means of describing vector graphics in marku
 
 The familiar `<img>` image tag embeds an existing image file onto a web page. Access is typically provided to such images through alternate textual description by the `alt` attribute. Images are one of the most common and familiar challenges in web accessibility and are well-covered by the [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/).
 
-SVGs are a very different approach to images on webpages, and require somewhat different approaches to accessibility to follow the [Accessibility Principles](/AccessibilityPrinciples.html) of perceivability, understandability and operability. Rather than embedding bitmap image files directly, they supply markup to describe an image and rely on the end user's browser to interpret them and render the image.
+SVGs are a very different approach to images on webpages, and require somewhat different approaches to accessibility to follow the [Accessibility Principles](/FollowAccessibilityPrinciples.html) of perceivability, understandability and operability. Rather than embedding bitmap image files directly, they supply markup to describe an image and rely on the end user's browser to interpret them and render the image.
 
 ### Bitmap Graphics vs. Vector Graphics
 

@@ -19,7 +19,7 @@ Some learners are more constrained than others and are therefore less able to ad
 
 ## What is Accessible?
 
-An accessible learning experience (or OER) is a learning experience that matches the needs of the individual learner or the learners within a group. Thus a resource cannot be labeled as accessible or inaccessible until we know the context, the learning goal and the learner (or learners). An OER may be accessible to one group of learners and not another. See [Accessibility principles](/AccessibilityPrinciples.html) for more information.
+An accessible learning experience (or OER) is a learning experience that matches the needs of the individual learner or the learners within a group. Thus a resource cannot be labeled as accessible or inaccessible until we know the context, the learning goal and the learner (or learners). An OER may be accessible to one group of learners and not another. See [Accessibility principles](/FollowAccessibilityPrinciples.html) for more information.
 
 ## How Do We Achieve Inclusive Education?
 
