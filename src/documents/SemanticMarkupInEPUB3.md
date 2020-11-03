@@ -3,11 +3,16 @@ title: Semantic Markup in EPUB 3
 category: Techniques
 ---
 
-EPUB 3 books can be created from HTML5, and the same principles for creating well-formed, semantically sound web content apply. For an EPUB 3 author, there are two tools available: [HTML 5 semantic elements](https://developer.mozilla.org/en/docs/Web/HTML/Element), and [`epub:type`](http://www.idpf.org/accessibility/guidelines/content/semantics/epub-type.php).
+EPUB 3 books can be created from HTML5, and the same principles for creating well-formed, semantically sound web content
+apply. For an EPUB 3 author, there are two tools available: [HTML 5 semantic
+elements](https://developer.mozilla.org/en/docs/Web/HTML/Element), and
+[`epub:type`](http://www.idpf.org/accessibility/guidelines/content/semantics/epub-type.php).
 
-HTML 5 semantic markup gives meaning to otherwise anonymous containers or text structures. For example, you can use the `<section>` element to denote changes in topic, or `<aside>` to indicate content that is secondary in importance.
+HTML 5 semantic markup gives meaning to otherwise anonymous containers or text structures. For example, you can use the
+`<section>` element to denote changes in topic, or `<aside>` to indicate content that is secondary in importance.
 
-EPUB 3 also provides semantics more suitable for publications. In addition to using HTML 5 semantic markup, you can describe the same HTML 5 markup as being chapters, or as a sidebar.
+EPUB 3 also provides semantics more suitable for publications. In addition to using HTML 5 semantic markup, you can
+describe the same HTML 5 markup as being chapters, or as a sidebar.
 
 Here is an example:
 
@@ -21,7 +26,7 @@ Here is an example:
 </section>
 ```
 
-The "EPUB 3 Content Document" article by Matt Garrish is a great place to start learning about semantics in EPUB 3:  [http://epubzone.org/news/epub-3-content-documents](http://epubzone.org/news/epub-3-content-documents).
+The "EPUB 3 Content Document" article by Matt Garrish is a great place to start learning about semantics in EPUB 3: [http://epubzone.org/news/epub-3-content-documents](http://epubzone.org/news/epub-3-content-documents).
 
 ## Further reading
 

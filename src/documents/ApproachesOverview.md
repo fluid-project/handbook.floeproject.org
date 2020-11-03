@@ -12,4 +12,5 @@ The content of this section is organized in the following areas:
 * Inclusive Assessment
 * Co-Creation
 
-Each section intends to guide teachers, content creators, web developers, and others in creating more inclusive and accessible educational resources. Use the table of contents to navigate the content.
+Each section intends to guide teachers, content creators, web developers, and others in creating more inclusive and
+accessible educational resources. Use the table of contents to navigate the content.

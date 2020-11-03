@@ -17,18 +17,28 @@ This resource demonstrates the following accessibility features:
 
 ## Notes:
 
-* The interactive physics simulation in Chapter 3 can be played using a mouse. A keyboard-accessible version of the simulation has been developed, but it does not function properly within the EPUB document. Work is underway to address this (documented under issue [FLOE-287](http://issues.fluidproject.org/browse/FLOE-287)).
+* The interactive physics simulation in Chapter 3 can be played using a mouse. A keyboard-accessible version of the
+  simulation has been developed, but it does not function properly within the EPUB document. Work is underway to address
+  this (documented under issue [FLOE-287](http://issues.fluidproject.org/browse/FLOE-287)).
 * The interactive physics simulation will load in iBooks on Mac OS 10.10 Yosemite, but not on Mac OS 10.9 Mavericks.
 
-In creating this exemplar, Pandoc (link: [http://johnmacfarlane.net/pandoc/](http://johnmacfarlane.net/pandoc/)) was initially used to create an EPUB from HTML files. While Pandoc was excellent in converting HTML 5 into an EPUB 3 container, the output was unsuitable for handling desirable inclusive EPUB features, such as Media Overlays and WAI-ARIA markup. For a detailed (and somewhat technical) look at using Pandoc in creating an inclusive EPUB, see [Fluid Wiki - Experiences with Pandoc](http://wiki.fluidproject.org/display/fluid/Experiences+with+Pandoc).
+In creating this exemplar, Pandoc (link: [http://johnmacfarlane.net/pandoc/](http://johnmacfarlane.net/pandoc/)) was
+initially used to create an EPUB from HTML files. While Pandoc was excellent in converting HTML 5 into an EPUB 3
+container, the output was unsuitable for handling desirable inclusive EPUB features, such as Media Overlays and WAI-ARIA
+markup. For a detailed (and somewhat technical) look at using Pandoc in creating an inclusive EPUB, see [Fluid Wiki -
+Experiences with Pandoc](http://wiki.fluidproject.org/display/fluid/Experiences+with+Pandoc).
 
-The rest of this page provides some technical information about how the exemplar EPUB resource was created and some lessons learned along the way.
+The rest of this page provides some technical information about how the exemplar EPUB resource was created and some
+lessons learned along the way.
 
-[View the github repository containing the resources used to build the EPUB](https://github.com/jhung/EPUB/tree/FLOE-240-2)
+[View the github repository containing the resources used to build the
+EPUB](https://github.com/jhung/EPUB/tree/FLOE-240-2)
 
 ## Semantic markup - HTML 5 semantics and epub type
 
-EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost all definitions of semantics, structure and processing behaviors from the HTML5 specification. This means that you can create valid HTML5 documents and update the head of the document to define it as XML and declare the epub namespace.
+EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost all definitions of semantics, structure
+and processing behaviors from the HTML5 specification. This means that you can create valid HTML5 documents and update
+the head of the document to define it as XML and declare the epub namespace.
 
 ### Original HTML:
 
@@ -52,7 +62,8 @@ EPUB 3 uses an XHTML document type that is based on HTML5 and inherits almost al
 
 ## Scripts
 
-The interactive simulation we used in the exemplar EPUB is taken from [ PhET](http://phet.colorado.edu/), specificially the Forces and Motion simulation:
+The interactive simulation we used in the exemplar EPUB is taken from [PhET](http://phet.colorado.edu/), specificially
+the Forces and Motion simulation:
 
 * Online demo: [http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html](http://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html)
 * Source code on github: [https://github.com/phetsims/forces-and-motion-basics](https://github.com/phetsims/forces-and-motion-basics)
@@ -72,6 +83,7 @@ In order to use scripts in EPUB, CDATA blocks need to be added. However this wil
 </script>
 ```
 
+<!-- markdownlint-disable ol-prefix -->
 ## Media Overlays
 
 The following process was used to create the Media Overlays for the Inclusive EPUB exemplar.
@@ -82,12 +94,14 @@ The following process was used to create the Media Overlays for the Inclusive EP
 4. Identify start and end timecodes for the blocks of audio corresponding to the granularity level you chose:
 
 * In Audacity, select the wave segment for the audio in question
-* Add a label by selecting "Add Label at Selection" under the "Tracks" menu. The first time you do this, Audacity will automatically create a Label track.
+* Add a label by selecting "Add Label at Selection" under the "Tracks" menu. The first time you do this, Audacity will
+  automatically create a Label track.
 * Name label using the same ID of the associated HTML element.
 
-5. Export Audacity's label file. Each line in the output label file will contain `start time, end time, label`. The file will look something like this:
+5. Export Audacity's label file. Each line in the output label file will contain `start time, end time, label`. The file
+   will look something like this:
 
-```
+```txt
 0.185760        9.102222        c01p0002
 9.380862        11.702857        c01h02
 11.702857        15.185850        c01list001item001
@@ -115,6 +129,7 @@ The following process was used to create the Media Overlays for the Inclusive EP
 ```
 
 8. Edit the manifest file `content.opf` as necessary:
+<!-- markdownlint-enable ol-prefix -->
 
 * add duration metadata to the top of the document, inside the `<meta>` element:
 
@@ -141,7 +156,9 @@ The following process was used to create the Media Overlays for the Inclusive EP
 
 ## Text-to-speech
 
-The Floe team discovered that none of the EPUB readers or operating system voicing technologies we tested honoured the lexicons or SSML. We found that some screen readers honour the `title` attribute of the `<abbr>` tag, and others the `aria-label`, so those were used to provide proper spoken versions of units, math, etc., as illustrated below.
+The Floe team discovered that none of the EPUB readers or operating system voicing technologies we tested honoured the
+lexicons or SSML. We found that some screen readers honour the `title` attribute of the `<abbr>` tag, and others the
+`aria-label`, so those were used to provide proper spoken versions of units, math, etc., as illustrated below.
 
 ```html
 <abbr role="text"
@@ -151,7 +168,8 @@ The Floe team discovered that none of the EPUB readers or operating system voici
 
 ## Accessibility metadata
 
-Add [Schema.org accessibility metadata](http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php) to the package.opf file describing the features of the EPUB:
+Add [Schema.org accessibility metadata](http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php) to the
+package.opf file describing the features of the EPUB:
 
 ```xml
 <package … >
@@ -163,13 +181,14 @@ Add [Schema.org accessibility metadata](http://www.idpf.org/accessibility/guidel
 </package>
 ```
 
-Note: The Schema.org accessibility property `accessibilityFeature` does not yet have a value that can convey the fact that an EPUB contains an audio narration through the media overlay, but such a value is being proposed.
+Note: The Schema.org accessibility property `accessibilityFeature` does not yet have a value that can convey the fact
+that an EPUB contains an audio narration through the media overlay, but such a value is being proposed.
 
 ### IMPORTANT NOTE:
 
 Until validators recognize the `schema:` prefix, you must declare it in the `package.opf` file:
 
-```
+```xml
 <package …
     prefix="schema: http://schema.org">
     …

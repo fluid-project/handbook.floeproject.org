@@ -2,11 +2,15 @@
 title: Accessibility Metadata
 category: Techniques
 ---
-The information captured by accessibility metadata can be useful to many users; describing a publication as containing transcripts, large print, or having text-to-speech allows users to quickly find what they want, and gives creators a way of differentiating themselves.
+The information captured by accessibility metadata can be useful to many users; describing a publication as containing
+transcripts, large print, or having text-to-speech allows users to quickly find what they want, and gives creators a way
+of differentiating themselves.
 
-Investing the time to write good, rich metadata ensures that your publication is discoverable and relevant as content searching and matching techniques advance.
+Investing the time to write good, rich metadata ensures that your publication is discoverable and relevant as content
+searching and matching techniques advance.
 
-To describe the accessibility features of an EPUB 3 publication as a *whole*, the metadata would be written in the META-INF/metadata.xml file.
+To describe the accessibility features of an EPUB 3 publication as a *whole*, the metadata would be written in the
+META-INF/metadata.xml file.
 
 Here is the example provided by IDPF:
 
@@ -29,9 +33,12 @@ Here is the example provided by IDPF:
 
 Source: [http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php](http://www.idpf.org/accessibility/guidelines/content/meta/schema.org.php)
 
-What if your publication has two embedded videos, but only one has captions - how would you write metadata in this case? Since only some of the videos are captioned, it’s incorrect to specify accessibilityFeature:captions in the metadata.xml file.
+What if your publication has two embedded videos, but only one has captions - how would you write metadata in this case?
+Since only some of the videos are captioned, it’s incorrect to specify accessibilityFeature:captions in the metadata.xml
+file.
 
-To specify metadata to a *part* of your publication, you would embed microdata directly into the HTML of the content itself. The following example illustrates how metadata would be created for embedded content.
+To specify metadata to a *part* of your publication, you would embed microdata directly into the HTML of the content
+itself. The following example illustrates how metadata would be created for embedded content.
 
 ### Example: Embedded video without any metadata
 
