@@ -83,7 +83,6 @@ In order to use scripts in EPUB, CDATA blocks need to be added. However this wil
 </script>
 ```
 
-<!-- markdownlint-disable ol-prefix -->
 ## Media Overlays
 
 The following process was used to create the Media Overlays for the Inclusive EPUB exemplar.
@@ -92,67 +91,63 @@ The following process was used to create the Media Overlays for the Inclusive EP
 2. Ensure there's an ID attribute on any HTML element you want highlighted.
 3. Record an audio narration of the text. We used the [free audio editing tool Audacity](http://audacityteam.org/).
 4. Identify start and end timecodes for the blocks of audio corresponding to the granularity level you chose:
-
-* In Audacity, select the wave segment for the audio in question
-* Add a label by selecting "Add Label at Selection" under the "Tracks" menu. The first time you do this, Audacity will
-  automatically create a Label track.
-* Name label using the same ID of the associated HTML element.
-
+   * In Audacity, select the wave segment for the audio in question
+   * Add a label by selecting "Add Label at Selection" under the "Tracks" menu. The first time you do this, Audacity will
+    automatically create a Label track.
+   * Name label using the same ID of the associated HTML element.
 5. Export Audacity's label file. Each line in the output label file will contain `start time, end time, label`. The file
    will look something like this:
 
-```bash
-0.185760        9.102222        c01p0002
-9.380862        11.702857        c01h02
-11.702857        15.185850        c01list001item001
-```
+   ```bash
+   0.185760        9.102222        c01p0002
+   9.380862        11.702857        c01h02
+   11.702857        15.185850        c01list001item001
+   ```
 
 6. Convert timecodes into SMIL `<par>` elements as per EPUB overlay specification using `awk`:
 
-```bash
-> awk -f convert.awk -v htmlFile=01-velocity.html -v audioFile=audio/01-velocity.mp3 \
-       01-velocity-timecodes.txt > 01-velocity.smil
-```
+   ```bash
+   > awk -f convert.awk -v htmlFile=01-velocity.html -v audioFile=audio/01-velocity.mp3 \
+        01-velocity-timecodes.txt > 01-velocity.smil
+   ```
 
 7. Add the appropriate SMIL header and footer to the output of the awk script, as well as any desired `<seq>` elements.
 
-```xml
-<smil
-     xmlns="http://www.w3.org/ns/SMIL"
-     xmlns:epub="http://www.idpf.org/2007/ops"
-     version="3.0">
-    <body>
- .. paste the output of the awk script here ...
-
-    </body>
-</smil>
-```
+   ```xml
+   <smil
+       xmlns="http://www.w3.org/ns/SMIL"
+       xmlns:epub="http://www.idpf.org/2007/ops"
+       version="3.0">
+       <body>
+       .. paste the output of the awk script here ...
+       </body>
+   </smil>
+   ```
 
 8. Edit the manifest file `content.opf` as necessary:
-<!-- markdownlint-enable ol-prefix -->
 
-* add duration metadata to the top of the document, inside the `<meta>` element:
+   * add duration metadata to the top of the document, inside the `<meta>` element:
 
-```html
-<meta property="media:duration">0:00:59.000</meta>
-<meta property="media:duration" refines="#ch001_overlay">0:00:59.000</meta>
-```
+     ```html
+     <meta property="media:duration">0:00:59.000</meta>
+     <meta property="media:duration" refines="#ch001_overlay">0:00:59.000</meta>
+     ```
 
-* add `<item>` elements for the new files, ensuring to include the correct mime type:
-  * the SMIL file
-  * the audio recording(s)
+   * add `<item>` elements for the new files, ensuring to include the correct mime type:
+   * the SMIL file
+   * the audio recording(s)
 
-```html
-<item id="ch001_overlay" href="01-velocity.smil" media-type="application/smil+xml"/>
-<item id="ch001_overlay_mp3" href="audio/01-velocity.mp3" media-type="audio/mpeg" />
-```
+     ```html
+     <item id="ch001_overlay" href="01-velocity.smil" media-type="application/smil+xml"/>
+     <item id="ch001_overlay_mp3" href="audio/01-velocity.mp3" media-type="audio/mpeg" />
+     ```
 
-* add a `media-overlay` attribute to `<item>s` for the html file(s), referencing the ID of the relevant SMIL file:
+   * add a `media-overlay` attribute to `<item>s` for the html file(s), referencing the ID of the relevant SMIL file:
 
-```html
-<item id="ch001_xhtml" href="ch001.xhtml" media-type="application/xhtml+xml"
-      properties="mathml" media-overlay="ch001_overlay" />
-```
+     ```html
+     <item id="ch001_xhtml" href="ch001.xhtml" media-type="application/xhtml+xml"
+        properties="mathml" media-overlay="ch001_overlay" />
+     ```
 
 ## Text-to-speech
 
