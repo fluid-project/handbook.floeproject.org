@@ -38,7 +38,7 @@ directory to the web root of your server.
 ## License Information
 
 The Inclusive Learning Design Handbook's code is licensed under the
-[BSD 3-Clause](https://raw.githubusercontent.com/fluid-project/docs-inclusive-learning/blob/main/LICENSE.md) license.
+[BSD 3-Clause](https://github.com/fluid-project/docs-inclusive-learning/blob/main/LICENSE.md) license.
 
 The Inclusive Learning Design Handbook's content is licensed under the
 [Creative Commons Attribution 3.0](http://creativecommons.org/licenses/by/3.0/) license.
