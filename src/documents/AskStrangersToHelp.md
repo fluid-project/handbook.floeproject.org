@@ -194,7 +194,7 @@ does my gender fluid young niece fit in the categories of men and women? Where d
 disability fit in the categories we have created to sort people who experience disabilities? The further out to the
 periphery you get the greater your difference.
 
-<!-- markdownlint-diable line-length -->
+<!-- markdownlint-disable line-length -->
 <figure>
 <a name="Figure5"></a>
 [![Figure 5. Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling through the cracks.”](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)

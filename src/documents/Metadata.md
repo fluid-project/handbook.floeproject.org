@@ -41,12 +41,14 @@ educators create and share high-quality open educational resources (OERs). The i
 Author interface visual feedback of the accessible features, alternatives, etc. in the content. The prototype created
 [IMS AccessForAll-compliant metadata](http://imsglobal.org/accessibility/).
 
+<!-- markdownlint-disable line-length -->
 <figure>
 [![The Open Author accessibility metadata sidebar, showing icons indicating the accessibility features and alternatives in the content](/assets/images/A4A_adaptions_sidebar.png)](/assets/images/A4A_adaptions_sidebar.png)
 <figcaption>
 *Figure 1:* The Open Author accessibility metadata sidebar
 </figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 <figure>
 [![The Open Author accessibility metadata sidebar, shown in the context of the Open Author interface](/assets/images/A4A_adaptions_sidebar_in_context.png)](/assets/images/A4A_adaptions_sidebar_in_context.png)
