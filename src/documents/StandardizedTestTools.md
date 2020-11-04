@@ -112,91 +112,90 @@ length from a sentence to multiple pages.
 <th>Alternative Methods</th>
 </tr>
 <tr>
-<td>***Multiple Choice Questions***</td>
+<th>Multiple Choice Questions</th>
 <td>
 <ul>
-<li> May not be easily accessible onscreen depending on the nature of the task e.g. use of visual elements in provided responses.</li>
-<li> For visually-impaired students who rely on text-to-speech software, remembering a variety of spoken information can
+<li>May not be easily accessible onscreen depending on the nature of the task e.g. use of visual elements in provided responses.</li>
+<li>For visually-impaired students who rely on text-to-speech software, remembering a variety of spoken information can
 require considerable mental effort.</li>
-<li> Students who rely on text-to-speech software require longer time to digest information and recognize the subtle
+<li>Students who rely on text-to-speech software require longer time to digest information and recognize the subtle
 distinctions between choices. A dyslexic student may be unable to identify such subtle distinctions at all.</li>
-<li> Questions that address higher-order understanding rather than surface learning are very complex and can require
-numerous re-readings. This has the potential to disadvantage the visually impaired student and those using
-text-to-speech software.</li>
-<li> Progressing between options using the tab key (for students who cannot use a mouse) can take up a great deal of
+<li>Questions that address higher-order understanding rather than surface learning are very complex and can require
+numerous re-readings. This has the potential to disadvantage the visually impaired student and those using text-to-speech software.</li>
+<li>Progressing between options using the tab key (for students who cannot use a mouse) can take up a great deal of
 additional time.</li>
 </ul>
 </td>
 <td>
 <ul>
-<li> Provide a printed version or a braille transcription (if applicable).</li>
-<li> Provide different methods for selecting a response, such as mouse click, keyboard, touch screen, speech
-recognition, assistive devices to access the keyboard and select (e.g., mouth stick, head wand, one-and two-switch systems).</li>
-<li> Provide an option for paper/pencil in addition to computer (e.g., scratch paper for solving problems, drafting ideas).</li>
-<li> Try to avoid overly-complex answers, especially long lists with distinctions that can only be made by careful re-readings.</li>
-<li> If using graphics, ensure that high-quality recorded descriptions are available for each graphic used or that a
+<li>Provide a printed version or a braille transcription (if applicable).</li>
+<li>Provide different methods for selecting a response, such as mouse click, keyboard, touch screen, speech recognition,
+assistive devices to access the keyboard and select (e.g., mouth stick, head wand, one-and two-switch systems).</li>
+<li>Provide an option for paper/pencil in addition to computer (e.g., scratch paper for solving problems, drafting ideas).</li>
+<li>Try to avoid overly-complex answers, especially long lists with distinctions that can only be made by careful re-readings.</li>
+<li>If using graphics, ensure that high-quality recorded descriptions are available for each graphic used or that a
 narrative is included with video clips to describe any action taking place.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>***Labeling Questions***,
-***Grouping and Ordering***,
-***Interactive Questions***
-</td>
+<th>Labeling Questions,
+Grouping and Ordering,
+Interactive Questions
+</th>
 <td>
 <ul>
-<li> Actions like dragging and dropping elements onscreen are inaccessible.</li>
-<li> Inaccessible to students who cannot see the screen or navigate with a mouse or touchscreen.</li>
-<li> Difficult to transcribe into braille or print</li>
-<li> Difficult for text-to-speech screen readers</li>
-<li> Inaccessible to switches</li>
+<li>Actions like dragging and dropping elements onscreen are inaccessible.</li>
+<li>Inaccessible to students who cannot see the screen or navigate with a mouse or touchscreen.</li>
+<li>Difficult to transcribe into braille or print</li>
+<li>Difficult for text-to-speech screen readers</li>
+<li>Inaccessible to switches</li>
 </ul>
 </td>
 <td>
 <ul>
-<li> Replace those actions with radio buttons, matrix, or click to select interactions</li>
-<li> Use of drop downs that is compatible with keyboards and switches</li>
-<li> Include high-quality recorded descriptions for each graphic without disclosing the responses.</li>
+<li>Replace those actions with radio buttons, matrix, or click to select interactions</li>
+<li>Use of drop downs that is compatible with keyboards and switches</li>
+<li>Include high-quality recorded descriptions for each graphic without disclosing the responses.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>***Combination of Multiple Tools***</td>
+<th>Combination of Multiple Tools</th>
 <td>
 <ul>
-<li> Scrolling issues</li>
-<li> Variations in screen size</li>
-<li> Effects of magnification on graphics and table size</li>
-<li> Layout issues for tables</li>
-<li> High Cognitive load</li>
+<li>Scrolling issues</li>
+<li>Variations in screen size</li>
+<li>Effects of magnification on graphics and table size</li>
+<li>Layout issues for tables</li>
+<li>High Cognitive load</li>
 </ul>
 </td>
 <td>
 <ul>
-<li> Provide a printed version or a braille transcription (if applicable).</li>
-<li> Provide text-to-speech screen readers depending on the content.</li>
-<li> Provide different methods for selecting a response, such as mouse click, keyboard, touch screen, speech recognition,
+<li>Provide a printed version or a braille transcription (if applicable).</li>
+<li>Provide text-to-speech screen readers depending on the content.</li>
+<li>Provide different methods for selecting a response, such as mouse click, keyboard, touch screen, speech recognition,
 assistive devices to access the keyboard and select (e.g., mouth stick, head wand, one-and two-switch systems).</li>
-<li> Provide an option for paper/pencil in addition to computer (e.g., scratch paper for solving problems, drafting ideas).</li>
-<li> Try to avoid overly-complex matrices, with multi columns and rows.</li>
+<li>Provide an option for paper/pencil in addition to computer (e.g., scratch paper for solving problems, drafting ideas).</li>
+<li>Try to avoid overly-complex matrices, with multi columns and rows.</li>
 </ul>
 </td>
 <tr>
-<td>***Text Based Questions***</td>
+<th>Text Based Questions</th>
 <td>
 <ul>
-<li> Implications of using the spell check when achievement in spelling is being measured as part of the writing process.</li>
-<li> Implications of using a screen reader when the construct being measured is reading.</li>
-<li> Difficult for students who do not use keyboard.</li>
-<li> Difficult for students who use speech recognition.</li>
-<li> Requires multiple re-readings to proofread and edit.</li>
+<li>Implications of using the spell check when achievement in spelling is being measured as part of the writing process.</li>
+<li>Implications of using a screen reader when the construct being measured is reading.</li>
+<li>Difficult for students who do not use keyboard.</li>
+<li>Difficult for students who use speech recognition.</li>
+<li>Requires multiple re-readings to proofread and edit.</li>
 </ul>
 </td>
 <td>
 <ul>
-<li> Provide a printed version or a braille transcription (if applicable).</li>
-<li> Replace those actions with radio buttons, matrix, or click to select interactions.</li>
+<li>Provide a printed version or a braille transcription (if applicable).</li>
+<li>Replace those actions with radio buttons, matrix, or click to select interactions.</li>
 </ul>
 </td>
 </tr>
