@@ -126,11 +126,9 @@ formats. MathML Cloud can take math notation in ASCII text, MathML or Latex nota
 SVG, and MML which can be embedded into EPUB 3 and HTML.
 
 <figure>
-[![Screen capture of the MathML Cloud tool converting a math equation from ASCII into SVG, MML, and PNG
-formats.](/assets/images/thumbs/400px-MathMLCloud.png)](/assets/images/MathMLCloud.png)
+[![Screen capture of the MathML Cloud tool converting a math equation from ASCII into SVG, MML, and PNG formats.](/assets/images/thumbs/400px-MathMLCloud.png)](/assets/images/MathMLCloud.png)
 <figcaption>
-The image shows the MathML interface converting an equation into different formats. Try MathMLCloud at
-[https://www.mathmlcloud.org/](https://www.mathmlcloud.org/)
+The image shows the MathML interface converting an equation into different formats. Try MathMLCloud at <https://www.mathmlcloud.org/>
 </figcaption>
 </figure>
 

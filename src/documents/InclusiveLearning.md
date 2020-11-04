@@ -48,14 +48,14 @@ Learning needs that affect learning can include:
 * linguistic or cultural preferences,
 * technical, financial or environmental constraints.
 
+<!-- markdownlint-disable line-length -->
 <figure>
-[![Floe concept design
-mindmap](/assets/images/thumbs/400px-Floe_concept_design_mindmap.png)](/assets/images/Floe_concept_design_mindmap.png)
+[![Floe concept design mindmap](/assets/images/thumbs/400px-Floe_concept_design_mindmap.png)](/assets/images/Floe_concept_design_mindmap.png)
 <figcaption>
-*Figure 1:* Floe concept design mindmap illustrates the many different ideas and parts which work together to enable a
-one-size-fits-one education.
+*Figure 1:* Floe concept design mindmap illustrates the many different ideas and parts which work together to enable a one-size-fits-one education.
 </figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 ## Benefit of openness
 

@@ -25,8 +25,7 @@ The three dimensions of the framework are:
 3. Realize that you are designing in a complex adaptive system.
 
 <figure>
-<a name="Figure1"></a> [![Figure 1. Co-designing in a diverse
-team”](/assets/images/DiverseTeam.jpg)](/assets/images/DiverseTeam.jpg)
+<a name="Figure1"></a> [![Figure 1. Co-designing in a diverse team”](/assets/images/DiverseTeam.jpg)](/assets/images/DiverseTeam.jpg)
 <figcaption>
 *Figure 1:* Co-designing in a diverse team
 </figcaption>
@@ -97,8 +96,7 @@ was almost like the research and rigor was a shield to really understanding, whi
 professional stature and distance.
 
 <figure>
-<a name="Figure2"></a> [![Figure 2. Overwhelmed by the
-mean”](/assets/images/OverwhelmedByMean.png)](/assets/images/OverwhelmedByMean.png)
+<a name="Figure2"></a> [![Figure 2. Overwhelmed by the mean”](/assets/images/OverwhelmedByMean.png)](/assets/images/OverwhelmedByMean.png)
 <figcaption>
 *Figure 2:* Overwhelmed by the mean
 </figcaption>
@@ -144,8 +142,7 @@ design teams.
 ## People who can’t use or have difficulty using a design
 
 <figure>
-<a name="Figure3"></a> [![Figure 3. The
-Co-designers”](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)
+<a name="Figure3"></a> [![Figure 3. The Co-designers”](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)
 <figcaption>
 *Figure 3:* The Co-designers
 </figcaption>
@@ -222,12 +219,11 @@ provisional approaches, which will make your design less sustainable.
 ## Mapping Success
 
 <figure>
-<a name="Figure4"></a> [![Figure 4. Inclusive Design Mapping
-Tool”](/assets/images/Inclusive_Design_Mapping_Tool-04.png)](/assets/images/Inclusive_Design_Mapping_Tool-04.png)
+<a name="Figure4"></a> [![Figure 4. Inclusive Design Mapping Tool”](/assets/images/Inclusive_Design_Mapping_Tool-04.png)](/assets/images/Inclusive_Design_Mapping_Tool-04.png)
 <figcaption>
 *Figure 4:* Inclusive Design Mapping Tool
 </figcaption>
-</figure>
+</figure
 
 Our criteria for a truly successful design is a design that reaches the edge requirements that we collectively identify
 within the co-design team. If you reach the edge, the design will also work better for the center. It will be more
@@ -245,8 +241,7 @@ process is better suited to the quickly changing context of our current society.
 political and technical situation two years ago in a linear logic model and charted it in a detailed Gantt chart?
 
 <figure>
-<a name="Figure5"></a> [![Figure 5. The Virtuous
-Tornado”](/assets/images/tornado_for_guide_activity-01.png)](/assets/images/tornado_for_guide_activity-01.png)
+<a name="Figure5"></a> [![Figure 5. The Virtuous Tornado”](/assets/images/tornado_for_guide_activity-01.png)](/assets/images/tornado_for_guide_activity-01.png)
 <figcaption>
 *Figure 5:* The Virtuous Tornado
 </figcaption>

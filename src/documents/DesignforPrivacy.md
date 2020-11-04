@@ -25,14 +25,14 @@ The following art installation by Dima Yarovinsky visualizes lengthy “terms of
 apps—including Facebook, Instagram, Snapchat, and Tinder—in his project, titled I Agree. In most cases, users either
 accept these terms without reading them or abandon the service entirely.
 
+<!-- markdownlint-disable line-length -->
 <figure>
-<a name="Figure1"></a> [![Figure 1. Dima Yarovinsky - I
-Agree.jpg”](/assets/images/DimaYarovinskyIAgree.jpg)](/assets/images/DimaYarovinskyIAgree.jpg)
+<a name="Figure1"></a> [![Figure 1. Dima Yarovinsky - I Agree.jpg”](/assets/images/DimaYarovinskyIAgree.jpg)](/assets/images/DimaYarovinskyIAgree.jpg)
 <figcaption>
-*Figure 1:* Dima Yarovinsky - I Agree: a visualization of lengthy “terms of service” agreements from popular social apps
-including Facebook, Instagram, Snapchat, and Tinder
+*Figure 1:* Dima Yarovinsky - I Agree: a visualization of lengthy “terms of service” agreements from popular social apps including Facebook, Instagram, Snapchat, and Tinder
 </figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 _Image courtesy of
 [Designboom](https://www.designboom.com/readers/dima-yarovinsky-visualizes-facebook-instagram-snapchat-terms-of-service-05-07-2018/)_
@@ -48,16 +48,14 @@ default privacy setting should be set with a high level of privacy, allowing the
 rather than having to opt out.
 
 <figure>
-<a name="Figure2"></a> [![Figure 2. Story builder tool - introduction
-screenshots”](/assets/images/PrivacyIntroduction.png)](/assets/images/PrivacyIntroduction.png)
+<a name="Figure2"></a> [![Figure 2. Story builder tool - introduction screenshots”](/assets/images/PrivacyIntroduction.png)](/assets/images/PrivacyIntroduction.png)
 <figcaption>
 *Figure 2:* Story builder tool - introduction screenshots
 </figcaption>
 </figure>
 
 <figure>
-<a name="Figure3"></a> [![Figure 3. Story builder tool - internet use
-screenshots”](/assets/images/PrivacyInternetUse.png)](/assets/images/PrivacyInternetUse.png)
+<a name="Figure3"></a> [![Figure 3. Story builder tool - internet use screenshots”](/assets/images/PrivacyInternetUse.png)](/assets/images/PrivacyInternetUse.png)
 <figcaption>
 *Figure 3:* Story builder tool - internet use screenshots
 </figcaption>
@@ -83,14 +81,14 @@ for privacy. Users should be able to easily adjust their privacy preferences in 
 their goals without compromising their privacy. Designing and implementing segmented privacy policies that can be
 accepted by the user in part or in whole can also help.
 
+<!-- markdownlint-disable line-length -->
 <figure>
-<a name="Figure5"></a> [![Figure 5. An example of an advanced privacy preferences tool allowing the custom setting of
-personal privacy preferences.”](/assets/images/PrivacyPreferencesTool.png)](/assets/images/PrivacyPreferencesTool.png)
+<a name="Figure5"></a> [![Figure 5. An example of an advanced privacy preferences tool allowing the custom setting of personal privacy preferences.”](/assets/images/PrivacyPreferencesTool.png)](/assets/images/PrivacyPreferencesTool.png)
 <figcaption>
-*Figure 5:* An example of an advanced privacy preferences tool allowing the custom setting of personal privacy
-preferences.
+*Figure 5:* An example of an advanced privacy preferences tool allowing the custom setting of personal privacy preferences.
 </figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 ## Support information portability
 

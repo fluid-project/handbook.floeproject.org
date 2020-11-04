@@ -28,10 +28,10 @@ socio-economic statuses contribute unique perspectives and ultimately build bett
 design, Create-a-Thons can be applied at several points throughout a design process, and not simply at the beginning.
 
 <figure>
-[![An image showing a group of four people participating in a Create-a-Thon, using building
-toys.](/assets/images/thumbs/CaT-01.jpg)](/assets/images/CaT-01.jpg)
+[![An image showing a group of four people participating in a Create-a-Thon, using building toys.](/assets/images/thumbs/CaT-01.jpg)](/assets/images/CaT-01.jpg)
 <figcaption>
-*Figure 1:* A group collaborates together to build a marble track based on some basic requirements.</figcaption>
+*Figure 1:* A group collaborates together to build a marble track based on some basic requirements.
+</figcaption>
 </figure>
 
 ## CaT Principle: design by metaphor
@@ -71,13 +71,14 @@ attempting to create a solution or an artifact itself. The CaT structure also en
 experts and non-experts, allows everyone to participate equally, and considers each individual contribution as important
 as the others.
 
+<!-- markdownlint-disable line-length -->
 <figure>
-[![An image of a Create-a-Thon participant describing their group's
-design.](/assets/images/thumbs/CaT-02.jpg)](/assets/images/CaT-02.jpg)
+[![An image of a Create-a-Thon participant describing their group's design.](/assets/images/thumbs/CaT-02.jpg)](/assets/images/CaT-02.jpg)
 <figcaption>
-*Figure 2:* A participant shares their group's design after being given the task of creating a software version of the
-physical marble track toy.</figcaption>
+*Figure 2:* A participant shares their group's design after being given the task of creating a software version of the physical marble track toy.
+</figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 ## Designing a CaT
 

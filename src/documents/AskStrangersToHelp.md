@@ -72,7 +72,7 @@ the assumptions to which we are most attached.
 <a name="Figure1"></a>
 [![Figure 1. Inclusive Design Class called “Unlearning and Questioning”](/assets/images/UnlearningAndQuestioning.png)](/assets/images/UnlearningAndQuestioning.png)
 <figcaption>
-*Figure 1:* Inclusive Design Class called “Unlearning and Questioning
+*Figure 1:* Inclusive Design Class called “Unlearning and Questioning"
 </figcaption>
 </figure>
 
@@ -133,29 +133,29 @@ Our government needs to be here for the duration. If you plan to include the edg
 take more time and resources at first, but it will be dynamically resilient and adaptable. It will be future friendly in
 that it will give the centre a great deal of room to shift. It will also cost less in the long term.
 
+<!-- markdownlint-disable line-length -->
 <figure>
 <a name="Figure3"></a>
-[![Figure 3. These two groups show the costs over time for when planning for the centre (where costs increase over time)
-and planning with the edge (where costs decrease over time).”](/assets/images/CostDiagram-02.png)](/assets/images/CostDiagram-02.png)
+[![Figure 3. These two groups show the costs over time for when planning for the centre (where costs increase over time) and planning with the edge (where costs decrease over time).”](/assets/images/CostDiagram-02.png)](/assets/images/CostDiagram-02.png)
 <figcaption>
-*Figure 3:* These two groups show the costs over time for when planning for the centre (where costs increase over time)
-and planning with the edge (where costs decrease over time).
+*Figure 3:* These two groups show the costs over time for when planning for the centre (where costs increase over time) and planning with the edge (where costs decrease over time).
 </figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 ## Designing with the Edge
 
 My advice would be to design with the difficult 20% first.
 
+<!-- markdownlint-disable line-length -->
 <figure>
 <a name="Figure4"></a>
-[![Figure 4. The scatterplot showing people who have difficulty using the design and people that can’t use the design,
-out at the periphery.”](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)
+[![Figure 4. The scatterplot showing people who have difficulty using the design and people that can’t use the design, out at the periphery.”](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)
 <figcaption>
-*Figure 4:* The scatterplot showing people who have difficulty using the design and people that can’t use the design,
-out at the periphery.
+*Figure 4:* The scatterplot showing people who have difficulty using the design and people that can’t use the design, out at the periphery.
 </figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 The scatterplot showing people who have difficulty using the design and people that can’t use the design, out at the periphery.
 
@@ -194,15 +194,15 @@ does my gender fluid young niece fit in the categories of men and women? Where d
 disability fit in the categories we have created to sort people who experience disabilities? The further out to the
 periphery you get the greater your difference.
 
+<!-- markdownlint-diable line-length -->
 <figure>
 <a name="Figure5"></a>
-[![Figure 5. Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling
-through the cracks.”](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)
+[![Figure 5. Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling through the cracks.”](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)
 <figcaption>
-*Figure 5:* Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling
-through the cracks.
+*Figure 5:* Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling through the cracks.
 </figcaption>
 </figure>
+<!-- markdownlint-enable line-length -->
 
 The best approach is to continuously ask “who are we missing?” What perspectives are not at the table and how can we
 design the table so that they can participate in our process? This is best achieved through iterative, rapid,
