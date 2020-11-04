@@ -77,7 +77,7 @@ Follow a good structure and use semantic markup:
 * [WebAim.org - Designing for Screen Reader Compatibility](http://webaim.org/techniques/screenreader/)
 * [Inclusive Learning Design Handbook - Accessibility Principles](FollowAccessibilityPrinciples.html)
 * Make sure to use HTML 5 semantic markup wherever possible: i.e.
-  `[https://developer.mozilla.org/en/docs/Web/HTML/Element](https://developer.mozilla.org/en/docs/Web/HTML/Element)
+  <https://developer.mozilla.org/en/docs/Web/HTML/Element>
 * Use WAI-ARIA to improve accessibility. See: [Mozilla Developer ARIA - good resource for learning, examples,
   blogs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA).
 
