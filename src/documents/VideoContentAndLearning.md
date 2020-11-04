@@ -60,7 +60,7 @@ Examples of subtitling authoring tools:
 
 ### Visual considerations
 
-While there are limitations to what can be done with the video content after it’s been produced, the video playing interface, captions/subtitles, and transcripts should be made as inclusive as possible. The various transformations for interfaces and text (see [Learner needs and preferences](/LearnerNeedsAndPreferences.html)) apply to video subtitles, captions, transcripts and the video playing interface.
+While there are limitations to what can be done with the video content after it’s been produced, the video playing interface, captions/subtitles, and transcripts should be made as inclusive as possible. The various transformations for interfaces and text (see [Learner needs and preferences](/MeetLearnerNeedsAndPreferences.html)) apply to video subtitles, captions, transcripts and the video playing interface.
 
 These include:
 

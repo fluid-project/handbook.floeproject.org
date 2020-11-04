@@ -7,7 +7,7 @@ eleventyNavigation:
     order: 1
 ---
 
-If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more adaptable, and more configurable to individual learner needs. Of course, [authoring content](/AuthoringOfContent.html) in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable. There are also options for making materials more accessible "after the fact" (see [Video content and learning](/VideoContentAndLearning.html), [Audio content and learning](/AudioContentAndLearning.html), [Cognitive considerations](/CognitiveConsiderations.html)).
+If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more adaptable, and more configurable to individual learner needs. Of course, [authoring content](/AuthoringOfContent.html) in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable. There are also options for making materials more accessible "after the fact" (see [Video content and learning](/VideoContentAndLearning.html), [Audio content and learning](/AudioContentAndLearning.html), [Cognitive considerations](/ConsiderCognitiveNeeds.html)).
 
 In either case, making content more inclusive begins with understanding what kinds of alternatives are needed, and realizing that inclusivity and accessibility are achieved through awareness, adaptation, collaboration, and flexibility. There is no definitive checklist, no machine that churns out accessible materials. With awareness and the tools (like those made through Floe), we can commit to making our materials more inclusive and more accessible.
 

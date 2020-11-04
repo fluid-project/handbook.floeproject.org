@@ -55,7 +55,7 @@ Transcripts are the full text of audio, which are useful both while listening to
 
 ### Visual considerations
 
-While audio content has no inherent visual considerations, the audio playing interface, captions/subtitles, and transcripts should be made as inclusive as possible. The various transformations for interfaces and text (see [Learner needs and preferences](LearnerNeedsAndPreferences.html)) apply to audio subtitles, captions, transcripts and the audio playing interface.
+While audio content has no inherent visual considerations, the audio playing interface, captions/subtitles, and transcripts should be made as inclusive as possible. The various transformations for interfaces and text (see [Learner needs and preferences](MeetLearnerNeedsAndPreferences.html)) apply to audio subtitles, captions, transcripts and the audio playing interface.
 
 These include:
 

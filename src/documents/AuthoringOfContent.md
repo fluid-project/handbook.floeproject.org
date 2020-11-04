@@ -8,7 +8,7 @@ eleventyNavigation:
     order: 2
 ---
 
-Inclusive learning content is a product of authoring tools and environments that promote the creation of content alternatives and preferences (see [Metadata](/Metadata.html), [Learner needs and preferences](/LearnerNeedsAndPreferences.html), [Audio content and learning](/AudioContentAndLearning.html), [Video content and learning](/VideoContentAndLearning.html)). Consumers of open educational resources quickly become authors when they rework, edit, or remix existing content. It becomes critical, then, that these authoring environments both offer and gently suggest to authors the creation of layered, malleable content.
+Inclusive learning content is a product of authoring tools and environments that promote the creation of content alternatives and preferences (see [Metadata](/Metadata.html), [Learner needs and preferences](/MeetLearnerNeedsAndPreferences.html), [Audio content and learning](/AudioContentAndLearning.html), [Video content and learning](/VideoContentAndLearning.html)). Consumers of open educational resources quickly become authors when they rework, edit, or remix existing content. It becomes critical, then, that these authoring environments both offer and gently suggest to authors the creation of layered, malleable content.
 
 ## Take Away
 
@@ -18,7 +18,7 @@ Whenever possible, try to find an authoring tool that promotes the creation of a
 
 Floe and ISKME collaboratively designed an open education resource authoring environment that is easy to use; is inclusive to a diversity of different users; and both offers and gently suggests authors to create layered, malleable content.
 
-The authoring environment is sensitive to Floe's Learner Options (see [Learner needs and preferences](LearnerNeedsAndPreferences.html)), and morphs its authoring environment according to the author's preferences. [Figure 4](#Figure4) and [Figure 5](#Figure5) show the editing environment in high contrast and with large interface elements, respectively.
+The authoring environment is sensitive to Floe's Learner Options (see [Learner needs and preferences](/MeetLearnerNeedsAndPreferences.html)), and morphs its authoring environment according to the author's preferences. [Figure 4](#Figure4) and [Figure 5](#Figure5) show the editing environment in high contrast and with large interface elements, respectively.
 
 Moreover, the authoring environment provides an easy way for authors to add content layers to media, such as descriptions for images (see [Figure 7](#Figure7)), and localized captions for video (see [Figure 6](#Figure6)). When the media is initially added without these layers, a gentle status icon and editing affordances indicate to authors that such layers are missing, and silently guides them to adding said layers.
 
@@ -90,7 +90,7 @@ To address this challenge, the IDRC research team has focused on building a cust
 
 At the time of writing this case study, the authoring tool can produce pie charts with two different types of sonifications and generated from data entered by chart creators. The charts are built entirely in open-source web technologies including Javascript and the browser speech and audio APIs. The IDRC research team expects to continue development to accommodate different styles of charts and different sonification approaches, along with the export, sharing and remixing of sonified charts in a web context.
 
-To access the latest demo of the Floe chart authoring tool please select [this link](http://build.fluidproject.org/chartAuthoring/demos/#).
+To access the latest demo of the Floe chart authoring tool please select [this link](http://build.fluidproject.org/chartAuthoring/demos/).
 
 ### The Floe Chart Authoring Tool Interface
 
