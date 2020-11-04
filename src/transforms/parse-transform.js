@@ -27,7 +27,7 @@ module.exports = (value, outputPath) => {
         ];
 
         const links = [
-            ...document.querySelectorAll("article a")
+            ...document.querySelectorAll("article a[href]")
         ];
 
         if (captions.length > 0) {
@@ -44,9 +44,10 @@ module.exports = (value, outputPath) => {
 
         if (links.length > 0) {
             links.forEach(link => {
+                const href = link.getAttribute("href");
                 if (
-                    !link.href.startsWith("/") &&
-					!link.href.startsWith("#") &&
+                    !href.startsWith("/") &&
+					!href.startsWith("#") &&
 					(!["localhost", "handbook.floeproject.org"].includes(link.host))
                 ) {
                     link.setAttribute("rel", "nofollow external");

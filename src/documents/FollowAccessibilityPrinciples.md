@@ -24,7 +24,7 @@ Some ways this can be accomplished:
 Floe examples:
 
 * [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
-* [Video content and learning](VideoContentAndLearning.html)
+* [Video content and learning](/VideoContentAndLearning.html)
 * [ADOD](http://adod.idrc.ocad.ca/)
 
 ### Understandability: Content should be plain and clear to comprehend
@@ -41,9 +41,9 @@ Some things that can be done:
 
 Floe examples:
 
-* [Cognitive considerations](ConsiderCognitiveNeeds.html)
+* [Cognitive considerations](/ConsiderCognitiveNeeds.html)
 * [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
-* [Video content and learning](VideoContentAndLearning.html)
+* [Video content and learning](/VideoContentAndLearning.html)
 
 ### Operability: Interactions should be operable by everyone
 
@@ -60,7 +60,7 @@ Floe examples:
 Floe examples:
 
 * [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
-* [Video content and learning](VideoContentAndLearning.html)
+* [Video content and learning](/VideoContentAndLearning.html)
 
 ### Robustness: Resources should be compatible with tools now and later
 

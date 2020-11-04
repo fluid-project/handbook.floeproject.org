@@ -123,5 +123,5 @@ process information or need breaks throughout the testing process to regroup and
 * [Accessible Standardized Testing](/AccessibleStandardizedTesting.html)
 * [General Guidelines](/GeneralGuidelines.html)
 * [Functional Considerations](/FunctionalConsiderations.html)
-* [Standardized Test Types](StandardizedTestTypes.html)
+* [Standardized Test Types](/StandardizedTestTypes.html)
 * [Standardized Test Tools](/StandardizedTestTools.html)

@@ -3,7 +3,7 @@ title: Schema.org Accessibility Properties
 category: Techniques
 ---
 In December, 2013, the W3C Schema.org process accepted a proposal for a set of accessibility metadata terms based on the
-[AccessForAll](AccessForAll.html) specification. The accessibility metadata is now a part of the Schema.org CreativeWork
+[AccessForAll](/AccessForAll.html) specification. The accessibility metadata is now a part of the Schema.org CreativeWork
 properties.
 
 [Schema.org](http://schema.org) was created by a consortium of large search engines (including Google, Yahoo, etc.) as a

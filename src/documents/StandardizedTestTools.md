@@ -212,5 +212,5 @@ assistive devices to access the keyboard and select (e.g., mouth stick, head wan
 * [Accessible Standardized Testing](/AccessibleStandardizedTesting.html)
 * [General Guidelines](/GeneralGuidelines.html)
 * [Functional Considerations](/FunctionalConsiderations.html)
-* [Standardized Test Types](StandardizedTestTypes.html)
+* [Standardized Test Types](/StandardizedTestTypes.html)
 * [Standardized Test Tools](/StandardizedTestTools.html)

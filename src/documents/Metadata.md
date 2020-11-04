@@ -31,7 +31,7 @@ needs and preferences.
 
 More information:
 
-* [Schema.org Accessibility Properties](SchemaOrgAccessibilityProperties.html)
+* [Schema.org Accessibility Properties](/SchemaOrgAccessibilityProperties.html)
 
 ## Case Study: Floe Tools for Automatic Metadata Creation
 

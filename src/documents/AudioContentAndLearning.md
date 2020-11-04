@@ -14,7 +14,7 @@ and other audio content provide learners with rich content that they can listen 
 Peculiarly, while video content and players often come with captions, it is unusual to find audio content and players
 accompanied by text alternatives.
 
-Like with video players (see [Video content and learning](VideoContentAndLearning.html)), the following considerations
+Like with video players (see [Video content and learning](/VideoContentAndLearning.html)), the following considerations
 have a major impact on the inclusivity of audio players:
 
 * Multi-modality of audio content (default aural track, text-based visual track)
@@ -70,7 +70,7 @@ subtitles do not (e.g., paragraphs, headings, etc.).
 
 While audio content has no inherent visual considerations, the audio playing interface, captions/subtitles, and
 transcripts should be made as inclusive as possible. The various transformations for interfaces and text (see
-[Learner needs and preferences](MeetLearnerNeedsAndPreferences.html)) apply to audio subtitles, captions, transcripts
+[Learner needs and preferences](/MeetLearnerNeedsAndPreferences.html)) apply to audio subtitles, captions, transcripts
 and the audio playing interface.
 
 These include:

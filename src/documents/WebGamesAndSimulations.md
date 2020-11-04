@@ -75,7 +75,7 @@ experience for non-sighted learners:
 Follow a good structure and use semantic markup:
 
 * [WebAim.org - Designing for Screen Reader Compatibility](http://webaim.org/techniques/screenreader/)
-* [Inclusive Learning Design Handbook - Accessibility Principles](FollowAccessibilityPrinciples.html)
+* [Inclusive Learning Design Handbook - Accessibility Principles](/FollowAccessibilityPrinciples.html)
 * Make sure to use HTML 5 semantic markup wherever possible: i.e.
   <https://developer.mozilla.org/en/docs/Web/HTML/Element>
 * Use WAI-ARIA to improve accessibility. See: [Mozilla Developer ARIA - good resource for learning, examples,
@@ -128,7 +128,7 @@ If using a table of data:
 * Follow best practices for table formatting (i.e. proper use of table headers, no table nesting). [See Data Table Best
   Practices at WebAccessibility.com](https://www.webaccessibility.com/best_practices.php?technology_platform_id=8).
 * Define any math, symbols, units, or acronyms. For additional information about making math accessible, see
-  [Mathematics](Mathematics.html).
+  [Mathematics](/Mathematics.html).
 * Simplify and separate data tables if possible. Tables can be cumbersome to navigate (like with screen readers, small
   mobile displays, or screen magnifiers), so splitting and simplifying can be helpful.
 

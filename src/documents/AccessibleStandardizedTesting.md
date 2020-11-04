@@ -20,7 +20,7 @@ can affect the outcome of standardized testing, accessibility issues must also b
 
 ## Topics
 
-* [General Guidelines](GeneralGuidelines.html)
-* [Functional Considerations](FunctionalConsiderations.html)
-* [Standardized Test Types](StandardizedTestTypes.html)
-* [Standardized Test Tools](StandardizedTestTools.html)
+* [General Guidelines](/GeneralGuidelines.html)
+* [Functional Considerations](/FunctionalConsiderations.html)
+* [Standardized Test Types](/StandardizedTestTypes.html)
+* [Standardized Test Tools](/StandardizedTestTools.html)
