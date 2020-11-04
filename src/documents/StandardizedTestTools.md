@@ -121,7 +121,8 @@ require considerable mental effort.</li>
 <li>Students who rely on text-to-speech software require longer time to digest information and recognize the subtle
 distinctions between choices. A dyslexic student may be unable to identify such subtle distinctions at all.</li>
 <li>Questions that address higher-order understanding rather than surface learning are very complex and can require
-numerous re-readings. This has the potential to disadvantage the visually impaired student and those using text-to-speech software.</li>
+numerous re-readings. This has the potential to disadvantage the visually impaired student and those using
+text-to-speech software.</li>
 <li>Progressing between options using the tab key (for students who cannot use a mouse) can take up a great deal of
 additional time.</li>
 </ul>
