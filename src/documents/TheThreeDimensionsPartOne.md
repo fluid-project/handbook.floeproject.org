@@ -130,3 +130,5 @@ Thirdly, one-size-fits-one implies an optimal fit for the goal, it doesn’t nec
 A networked system makes it possible to share and pool resources so that we can create a wealth of variants to [match the full diversity of needs](https://floeproject.org/). We can reach out across networks to find diverse innovators that can fill gaps and unmet demands. A networked community can help find a match, augment or translate designs so that everyone has choices that optimally meet their diverse and variable personal requirements.
 
 Diversity is our most valuable asset. Inclusion is our biggest challenge. Taking up the challenge will make our design better, and the human community we design with better.
+
+[To continue on with Part Two](/thethreedimensionsparttwo).
