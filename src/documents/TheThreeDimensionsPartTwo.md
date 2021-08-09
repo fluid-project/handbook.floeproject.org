@@ -133,3 +133,6 @@ We have developed a process we call our “[virtuous tornado](https://guide.incl
 ## Lasting Change and the Inclusively Designed Process
 
 Many of today’s problems are too complex, people are too diverse, and the context is moving too fast to design a definitive fix or solution. Investment in a definitive fix leads us to ignore the changes, deny the complexity, and exclude the diversity. Inclusive design begins with no predetermined end point and no generalized success criteria but arrives at greater innovation, flexibility, and general usability. Employing an inclusively designed process will achieve a more lasting and productive change than a checklist of design criteria. Inviting the unrecognized technical pioneers to the design table is a gift that keeps on giving.
+
+[To continue on with Part Three](/thethreedimensionspartthree).
+
