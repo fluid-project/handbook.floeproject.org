@@ -211,6 +211,7 @@ Floe held an [OER-focused accessibility sprint](http://floeproject.org/accessibi
 * [So You Think You Want to Run a Hackathon? Think Again.](https://medium.com/@elle_mccann/so-you-think-you-want-to-run-a-hackathon-think-again-f96cd7df246a#.sd67s8coa)
 * [Hacking the Classroom - Eight Perspectives](http://www2.bgsu.edu/departments/english/cconline/hacking/)
 * [Why Making in the Classroom is a Political Stance](http://inventtolearn.com/why-making-in-the-classroom-is-a-political-stance/)
+* [How DoorDash Leverages Hackathons to Drive Innovation](https://doordash.engineering/2021/05/14/how-doordash-leverages-hackathons-to-drive-innovation/)
 
 ### Accessibility &amp; Inclusion for Hacking &amp; Hackathons
 
