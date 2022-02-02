@@ -1,6 +1,6 @@
-BSD 3-Clause License
+# BSD 3-Clause License
 
-Copyright (c) 2015-2020, OCAD University.
+Copyright (c) 2015-2022, OCAD University.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

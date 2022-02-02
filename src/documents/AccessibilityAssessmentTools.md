@@ -30,16 +30,26 @@ eleventyNavigation:
 
 ### Standards
 
-Floe works with many international standards organizations to ensure that emerging technical standards are inclusively designed. In particular, Floe works with the World Wide Web Consortium (W3C).
+Floe works with many international standards organizations to ensure that emerging technical standards are inclusively
+designed. In particular, Floe works with the World Wide Web Consortium (W3C).
 
-The W3C develops web-related standards, the best known of which is probably HTML. The W3C process attempts to ensure accessibility is considered in all of its standards; in addition, several accessibility-focused standards have been produced. These are:
+The W3C develops web-related standards, the best known of which is probably HTML. The W3C process attempts to ensure
+accessibility is considered in all of its standards; in addition, several accessibility-focused standards have been
+produced. These are:
 
-* [Accessible Rich Internet Applications (ARIA)](http://www.w3.org/WAI/intro/aria): defines a technology for making dynamic web applications more accessible.
-* [Web Content Accessibility Guidelines (WCAG)](http://www.w3.org/TR/WCAG20/): guidelines for creating accessible web sites.
-* [Authoring Tool Accessibility (ATAG)](http://www.w3.org/TR/WAI-AUTOOLS/): guidelines for developing authoring tools that encourage and support authors to create accessible web sites.
-* [User Agent Accessibility Guidelines (UAAG)](http://www.w3.org/WAI/intro/uaag.php): guidelines for developers of browsers, media players, etc. that facilitate accessible use.
+* [Accessible Rich Internet Applications (ARIA)](http://www.w3.org/WAI/intro/aria): defines a technology for making
+dynamic web applications more accessible.
+* [Web Content Accessibility Guidelines (WCAG)](http://www.w3.org/TR/WCAG20/): guidelines for creating accessible web
+sites.
+* [Authoring Tool Accessibility (ATAG)](http://www.w3.org/TR/WAI-AUTOOLS/): guidelines for developing authoring tools
+that encourage and support authors to create accessible web sites.
+* [User Agent Accessibility Guidelines (UAAG)](http://www.w3.org/WAI/intro/uaag.php): guidelines for developers of
+browsers, media players, etc. that facilitate accessible use.
 
 Floe also works with:
 
-* [IMS Global Learning Consortium](http://www.imsglobal.org/accessibility/): Floe has been involved with ensuring inclusive design considerations are part of IMS Standards and has led the AccessForAll standard development.
-* [International Organization for Standardization (ISO)](http://www.iso.org/iso/catalogue_detail?csnumber=41521): Floe has been most involved with the development of ISO/IEC 24751 Individualized adaptability and accessibility in e-learning, education and training, which is based on the IMS AccessForAll standard.
+* [IMS Global Learning Consortium](http://www.imsglobal.org/accessibility/): Floe has been involved with ensuring
+inclusive design considerations are part of IMS Standards and has led the AccessForAll standard development.
+* [International Organization for Standardization (ISO)](http://www.iso.org/iso/catalogue_detail?csnumber=41521): Floe
+has been most involved with the development of ISO/IEC 24751 Individualized adaptability and accessibility in
+e-learning, education and training, which is based on the IMS AccessForAll standard.

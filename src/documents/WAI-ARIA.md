@@ -2,9 +2,12 @@
 title: WAI-ARIA
 category: Techniques
 ---
-While HTML 5 semantic markup and epub:type go a long way to help your publication's structure and content be understood by reader systems, there are times when WAI-ARIA  is needed to help convey relationships and function of elements on a page.
+While HTML 5 semantic markup and epub:type go a long way to help your publication's structure and content be understood
+by reader systems, there are times when WAI-ARIA  is needed to help convey relationships and function of elements on a
+page.
 
-WAI-ARIA is used primarily with scripting, but it can also be used to describe the roles and functions of elements on a page. For example, a list of text items used as a toolbar or navigation menu can be described using WAI-ARIA this way:
+WAI-ARIA is used primarily with scripting, but it can also be used to describe the roles and functions of elements on a
+page. For example, a list of text items used as a toolbar or navigation menu can be described using WAI-ARIA this way:
 
 ```html
 <nav>
@@ -20,7 +23,11 @@ WAI-ARIA is used primarily with scripting, but it can also be used to describe t
 <p id="navigation_about" class="hide_offscreen">About us</p>
 ```
 
-Even though scripting is optional in EPUB 3, scripting can be used to add meaningful interactions to an otherwise static EPUB 3 book. If scripting is used in EPUB 3, WAI-ARIA can help describe content that is controlled or updated dynamically. For example, consider the case of a script on the page which behaves like a timer that begins counting down to zero once the user presses a button. Typically, the area that counts down the seconds would not be accessible to users using audio only, but with WAI-ARIA, you can describe the updating numbers this way:
+Even though scripting is optional in EPUB 3, scripting can be used to add meaningful interactions to an otherwise
+static EPUB 3 book. If scripting is used in EPUB 3, WAI-ARIA can help describe content that is controlled or updated
+dynamically. For example, consider the case of a script on the page which behaves like a timer that begins counting
+down to zero once the user presses a button. Typically, the area that counts down the seconds would not be accessible
+to users using audio only, but with WAI-ARIA, you can describe the updating numbers this way:
 
 ```html
 <div id="region1Container">
@@ -30,11 +37,13 @@ Even though scripting is optional in EPUB 3, scripting can be used to add meanin
 </div>
 ```
 
-WAI-ARIA goes a long way to help users and reader systems understand the relationships and interactions between contents on a page, especially if the EPUB 3 book is using scripting.
+WAI-ARIA goes a long way to help users and reader systems understand the relationships and interactions between
+contents on a page, especially if the EPUB 3 book is using scripting.
 
 ## WAI-ARIA and Math
 
-Math notation and equations is traditionally challenging to make accessible and comprehensible, but this can be improved thanks to some WAI-ARIA markup. With WAI-ARIA, math content can be:
+Math notation and equations is traditionally challenging to make accessible and comprehensible, but this can be
+improved thanks to some WAI-ARIA markup. With WAI-ARIA, math content can be:
 
 * given a literal translation to clarify notation
 * elaborated with longer descriptions and definitions to give an additional avenue for understanding

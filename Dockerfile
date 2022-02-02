@@ -1,10 +1,10 @@
-FROM node:14.14.0-alpine AS builder
+FROM node:12.18.3-alpine AS builder
 
 WORKDIR /app
 
-RUN apk add --no-cache git 
-
 COPY package.json ./
+
+RUN apk add --no-cache git
 
 RUN npm install
 

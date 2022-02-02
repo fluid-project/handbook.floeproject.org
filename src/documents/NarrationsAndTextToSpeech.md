@@ -2,11 +2,15 @@
 title: Narrations and Text-to-Speech
 category: Techniques
 ---
-Media overlays and text-to-speech in EPUB 3 are powerful features that unlock the ability for users to listen to the contents of the book, instead of just reading it.
+Media overlays and text-to-speech in EPUB 3 are powerful features that unlock the ability for users to listen to the
+contents of the book, instead of just reading it.
 
 ## Media Overlays
 
-"Media overlay" is EPUB's term for pre-recorded audio "overlaid" on the content. Media overlays are typically used for narration of text, but they can be used for other purposes, such as commentary. Media overlays are recorded in blocks, typically by section or paragraphs, and synchronized with the actions of the user. At its most basic implementation, as a user advances through an EPUB book, their capable reader system would play back the narration like an audio book.
+"Media overlay" is EPUB's term for pre-recorded audio "overlaid" on the content. Media overlays are typically used for
+narration of text, but they can be used for other purposes, such as commentary. Media overlays are recorded in blocks,
+typically by section or paragraphs, and synchronized with the actions of the user. At its most basic implementation, as
+a user advances through an EPUB book, their capable reader system would play back the narration like an audio book.
 
 To add media overlays to an EPUB 3 book, you would follow these basic steps:
 
@@ -14,9 +18,11 @@ To add media overlays to an EPUB 3 book, you would follow these basic steps:
 2. Add unique identifiers in your EPUB content for each corresponding segment of text, and
 3. Create another file (in XHTML) which associates the text with the recorded audio.
 
-Matt Garrish has written an excellent resource called "[ EPUB 3 Media Overlays](http://epubzone.org/news/epub-3-media-overlays)" which explains how media overlays work in EPUB 3 and how to add it to your own work.
+Matt Garrish has written an excellent resource called "[EPUB 3 Media Overlays](http://epubzone.org/news/epub-3-media-overlays)"
+which explains how media overlays work in EPUB 3 and how to add it to your own work.
 
-For information about lessons learned by the Floe team while implementing media overlays in an exemplar EPUB resource, see [Case study: Exemplar](/CaseStudyExemplar.html).
+For information about lessons learned by the Floe team while implementing media overlays in an exemplar EPUB resource,
+see [Case study: Exemplar](/CaseStudyExemplar.html).
 
 ## Further reading
 
@@ -28,15 +34,24 @@ For information about lessons learned by the Floe team while implementing media 
 
 ## Text-to-Speech
 
-Another feature EPUB 3 offers is the ability for book creators to specify information that will enhance the experience of text-to-speech (or TTS) on capable reader systems. Unlike Media Overlays, which are pre-recorded, TTS is generated on-the-fly by the reader's platform (like Apple's VoiceOver feature on iOS devices). Special instructions can be embedded within the EPUB book that can change the quality of voice feedback - such as putting emphasis on certain words, adding different speaker styles for different sections of text, specify pronunciation of complex words such as "hemocyanin", or clarify the pronunciation of homographs such as "record" the noun and "record" the verb.
+Another feature EPUB 3 offers is the ability for book creators to specify information that will enhance the experience
+of text-to-speech (or TTS) on capable reader systems. Unlike Media Overlays, which are pre-recorded, TTS is generated
+on-the-fly by the reader's platform (like Apple's VoiceOver feature on iOS devices). Special instructions can be
+embedded within the EPUB book that can change the quality of voice feedback - such as putting emphasis on certain
+words, adding different speaker styles for different sections of text, specify pronunciation of complex words such as
+"hemocyanin", or clarify the pronunciation of homographs such as "record" the noun and "record" the verb.
 
 TTS in EPUB 3 consists of 3 working parts:
 
-* an [aural style sheet](http://www.w3.org/TR/CSS2/aural.html) to give content clarity and richness (such as different voice and intonation on different page elements, or pauses after reading headers),
-* [SSML](http://www.w3.org/TR/speech-synthesis/) (Speech Synthesis Markup Language) mark-up to provide information on pronunciation, volume, pitch, rate, etc., and
-* [PLS](http://www.w3.org/TR/pronunciation-lexicon/) (Pronunciation Lexicon Specification) information, which defines pronunciation of special words (i.e. medical terms).
+* an [aural style sheet](http://www.w3.org/TR/CSS2/aural.html) to give content clarity and richness (such as different
+voice and intonation on different page elements, or pauses after reading headers),
+* [SSML](http://www.w3.org/TR/speech-synthesis/) (Speech Synthesis Markup Language) mark-up to provide information on
+pronunciation, volume, pitch, rate, etc., and
+* [PLS](http://www.w3.org/TR/pronunciation-lexicon/) (Pronunciation Lexicon Specification) information, which defines
+pronunciation of special words (i.e. medical terms).
 
-The following is an example of content using SSML, some Aural Styles, and the word "acetaminophen" defined by PLS: (example adapted from [EPUB 3 Accessibility Guidelines: SSML](http://www.idpf.org/accessibility/guidelines/content/tts/ssml.php))
+The following is an example of content using SSML, some Aural Styles, and the word "acetaminophen" defined by PLS:
+(example adapted from [EPUB 3 Accessibility Guidelines: SSML](http://www.idpf.org/accessibility/guidelines/content/tts/ssml.php))
 
 ```html
 <html xmlns:ssml="http://www.w3.org/2001/10/synthesis" ssml:alphabet="x-sampa">
@@ -67,15 +82,19 @@ The following is an example of content using SSML, some Aural Styles, and the wo
 </lexicon>
 ```
 
-Currently leading screen readers and speech engines (example: Apple VoiceOver, and NVDA) ignore SSML and lexicon information.  However, it is recommended to still include SSML and lexicon information where appropriate as it will make your content more robust in future applications.
+Currently leading screen readers and speech engines (example: Apple VoiceOver, and NVDA) ignore SSML and lexicon
+information.  However, it is recommended to still include SSML and lexicon information where appropriate as it will
+make your content more robust in future applications.
 
 ### Acronyms, Abbreviations, and Units of Measurement
 
-Acronyms, abbreviations, and units of measurement require some HTML 5 and some WAI-ARIA markup so that screen readers and other accessibility tools respond properly.
+Acronyms, abbreviations, and units of measurement require some HTML 5 and some WAI-ARIA markup so that screen readers
+and other accessibility tools respond properly.
 
 For example: `The brick weighs 5 lbs.`
 
-In this case we would want to say "pounds" and not "libs", nor do we want to spell out "L-B-S".  Using `<abbr>` and `aria-label`, we can define what we want said.
+In this case we would want to say "pounds" and not "libs", nor do we want to spell out "L-B-S".  Using `<abbr>` and
+`aria-label`, we can define what we want said.
 
 ```html
 The brick weighs <abbr role="text" title="pounds" aria-label="pounds">lbs.</abbr>
