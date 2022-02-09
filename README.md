@@ -43,7 +43,8 @@ and  files in `dist` are overwritten at build time.
 
 ### Trivet
 
-The ILDH website is based on Trivet, an [Eleventy](http://11ty.dev) website starter kit.
+The ILDH website is based on [Trivet](https://github.com/fluid-project/trivet), an [Eleventy](http://11ty.dev)
+website starter kit.
 
 ### Previous version of the ILDH
 

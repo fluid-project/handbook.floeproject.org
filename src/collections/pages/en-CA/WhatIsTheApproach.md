@@ -1,6 +1,6 @@
 ---
 title: What is the Approach?
-category: Introduction
+category: About
 ---
 <a id="whoIsExcluded"></a>
 
