@@ -1,9 +1,8 @@
 ---
 title: Approaches
 category: Approaches
-eleventyNavigation:
-    key: Approaches
-    order: 3
+key: Approaches
+order: 3
 ---
 The content of this section is organized in the following areas:
 

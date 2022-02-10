@@ -1,9 +1,8 @@
 ---
 title: Techniques
 category: Techniques
-eleventyNavigation:
-    key: Techniques
-    order: 4
+key: Techniques
+order: 4
 ---
 
 This section introduces tools and environments that help authors create more inclusive content. This section also

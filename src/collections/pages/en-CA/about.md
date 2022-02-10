@@ -1,9 +1,8 @@
 ---
 title: About
 category: About
-eleventyNavigation:
-    key: About
-    order: 1
+key: About
+order: 1
 ---
 
 If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more
