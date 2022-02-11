@@ -1,6 +1,5 @@
 ---
 title: Inclusive EPUB 3
-category: Techniques
 eleventyNavigation:
     parent: Authoring Content
     key: Inclusive EPUB 3

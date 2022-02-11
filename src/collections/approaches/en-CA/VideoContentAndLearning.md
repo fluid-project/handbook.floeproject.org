@@ -1,7 +1,6 @@
 ---
 title: Video Content and Learning
 subheader: "Floe references: Floe Video Player"
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: Video Content and Learning

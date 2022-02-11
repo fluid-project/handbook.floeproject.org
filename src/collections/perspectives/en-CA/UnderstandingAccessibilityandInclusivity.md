@@ -1,6 +1,5 @@
 ---
 title: Understanding Accessibility and Inclusivity
-category: Perspectives
 eleventyNavigation:
     parent: Perspectives
     key: Understanding Accessibility and Inclusivity

@@ -1,7 +1,6 @@
 ---
 title: Meet Learner Needs and Preferences
 subheader: "Floe references: Learner Options (aka User Interface Options)"
-category: Approaches
 eleventyNavigation:
   parent: Best Practices
   key: Meet Learner Needs and Preferences

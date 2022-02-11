@@ -1,7 +1,6 @@
 ---
 title: Accessible Modal Dialogs
 subheader:
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: Accessible Modal Dialogs

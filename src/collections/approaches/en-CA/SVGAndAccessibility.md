@@ -1,7 +1,6 @@
 ---
 title: SVG and Accessibility
 subheader:
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: SVG and Accessiblity

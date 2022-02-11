@@ -1,6 +1,5 @@
 ---
 title: "The Three Dimensions of Inclusive Design: Part One"
-category: Perspectives
 eleventyNavigation:
     parent: Perspectives
     key: "The Three Dimensions of Inclusive Design: Part One"

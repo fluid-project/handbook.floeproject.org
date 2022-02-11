@@ -1,6 +1,9 @@
 ---
 title: General Guidelines
-category: Approaches
+eleventyNavigation:
+  parent: Accessible Standardized Testing
+  key: General Guidelines
+  order: 1
 ---
 ## Before designing the test
 

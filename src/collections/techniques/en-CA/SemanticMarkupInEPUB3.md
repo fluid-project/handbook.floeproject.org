@@ -1,6 +1,9 @@
 ---
 title: Semantic Markup in EPUB 3
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: Semantic Markup in EPUB 3
+    order: 1
 ---
 
 EPUB 3 books can be created from HTML5, and the same principles for creating well-formed, semantically sound web

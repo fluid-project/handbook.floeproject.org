@@ -1,6 +1,5 @@
 ---
 title: Web Games and Simulations
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: Web Games and Simulations

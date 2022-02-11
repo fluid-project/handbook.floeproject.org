@@ -1,6 +1,5 @@
 ---
 title: Achieving Inclusive Education
-category: Perspectives
 eleventyNavigation:
     parent: Perspectives
     key: Achieving Inclusive Education

@@ -1,6 +1,9 @@
 ---
 title: "Case Study: Exemplar"
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: "Case Study: Exemplar"
+    order: 10
 ---
 
 The Floe project developed an EPUB 3 resource that exemplifies best practices for creating inclusive EPUB resources:

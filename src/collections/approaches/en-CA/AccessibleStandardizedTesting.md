@@ -1,6 +1,5 @@
 ---
 title: Accessible Standardized Testing
-category: Approaches
 eleventyNavigation:
   parent: Inclusive Assessment
   key: Accessible Standardized Testing

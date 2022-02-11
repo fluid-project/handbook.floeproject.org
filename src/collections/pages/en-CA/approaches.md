@@ -1,8 +1,10 @@
 ---
 title: Approaches
-category: Approaches
-key: Approaches
-order: 3
+layout: layouts/root-page
+eleventyNavigation:
+    parent: Home
+    key: Approaches
+    order: 3
 ---
 The content of this section is organized in the following areas:
 

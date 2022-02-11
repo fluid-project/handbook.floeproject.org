@@ -1,6 +1,9 @@
 ---
 title: Scripting in EPUB 3
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: Scripting in EPUB 3
+    order: 5
 ---
 
 Scripting in EPUB 3 should be considered an optional feature, and the main content of the book should be understandable

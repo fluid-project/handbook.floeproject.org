@@ -1,6 +1,5 @@
 ---
 title: Metadata
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: Metadata

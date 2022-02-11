@@ -1,6 +1,5 @@
 ---
 title: If you are unique (and aren’t we all), numbers are not our friends
-category: Perspectives
 eleventyNavigation:
     parent: Perspectives
     key: If you are unique (and aren’t we all), numbers are not our friends

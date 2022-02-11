@@ -1,6 +1,9 @@
 ---
 title: WAI-ARIA
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: WAI-ARIA
+    order: 2
 ---
 While HTML 5 semantic markup and epub:type go a long way to help your publication's structure and content be understood
 by reader systems, there are times when WAI-ARIA  is needed to help convey relationships and function of elements on a

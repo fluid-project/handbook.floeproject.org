@@ -1,6 +1,9 @@
 ---
 title: Standardized Test Tools
-category: Approaches
+eleventyNavigation:
+  parent: Accessible Standardized Testing
+  key: Standardized Test Tools
+  order: 4
 ---
 
 ## Multiple Choice Questions

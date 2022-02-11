@@ -1,6 +1,9 @@
 ---
 title: Standardized Test Types
-category: Approaches
+eleventyNavigation:
+  parent: Accessible Standardized Testing
+  key: Standardized Test Types
+  order: 3
 ---
 
 ## Low-stakes Tests

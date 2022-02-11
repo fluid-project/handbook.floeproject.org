@@ -1,6 +1,8 @@
 ---
 title: Access for All
-category: Techniques
+eleventyNavigation:
+    parent: Techniques
+    key: Accessibility Assessment Tools
 ---
 AccessForAll accessibility promotes an inclusive learning experience by enabling the matching of the characteristics of
 resources to the needs and preferences of individual learners. In circumstances where resources might not be, or even

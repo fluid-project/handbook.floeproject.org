@@ -1,6 +1,5 @@
 ---
 title: Design for Privacy
-category: Approaches
 eleventyNavigation:
   parent: Best Practices
   key: Design for Privacy

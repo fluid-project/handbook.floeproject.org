@@ -1,7 +1,6 @@
 ---
 title: Audio Content and Learning
 subheader: "Floe references: Floe Audio Player Concept"
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: Audio Content and Learning

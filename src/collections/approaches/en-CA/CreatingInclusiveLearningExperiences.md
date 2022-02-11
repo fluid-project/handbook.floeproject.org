@@ -1,6 +1,5 @@
 ---
 title: Create Inclusive Learning Experiences
-category: Approaches
 eleventyNavigation:
   parent: Best Practices
   key: Create Inclusive Learning Experiences

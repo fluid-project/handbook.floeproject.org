@@ -1,6 +1,9 @@
 ---
 title: Mathematics
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: Mathematics
+    order: 6
 ---
 Traditionally, math is challenging to render and to make accessible - thankfully in EPUB, there are techniques we can
 employ to provide multiple ways of perceiving and understanding math notation.

@@ -1,7 +1,6 @@
 ---
 title: General Considerations
 subheader: Various practical tips to making learning resources more inclusive and accessible
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: General Considerations

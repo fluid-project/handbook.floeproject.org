@@ -16,7 +16,7 @@ module.exports = (data, collectionType) => {
     const slug = slugFilter(data.title);
 
     if (collectionType === "pages") {
-        if (data.page.fileSlug === lang) {
+        if (data.page.fileSlug === lang || data.page.fileSlug === "home") {
             return (lang === config.defaultLanguage) ? "/" : `/${langSlug}/`;
         }
 

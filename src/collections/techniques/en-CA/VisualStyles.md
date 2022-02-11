@@ -1,6 +1,9 @@
 ---
 title: Visual Styles
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: Visual Styles
+    order: 3
 ---
 Visual styling in EPUB 3 books should be approached differently than styling for a webpage residing on the Internet.
 Generally, styling for an EPUB 3 publication should:

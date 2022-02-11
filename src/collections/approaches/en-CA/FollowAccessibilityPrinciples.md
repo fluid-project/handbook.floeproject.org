@@ -1,6 +1,5 @@
 ---
 title: Follow Accessibility Principles
-category: Approaches
 eleventyNavigation:
   parent: Best Practices
   key: Follow Accessibility Principles

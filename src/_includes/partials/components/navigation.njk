@@ -1,6 +1,6 @@
             <nav class="nav" id="menu" aria-label="menu">
                 <ul>
-                    {% set navItems = collections.all | eleventyNavigation(lang) %}
+                    {% set navItems = collections.all | eleventyNavigation("Home") %}
                     {% for item in navItems %}
                     <li>
                         <a href="{{ item.url | url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>

@@ -1,6 +1,8 @@
 ---
 title: What is the Approach?
-category: About
+eleventyNavigation:
+    parent: Inclusive Making and Hacking
+    key: What is the Approach?
 ---
 <a id="whoIsExcluded"></a>
 

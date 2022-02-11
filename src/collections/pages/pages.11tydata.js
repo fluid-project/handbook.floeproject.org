@@ -19,8 +19,11 @@ module.exports = {
             return data.page.fileSlug;
         },
         eleventyNavigation: data => {
-            /* If this page has an `order` attribute, create an Eleventy Navigation object for it. */
-            if (data.order) {
+            if (Object.prototype.hasOwnProperty.call(data, "eleventyNavigation") && Object.prototype.hasOwnProperty.call(data.eleventyNavigation, "key")) {
+                /* If this page has `eleventyNavigation` front-matter set, use that */
+                return data.eleventyNavigation;
+            } else if (data.order) {
+                /* If this page has an `order` attribute, create an Eleventy Navigation object for it. */
                 return {
                     parent: data.lang,
                     order: data.order,

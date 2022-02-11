@@ -1,6 +1,9 @@
 ---
 title: Narrations and Text-to-Speech
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: Narrations and Text-to-Speech
+    order: 7
 ---
 Media overlays and text-to-speech in EPUB 3 are powerful features that unlock the ability for users to listen to the
 contents of the book, instead of just reading it.

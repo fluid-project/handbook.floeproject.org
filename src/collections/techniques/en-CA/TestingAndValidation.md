@@ -1,6 +1,9 @@
 ---
 title: Testing and Validation
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: Testing and Validation
+    order: 9
 ---
 
 There is a wide spectrum of EPUB reader systems currently available, each with different capabilities. Some reader

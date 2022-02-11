@@ -1,6 +1,5 @@
 ---
 title: Accessibility Assessment Tools
-category: Techniques
 eleventyNavigation:
     parent: Testing and Evaluation
     key: Accessibility Assessment Tools

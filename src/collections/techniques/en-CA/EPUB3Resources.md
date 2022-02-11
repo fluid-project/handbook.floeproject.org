@@ -1,6 +1,9 @@
 ---
 title: EPUB 3 Resources
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: EPUB 3 Resources
+    order: 11
 ---
 
 1. EPUB3 Overview -

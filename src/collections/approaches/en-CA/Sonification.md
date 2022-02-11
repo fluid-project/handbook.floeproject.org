@@ -1,7 +1,6 @@
 ---
 title: Sonification
 subheader:
-category: Approaches
 eleventyNavigation:
     parent: Inclusive Authoring
     key: Sonification

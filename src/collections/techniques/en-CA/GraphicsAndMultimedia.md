@@ -1,6 +1,9 @@
 ---
 title: Graphics and Multimedia
-category: Techniques
+eleventyNavigation:
+    parent: Inclusive EPUB 3
+    key: Graphics and Multimedia
+    order: 4
 ---
 The notion of a "typical end user" is increasingly difficult to define. With EPUB 3 and eBooks easily accessible
 through different devices, even users who were once described as "typical" find themselves in situations where their

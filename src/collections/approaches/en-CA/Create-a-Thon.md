@@ -1,6 +1,5 @@
 ---
 title: Create-a-Thon
-category: Approaches
 eleventyNavigation:
   parent: Co-Creation
   key: Create-a-Thon

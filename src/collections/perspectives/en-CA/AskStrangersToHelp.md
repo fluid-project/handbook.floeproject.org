@@ -1,6 +1,5 @@
 ---
 title: If you want the best design, ask strangers to help
-category: Perspectives
 eleventyNavigation:
     parent: Perspectives
     key: If you want the best design, ask strangers to help

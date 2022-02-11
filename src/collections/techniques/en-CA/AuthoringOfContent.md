@@ -1,7 +1,6 @@
 ---
 title: Inclusive Authoring Environments
 subheader: "Floe references: OER Commons authoring tool, Universal Subtitles, Learner Options (aka User Interface Options)"
-category: Techniques
 eleventyNavigation:
     parent: Authoring Content
     key: Inclusive Authoring Environments

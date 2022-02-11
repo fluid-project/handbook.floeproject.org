@@ -1,6 +1,5 @@
 ---
 title: Inclusive Making and Hacking
-category: Approaches
 eleventyNavigation:
   parent: Co-Creation
   key: Inclusive Making and Hacking

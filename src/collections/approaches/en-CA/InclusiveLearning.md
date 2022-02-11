@@ -1,7 +1,9 @@
 ---
 title: Inclusive Learning
 subheader: Introduction to the Floe Model of Learning Content
-category: Approaches
+eleventyNavigation:
+    parent: Meet Learner Needs and Preferences
+    key: Inclusive Learning
 ---
 
 ## Motivation: learners learn differently
