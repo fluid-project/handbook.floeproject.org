@@ -44,6 +44,13 @@ module.exports = function (config) {
     config.addPlugin(rssPlugin);
     config.addPlugin(syntaxHighlightPlugin);
 
+    // Shortcodes
+    config.addShortcode("svg_sprite", function (sprite, altText, ariaHidden = true) {
+        const altTextMarkup = altText ? `<title>${altText}</title>` : "";
+        const ariaHiddenMarkup = ariaHidden ? " aria-hidden=\"true\"" : "";
+        return `<svg class="ildh-${sprite}"${ariaHiddenMarkup}>${altTextMarkup}<use xlink:href="/assets/images/sprites.svg#${sprite}"></use></svg>`;
+    });
+
     // 404
     config.setBrowserSyncConfig({
         callbacks: {

@@ -1,0 +1,17 @@
+<li class="techniques-section-item">
+    <h2>
+        <button aria-expanded="false" class="techniques-section-toggle">
+            <span class="techniques-section-expand-icon" aria-hidden="true">
+                {% svg_sprite "arrow" %}
+            </span>
+            <span class="techniques-section-title">{{ sectionTitle | safe }}</span>
+        </button>
+    </h2>
+    <div>
+        <ul class="techniques-section-children">
+        {% for child in sectionChildren %}
+            <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+</li>

@@ -1,0 +1,17 @@
+{% extends "layouts/root-page.njk" %}
+
+{% block content %}
+    <div class="content">
+        {{ content | safe }}
+    </div>
+
+    {% set techniques = collections.all | eleventyNavigation("Techniques") %}
+
+    <ul id="content" class="content techniques">
+        {% for section in techniques %}
+            {% set sectionTitle = section.title %}
+            {% set sectionChildren = section.children %}
+            {% include "partials/components/techniques-section.njk" %}
+        {% endfor %}
+    </ul>
+{% endblock %}
