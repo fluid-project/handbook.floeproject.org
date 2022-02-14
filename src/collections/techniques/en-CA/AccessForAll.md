@@ -1,7 +1,6 @@
 ---
 title: Access for All
 eleventyNavigation:
-    parent: Techniques
     key: Accessibility Assessment Tools
 ---
 AccessForAll accessibility promotes an inclusive learning experience by enabling the matching of the characteristics of

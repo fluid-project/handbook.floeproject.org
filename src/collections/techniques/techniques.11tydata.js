@@ -4,5 +4,6 @@ const generateEleventyComputed = require("../../utils/generateEleventyComputed.j
 
 module.exports = {
     "layout": "layouts/topic-page",
+    "permalink": "techniques/{{ title | slugify }}/",
     eleventyComputed: data => generateEleventyComputed(data, "techniques")
 };

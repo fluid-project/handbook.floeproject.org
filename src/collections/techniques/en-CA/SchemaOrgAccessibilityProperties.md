@@ -1,7 +1,6 @@
 ---
 title: Schema.org Accessibility Properties
 eleventyNavigation:
-    parent: Techniques
     key: Schema.org Accessibility Properties
 ---
 In December, 2013, the W3C Schema.org process accepted a proposal for a set of accessibility metadata terms based on
