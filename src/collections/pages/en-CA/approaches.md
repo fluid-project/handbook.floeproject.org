@@ -1,6 +1,6 @@
 ---
 title: Approaches
-layout: layouts/root-page
+layout: layouts/sections
 eleventyNavigation:
     parent: Home
     key: Approaches

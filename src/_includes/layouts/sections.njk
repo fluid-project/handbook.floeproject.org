@@ -5,13 +5,13 @@
         {{ content | safe }}
     </div>
 
-    {% set techniques = collections.all | eleventyNavigation("Techniques") %}
+    {% set sections = collections.all | eleventyNavigation(eleventyNavigation.key) %}
 
-    <ul id="content" class="content techniques">
-        {% for section in techniques %}
+    <ul id="content" class="content sections">
+        {% for section in sections %}
             {% set sectionTitle = section.title %}
             {% set sectionChildren = section.children %}
-            {% include "partials/components/techniques-section.njk" %}
+            {% include "partials/components/section-accordion.njk" %}
         {% endfor %}
     </ul>
 {% endblock %}

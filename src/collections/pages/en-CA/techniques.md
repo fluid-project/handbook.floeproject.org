@@ -1,6 +1,6 @@
 ---
 title: Techniques
-layout: layouts/techniques
+layout: layouts/sections
 eleventyNavigation:
     parent: Home
     key: Techniques
