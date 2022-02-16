@@ -1,0 +1,17 @@
+{% extends "layouts/root-page.njk" %}
+
+{% block content %}
+    <div class="content">
+        {{ content | safe }}
+    </div>
+
+    {% set sections = collections.all | eleventyNavigation(eleventyNavigation.key) %}
+
+    <ul id="content" class="content sections">
+        {% for section in sections %}
+            {% set sectionTitle = section.title %}
+            {% set sectionChildren = section.children %}
+            {% include "partials/components/section-accordion.njk" %}
+        {% endfor %}
+    </ul>
+{% endblock %}

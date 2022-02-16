@@ -1,0 +1,16 @@
+name: Publish release
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          package-name: handbook.floeproject.org

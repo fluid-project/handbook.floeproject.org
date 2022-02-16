@@ -1,0 +1,13 @@
+{% extends "layouts/root-page.njk" %}
+
+{% block content %}
+    <div class="content">
+        {{ content | safe }}
+    </div>
+
+    <ul>
+    {%- for perspective in collections.all | eleventyNavigation("Perspectives") -%}
+        <li><a href="{{ perspective.url }}">{{ perspective.title }}</li>
+    {%- endfor -%}
+    </ul>
+{% endblock %}
