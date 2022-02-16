@@ -1,62 +1,32 @@
+/*
+Copyright the Inclusive Learning Design Handbook copyright holders.
+
+See the AUTHORS.md file at the top-level directory of this distribution and at
+https://github.com/fluid-project/handbook.floeproject.org/raw/main/AUTHORS.md.
+
+Licensed under the New BSD license. You may not use this file except in compliance with this License.
+
+You may obtain a copy of the New BSD License at
+https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
+*/
+
 "use strict";
 
-const jsdom = require("jsdom");
-const MarkdownIt = require("markdown-it");
-const { JSDOM } = jsdom;
+const {parseHTML} = require("linkedom");
 
-module.exports = (value, outputPath) => {
-    if (outputPath && outputPath.includes(".html")) {
-        const DOM = new JSDOM(value, {
-            resources: "usable"
-        });
+module.exports = function (value, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+        let {document} = parseHTML(value);
+        const articleImages = [...document.querySelectorAll("main article img")];
 
-        const document = DOM.window.document;
-
-        const md = new MarkdownIt({
-            html: true,
-            breaks: true,
-            linkify: true
-        });
-
-        const figures = [
-            ...document.querySelectorAll("article figure")
-        ];
-
-        const captions = [
-            ...document.querySelectorAll("article figcaption")
-        ];
-
-        const links = [
-            ...document.querySelectorAll("article a")
-        ];
-
-        if (captions.length > 0) {
-            captions.forEach(caption => {
-                caption.innerHTML = md.render(caption.innerHTML);
-            });
-        }
-
-        if (figures.length > 0) {
-            figures.forEach(figure => {
-                figure.innerHTML = md.render(figure.innerHTML);
-            });
-        }
-
-        if (links.length > 0) {
-            links.forEach(link => {
-                if (
-                    !link.href.startsWith("/") &&
-					!link.href.startsWith("#") &&
-					(!["localhost", "handbook.floeproject.org"].includes(link.host))
-                ) {
-                    link.setAttribute("rel", "nofollow external");
-                    link.classList.add("link-external");
-                }
+        if (articleImages.length) {
+            articleImages.forEach(image => {
+                // Enable native lazy-loading.
+                image.setAttribute("loading", "lazy");
             });
         }
 
         return "<!DOCTYPE html>\r\n" + document.documentElement.outerHTML;
     }
-
     return value;
 };
