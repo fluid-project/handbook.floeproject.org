@@ -9,4 +9,4 @@ eleventyNavigation:
 ---
 
 This section brings together diverse perspectives to discuss critical topics related to inclusive learning and
-future of education.
+the future of education.
