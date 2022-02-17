@@ -8,5 +8,5 @@ eleventyNavigation:
     order: 2
 ---
 
-This section aims to bring together diverse perspectives to discuss critical topics related to inclusive learning and
+This section brings together diverse perspectives to discuss critical topics related to inclusive learning and
 future of education.
