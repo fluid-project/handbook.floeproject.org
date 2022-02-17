@@ -6,12 +6,5 @@ eleventyNavigation:
     key: Approaches
     order: 3
 ---
-The content of this section is organized in the following areas:
-
-* Best Practices
-* Inclusive Authoring
-* Inclusive Assessment
-* Co-Creation
-
-Each section intends to guide teachers, content creators, web developers, and others in creating more inclusive and
-accessible educational resources. Use the table of contents to navigate the content.
+This section introduces approaches for creating more inclusive and
+accessible learning resources and environments. There are five important principles that have been identified to help guide an ongoing practice of creating accessibile learning resources and environments. Also included in this section are inclusive approaches to creating, assessing, and authoring educational resources. 
