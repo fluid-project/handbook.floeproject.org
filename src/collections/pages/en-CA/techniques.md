@@ -8,4 +8,4 @@ eleventyNavigation:
 ---
 
 This section introduces tools and environments that help authors create more inclusive content. This section also
-provides a list of checkers and tools that can assist authors to evaluate the accessibility of their produced content.
+provides a list of checkers and tools that can assist authors to evaluate the accessibility of content.
