@@ -112,3 +112,4 @@ The ILDH is based on other publicly available software, categorized by license:
 * [eleventy-webpack](https://github.com/clenemt/eleventy-webpack)
 * [Hylia](https://github.com/hankchizljaw/hylia)
 * [Supermaya](https://github.com/MadeByMike/supermaya)
+* [Vanilla JS Toolkit - nextUntil.js](https://vanillajstoolkit.com/helpers/nextuntil/)

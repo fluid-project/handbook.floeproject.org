@@ -1,0 +1,24 @@
+---
+title: Welcome to the Inclusive Learning Design Handbook
+layout: layouts/base
+eleventyNavigation:
+    key: Home
+---
+
+{% block pageHeader %}
+{% endblock %}
+
+{% block content %}
+    <div class="about-intro">
+        {% renderFile "src/collections/pages/en-CA/home-1-intro.md" %}
+    </div>
+    <div class="about-details">
+        {% renderFile "src/collections/pages/en-CA/home-2-details.md" %}
+    </div>
+    <div class="about-get-involved">
+        {% renderFile "src/collections/pages/en-CA/home-3-get-involved.md" %}
+    </div>
+{% endblock %}
+
+{% block sideContent %}
+{% endblock %}

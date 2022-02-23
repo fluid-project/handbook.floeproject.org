@@ -34,6 +34,10 @@
                 </div>
                 {% endblock %}
             </article>
+            <aside>
+                {% block sideContent %}
+                {% endblock %}
+            </aside>
         </main>
         {% include "partials/global/footer.njk" %}
         {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}

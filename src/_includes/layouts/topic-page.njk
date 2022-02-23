@@ -4,6 +4,23 @@
     <header>
         <h1>{{ title }}</h1>
     </header>
-    
+
     {% include "partials/components/breadcrumb.njk" %}
+
+    {# accordion table of contents listing all page headings #}
+{% endblock %}
+
+{% block sideContent %}
+    {{ super() }}
+    <div class="content topic-links">
+        {% if not lang %}
+            {% set lang = config.defaultLanguage %}
+        {% endif %}
+        {% set icon = sideContentHeadings[lang].icon %}
+        {% set sideContentTitle = sideContentHeadings[lang].title %}
+        {% set sideContent %}
+            {% extract_resource_links content, sideContentHeadings, lang %}
+        {% endset %}
+        {% include "partials/components/side-content-item.njk" %}
+    </div>
 {% endblock %}

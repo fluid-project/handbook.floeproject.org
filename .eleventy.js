@@ -15,6 +15,8 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 const fs = require("fs");
 
 const fluidPlugin = require("eleventy-plugin-fluid");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const MarkdownIt = require("markdown-it");
 const navigationPlugin = require("@11ty/eleventy-navigation");
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -25,9 +27,19 @@ const parseTransform = require("./src/transforms/parse-transform.js");
 
 // Import data files
 const siteConfig = require("./src/_data/config.json");
+const getResourceLinks = require("./src/utils/getResourceLinks.js");
 
 module.exports = function (config) {
     config.setUseGitIgnore(false);
+
+    // Filters
+    const md = new MarkdownIt({
+        html: true,
+        quotes: "“”‘’"
+    });
+    config.addFilter("markdown", (content) => {
+        return md.render(content);
+    });
 
     // Transforms
     config.addTransform("htmlmin", htmlMinTransform);
@@ -39,16 +51,21 @@ module.exports = function (config) {
     config.addPassthroughCopy({"src/assets/images": "assets/images"});
 
     // Plugins
+    config.addPlugin(EleventyRenderPlugin);
     config.addPlugin(fluidPlugin);
     config.addPlugin(navigationPlugin);
     config.addPlugin(rssPlugin);
     config.addPlugin(syntaxHighlightPlugin);
 
     // Shortcodes
-    config.addShortcode("svg_sprite", function (sprite, altText, ariaHidden = true) {
+    config.addShortcode("svg_sprite", (sprite, altText, ariaHidden = true) => {
         const altTextMarkup = altText ? `<title>${altText}</title>` : "";
         const ariaHiddenMarkup = ariaHidden ? " aria-hidden=\"true\"" : "";
         return `<svg class="ildh-${sprite}"${ariaHiddenMarkup}>${altTextMarkup}<use xlink:href="/assets/images/sprites.svg#${sprite}"></use></svg>`;
+    });
+
+    config.addShortcode("extract_resource_links", (content, sideContentHeadings, lang) => {
+        return getResourceLinks(content, sideContentHeadings, lang);
     });
 
     // 404
