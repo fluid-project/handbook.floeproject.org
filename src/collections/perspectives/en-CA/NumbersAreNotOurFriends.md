@@ -7,10 +7,13 @@ eleventyNavigation:
 ---
 
 <figure>
-<a name="Figure1"></a>
+
 [![Figure 1. Counting By Bhakti Ziek. — provided by the author, CC BY-SA 4.0”](/assets/images/Counting.jpg)](/assets/images/Counting.jpg)
+
 <figcaption>
+
 *Figure 1:* Counting By Bhakti Ziek. — provided by the author, CC BY-SA 4.0
+
 </figcaption>
 </figure>
 
@@ -19,10 +22,13 @@ With the ascendance of “Big Data” and the proliferation of connected interne
 automatically counting more and more aspects of our life. This leads to more, and larger numbers.
 
 <figure>
-<a name="Figure2"></a>
+
 [![Figure 2. The early skill of finger counting.”](/assets/images/FingerCounting.jpg)](/assets/images/FingerCounting.jpg)
+
 <figcaption>
+
 *Figure 2:* The early skill of finger counting.
+
 </figcaption>
 </figure>
 
@@ -74,10 +80,13 @@ existing instruments of justice rely on being measured and counted. It’s hard 
 unbounded diversity.
 
 <figure>
-<a name="Figure3"></a>
+
 [![Figure 3. Old adding machine keys”](/assets/images/OldAddingMachine.jpg)](/assets/images/OldAddingMachine.jpg)
+
 <figcaption>
+
 *Figure 3:* Old adding machine keys
+
 </figcaption>
 </figure>
 

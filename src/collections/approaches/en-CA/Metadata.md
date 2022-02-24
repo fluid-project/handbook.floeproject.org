@@ -41,17 +41,25 @@ Author interface visual feedback of the accessible features, alternatives, etc. 
 [IMS AccessForAll-compliant metadata](http://imsglobal.org/accessibility/).
 
 <figure>
+
 [![The Open Author accessibility metadata sidebar, showing icons indicating the accessibility features and alternatives
 in the content](/assets/images/A4A_adaptions_sidebar.png)](/assets/images/A4A_adaptions_sidebar.png)
+
 <figcaption>
+
 *Figure 1:* The Open Author accessibility metadata sidebar
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![The Open Author accessibility metadata sidebar, shown in the context of the Open Author interface](/assets/images/A4A_adaptions_sidebar_in_context.png)](/assets/images/A4A_adaptions_sidebar_in_context.png)
+
 <figcaption>
+
 *Figure 2:* The Open Author interface, including the accessibility metadata sidebar
+
 </figcaption>
 </figure>
 
@@ -69,15 +77,23 @@ The current modules embed [Schema.org-compatible attributes](http://schema.org/)
 See a [live demo of the current version of the Floe metadata authoring tools](http://metadata.floeproject.org/demos/metadata/index.html).
 
 <figure>
+
 [![The Floe Metadata authoring demo, showing the metadata sidebar to the right of the editing interface](/assets/images/Metadata-authoring-full.png)](/assets/images/Metadata-authoring-full.png)
+
 <figcaption>
+
 *Figure 3:* Screen from the Floe Metadata authoring demo.
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Screen from the Floe Metadata Authoring Tool](/assets/images/Metadata-generated.png)](/assets/images/Metadata-generated.png)
+
 <figcaption>
+
 *Figure 4:* Screen from the Floe Metadata authoring demo showing the Schema.org metadata attributes and generated HTML.
+
 </figcaption>
 </figure>

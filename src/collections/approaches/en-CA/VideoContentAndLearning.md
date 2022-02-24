@@ -161,10 +161,14 @@ video content.
 ## Case Study: Floe Video Player
 
 <figure>
+
 [![Screenshot of the Floe video player, with captions and interactive transcript on](/assets/images/Videoplayer-captions-transcripts.jpg)](/assets/images/Videoplayer-captions-transcripts.jpg)
+
 <figcaption>
+
 *Figure 1:* A screen capture of the Floe Video Player. The interface shows a video being played with captions overlaid
 the video. While an interactive text transcript follows along on the side.
+
 </figcaption>
 </figure>
 
@@ -191,38 +195,58 @@ See a [demo of the current version of the Floe video player](http://build.fluidp
 (not all features might be implemented)
 
 <figure>
+
 [![Screenshot of the Floe video player, in its default configuration](/assets/images/Videoplayer-default-config.jpg)](/assets/images/Videoplayer-default-config.jpg)
+
 <figcaption>
+
 *Figure 2:* Floe video player, in its default configuration.
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Screenshot of the Floe video player, showing different transcript localization options, as well as the option for
 requesting different transcripts](/assets/images/Videoplayer-options.jpg)](/assets/images/Videoplayer-options.jpg)
+
 <figcaption>
+
 *Figure 3:* Floe video player, showing different transcript localization options, as well as the option for requesting
 different transcripts.
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Screenshot of the Floe video player, with frame and caption preview on hover over the scrub bar](/assets/images/Videoplayer-frame-and-caption.jpg)](/assets/images/Videoplayer-frame-and-caption.jpg)
+
 <figcaption>
+
 *Figure 4:* Floe video player, with frame and caption preview on hover over the scrub bar.
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Screenshot of the Floe video player, with enlarged interface](/assets/images/Videoplayer-enlarged-interface.jpg)](/assets/images/Videoplayer-enlarged-interface.jpg)
+
 <figcaption>
+
 *Figure 5:* Floe video player, with enlarged interface.
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Screenshot of the Floe video player, in yellow-on-black contrast mode](/assets/images/Videoplayer-yellow-on-black.jpg)](/assets/images/Videoplayer-yellow-on-black.jpg)
+
 <figcaption>
+
 *Figure 6:* Floe video player, in yellow-on-black contrast mode.
+
 </figcaption>
 </figure>

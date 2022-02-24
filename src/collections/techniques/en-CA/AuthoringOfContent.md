@@ -35,58 +35,83 @@ the media is initially added without these layers, a gentle status icon and edit
 that such layers are missing, and silently guides them to adding said layers.
 
 <figure>
-<a name="Figure1"></a>
+
 [![Figure 1. Floe/OER Commons authoring environment, editing screen](/assets/images/thumbs/500px-Oer-highfidelity-final_1writescreen.jpg)](/assets/images/Oer-highfidelity-final_1writescreen.jpg)
+
 <figcaption>
+
 *Figure 1:* Floe/OER Commons authoring environment, editing screen.
+
 </figcaption>
 </figure>
 
 <figure>
-<a name="Figure2"></a>
+
 [![Figure 2. Floe/OER Commons authoring environment, metadata input screen](/assets/images/thumbs/500px-Oer-highfidelity-final_7describescreen.jpg)](/assets/images/Oer-highfidelity-final_7describescreen.jpg)
+
 <figcaption>
+
 *Figure 2:* Floe/OER Commons authoring environment, metadata input screen.
+
 </figcaption>
 </figure>
 
 <figure>
-<a name="Figure3"></a>
+
 [![Figure 3. Floe/OER Commons authoring environment, publishing screen](/assets/images/thumbs/500px-Oer-highfidelity-uio_highcontrast.jpg)](/assets/images/Oer-highfidelity-uio_highcontrast.jpg)
+
 <figcaption>
+
 *Figure 3:* Floe/OER Commons authoring environment, publishing screen.
+
 </figcaption>
 </figure>
 
 <figure>
 <a name="Figure4"></a>
+
 [![Figure 4. Floe/OER Commons authoring environment, editing screen in high contrast](/assets/images/thumbs/500px-Oer-highfidelity-uio_highcontrast.jpg)](/assets/images/Oer-highfidelity-uio_highcontrast.jpg)
+
 <figcaption>
+
 *Figure 4:* Floe/OER Commons authoring environment, editing screen in high contrast
+
 </figcaption>
 </figure>
 
 <figure>
 <a name="Figure5"></a>
+
 [![Figure 5. Floe/OER Commons authoring environment, editing screen with enlarged interface elements](/assets/images/thumbs/500px-Oer-highfidelity-uio_largeinterface-writescreen.jpg)](/assets/images/Oer-highfidelity-uio_largeinterface-writescreen.jpg)
+
 <figcaption>
+
 *Figure 5:* Floe/OER Commons authoring environment, editing screen with enlarged interface elements
+
 </figcaption>
 </figure>
 
 <figure>
 <a name="Figure6"></a>
+
 [![Figure 6. Floe/OER Commons authoring environment, video media inserted](/assets/images/thumbs/500px-Oer_video.jpg)](/assets/images/Oer_video.jpg)
+
 <figcaption>
+
 *Figure 6:* Floe/OER Commons authoring environment, video media inserted
+
 </figcaption>
 </figure>
 
 <figure>
 <a name="Figure7"></a>
+
 [![Figure 7. Floe/OER Commons authoring environment, image media inserted](/assets/images/thumbs/500px-Oer_image.jpg)](/assets/images/Oer_image.jpg)
+
 <figcaption>
+
 *Figure 7:* Floe/OER Commons authoring environment, image media inserted
+
 </figcaption>
 </figure>
 
@@ -144,10 +169,13 @@ chart will allow authors to discover the editable elements of the interface, ena
 default pie chart sonification, and provide a preview of what the final pie chart will sound and look like.
 
 <figure>
-<a name="Figure8"></a>
+
 [![The default state for the Floe Chart Authoring Tool](/assets/images/thumbs/400px-Chart-Authoring-Default-State.png)](/assets/images/Chart-Authoring-Default-State.png)
+
 <figcaption>
+
 *Figure 8:* A default pie chart is created when the user first opens the Chart Authoring Tool interface.
+
 </figcaption>
 </figure>
 
@@ -165,11 +193,14 @@ visual legend item, in order to show the connection between the audio and visual
 (shown in figure 9).
 
 <figure>
-<a name="Figure9"></a>
+
 [![The Floe Chart Authoring tool playing the sonification.](/assets/images/thumbs/400px-Chart-Authoring-Playing-Sonification.png)](/assets/images/Chart-Authoring-Playing-Sonification.png)
+
 <figcaption>
+
 *Figure 9:* The chart sonification plays and a black border appears around the relevant segments in the pie chart and
 legend.
+
 </figcaption>
 </figure>
 
@@ -177,10 +208,13 @@ As shown in figure 10, selecting the reset button will erase all the information
 description as well as the data entered in the table.
 
 <figure>
-<a name="Figure10"></a>
+
 [![The Floe Chart Authoring tool in its reset state.](/assets/images/thumbs/400px-Chart-Authoring-Reset-State.png)](/assets/images/Chart-Authoring-Reset-State.png)
+
 <figcaption>
+
 *Figure 10:* When the Chart Authoring Tool is reset, all information and data is erased.
+
 </figcaption>
 </figure>
 
@@ -201,23 +235,35 @@ how to author accessible documents using common office applications.
 ## Comparisons of Authoring Environments
 
 <figure>
+
 [![cnx.org OER authoring environment](/assets/images/thumbs/500px-Connexions-authoring-environment.jpg)](/assets/images/Connexions-authoring-environment.jpg)
+
 <figcaption>
+
 *Figure 11:* cnx.org OER authoring environment
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![MediaWiki authoring environment](/assets/images/thumbs/500px-Wikipedia-authoring-environment.jpg)](/assets/images/Wikipedia-authoring-environment.jpg)
+
 <figcaption>
+
 *Figure 12:* MediaWiki authoring environment.
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Wordpress authoring environment](/assets/images/thumbs/500px-Wordpress-authoring-environment.jpg)](/assets/images/Wordpress-authoring-environment.jpg)
+
 <figcaption>
+
 *Figure 13:* Wordpress authoring environment.
+
 </figcaption>
 </figure>
 

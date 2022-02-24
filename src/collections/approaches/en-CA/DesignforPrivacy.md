@@ -25,11 +25,14 @@ apps—including Facebook, Instagram, Snapchat, and Tinder—in his project, tit
 accept these terms without reading them or abandon the service entirely.
 
 <figure>
-<a name="Figure1"></a>
+
 [![Figure 1. Dima Yarovinsky - I Agree.jpg”](/assets/images/DimaYarovinskyIAgree.jpg)](/assets/images/DimaYarovinskyIAgree.jpg)
+
 <figcaption>
+
 *Figure 1:* Dima Yarovinsky - I Agree: a visualization of lengthy “terms of service” agreements from popular social
 apps including Facebook, Instagram, Snapchat, and Tinder
+
 </figcaption>
 </figure>
 
@@ -46,26 +49,35 @@ data. In addition, the default privacy setting should be set with a high level o
 to sharing information rather than having to opt out.
 
 <figure>
-<a name="Figure2"></a>
+
 [![Figure 2. Story builder tool - introduction screenshots”](/assets/images/PrivacyIntroduction.png)](/assets/images/PrivacyIntroduction.png)
+
 <figcaption>
+
 *Figure 2:* Story builder tool - introduction screenshots
+
 </figcaption>
 </figure>
 
 <figure>
-<a name="Figure3"></a>
+
 [![Figure 3. Story builder tool - internet use screenshots”](/assets/images/PrivacyInternetUse.png)](/assets/images/PrivacyInternetUse.png)
+
 <figcaption>
+
 *Figure 3:* Story builder tool - internet use screenshots
+
 </figcaption>
 </figure>
 
 <figure>
-<a name="Figure4"></a>
+
 [![Figure 4. Story builder tool - privacy options screenshots”](/assets/images/PrivacyOptions.png)](/assets/images/PrivacyOptions.png)
+
 <figcaption>
+
 *Figure 4:* Story builder tool - privacy options screenshots
+
 </figcaption>
 </figure>
 
@@ -83,10 +95,13 @@ to be able to achieve their goals without compromising their privacy. Designing 
 policies that can be accepted by the user in part or in whole can also help.
 
 <figure>
-<a name="Figure5"></a>
+
 [![Figure 5. An example of an advanced privacy preferences tool allowing the custom setting of personal privacy preferences.”](/assets/images/PrivacyPreferencesTool.png)](/assets/images/PrivacyPreferencesTool.png)
+
 <figcaption>
+
 *Figure 5:* An example of an advanced privacy preferences tool allowing the custom setting of personal privacy preferences.
+
 </figcaption>
 </figure>
 

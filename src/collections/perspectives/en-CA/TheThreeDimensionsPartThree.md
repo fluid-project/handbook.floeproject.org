@@ -86,10 +86,13 @@ physical, emotional and cognitive ills that poverty brings. The vicious cycle Ca
 his family, community and society as a whole.
 
 <figure>
-<a name="Figure1"></a>
+
 [![Figure 1. Vicious Cycle of Digital Exclusion”](/assets/images/ViciousCycles-02.png)](/assets/images/ViciousCycles-02.png)
+
 <figcaption>
+
 *Figure 1:* Vicious Cycle of Digital Exclusion
+
 </figcaption>
 </figure>
 
@@ -122,10 +125,13 @@ increasing order of effectiveness:
 </ol>
 
 <figure>
-<a name="Figure2"></a>
+
 [![Figure 2. Virtuous Cycle of Digital Inclusion”](/assets/images/VirtuousCycles-01.png)](/assets/images/VirtuousCycles-01.png)
+
 <figcaption>
+
 *Figure 2:* Virtuous Cycle of Digital Inclusion
+
 </figcaption>
 </figure>
 
@@ -192,10 +198,13 @@ from many perspectives to push the pendulum or balance the platform.
 ## Riding Waves and the Last Frontiers
 
 <figure>
-<a name="Figure3"></a>
+
 [![Figure 3. Waves Crashing on Rocks”](/assets/images/Waves.png)](/assets/images/Waves.png)
+
 <figcaption>
+
 *Figure 3:* Waves Crashing on Rocks
+
 </figcaption>
 </figure>
 
@@ -236,10 +245,13 @@ collaboration and integration. Given the complexity and shifting nature of our w
 dynamic and responsive.
 
 <figure>
-<a name="Figure4"></a>
+
 [![Figure 4. Starlings Over Gretna (Walter Baxter)”](/assets/images/StarlingsOverGretna.png)](/assets/images/StarlingsOverGretna.png)
+
 <figcaption>
+
 *Figure 4:* Starlings Over Gretna (Walter Baxter)
+
 </figcaption>
 </figure>
 
@@ -250,10 +262,13 @@ When we think of coordination we often think of rigid, hierarchical structures w
 responsibilities and blinkered domains of interest. These are most often hostile to people that are different.
 
 <figure>
-<a name="Figure5"></a>
+
 [![Figure 5. Symbiosis in Nature”](/assets/images/SymbiosisInNature.jpg)](/assets/images/SymbiosisInNature.jpg)
+
 <figcaption>
+
 *Figure 5:* Symbiosis in Nature
+
 </figcaption>
 </figure>
 

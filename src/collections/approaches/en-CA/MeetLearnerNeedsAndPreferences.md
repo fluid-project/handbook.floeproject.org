@@ -34,9 +34,13 @@ malleability do not happen to the content proper, but rather to its presentation
 Examples of tweaks and adjustments include text size changes, and colour contrast changes
 
 <figure>
+
 [![Screenshot of learner options text presentation controls](/assets/images/thumbs/720px-Learner-options-text.png)](/assets/images/Learner-options-text.png)
+
 <figcaption>
+
 *Figure 1:* A screen from Learner Options' text presentation controls.
+
 </figcaption>
 </figure>
 
@@ -52,9 +56,13 @@ Examples of supplementation include:
 * Providing descriptions for photos, figures, diagrams, and other images
 
 <figure>
-[![Screenshot of Video player with transcript on](/assets/images/thumbs/400px-Videoplayer-captions-transcripts.jpg)](/assets/images/thumbs/400px-Videoplayer-captions-transcripts.jpg)
+
+[![Screenshot of Video player with transcript on](/assets/images/thumbs/400px-Videoplayer-captions-transcripts.jpg)](/assets/images/Videoplayer-captions-transcripts.jpg)
+
 <figcaption>
+
 *Figure 2:* A screen of the Floe Video player with transcripts displayed
+
 </figcaption>
 </figure>
 
@@ -95,9 +103,13 @@ interface elements (buttons, form fields, drop-downs, etc.); diagrams and figure
 The following list is not exhaustive:
 
 <figure>
+
 [![Mind map of Floe transformation space](/assets/images/thumbs/240px-Floe_transformation_space-large.png)](/assets/images/Floe_transformation_space-large.png)
+
 <figcaption>
+
 *Figure 3:* This diagram shows possible alternatives, transformations and customizations for different kinds of content.
+
 </figcaption>
 </figure>
 
@@ -173,16 +185,24 @@ Some upcoming Learner Options features include:
 Also see: [demo of the current version of Floe Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/).
 
 <figure>
+
 [![Screen shot of Learner Options navigation controls](/assets/images/thumbs/359px-Learner-options-navigation.png)](/assets/images/Learner-options-navigation.png)
+
 <figcaption>
+
 *Figure 4:* Learner Options navigation controls
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Screen shot of Learner Options TTS and content simplification panels](/assets/images/thumbs/357px-Learner-options-extra.png)](/assets/images/Learner-options-extra.png)
+
 <figcaption>
+
 *Figure 5:* Learner Options TTS and content simplification panels
+
 </figcaption>
 </figure>
 

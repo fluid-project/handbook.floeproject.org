@@ -67,10 +67,13 @@ growing and evolving tool sets is the over-application of what we are good at, f
 confidence, and the assumptions to which we are most attached.
 
 <figure>
-<a name="Figure1"></a>
+
 [![Figure 1. Inclusive Design Class called “Unlearning and Questioning”](/assets/images/UnlearningAndQuestioning.png)](/assets/images/UnlearningAndQuestioning.png)
+
 <figcaption>
+
 *Figure 1:* Inclusive Design Class called “Unlearning and Questioning
+
 </figcaption>
 </figure>
 
@@ -105,10 +108,13 @@ The 80/20 rule is apt if you want to serve the status quo. Another way of thinki
 scatter-plot of the needs of any group of people.
 
 <figure>
-<a name="Figure2"></a>
+
 [![Figure 2. A scatterplot of needs of any given population, the distribution is like an exploding star.”](/assets/images/1_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/1_Scatterplot_Graphic_of_Human_Needs-Regions.png)
+
 <figcaption>
+
 *Figure 2:* A scatterplot of needs of any given population, the distribution is like an exploding star.
+
 </figcaption>
 </figure>
 
@@ -133,12 +139,15 @@ might take more time and resources at first, but it will be dynamically resilien
 friendly in that it will give the centre a great deal of room to shift. It will also cost less in the long term.
 
 <figure>
-<a name="Figure3"></a>
+
 [![Figure 3. These two groups show the costs over time for when planning for the centre (where costs increase over
 time) and planning with the edge (where costs decrease over time).”](/assets/images/CostDiagram-02.png)](/assets/images/CostDiagram-02.png)
+
 <figcaption>
+
 *Figure 3:* These two groups show the costs over time for when planning for the centre (where costs increase over
 time) and planning with the edge (where costs decrease over time).
+
 </figcaption>
 </figure>
 
@@ -147,12 +156,15 @@ time) and planning with the edge (where costs decrease over time).
 My advice would be to design with the difficult 20% first.
 
 <figure>
-<a name="Figure4"></a>
+
 [![Figure 4. The scatterplot showing people who have difficulty using the design and people that can’t use the design,
 out at the periphery.”](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/2_Scatterplot_Graphic_of_Human_Needs-Regions.png)
+
 <figcaption>
+
 *Figure 4:* The scatterplot showing people who have difficulty using the design and people that can’t use the design,
 out at the periphery.
+
 </figcaption>
 </figure>
 
@@ -192,12 +204,15 @@ progressive disability fit in the categories we have created to sort people who 
 out to the periphery you get the greater your difference.
 
 <figure>
-<a name="Figure5"></a>
+
 [![Figure 5. Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling
 through the cracks.”](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)](/assets/images/3_Scatterplot_Graphic_of_Human_Needs-Regions.png)
+
 <figcaption>
+
 *Figure 5:* Scatterplot of needs showing how we capture categories of needs, but leave people at the edge and falling
 through the cracks.
+
 </figcaption>
 </figure>
 

@@ -50,10 +50,14 @@ Learning needs that affect learning can include:
 * technical, financial or environmental constraints.
 
 <figure>
+
 [![Floe concept design mindmap](/assets/images/thumbs/400px-Floe_concept_design_mindmap.png)](/assets/images/Floe_concept_design_mindmap.png)
+
 <figcaption>
+
 *Figure 1:* Floe concept design mindmap illustrates the many different ideas and parts which work together to enable a
 one-size-fits-one education.
+
 </figcaption>
 </figure>
 
@@ -100,9 +104,13 @@ To achieve this requires:
 That is the work that Floe focuses on. To further understand what Floe is working on, visit the [Floe Scenario narrative](https://wiki.fluidproject.org/x/lYlnAQ).
 
 <figure>
+
 [![Screenshot of the Fluid Studios website](/assets/images/Fluid-studios.png)](/assets/images/Fluid-studios.png)
+
 <figcaption>
+
 *Figure 2:* A screen capture of the Fluid Studios website.
+
 </figcaption>
 </figure>
 

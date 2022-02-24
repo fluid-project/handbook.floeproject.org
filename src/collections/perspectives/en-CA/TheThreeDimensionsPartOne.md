@@ -23,10 +23,13 @@ including people that can’t use or have difficulty using the current designs.
 3. Realize that you are designing in a complex adaptive system.
 
 <figure>
-<a name="Figure1"></a>
+
 [![Figure 1. Handprints”](/assets/images/Handprints.jpg)](/assets/images/Handprints.jpg)
+
 <figcaption>
+
 *Figure 1:* Handprints
+
 </figcaption>
 </figure>
 
@@ -36,10 +39,13 @@ increasingly connected context. It doesn’t lay out testable criteria, or an or
 is about diversity, variability and complexity.
 
 <figure>
-<a name="Figure2"></a>
+
 [![Figure 2. The framework is a trellis that supports organic growth”](/assets/images/Trellis.jpg)](/assets/images/Trellis.jpg)
+
 <figcaption>
+
 *Figure 2:* The framework is a trellis that supports organic growth
+
 </figcaption>
 </figure>
 
@@ -59,10 +65,13 @@ including people that can’t use or have difficulty using the current designs.
 3. Realize that you are designing in a complex adaptive system.
 
 <figure>
-<a name="Figure3"></a>
+
 [![Figure 3. The three dimensions of inclusive design.”](/assets/images/InclusiveDesignThreeDimensions.png)](/assets/images/InclusiveDesignThreeDimensions.png)
+
 <figcaption>
+
 *Figure 3:* The three dimensions of inclusive design.
+
 </figcaption>
 </figure>
 
@@ -135,10 +144,13 @@ equilibrium and can resist the swing of the pendulum between two extremes. This 
 swings too far into any extreme direction.
 
 <figure>
-<a name="Figure4"></a>
+
 [![Figure 4. Pendulum Swing”](/assets/images/PendulumSwing.png)](/assets/images/PendulumSwing.png)
+
 <figcaption>
+
 *Figure 4:* Pendulum Swing.
+
 </figcaption>
 </figure>
 
@@ -239,10 +251,13 @@ personalization builds bridges across differences and reduces fragmentation.
 ## Pooling, Sharing and Matching Needs Over a Network
 
 <figure>
-<a name="Figure5"></a>
+
 [![Figure 5. The use of a network platform to address our diverse unmet needs”](/assets/images/NetworkPlatform.png)](/assets/images/NetworkPlatform.png)
+
 <figcaption>
+
 *Figure 5:* The use of a network platform to address our diverse unmet needs
+
 </figcaption>
 </figure>
 

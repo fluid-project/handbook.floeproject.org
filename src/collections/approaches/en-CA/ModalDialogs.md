@@ -17,10 +17,14 @@ Typically these are windows or "pop-ups" which block any further interaction unt
 selected.
 
 <figure>
+
 [![Screen capture of a modal login dialog.](/assets/images/thumbs/400px-Modal-Dialog-example.jpg)](/assets/images/Modal-Dialog-example.jpg)
+
 <figcaption>
+
 *Figure 1:* A modal dialog is a child window that blocks all interaction with other content until the dialog is
 dismissed. Source: http://www.shop.ca/
+
 </figcaption>
 </figure>
 
@@ -39,6 +43,8 @@ The way a dialog is implemented can also cause problems by:
 3. creating undesired results when the browser's Back button is used (i.e. does the back button reverse the dialog, or
 does it go backward in browser history?), and
 4. having poor accessibility and support for assistive technologies.
+
+<a name="Why_are_Modal_Interactions_Typically_Inaccessible?"></a>
 
 ## Why are Modal Interactions Typically Inaccessible?
 
@@ -61,15 +67,19 @@ path while maintaining their context. For example, an image gallery lightbox is 
 interaction.
 
 <figure>
+
 [![Screen capture of a lightbox.](/assets/images/thumbs/300px-Modal-Dialog-lightbox.png)](/assets/images/Modal-Dialog-lightbox.png)
+
 <figcaption>
+
 *Figure 2:* Screen capture of a lightbox dialog displaying a larger image amoung smaller thumbnails of images.
 Source: http://fancybox.net/
+
 </figcaption>
 </figure>
 
 Like modal dialogs, modal containers should be used cautiously because of the accessibility issues they may cause (see
-[Why are Modal Interactions Typically Inaccessible?](#Why_are_Modal_Interactions_Typically Inaccessible?)).
+[Why are Modal Interactions Typically Inaccessible?](#Why_are_Modal_Interactions_Typically_Inaccessible?)).
 
 Generally speaking, if a lot of content or interaction is being done through a modal interaction, consider implementing
 the interaction outside of a modal and on its own web page. This helps make it clear to all users what the interaction
@@ -148,9 +158,13 @@ If it is not necessary to force the user along an interaction path,
 then consider using a collapsing menu, or an expandable container like an accordion or drawer.
 
 <figure>
+
 ![Screen capture of an accordion panel.](/assets/images/Modal-Dialog-accordion.png)
+
 <figcaption>
+
 *Figure 3:* An accordion panel allows content to be visually hidden and shown on-demand. Source: https://jqueryui.com/accordion/
+
 </figcaption>
 </figure>
 

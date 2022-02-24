@@ -58,9 +58,13 @@ Oftentimes, to offer increased readability, transcripts provide additional conte
 subtitles do not (e.g., paragraphs, headings, etc.).
 
 <figure>
+
 [![Audio player with captions and structured transcript](/assets/images/thumbs/500px-Audio_player_design-captions-transcript.png)](/assets/images/Audio_player_design-captions-transcript.png)
+
 <figcaption>
+
 *Figure 1:* Audio player with captions and structured transcript.
+
 </figcaption>
 </figure>
 
@@ -154,22 +158,34 @@ There are also future plans for audio annotation, structured audio (dividing the
 and bookmarks.
 
 <figure>
+
 [![Floe audio player design showing captions and caption preview on scrub bar hover](/assets/images/Audio_player_design-caption-preview.png)](/assets/images/Audio_player_design-caption-preview.png)
+
 <figcaption>
+
 *Figure 2:* Floe audio player design showing captions and caption preview on scrub bar hover
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Floe audio player design showing enlarged captions and interface for readability](/assets/images/Audio_player_design-enlarged-captions.png)](/assets/images/Audio_player_design-enlarged-captions.png)
+
 <figcaption>
+
 *Figure 3:* Floe audio player design showing enlarged captions and interface for readability
+
 </figcaption>
 </figure>
 
 <figure>
+
 [![Floe audio player design showing an interactive, structured transcript](/assets/images/Audio_player_design-interactive-transcript.png)](/assets/images/Audio_player_design-interactive-transcript.png)
+
 <figcaption>
+
 *Figure 4:* Floe audio player design showing an interactive, structured transcript
+
 </figcaption>
 </figure>
