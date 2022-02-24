@@ -23,7 +23,7 @@ selected.
 <figcaption>
 
 *Figure 1:* A modal dialog is a child window that blocks all interaction with other content until the dialog is
-dismissed. Source: http://www.shop.ca/
+dismissed. Source: <http://www.shop.ca/>
 
 </figcaption>
 </figure>
@@ -73,7 +73,7 @@ interaction.
 <figcaption>
 
 *Figure 2:* Screen capture of a lightbox dialog displaying a larger image amoung smaller thumbnails of images.
-Source: http://fancybox.net/
+Source: <http://fancybox.net/>
 
 </figcaption>
 </figure>
@@ -163,7 +163,7 @@ then consider using a collapsing menu, or an expandable container like an accord
 
 <figcaption>
 
-*Figure 3:* An accordion panel allows content to be visually hidden and shown on-demand. Source: https://jqueryui.com/accordion/
+*Figure 3:* An accordion panel allows content to be visually hidden and shown on-demand. Source: <https://jqueryui.com/accordion/>
 
 </figcaption>
 </figure>

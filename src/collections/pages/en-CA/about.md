@@ -31,9 +31,10 @@ In the spirit of OER, if you use this handbook you are also a contributor to thi
 
 ## Why is this important?
 
-Learners learn in different ways depending on personal need, preferences, and ever changing contexts. The goal of education is to support learners in reaching their full potential. While part
-of the educational process is to challenge learners to facilitate their growth, many learners will experience significant barriers
-to accessing, consuming, and interacting with learning resources.
+Learners learn in different ways depending on personal need, preferences, and ever changing contexts. The goal of education
+is to support learners in reaching their full potential. While part of the educational process is to challenge learners
+to facilitate their growth, many learners will experience significant barriers to accessing, consuming, and interacting
+with learning resources.
 
 And the impact is profound; the health and prosperity of a society is in large part dependent on equal access to
 educational opportunities. Inequity and exclusion have devastating social and economic impacts on society as a whole

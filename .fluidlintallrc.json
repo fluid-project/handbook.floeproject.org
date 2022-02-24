@@ -1,11 +1,4 @@
 {
-    "eslint": {
-        "js": {
-            "includes": ["./*.js", "./.eleventy.js", "src/**/*.js", "!src/lib/**/*.js"]
-        },
-        "json": ["./*.json", ".eslintrc.json", ".stylelintrc.json", "./src/**/*.json"]
-
-    },
     "lintspaces": {
         "newlines": {
             "excludes": ["./src/assets/fonts/*.ttf"]
@@ -15,6 +8,10 @@
         }
     },
     "markdownlint": {
-        "excludes": ["./src/collections/**/*.md", "./CHANGELOG.md"]
+        "includes": ["./.github/**/*.md", "./CHANGELOG.md"],
+        "excludes": [
+            "./.github/pull_request_template.md",
+            "./src/collections/pages/en-CA/toolkits-and-guides.md"
+        ]
     }
 }
