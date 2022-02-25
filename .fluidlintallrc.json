@@ -11,6 +11,9 @@
         "includes": ["./.github/**/*.md", "./CHANGELOG.md"],
         "excludes": [
             "./.github/pull_request_template.md",
+            "./src/collections/pages/en-CA/footer-context.md",
+            "./src/collections/pages/en-CA/footer-credits.md",
+            "./src/collections/pages/en-CA/footer-tagline.md",
             "./src/collections/pages/en-CA/toolkits-and-guides.md"
         ]
     }
