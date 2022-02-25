@@ -101,7 +101,7 @@ additional benefit of being indexable and searchable, improving the discoverabil
 
 Floe examples:
 
-* [Authoring of content](AuthoringOfContent.html)
+* [Authoring of content](/AuthoringOfContent.html)
 
 ## Separate text that can be read in the interface from underlying code
 

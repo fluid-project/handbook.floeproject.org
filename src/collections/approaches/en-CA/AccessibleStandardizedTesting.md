@@ -20,7 +20,7 @@ be considered and explored.
 
 ## Topics
 
-* [General Guidelines](GeneralGuidelines.html)
-* [Functional Considerations](FunctionalConsiderations.html)
-* [Standardized Test Types](StandardizedTestTypes.html)
-* [Standardized Test Tools](StandardizedTestTools.html)
+* [General Guidelines](/GeneralGuidelines.html)
+* [Functional Considerations](/FunctionalConsiderations.html)
+* [Standardized Test Types](/StandardizedTestTypes.html)
+* [Standardized Test Tools](/StandardizedTestTools.html)

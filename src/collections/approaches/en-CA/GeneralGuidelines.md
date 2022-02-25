@@ -83,5 +83,5 @@ the user, unless it would jeopardize the validity of the test.
 * [Accessible Standardized Testing](/AccessibleStandardizedTesting.html)
 * [General Guidelines](/GeneralGuidelines.html)
 * [Functional Considerations](/FunctionalConsiderations.html)
-* [Standardized Test Types](StandardizedTestTypes.html)
+* [Standardized Test Types](/StandardizedTestTypes.html)
 * [Standardized Test Tools](/StandardizedTestTools.html)

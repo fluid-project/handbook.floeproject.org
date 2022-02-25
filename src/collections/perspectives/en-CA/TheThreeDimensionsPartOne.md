@@ -10,8 +10,8 @@ This work "_The Three Dimensions of Inclusive Design: Part One_", is a reproduct
 "[_The Three Dimensions of Inclusive Design: Part One_](https://medium.com/fwd50/the-three-dimensions-of-inclusive-design-part-one-103cad1ffdc2)"
 by Jutta Treviranus, used under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). This is the first part
 of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and
-increasingly connected world. [Part Two can be found here](TheThreeDimensionsPartTwo.html).
-[Part Three can be found here](TheThreeDimensionsPartThree.html).
+increasingly connected world. [Part Two can be found here](/TheThreeDimensionsPartTwo.html).
+[Part Three can be found here](/TheThreeDimensionsPartThree.html).
 
 The three dimensions of the framework are:
 
