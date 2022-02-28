@@ -4,3 +4,23 @@ $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+
+/** Colors **/
+
+$darkRed: #8d2a2d; // this colour has several uses
+
+$headingColour: var(--fl-fgColor, $darkRed);
+$footerColour: var(--fl-fgColor, #fff);
+$footerBGColour: var(--fl-bgColor, #153647);
+$footerLinkColour: var(--fl-linkColor, var(--fl-fgColor, #cfca6f));
+$rootContentBackgroundColour: var(--fl-bgColor, #e7f0f3);
+$topicContentBackgroundColour: var(--fl-bgColor, #f9faf6);
+$menuExpandedColour: var(--fl-fgColor, #000);
+$menuExpandedBGColour: var(--fl-bgColor, #e5eaeb);
+$menuExpandedSelectedColour: var(--fl-bgColor, #fff);
+$menuExpandedSelectedBGColour: var(--fl-fgColor, $darkRed);
+$menuButtonStrokeColour: var(--fl-fgColor, $darkRed);
+$sectionBGColour: var(--fl-bgColor, #e8f3e7);
+$sectionBorderColour: var(--fl-fgColor, #bcdca9);
+$toolkitsBorderColour: var(--fl-bgColor, #0b719e);
+$sideContentHeadingColour: var(--fl-fgColor, #095a7d);
