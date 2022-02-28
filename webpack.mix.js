@@ -22,8 +22,8 @@ mix.setPublicPath("dist/assets");
 mix.js("./src/assets/scripts/app.js", "dist/assets/scripts");
 mix.js("./src/assets/scripts/matomo.js", "dist/assets/scripts");
 
-// Process CSS with PostCSS.
-mix.postCss("./src/assets/styles/app.css", "dist/assets/styles");
+// Process Sass stylesheets
+mix.sass("./src/assets/styles/main.scss", "dist/assets/styles");
 
 // Don't modify stylesheet url() functions.
 mix.options({
