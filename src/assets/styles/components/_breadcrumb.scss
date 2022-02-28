@@ -1,0 +1,13 @@
+.breadcrumb__list {
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumb__item {
+    display: inline-block;
+}
+
+.breadcrumb__item + li::before {
+    content: ">";
+    padding: 0 0.6rem;
+}

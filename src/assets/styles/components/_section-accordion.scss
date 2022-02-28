@@ -1,0 +1,97 @@
+.section__heading {
+    line-height: calc(var(--fl-lineSpace-factor, 1) * 0.8);
+    margin: 0;
+}
+
+.section__toggle {
+    align-items: stretch;
+    background-color: var(--fl-buttonBgColor, $sectionBGColour);
+    border: 0.0625rem dashed var(--fl-buttonBgColor, $sectionBorderColour);
+    color: var(--fl-buttonFgColor, $mainColour);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.375rem;
+    justify-content: space-between;
+    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.45);
+    margin-block-end: 1.25rem;
+    padding: 0;
+    width: 100%;
+
+    &:focus,
+    &:hover {
+        outline-color: var(--fl-buttonFgColor);
+    }
+}
+
+.section__toggle--expanded {
+    border: 0.0625rem solid var(--fl-buttonBgColor, $sectionBorderColour);
+}
+
+.section__title {
+    border: 0.625rem solid var(--fl-buttonBgColor, $sectionBGColour);
+    border-inline-start: none;
+    padding: 0.25rem 1rem 0.25rem 0.5rem;
+    text-align: start;
+    width: 100%;
+}
+
+.section__toggle--expanded .section__title {
+    border: 0.625rem solid var(--fl-buttonFgColor, $sectionBorderColour);
+    border-inline-start: none;
+    font-weight: var(--fl-enhance-font-weight, 700);
+}
+
+.section__icon {
+    align-items: center;
+    background-color: var(--fl-buttonFgColor, $sectionBorderColour);
+    display: flex;
+    font-size: var(--fl-enhance-font-size, 1.125rem);
+    font-weight: var(--fl-enhance-font-weight, 800);
+    justify-content: center;
+    min-width: 3rem;
+
+    svg {
+        // TODO: Move this colour-setting to page-specific files
+        //       so the rules can be re-used by topic pages'
+        //       table of contents accordions
+        --icon-arrowColor: var(--fl-buttonBgColor, #fff);
+
+        color: var(--fl-bgColor, $mainColour);
+        fill: none;
+        height: 1.375rem;
+        width: 1rem;
+    }
+}
+
+.section__toggle--expanded .section__icon svg {
+    transform: rotate(90deg);
+}
+
+.section__content {
+    display: none;
+}
+
+.section__content--show .section__content {
+    display: block;
+    list-style: none;
+    margin: 0;
+    margin-block-end: 2.5rem;
+    padding: 0;
+}
+
+.section__subsection {
+    font-size: var(--fl-enhance-font-size, 1.125rem);
+    margin-block-end: 1rem;
+}
+
+.section__subsection-link {
+    padding-block-end: 0.15rem;
+}
+
+.section__subsection > p:first-child a {
+    font-size: var(--fl-enhance-font-size, 1.25rem);
+    font-weight: var(--fl-enhance-font-weight, 700);
+    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.3);
+    margin-block: 1.5rem 1rem;
+    text-underline-position: from-font;
+}

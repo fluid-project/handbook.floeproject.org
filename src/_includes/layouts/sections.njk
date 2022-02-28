@@ -10,7 +10,7 @@
     <ul id="content" class="content sections">
         {% for section in sections %}
             {% set sectionTitle = section.title %}
-            {% set sectionChildren = section.children %}
+            {% set subsections = section.children %}
             {% include "partials/components/section-accordion.njk" %}
         {% endfor %}
     </ul>

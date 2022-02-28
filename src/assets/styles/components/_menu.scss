@@ -1,0 +1,149 @@
+.menu__button {
+    align-items: center;
+    align-self: flex-end;
+    background-color: var(--fl-buttonBgColor, inherit);
+    border: none;
+    color: var(--fl-buttonFgColor, currentColor);
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+}
+
+.menu__button svg {
+    fill: var(--headerFooterColor);
+    height: 100%;
+    width: 1.7rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+.menu__list {
+    background-color: var(--menuExpandedBGColor);
+    border-bottom: 0.4rem solid var(--menuExpandedColor);
+    font-family: var(--fl-font-family, OpenSans, Arial, Helvetica, sans-serif);
+    inset-inline-start: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 6.32rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu__item {
+    border-bottom: 0.1rem solid var(--menuExpandedColor);
+}
+
+.menu__link {
+    align-items: center;
+    background-color: var(--fl-bgColor, var(--menuExpandedBGColor));
+    color: var(--fl-linkColor, var(--menuExpandedColor));
+    display: flex;
+    height: 2.7rem;
+    padding-inline-start: 1.875rem;
+    text-decoration: underline;
+    width: 100%;
+
+    &::before {
+        content: " ";
+        display: inline-block;
+        padding-inline-end: 0.4rem;
+        width: 1ch;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: var(--fl-linkColor, var(--menuExpandedColor));
+        color: var(--fl-bgColor, var(--menuExpandedBGColor));
+        outline-color: transparent;
+    }
+
+    &[aria-current="page"],
+    &[aria-current="true"] {
+        font-weight: var(--fl-enhance-font-weight, bolder);
+        text-decoration: none;
+    }
+
+    &[aria-current="page"]::before,
+    &[aria-current="true"]::before {
+        content: "\2713";
+    }
+}
+
+// TODO: BEM these rules up or put them in a _shame.scss file
+.menu > [aria-expanded="true"] {
+    background-color: var(--fl-buttonFgColor, var(--menuExpandedBGColor));
+    color: var(--fl-buttonBgColor, var(--menuExpandedColor));
+}
+
+.menu > [aria-expanded="true"] svg {
+    fill: currentColor;
+}
+
+.menu > [aria-expanded="false"] + .menu__list {
+    display: none;
+}
+
+// @include breakpoint-up(lg) {
+    .menu__button {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .menu__list {
+        background-color: var(--headerFooterBGColor);
+        border-bottom: none;
+        display: block !important; /* Need important to beat specificy of narrow screen menu style */
+        margin: 1rem 0;
+        position: initial;
+        width: auto;
+    }
+
+    .menu__item {
+        border-bottom: none;
+        display: inline-block;
+        padding: 0;
+        padding-inline-end: 2rem;
+    }
+
+    .menu__link {
+        background-color: inherit;
+        color: var(--fl-linkColor, currentColor);
+        font-size: 1.125rem;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            outline-color: var(--fl-linkColor, var(--menuExpandedBGColor));
+        }
+
+        &::before {
+            content: none;
+        }
+
+        &[aria-current="page"],
+        &[aria-current="true"] {
+            border-bottom: 0.625rem solid currentColor;
+            font-weight: var(--fl-enhance-font-weight, normal);
+            margin-left: 0;
+        }
+
+        &[aria-current="page"]::before,
+        &[aria-current="true"]::before {
+            content: none;
+        }
+    }
+// }
