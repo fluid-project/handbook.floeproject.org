@@ -6,7 +6,7 @@
 .section__toggle {
     align-items: stretch;
     background-color: var(--fl-buttonBgColor, $sectionBGColour);
-    border: 0.0625rem dashed var(--fl-buttonBgColor, $sectionBorderColour);
+    border: none;
     color: var(--fl-buttonFgColor, $mainColour);
     cursor: pointer;
     display: flex;
@@ -23,22 +23,19 @@
     }
 }
 
-.section__toggle--expanded {
-    border: 0.0625rem solid var(--fl-buttonBgColor, $sectionBorderColour);
-}
-
 .section__title {
-    border: 0.625rem solid var(--fl-buttonBgColor, $sectionBGColour);
+    border: 0.0625rem dashed var(--fl-buttonBgColor, $sectionBorderColour);
     border-inline-start: none;
-    padding: 0.25rem 1rem 0.25rem 0.5rem;
+    padding: 1rem 1rem 1rem 1.25rem;
     text-align: start;
     width: 100%;
 }
 
 .section__toggle--expanded .section__title {
-    border: 0.625rem solid var(--fl-buttonFgColor, $sectionBorderColour);
+    border: 0.35rem solid var(--fl-buttonFgColor, $sectionBorderColour);
     border-inline-start: none;
     font-weight: var(--fl-enhance-font-weight, 700);
+    padding: 0.7125rem 1rem 0.7125rem 1.25rem;
 }
 
 .section__icon {
@@ -48,18 +45,18 @@
     font-size: var(--fl-enhance-font-size, 1.125rem);
     font-weight: var(--fl-enhance-font-weight, 800);
     justify-content: center;
-    min-width: 3rem;
+    min-width: 3.75rem;
 
     svg {
         // TODO: Move this colour-setting to page-specific files
         //       so the rules can be re-used by topic pages'
         //       table of contents accordions
-        --icon-arrowColor: var(--fl-buttonBgColor, #fff);
+        --icon-arrowColour: var(--fl-buttonBgColor, #fff);
 
         color: var(--fl-bgColor, $mainColour);
         fill: none;
-        height: 1.375rem;
-        width: 1rem;
+        height: 2rem;
+        width: 1.75rem;
     }
 }
 

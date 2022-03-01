@@ -90,7 +90,7 @@
     display: none;
 }
 
-// @include breakpoint-up(lg) {
+@include breakpoint-up(lg) {
     .menu__button {
         display: none;
     }
@@ -146,4 +146,4 @@
             content: none;
         }
     }
-// }
+}
