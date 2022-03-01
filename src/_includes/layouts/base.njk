@@ -20,8 +20,8 @@
     <body class="{{ bodyClass if bodyClass else "page" }}">
         {% uioTemplate %}
         {% include "partials/global/header.njk" %}
-        <main>
-            <article>
+        <main class="main">
+            <article class="main-content">
                 {% block pageHeader %}
                 <header>
                     <h1>{{ title }}</h1>
@@ -34,7 +34,7 @@
                 </div>
                 {% endblock %}
             </article>
-            <aside>
+            <aside class="side-content">
                 {% block sideContent %}
                 {% endblock %}
             </aside>

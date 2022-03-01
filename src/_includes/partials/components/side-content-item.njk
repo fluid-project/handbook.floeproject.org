@@ -1,5 +1,9 @@
-<div class="side-content-{{ sideContentTitle | slugify }}">
-    {% svg_sprite icon %}
-    <h2>{{ sideContentTitle }}</h2>
-    {{ sideContent | safe }}
+<div class="side-content__item">
+    <div class="side-content__icon">
+        {% svg_sprite icon %}
+    </div>
+    <div class="side-content__content">
+        <h2 class="side-content__title">{{ sideContentTitle }}</h2>
+        {{ sideContent | safe }}
+    </div>
 </div>

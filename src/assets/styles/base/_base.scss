@@ -2,3 +2,34 @@
 
 @import "reset";
 @import "typography";
+
+.main-content {
+    img {
+        max-width: 100%;
+    }
+}
+
+.side-content {
+    margin-block-start: 2rem;
+    padding-inline: 2rem;
+}
+
+@include breakpoint-up(md) {
+    // Site-wide rules
+    .main {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-inline: auto;
+        max-width: $max-content-width;
+    }
+
+    .main-content {
+        flex: 6;
+    }
+
+    .side-content {
+        flex: 4;
+        margin-block-start: 10rem;
+    }
+}

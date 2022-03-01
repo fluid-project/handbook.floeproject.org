@@ -14,6 +14,7 @@ $footerBGColour: var(--fl-bgColor, #153647);
 $footerLinkColour: var(--fl-linkColor, var(--fl-fgColor, #cfca6f));
 $rootContentBackgroundColour: var(--fl-bgColor, #e7f0f3);
 $topicContentBackgroundColour: var(--fl-bgColor, #f9faf6);
+$menuTitleColour: $darkRed;
 $menuExpandedColour: var(--fl-fgColor, #000);
 $menuExpandedBGColour: var(--fl-bgColor, #e5eaeb);
 $menuExpandedSelectedColour: var(--fl-bgColor, #fff);
@@ -22,7 +23,13 @@ $menuButtonStrokeColour: $darkRed;
 $sectionBGColour: var(--fl-bgColor, #fff);
 $sectionBorderColour: $darkRed;
 $toolkitsBorderColour: var(--fl-bgColor, #0b719e);
-$sideContentHeadingColour: var(--fl-fgColor, #095a7d);
+$toolkitsHeadingColour: var(--fl-fgColor, #095a7d);
+$topicLinksHeadingColour: $darkRed;
+$sideContentLinkColour: var(--fl-fgColor, #2418a8);
+
+/** Dimensions **/
+$max-content-width: 50rem;
+$home-content-width: 69rem; // used by the Home page only, consider not using a variablea
 
 // Responsive Breakpoints, shamelessy cribbed from Bootstrap.
 // @see https://github.com/twbs/bootstrap/blob/master/scss/mixins/_breakpoints.scss

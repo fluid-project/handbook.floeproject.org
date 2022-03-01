@@ -7,86 +7,83 @@
     display: flex;
     height: 2rem;
     justify-content: center;
+    margin-block-end: 1rem;
+    margin-inline-end: 1rem;
+
+    &:focus,
+    &:hover {
+        outline: $menuButtonStrokeColour solid 0.25rem;
+    }
 }
 
 .menu__button svg {
-    fill: var(--headerFooterColor);
     height: 100%;
-    width: 1.7rem;
+    width: 2rem;
+}
+
+.menu__title {
+    color: $menuTitleColour;
+    font-family: "Literata", serif;
+    font-size: 2.875rem;
+    font-weight: 800;
+    line-height: 1.875rem;
+    padding-inline-start: 1rem;
+}
+
+.menu__name {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin-inline-start: 0.5rem;
+    text-transform: lowercase;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0.5rem;
+    position: relative;
 }
 
-.menu__list {
-    background-color: var(--menuExpandedBGColor);
-    border-bottom: 0.4rem solid var(--menuExpandedColor);
-    font-family: var(--fl-font-family, OpenSans, Arial, Helvetica, sans-serif);
-    inset-inline-start: 0;
-    list-style: none;
+.menu__panel {
+    background-color: $menuExpandedBGColour;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 6.32rem;
+    top: 3rem;
     width: 100%;
     z-index: 2;
 }
 
-.menu__item {
-    border-bottom: 0.1rem solid var(--menuExpandedColor);
+.menu__list {
+    list-style: none;
+    padding-inline-start: 0;
 }
 
 .menu__link {
     align-items: center;
-    background-color: var(--fl-bgColor, var(--menuExpandedBGColor));
-    color: var(--fl-linkColor, var(--menuExpandedColor));
+    background-color: var(--fl-bgColor, $menuExpandedBGColour);
+    color: var(--fl-linkColor, $menuExpandedColour);
     display: flex;
+    font-size: 1.5rem;
+    font-weight: var(--fl-enhance-font-weight, 500);
     height: 2.7rem;
-    padding-inline-start: 1.875rem;
-    text-decoration: underline;
-    width: 100%;
-
-    &::before {
-        content: " ";
-        display: inline-block;
-        padding-inline-end: 0.4rem;
-        width: 1ch;
-    }
-
-    &:focus,
-    &:hover {
-        background-color: var(--fl-linkColor, var(--menuExpandedColor));
-        color: var(--fl-bgColor, var(--menuExpandedBGColor));
-        outline-color: transparent;
-    }
+    line-height: 1.875rem;
+    padding-inline-start: 2rem;
+    text-decoration: none;
 
     &[aria-current="page"],
-    &[aria-current="true"] {
-        font-weight: var(--fl-enhance-font-weight, bolder);
-        text-decoration: none;
-    }
-
-    &[aria-current="page"]::before,
-    &[aria-current="true"]::before {
-        content: "\2713";
+    &[aria-current="true"],
+    &:focus,
+    &:hover {
+        background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour);
+        color: var(--fl-bgColor, $menuExpandedSelectedColour);
+        outline-color: transparent;
     }
 }
 
-// TODO: BEM these rules up or put them in a _shame.scss file
-.menu > [aria-expanded="true"] {
-    background-color: var(--fl-buttonFgColor, var(--menuExpandedBGColor));
-    color: var(--fl-buttonBgColor, var(--menuExpandedColor));
-}
-
-.menu > [aria-expanded="true"] svg {
-    fill: currentColor;
-}
-
-.menu > [aria-expanded="false"] + .menu__list {
+.menu > [aria-expanded="false"] + .menu__panel {
     display: none;
 }
 
@@ -101,13 +98,15 @@
         margin: 0;
     }
 
-    .menu__list {
-        background-color: var(--headerFooterBGColor);
-        border-bottom: none;
+    .menu__panel {
+        background-color: inherit;
         display: block !important; /* Need important to beat specificy of narrow screen menu style */
-        margin: 1rem 0;
         position: initial;
         width: auto;
+    }
+
+    .menu__title {
+        display: none;
     }
 
     .menu__item {
@@ -127,23 +126,17 @@
 
         &:focus,
         &:hover {
-            outline-color: var(--fl-linkColor, var(--menuExpandedBGColor));
-        }
-
-        &::before {
-            content: none;
+            background-color: inherit;
+            color: inherit;
+            outline-color: var(--fl-linkColor, $menuExpandedBGColour) solid 0.25rem;
         }
 
         &[aria-current="page"],
         &[aria-current="true"] {
-            border-bottom: 0.625rem solid currentColor;
-            font-weight: var(--fl-enhance-font-weight, normal);
+            background-color: inherit;
+            border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
+            color: var(--fl-linkColor, currentColor);
             margin-left: 0;
-        }
-
-        &[aria-current="page"]::before,
-        &[aria-current="true"]::before {
-            content: none;
         }
     }
 }

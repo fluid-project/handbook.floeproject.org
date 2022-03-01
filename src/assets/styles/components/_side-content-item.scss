@@ -1,0 +1,54 @@
+// TODO: Review these rules and associated markup, make them
+//       comply more closely with BEM if possible/practical.
+//       There's plenty of repetition and parallel structure,
+//       so perhaps a mixin is warranted.
+
+.side-content__content {
+    a {
+        color: $sideContentLinkColour;
+    }
+}
+
+.side-content__topic-links {
+    color: $topicLinksHeadingColour;
+
+    .side-content__icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .side-content__content {
+        // to hide the links section altogether when it's empty
+        h2:only-child {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
+}
+
+.side-content__toolkits {
+    color: $toolkitsHeadingColour;
+
+    .side-content__icon {
+        background-color: $toolkitsBorderColour;
+        padding: 1rem;
+
+        svg {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+
+    .side-content__content {
+        border: 1px solid $toolkitsBorderColour;
+        border-top: none;
+        padding: 1.5rem 2rem 2rem 2rem;
+
+        ul {
+            padding-inline-start: 1rem;
+        }
+    }
+}
