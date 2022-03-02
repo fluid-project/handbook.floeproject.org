@@ -2,6 +2,6 @@
 permalink: false
 eleventyNavigation:
     parent: Approaches
-    key: Best Practices
+    key: Good Practices
     order: 1
 ---

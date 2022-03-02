@@ -1,7 +1,7 @@
 ---
 title: Follow Accessibility Principles
 eleventyNavigation:
-  parent: Best Practices
+  parent: Good Practices
   key: Follow Accessibility Principles
   order: 1
 ---

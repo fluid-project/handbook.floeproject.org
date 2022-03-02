@@ -1,7 +1,7 @@
 ---
 title: Create Inclusive Learning Experiences
 eleventyNavigation:
-  parent: Best Practices
+  parent: Good Practices
   key: Create Inclusive Learning Experiences
   order: 4
 ---

@@ -2,7 +2,7 @@
 title: Consider Cognitive Needs
 subheader: Much of the following is borrowed largely from Clayton Lewis (http://spot.colorado.edu/~clayton/)
 eleventyNavigation:
-  parent: Best Practices
+  parent: Good Practices
   key: Consider Cognitive Needs
   order: 3
 ---

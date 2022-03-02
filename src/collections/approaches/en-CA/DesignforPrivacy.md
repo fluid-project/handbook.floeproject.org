@@ -1,7 +1,7 @@
 ---
 title: Design for Privacy
 eleventyNavigation:
-  parent: Best Practices
+  parent: Good Practices
   key: Design for Privacy
   order: 5
 ---
