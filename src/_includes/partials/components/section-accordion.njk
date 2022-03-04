@@ -7,12 +7,18 @@
             <span class="section__title">{{ sectionTitle | safe }}</span>
         </button>
     </h2>
-    <ul class="section__content">
-    {% for subsection in subsections %}
-        <li class="section__subsection">
-            <a class="section__subsection-link" href="{{ subsection.url }}">{{ subsection.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
+    <div class="section__content">
+        {% if sectionIntro %}
+        <div class="section__intro">
+            {{- sectionIntro | markdown | safe -}}
+        </div>
+        {% endif %}
+        <ul class="section__links">
+        {% for subsection in subsections %}
+            <li class="section__subsection">
+                <a class="section__subsection-link" href="{{ subsection.url }}">{{ subsection.title }}</a>
+            </li>
+        {% endfor %}
+        </ul>
     </div>
 </li>
