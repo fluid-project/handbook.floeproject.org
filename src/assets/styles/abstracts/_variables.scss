@@ -1,5 +1,6 @@
 /** Typography **/
 $family-sans-serif: "WorkSans", sans-serif;
+$family-serif: "Literata", serif;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
@@ -7,6 +8,8 @@ $font-weight-bold: 700;
 
 /** Colors **/
 $darkRed: var(--fl-fgColor, #8d2a2d); // this colour has several uses
+$darkGrey: var(--fl-bgColor, #e5eaeb);
+
 $mainColour: var(--fl-fgColor, #000);
 $headingColour: $darkRed;
 $footerColour: var(--fl-fgColor, #fff);
@@ -16,7 +19,7 @@ $rootContentBackgroundColour: var(--fl-bgColor, #e7f0f3);
 $topicContentBackgroundColour: var(--fl-bgColor, #f9faf6);
 $menuTitleColour: $darkRed;
 $menuExpandedColour: var(--fl-fgColor, #000);
-$menuExpandedBGColour: var(--fl-bgColor, #e5eaeb);
+$menuExpandedBGColour: $darkGrey;
 $menuExpandedSelectedColour: var(--fl-bgColor, #fff);
 $menuExpandedSelectedBGColour: $darkRed;
 $menuButtonStrokeColour: $darkRed;
@@ -26,8 +29,13 @@ $toolkitsBorderColour: var(--fl-bgColor, #0b719e);
 $toolkitsHeadingColour: var(--fl-fgColor, #095a7d);
 $topicLinksHeadingColour: $darkRed;
 $sideContentLinkColour: var(--fl-fgColor, #2418a8);
+$homeIntroColour: var(--fl-fgColor, #235064);
+$homeIntroBGColour: var(--fl-bgColor, #fff);
+$homeDetailsBGColour: var(--fl-bgColor, #f9faf5);
+$homeGetInvolvedBGColour: $darkGrey;
 
 /** Dimensions **/
+$banner-height: 50px;
 $max-content-width: 50rem;
 $home-content-width: 69rem; // used by the Home page only, consider not using a variablea
 

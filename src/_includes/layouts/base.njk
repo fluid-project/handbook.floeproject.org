@@ -17,6 +17,7 @@
         {% uioScripts %}
         {% include "partials/global/scripts.njk" %}
     </head>
+    {% block pageBody %}
     <body class="{{ bodyClass if bodyClass else "page" }}">
         {% uioTemplate %}
         {% include "partials/global/header.njk" %}
@@ -42,4 +43,5 @@
         {% include "partials/global/footer.njk" %}
         {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}
     </body>
+    {% endblock %}
 </html>

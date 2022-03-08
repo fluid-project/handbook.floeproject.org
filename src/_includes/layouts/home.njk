@@ -1,7 +1,16 @@
 {% extends "layouts/base.njk" %}
 
-{% block pageHeader %}
-{% endblock %}
-
-{% block sideContent %}
+{% block pageBody %}
+<body class="home">
+    {% uioTemplate %}
+    {% include "partials/global/header.njk" %}
+    <main class="main">
+        <nav class="flc-toc-tocContainer"></nav>
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
+    </main>
+    {% include "partials/global/footer.njk" %}
+    {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}
+</body>
 {% endblock %}

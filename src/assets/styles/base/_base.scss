@@ -15,7 +15,7 @@
 }
 
 @include breakpoint-up(md) {
-    // Site-wide rules
+    // Site-wide rules (except the homepage which has overriding rules)
     .main {
         display: flex;
         gap: 1rem;
