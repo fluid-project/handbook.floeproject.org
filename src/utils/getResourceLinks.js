@@ -26,7 +26,7 @@ module.exports = function getResourceLinks(pageContent, sideContentHeadings, lan
                     var links = extractLinksFromElement(list);
 
                     for (const link of links) {
-                        output += `<li>${link}</li>`;
+                        output += `<li class="side-content__list-item">${link}</li>`;
                     }
                 }
             }
@@ -34,7 +34,7 @@ module.exports = function getResourceLinks(pageContent, sideContentHeadings, lan
     }
 
     // if there are links, wrap them in an unordered list
-    return output ? `<ul>${output}</ul>` : "";
+    return output ? `<ul class="side-content__list">${output}</ul>` : "";
 };
 
 /*

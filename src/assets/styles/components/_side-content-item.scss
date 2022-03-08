@@ -11,10 +11,11 @@
 
 .side-content__topic-links {
     color: $topicLinksHeadingColour;
+    margin-block-end: 4rem;
 
-    .side-content__icon {
-        height: 2rem;
-        width: 2rem;
+    .side-content__icon svg {
+        height: 1.5rem;
+        width: 2.5rem;
     }
 
     .side-content__content {
@@ -22,9 +23,21 @@
         h2:only-child {
             display: none;
         }
+    }
 
-        ul {
-            list-style: none;
+    .side-content__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .side-content__list-item {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-block: 1rem;
+
+        & a {
+            color: $sideContentLinkColour;
         }
     }
 }
@@ -46,9 +59,9 @@
         border: 1px solid $toolkitsBorderColour;
         border-top: none;
         padding: 1.5rem 2rem 2rem 2rem;
+    }
 
-        ul {
-            padding-inline-start: 1rem;
-        }
+    .side-content__list {
+        padding-inline-start: 1rem;
     }
 }

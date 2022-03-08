@@ -24,6 +24,7 @@
         justify-content: center;
         margin-inline: auto;
         max-width: $max-content-width;
+        word-break: break-word;
     }
 
     .main-content {
@@ -32,6 +33,6 @@
 
     .side-content {
         flex: 5;
-        margin-block-start: 10rem;
+        margin-block-start: 7rem;
     }
 }
