@@ -1,0 +1,16 @@
+.header {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+@include breakpoint-up(lg) {
+    .header {
+        align-items: flex-end;
+        padding-inline-start: 2rem;
+    }
+}

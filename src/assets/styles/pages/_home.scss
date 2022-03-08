@@ -1,8 +1,12 @@
-// The homepage does not use the default flex display rules used by other pages
+// Homepage-specific rules
 .home .main {
     display: block;
     margin-inline: unset;
     max-width: unset;
+}
+
+.home .footer {
+    margin-block-start: 0;
 }
 
 .home__intro {
@@ -57,10 +61,6 @@
         margin-block: 1rem;
         text-align: center;
     }
-}
-
-.footer {
-    margin-block-start: 0;
 }
 
 @include breakpoint-up(lg) {

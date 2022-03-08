@@ -7,8 +7,6 @@
     display: flex;
     height: 2rem;
     justify-content: center;
-    margin-block-end: 1rem;
-    margin-inline-end: 1rem;
 
     &:focus,
     &:hover {
@@ -42,16 +40,16 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
 }
 
 .menu__panel {
     background-color: $menuExpandedBGColour;
     box-sizing: border-box;
+    left: 0;
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 3rem;
+    top: 100%;
     width: 100%;
     z-index: 2;
 }
@@ -68,7 +66,7 @@
     display: flex;
     font-size: 1.5rem;
     font-weight: var(--fl-enhance-font-weight, 500);
-    height: 2.7rem;
+    height: 3.5rem;
     line-height: 1.875rem;
     padding-inline-start: 2rem;
     text-decoration: none;
@@ -109,6 +107,10 @@
         display: none;
     }
 
+    .menu__list {
+        height: 2.875rem;
+    }
+
     .menu__item {
         border-bottom: none;
         display: inline-block;
@@ -120,9 +122,12 @@
         background-color: inherit;
         color: var(--fl-linkColor, currentColor);
         font-size: 1.125rem;
+        height: 2.25rem;
         margin: 0;
         padding: 0;
+        padding-inline-start: 2rem;
         text-decoration: none;
+        width: 100%;
 
         &:focus,
         &:hover {
@@ -131,6 +136,8 @@
             outline-color: var(--fl-linkColor, $menuExpandedBGColour) solid 0.25rem;
         }
 
+        &:focus,
+        &:hover,
         &[aria-current="page"],
         &[aria-current="true"] {
             background-color: inherit;

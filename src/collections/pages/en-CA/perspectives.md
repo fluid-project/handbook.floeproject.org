@@ -2,6 +2,7 @@
 title: Perspectives
 layout: layouts/perspectives
 permalink: perspectives/
+bodyClass: root
 eleventyNavigation:
     parent: Home
     key: Perspectives

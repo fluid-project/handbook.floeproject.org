@@ -1,6 +1,7 @@
 ---
 title: About
 layout: layouts/root-page
+bodyClass: root
 eleventyNavigation:
     parent: Home
     key: About

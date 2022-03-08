@@ -6,7 +6,7 @@
             {# if it's the current page, no link is provided #}
             <span>{{ item.title }}</span>
         {% else %}
-            <a href="{{ item.url | url }}">{{ item.title }}</a>
+            <a class="breadcrumb__link" href="{{ item.url | url }}">{{ item.title }}</a>
         {% endif %}
         </li>
     {% endfor %}

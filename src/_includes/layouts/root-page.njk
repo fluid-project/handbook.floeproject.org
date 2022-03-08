@@ -1,11 +1,9 @@
 {% extends "layouts/page.njk" %}
 
 {% block pageHeader %}
-    <div class="root-content">
-        {% include "partials/components/breadcrumb.njk" %}
+    {% include "partials/components/breadcrumb.njk" %}
 
-        <header>
-            <h1>{{ title }}</h1>
-        </header>
-    </div>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
 {% endblock %}

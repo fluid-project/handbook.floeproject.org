@@ -1,5 +1,6 @@
 .breadcrumb__list {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
@@ -10,4 +11,8 @@
 .breadcrumb__item + li::before {
     content: ">";
     padding: 0 0.6rem;
+}
+
+.breadcrumb__link {
+    color: $mainColour;
 }

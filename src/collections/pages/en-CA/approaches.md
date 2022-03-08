@@ -1,6 +1,7 @@
 ---
 title: Approaches
 layout: layouts/sections
+bodyClass: root
 eleventyNavigation:
     parent: Home
     key: Approaches

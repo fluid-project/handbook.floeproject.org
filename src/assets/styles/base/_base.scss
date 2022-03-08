@@ -4,6 +4,8 @@
 @import "typography";
 
 .main-content {
+    padding: 2rem;
+
     img {
         max-width: 100%;
     }
@@ -25,11 +27,11 @@
     }
 
     .main-content {
-        flex: 6;
+        flex: 10;
     }
 
     .side-content {
-        flex: 4;
+        flex: 5;
         margin-block-start: 10rem;
     }
 }

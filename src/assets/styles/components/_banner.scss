@@ -1,8 +1,8 @@
 .banner {
     height: $banner-height;
-}
 
-.ildh-site-banner {
-    height: $banner-height;
-    width: 100%;
+    svg {
+        height: $banner-height;
+        width: 100%;
+    }
 }

@@ -1,6 +1,7 @@
 ---
 title: Techniques
 layout: layouts/sections
+bodyClass: root
 eleventyNavigation:
     parent: Home
     key: Techniques
