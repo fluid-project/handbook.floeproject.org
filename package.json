@@ -3,7 +3,7 @@
     "author": "OCAD University",
     "license": "BSD-3-Clause",
     "version": "1.0.0",
-    "description": "Strategies and best practices for inclusive learning content.",
+    "description": "Strategies and good practices for inclusive learning content.",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/fluid-project/handbook.floeproject.org.git"

@@ -22,5 +22,5 @@ with a computer. The learner's need for specific kinds of content, display featu
 recorded. This information can then be used to select or request appropriately adapted content, configure a visual
 display for easy reading, or locate resources that match the learner's control requirements.
 
-Information about the AccessForAll specification, including information models, bindings and a best practices guide,
+Information about the AccessForAll specification, including information models, bindings, and various Best Practice guides,
 can be found on the IMS Global Learning Consortium website: [http://imsglobal.org/accessibility/](http://imsglobal.org/accessibility/)

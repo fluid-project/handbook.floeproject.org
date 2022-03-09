@@ -6,7 +6,7 @@ eleventyNavigation:
     order: 10
 ---
 
-The Floe project developed an EPUB 3 resource that exemplifies best practices for creating inclusive EPUB resources:
+The Floe project developed an EPUB 3 resource that exemplifies good practices for creating inclusive EPUB resources:
 
 [Download the EPUB](https://idrc.cachefly.net/floeproject.org/ebooks/InclusiveEPUB-physics.epub)
 

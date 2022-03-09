@@ -71,7 +71,7 @@ formats or reuse.
 * SVG code is highly portable and can be shared or embedded in another context simply by embedding its markup.
 * Individual or grouped polygons can have different markup, such as different ARIA attributes; this can help support
 building more complex interactions
-* The structure, content and presentation of SVG can be separated, similar to best practices around HTML.
+* The structure, content and presentation of SVG can be separated, similar to good practices around HTML.
 
 ## How Do We Support the Accessibility of SVG Content?
 

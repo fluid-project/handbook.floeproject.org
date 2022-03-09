@@ -40,7 +40,7 @@ If presenting learners with multiple choices that affect the outcome of a game:
 * If possible, make choices forgiving: give opportunity for users to recover from, or change their choices.
 * Avoid player choices which require decisions within a time limit or provide options to disable such features.
 
-Other best practices are:
+Other good practices are:
 
 * Label each button and control. Labels should use simple terminology and define any terms if necessary.
 * Labels should state simply what the button will do. If longer descriptions are needed, use an `aria-describedby`
@@ -115,7 +115,7 @@ For additional resources on describing complex diagrams, see:
 
 If using a table of data:
 
-* Follow best practices for table formatting (i.e. proper use of table headers, no table nesting).
+* Follow good practices for table formatting (i.e. proper use of table headers, no table nesting).
 [See Data Table Best Practices at WebAccessibility.com](https://www.webaccessibility.com/best_practices.php?technology_platform_id=8).
 * Define any math, symbols, units, or acronyms. For additional information about making math accessible, see [Mathematics](/Mathematics.html).
 * Simplify and separate data tables if possible. Tables can be cumbersome to navigate (like with screen readers, small

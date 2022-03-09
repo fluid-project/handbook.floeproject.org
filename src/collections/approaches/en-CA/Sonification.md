@@ -54,7 +54,7 @@ information in charts, graphs or other derived forms.
 When underlying data is available in OERs, this allows the possibility for others to transform the OER in ways the
 content creator may not have envisioned in order to best serve individual learner needs.
 
-## Exploring Sonification and Emerging Best Practices
+## Exploring Sonification and Emerging Good Practices
 
 Sonification research to date has been highly experimental, and we still aren't certain how best to use sonification as
 part of building inclusive OERs. However, some general guidelines that have emerged:
