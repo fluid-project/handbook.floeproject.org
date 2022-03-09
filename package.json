@@ -33,7 +33,6 @@
     "dependencies": {
         "@11ty/eleventy": "1.0.0",
         "@11ty/eleventy-navigation": "0.3.2",
-        "@11ty/eleventy-plugin-rss": "1.1.2",
         "@11ty/eleventy-plugin-syntaxhighlight": "3.2.2",
         "eleventy-plugin-fluid": "0.3.1",
         "infusion": "4.0.0-dev.20211216T180403Z.d5f6173fc.FLUID-6703",

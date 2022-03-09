@@ -18,7 +18,6 @@ const fluidPlugin = require("eleventy-plugin-fluid");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const MarkdownIt = require("markdown-it");
 const navigationPlugin = require("@11ty/eleventy-navigation");
-const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Import transforms
@@ -55,7 +54,6 @@ module.exports = function (config) {
     config.addPlugin(EleventyRenderPlugin);
     config.addPlugin(fluidPlugin);
     config.addPlugin(navigationPlugin);
-    config.addPlugin(rssPlugin);
     config.addPlugin(syntaxHighlightPlugin);
 
     // Shortcodes
