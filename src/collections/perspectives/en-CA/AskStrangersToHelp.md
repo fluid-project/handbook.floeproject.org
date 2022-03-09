@@ -4,6 +4,8 @@ eleventyNavigation:
     parent: Perspectives
     key: If you want the best design, ask strangers to help
     order: 6
+    thumbnailFilename: "perspectives_ask-strangers.png"
+    thumbnailAltText: "A group of people in a red room arranged in a large rectangle listening to a speaker"
 ---
 
 _Editor’s Note: Jutta Treviranus is a leader in inclusive design; she started and directs OCAD University’s Inclusive

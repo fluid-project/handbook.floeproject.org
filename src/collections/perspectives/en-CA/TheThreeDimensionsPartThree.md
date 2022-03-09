@@ -4,6 +4,8 @@ eleventyNavigation:
     parent: Perspectives
     key: "The Three Dimensions of Inclusive Design: Part Three"
     order: 5
+    thumbnailFilename: "perspectives_3-dimensions-pt3.jpg"
+    thumbnailAltText: "A pair clownfish floating in front of and within some sea anemone tentacles"
 ---
 
 This work "_The Three Dimensions of Inclusive Design: Part Three_", is a reproduction of

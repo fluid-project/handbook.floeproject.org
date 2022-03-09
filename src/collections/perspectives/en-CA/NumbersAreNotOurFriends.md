@@ -4,6 +4,8 @@ eleventyNavigation:
     parent: Perspectives
     key: If you are unique (and aren’t we all), numbers are not our friends
     order: 7
+    thumbnailFilename: "perspectives_numbers-arent-our-friends.jpg"
+    thumbnailAltText: "A young child in class counting using their fingers"
 ---
 
 <figure>

@@ -1,0 +1,9 @@
+<li class="perspective__item">
+    <a class="perspective__link" href="{{ perspective.url }}">
+        {%- if thumbnailFilename %}
+            {% set thumbnail = "../assets/images/thumbs/" + thumbnailFilename | safe %}
+            <img class="perspective__thumbnail" src="{{ thumbnail }}" alt="{{ thumbnailAltText }}" />
+        {% endif -%}
+        <span class="perspective__title">{{ perspective.title }}</span>
+    </a>
+</li>

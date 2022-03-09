@@ -1,0 +1,19 @@
+.perspectives__list {
+    list-style: none;
+    padding: 0;
+}
+
+.perspective__item:not(:last-of-type) {
+    margin-block-end: 2rem;
+}
+
+.perspective__link {
+    color: $rootLinkColour;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.perspective__thumbnail {
+    object-fit: contain;
+}

@@ -4,6 +4,8 @@ eleventyNavigation:
     parent: Perspectives
     key: Achieving Inclusive Education
     order: 2
+    thumbnailFilename: "perspectives_inclusive-education.png"
+    thumbnailAltText: "An example of a design mindmap"
 ---
 Inclusive education or accessibility is achieved by a sufficiently diverse and flexible pool of OER to address the
 diversity of learners, as well as a way to find and deliver resources that address each learner’s individual needs.

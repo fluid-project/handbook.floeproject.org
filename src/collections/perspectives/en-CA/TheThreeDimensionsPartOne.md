@@ -4,6 +4,8 @@ eleventyNavigation:
     parent: Perspectives
     key: "The Three Dimensions of Inclusive Design: Part One"
     order: 3
+    thumbnailFilename: "perspectives_3-dimensions-pt1.jpg"
+    thumbnailAltText: "Many multicoloured handprints in paint on a large sheet of paper"
 ---
 
 This work "_The Three Dimensions of Inclusive Design: Part One_", is a reproduction of

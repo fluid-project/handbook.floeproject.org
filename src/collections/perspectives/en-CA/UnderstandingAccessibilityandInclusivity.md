@@ -4,6 +4,8 @@ eleventyNavigation:
     parent: Perspectives
     key: Understanding Accessibility and Inclusivity
     order: 1
+    thumbnailFilename: "perspectives_understanding-a11y-inclusivity.jpg"
+    thumbnailAltText: "Many colourful plastic animal and dinosaur toys on a yellow background"
 ---
 Floe defines Inclusive Design as design that considers the full range of human diversity with respect to ability,
 language, culture, gender, age and other forms of human difference.

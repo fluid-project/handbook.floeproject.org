@@ -4,6 +4,8 @@ eleventyNavigation:
     parent: Perspectives
     key: "The Three Dimensions of Inclusive Design: Part Two"
     order: 4
+    thumbnailFilename: "perspectives_3-dimensions-pt2.png"
+    thumbnailAltText: "A diagram showing a starburst pattern with many dots and concentric circles, with more dots closer to the centre"
 ---
 
 This work "_The Three Dimensions of Inclusive Design: Part Two_", is a reproduction of
