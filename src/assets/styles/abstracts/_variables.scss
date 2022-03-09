@@ -11,11 +11,14 @@ $darkRed: var(--fl-fgColor, #8d2a2d); // this colour has several uses
 $darkGrey: var(--fl-bgColor, #e5eaeb);
 
 $mainColour: var(--fl-fgColor, #000);
-$rootLinkColour: var(--fl-linkColor, #0645ad);
+$headerOrgColour: var(--fl-bgColor, #000);
+$headerOrgLinkColour: var(--fl-linkColor, #000);
+$headerOrgBackgroundColour: var(--fl-bgColor, #fff);
 $footerColour: var(--fl-fgColor, #fff);
 $footerBGColour: var(--fl-bgColor, #153647);
 $footerLinkColour: var(--fl-linkColor, var(--fl-fgColor, #cfca6f));
 $rootContentBackgroundColour: var(--fl-bgColor, #e7f0f3);
+$rootLinkColour: var(--fl-linkColor, #0645ad);
 $topicContentBackgroundColour: var(--fl-bgColor, #f9faf6);
 $menuTitleColour: $darkRed;
 $menuExpandedColour: var(--fl-fgColor, #000);

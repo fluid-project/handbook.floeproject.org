@@ -8,6 +8,26 @@
     width: 100%;
 }
 
+.org-header {
+    background-color: $headerOrgBackgroundColour;
+    color: $headerOrgColour;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.33);
+    padding-block-end: 0.5rem;
+    padding-block-start: 1rem;
+}
+
+.org-header__link {
+    color: $headerOrgLinkColour;
+    text-decoration: underline;
+}
+
+.org-header__wrapper {
+    justify-content: start;
+    margin-inline-start: 1rem;
+}
+
 @include breakpoint-up(lg) {
     .header {
         align-items: flex-end;
