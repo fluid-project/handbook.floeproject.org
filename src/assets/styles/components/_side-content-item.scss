@@ -61,7 +61,19 @@
         padding: 1.5rem 2rem 2rem 2rem;
     }
 
+    ul,
     .side-content__list {
         padding-inline-start: 1rem;
+    }
+
+    li,
+    .side-content__list-item {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-block: 1rem;
+
+        & a {
+            color: $toolkitsLinkColour;
+        }
     }
 }

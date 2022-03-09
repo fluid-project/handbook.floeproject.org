@@ -26,6 +26,8 @@
 .section__title {
     border: 0.0625rem dashed var(--fl-buttonBgColor, $sectionBorderColour);
     border-inline-start: none;
+    font-size: 1.8125rem;
+    line-height: 1.875rem;
     padding: 1rem 1rem 1rem 1.25rem;
     text-align: start;
     width: 100%;
@@ -85,6 +87,9 @@
 }
 
 .section__subsection-link {
+    color: $rootLinkColour;
+    font-size: 1.5rem;
+    line-height: 3rem;
     padding-block-end: 0.15rem;
 }
 
