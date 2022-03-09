@@ -54,7 +54,12 @@ It has been archived and can be found here:
 
 ## Working with Netlify CMS
 
-The [Netlify CMS](https://netlifycms.org/) configuration can be edited in [`src/admin/config.yml`](src/admin/config.yml).
+Trivet includes configuration for administering site content via [Netlify CMS](https://netlifycms.org/). This has not
+been included in the ILDH, though it can be re-enabled by copying the relevant lines and files from Trivet. In particular,
+the directory `src/admin` must be copied into the project and subsequently included in the `dist` directory upon building
+the project.
+
+After enabling admin functionality, the Netlify CMS configuration can be edited in [`src/admin/config.yml`](src/admin/config.yml).
 For full documentation, see the [Netlify CMS documentation](https://www.netlifycms.org/docs/).
 
 ## Internationalization

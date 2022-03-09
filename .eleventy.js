@@ -47,7 +47,6 @@ module.exports = function (config) {
 
     // Passthrough copy
     config.addPassthroughCopy("src/_redirects");
-    config.addPassthroughCopy({"src/admin/config.yml": "admin/config.yml"});
     config.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
     config.addPassthroughCopy({"src/assets/icons": "/"});
     config.addPassthroughCopy({"src/assets/images": "assets/images"});
