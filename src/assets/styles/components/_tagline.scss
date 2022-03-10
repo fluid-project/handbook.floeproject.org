@@ -1,3 +1,7 @@
 .tagline {
     --ildh-wordmark-text-colour: var(--fl-fgColor, #{$footerColour});
+
+    svg {
+        max-width: 100%;
+    }
 }

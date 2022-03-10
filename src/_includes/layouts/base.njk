@@ -16,6 +16,7 @@
         {% uioScripts %}
         {% include "partials/global/scripts.njk" %}
     </head>
+    {# The pageBody block is used by the home page which has a different body layout #}
     {% block pageBody %}
     <body class="{{ bodyClass if bodyClass else "page" }}">
         {% uioTemplate %}

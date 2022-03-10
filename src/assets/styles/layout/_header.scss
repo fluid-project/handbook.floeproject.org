@@ -10,12 +10,11 @@
 
 .org-header {
     background-color: $headerOrgBackgroundColour;
+    border-block-end: 1px solid $darkGrey;
     color: $headerOrgColour;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.33);
-    padding-block-end: 0.5rem;
-    padding-block-start: 1rem;
 }
 
 .org-header__link {

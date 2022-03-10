@@ -46,6 +46,8 @@ and  files in `dist` are overwritten at build time.
 The ILDH website is based on [Trivet](https://github.com/fluid-project/trivet), an [Eleventy](http://11ty.dev)
 website starter kit.
 
+For more information about making asset pipeline changes, please see the [Asset Handling documentation](src/assets/README.md).
+
 ### Previous version of the ILDH
 
 An older version of the ILDH website used from 2011 to 2015 was previously hosted at the same repository name.

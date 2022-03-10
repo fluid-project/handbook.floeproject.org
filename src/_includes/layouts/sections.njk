@@ -7,7 +7,7 @@
 
     {% set sections = collections.all | eleventyNavigation(eleventyNavigation.key) %}
 
-    <ul id="content" class="content sections">
+    <ul class="sections">
         {% for section in sections %}
             {% set sectionTitle = section.title %}
             {% set sectionIntro = section.intro %}

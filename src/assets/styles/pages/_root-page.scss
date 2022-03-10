@@ -10,8 +10,14 @@
 
     .main-content {
         background-color: $rootContentBackgroundColour;
-        font-size: 1.25rem;
-        line-height: 2rem;
+
+        .content {
+            font-weight: 500;
+        }
+
+        h2 {
+            color: $rootContentColour;
+        }
     }
 }
 

@@ -8,6 +8,8 @@ eleventyNavigation:
     order: 1
 ---
 
+## Where to begin?
+
 If we knew how to, and if we had easy-to-use tools, we'd all make our content more accessible, more inclusive, more
 adaptable, and more configurable to individual learner needs. Of course, [authoring content](/AuthoringOfContent.html)
 in an accessible application from the beginning helps achieve these goals best and makes the content more adaptable.

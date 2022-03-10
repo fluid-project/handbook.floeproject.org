@@ -1,4 +1,8 @@
 // Homepage-specific rules
+.home .banner {
+    height: 88px;
+}
+
 .home .main {
     display: block;
     margin-inline: unset;
@@ -21,7 +25,7 @@
 
     > * {
         margin-inline: auto;
-        max-width: $home-content-width;
+        max-width: $max-content-width;
     }
 }
 
@@ -40,7 +44,7 @@
 
     & > * {
         margin-inline: auto;
-        max-width: $max-content-width;
+        max-width: $home-content-width;
     }
 }
 
@@ -64,6 +68,10 @@
 }
 
 @include breakpoint-up(lg) {
+    .home .banner {
+        height: 170px;
+    }
+
     .home__intro {
         padding-block-start: 4rem;
     }
