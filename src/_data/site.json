@@ -1,3 +1,10 @@
 {
-    "title": ""
+  "en-CA": {
+    "name": "Inclusive Learning Design Handbook",
+    "description": "Strategies and good practices for inclusive learning content.",
+    "url": "https://handbook.floeproject.org/",
+    "authorWebsite": "https://idrc.ocadu.ca/",
+    "authorEmail": "idrc@ocadu.ca",
+    "authorName": "Inclusive Design Research Centre"
+  }
 }

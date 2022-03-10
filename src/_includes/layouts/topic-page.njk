@@ -1,0 +1,32 @@
+{% extends "layouts/page.njk" %}
+
+{% block pageHeader %}
+    <div class="topic-content">
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
+
+        {% include "partials/components/breadcrumb.njk" %}
+
+        {# accordion table of contents listing all page headings #}
+    </div>
+{% endblock %}
+
+{% block sideContent %}
+    {% if not lang %}
+        {% set lang = config.defaultLanguage %}
+    {% endif %}
+    {% set icon = sideContentHeadings[lang].icon %}
+    {% set sideContentTitle = sideContentHeadings[lang].title %}
+    {% set sideContent %}
+        {%- extract_resource_links content, sideContentHeadings, lang -%}
+    {% endset %}
+    
+    {%- if sideContent -%}
+    <div class="side-content__topic-links">
+        {% include "partials/components/side-content-item.njk" %}
+    </div>
+    {%- endif -%}
+
+    {{ super() }}
+{% endblock %}

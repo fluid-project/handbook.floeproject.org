@@ -1,0 +1,14 @@
+<nav class="breadcrumb" aria-label="breadcrumb">
+    <ul class="breadcrumb__list">
+    {% for item in collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true }) %}
+        <li class="breadcrumb__item">
+        {% if item.url == page.url %}
+            {# if it's the current page, no link is provided #}
+            <span>{{ item.title }}</span>
+        {% else %}
+            <a class="breadcrumb__link" href="{{ item.url | url }}">{{ item.title }}</a>
+        {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

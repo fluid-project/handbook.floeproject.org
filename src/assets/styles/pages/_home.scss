@@ -1,0 +1,82 @@
+// Homepage-specific rules
+.home .banner {
+    height: 88px;
+}
+
+.home .main {
+    display: block;
+    margin-inline: unset;
+    max-width: unset;
+}
+
+.home .footer {
+    margin-block-start: 0;
+}
+
+.home__intro {
+    background: $homeIntroBGColour;
+    color: $homeIntroColour;
+    font-family: $family-serif;
+    font-size: 2.375rem;
+    line-height: 3.4375rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    text-align: center;
+
+    > * {
+        margin-inline: auto;
+        max-width: $max-content-width;
+    }
+}
+
+.ildh-sunrise {
+    display: block;
+    margin-inline: auto;
+    max-height: 5rem;
+    width: 12rem;
+}
+
+.home__details,
+.home__get-involved {
+    font-size: 1.5rem;
+    line-height: 2.3125rem;
+    padding-inline: 1rem;
+
+    & > * {
+        margin-inline: auto;
+        max-width: $home-content-width;
+    }
+}
+
+.home__details {
+    background-color: $homeDetailsBGColour;
+    padding-block: 2rem;
+}
+
+.home__get-involved {
+    background-color: $homeGetInvolvedBGColour;
+    padding-block-end: 5rem;
+    padding-block-start: 2rem;
+
+    h2 {
+        color: $darkRed;
+        font-family: $family-serif;
+        font-style: italic;
+        margin-block: 1rem;
+        text-align: center;
+    }
+}
+
+@include breakpoint-up(lg) {
+    .home .banner {
+        height: 170px;
+    }
+
+    .home__intro {
+        padding-block-start: 4rem;
+    }
+
+    .home__details {
+        padding-block-start: 6rem;
+    }
+}

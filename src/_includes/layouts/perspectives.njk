@@ -1,0 +1,16 @@
+{% extends "layouts/root-page.njk" %}
+
+{% block content %}
+    <div class="perspectives__content">
+        {{ content | safe }}
+    </div>
+
+    <ul class="perspectives__list">
+    {%- for perspective in collections.all | eleventyNavigation("Perspectives") -%}
+        {% set thumbnailFilename = (perspective.thumbnailFilename if perspective.thumbnailFilename else "") %}
+        {% set thumbnailAltText = (perspective.thumbnailAltText if perspective.thumbnailAltText else "") %}
+
+        {%- include "partials/components/perspective-thumbnail.njk" -%}
+    {%- endfor -%}
+    </ul>
+{% endblock %}

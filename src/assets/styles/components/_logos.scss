@@ -1,0 +1,10 @@
+.logos {
+    display: flex;
+}
+
+.logos svg {
+    display: block;
+    fill: $footerColour;
+    height: 3rem;
+    width: 100%;
+}

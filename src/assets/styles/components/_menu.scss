@@ -1,0 +1,149 @@
+.menu__button {
+    align-items: center;
+    align-self: flex-end;
+    background-color: var(--fl-buttonBgColor, inherit);
+    border: none;
+    color: var(--fl-buttonFgColor, currentColor);
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+
+    &:focus,
+    &:hover {
+        outline: $menuButtonStrokeColour solid 0.25rem;
+    }
+}
+
+.menu__button svg {
+    height: 100%;
+    width: 2rem;
+}
+
+.menu__title {
+    color: $menuTitleColour;
+    font-family: $family-serif;
+    font-size: 2.875rem;
+    font-weight: 800;
+    line-height: 1.875rem;
+    padding-inline-start: 1rem;
+}
+
+.menu__name {
+    display: inline-block;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin-inline-start: 0.5rem;
+    text-transform: lowercase;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu__panel {
+    background-color: $menuExpandedBGColour;
+    box-sizing: border-box;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu__list {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.menu__link {
+    align-items: center;
+    background-color: var(--fl-bgColor, $menuExpandedBGColour);
+    color: var(--fl-linkColor, $menuExpandedColour);
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: var(--fl-enhance-font-weight, 500);
+    height: 3.5rem;
+    line-height: 1.875rem;
+    padding-inline-start: 2rem;
+    text-decoration: none;
+
+    &[aria-current="page"],
+    &[aria-current="true"],
+    &:focus,
+    &:hover {
+        background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour);
+        color: var(--fl-bgColor, $menuExpandedSelectedColour);
+        outline-color: transparent;
+    }
+}
+
+.menu > [aria-expanded="false"] + .menu__panel {
+    display: none;
+}
+
+@include breakpoint-up(lg) {
+    .menu__button {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .menu__panel {
+        background-color: inherit;
+        display: block !important; /* Need important to beat specificy of narrow screen menu style */
+        position: initial;
+        width: auto;
+    }
+
+    .menu__title {
+        display: none;
+    }
+
+    .menu__list {
+        height: 2.875rem;
+    }
+
+    .menu__item {
+        border-bottom: none;
+        display: inline-block;
+        padding: 0;
+        padding-inline-end: 2rem;
+    }
+
+    .menu__link {
+        background-color: inherit;
+        color: var(--fl-linkColor, currentColor);
+        font-size: 1.125rem;
+        height: 2.25rem;
+        margin: 0;
+        padding: 0;
+        padding-inline-start: 2rem;
+        text-decoration: none;
+        width: 100%;
+
+        &:focus,
+        &:hover {
+            background-color: inherit;
+            color: inherit;
+            outline-color: var(--fl-linkColor, $menuExpandedBGColour) solid 0.25rem;
+        }
+
+        &:focus,
+        &:hover,
+        &[aria-current="page"],
+        &[aria-current="true"] {
+            background-color: inherit;
+            border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
+            color: var(--fl-linkColor, currentColor);
+            margin-left: 0;
+        }
+    }
+}

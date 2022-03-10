@@ -1,0 +1,27 @@
+.brand {
+    flex: 1;
+}
+
+.brand__desktop {
+    display: none;
+}
+
+.brand__mobile {
+    display: inline-block;
+
+    svg {
+        height: 5rem;
+        margin-block: 1.5rem;
+        width: 5rem;
+    }
+}
+
+@include breakpoint-up(md) {
+    .brand__desktop {
+        display: inline-block;
+    }
+
+    .brand__mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,86 @@
+// TODO: Review these rules and associated markup, make them
+//       comply more closely with BEM if possible/practical.
+//       There's plenty of repetition and parallel structure,
+//       so perhaps a mixin is warranted.
+
+.side-content__content {
+    a {
+        color: $sideContentLinkColour;
+    }
+}
+
+.side-content__topic-links {
+    color: $topicLinksHeadingColour;
+    margin-block-end: 4rem;
+
+    .side-content__icon svg {
+        height: 1.5rem;
+        width: 2.5rem;
+    }
+
+    .side-content__content {
+        // to hide the links section altogether when it's empty
+        h2:only-child {
+            display: none;
+        }
+    }
+
+    .side-content__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .side-content__list-item {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-block: 1rem;
+
+        & a {
+            color: $sideContentLinkColour;
+        }
+    }
+}
+
+.side-content__toolkits {
+    color: $toolkitsHeadingColour;
+
+    .side-content__icon {
+        background-color: $toolkitsBorderColour;
+        padding: 1rem;
+
+        svg {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+
+    .side-content__content {
+        border: 1px solid $toolkitsBorderColour;
+        border-top: none;
+        padding: 1.5rem 2rem 2rem 2rem;
+    }
+
+    .side-content__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-block-start: 0;
+    }
+
+    ul,
+    .side-content__list {
+        padding-inline-start: 1rem;
+    }
+
+    li,
+    .side-content__list-item {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-block: 1rem;
+
+        & a {
+            color: $sideContentLinkColour;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+// Base styles
+
+@import "reset";
+@import "typography";
+
+// Site-wide rules (except the homepage which has overriding rules)
+
+.main-content {
+    padding: 2rem;
+
+    a {
+        color: $linkColour;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+        hyphens: auto;
+        word-break: break-word;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.5rem;
+    }
+
+    h2 {
+        color: $darkRed;
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+        margin-block-start: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        line-height: 2.125rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    figure {
+        margin-block: 3rem;
+        margin-inline: 0;
+    }
+
+    p,
+    ul {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+.side-content {
+    margin-block-start: 2rem;
+    padding-inline: 2rem;
+}
+
+@include breakpoint-up(md) {
+    .main {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: minmax(30rem, 2fr) minmax(19rem, 1fr);
+        justify-content: center;
+        margin-inline: auto;
+        max-width: $max-content-width;
+        word-break: break-word;
+    }
+
+    .side-content {
+        margin-block-start: 7rem;
+    }
+}

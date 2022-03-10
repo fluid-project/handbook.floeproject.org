@@ -1,4 +1,0 @@
-                                    {% set navPages = collections.all | eleventyNavigation %}
-                                    {% for item in navPages %}
-                                        <li><a href="{{ item.url }}"{% if item.url === page.url %} aria-current="page"{% endif %}>{{ item.key }}</a></li>
-                                    {% endfor %}

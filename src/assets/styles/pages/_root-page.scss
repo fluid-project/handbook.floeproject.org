@@ -1,0 +1,29 @@
+.root {
+    h1 {
+        color: $darkRed;
+        font-family: $family-serif;
+        font-size: 2.875rem;
+        font-weight: 800;
+        line-height: 1.875rem;
+        margin-block-end: 4rem;
+    }
+
+    .main-content {
+        background-color: $rootContentBackgroundColour;
+
+        .content {
+            font-weight: 500;
+        }
+
+        h2 {
+            color: $rootContentColour;
+        }
+    }
+}
+
+@include breakpoint-up(md) {
+    .root h1 {
+        margin-block-end: 2rem;
+        margin-block-start: 4rem;
+    }
+}

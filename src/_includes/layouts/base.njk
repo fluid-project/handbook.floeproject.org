@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ lang }}" dir="{{ config.languages[lang].dir }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>{% if title %} {{ title }} | {% endif %} {{ site[lang].name }}</title>
+
+        {% include "partials/global/stylesheets.njk" %}
+
+        {% include "partials/global/meta.njk" %}
+
+        {% include "partials/global/icons.njk" %}
+        <link rel="manifest" href="/manifest.webmanifest">
+
+        {% uioScripts %}
+        {% include "partials/global/scripts.njk" %}
+    </head>
+    {# The pageBody block is used by the home page which has a different body layout #}
+    {% block pageBody %}
+    <body class="{{ bodyClass if bodyClass else "page" }}">
+        {% uioTemplate %}
+        {% include "partials/global/header.njk" %}
+        <main class="main">
+            <article class="main-content">
+                {% block pageHeader %}
+                <header>
+                    <h1>{{ title }}</h1>
+                </header>
+                {% endblock %}
+                <nav class="flc-toc-tocContainer"></nav>
+                {% block content %}
+                <div class="content">
+                {{ content | safe }}
+                </div>
+                {% endblock %}
+            </article>
+            <aside class="side-content">
+                {% block sideContent %}
+                {% endblock %}
+            </aside>
+        </main>
+        {% include "partials/global/footer.njk" %}
+        {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}
+    </body>
+    {% endblock %}
+</html>

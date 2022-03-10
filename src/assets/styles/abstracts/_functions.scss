@@ -1,0 +1,5 @@
+// Functions.
+
+@function breakpoint-value($name, $breakpoints: $breakpoints) {
+    @return map-get($breakpoints, $name);
+}
