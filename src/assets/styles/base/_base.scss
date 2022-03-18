@@ -13,7 +13,8 @@
     }
 
     code {
-        white-space: pre-wrap;
+        display: block;
+        overflow: auto;
     }
 
     h1,
