@@ -13,7 +13,6 @@
         {% include "partials/global/icons.njk" %}
         <link rel="manifest" href="/manifest.webmanifest">
 
-        {% uioScripts %}
         {% include "partials/global/scripts.njk" %}
     </head>
     {# The pageBody block is used by the home page which has a different body layout #}
@@ -41,7 +40,15 @@
             </aside>
         </main>
         {% include "partials/global/footer.njk" %}
-        {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}
+        {#
+            Calling a custom duplicate of eleventy-plugin-fluid's uioInit shortcode in
+            order to run it without the text-size preference until issue #57 is solved
+
+            This call is duplicated in home.njk
+
+            https://github.com/fluid-project/handbook.floeproject.org/issues/57
+        #}
+        {% custom_uio config.languages[lang].uioSlug, config.languages[lang].dir %}
     </body>
     {% endblock %}
 </html>

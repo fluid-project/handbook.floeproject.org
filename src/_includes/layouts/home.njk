@@ -11,6 +11,14 @@
         {% endblock %}
     </main>
     {% include "partials/global/footer.njk" %}
-    {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}
+    {# 
+        Calling a custom duplicate of eleventy-plugin-fluid's uioInit shortcode in
+        order to run it without the text-size preference until issue #57 is solved.
+        
+        This call is duplicated in base.njk
+
+        https://github.com/fluid-project/handbook.floeproject.org/issues/57
+    #}
+    {% custom_uio config.languages[lang].uioSlug, config.languages[lang].dir %}
 </body>
 {% endblock %}
