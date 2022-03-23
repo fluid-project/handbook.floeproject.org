@@ -106,9 +106,7 @@ module.exports = function (config) {
             direction: direction
         };
 
-        var theThing = `<script>fluid.uiOptions.multilingual(".flc-prefsEditor-separatedPanel", ${JSON.stringify(options)});</script>`;
-
-        return theThing;
+        return `<script>fluid.uiOptions.multilingual(".flc-prefsEditor-separatedPanel", ${JSON.stringify(options)});</script>`;
     });
 
     // 404
