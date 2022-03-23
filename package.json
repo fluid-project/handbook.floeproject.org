@@ -33,7 +33,7 @@
         "@11ty/eleventy": "1.0.0",
         "@11ty/eleventy-navigation": "0.3.2",
         "@11ty/eleventy-plugin-syntaxhighlight": "3.2.2",
-        "eleventy-plugin-fluid": "0.3.1",
+        "eleventy-plugin-fluid": "1.0.0",
         "infusion": "4.0.0",
         "jsdom": "19.0.0"
     },
