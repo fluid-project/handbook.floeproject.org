@@ -12,6 +12,11 @@
         color: $linkColour;
     }
 
+    code {
+        display: block;
+        overflow: auto;
+    }
+
     h1,
     h2,
     h3,
