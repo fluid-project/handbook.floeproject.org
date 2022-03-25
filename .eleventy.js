@@ -75,7 +75,7 @@ module.exports = function (config) {
 
         https://github.com/fluid-project/handbook.floeproject.org/issues/57
     */
-    config.addShortcode("custom_uio", (locale, direction) => {
+    config.addShortcode("uioCustomInit", (locale, direction) => {
         let options = {
             preferences: [
                 "fluid.prefs.lineSpace",
