@@ -1,6 +1,28 @@
 .banner {
-    background-image: url(../images/banner.svg), linear-gradient(to right, #158dcd 50%, #12699a 50%);
+    align-content: center;
+    background-image: linear-gradient(to right, #158dcd 50%, #12699a 50%);
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
     height: $banner-height;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    svg {
+        height: $banner-height-full;
+        left: -96rem;
+        position: absolute;
+    }
+}
+
+@include breakpoint-up(md) {
+    .banner {
+        height: $banner-height-large;
+
+        svg {
+            height: $banner-height-full-large;
+            left: unset;
+        }
+    }
 }
