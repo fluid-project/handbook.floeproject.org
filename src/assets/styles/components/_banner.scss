@@ -10,6 +10,19 @@
     position: relative;
 
     svg {
+        height: $banner-height-full;
+        left: -96rem;
         position: absolute;
+    }
+}
+
+@include breakpoint-up(md) {
+    .banner {
+        height: $banner-height-large;
+
+        svg {
+            height: $banner-height-full-large;
+            left: unset;
+        }
     }
 }
