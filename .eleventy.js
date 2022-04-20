@@ -27,6 +27,7 @@ const parseTransform = require("./src/transforms/parse-transform.js");
 // Import data files
 const siteConfig = require("./src/_data/config.json");
 const getResourceLinks = require("./src/utils/getResourceLinks.js");
+const getArticleContents = require("./src/utils/getArticleContents.js");
 
 module.exports = function (config) {
     config.setUseGitIgnore(false);
@@ -65,6 +66,10 @@ module.exports = function (config) {
 
     config.addShortcode("extract_resource_links", (content, sideContentHeadings, lang) => {
         return getResourceLinks(content, sideContentHeadings, lang);
+    });
+
+    config.addShortcode("article_contents", (content, headingsSelector) => {
+        return getArticleContents(content, headingsSelector);
     });
 
     /*

@@ -1,0 +1,40 @@
+.article-contents {
+    background-color: $sectionBGColour;
+    border: 0.3125rem solid $articleContentsBorderColour;
+    margin-block: 3rem;
+
+    &[open] {
+        padding-block-end: 1rem;
+
+        // the arrow icon's open state
+        .article-contents__summary::marker,
+        .article-contents__summary::-webkit-details-marker {
+            color: $articleContentsIconColour;
+        }
+    }
+}
+
+.article-contents__summary {
+    cursor: pointer;
+    font-size: var(--fl-enhance-font-size, 1.5rem);
+    font-weight: var(--fl-enhance-font-weight, 600);
+    padding: 1rem 1.5rem;
+
+    // the arrow icon's closed state
+    &::marker,
+    &::-webkit-details-marker {
+        color: $articleContentsIconColour;
+    }
+}
+
+.article-contents__list {
+    list-style: none;
+    margin: 0;
+    padding-inline: 1.5rem;
+}
+
+.article-contents__link {
+    font-size: var(--fl-enhance-font-size, 1.3125rem);
+    font-weight: var(--fl-enhance-font-weight, 500);
+    line-height: 2.5rem;
+}
