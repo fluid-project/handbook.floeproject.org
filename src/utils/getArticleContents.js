@@ -4,6 +4,16 @@ const fluid = require("infusion");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
+/*
+ * Given page content markup, this function prepares a list of links to all headings of a given level
+ * followed by the page content with ID's injected for each linked heading.
+ *
+ * @param {String} pageContent - the page content markup
+ * @param {String} summary - the summary text to display at the top of the article contents list
+ * @param {String} [headingsSelector] - a CSS selector to indicate which heading elements to list
+ *
+ * @return {String} - the combined string containing the list markup and modified page markup
+ */
 module.exports = (pageContent, summary, headingsSelector) => {
     const dom = new JSDOM(pageContent);
     const headings = dom.window.document.querySelectorAll(headingsSelector || "h2");
