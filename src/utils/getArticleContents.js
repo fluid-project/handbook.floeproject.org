@@ -8,6 +8,9 @@ const { JSDOM } = jsdom;
  * Given page content markup, this function prepares a list of links to all headings of a given level
  * followed by the page content with ID's injected for each linked heading.
  *
+ * This work was undertaken to address GitHub issue #59:
+ * https://github.com/fluid-project/handbook.floeproject.org/issues/59
+ *
  * @param {String} pageContent - the page content markup
  * @param {String} summary - the summary text to display at the top of the article contents list
  * @param {String} [headingsSelector] - a CSS selector to indicate which heading elements to list
