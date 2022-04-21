@@ -1,7 +1,15 @@
 .article-contents {
     background-color: $sectionBGColour;
-    border: 0.3125rem solid $articleContentsBorderColour;
+    border: 0.125rem dashed $articleContentsBorderColour;
     margin-block: 3rem;
+    padding: 0.1875rem;
+
+    &[open],
+    &:focus,
+    &:hover {
+        border: 0.3125rem solid $articleContentsBorderColour;
+        padding: 0;
+    }
 
     &[open] {
         padding-block-end: 1rem;
