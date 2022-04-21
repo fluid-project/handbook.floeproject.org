@@ -6,6 +6,7 @@
 
     &[open],
     &:focus,
+    &:focus-within,
     &:hover {
         border: 0.3125rem solid $articleContentsBorderColour;
         padding: 0;
