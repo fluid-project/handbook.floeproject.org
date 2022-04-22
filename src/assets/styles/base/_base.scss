@@ -13,6 +13,10 @@
     }
 
     code {
+        display: inline;
+    }
+
+    pre code {
         display: block;
         overflow: auto;
     }
@@ -53,6 +57,7 @@
         margin-inline: 0;
     }
 
+    ol,
     p,
     ul {
         font-size: 1.25rem;

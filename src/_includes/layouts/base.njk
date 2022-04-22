@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ lang }}" dir="{{ config.languages[lang].dir }}">
+<html lang="{% if lang %}{{ lang }}{% else %}en-CA{% endif %}" dir="{% if lang %}{{ config.languages[lang].dir }}{% else %}ltr{% endif %}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
