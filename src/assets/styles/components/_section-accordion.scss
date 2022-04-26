@@ -22,6 +22,14 @@
     &:hover {
         outline-color: var(--fl-buttonFgColor);
     }
+
+    &--expanded .section__title,
+    &:focus .section__title,
+    &:hover .section__title {
+        border: 0.35rem solid var(--fl-buttonFgColor, $sectionBorderColour);
+        border-inline-start: none;
+        padding: 0.7125rem 1rem 0.7125rem 1.25rem;
+    }
 }
 
 .section__title {
@@ -31,12 +39,6 @@
     padding: 1rem 1rem 1rem 1.25rem;
     text-align: start;
     width: 100%;
-}
-
-.section__toggle--expanded .section__title {
-    border: 0.35rem solid var(--fl-buttonFgColor, $sectionBorderColour);
-    border-inline-start: none;
-    padding: 0.7125rem 1rem 0.7125rem 1.25rem;
 }
 
 .section__icon {
