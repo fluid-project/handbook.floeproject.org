@@ -28,3 +28,11 @@
         @content;
     }
 }
+
+@mixin hover-focus-outline($colour) {
+    &:focus,
+    &:hover {
+        outline: 0.125rem solid var(--fl-linkColor, $colour);
+        outline-offset: 2px;
+    }
+}

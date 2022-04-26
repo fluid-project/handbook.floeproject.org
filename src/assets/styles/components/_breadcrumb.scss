@@ -14,5 +14,7 @@
 }
 
 .breadcrumb__link {
+    @include hover-focus-outline($mainColour);
+
     color: $mainColour !important;
 }

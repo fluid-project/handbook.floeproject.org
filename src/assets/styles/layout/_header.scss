@@ -18,6 +18,8 @@
 }
 
 .org-header__link {
+    @include hover-focus-outline($headerOrgLinkColour);
+
     color: $headerOrgLinkColour;
     text-decoration: underline;
 }
