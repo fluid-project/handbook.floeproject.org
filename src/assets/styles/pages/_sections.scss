@@ -5,12 +5,11 @@
 }
 
 .sections-control {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
     margin-block-end: 1.5rem;
     margin-block-start: 2rem;
-}
-
-.sections-control__expand-all {
-    margin-inline-end: 1.25rem;
 }
 
 .sections-control__collapse-all,
