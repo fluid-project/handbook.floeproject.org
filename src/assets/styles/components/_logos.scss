@@ -2,13 +2,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: space-around;
+
+    svg {
+        display: inline-block;
+        fill: $footerColour;
+        height: 3rem;
+        max-width: 100%;
+    }
 }
 
-.logos svg {
-    display: block;
-    fill: $footerColour;
-    height: 3rem;
+.logos__group {
+    display: flex;
+    flex: 1 1 47%;
+    gap: 2rem;
+    justify-content: space-around;
     max-width: 100%;
 }
 
