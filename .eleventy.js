@@ -67,6 +67,48 @@ module.exports = function (config) {
         return getResourceLinks(content, sideContentHeadings, lang);
     });
 
+    /*
+        Provide a custom duplicate of eleventy-plugin-fluid's uioInit shortcode in
+        order to run it without the text-size preference until issue #57 is solved
+
+        This is called from base.njk and home.njk
+
+        https://github.com/fluid-project/handbook.floeproject.org/issues/57
+    */
+    config.addShortcode("uioCustomInit", (locale, direction) => {
+        let options = {
+            preferences: [
+                "fluid.prefs.lineSpace",
+                "fluid.prefs.textFont",
+                "fluid.prefs.contrast",
+                "fluid.prefs.tableOfContents",
+                "fluid.prefs.enhanceInputs"
+            ],
+            auxiliarySchema: {
+                terms: {
+                    templatePrefix: "/lib/infusion/src/framework/preferences/html",
+                    messagePrefix: "/lib/infusion/src/framework/preferences/messages"
+                },
+                "fluid.prefs.tableOfContents": {
+                    enactor: {
+                        tocTemplate: "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+                        tocMessage: "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
+                        ignoreForToC: {
+                            ignoreClass: ".flc-toc-ignore"
+                        }
+                    }
+                }
+            },
+            prefsEditorLoader: {
+                lazyLoad: true
+            },
+            locale: locale,
+            direction: direction
+        };
+
+        return `<script>fluid.uiOptions.multilingual(".flc-prefsEditor-separatedPanel", ${JSON.stringify(options)});</script>`;
+    });
+
     // 404
     config.setBrowserSyncConfig({
         callbacks: {
