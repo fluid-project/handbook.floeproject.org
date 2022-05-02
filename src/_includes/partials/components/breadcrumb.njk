@@ -2,8 +2,8 @@
     <ul class="breadcrumb__list">
     {% for item in collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true }) %}
         <li class="breadcrumb__item">
-        {% if item.url == page.url %}
-            {# if it's the current page, no link is provided #}
+        {% if item.url == page.url or item.disableBreadcrumbLink === true %}
+            {# if it's the current page or if the front matter specifies so, no link is provided #}
             <span>{{ item.title }}</span>
         {% else %}
             <a class="breadcrumb__link" href="{{ item.url | url }}">{{ item.title }}</a>

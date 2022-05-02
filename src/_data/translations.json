@@ -3,6 +3,8 @@
         "approaches": "approaches",
         "perspectives": "perspectives",
         "techniques": "techniques",
-        "menu": "Menu"
+        "menu": "Menu",
+        "collapseAll": "collapse all",
+        "expandAll": "expand all"
     }
 }
