@@ -8,8 +8,8 @@ eleventyNavigation:
     thumbnailAltText: "A diagram showing a starburst pattern with many dots and concentric circles, with more dots closer to the centre"
 ---
 
-This work "_The Three Dimensions of Inclusive Design: Part Two_", is a reproduction of
-"[_The Three Dimensions of Inclusive Design, Part Two_](https://medium.com/@jutta.trevira/the-three-dimensions-of-inclusive-design-part-two-7cacd12b79f1)"
+This work "*The Three Dimensions of Inclusive Design: Part Two*", is a reproduction of
+"[*The Three Dimensions of Inclusive Design, Part Two*](https://medium.com/@jutta.trevira/the-three-dimensions-of-inclusive-design-part-two-7cacd12b79f1)"
 by Jutta Treviranus, used under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). This is the second
 part of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and
 increasingly connected world. [Part One can be found here](/TheThreeDimensionsPartOne.html). [Part Three can be found here](/TheThreeDimensionsPartThree.html).
