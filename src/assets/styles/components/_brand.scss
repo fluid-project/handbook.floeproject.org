@@ -4,15 +4,32 @@
 
 .brand__desktop {
     display: none;
+    margin-block-end: 1.875rem;
+    margin-block-start: 2.5rem;
+    padding: 0.75rem;
+
+    
+
+    svg {
+        height: 5.4rem;
+    }
 }
 
 .brand__mobile {
     display: inline-block;
+    margin-block: 1.5rem;
 
     svg {
         height: 5rem;
-        margin-block: 1.5rem;
         width: 5rem;
+    }
+}
+
+.brand__desktop,
+.brand__mobile {
+    &:focus,
+    &:hover {
+        outline: solid 0.3125rem $darkRed;
     }
 }
 
