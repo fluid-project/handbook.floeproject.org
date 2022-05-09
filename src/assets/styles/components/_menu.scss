@@ -59,7 +59,11 @@
     padding-inline-start: 0;
 }
 
-.menu__link {
+/*
+ * these `menu__link` selectors include the `a` element selector for
+ * greater specificity over site-wide hover rules
+ */
+a.menu__link {
     align-items: center;
     background-color: var(--fl-bgColor, $menuExpandedBGColour);
     color: var(--fl-linkColor, $menuExpandedColour);
@@ -76,8 +80,11 @@
     &:focus,
     &:hover {
         background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour);
+        border-radius: unset;
         color: var(--fl-bgColor, $menuExpandedSelectedColour);
+        margin: unset;
         outline-color: transparent;
+        padding-block: unset;
     }
 }
 
@@ -118,7 +125,7 @@
         padding-inline-end: 2rem;
     }
 
-    .menu__link {
+    a.menu__link {
         background-color: inherit;
         color: var(--fl-linkColor, currentColor);
         font-size: 1.125rem;

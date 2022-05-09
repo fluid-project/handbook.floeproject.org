@@ -14,7 +14,10 @@
 }
 
 .breadcrumb__link {
-    @include hover-focus-outline($mainColour);
-
     color: $mainColour !important;
+
+    &:focus,
+    &:hover {
+        outline: 0.125rem solid var(--fl-linkColor, $mainColour);
+    }
 }

@@ -2,20 +2,22 @@
     flex: 1;
 }
 
-.brand__desktop {
+/*
+ * these `brand__*` selectors include the `a` element selector for
+ * greater specificity over site-wide hover rules
+ */
+a.brand__desktop {
     display: none;
     margin-block-end: 1.875rem;
     margin-block-start: 2.5rem;
     padding: 0.75rem;
-
-    
 
     svg {
         height: 5.4rem;
     }
 }
 
-.brand__mobile {
+a.brand__mobile {
     display: inline-block;
     margin-block: 1.5rem;
 
@@ -25,20 +27,24 @@
     }
 }
 
-.brand__desktop,
-.brand__mobile {
+a.brand__desktop,
+a.brand__mobile {
     &:focus,
     &:hover {
+        background: unset;
+        border-radius: unset;
+        margin-inline: unset;
         outline: solid 0.3125rem $darkRed;
+        padding: unset;
     }
 }
 
 @include breakpoint-up(md) {
-    .brand__desktop {
+    a.brand__desktop {
         display: inline-block;
     }
 
-    .brand__mobile {
+    a.brand__mobile {
         display: none;
     }
 }
