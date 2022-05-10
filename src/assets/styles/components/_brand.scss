@@ -12,6 +12,11 @@ a.brand__desktop {
     margin-block-start: 2.5rem;
     padding: 0.75rem;
 
+    &:focus,
+    &:hover {
+        @include brand-focus-hover;
+    }
+
     svg {
         height: 5.4rem;
     }
@@ -21,21 +26,16 @@ a.brand__mobile {
     display: inline-block;
     margin-block: 1.5rem;
 
+    &:focus,
+    &:hover {
+        @include brand-focus-hover;
+
+        padding: unset;
+    }
+
     svg {
         height: 5rem;
         width: 5rem;
-    }
-}
-
-a.brand__desktop,
-a.brand__mobile {
-    &:focus,
-    &:hover {
-        background: unset;
-        border-radius: unset;
-        margin-inline: unset;
-        outline: solid 0.3125rem $darkRed;
-        padding: unset;
     }
 }
 

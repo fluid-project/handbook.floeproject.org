@@ -60,8 +60,9 @@
 }
 
 /*
- * these `menu__link` selectors include the `a` element selector for
- * greater specificity over site-wide hover rules
+ * The `menu__link` selectors in this file (there are several)
+ * include the `a` element selector for greater specificity over
+ * site-wide hover rules
  */
 a.menu__link {
     align-items: center;
@@ -75,13 +76,22 @@ a.menu__link {
     padding-inline-start: 2rem;
     text-decoration: none;
 
+    /*
+     * A UIO-specific contrast theme selector is added in order
+     * to match UIO's specificity for mobile menu link colours,
+     * and the `!important` properties are added to beat it
+     *
+     * The same selector appears in the desktop override rules
+     */
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover,
     &[aria-current="page"],
     &[aria-current="true"],
     &:focus,
     &:hover {
-        background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour);
+        background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour) !important;
         border-radius: unset;
-        color: var(--fl-bgColor, $menuExpandedSelectedColour);
+        color: var(--fl-bgColor, $menuExpandedSelectedColour) !important;
         margin: unset;
         outline-color: transparent;
         padding-block: unset;
@@ -140,16 +150,18 @@ a.menu__link {
         &:hover {
             background-color: inherit;
             color: inherit;
-            outline-color: var(--fl-linkColor, $menuExpandedBGColour) solid 0.25rem;
+            outline: none;
         }
 
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover,
         &:focus,
         &:hover,
         &[aria-current="page"],
         &[aria-current="true"] {
-            background-color: inherit;
+            background-color: inherit !important;
             border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
-            color: var(--fl-linkColor, currentColor);
+            color: var(--fl-linkColor, currentColor) !important;
             margin-left: 0;
         }
     }
