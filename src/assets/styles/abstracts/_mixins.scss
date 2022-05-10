@@ -28,3 +28,11 @@
         @content;
     }
 }
+
+// brand component focus & hover style overrides
+@mixin brand-focus-hover() {
+    background: unset;
+    border-radius: unset;
+    margin-inline: unset;
+    outline: solid 0.3125rem $darkRed;
+}
