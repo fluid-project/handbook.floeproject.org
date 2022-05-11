@@ -18,8 +18,18 @@
     border: 1px solid $mainColour;
     color: var(--fl-buttonFgColor, $mainColour);
     cursor: pointer;
+    flex-basis: 0;
+    flex-grow: 1;
     font-size: 1.125rem;
     font-weight: var(--fl-enhance-font-weight, 600);
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
     padding: 0.375rem 1.5rem;
+}
+
+@include breakpoint-up(md) {
+    .sections-control__collapse-all,
+    .sections-control__expand-all {
+        flex-basis: unset;
+        flex-grow: unset;
+    }
 }
