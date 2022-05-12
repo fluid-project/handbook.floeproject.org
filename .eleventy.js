@@ -68,8 +68,8 @@ module.exports = function (config) {
         return getResourceLinks(content, sideContentHeadings, lang);
     });
 
-    config.addShortcode("article_contents", (content, headingsSelector) => {
-        return getArticleContents(content, headingsSelector);
+    config.addShortcode("article_contents", (content, summary, headingsSelector) => {
+        return getArticleContents(content, summary, headingsSelector);
     });
 
     /*

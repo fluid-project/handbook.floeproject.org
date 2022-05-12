@@ -1,7 +1,6 @@
 "use strict";
 
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+const { JSDOM } = require("jsdom");
 
 module.exports = function getResourceLinks(pageContent, sideContentHeadings, lang) {
     var output = "";
