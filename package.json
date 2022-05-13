@@ -21,13 +21,8 @@
         "lint": "fluid-lint-all",
         "start": "npm-run-all -l clean -p start:*",
         "start:webpack": "mix watch",
-        "start:eleventy": "npm run dev"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint",
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
+        "start:eleventy": "npm run dev",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@11ty/eleventy": "1.0.0",
@@ -46,7 +41,7 @@
         "fluid-lint-all": "1.1.5",
         "github-slugger": "1.4.0",
         "html-minifier": "4.0.0",
-        "husky": "4.3.8",
+        "husky": "8.0.1",
         "image-size": "1.0.1",
         "laravel-mix": "6.0.41",
         "linkedom": "0.14.5",
