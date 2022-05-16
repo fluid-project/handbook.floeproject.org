@@ -18,9 +18,8 @@ var githubSlugify = function (string) {
     return slugger.slug(string);
 };
 
-const fs = require("fs");
-
 const fluidPlugin = require("eleventy-plugin-fluid");
+const fs = require("fs");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const MarkdownIt = require("markdown-it");
 const navigationPlugin = require("@11ty/eleventy-navigation");
@@ -47,8 +46,7 @@ module.exports = function (config) {
         return md.render(content);
     });
 
-    var markdownItAnchor = require("markdown-it-anchor");
-    var markdownItLibrary = md.use(markdownItAnchor, { slugify: githubSlugify });
+    var markdownItLibrary = md.use(require("markdown-it-anchor"), { slugify: githubSlugify });
 
     config.setLibrary("md", markdownItLibrary);
 
@@ -79,8 +77,8 @@ module.exports = function (config) {
         return getResourceLinks(content, sideContentHeadings, lang);
     });
 
-    config.addShortcode("article_contents", (content, summary, headingsSelector) => {
-        return getArticleContents(content, summary, headingsSelector);
+    config.addShortcode("article_contents", (content, summary, headingsSelector, containerCssClass) => {
+        return getArticleContents(content, summary, headingsSelector, containerCssClass);
     });
 
     /*

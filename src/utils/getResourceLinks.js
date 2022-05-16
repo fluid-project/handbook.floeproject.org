@@ -1,17 +1,18 @@
 "use strict";
 
-const { JSDOM } = require("jsdom");
+const { parseHTML } = require("linkedom");
 
 module.exports = function getResourceLinks(pageContent, sideContentHeadings, lang) {
     var output = "";
 
     const allHeadingsSelector = "h1, h2, h3, h4, h5, h6"; // for selecting all heading elements
-    const parsedMarkup = JSDOM.fragment(pageContent);
+
+    const {document} = parseHTML(pageContent);
 
     // get every heading where the text matches one of the defined headings
     for (const targetHeading of sideContentHeadings[lang].headings) {
         // get all elements that are headings (h1, h2, ... h6)
-        var headingsInContent = parsedMarkup.querySelectorAll(allHeadingsSelector);
+        var headingsInContent = document.querySelectorAll(allHeadingsSelector);
 
         // for each matching element
         for (const headingInContent of headingsInContent) {
