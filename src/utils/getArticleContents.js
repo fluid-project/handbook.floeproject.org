@@ -20,10 +20,10 @@ module.exports = (pageContent, summary = "Article Contents", headingsSelector = 
     const {document} = parseHTML(pageContent);
     const headings = document.querySelectorAll(headingsSelector);
 
-    const summaryCssClass = containerCssClass + "__summary";
-    const listCssClass = containerCssClass + "__list";
-    const listItemCssClass = containerCssClass + "__list-item";
-    const linkCssClass = containerCssClass + "__link";
+    const summaryCssClass = `${containerCssClass}__summary`;
+    const listCssClass = `${containerCssClass}__list`;
+    const listItemCssClass = `${containerCssClass}__list-item`;
+    const linkCssClass = `${containerCssClass}__link`;
 
     var articleContentsList = "";
 
