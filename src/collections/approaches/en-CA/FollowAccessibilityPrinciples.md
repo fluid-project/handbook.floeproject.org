@@ -10,7 +10,7 @@ While individual resources might not be able to satisfy each principle exhaustiv
 situations, the collective diversity of resources enabled through Floe could meet the needs and preferences of all
 learners.
 
-### Perceivability: Content should be consumable
+## Perceivability: Content should be consumable
 
 Content should be made available in different and adjustable modalities so that learners who are more comfortable or
 only able to consume content in a particular mode have that option available to them.
@@ -28,7 +28,7 @@ Floe examples:
 * [Video content and learning](/VideoContentAndLearning.html)
 * [ADOD](http://adod.idrc.ocad.ca/)
 
-### Understandability: Content should be plain and clear to comprehend
+## Understandability: Content should be plain and clear to comprehend
 
 * Different learners have different thresholds for wading through the complexity of the content, and complexity of the
 content's articulation/presentation
@@ -47,7 +47,7 @@ Floe examples:
 * [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
 * [Video content and learning](/VideoContentAndLearning.html)
 
-### Operability: Interactions should be operable by everyone
+## Operability: Interactions should be operable by everyone
 
 * Make sure that the resource is usable using different inputs (both a combination of different inputs, and individual
 inputs)
@@ -65,13 +65,13 @@ Floe examples:
 * [Learner Options](http://build.fluidproject.org/infusion/demos/prefsFramework/) (sometimes known as UI Options)
 * [Video content and learning](/VideoContentAndLearning.html)
 
-### Robustness: Resources should be compatible with tools now and later
+## Robustness: Resources should be compatible with tools now and later
 
 * Maximize compatibility with current and future user tools.
 * Learning resources should gracefully degrade when using older tools, and progressively enhance when using modern
 tools.
 
-### Standards
+## Standards
 
 Floe works with many international standards organizations to ensure that emerging technical standards are inclusively
 designed. In particular, Floe works with the World Wide Web Consortium (W3C).
