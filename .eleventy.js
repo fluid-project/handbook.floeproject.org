@@ -12,9 +12,10 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 
 "use strict";
 
-const fs = require("fs");
+var slug = require("github-slugger").slug;
 
 const fluidPlugin = require("eleventy-plugin-fluid");
+const fs = require("fs");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const MarkdownIt = require("markdown-it");
 const navigationPlugin = require("@11ty/eleventy-navigation");
@@ -27,6 +28,7 @@ const parseTransform = require("./src/transforms/parse-transform.js");
 // Import data files
 const siteConfig = require("./src/_data/config.json");
 const getResourceLinks = require("./src/utils/getResourceLinks.js");
+const getArticleContents = require("./src/utils/getArticleContents.js");
 
 module.exports = function (config) {
     config.setUseGitIgnore(false);
@@ -39,6 +41,10 @@ module.exports = function (config) {
     config.addFilter("markdown", (content) => {
         return md.render(content);
     });
+
+    var markdownItLibrary = md.use(require("markdown-it-anchor"), { slugify: slug });
+
+    config.setLibrary("md", markdownItLibrary);
 
     // Transforms
     config.addTransform("htmlmin", htmlMinTransform);
@@ -65,6 +71,10 @@ module.exports = function (config) {
 
     config.addShortcode("extract_resource_links", (content, sideContentHeadings, lang) => {
         return getResourceLinks(content, sideContentHeadings, lang);
+    });
+
+    config.addShortcode("article_contents", (content, summary, headingsSelector, containerCssClass) => {
+        return getArticleContents(content, summary, headingsSelector, containerCssClass);
     });
 
     /*

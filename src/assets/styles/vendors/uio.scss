@@ -1,6 +1,12 @@
 // UIO styles
 
+// removes gradient and applies border to banner for UIO contrast themes
 [class*=fl-theme]:not(.fl-theme-prefsEditor-default) .banner {
     background-image: none;
     border: 1px solid var(--fl-fgColor);
+}
+
+// hides the Table of Contents on Article pages
+.topic .flc-toc-tocContainer {
+    display: none !important;
 }
