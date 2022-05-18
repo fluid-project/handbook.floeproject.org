@@ -36,7 +36,7 @@ apps including Facebook, Instagram, Snapchat, and Tinder
 </figcaption>
 </figure>
 
-_Image courtesy of [Designboom](https://www.designboom.com/readers/dima-yarovinsky-visualizes-facebook-instagram-snapchat-terms-of-service-05-07-2018/)_
+*Image courtesy of [Designboom](https://www.designboom.com/readers/dima-yarovinsky-visualizes-facebook-instagram-snapchat-terms-of-service-05-07-2018/)*
 
 ## Be transparent and clear
 

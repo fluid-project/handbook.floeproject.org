@@ -2,6 +2,11 @@
     --ildh-wordmark-text-colour: var(--fl-fgColor, #{$footerColour});
 
     svg {
+        margin-block-end: 2rem;
         max-width: 100%;
+
+        &.ildh-logo-ildh-wordmark {
+            height: 5rem;
+        }
     }
 }

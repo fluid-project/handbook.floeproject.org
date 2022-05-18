@@ -8,8 +8,8 @@ eleventyNavigation:
     thumbnailAltText: "Many multicoloured handprints in paint on a large sheet of paper"
 ---
 
-This work "_The Three Dimensions of Inclusive Design: Part One_", is a reproduction of
-"[_The Three Dimensions of Inclusive Design: Part One_](https://medium.com/fwd50/the-three-dimensions-of-inclusive-design-part-one-103cad1ffdc2)"
+This work "*The Three Dimensions of Inclusive Design: Part One*", is a reproduction of
+"[*The Three Dimensions of Inclusive Design: Part One*](https://medium.com/fwd50/the-three-dimensions-of-inclusive-design-part-one-103cad1ffdc2)"
 by Jutta Treviranus, used under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). This is the first part
 of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and
 increasingly connected world. [Part Two can be found here](/TheThreeDimensionsPartTwo.html).
