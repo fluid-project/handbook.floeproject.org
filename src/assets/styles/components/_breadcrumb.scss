@@ -18,6 +18,7 @@
 
     &:focus,
     &:hover {
+        margin: unset;
         outline: 0.125rem solid var(--fl-linkColor, $mainColour);
     }
 }
