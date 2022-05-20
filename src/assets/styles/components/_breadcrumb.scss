@@ -18,7 +18,24 @@
 
     &:focus,
     &:hover {
+        background: unset;
         margin: unset;
-        outline: 0.125rem solid var(--fl-linkColor, $mainColour);
+        outline: none;
+        padding: unset;
+        position: relative;
+        z-index: 0;
+
+        &::after {
+            background: $linkBackgroundHoverColour;
+            border-radius: 0.3125rem;
+            bottom: -0.3rem;
+            content: "";
+            left: -0.3rem;
+            outline: 0.125rem solid var(--fl-linkColor, $mainColour);
+            position: absolute;
+            right: -0.3rem;
+            top: -0.3rem;
+            z-index: -1;
+        }
     }
 }
