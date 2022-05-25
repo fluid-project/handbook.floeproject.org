@@ -37,3 +37,10 @@ a {
         }
     }
 }
+
+// Recreate .fl-focus rules for UIO panel buttons
+.fl-prefsEditor-buttons button:focus {
+    outline-color: var(--fl-fgColor);
+    outline-style: solid;
+    outline-width: 0.2rem;
+}
