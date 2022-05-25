@@ -17,3 +17,23 @@ a {
 .topic .flc-toc-tocContainer {
     display: none !important;
 }
+
+/*
+ * A UIO-specific contrast theme selector is added in order
+ * to match UIO's specificity for mobile menu link colours,
+ */
+.menu__link {
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
+        @include menu-link-focus-hover-narrow;
+    }
+}
+
+@include breakpoint-up(lg) {
+    .menu__link {
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
+            @include menu-link-focus-hover-wide;
+        }
+    }
+}

@@ -29,10 +29,27 @@
     }
 }
 
-// brand component focus & hover style overrides
+// Brand component focus & hover style overrides
 @mixin brand-focus-hover() {
     background: unset;
     border-radius: unset;
     margin-inline: unset;
     outline: solid 0.3125rem $darkRed;
+}
+
+// Menu link focus & hover style overrides
+@mixin menu-link-focus-hover-narrow() {
+    background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour) !important;
+    border-radius: unset;
+    color: var(--fl-bgColor, $menuExpandedSelectedColour) !important;
+    margin: unset;
+    outline-color: transparent;
+    padding-block: unset;
+}
+
+@mixin menu-link-focus-hover-wide() {
+    background-color: inherit !important;
+    border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
+    color: var(--fl-linkColor, currentColor) !important;
+    margin-left: 0;
 }
