@@ -59,12 +59,7 @@
     padding-inline-start: 0;
 }
 
-/*
- * The `menu__link` selectors in this file (there is also one for
- * wide screens) include the `a` element selector for greater
- * specificity over site-wide hover rules
- */
-a.menu__link {
+.menu__link {
     align-items: center;
     background-color: var(--fl-bgColor, $menuExpandedBGColour);
     color: var(--fl-linkColor, $menuExpandedColour);
@@ -121,7 +116,7 @@ a.menu__link {
         padding-inline-end: 2rem;
     }
 
-    a.menu__link {
+    .menu__link {
         background-color: inherit;
         color: var(--fl-linkColor, currentColor);
         font-size: 1.125rem;

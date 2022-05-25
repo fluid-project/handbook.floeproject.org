@@ -52,4 +52,5 @@
     border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
     color: var(--fl-linkColor, currentColor) !important;
     margin-left: 0;
+    padding-inline-end: unset;
 }
