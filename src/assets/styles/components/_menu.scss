@@ -131,7 +131,8 @@
         &:hover {
             background-color: inherit;
             color: inherit;
-            outline: none;
+            outline: 0.125rem solid $mainColour;
+            outline-offset: -0.125rem;
         }
 
         &:focus,
