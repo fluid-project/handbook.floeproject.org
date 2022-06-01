@@ -37,12 +37,26 @@
         }
     }
 
-    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) a {
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) a:not(.breadcrumb__link) {
         &:focus,
         &:hover {
             outline: 0.125rem solid;
             outline-color: var(--fl-fgColor) !important;
             outline-offset: -0.125rem;
+        }
+    }
+}
+
+// Browser-specific user agent focus outline reset
+// https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible#selectively_showing_the_focus_indicator
+@supports selector(:focus-visible) {
+    .article-contents__summary,
+    .sections-control__expand-all,
+    .sections-control__collapse-all,
+    .section__toggle {
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus {
+            background: transparent;
+            outline: none;
         }
     }
 }
