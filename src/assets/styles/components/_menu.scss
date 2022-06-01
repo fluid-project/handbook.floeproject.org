@@ -4,6 +4,7 @@
     background-color: var(--fl-buttonBgColor, inherit);
     border: none;
     color: var(--fl-buttonFgColor, currentColor);
+    cursor: pointer;
     display: flex;
     height: 2rem;
     justify-content: center;
