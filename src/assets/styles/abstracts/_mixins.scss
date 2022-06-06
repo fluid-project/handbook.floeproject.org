@@ -39,18 +39,18 @@
 
 // Menu link focus & hover style overrides
 @mixin menu-link-focus-hover-narrow() {
-    background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour) !important;
+    background-color: $menuExpandedSelectedBGColour;
     border-radius: unset;
-    color: var(--fl-bgColor, $menuExpandedSelectedColour) !important;
+    color: $menuExpandedSelectedColour;
     margin: unset;
     outline-color: transparent;
     padding-block: unset;
 }
 
 @mixin menu-link-focus-hover-wide() {
-    background-color: inherit !important;
+    background-color: inherit;
     border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
-    color: var(--fl-linkColor, currentColor) !important;
+    color: currentColor;
     margin-left: 0;
     padding-inline-end: unset;
 }
