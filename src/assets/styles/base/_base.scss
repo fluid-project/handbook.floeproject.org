@@ -8,6 +8,7 @@
 a {
     &:focus,
     &:hover {
+        background: $linkFocusHoverBackgroundColour;
         border-radius: 0.3125rem;
         box-decoration-break: clone;
         margin: -0.3rem;
