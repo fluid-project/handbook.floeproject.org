@@ -12,6 +12,15 @@
         color: $linkColour;
     }
 
+    code {
+        display: inline;
+    }
+
+    pre code {
+        display: block;
+        overflow: auto;
+    }
+
     h1,
     h2,
     h3,
@@ -48,6 +57,7 @@
         margin-inline: 0;
     }
 
+    ol,
     p,
     ul {
         font-size: 1.25rem;

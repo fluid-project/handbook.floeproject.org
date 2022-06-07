@@ -36,7 +36,7 @@ in iBooks, but will render fine in Readium. W3C's
 [http://validator.w3.org/](http://validator.w3.org/)
 can help identify invalid UTF-8 characters.
 
-### Further reading
+## Further reading
 
 * ["EPUB 3 Accessibility Guidelines: Scripted Interactivity - Progressive Enhancement" by IDPF.](http://www.idpf.org/accessibility/guidelines/content/script/pe.php)
 * ["EPUB 3 and Interactivity", by Liza Daly, EPUB Zone.](http://epubzone.org/news/epub-3-and-interactivity)

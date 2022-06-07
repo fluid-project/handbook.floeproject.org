@@ -4,7 +4,6 @@ const generatePermalink = require("../../utils/generatePermalink.js");
 const getLang = require("../../utils/getLang.js");
 
 module.exports = {
-    layout: "layouts/topic-page",
     eleventyComputed: {
         /* Determine the language of this item based on the language code in the file path. */
         lang: data => getLang(data.page.filePathStem, "techniques"),
