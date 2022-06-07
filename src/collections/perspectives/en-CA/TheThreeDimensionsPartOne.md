@@ -270,3 +270,5 @@ designs so that everyone has choices that optimally meet their diverse and varia
 
 Diversity is our most valuable asset. Inclusion is our biggest challenge. Taking up the challenge will make our design
 better, and the human community we design with better.
+
+[The Three Dimensions of Inclusive Design: Part Two](/perspectives/the-three-dimensions-of-inclusive-design-part-two/)

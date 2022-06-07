@@ -279,3 +279,5 @@ exclude the diversity. Inclusive design begins with no predetermined end point a
 arrives at greater innovation, flexibility, and general usability. Employing an inclusively designed process will
 achieve a more lasting and productive change than a checklist of design criteria. Inviting the unrecognized technical
 pioneers to the design table is a gift that keeps on giving.
+
+[The Three Dimensions of Inclusive Design: Part Three](/perspectives/the-three-dimensions-of-inclusive-design-part-three/)
