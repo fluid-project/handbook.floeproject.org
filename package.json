@@ -34,7 +34,7 @@
     "devDependencies": {
         "@babel/core": "7.16.12",
         "@commitlint/cli": "17.0.2",
-        "@commitlint/config-conventional": "16.0.0",
+        "@commitlint/config-conventional": "17.0.2",
         "cross-env": "7.0.3",
         "debug": "4.3.3",
         "fluid-lint-all": "1.1.5",
