@@ -1,45 +1,66 @@
 .footer {
+    background-color: $footerBGColour;
+    margin-block-start: 5.75rem;
+    padding: 3.25rem 24px;
+}
+
+.footer__container {
     --ildh-wordmark-colour: var(--fl-bgColor, #{$footerBGColour});
 
-    background-color: $footerBGColour;
     color: $footerColour;
     display: grid;
+    font-size: 1.125rem;
+    font-weight: 500;
     grid-template-columns: 1fr;
-    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.6);
-    margin-top: 5.75rem;
-    padding: 3.25rem 24px;
+    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.8125);
+    margin-inline: auto;
+    max-width: $footer-max-width;
     row-gap: 2.625rem;
 }
 
-.footer a {
+.footer__container a {
     color: $footerLinkColour;
 
     &:focus,
     &:hover {
         background-color: var(--fl-linkColor, $footerColour);
         color: var(--fl-bgColor, $footerBGColour);
-        outline: none;
     }
 }
 
-.footer p:first-child {
+.footer__container p:first-child {
     margin-block-start: 0;
 }
 
-.footer p:last-child {
+.footer__container p:last-child {
     margin-block: 0;
 }
 
 @include breakpoint-up(lg) {
-    .footer {
-        column-gap: 7.875rem;
+    .footer__container {
+        column-gap: 10rem;
+        grid-template-areas:
+            "tagline context"
+            "tagline ."
+            "tagline credits"
+            "logos credits";
         grid-template-columns: 1fr 1fr;
+        row-gap: 1.5rem;
     }
 
-    .logos {
-        align-self: end;
-        gap: 2rem;
-        grid-column: 1;
-        grid-row-start: 2;
+    .footer__container .tagline {
+        grid-area: tagline;
+    }
+
+    .footer__container .context {
+        grid-area: context;
+    }
+
+    .footer__container .credits {
+        grid-area: credits;
+    }
+
+    .footer__container .logos {
+        grid-area: logos;
     }
 }

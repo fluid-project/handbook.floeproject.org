@@ -19,8 +19,10 @@ $footerColour: var(--fl-fgColor, #fff);
 $footerBGColour: var(--fl-bgColor, #153647);
 $footerLinkColour: var(--fl-linkColor, var(--fl-fgColor, #cfca6f));
 $rootContentColour: var(--fl-bgColor, #000);
-$rootContentBackgroundColour: var(--fl-bgColor, #e7f0f3);
+$rootContentBackgroundColour: var(--fl-bgColor, #f3f7f9);
 $topicContentBackgroundColour: var(--fl-bgColor, #f9faf6);
+$linkFocusHoverBackgroundColour: var(--fl-bgColor, #f8e886);
+$topicLinksHeadingColour: $darkRed;
 $menuTitleColour: $darkRed;
 $menuExpandedColour: var(--fl-fgColor, #000);
 $menuExpandedBGColour: $darkGrey;
@@ -29,9 +31,10 @@ $menuExpandedSelectedBGColour: $darkRed;
 $menuButtonStrokeColour: $darkRed;
 $sectionBGColour: var(--fl-bgColor, #fff);
 $sectionBorderColour: $darkRed;
+$articleContentsBorderColour: var(--fl-bgColor, #bedee4);
+$articleContentsIconColour: var(--fl-fgColor, #12699a);
 $toolkitsBorderColour: var(--fl-bgColor, #0b719e);
 $toolkitsHeadingColour: var(--fl-fgColor, #095a7d);
-$topicLinksHeadingColour: $darkRed;
 $sideContentLinkColour: var(--fl-linkColor, #2148a8);
 $homeIntroColour: var(--fl-fgColor, #235064);
 $homeIntroBGColour: var(--fl-bgColor, #fff);
@@ -40,8 +43,12 @@ $homeGetInvolvedBGColour: $darkGrey;
 
 /** Dimensions **/
 $banner-height: 20px;
+$banner-height-large: 42px;
+$banner-height-full: 88px;
+$banner-height-full-large: 171px;
 $max-content-width: 69rem;
 $home-content-width: 50rem; // used by the Home page only, consider not using a variablea
+$footer-max-width: 90rem;
 
 // Responsive Breakpoints, shamelessy cribbed from Bootstrap.
 // @see https://github.com/twbs/bootstrap/blob/master/scss/mixins/_breakpoints.scss

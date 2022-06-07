@@ -1,7 +1,7 @@
 ---
 title: Access for All
 eleventyNavigation:
-    key: Accessibility Assessment Tools
+    key: Access for All
 ---
 AccessForAll accessibility promotes an inclusive learning experience by enabling the matching of the characteristics of
 resources to the needs and preferences of individual learners. In circumstances where resources might not be, or even

@@ -8,10 +8,10 @@ eleventyNavigation:
     thumbnailAltText: "A group of people in a red room arranged in a large rectangle listening to a speaker"
 ---
 
-_Editor’s Note: Jutta Treviranus is a leader in inclusive design; she started and directs OCAD University’s Inclusive
+*Editor’s Note: Jutta Treviranus is a leader in inclusive design; she started and directs OCAD University’s Inclusive
 Design Research Centre, heads the Inclusive Design Institute and founded the first inclusive design graduate program
 at OCAD U. In this post, Jutta explains the costs and impacts on the edge and the unrepresented when identity
-clustering and cookie cutter approaches to digital inclusion occur._
+clustering and cookie cutter approaches to digital inclusion occur.*
 
 Last spring Hillary Hartley joined the Ontario Government as the first Chief Digital Officer, [assigned](https://www.ontario.ca/page/ontario-digital-service-key-priorities)
 to design, develop and deploy a friendly, efficient, effective, accessible, inclusive and participatory online

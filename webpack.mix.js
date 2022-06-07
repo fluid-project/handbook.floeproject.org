@@ -27,7 +27,11 @@ mix.sass("./src/assets/styles/main.scss", "dist/assets/styles");
 
 // Don't modify stylesheet url() functions.
 mix.options({
-    processCssUrls: false
+    processCssUrls: false,
+    postCss: [
+        require("postcss-dir-pseudo-class"),
+        require("postcss-logical")
+    ]
 });
 
 // Enable source maps.

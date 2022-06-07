@@ -24,11 +24,11 @@ $(document).ready(function () {
             .toggleClass("section__content--show", state);
     };
     /** When "show all" button is clicked, expands all categories to show their contents. */
-    $(".sections__showAll").click(function () {
+    $(".sections-control__expand-all").click(function () {
         toggleCategory(".section__toggle", true);
     });
     /** When "hide all" button is clicked, collapses all categories to hide their contents. */
-    $(".sections__hideAll").click(function () {
+    $(".sections-control__collapse-all").click(function () {
         toggleCategory(".section__toggle", false);
     });
     $(".section__toggle").click(function (evt) {

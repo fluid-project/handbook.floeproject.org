@@ -4,6 +4,7 @@
     background-color: var(--fl-buttonBgColor, inherit);
     border: none;
     color: var(--fl-buttonFgColor, currentColor);
+    cursor: pointer;
     display: flex;
     height: 2rem;
     justify-content: center;
@@ -64,7 +65,7 @@
     background-color: var(--fl-bgColor, $menuExpandedBGColour);
     color: var(--fl-linkColor, $menuExpandedColour);
     display: flex;
-    font-size: 1.5rem;
+    font-size: var(--fl-enhance-font-size, 1.5rem);
     font-weight: var(--fl-enhance-font-weight, 500);
     height: 3.5rem;
     line-height: 1.875rem;
@@ -75,9 +76,7 @@
     &[aria-current="true"],
     &:focus,
     &:hover {
-        background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour);
-        color: var(--fl-bgColor, $menuExpandedSelectedColour);
-        outline-color: transparent;
+        @include menu-link-focus-hover-narrow;
     }
 }
 
@@ -133,17 +132,15 @@
         &:hover {
             background-color: inherit;
             color: inherit;
-            outline-color: var(--fl-linkColor, $menuExpandedBGColour) solid 0.25rem;
+            outline: 0.125rem solid $mainColour;
+            outline-offset: -0.125rem;
         }
 
         &:focus,
         &:hover,
         &[aria-current="page"],
         &[aria-current="true"] {
-            background-color: inherit;
-            border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
-            color: var(--fl-linkColor, currentColor);
-            margin-left: 0;
+            @include menu-link-focus-hover-wide;
         }
     }
 }

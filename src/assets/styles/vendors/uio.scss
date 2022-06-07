@@ -1,0 +1,68 @@
+// UIO styles
+
+// removes gradient and applies border to banner for UIO contrast themes
+[class*="fl-theme"]:not(.fl-theme-prefsEditor-default) .banner {
+    background-image: none;
+    border: 1px solid var(--fl-fgColor);
+}
+
+// hides the Table of Contents on Article pages
+.topic .flc-toc-tocContainer {
+    display: none !important;
+}
+
+/*
+ * A UIO-specific contrast theme selector is added in order
+ * to match UIO's specificity for mobile menu link colours,
+ */
+.menu__link {
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
+        @include menu-link-focus-hover-narrow;
+
+        background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour) !important;
+        color: var(--fl-bgColor, $menuExpandedSelectedColour) !important;
+    }
+}
+
+// Recreate .fl-focus rules for UIO panel buttons
+.fl-prefsEditor-buttons button:focus {
+    outline-color: var(--fl-fgColor);
+    outline-style: solid;
+    outline-width: 0.2rem;
+}
+
+@include breakpoint-up(lg) {
+    .menu__link {
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
+            @include menu-link-focus-hover-wide;
+
+            background-color: inherit !important;
+            color: var(--fl-linkColor, currentColor) !important;
+        }
+    }
+
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) a:not(.breadcrumb__link) {
+        &:focus,
+        &:hover {
+            outline: 0.125rem solid;
+            outline-color: var(--fl-fgColor) !important;
+            outline-offset: -0.125rem;
+        }
+    }
+}
+
+// Browser-specific user agent focus outline reset
+// https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible#selectively_showing_the_focus_indicator
+@supports selector(:focus-visible) {
+    .article-contents,
+    .sections-control__expand-all,
+    .sections-control__collapse-all,
+    .section__toggle {
+        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus {
+            background: transparent;
+            outline: none;
+        }
+    }
+}

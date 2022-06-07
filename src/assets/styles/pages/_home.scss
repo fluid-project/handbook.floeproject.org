@@ -1,12 +1,21 @@
 // Homepage-specific rules
 .home .banner {
-    height: 88px;
+    height: $banner-height-full;
+
+    svg {
+        height: $banner-height-full;
+        position: absolute;
+    }
 }
 
 .home .main {
     display: block;
     margin-inline: unset;
     max-width: unset;
+}
+
+.home .flc-toc-tocContainer {
+    padding: 1rem;
 }
 
 .home .footer {
@@ -67,11 +76,17 @@
     }
 }
 
-@include breakpoint-up(lg) {
+@include breakpoint-up(md) {
     .home .banner {
-        height: 170px;
-    }
+        height: $banner-height-full-large;
 
+        svg {
+            height: $banner-height-full-large;
+        }
+    }
+}
+
+@include breakpoint-up(lg) {
     .home__intro {
         padding-block-start: 4rem;
     }

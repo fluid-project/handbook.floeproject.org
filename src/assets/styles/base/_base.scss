@@ -5,11 +5,36 @@
 
 // Site-wide rules (except the homepage which has overriding rules)
 
+a {
+    &:focus,
+    &:hover {
+        background: $linkFocusHoverBackgroundColour;
+        border-radius: 0.3125rem;
+        box-decoration-break: clone;
+        margin: -0.3rem;
+        padding: 0.3rem;
+        text-decoration-thickness: 0.1875rem;
+    }
+}
+
+figure a {
+    display: inline-block;
+}
+
 .main-content {
     padding: 2rem;
 
     a {
         color: $linkColour;
+    }
+
+    code {
+        display: inline;
+    }
+
+    pre code {
+        display: block;
+        overflow: auto;
     }
 
     h1,
@@ -48,6 +73,7 @@
         margin-inline: 0;
     }
 
+    ol,
     p,
     ul {
         font-size: 1.25rem;
