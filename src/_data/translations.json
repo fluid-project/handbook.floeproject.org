@@ -3,6 +3,10 @@
         "approaches": "approaches",
         "perspectives": "perspectives",
         "techniques": "techniques",
-        "menu": "Menu"
+        "brandAltText": "Inclusive Learning Design Handbook - Home",
+        "menu": "Menu",
+        "collapseAll": "collapse all",
+        "expandAll": "expand all",
+        "articleContentsSummary": "Article Contents"
     }
 }

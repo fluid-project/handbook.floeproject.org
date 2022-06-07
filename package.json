@@ -21,21 +21,15 @@
         "lint": "fluid-lint-all",
         "start": "npm-run-all -l clean -p start:*",
         "start:webpack": "mix watch",
-        "start:eleventy": "npm run dev"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run lint",
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
+        "start:eleventy": "npm run dev",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@11ty/eleventy": "1.0.0",
         "@11ty/eleventy-navigation": "0.3.2",
         "@11ty/eleventy-plugin-syntaxhighlight": "3.2.2",
-        "eleventy-plugin-fluid": "0.3.1",
-        "infusion": "4.0.0-dev.20211216T180403Z.d5f6173fc.FLUID-6703",
-        "jsdom": "19.0.0"
+        "eleventy-plugin-fluid": "1.0.0",
+        "infusion": "4.0.0"
     },
     "devDependencies": {
         "@babel/core": "7.16.12",
@@ -44,18 +38,22 @@
         "cross-env": "7.0.3",
         "debug": "4.3.3",
         "fluid-lint-all": "1.1.5",
+        "github-slugger": "1.4.0",
         "html-minifier": "4.0.0",
-        "husky": "4.3.8",
+        "husky": "8.0.1",
         "image-size": "1.0.1",
         "laravel-mix": "6.0.44",
-        "linkedom": "0.13.2",
+        "linkedom": "0.14.5",
+        "markdown-it-anchor": "8.6.4",
         "move-file": "2.1.0",
         "npm-run-all": "4.1.5",
-        "postcss": "8.4.5",
+        "postcss": "8.4.12",
+        "postcss-dir-pseudo-class": "6.0.4",
+        "postcss-logical": "5.0.4",
         "resolve-url-loader": "5.0.0",
         "rimraf": "3.0.2",
         "sass": "1.51.0",
-        "sass-loader": "12.4.0",
+        "sass-loader": "12.6.0",
         "slugify": "1.6.5"
     }
 }

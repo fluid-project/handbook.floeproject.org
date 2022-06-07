@@ -47,6 +47,7 @@
 
     .side-content__icon {
         background-color: $toolkitsBorderColour;
+        border: 1px solid var(--fl-fgColor);
         padding: 1rem;
 
         svg {

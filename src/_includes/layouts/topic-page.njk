@@ -12,6 +12,11 @@
     </div>
 {% endblock %}
 
+{% block content %}
+    {%- article_contents content, translations[lang].articleContentsSummary -%}
+    {{ content | safe }}
+{% endblock %}
+
 {% block sideContent %}
     {% if not lang %}
         {% set lang = config.defaultLanguage %}
