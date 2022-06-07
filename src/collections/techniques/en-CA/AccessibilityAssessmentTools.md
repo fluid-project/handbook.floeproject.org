@@ -7,19 +7,19 @@ eleventyNavigation:
 ---
 * [A complete list of Web Accessibility Evaluation Tools from the W3C](http://www.w3.org/WAI/ER/tools/complete)
 
-### Authoring
+## Authoring
 
 * [How to make common word processing documents more accessible](http://adod.idrc.ocad.ca/)
 * [An example of a Mozilla browser plugin for removing clutter](https://www.readability.com/addons)
 
-### Checking code
+## Checking code
 
 * [Calculate the readability of a web page](http://www.read-able.com/)
 * [W3C tool for validating markup by URI](http://validator.w3.org/)
 * [W3C tool for validating CSS by URI](http://jigsaw.w3.org/css-validator/)
 * [Evaluate the accessibility of web pages or HTML](http://achecker.ca/)
 
-### Checking color
+## Checking color
 
 * [http://colorfilter.wickline.org](http://colorfilter.wickline.org)
 * [http://vischeck.com](http://vischeck.com)
@@ -27,7 +27,7 @@ eleventyNavigation:
 * [http://www.snook.ca/technical/colour_contrast/colour.html](http://www.snook.ca/technical/colour_contrast/colour.html)
 * [http://webaim.org/resources/contrastchecker/](http://webaim.org/resources/contrastchecker/)
 
-### Standards
+## Standards
 
 Floe works with many international standards organizations to ensure that emerging technical standards are inclusively
 designed. In particular, Floe works with the World Wide Web Consortium (W3C).

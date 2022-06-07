@@ -15,9 +15,12 @@ page. For example, a list of text items used as a toolbar or navigation menu can
 ```html
 <nav>
     <ul class="buttons" title="Website navigation">
-        <li id="Home" aria-labelledby="navigation_home" aria-controls="my_content" aria-pressed="false" tabindex="0" role="button">Home</li>
-        <li id="Blog" aria-labelledby="navigation_blog" aria-controls="my_content" aria-pressed="false" tabindex="0" role="button">Blog</li>
-        <li id="About" aria-labelledby="navigation_about" aria-controls="my_content" aria-pressed="false" tabindex="0" role="button">About</li>
+        <li id="Home" aria-labelledby="navigation_home" aria-controls="my_content"
+            aria-pressed="false" tabindex="0" role="button">Home</li>
+        <li id="Blog" aria-labelledby="navigation_blog" aria-controls="my_content"
+            aria-pressed="false" tabindex="0" role="button">Blog</li>
+        <li id="About" aria-labelledby="navigation_about" aria-controls="my_content"
+            aria-pressed="false" tabindex="0" role="button">About</li>
      </ul>
 </nav>
 
