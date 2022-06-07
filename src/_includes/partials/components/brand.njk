@@ -7,9 +7,9 @@
     {% endif %}
 
     <a class="brand__desktop" rel="home" href="{{ homeUrl }}"{% if page.url === homeUrl %} aria-current="page"{% endif %}>
-        {%- svg_sprite "logo-ildh-wordmark" -%}
+        {%- svg_sprite "logo-ildh-wordmark", translations[lang].brandAltText, false -%}
     </a>
     <a class="brand__mobile" id="logo-narrow" rel="home" href="{{ homeUrl }}"{% if page.url === homeUrl %} aria-current="page"{% endif %}>
-        {%- svg_sprite "logo-ildh" -%}
+        {%- svg_sprite "logo-ildh", translations[lang].brandAltText, false -%}
     </a>
 </div>

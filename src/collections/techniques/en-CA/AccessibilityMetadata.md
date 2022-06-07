@@ -43,7 +43,9 @@ metadata.xml file.
 To specify metadata to a *part* of your publication, you would embed microdata directly into the HTML of the content
 itself. The following example illustrates how metadata would be created for embedded content.
 
-### Example: Embedded video without any metadata
+## Examples
+
+### Embedded video without any metadata
 
 ```html
 <video>
@@ -54,7 +56,7 @@ itself. The following example illustrates how metadata would be created for embe
 </video>
 ```
 
-### Example: Embedded video with basic metadata
+### Embedded video with basic metadata
 
 ```html
 <video itemscope itemtype="http://schema.org/Movie">
@@ -69,7 +71,7 @@ itself. The following example illustrates how metadata would be created for embe
 </video>
 ```
 
-### Example: Embedded video with more descriptive metadata
+### Embedded video with more descriptive metadata
 
 ```html
 <video itemscope itemtype="http://schema.org/Movie">

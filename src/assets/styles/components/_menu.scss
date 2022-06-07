@@ -64,7 +64,7 @@
     background-color: var(--fl-bgColor, $menuExpandedBGColour);
     color: var(--fl-linkColor, $menuExpandedColour);
     display: flex;
-    font-size: 1.5rem;
+    font-size: var(--fl-enhance-font-size, 1.5rem);
     font-weight: var(--fl-enhance-font-weight, 500);
     height: 3.5rem;
     line-height: 1.875rem;
