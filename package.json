@@ -29,7 +29,7 @@
         "@11ty/eleventy-navigation": "0.3.2",
         "@11ty/eleventy-plugin-syntaxhighlight": "3.2.2",
         "eleventy-plugin-fluid": "1.0.0",
-        "infusion": "4.0.0"
+        "infusion": "4.1.0"
     },
     "devDependencies": {
         "@babel/core": "7.16.12",
