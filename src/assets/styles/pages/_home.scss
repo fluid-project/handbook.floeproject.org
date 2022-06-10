@@ -25,7 +25,6 @@
 .home__intro {
     background: $homeIntroBGColour;
     color: $homeIntroColour;
-    font-family: $family-serif;
     font-size: 2.375rem;
     line-height: 3.4375rem;
     padding-block: 1rem;
@@ -69,8 +68,6 @@
 
     h2 {
         color: $darkRed;
-        font-family: $family-serif;
-        font-style: italic;
         margin-block: 1rem;
         text-align: center;
     }
