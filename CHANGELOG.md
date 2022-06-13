@@ -5,7 +5,6 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 ## [1.1.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.0.0...v1.1.0) (2022-06-10)
 
-
 ### Features
 
 * add article contents accordion control ([b014ae1](https://github.com/fluid-project/handbook.floeproject.org/commit/b014ae122c67be19f38c5c326b942eb2cef2d411))
@@ -18,7 +17,6 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 * make article contents links human-readable ([3dfb7a0](https://github.com/fluid-project/handbook.floeproject.org/commit/3dfb7a011f989d2aad427d3462e5c0efb2d14158))
 * refine article contents styling ([dc4b9cc](https://github.com/fluid-project/handbook.floeproject.org/commit/dc4b9ccd3ac13b220b63bd4b0a942cee20e4aa3c))
 * transpile logical props for older browsers ([0b99a0d](https://github.com/fluid-project/handbook.floeproject.org/commit/0b99a0d275f6ac85b052940f59aa48789b38fbd9))
-
 
 ### Bug Fixes
 
