@@ -5,9 +5,10 @@ eleventyNavigation:
     key: 3D Printed Audio-Tactile Graphics
     order: 3
 ---
-This article introduces a set of recommendations which is intended for educators, designers, makers, or others who want
-to create inclusive materials for a wider range of students, including and with a greater focus on blind students.
-Specifically, the recommendations are aimed at developing audio-tactile graphics that are 3D printed.
+This article introduces [a set of recommendations](/techniques/45-recommendations-for-3d-printed-audio-tactile-graphic-design/)
+which is intended for educators, designers, makers, or others who want to create inclusive materials for a wider range
+of students, including and with a greater focus on blind students. Specifically, the recommendations are aimed at
+developing audio-tactile graphics that are 3D printed.
 
 The information on these pages won’t make you an expert on the subject, but it will help you understand the process of
 planning, producing and using audio-tactile graphics. We encourage you to access the related resources, seek out more
@@ -45,7 +46,7 @@ of students, even those without disabilities. By eliminating barriers to informa
 These are materials that can be developed with and for the community, produced with low-cost technologies and shared for
 free on the web.
 
-## Read more about the 45 recommendations.
+## Read more about [the 45 recommendations](/techniques/45-recommendations-for-3d-printed-audio-tactile-graphic-design/)
 
 ## Related resources
 
