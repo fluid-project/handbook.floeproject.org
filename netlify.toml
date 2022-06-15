@@ -1,4 +1,6 @@
 [build]
+  # Node version is set explicitly in order to solve issues related to build image pulling an older version
+  environment = { NODE_VERSION = "16.15.1" }
   command = "npm run build"
   publish = "dist"
   ignore = "git log -1 --pretty=%B | grep dependabot"
