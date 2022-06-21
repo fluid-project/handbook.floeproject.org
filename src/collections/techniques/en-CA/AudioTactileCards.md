@@ -3,12 +3,12 @@ title: 45 recommendations for 3D printed audio-tactile graphic design
 layout: layouts/audio-tactile-cards
 eleventyNavigation:
     parent: 3D Printed Audio-Tactile Graphics
-    key: 45 recommendations for 3D printed audio-tactile graphic design
+    key: Audio Tactile Design Recommendations
 ---
 
 <div class="audio-tactile__intro">
 
-Here we present 45 recommendations for the design of 3D printed audio-tactile graphics, organised into three categories:
+Here we present 45 recommendations for the design of 3D printed audio-tactile graphics, organized into three categories:
 
 - Planning,
 - Materials and Production, and

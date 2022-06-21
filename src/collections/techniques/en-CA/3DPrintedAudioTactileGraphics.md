@@ -36,13 +36,13 @@ technology for the development of inclusive materials, even more so with the gro
 to empower the community to create and share their own projects.
 
 A 3D printed audio-tactile graphic is an inclusive material, which has a decentralized production, on a small scale
-basis, according to the needs of each one. It can be created within a community, shared digitally and reproduced
-elsewhere.
+basis, according to the needs of each one. It can be created within a community, shared digitally and reproduced elsewhere.
 
 ## What is the relation of the audio-tactile graphic to inclusive design and education?
 
 3D printed audio-tactile graphics can be great teaching materials not only for blind students but also for a wider range
 of students, even those without disabilities. By eliminating barriers to information access, everyone benefits.
+
 These are materials that can be developed with and for the community, produced with low-cost technologies and shared for
 free on the web.
 
