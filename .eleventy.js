@@ -79,7 +79,7 @@ module.exports = function (config) {
     });
 
     config.addShortcode("content_from_nav_key", (collection, navigationKey) => {
-        return getContentsFromNavKey(collection, navigationKey);
+        return getContentsFromNavKey(collection, navigationKey.toString());
     });
 
     /*
