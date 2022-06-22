@@ -1,8 +1,8 @@
 ---
 title: Planning
 eleventyNavigation:
-    parent: Audio Tactile Cards
+    parent: Audio Tactile Design Recommendations
     order: 1
     key: Planning
-    description: This is the intro text to the _Planning_ section of audio-tactile recommendation cards
+    description: Here you will find information about what you need to understand and keep in mind before producing the graphic. This category includes general, audio, tactile and audio-tactile recommendations.
 ---

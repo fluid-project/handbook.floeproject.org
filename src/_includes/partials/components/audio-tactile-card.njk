@@ -1,0 +1,9 @@
+<details class="audio-tactile-card">
+    <summary class="audio-tactile-card__summary">
+        <div class="audio-tactile-card__title">{{ card.title | safe }}</div>
+        <div class="audio-tactile-card__description">{{ card.description | safe }}</div>
+    </summary>
+    <div class="audio-tactile-card__content">
+        {{ content_from_nav_key collections.cards, card.key | safe }}
+    </div>
+</details>

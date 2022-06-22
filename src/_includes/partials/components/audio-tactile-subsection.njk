@@ -1,0 +1,18 @@
+{% if subsection.children.length <= 0 %}
+    {# if this subsection doesn't have any children, treat it as though it's a card #}
+
+    {% set card = subsection %}
+    {%- include "partials/components/audio-tactile-card.njk" -%}
+{% else %}
+    {# otherwise, render a proper subsection and iterate over its children #}
+
+    <details class="audio-tactile-subsection">
+        <summary class="audio-tactile-subsection__summary">
+            <div class="audio-tactile-subsection__title">{{ subsection.title | safe }}</div>
+        </summary>
+
+        {%- for card in subsection.children -%}
+            {%- include "partials/components/audio-tactile-card.njk" -%}
+        {%- endfor -%}
+    </details>
+{% endif %}

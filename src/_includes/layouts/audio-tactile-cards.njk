@@ -14,6 +14,21 @@
         {% block content %}
             {{ content | safe }}
         {% endblock %}
+
+        {%- for section in collections.cards | eleventyNavigation("Audio Tactile Design Recommendations") -%}
+            <div class="audio-tactile__section {{ section.key | slugify }}">
+                <details class="audio-tactile-section">
+                    <summary class="audio-tactile-section__summary">
+                        <div class="audio-tactile-section__title">{{ section.title | safe }}</div>
+                    </summary>
+                    <div class="audio-tactile-section__description">{{ section.description | safe }}</div>
+
+                    {%- for subsection in section.children -%}
+                        {%- include "partials/components/audio-tactile-subsection.njk" -%}
+                    {%- endfor -%}
+                </details>
+            </div>
+        {%- endfor -%}
     </main>
     {% include "partials/global/footer.njk" %}
     {# 
