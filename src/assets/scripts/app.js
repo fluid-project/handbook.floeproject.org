@@ -15,29 +15,32 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 const menu = {};
 
 $(document).ready(function () {
-
-    var toggleCategory = function (elm, state) {
+    var toggleCategory = function (elm, state, accordionClass) {
         $(elm)
             .attr("aria-expanded", state)
-            .toggleClass("section__toggle--expanded", state)
-            .closest(".section")
-            .toggleClass("section__content--show", state);
+            .toggleClass(accordionClass + "__toggle" + "--expanded", state)
+            .closest("." + accordionClass)
+            .toggleClass(accordionClass + "__content--show", state);
     };
-    /** When "show all" button is clicked, expands all categories to show their contents. */
-    $(".sections-control__expand-all").click(function () {
-        toggleCategory(".section__toggle", true);
-    });
-    /** When "hide all" button is clicked, collapses all categories to hide their contents. */
-    $(".sections-control__collapse-all").click(function () {
-        toggleCategory(".section__toggle", false);
-    });
-    $(".section__toggle").click(function (evt) {
-        var target = $(evt.delegateTarget);
-        var state = target.attr("aria-expanded") === "true" ? true : false;
-        toggleCategory(target, !state);
-        evt.preventDefault();
-    });
 
+    const accordionControlClasses = ["section", "subsection", "card"];
+
+    for (const accordionClass of accordionControlClasses) {
+        /** When "show all" button is clicked, expands all categories to show their contents. */
+        $(".sections-control__expand-all").click(function () {
+            toggleCategory("." + accordionClass + "__toggle", true, accordionClass);
+        });
+        /** When "hide all" button is clicked, collapses all categories to hide their contents. */
+        $(".sections-control__collapse-all").click(function () {
+            toggleCategory("." + accordionClass + "__toggle", false, accordionClass);
+        });
+        $("." + accordionClass + "__toggle").click(function (evt) {
+            var target = $(evt.delegateTarget);
+            var state = target.attr("aria-expanded") === "true" ? true : false;
+            toggleCategory(target, !state, accordionClass);
+            evt.preventDefault();
+        });
+    }
 });
 
 /**
