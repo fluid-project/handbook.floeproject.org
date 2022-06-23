@@ -35,6 +35,7 @@ These recommendations are the result of the doctoral thesis by Emilia Christie P
 Research Center (IDRC) at OCAD University.
 
 The research was funded by the [Brazilian Federal Foundation for Support and Evaluation of Graduate Education (CAPES)](https://www.gov.br/capes/pt-br).
-Licensed under Creative Commons Attribution 4.0.
+
+Licensed under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 </div>

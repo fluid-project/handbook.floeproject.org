@@ -75,25 +75,25 @@
     display: block;
 }
 
-.section__links {
+.section__subsections {
     list-style: none;
     margin: 0;
     margin-block-end: 2.5rem;
     padding: 0;
 }
 
-.section__subsection {
+.subsection {
     margin-block-end: 1rem;
 }
 
-.section__subsection-link {
+.subsection__link {
     font-size: var(--fl-enhance-font-size, 1.5rem);
     font-weight: var(--fl-enhance-font-weight, 500);
     line-height: 3rem;
     padding-block-end: 0.15rem;
 }
 
-.section__subsection > p:first-child a {
+.subsection > p:first-child a {
     font-size: var(--fl-enhance-font-size, 1.25rem);
     font-weight: var(--fl-enhance-font-weight, 700);
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.3);

@@ -13,10 +13,10 @@
             {{- sectionIntro | markdown | safe -}}
         </div>
         {% endif %}
-        <ul class="section__links">
+        <ul class="section__subsections">
         {% for subsection in subsections %}
-            <li class="section__subsection">
-                <a class="section__subsection-link" href="{{ subsection.url }}">{{ subsection.title }}</a>
+            <li class="subsection">
+                <a class="subsection__link" href="{{ subsection.url }}">{{ subsection.title }}</a>
             </li>
         {% endfor %}
         </ul>
