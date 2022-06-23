@@ -9,6 +9,8 @@ $font-weight-bold: 700;
 /** Colors **/
 $darkRed: var(--fl-fgColor, #8d2a2d); // this colour has several uses
 $darkGrey: var(--fl-bgColor, #e5eaeb);
+$darkTeal: var(--fl-fgColor, #134d5f);
+$teal: var(--fl-fgColor, #1e97bd);
 
 $mainColour: var(--fl-fgColor, #000);
 $linkColour: var(--fl-linkColor, #0645ad);
@@ -31,6 +33,8 @@ $menuExpandedSelectedBGColour: $darkRed;
 $menuButtonStrokeColour: $darkRed;
 $sectionBGColour: var(--fl-bgColor, #fff);
 $sectionBorderColour: $darkRed;
+$sectionBorderColourAltOne: $darkTeal;
+$sectionBorderColourAltTwo: $teal;
 $articleContentsBorderColour: var(--fl-bgColor, #bedee4);
 $articleContentsIconColour: var(--fl-fgColor, #12699a);
 $toolkitsBorderColour: var(--fl-bgColor, #0b719e);

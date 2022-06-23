@@ -15,6 +15,8 @@
             {{ content | safe }}
         {% endblock %}
 
+        {%- include "partials/components/sections-control.njk" -%}
+
         <ul class="audio-tactile__sections">
         {%- for section in collections.cards | eleventyNavigation("Audio Tactile Design Recommendations") -%}
             {%- include "partials/components/audio-tactile-section.njk" -%}

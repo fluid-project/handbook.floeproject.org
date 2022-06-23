@@ -1,0 +1,44 @@
+.audio-tactile {
+    .card__content {
+        display: none;
+    }
+
+    .card__content--show .card__content {
+        display: block;
+    }
+
+    .card__toggle {
+        background: $sectionBGColour;
+        border: solid $darkRed 2px;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .card__title {
+        background-color: var(--fl-buttonFgColor, $sectionBorderColour);
+        color: $sectionBGColour;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card__icon {
+        align-items: center;
+        display: block;
+        min-width: 3.75rem;
+
+        svg {
+            --icon-arrowColour: #{$darkRed};
+
+            color: var(--fl-bgColor, $mainColour);
+            fill: none;
+            height: 2rem;
+            transform: rotate(90deg);
+            width: 1.75rem;
+        }
+    }
+
+    .card__toggle--expanded .card__icon svg {
+        transform: rotate(-90deg);
+    }
+}

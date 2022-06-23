@@ -1,0 +1,85 @@
+.audio-tactile {
+    .subsection__heading {
+        line-height: calc(var(--fl-lineSpace-factor, 1) * 0.8);
+        margin: 0;
+    }
+
+    .subsection__toggle {
+        align-items: stretch;
+        background-color: var(--fl-buttonBgColor, $sectionBGColour);
+        border: none;
+        color: var(--fl-buttonFgColor, $mainColour);
+        cursor: pointer;
+        display: flex;
+        font-size: var(--fl-enhance-font-size, 1.8125rem);
+        font-weight: var(--fl-enhance-font-weight, 700);
+        justify-content: space-between;
+        line-height: calc(var(--fl-lineSpace-factor, 1) * 1.45);
+        margin-block-end: 1.25rem;
+        padding: 0;
+        width: 100%;
+
+        &:focus,
+        &:hover {
+            outline-color: var(--fl-buttonFgColor);
+        }
+
+        &--expanded .subsection__title,
+        &:focus .subsection__title,
+        &:hover .subsection__title {
+            border: 0.35rem solid var(--fl-buttonFgColor, $sectionBorderColour);
+            border-inline-start: none;
+            padding: 0.7125rem 1rem 0.7125rem 1.25rem;
+        }
+    }
+
+    .subsection__title {
+        border: 0.0625rem dashed var(--fl-buttonBgColor, $sectionBorderColour);
+        border-inline-start: none;
+        line-height: 1.875rem;
+        padding: 1rem 1rem 1rem 1.25rem;
+        text-align: start;
+        width: 100%;
+    }
+
+    .subsection__icon {
+        align-items: center;
+        background-color: var(--fl-buttonFgColor, $sectionBorderColour);
+        display: flex;
+        font-size: var(--fl-enhance-font-size, 1.125rem);
+        font-weight: var(--fl-enhance-font-weight, 800);
+        justify-content: center;
+        min-width: 3.75rem;
+
+        svg {
+            --icon-arrowColour: var(--fl-buttonBgColor, #fff);
+
+            color: var(--fl-bgColor, $mainColour);
+            fill: none;
+            height: 2rem;
+            width: 1.75rem;
+        }
+    }
+
+    .subsection__toggle--expanded .subsection__icon svg {
+        transform: rotate(90deg);
+    }
+
+    .subsection__content {
+        display: none;
+    }
+
+    .subsection__content--show .subsection__content {
+        display: block;
+    }
+
+    .subsection__cards {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+        list-style: none;
+        margin: 0;
+        margin-block-end: 2.5rem;
+        padding: 0;
+    }
+}

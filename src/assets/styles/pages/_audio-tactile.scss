@@ -1,39 +1,37 @@
-.audio-tactile main {
-    background: $darkGrey;
-    grid-template-columns: unset;
-    max-width: unset;
-    padding: 2rem;
-}
+.audio-tactile {
+    main {
+        background: $darkGrey;
+        grid-template-columns: unset;
+        max-width: unset;
+        padding: 2rem;
+    }
 
-.audio-tactile .footer {
-    margin-block-start: 0;
-}
+    .footer {
+        margin-block-start: 0;
+    }
 
-.audio-tactile__title {
-    font-size: 3rem;
-    font-weight: 700;
-    hyphens: auto;
-    line-height: 3.5rem;
-    word-break: break-word;
-}
+    .audio-tactile__title {
+        font-size: 3rem;
+        font-weight: 700;
+        hyphens: auto;
+        line-height: 3.5rem;
+        word-break: break-word;
+    }
 
-.audio-tactile__intro {
-    font-size: 1.25rem;
-}
+    .audio-tactile__intro {
+        font-size: 1.25rem;
+    }
 
-.audio-tactile__credits {
-    font-size: 1.25rem;
-    grid-row: 8; /* show the credits after all other page content */
-    margin-inline: auto;
-    max-width: $narrow-content-width;
-}
+    .audio-tactile__credits {
+        font-size: 1.25rem;
+        grid-row: 8; /* show the credits after all other page content */
+        margin-inline: auto;
+        max-width: $narrow-content-width;
+    }
 
-.audio-tactile__sections {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.audio-tactile .section__toggle {
-    margin-block-end: 0;
+    .audio-tactile__sections {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }

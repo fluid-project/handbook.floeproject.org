@@ -1,0 +1,24 @@
+.audio-tactile {
+    .section__subsections {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section:not(:last-child) {
+        margin-block-end: 3rem;
+    }
+
+    .section__toggle {
+        margin-block-end: 0;
+    }
+
+    .section__content {
+        background: $sectionBGColour;
+        padding: 1rem;
+    }
+
+    .section__description {
+        padding: 1rem 2.75rem;
+    }
+}
