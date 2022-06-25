@@ -11,14 +11,38 @@
 
     .section__toggle {
         margin-block-end: 0;
+
+        &:focus .section__title,
+        &:hover .section__title {
+            border-inline-start: none;
+            font-weight: var(--fl-enhance-font-weight, 600);
+            padding: 0.7125rem 1rem 0.7125rem 1.25rem;
+        }
+
+        &--expanded .section__title {
+            background: $sectionBorderColour;
+            color: $sectionBGColour;
+        }
+    }
+
+    .section__icon svg {
+        height: 1.875rem;
+        width: 1.125rem;
     }
 
     .section__content {
         background: $sectionBGColour;
-        padding: 1rem;
+        border: 0.3125rem solid $sectionBorderColour;
+        border-block-start: none;
+        padding: 0 1rem;
     }
 
     .section__description {
-        padding: 1rem 2.75rem;
+        border-block-end: 0.0625rem solid $mainColour;
+        padding: 2.75rem;
+    }
+
+    .context-use-and-inclusion .section__description {
+        margin-block-end: 3rem;
     }
 }

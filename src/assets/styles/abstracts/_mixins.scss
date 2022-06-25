@@ -54,3 +54,46 @@
     margin-left: 0;
     padding-inline-end: unset;
 }
+
+// Audio-tactile card section-specific colour overrides
+@mixin card-section-colour-override($selector, $colour) {
+    #{$selector} {
+        .section__toggle {
+            &:hover .section__title {
+                border-color: var(--fl-buttonFgColor, $colour);
+            }
+
+            &--expanded .section__title {
+                background: $colour;
+            }
+        }
+
+        .section__content {
+            border-color: $colour;
+        }
+
+        .section__icon {
+            background-color: var(--fl-buttonFgColor, $colour);
+        }
+
+        .section__title {
+            border-color: var(--fl-buttonBgColor, $colour);
+        }
+
+        .subsection__icon svg {
+            --icon-arrowColour: var(--fl-buttonFgColor, #{$colour});
+        }
+
+        .card__title {
+            background-color: var(--fl-buttonFgColor, $colour);
+        }
+
+        .card__details {
+            border-color: $colour;
+        }
+
+        .card__icon svg {
+            --icon-arrowColour: #{$colour};
+        }
+    }
+}

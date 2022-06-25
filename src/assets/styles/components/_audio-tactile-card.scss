@@ -1,44 +1,82 @@
 .audio-tactile {
-    .card__content {
-        display: none;
-    }
-
-    .card__content--show .card__content {
-        display: block;
-    }
-
     .card__toggle {
         background: $sectionBGColour;
-        border: solid $darkRed 2px;
+        border: none;
+        cursor: pointer;
         display: block;
         padding: 0;
         width: 100%;
+
+        &:focus .card__details,
+        &:hover .card__details {
+            border-width: 0.3125rem;
+            padding: 0;
+        }
     }
 
     .card__title {
         background-color: var(--fl-buttonFgColor, $sectionBorderColour);
+        box-sizing: border-box;
         color: $sectionBGColour;
         margin: 0;
+        padding: 0.5rem 0.75rem;
         width: 100%;
+    }
+
+    .card__details {
+        border: solid $sectionBorderColour 0.125rem;
+        border-block-start: none;
+        box-sizing: border-box;
+        padding: 0.1875rem; /* This padding reserves space for the thicker border on hover & focus */
+        padding-block-start: 0;
+    }
+
+    .card__description {
+        align-content: center;
+        display: grid;
+        min-height: 10rem;
+        padding: 1rem;
     }
 
     .card__icon {
         align-items: center;
         display: block;
         min-width: 3.75rem;
+        text-align: center;
+
+        &:empty {
+            height: 1.083125rem;
+        }
+
+        &:empty + .card__content {
+            display: none;
+        }
 
         svg {
-            --icon-arrowColour: #{$darkRed};
+            --icon-arrowColour: #{$sectionBorderColour};
 
             color: var(--fl-bgColor, $mainColour);
             fill: none;
-            height: 2rem;
+            height: 0.875rem;
             transform: rotate(90deg);
-            width: 1.75rem;
+            width: 1.4375rem;
         }
     }
 
     .card__toggle--expanded .card__icon svg {
         transform: rotate(-90deg);
+    }
+
+    .card__content {
+        display: none;
+        padding: 1.5rem;
+
+        ul {
+            padding-inline-start: 1rem;
+        }
+    }
+
+    .card__content--show .card__content {
+        display: block;
     }
 }

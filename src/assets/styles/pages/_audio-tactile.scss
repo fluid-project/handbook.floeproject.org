@@ -1,3 +1,5 @@
+// Rules specific to the Audio-Tactile design recommendations page
+
 .audio-tactile {
     main {
         background: $darkGrey;
@@ -34,4 +36,8 @@
         margin: 0;
         padding: 0;
     }
+
+    /* section-specific colour overrides */
+    @include card-section-colour-override(".materials-and-production", $sectionBorderColourAltOne);
+    @include card-section-colour-override(".context-use-and-inclusion", $sectionBorderColourAltTwo);
 }

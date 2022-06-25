@@ -1,4 +1,12 @@
 .audio-tactile {
+    .subsection {
+        margin-block-end: 0;
+
+        &:not(:last-of-type) {
+            border-block-end: 0.0625rem solid $mainColour;
+        }
+    }
+
     .subsection__heading {
         line-height: calc(var(--fl-lineSpace-factor, 1) * 0.8);
         margin: 0;
@@ -12,11 +20,10 @@
         cursor: pointer;
         display: flex;
         font-size: var(--fl-enhance-font-size, 1.8125rem);
-        font-weight: var(--fl-enhance-font-weight, 700);
+        font-weight: var(--fl-enhance-font-weight, 400);
         justify-content: space-between;
-        line-height: calc(var(--fl-lineSpace-factor, 1) * 1.45);
-        margin-block-end: 1.25rem;
-        padding: 0;
+        line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
+        padding: 0.25rem 0;
         width: 100%;
 
         &:focus,
@@ -27,24 +34,21 @@
         &--expanded .subsection__title,
         &:focus .subsection__title,
         &:hover .subsection__title {
-            border: 0.35rem solid var(--fl-buttonFgColor, $sectionBorderColour);
-            border-inline-start: none;
-            padding: 0.7125rem 1rem 0.7125rem 1.25rem;
+            font-weight: var(--fl-enhance-font-weight, 700);
         }
     }
 
     .subsection__title {
-        border: 0.0625rem dashed var(--fl-buttonBgColor, $sectionBorderColour);
-        border-inline-start: none;
+        font-size: var(--fl-enhance-font-size, 1.5rem);
         line-height: 1.875rem;
-        padding: 1rem 1rem 1rem 1.25rem;
+        padding: 1rem 1rem 1rem 0;
         text-align: start;
         width: 100%;
     }
 
     .subsection__icon {
         align-items: center;
-        background-color: var(--fl-buttonFgColor, $sectionBorderColour);
+        background-color: var(--fl-buttonBgColor, #fff);
         display: flex;
         font-size: var(--fl-enhance-font-size, 1.125rem);
         font-weight: var(--fl-enhance-font-weight, 800);
@@ -52,12 +56,12 @@
         min-width: 3.75rem;
 
         svg {
-            --icon-arrowColour: var(--fl-buttonBgColor, #fff);
+            --icon-arrowColour: var(--fl-buttonFgColor, #{$sectionBorderColour});
 
             color: var(--fl-bgColor, $mainColour);
             fill: none;
-            height: 2rem;
-            width: 1.75rem;
+            height: 1.875rem;
+            width: 1.125rem;
         }
     }
 
@@ -73,7 +77,9 @@
         display: block;
     }
 
-    .subsection__cards {
+    /* The "Context, Use, and Inclusion" section is only cards, for the time being */
+    .subsection__cards,
+    .context-use-and-inclusion .section__subsections {
         display: grid;
         gap: 3rem;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
