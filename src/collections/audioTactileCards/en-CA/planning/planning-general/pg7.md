@@ -1,6 +1,6 @@
 ---
-title: PG.7
 eleventyNavigation:
+    title: PG.7
     parent: Planning General
     order: 7
     key: PG7

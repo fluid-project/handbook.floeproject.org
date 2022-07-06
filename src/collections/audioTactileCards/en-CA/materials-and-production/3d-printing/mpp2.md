@@ -1,6 +1,6 @@
 ---
-title: MPP.1
 eleventyNavigation:
+    title: MPP.1
     parent: 3D Printing
     order: 1
     key: MPP1

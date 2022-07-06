@@ -1,6 +1,6 @@
 ---
-title: Materials and Production
 eleventyNavigation:
+    title: Materials and Production
     parent: Audio Tactile Design Recommendations
     order: 2
     key: Materials and Production

@@ -1,6 +1,6 @@
 ---
-title: Context, Use, and Inclusion
 eleventyNavigation:
+    title: Context, Use, and Inclusion
     parent: Audio Tactile Design Recommendations
     order: 3
     key: Context, Use, and Inclusion

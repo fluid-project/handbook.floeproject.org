@@ -1,6 +1,6 @@
 ---
-title: MPM.2
 eleventyNavigation:
+    title: MPM.2
     parent: 3D Modeling
     order: 2
     key: MPM2

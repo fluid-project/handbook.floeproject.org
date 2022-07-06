@@ -1,6 +1,6 @@
 ---
-title: CUI.4
 eleventyNavigation:
+    title: CUI.4
     parent: Context, Use, and Inclusion
     order: 4
     key: CUI4

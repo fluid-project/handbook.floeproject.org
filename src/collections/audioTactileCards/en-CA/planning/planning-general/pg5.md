@@ -1,6 +1,6 @@
 ---
-title: PG.5
 eleventyNavigation:
+    title: PG.5
     parent: Planning General
     order: 5
     key: PG5

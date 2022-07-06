@@ -1,6 +1,6 @@
 ---
-title: Planning
 eleventyNavigation:
+    title: Planning
     parent: Audio Tactile Design Recommendations
     order: 1
     key: Planning

@@ -1,6 +1,6 @@
 ---
-title: PAT.2
 eleventyNavigation:
+    title: PAT.2
     parent: Audio-tactile
     order: 2
     key: PAT2

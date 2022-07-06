@@ -1,6 +1,6 @@
 ---
-title: MPG.4
 eleventyNavigation:
+    title: MPG.4
     parent: Materials and Production General
     order: 4
     key: MPG4

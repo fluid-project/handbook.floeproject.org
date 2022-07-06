@@ -1,6 +1,6 @@
 ---
-title: PA.1
 eleventyNavigation:
+    title: PA.1
     parent: Planning Audio
     order: 1
     key: PA1

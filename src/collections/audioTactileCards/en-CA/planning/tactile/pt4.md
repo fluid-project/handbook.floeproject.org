@@ -1,6 +1,6 @@
 ---
-title: PT.4
 eleventyNavigation:
+    title: PT.4
     parent: Tactile
     order: 4
     key: PT4

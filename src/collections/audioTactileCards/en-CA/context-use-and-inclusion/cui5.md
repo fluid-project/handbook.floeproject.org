@@ -1,6 +1,6 @@
 ---
-title: CUI.5
 eleventyNavigation:
+    title: CUI.5
     parent: Context, Use, and Inclusion
     order: 5
     key: CUI5

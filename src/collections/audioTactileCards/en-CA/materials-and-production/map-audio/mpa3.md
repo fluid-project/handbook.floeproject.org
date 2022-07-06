@@ -1,6 +1,6 @@
 ---
-title: MPA.3
 eleventyNavigation:
+    title: MPA.3
     parent: Materials and Production Audio
     order: 3
     key: MPA3

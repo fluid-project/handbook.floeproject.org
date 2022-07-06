@@ -1,6 +1,6 @@
 ---
-title: MPG.2
 eleventyNavigation:
+    title: MPG.2
     parent: Materials and Production General
     order: 2
     key: MPG2

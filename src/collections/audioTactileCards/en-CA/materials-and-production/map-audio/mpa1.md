@@ -1,6 +1,6 @@
 ---
-title: MPA.1
 eleventyNavigation:
+    title: MPA.1
     parent: Materials and Production Audio
     order: 1
     key: MPA1
