@@ -26,9 +26,8 @@
 
     .audio-tactile__credits {
         font-size: 1.25rem;
-        grid-row: 8; /* show the credits after all other page content */
+        font-style: italic;
         margin-inline: auto;
-        max-width: $narrow-content-width;
     }
 
     .audio-tactile__sections {
@@ -40,4 +39,10 @@
     /* section-specific colour overrides */
     @include card-section-colour-override(".materials-and-production", $sectionBorderColourAltOne);
     @include card-section-colour-override(".context-use-and-inclusion", $sectionBorderColourAltTwo);
+
+    @include breakpoint-up(md) {
+        .main > * {
+            max-width: $xl-content-width;
+        }
+    }
 }

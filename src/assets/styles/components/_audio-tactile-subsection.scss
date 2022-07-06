@@ -40,7 +40,6 @@
 
     .subsection__title {
         font-size: var(--fl-enhance-font-size, 1.5rem);
-        line-height: 1.875rem;
         padding: 1rem 1rem 1rem 0;
         text-align: start;
         width: 100%;
@@ -75,6 +74,7 @@
 
     .subsection__content--show .subsection__content {
         display: block;
+        padding-inline: 3.75rem;
     }
 
     /* The "Context, Use, and Inclusion" section is only cards, for the time being */
@@ -87,5 +87,17 @@
         margin: 0;
         margin-block-end: 2.5rem;
         padding: 0;
+    }
+
+    @include breakpoint-up(sm) {
+        .subsection__cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @include breakpoint-up(md-lg) {
+        .subsection__cards {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }

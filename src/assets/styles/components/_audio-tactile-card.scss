@@ -5,6 +5,7 @@
         cursor: pointer;
         display: block;
         padding: 0;
+        text-align: start;
         width: 100%;
 
         &:focus .card__details,
@@ -18,8 +19,11 @@
         background-color: var(--fl-buttonFgColor, $sectionBorderColour);
         box-sizing: border-box;
         color: $sectionBGColour;
+        font-size: var(--fl-enhance-font-size, 1.5rem);
+        font-weight: var(--fl-enhance-font-weight, 700);
+        line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
         margin: 0;
-        padding: 0.5rem 0.75rem;
+        padding: 0.5rem 1.5rem;
         width: 100%;
     }
 
@@ -27,6 +31,9 @@
         border: solid $sectionBorderColour 0.125rem;
         border-block-start: none;
         box-sizing: border-box;
+        font-size: 1.25rem;
+        hyphens: auto;
+        line-height: 2rem;
         padding: 0.1875rem; /* This padding reserves space for the thicker border on hover & focus */
         padding-block-start: 0;
     }
@@ -78,5 +85,12 @@
 
     .card__content--show .card__content {
         display: block;
+    }
+
+    @include breakpoint-up(sm) {
+        .card__details {
+            hyphens: unset;
+            word-break: unset;
+        }
     }
 }

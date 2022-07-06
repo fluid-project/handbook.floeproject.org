@@ -51,6 +51,7 @@ $banner-height-large: 42px;
 $banner-height-full: 88px;
 $banner-height-full-large: 171px;
 $max-content-width: 69rem;
+$xl-content-width: 95rem;
 $narrow-content-width: 50rem;
 $footer-max-width: 90rem;
 
@@ -61,6 +62,7 @@ $breakpoints: (
     xs: 17.5rem,
     sm: 40rem,
     md: 48rem,
+    md-lg: 55rem,
     lg: 75rem,
     xl: 85rem
 );
