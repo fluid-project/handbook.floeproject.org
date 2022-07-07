@@ -16,7 +16,7 @@
     }
 
     .card__title {
-        background-color: var(--fl-buttonFgColor, $sectionBorderColour);
+        background-color: $sectionBorderColour;
         box-sizing: border-box;
         color: $sectionBGColour;
         font-size: var(--fl-enhance-font-size, 1.5rem);
