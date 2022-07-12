@@ -13,6 +13,9 @@
         
         {% block content %}
             {{ content | safe }}
+            <div class="audio-tactile__diagram">
+                {%- svg_sprite "audio-tactile-card-diagram", translations[lang].audioTactileCardDiagramAltText -%}
+            </div>
         {% endblock %}
 
         {%- include "partials/components/sections-control.njk" -%}

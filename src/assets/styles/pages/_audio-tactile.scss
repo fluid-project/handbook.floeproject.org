@@ -30,6 +30,17 @@
         margin-inline: auto;
     }
 
+    .audio-tactile__diagram {
+        text-align: center;
+
+        svg {
+            height: 36.0625rem;
+            max-height: 77vw;
+            max-width: 100%;
+            width: 40.3125rem;
+        }
+    }
+
     .audio-tactile__sections {
         list-style: none;
         margin: 0;

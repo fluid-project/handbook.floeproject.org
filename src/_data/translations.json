@@ -1,13 +1,14 @@
 {
     "en-CA": {
         "approaches": "approaches",
+        "articleContentsSummary": "Article Contents",
         "audioTactileCards": "cards",
-        "perspectives": "perspectives",
-        "techniques": "techniques",
+        "audioTactileCardDiagramAltText": "Example of a card with three elements being pointed out by arrows: the recommendation code on the top-left, the recommendation in the centre of the card, and an interactive button bottom-centre that indicates there is additional information on the card.",
         "brandAltText": "Inclusive Learning Design Handbook - Home",
-        "menu": "Menu",
         "collapseAll": "collapse all",
         "expandAll": "expand all",
-        "articleContentsSummary": "Article Contents"
+        "menu": "Menu",
+        "perspectives": "perspectives",
+        "techniques": "techniques"
     }
 }
