@@ -14,32 +14,51 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 
 const menu = {};
 
+/**
+ * Given a jQuery event, toggles the aria-expanded state of its target element
+ * and subsequently toggles an associated accordion control.
+ * Any default action by the event is prevented.
+ *
+ * @param {Event} evt - the jQuery event
+ * @param {String} accordionContainerSelector - the CSS selector for the accordion's container
+ */
+const toggleExpandedState = function (evt, accordionContainerSelector) {
+    var target = $(evt.delegateTarget);
+    var expandedState = target.attr("aria-expanded") === "true" ? true : false;
+    toggleAccordion(target, accordionContainerSelector, !expandedState);
+    evt.preventDefault();
+};
+
+/**
+ * Toggles an accordion control's expanded state, setting it to a given value.
+ * Assumes that the button controlling the accordion is an element within a specified container.
+ *
+ * @param {String|jQuery} button - the button element's selector or a jQuery object representing the button
+ * @param {String} accordionContainerSelector - the accordion's container selector
+ * @param {Boolean} state - the state to which to set the toggle control
+ */
+const toggleAccordion = function (button, accordionContainerSelector, state) {
+    $(button)
+        .attr("aria-expanded", state)
+        .toggleClass(accordionContainerSelector + "__toggle" + "--expanded", state)
+        .closest("." + accordionContainerSelector)
+        .toggleClass(accordionContainerSelector + "__content--show", state);
+};
+
 $(document).ready(function () {
-    var toggleCategory = function (elm, state, accordionClass) {
-        $(elm)
-            .attr("aria-expanded", state)
-            .toggleClass(accordionClass + "__toggle" + "--expanded", state)
-            .closest("." + accordionClass)
-            .toggleClass(accordionClass + "__content--show", state);
-    };
+    // Selectors for accordion container elements
+    const accordionContainerSelectors = ["section", "subsection", "card"];
 
-    const accordionControlClasses = ["section", "subsection", "card"];
+    for (const accordionSelector of accordionContainerSelectors) {
+        const toggleButtonSelector = "." + accordionSelector + "__toggle";
 
-    for (const accordionClass of accordionControlClasses) {
-        /** When "show all" button is clicked, expands all categories to show their contents. */
-        $(".sections-control__expand-all").click(function () {
-            toggleCategory("." + accordionClass + "__toggle", true, accordionClass);
-        });
-        /** When "hide all" button is clicked, collapses all categories to hide their contents. */
-        $(".sections-control__collapse-all").click(function () {
-            toggleCategory("." + accordionClass + "__toggle", false, accordionClass);
-        });
-        $("." + accordionClass + "__toggle").click(function (evt) {
-            var target = $(evt.delegateTarget);
-            var state = target.attr("aria-expanded") === "true" ? true : false;
-            toggleCategory(target, !state, accordionClass);
-            evt.preventDefault();
-        });
+        /* When "show all" button is clicked, expands all matching accordions to show their contents. */
+        $(".sections-control__expand-all").click(() => toggleAccordion(toggleButtonSelector, accordionSelector, true));
+
+        /* When "hide all" button is clicked, collapses all matching accordions to hide their contents. */
+        $(".sections-control__collapse-all").click(() => toggleAccordion(toggleButtonSelector, accordionSelector, false));
+
+        $(toggleButtonSelector).click(evt => toggleExpandedState(evt, accordionSelector));
     }
 });
 

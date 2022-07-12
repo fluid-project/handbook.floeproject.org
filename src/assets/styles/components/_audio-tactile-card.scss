@@ -2,16 +2,19 @@
     .card__toggle {
         background: $sectionBGColour;
         border: none;
+        color: $mainColour;
         cursor: pointer;
         display: block;
         padding: 0;
         text-align: start;
         width: 100%;
 
-        &:focus .card__details,
-        &:hover .card__details {
-            border-width: 0.3125rem;
-            padding: 0;
+        &:focus,
+        &:hover {
+            .card__details {
+                border-width: 0.3125rem;
+                padding: 0;
+            }
         }
     }
 

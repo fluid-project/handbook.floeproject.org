@@ -12,6 +12,5 @@ eleventyNavigation:
 conductive ink.
 - **Tip:** low-cost electronics, tablets, smartphones and computer vision are alternatives for adding audio to the
 tactile surface.
-- **Examples:** Near Field Communication (NFC) tags, capacitive sensors, [Arduino](https://www.arduino.cc) electronic
-boards, [Raspberry Pi](https://www.raspberrypi.org), proximity sensors, applications, touch screen, cameras, QR Code
-recognition.
+- **Examples:** Near Field Communication (NFC) tags, capacitive sensors, Arduino electronic boards, Raspberry Pi,
+proximity sensors, applications, touch screen, cameras, QR Code recognition.
