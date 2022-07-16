@@ -1,0 +1,43 @@
+.legend {
+    background-color: $sectionBGColour;
+    border: 0.125rem dashed $audioTactileLegendColour;
+    margin-block: 3rem;
+    padding: 0.1875rem;
+
+    &[open],
+    &:focus,
+    &:focus-within,
+    &:hover {
+        border: 0.3125rem solid $audioTactileLegendColour;
+        padding: 0;
+    }
+
+    &[open] {
+        padding-block-end: 1rem;
+    }
+}
+
+.legend__summary {
+    cursor: pointer;
+    font-size: var(--fl-enhance-font-size, 1.5rem);
+    font-weight: var(--fl-enhance-font-weight, 600);
+    padding: 1rem 1.5rem;
+
+    // the arrow icon
+    &::marker,
+    &::-webkit-details-marker {
+        color: $audioTactileLegendColour;
+    }
+}
+
+.legend__list {
+    border-inline-start: solid 0.3rem $sectionBorderColour;
+    list-style: none;
+    margin-inline-start: 1.85rem;
+    padding-inline-end: 1.5rem;
+    padding-inline-start: 2rem;
+}
+
+.legend__list-item:not(:last-child) {
+    margin-block-end: 1rem;
+}

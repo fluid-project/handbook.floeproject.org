@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
     title: CUI.9
-    parent: Context, Use, and Inclusion
+    parent: CUI
     order: 9
     key: CUI9
     description: Reuse the graphic for other pedagogical purposes and contexts.

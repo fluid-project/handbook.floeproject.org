@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
     title: CUI.8
-    parent: Context, Use, and Inclusion
+    parent: CUI
     order: 8
     key: CUI8
     description: Use do-it-yourself methods as a strategy to encourage peers and teachers' involvement in the practice of inclusive attitudes. However, it shouldn't be a rule.

@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
     title: CUI.3
-    parent: Context, Use, and Inclusion
+    parent: CUI
     order: 3
     key: CUI3
     description: Recognize that each student brings a different set of knowledge.

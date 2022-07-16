@@ -58,6 +58,10 @@
 // Audio-tactile card section-specific colour overrides
 @mixin card-section-colour-override($selector, $colour) {
     #{$selector} {
+        &.legend__list {
+            border-color: $colour;
+        }
+
         .section__toggle {
             &:hover .section__title {
                 border-color: var(--fl-buttonFgColor, $colour);

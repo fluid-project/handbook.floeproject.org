@@ -48,8 +48,8 @@
     }
 
     /* section-specific colour overrides */
-    @include card-section-colour-override(".materials-and-production", $sectionBorderColourAltOne);
-    @include card-section-colour-override(".context-use-and-inclusion", $sectionBorderColourAltTwo);
+    @include card-section-colour-override(".mp", $sectionBorderColourAltOne);
+    @include card-section-colour-override(".cui", $sectionBorderColourAltTwo);
 
     @include breakpoint-up(md) {
         .main > * {

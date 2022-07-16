@@ -10,6 +10,7 @@ $font-weight-bold: 700;
 $darkRed: var(--fl-fgColor, #8d2a2d); // this colour has several uses
 $darkGrey: var(--fl-bgColor, #e5eaeb);
 $darkTeal: var(--fl-fgColor, #134d5f);
+$mediumTeal: #0b719e;
 $teal: var(--fl-fgColor, #1e97bd);
 
 $mainColour: var(--fl-fgColor, #000);
@@ -35,9 +36,10 @@ $sectionBGColour: var(--fl-bgColor, #fff);
 $sectionBorderColour: $darkRed;
 $sectionBorderColourAltOne: $darkTeal;
 $sectionBorderColourAltTwo: $teal;
+$audioTactileLegendColour: var(--fl-fgColor, $mediumTeal);
 $articleContentsBorderColour: var(--fl-bgColor, #bedee4);
 $articleContentsIconColour: var(--fl-fgColor, #12699a);
-$toolkitsBorderColour: var(--fl-bgColor, #0b719e);
+$toolkitsBorderColour: var(--fl-bgColor, $mediumTeal);
 $toolkitsHeadingColour: var(--fl-fgColor, #095a7d);
 $sideContentLinkColour: var(--fl-linkColor, #2148a8);
 $homeIntroColour: var(--fl-fgColor, #235064);

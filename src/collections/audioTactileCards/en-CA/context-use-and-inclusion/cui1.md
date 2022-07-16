@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
     title: CUI.1
-    parent: Context, Use, and Inclusion
+    parent: CUI
     order: 1
     key: CUI1
     description: Always offer accessible learning materials that are equivalent to those offered to sighted peers. Provide full participation possibilities for blind students to share knowledge with peers.

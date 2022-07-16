@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
     title: CUI.6
-    parent: Context, Use, and Inclusion
+    parent: CUI
     order: 6
     key: CUI6
     description: Present a simplified graphic first, and increase the detail level as the student develops in the topic.

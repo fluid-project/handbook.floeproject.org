@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
     title: CUI.5
-    parent: Context, Use, and Inclusion
+    parent: CUI
     order: 5
     key: CUI5
     description: Use self-explanatory graphics and materials whenever possible.

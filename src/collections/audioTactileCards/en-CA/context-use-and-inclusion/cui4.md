@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
     title: CUI.4
-    parent: Context, Use, and Inclusion
+    parent: CUI
     order: 4
     key: CUI4
     description: Ensure use independence and content interpretation to the blind student.
