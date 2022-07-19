@@ -11,6 +11,9 @@
             {%- endfor -%}
         {% endif -%}
         </ul>
+        {% if not loop.last %}
+            <hr class="legend__list-separator" />
+        {% endif %}
     {%- endfor -%}
     </nav>
 </details>

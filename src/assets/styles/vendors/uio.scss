@@ -34,6 +34,10 @@
 
 // Styles for the Audio-Tactile recommendation cards page
 [class*="fl-theme"]:not(.fl-theme-prefsEditor-default).audio-tactile {
+    .legend__list-separator {
+        background-color: var(--fl-fgColor) !important;
+    }
+
     button.subsection__toggle, // using the element name for specificity
     .subsection__icon,
     .subsection__icon svg,

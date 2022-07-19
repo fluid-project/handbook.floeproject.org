@@ -4,6 +4,11 @@
     margin-block: 3rem;
     padding: 0.1875rem;
 
+    &:focus,
+    &:focus-within {
+        border-color: $mainColour !important;
+    }
+
     &[open],
     &:focus,
     &:focus-within,
@@ -36,6 +41,17 @@
     margin-inline-start: 1.85rem;
     padding-inline-end: 1.5rem;
     padding-inline-start: 2rem;
+}
+
+.legend__list-separator {
+    background-color: $mainColour;
+    border-style: none;
+    border-width: 0;
+    box-sizing: border-box;
+    height: 0.125rem;
+    margin-block: 1rem;
+    margin-inline: 1.25rem;
+    width: calc(100% - 2.5rem);
 }
 
 .legend__list-item:not(:last-child) {
