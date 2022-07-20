@@ -5,33 +5,35 @@
     {% uioTemplate %}
     {% include "partials/global/header.njk" %}
     <main class="main">
-        <h1 class="audio-tactile__title">{{ title }}</h1>
+        <div class="audio-tactile__container">
+            <h1 class="audio-tactile__title">{{ title }}</h1>
 
-        {% include "partials/components/breadcrumb.njk" %}
+            {% include "partials/components/breadcrumb.njk" %}
 
-        <nav class="flc-toc-tocContainer"></nav>
-        
-        {% block content %}
-            {{ content | safe }}
-            <div class="audio-tactile__diagram">
-                {%- svg_sprite "audio-tactile-card-diagram", translations[lang].audioTactileCardDiagramAltText -%}
-            </div>
-            {%- include "partials/components/audio-tactile-legend.njk" -%}
-        {% endblock %}
+            <nav class="flc-toc-tocContainer"></nav>
 
-        {%- include "partials/components/sections-control.njk" -%}
+            {% block content %}
+                {{ content | safe }}
+                <div class="audio-tactile__diagram">
+                    {%- svg_sprite "audio-tactile-card-diagram", translations[lang].audioTactileCardDiagramAltText, false -%}
+                </div>
+                {%- include "partials/components/audio-tactile-legend.njk" -%}
+            {% endblock %}
 
-        <ul class="audio-tactile__sections">
-        {%- for section in collections.cards | eleventyNavigation("Audio Tactile Design Recommendations") -%}
-            {%- include "partials/components/audio-tactile-section.njk" -%}
-        {%- endfor -%}
-        </ul>
+            {%- include "partials/components/sections-control.njk" -%}
+
+            <ul class="audio-tactile__sections">
+            {%- for section in collections.cards | eleventyNavigation("Audio Tactile Design Recommendations") -%}
+                {%- include "partials/components/audio-tactile-section.njk" -%}
+            {%- endfor -%}
+            </ul>
+        </div>
     </main>
     {% include "partials/global/footer.njk" %}
     {# 
         Calling a custom duplicate of eleventy-plugin-fluid's uioInit shortcode in
         order to run it without the text-size preference until issue #57 is solved.
-        
+
         This call is duplicated in base.njk and home.njk
 
         https://github.com/fluid-project/handbook.floeproject.org/issues/57

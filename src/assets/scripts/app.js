@@ -38,11 +38,21 @@ const toggleExpandedState = function (evt, accordionContainerSelector) {
  * @param {Boolean} state - the state to which to set the toggle control
  */
 const toggleAccordion = function (button, accordionContainerSelector, state) {
-    $(button)
-        .attr("aria-expanded", state)
-        .toggleClass(accordionContainerSelector + "__toggle" + "--expanded", state)
-        .closest("." + accordionContainerSelector)
-        .toggleClass(accordionContainerSelector + "__content--show", state);
+
+    /*
+     * Ensure aria-expanded exists before toggling the accordion, in case this is an "empty" accordion
+     * and is not intended to be expanded (i.e. if it's a card with no content)
+     *
+     * Please see this page for more detail on the syntax:
+     * https://css-tricks.com/snippets/jquery/make-an-jquery-hasattr/
+     */
+    if ($(button)[0].hasAttribute("aria-expanded")) {
+        $(button)
+            .attr("aria-expanded", state)
+            .toggleClass(accordionContainerSelector + "__toggle" + "--expanded", state)
+            .closest("." + accordionContainerSelector)
+            .toggleClass(accordionContainerSelector + "__content--show", state);
+    }
 };
 
 $(document).ready(function () {
