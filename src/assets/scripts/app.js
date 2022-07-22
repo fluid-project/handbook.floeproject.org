@@ -13,21 +13,34 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 "use strict";
 
 const menu = {};
+const ARIA_EXPANDED = "aria-expanded";
 
-/**
- * Given a jQuery event, toggles the aria-expanded state of its target element
- * and subsequently toggles an associated accordion control.
- * Any default action by the event is prevented.
- *
- * @param {Event} evt - the jQuery event
- * @param {String} accordionContainerSelector - the CSS selector for the accordion's container
- */
-const toggleExpandedState = function (evt, accordionContainerSelector) {
-    var target = $(evt.delegateTarget);
-    var expandedState = target.attr("aria-expanded") === "true" ? true : false;
-    toggleAccordion(target, accordionContainerSelector, !expandedState);
-    evt.preventDefault();
-};
+$(document).ready(function () {
+    // Selectors for accordion container elements
+    const accordionContainerSelectors = ["section", "subsection", "card"];
+
+    for (const accordionSelector of accordionContainerSelectors) {
+        // only act on those elements that have the aria-expanded attribute defined
+        const toggleButtonSelector = "." + accordionSelector + "__toggle[aria-expanded]";
+
+        /* When "show all" button is clicked, expands all matching accordions to show their contents. */
+        $(".sections-control__expand-all").click(() => toggleAccordion(toggleButtonSelector, accordionSelector, true));
+
+        /* When "hide all" button is clicked, collapses all matching accordions to hide their contents. */
+        $(".sections-control__collapse-all").click(() => toggleAccordion(toggleButtonSelector, accordionSelector, false));
+
+        $(toggleButtonSelector).click(evt => {
+            var toggleButton = evt.delegateTarget;
+            var newExpandedState = toggleExpanded(toggleButton);
+
+            if (newExpandedState !== null && newExpandedState !== "") {
+                toggleAccordion(toggleButton, accordionSelector, newExpandedState);
+            }
+
+            evt.preventDefault();
+        });
+    }
+});
 
 /**
  * Toggles an accordion control's expanded state, setting it to a given value.
@@ -38,51 +51,30 @@ const toggleExpandedState = function (evt, accordionContainerSelector) {
  * @param {Boolean} state - the state to which to set the toggle control
  */
 const toggleAccordion = function (button, accordionContainerSelector, state) {
-
-    /*
-     * Ensure aria-expanded exists before toggling the accordion, in case this is an "empty" accordion
-     * and is not intended to be expanded (i.e. if it's a card with no content)
-     *
-     * Please see this page for more detail on the syntax:
-     * https://css-tricks.com/snippets/jquery/make-an-jquery-hasattr/
-     */
-    if ($(button)[0].hasAttribute("aria-expanded")) {
-        $(button)
-            .attr("aria-expanded", state)
-            .toggleClass(accordionContainerSelector + "__toggle" + "--expanded", state)
-            .closest("." + accordionContainerSelector)
-            .toggleClass(accordionContainerSelector + "__content--show", state);
-    }
+    $(button)
+        .toggleClass(accordionContainerSelector + "__toggle" + "--expanded", state)
+        .closest("." + accordionContainerSelector)
+        .toggleClass(accordionContainerSelector + "__content--show", state);
 };
 
-$(document).ready(function () {
-    // Selectors for accordion container elements
-    const accordionContainerSelectors = ["section", "subsection", "card"];
-
-    for (const accordionSelector of accordionContainerSelectors) {
-        const toggleButtonSelector = "." + accordionSelector + "__toggle";
-
-        /* When "show all" button is clicked, expands all matching accordions to show their contents. */
-        $(".sections-control__expand-all").click(() => toggleAccordion(toggleButtonSelector, accordionSelector, true));
-
-        /* When "hide all" button is clicked, collapses all matching accordions to hide their contents. */
-        $(".sections-control__collapse-all").click(() => toggleAccordion(toggleButtonSelector, accordionSelector, false));
-
-        $(toggleButtonSelector).click(evt => toggleExpandedState(evt, accordionSelector));
-    }
-});
-
 /**
- * Toggles the aria-expanded state of an element.
+ * Toggles the aria-expanded state of an element, if the element has that attribute,
+ * or sets it to a given value
  *
  * @param {DOMNode} element - the DOM Node to toggle the aria-expanded state on.
- * @param {Boolean} [state] - (optional) explicit state to set aria-expanded to.
+ * @param {Boolean} [newState] - (optional) explicit state to set aria-expanded to.
+ *
+ * @return {Boolean} - the element's new aria-expanded state, null or empty string if unset
  */
-menu.toggleExpansion = (element, state) => {
-    let isExpanded = element.getAttribute("aria-expanded") === "true" ? true : false;
-    state = typeof(state) !== "undefined" ? state : !isExpanded;
+const toggleExpanded = (element, newState) => {
+    if (element.hasAttribute(ARIA_EXPANDED)) {
+        let isExpanded = element.getAttribute(ARIA_EXPANDED) === "true" ? true : false;
+        newState = typeof(newState) === "undefined" ? !isExpanded : newState;
 
-    element.setAttribute("aria-expanded", state ? "true" : "false");
+        element.setAttribute(ARIA_EXPANDED, newState ? "true" : "false");
+    }
+
+    return element.getAttribute(ARIA_EXPANDED);
 };
 
 /**
@@ -109,7 +101,7 @@ menu.init = (container, button = "button") => {
     // Close the menu when focus is moved away from the menu
     menuContainer.addEventListener("focusout", (event) => {
         if (!menuContainer.contains(event.relatedTarget)) {
-            menu.toggleExpansion(btn, false);
+            toggleExpanded(btn, false);
         }
     });
 
@@ -118,21 +110,21 @@ menu.init = (container, button = "button") => {
     // https://bugs.webkit.org/show_bug.cgi?id=22261
     document.body.addEventListener("click", (event) => {
         if (!menuContainer.contains(event.target)) {
-            menu.toggleExpansion(btn, false);
+            toggleExpanded(btn, false);
         }
     });
 
     // Close the menu when the "Escape" key is pressed and the menu has focus. Shifts focus back to the button.
     menuContainer.addEventListener("keyup", (event) => {
         if (event.code === "Escape") {
-            menu.toggleExpansion(btn, false);
+            toggleExpanded(btn, false);
             btn.focus();
         }
     });
 
     // Toggle expansion of menu when button is clicked
     btn.addEventListener("click", () => {
-        menu.toggleExpansion(btn);
+        toggleExpanded(btn);
     });
 };
 
