@@ -3,16 +3,22 @@
     {%- content_from_nav_key collections.cards, card.key -%}
 {%- endset -%}
 <li class="card{{ "empty" if not cardContent }}">
-    <button class="card__toggle" aria-labelledby="{{ cardID }}" {%- if cardContent -%}aria-expanded="false"{% endif %} type="button">
+    <button class="card__toggle" aria-labelledby="{{ cardID }}"
+        {%- if cardContent -%}
+            aria-describedby="{{ cardID }}-desc {{ cardID }}-content" aria-expanded="false"
+        {%- else -%}
+            aria-describedby="{{ cardID }}-desc"
+        {%- endif -%}
+        type="button">
         <h4 class="card__title" id="{{ cardID }}">
             {{- card.title | safe -}}
         </h4>
         <div class="card__details">
-            <div class="card__description">{{ card.description | safe }}</div>
-            <span class="card__icon fl-inverted-color" aria-hidden="true">
-                {%- if cardContent -%}{% svg_sprite "arrow" %}{%- endif -%}
-            </span>
-            <div class="card__content">{{ cardContent | safe }}</div>
+            <div class="card__description" id="{{ cardID }}-desc">{{ card.description | safe }}</div>
+            {%- if cardContent -%}
+                <span class="card__icon fl-inverted-color" aria-hidden="true">{% svg_sprite "arrow" %}</span>
+                <div class="card__content" id="{{ cardID }}-content">{{ cardContent | safe }}</div>
+            {%- endif -%}
         </div>
     </button>
 </li>

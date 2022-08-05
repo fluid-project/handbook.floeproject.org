@@ -30,13 +30,7 @@ $(document).ready(function () {
         $(".sections-control__collapse-all").click(() => toggleAccordion(toggleButtonSelector, accordionSelector, false));
 
         $(toggleButtonSelector).click(evt => {
-            var toggleButton = evt.delegateTarget;
-            var newExpandedState = toggleExpanded(toggleButton);
-
-            if (newExpandedState !== null && newExpandedState !== "") {
-                toggleAccordion(toggleButton, accordionSelector, newExpandedState);
-            }
-
+            toggleAccordion(evt.delegateTarget, accordionSelector);
             evt.preventDefault();
         });
     }
@@ -48,10 +42,11 @@ $(document).ready(function () {
  *
  * @param {String|jQuery} button - the button element's selector or a jQuery object representing the button
  * @param {String} accordionContainerSelector - the accordion's container selector
- * @param {Boolean} state - the state to which to set the toggle control
+ * @param {Boolean} [state] - (optional) the state to which to set the toggle control
  */
 const toggleAccordion = function (button, accordionContainerSelector, state) {
     $(button)
+        .each((index, el) => toggleExpanded(el, state))
         .toggleClass(accordionContainerSelector + "__toggle" + "--expanded", state)
         .closest("." + accordionContainerSelector)
         .toggleClass(accordionContainerSelector + "__content--show", state);
