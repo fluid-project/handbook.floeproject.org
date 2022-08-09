@@ -34,7 +34,7 @@
     "devDependencies": {
         "@babel/core": "7.17.10",
         "@commitlint/cli": "17.0.2",
-        "@commitlint/config-conventional": "17.0.2",
+        "@commitlint/config-conventional": "17.0.3",
         "cross-env": "7.0.3",
         "fluid-lint-all": "1.2.2",
         "github-slugger": "1.4.0",
