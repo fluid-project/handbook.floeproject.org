@@ -3,13 +3,13 @@
     {%- content_from_nav_key collections.cards, card.key -%}
 {%- endset -%}
 <li class="card{{ "empty" if not cardContent }}">
-    <button class="card__toggle" aria-labelledby="{{ cardID }}"
+    <article class="card__toggle" aria-labelledby="{{ cardID }}"
         {%- if cardContent -%}
-            aria-describedby="{{ cardID }}-desc {{ cardID }}-content" aria-expanded="false"
+            aria-describedby="{{ cardID }}-desc {{ cardID }}-content" aria-expanded="false" role="button"
         {%- else -%}
-            aria-describedby="{{ cardID }}-desc"
+            aria-describedby="{{ cardID }}-desc" role="article"
         {%- endif -%}
-        type="button">
+        tabindex="0">
         <h4 class="card__title" id="{{ cardID }}">
             {{- card.title | safe -}}
         </h4>
@@ -20,5 +20,5 @@
                 <div class="card__content" id="{{ cardID }}-content">{{ cardContent | safe }}</div>
             {%- endif -%}
         </div>
-    </button>
+    </article>
 </li>
