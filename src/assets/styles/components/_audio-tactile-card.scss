@@ -5,6 +5,7 @@
         color: $mainColour;
         cursor: pointer;
         display: block;
+        font-family: $family-sans-serif; /* override for User Agent button-specific typefaces */
         padding: 0;
         text-align: start;
         width: 100%;
