@@ -19,7 +19,7 @@
         {% set icon = "toolkits" %}
         {% set sideContentTitle = sideContentHeadings[lang].toolkitsTitle %}
         {% set toolkitsAndGuidesPath = "src/collections/pages/" + lang + "/toolkits-and-guides.md" %}
-        
+
         {# TODO: find a tidier way of rendering the markdown content. `renderFile` doesn't seem to work #}
         {% set sideContentPreFilter %}
             {% include toolkitsAndGuidesPath %}
@@ -27,7 +27,7 @@
         {% set sideContent %}
             {{ sideContentPreFilter | markdown | safe }}
         {% endset %}
-        
+
         {% include "partials/components/side-content-item.njk" %}
     </div>
 {% endblock %}

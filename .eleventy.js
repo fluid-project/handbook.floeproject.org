@@ -29,6 +29,7 @@ const parseTransform = require("./src/transforms/parse-transform.js");
 const siteConfig = require("./src/_data/config.json");
 const getResourceLinks = require("./src/utils/getResourceLinks.js");
 const getArticleContents = require("./src/utils/getArticleContents.js");
+const getContentsFromNavKey = require("./src/utils/getContentsFromNavKey.js");
 
 module.exports = function (config) {
     config.setUseGitIgnore(false);
@@ -75,6 +76,10 @@ module.exports = function (config) {
 
     config.addShortcode("article_contents", (content, summary, headingsSelector, containerCssClass) => {
         return getArticleContents(content, summary, headingsSelector, containerCssClass);
+    });
+
+    config.addShortcode("content_from_nav_key", (collection, navigationKey) => {
+        return getContentsFromNavKey(collection, navigationKey.toString());
     });
 
     /*

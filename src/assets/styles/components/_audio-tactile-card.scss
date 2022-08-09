@@ -1,0 +1,100 @@
+.audio-tactile {
+    .card__toggle {
+        background: $sectionBGColour;
+        border: none;
+        color: $mainColour;
+        cursor: pointer;
+        display: block;
+        font-family: $family-sans-serif; /* override for User Agent button-specific typefaces */
+        padding: 0;
+        text-align: start;
+        width: 100%;
+
+        &:focus,
+        &:hover {
+            .card__details {
+                border-width: 0.3125rem;
+                padding: 0;
+            }
+        }
+    }
+
+    .card__title {
+        background-color: $sectionBorderColour;
+        box-sizing: border-box;
+        color: $sectionBGColour;
+        font-size: var(--fl-enhance-font-size, 1.5rem);
+        font-weight: var(--fl-enhance-font-weight, 700);
+        line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
+        margin: 0;
+        padding: 0.5rem 1.5rem;
+        width: 100%;
+    }
+
+    .card__details {
+        border: solid $sectionBorderColour 0.125rem;
+        border-block-start: none;
+        box-sizing: border-box;
+        font-size: 1.25rem;
+        hyphens: auto;
+        line-height: 2rem;
+        padding: 0.1875rem; /* This padding reserves space for the thicker border on hover & focus */
+        padding-block-start: 0;
+    }
+
+    .card__description {
+        align-content: center;
+        display: grid;
+        min-height: 10rem;
+        padding: 1rem;
+    }
+
+    .card__icon {
+        align-items: center;
+        display: block;
+        min-width: 3.75rem;
+        text-align: center;
+
+        &:empty {
+            height: 1.083125rem;
+        }
+
+        &:empty + .card__content {
+            display: none;
+        }
+
+        svg {
+            --icon-arrowColour: #{$sectionBorderColour};
+
+            color: var(--fl-bgColor, $mainColour);
+            fill: none;
+            height: 0.875rem;
+            transform: rotate(90deg);
+            width: 1.4375rem;
+        }
+    }
+
+    .card__toggle--expanded .card__icon svg {
+        transform: rotate(-90deg);
+    }
+
+    .card__content {
+        display: none;
+        padding: 1.5rem;
+
+        ul {
+            padding-inline-start: 1rem;
+        }
+    }
+
+    .card__content--show .card__content {
+        display: block;
+    }
+
+    @include breakpoint-up(sm) {
+        .card__details {
+            hyphens: unset;
+            word-break: unset;
+        }
+    }
+}

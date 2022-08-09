@@ -10,8 +10,9 @@
     color: var(--fl-buttonFgColor, $mainColour);
     cursor: pointer;
     display: flex;
+    font-family: $family-sans-serif;
     font-size: var(--fl-enhance-font-size, 1.8125rem);
-    font-weight: var(--fl-enhance-font-weight, 700);
+    font-weight: var(--fl-enhance-font-weight, 400);
     justify-content: space-between;
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.45);
     margin-block-end: 1.25rem;
@@ -20,6 +21,7 @@
 
     &:focus,
     &:hover {
+        font-weight: var(--fl-enhance-font-weight, 600);
         outline-color: var(--fl-buttonFgColor);
     }
 
@@ -28,6 +30,7 @@
     &:hover .section__title {
         border: 0.35rem solid var(--fl-buttonFgColor, $sectionBorderColour);
         border-inline-start: none;
+        font-weight: var(--fl-enhance-font-weight, 600);
         padding: 0.7125rem 1rem 0.7125rem 1.25rem;
     }
 }
@@ -75,25 +78,25 @@
     display: block;
 }
 
-.section__links {
+.section__subsections {
     list-style: none;
     margin: 0;
     margin-block-end: 2.5rem;
     padding: 0;
 }
 
-.section__subsection {
+.subsection {
     margin-block-end: 1rem;
 }
 
-.section__subsection-link {
+.subsection__link {
     font-size: var(--fl-enhance-font-size, 1.5rem);
     font-weight: var(--fl-enhance-font-weight, 500);
     line-height: 3rem;
     padding-block-end: 0.15rem;
 }
 
-.section__subsection > p:first-child a {
+.subsection > p:first-child a {
     font-size: var(--fl-enhance-font-size, 1.25rem);
     font-weight: var(--fl-enhance-font-weight, 700);
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.3);

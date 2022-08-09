@@ -1,0 +1,18 @@
+<li class="section {{ section.key | slugify }}">
+    <h2 class="section__heading" id="{{ section.key | slugify }}">
+        <button class="section__toggle" aria-expanded="false" type="button">
+            <span class="section__icon fl-inverted-color" aria-hidden="true">
+                {% svg_sprite "arrow" %}
+            </span>
+            <span class="section__title">{{ section.title | safe }}</span>
+        </button>
+    </h2>
+    <div class="section__content">
+        <div class="section__description">{{ section.description | safe }}</div>
+        <ul class="section__subsections">
+        {%- for subsection in section.children -%}
+            {%- include "partials/components/audio-tactile-subsection.njk" -%}
+        {%- endfor -%}
+        </ul>
+    </div>
+</li>

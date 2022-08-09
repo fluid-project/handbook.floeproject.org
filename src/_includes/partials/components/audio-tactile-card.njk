@@ -1,0 +1,24 @@
+{%- set cardID = card.key | slugify -%}
+{%- set cardContent -%}
+    {%- content_from_nav_key collections.cards, card.key -%}
+{%- endset -%}
+<li class="card{{ "empty" if not cardContent }}">
+    <article class="card__toggle" aria-labelledby="{{ cardID }}"
+        {%- if cardContent -%}
+            aria-describedby="{{ cardID }}-desc {{ cardID }}-content" aria-expanded="false" role="button"
+        {%- else -%}
+            aria-describedby="{{ cardID }}-desc" role="article"
+        {%- endif -%}
+        tabindex="0">
+        <h4 class="card__title" id="{{ cardID }}">
+            {{- card.title | safe -}}
+        </h4>
+        <div class="card__details">
+            <div class="card__description" id="{{ cardID }}-desc">{{ card.description | safe }}</div>
+            {%- if cardContent -%}
+                <span class="card__icon fl-inverted-color" aria-hidden="true">{% svg_sprite "arrow" %}</span>
+                <div class="card__content" id="{{ cardID }}-content">{{ cardContent | safe }}</div>
+            {%- endif -%}
+        </div>
+    </article>
+</li>

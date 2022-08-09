@@ -5,10 +5,7 @@
         {{ content | safe }}
     </div>
 
-    <div class="sections-control">
-        <button class="sections-control__expand-all">{{ translations[lang].expandAll }}</button>
-        <button class="sections-control__collapse-all">{{ translations[lang].collapseAll }}</button>
-    </div>
+    {%- include "partials/components/sections-control.njk" -%}
 
     {% set sections = collections.all | eleventyNavigation(eleventyNavigation.key) %}
 

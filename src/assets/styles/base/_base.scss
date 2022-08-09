@@ -21,12 +21,14 @@ figure a {
     display: inline-block;
 }
 
-.main-content {
-    padding: 2rem;
-
+main {
     a {
         color: $linkColour;
     }
+}
+
+.main-content {
+    padding: 2rem;
 
     code {
         display: inline;

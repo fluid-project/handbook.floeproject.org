@@ -1,0 +1,26 @@
+{% if subsection.children.length <= 0 %}
+    {# if this subsection doesn't have any children, treat it as though it's a card #}
+
+    {% set card = subsection %}
+    {%- include "partials/components/audio-tactile-card.njk" -%}
+{% else %}
+    {# otherwise, render a proper subsection and iterate over its children #}
+
+    <li class="subsection">
+        <h3 class="subsection__heading">
+            <button class="subsection__toggle" aria-expanded="false" type="button">
+                <span class="subsection__icon" aria-hidden="true">
+                    {% svg_sprite "arrow" %}
+                </span>
+                <span class="subsection__title">{{ subsection.title | safe }}</span>
+            </button>
+        </h3>
+        <div class="subsection__content">
+            <ul class="subsection__cards">
+            {%- for card in subsection.children -%}
+                {%- include "partials/components/audio-tactile-card.njk" -%}
+            {%- endfor -%}
+            </ul>
+        </div>
+    </li>
+{% endif %}

@@ -1,0 +1,19 @@
+<details class="legend">
+    <summary id="legend__summary" class="legend__summary">{{ translations[lang].audioTactileLegendText | safe }}</summary>
+    <nav aria-labelledby="legend__summary">
+    {%- for section in collections.cards | eleventyNavigation("Audio Tactile Design Recommendations") -%}
+        <ul class="legend__list {{ section.key | slugify }}">
+        {%- if section.key === "CUI" %} {# The Context, Use and Inclusion section, specifically, has a different structure #}
+            <li class="legend__list-item">{{ section.key | safe }} &mdash; {{ section.title }}</li>
+        {% else %}
+            {%- for subsection in section.children -%}
+                <li class="legend__list-item">{{ subsection.key | safe }} &mdash; {{ subsection.description }}</li>
+            {%- endfor -%}
+        {% endif -%}
+        </ul>
+        {% if not loop.last %}
+            <hr class="legend__list-separator" />
+        {% endif %}
+    {%- endfor -%}
+    </nav>
+</details>
