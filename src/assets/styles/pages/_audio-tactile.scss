@@ -32,12 +32,14 @@
     .audio-tactile__intro {
         font-size: 1.25rem;
         grid-area: intro;
+        line-height: 2.2rem;
     }
 
     .audio-tactile__credits {
         font-size: 1.25rem;
         font-style: italic;
         grid-area: credits;
+        line-height: 2.2rem;
         margin-inline: auto;
     }
 
