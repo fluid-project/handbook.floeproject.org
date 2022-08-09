@@ -14,6 +14,8 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 
 const menu = {};
 const ARIA_EXPANDED = "aria-expanded";
+const ENTER = 13;
+const SPACE = 32;
 
 $(document).ready(function () {
     // Selectors for accordion container elements
@@ -34,6 +36,14 @@ $(document).ready(function () {
             evt.preventDefault();
         });
     }
+
+    $(".card__toggle[role=button]").keydown(evt => {
+        var pressedKey = evt.keyCode || evt.which;
+        if (pressedKey === ENTER || pressedKey === SPACE) {
+            toggleAccordion(evt.delegateTarget, "card");
+            evt.preventDefault();
+        }
+    });
 });
 
 /**
