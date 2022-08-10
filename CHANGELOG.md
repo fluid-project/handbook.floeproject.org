@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.1.0...v1.2.0) (2022-08-10)
+
+
+### Features
+
+* add audio-tactile card content and template ([50884a7](https://github.com/fluid-project/handbook.floeproject.org/commit/50884a7e2b65a4a9efe4d54d6eeccb243364457e))
+* add audio-tactile card diagram to cards page ([d517613](https://github.com/fluid-project/handbook.floeproject.org/commit/d517613d04dcf19b6ee859b535d0b7d7306a81fe))
+* add audio-tactile cards' code legend ([fd26eed](https://github.com/fluid-project/handbook.floeproject.org/commit/fd26eed5d851bcf1fd3c77e95b95911165622763))
+* add initial styling rules for AT cards page ([460639f](https://github.com/fluid-project/handbook.floeproject.org/commit/460639fdbf3924bc9295758f29b4b9a08421fd4e))
+* add markdown files for recommendation cards ([e63f1df](https://github.com/fluid-project/handbook.floeproject.org/commit/e63f1dfb34882feb53e73334e35872f7c21d7f03))
+* add new article for 3D audio-tactile designs ([4a4f7f9](https://github.com/fluid-project/handbook.floeproject.org/commit/4a4f7f927aed30e583793b802610dc48dcc2b035))
+* add templates for audio-tactile design cards ([783e86b](https://github.com/fluid-project/handbook.floeproject.org/commit/783e86b20cde2e01bd035def23204fb5257be277))
+* add UIO rules for audio-tactile cards page ([a87d3b2](https://github.com/fluid-project/handbook.floeproject.org/commit/a87d3b2182501afa5596bb6b1fddc846fcc80cf9))
+* complete styling of audio-tactile cards page ([2134fd2](https://github.com/fluid-project/handbook.floeproject.org/commit/2134fd2934b0873037784aeb105d106dacfa20b0))
+* convert AT page controls to custom accordion ([1bf67ff](https://github.com/fluid-project/handbook.floeproject.org/commit/1bf67ff944d66c0244269d1ddf134cfe253e0772))
+* further refine audio-tactile card page rules ([212c88c](https://github.com/fluid-project/handbook.floeproject.org/commit/212c88c1c8f77295495f595b45c3bc4bd681d1a8))
+* improve AT card legend styling ([5122b11](https://github.com/fluid-project/handbook.floeproject.org/commit/5122b116a7e1fb9976e1fe0f56ec60691a5c70a1))
+* improve AT cards styling & usability ([bdadb78](https://github.com/fluid-project/handbook.floeproject.org/commit/bdadb783bf70f5e7273b45733647ad38728127ea))
+* improve audio-tactile card page styling ([557d0d9](https://github.com/fluid-project/handbook.floeproject.org/commit/557d0d9e12a87af92d5ccc6bdc678439edb1205b))
+* improve audio-tactile card page styling more ([fc83057](https://github.com/fluid-project/handbook.floeproject.org/commit/fc8305703e849e7bcc5ff7547982af32a5c44fa5))
+
+
+### Bug Fixes
+
+* fix typo ([62aa573](https://github.com/fluid-project/handbook.floeproject.org/commit/62aa573bf3b8be137c69e33bb4007b2ee02b0df9))
+* make "no-content" cards articles, not buttons ([ff9a942](https://github.com/fluid-project/handbook.floeproject.org/commit/ff9a94279958a80581caae7236158220cbfbadb6))
+* remove unnecessary role and fix typo ([9c00cf6](https://github.com/fluid-project/handbook.floeproject.org/commit/9c00cf6a355b0010111ed9ac8cced93eae53afe9))
+* restore keyboard bindings for card buttons ([85ab0c1](https://github.com/fluid-project/handbook.floeproject.org/commit/85ab0c1e90a2d0c23766e83e121e917419d030e9))
+* solve bug preventing ATs from reading cards ([d1c97b8](https://github.com/fluid-project/handbook.floeproject.org/commit/d1c97b811e86d90408c716f0e13a83e8ace37a0e))
+* solve bug with AT card content load shortcode ([5f6ca72](https://github.com/fluid-project/handbook.floeproject.org/commit/5f6ca729b7f014ea4f917f49ad94b7766dcb3c11))
+* solve bug with card and section titles ([611f51a](https://github.com/fluid-project/handbook.floeproject.org/commit/611f51ab5d8578cc091c25951dc5c17fb7552907))
+* solve HTML validity issue and typo ([4d93f57](https://github.com/fluid-project/handbook.floeproject.org/commit/4d93f57d22b8e960a74330f9cd447cf2f0705857))
+* solve issues with accordion code, readability ([e865b90](https://github.com/fluid-project/handbook.floeproject.org/commit/e865b9039399667afd694e19219cc5ed3150f15e))
+* solve outline overlap issue in Firefox ([e4a60f1](https://github.com/fluid-project/handbook.floeproject.org/commit/e4a60f124e156126bbdb8e20d88e469b5b8ca402))
+* solve typeface inconsistency from user agent ([aeb93cb](https://github.com/fluid-project/handbook.floeproject.org/commit/aeb93cb39cc5b414152380257e09b1104b198642))
+
 ## [1.1.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.0.0...v1.1.0) (2022-06-10)
 
 ### Features
