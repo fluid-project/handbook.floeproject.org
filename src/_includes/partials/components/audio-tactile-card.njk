@@ -3,7 +3,7 @@
     {%- content_from_nav_key collections.cards, card.key -%}
 {%- endset -%}
 <li class="card{{ "empty" if not cardContent }}">
-    <article class="card__toggle" aria-labelledby="{{ cardID }}"
+    <div class="card__toggle" aria-labelledby="{{ cardID }}"
         {%- if cardContent -%}
             aria-describedby="{{ cardID }}-desc {{ cardID }}-content" aria-expanded="false" role="button"
         {%- else -%}
@@ -20,5 +20,5 @@
                 <div class="card__content" id="{{ cardID }}-content">{{ cardContent | safe }}</div>
             {%- endif -%}
         </div>
-    </article>
+    </div>
 </li>
