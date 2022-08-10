@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-    title: MPP.1
+    title: MPP.2
     parent: MPP
     order: 1
     key: MPP2
