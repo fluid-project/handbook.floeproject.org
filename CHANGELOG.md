@@ -5,7 +5,6 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 ## [1.2.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.1.0...v1.2.0) (2022-08-10)
 
-
 ### Features
 
 * add audio-tactile card content and template ([50884a7](https://github.com/fluid-project/handbook.floeproject.org/commit/50884a7e2b65a4a9efe4d54d6eeccb243364457e))
@@ -23,7 +22,6 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 * improve AT cards styling & usability ([bdadb78](https://github.com/fluid-project/handbook.floeproject.org/commit/bdadb783bf70f5e7273b45733647ad38728127ea))
 * improve audio-tactile card page styling ([557d0d9](https://github.com/fluid-project/handbook.floeproject.org/commit/557d0d9e12a87af92d5ccc6bdc678439edb1205b))
 * improve audio-tactile card page styling more ([fc83057](https://github.com/fluid-project/handbook.floeproject.org/commit/fc8305703e849e7bcc5ff7547982af32a5c44fa5))
-
 
 ### Bug Fixes
 
