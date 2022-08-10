@@ -3,7 +3,7 @@ eleventyNavigation:
     title: MPP.1
     parent: MPP
     order: 1
-    key: MPP1
+    key: MPP2
     description: Consider the 3D printer limitations and characteristics and adjust the printing parameters to avoid imperfections.
 ---
 - **Tip:** divide the digital model into several parts to be printed, if necessary.
