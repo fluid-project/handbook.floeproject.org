@@ -41,7 +41,7 @@
         "html-minifier": "4.0.0",
         "husky": "8.0.1",
         "image-size": "1.0.1",
-        "laravel-mix": "6.0.44",
+        "laravel-mix": "6.0.49",
         "linkedom": "0.14.9",
         "markdown-it-anchor": "8.6.4",
         "move-file": "2.1.0",
