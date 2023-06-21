@@ -13,19 +13,20 @@ written here provides a starting point rather than a best practice.
 ## Find Sign Language translators
 
 If possible, hire translators who are Deaf. If your website uses
-industry-specific language (such healthcare jargon) consider finding translators
-who specialize in or are familiar with the industry or context. You may also
-want to find translators with video production capabilities, or have access to
-video production support. It is also best to find translators with diverse
-experiences and identities, and who reflect your intended user groups.
+industry-specific language (such as healthcare jargon) consider finding
+translators who specialize in or are familiar with the industry or context. You
+may also want to find translators with video production capabilities or who have
+access to video production support. It is also best to find translators with
+diverse experiences and identities, and who reflect your intended user groups.
 
 ## Prepare your translation documents
 
-Translation documents contain all the content that needs to be translated. They
-are sent to the translators for them to work off of. Work with the translators
-you’ve hired to determine what format they prefer for the documents, and how
-they’d like to communicate if they have any questions. Here are a few
-suggestions for content to include in your documents:
+Translation documents contain all the content that needs to be translated as
+well as any supporting information. They are shared with the translators at the
+beginning of the project. Work with the translators you’ve hired to determine
+their preferred format for the documents, and to agree on how they’d like to
+communicate any questions. Here are a few suggestions for content to include in
+your documents:
 
 ### Include all the possible user pathways
 
@@ -46,13 +47,13 @@ can fit into one video, here are some suggestions:
     city and town, postal code)
   * Create one video for a question with under 5 options
   * Create multiple videos for questions with more than 5 options, or in cases
-    where there are less than 5 but each option has a long label. Have one
-    video for the question and a separate video for the options
+    where there are less than 5 but each option has a long label. Have one video
+    for the question and a separate video for the options
 * Buttons: Create one video per button
 
 ### Reference the website, not just a static document
 
-When translations are only based on static documents, a lot of the content is
+When translations are based only on static documents, a lot of the content is
 taken out of context and may result in inaccurate translations. This is
 especially true if your website is highly interactive. If your content is being
 sent over in a static document like a word document or spreadsheet, include a
@@ -105,8 +106,8 @@ usability and accessibility of these videos.
 
 Pairing the translation with images and icons can be particularly helpful for
 remembering a list of options or dense content. Use them in the ASL/LSQ video
-background as an option is being signed, and match them in the list of options
-or content in the interface.
+background to reference the options being signed, and match them in the list of
+options or content in the interface.
 
 ### Type out important information
 
@@ -127,14 +128,14 @@ translator’s clothing) to help users with vision loss.
 
 ## Integrate the translation videos
 
-Once you receive the videos from the translators, here are a few things you
-should do.
+Here are a few suggestions for successful integration of the translation videos
+into your site.
 
 ### Label the videos
 
-Make sure to use a consistent and well-considered labeling convention because if
-you are not an ASL or LSQ user, it may be difficult to tell what content is in
-each video. When labeling, consider:
+Be sure to use a consistent and well-considered labeling convention. If you are
+not an ASL or LSQ user it may be difficult to know what the video content is.
+When labeling, consider:
 
 * How will you know what text is being translated in the video?
 * How will you label new versions of a video that may be revised and updated
@@ -151,23 +152,23 @@ the ASL/LSQ video and written text can appear together:
 * Place the ASL/LSQ videos side by side with the written text.
 * Have a fixed location on the screen to play the ASL/LSQ video. Hovering over a
   certain written content can trigger the translation video of that text to
-  play. (Example: Signly)
+  play. (Example: [Signly](https://signly.co/))
 * If there is a heading followed by a paragraph, place the video between the
   heading and the paragraph.
 
 ### Consider the size of the videos
 
-Have a way to adjust the size of the videos. Large videos that lead to more
-scrolling is especially laborious for users who use assistive technologies like
-switches and head trackers. However, some Deaf viewers with vision loss need a
-larger video.
+Provide a way for users to adjust the size of the videos. Large videos that lead
+to more scrolling is especially laborious for users who use assistive
+technologies like switches and head trackers. However, some Deaf viewers with
+vision loss need a larger video.
 
 ### Create a way to open or close the videos
 
-If the website loads all the videos on the page at once, it may take a really
-long time to load for people who don’t have stable or reliable internet
-connection. Consider having buttons that open and close the videos one at a
-time.
+If the website loads all the videos on the page at once, loading may take a long
+time for those who don’t have stable or reliable internet connection. Consider
+having buttons or thumbnails of the video that open and close the videos one at
+a time.
 
 ### Offer different colour modes
 
@@ -191,8 +192,8 @@ affect your technical approach.
 
 Some technical things to also consider:
 
-* Where the videos will be stored/hosted?
-* Does the video player meet the needs of the users?
+* Where the videos will be stored/hosted
+* If the video player meets the needs of the users
 
 ## Test your website
 
@@ -204,13 +205,13 @@ what to test for:
    too much or too little?
 2. **Placement of the video:** Was the placement of the videos on each page
    appropriate? Was the size of the video too big, or too small?
-3. **Interacting with the video:** Was the user interaction for opening and
-   closing the videos intuitive and usable?
+3. **Interacting with the video:** Was the user interaction for opening,
+   closing, and adjusting the size of the videos intuitive and usable?
 4. **Quality of the video:** How was the quality of the video and the
    translations in it?
 
 When an issue comes up, you can use it as an opportunity to discuss possible
-solutions with your test participant . You can share these ideas with other
+solutions with your test participant. You can share these ideas with other
 participants to improve your understanding of the issue and get a different
 perspective.
 
