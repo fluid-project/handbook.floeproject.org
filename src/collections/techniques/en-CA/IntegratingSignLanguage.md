@@ -3,7 +3,7 @@ title: How to integrate Sign Language into your website
 eleventyNavigation:
     parent: Authoring Content
     key: Integrating Sign Language into Your Website
-    order: 4
+    order: 3
 ---
 
 This article will outline a rough process on how to integrate Sign Language like
