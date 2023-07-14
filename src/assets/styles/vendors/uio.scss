@@ -1,3 +1,6 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
 // UIO styles
 
 // removes gradient and applies border to banner for UIO contrast themes
@@ -18,10 +21,10 @@
 .menu__link {
     [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
     [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
-        @include menu-link-focus-hover-narrow;
+        @include mixins.menu-link-focus-hover-narrow;
 
-        background-color: var(--fl-linkColor, $menuExpandedSelectedBGColour) !important;
-        color: var(--fl-bgColor, $menuExpandedSelectedColour) !important;
+        background-color: var(--fl-linkColor, variables.$menuExpandedSelectedBGColour) !important;
+        color: var(--fl-bgColor, variables.$menuExpandedSelectedColour) !important;
     }
 }
 
@@ -106,11 +109,11 @@
     }
 }
 
-@include breakpoint-up(lg) {
+@include mixins.breakpoint-up(lg) {
     .menu__link {
         [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
         [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
-            @include menu-link-focus-hover-wide;
+            @include mixins.menu-link-focus-hover-wide;
 
             background-color: inherit !important;
             color: var(--fl-linkColor, currentColor) !important;
