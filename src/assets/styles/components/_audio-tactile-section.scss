@@ -20,8 +20,8 @@
         }
 
         &--expanded .section__title {
-            background: $sectionBorderColour;
-            color: $sectionBGColour;
+            background: var(--darkRed);
+            color: var(--sectionBGColour);
         }
     }
 
@@ -31,14 +31,14 @@
     }
 
     .section__content {
-        background: $sectionBGColour;
-        border: 0.3125rem solid $sectionBorderColour;
+        background: var(--sectionBGColour);
+        border: 0.3125rem solid var(--darkRed);
         border-block-start: none;
         padding: 0 1rem;
     }
 
     .section__description {
-        border-block-end: 0.0625rem solid $mainColour;
+        border-block-end: 0.0625rem solid var(--mainColour);
         font-size: 1.5rem;
         line-height: 2.125rem;
         padding: 2.75rem;

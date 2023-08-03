@@ -1,11 +1,13 @@
+@use '../abstracts/mixins';
+
 .audio-tactile {
     .card__toggle {
-        background: $sectionBGColour;
+        background: var(--sectionBGColour);
         border: none;
-        color: $mainColour;
+        color: var(--mainColour);
         cursor: pointer;
         display: block;
-        font-family: $family-sans-serif; /* override for User Agent button-specific typefaces */
+        font-family: var(--family-sans-serif); /* override for User Agent button-specific typefaces */
         padding: 0;
         text-align: start;
         width: 100%;
@@ -20,9 +22,9 @@
     }
 
     .card__title {
-        background-color: $sectionBorderColour;
+        background-color: var(--darkRed);
         box-sizing: border-box;
-        color: $sectionBGColour;
+        color: var(--sectionBGColour);
         font-size: var(--fl-enhance-font-size, 1.5rem);
         font-weight: var(--fl-enhance-font-weight, 700);
         line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
@@ -32,7 +34,7 @@
     }
 
     .card__details {
-        border: solid $sectionBorderColour 0.125rem;
+        border: solid var(--darkRed) 0.125rem;
         border-block-start: none;
         box-sizing: border-box;
         font-size: 1.25rem;
@@ -64,9 +66,9 @@
         }
 
         svg {
-            --icon-arrowColour: #{$sectionBorderColour};
+            --icon-arrowColour: #{var(--darkRed)};
 
-            color: var(--fl-bgColor, $mainColour);
+            color: var(--fl-bgColor, var(--mainColour));
             fill: none;
             height: 0.875rem;
             transform: rotate(90deg);
@@ -91,7 +93,7 @@
         display: block;
     }
 
-    @include breakpoint-up(sm) {
+    @include mixins.breakpoint-up(sm) {
         .card__details {
             hyphens: unset;
             word-break: unset;

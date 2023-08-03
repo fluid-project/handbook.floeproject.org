@@ -1,9 +1,11 @@
+@use '../abstracts/mixins';
+
 .audio-tactile {
     .subsection {
         margin-block-end: 0;
 
         &:not(:last-of-type) {
-            border-block-end: 0.0625rem solid $mainColour;
+            border-block-end: 0.0625rem solid var(--mainColour);
         }
     }
 
@@ -14,9 +16,9 @@
 
     .subsection__toggle {
         align-items: stretch;
-        background-color: var(--fl-buttonBgColor, $sectionBGColour);
+        background-color: var(--fl-buttonBgColor, var(--sectionBGColour));
         border: none;
-        color: var(--fl-buttonFgColor, $mainColour);
+        color: var(--fl-buttonFgColor, var(--mainColour));
         cursor: pointer;
         display: flex;
         font-size: var(--fl-enhance-font-size, 1.8125rem);
@@ -55,9 +57,9 @@
         min-width: 3.75rem;
 
         svg {
-            --icon-arrowColour: var(--fl-buttonFgColor, #{$sectionBorderColour});
+            --icon-arrowColour: var(--fl-buttonFgColor, #{var(--darkRed)});
 
-            color: var(--fl-bgColor, $mainColour);
+            color: var(--fl-bgColor, var(--mainColour));
             fill: none;
             height: 1.875rem;
             width: 1.125rem;
@@ -86,12 +88,12 @@
         margin-block-end: 2.5rem;
         padding-inline: 2rem;
 
-        @include breakpoint-up(sm) {
+        @include mixins.breakpoint-up(sm) {
             grid-template-columns: 1fr 1fr;
             padding-inline: 3.75rem;
         }
 
-        @include breakpoint-up(md-lg) {
+        @include mixins.breakpoint-up(md-lg) {
             grid-template-columns: 1fr 1fr 1fr;
         }
     }

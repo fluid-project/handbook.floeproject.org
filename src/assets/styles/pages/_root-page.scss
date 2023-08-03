@@ -1,7 +1,9 @@
+@use '../abstracts/mixins';
+
 .root {
     h1 {
-        color: $darkRed;
-        font-family: $family-serif;
+        color: var(--darkRed);
+        font-family: var(--family-serif);
         font-size: 2.875rem;
         font-weight: 800;
         line-height: 1.875rem;
@@ -9,19 +11,19 @@
     }
 
     .main-content {
-        background-color: $rootContentBackgroundColour;
+        background-color: var(--rootContentBackgroundColour);
 
         .content {
             font-weight: 500;
         }
 
         h2 {
-            color: $rootContentColour;
+            color: var(--rootContentColour);
         }
     }
 }
 
-@include breakpoint-up(md) {
+@include mixins.breakpoint-up(md) {
     .root h1 {
         margin-block-end: 2rem;
         margin-block-start: 4rem;

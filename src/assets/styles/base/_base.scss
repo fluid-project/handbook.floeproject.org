@@ -1,5 +1,6 @@
 // Base styles
 
+@use '../abstracts/mixins';
 @import "reset";
 @import "typography";
 
@@ -8,7 +9,7 @@
 a {
     &:focus,
     &:hover {
-        background: $linkFocusHoverBackgroundColour;
+        background: var(--linkFocusHoverBackgroundColour);
         border-radius: 0.3125rem;
         box-decoration-break: clone;
         margin: -0.3rem;
@@ -23,7 +24,7 @@ figure a {
 
 main {
     a {
-        color: $linkColour;
+        color: var(--linkColour);
     }
 }
 
@@ -55,7 +56,7 @@ main {
     }
 
     h2 {
-        color: $darkRed;
+        color: var(--darkRed);
         font-size: 1.5rem;
         line-height: 2.125rem;
         margin-block-start: 2rem;
@@ -88,14 +89,14 @@ main {
     padding-inline: 2rem;
 }
 
-@include breakpoint-up(md) {
+@include mixins.breakpoint-up(md) {
     .main {
         display: grid;
         gap: 1rem;
         grid-template-columns: minmax(30rem, 2fr) minmax(19rem, 1fr);
         justify-content: center;
         margin-inline: auto;
-        max-width: $max-content-width;
+        max-width: var(--max-content-width);
         word-break: break-word;
     }
 

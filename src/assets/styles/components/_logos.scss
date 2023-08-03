@@ -1,3 +1,5 @@
+@use '../abstracts/mixins';
+
 .logos {
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +7,7 @@
 
     svg {
         display: inline-block;
-        fill: $footerColour;
+        fill: var(--footerColour);
         height: 3rem;
         max-width: 100%;
     }
@@ -36,7 +38,7 @@ svg.ildh-logo-ocadu {
     width: 4rem;
 }
 
-@include breakpoint-up(lg) {
+@include mixins.breakpoint-up(lg) {
     .logos {
         align-self: end;
         grid-column: 1;

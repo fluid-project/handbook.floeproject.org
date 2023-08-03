@@ -1,8 +1,10 @@
+@use '../abstracts/mixins';
+
 // Rules specific to the Audio-Tactile design recommendations page
 
 .audio-tactile {
     main {
-        background: $darkGrey;
+        background: var(--darkGrey);
         grid-template-columns: unset;
         max-width: unset;
         padding: 2rem;
@@ -71,10 +73,10 @@
     }
 
     /* section-specific colour overrides */
-    @include card-section-colour-override(".mp", $sectionBorderColourAltOne);
-    @include card-section-colour-override(".cui", $sectionBorderColourAltTwo);
+    @include mixins.card-section-colour-override(".mp", var(--darkTeal));
+    @include mixins.card-section-colour-override(".cui", var(--teal));
 
-    @include breakpoint-up(md) {
+    @include mixins.breakpoint-up(md) {
         .audio-tactile__container {
             column-gap: 2rem;
             display: grid;
@@ -87,7 +89,7 @@
                 "legend legend"
                 "secCtrl secCtrl"
                 "sections sections";
-            max-width: $xl-content-width;
+            max-width: var(--xl-content-width);
         }
 
         .audio-tactile__intro,

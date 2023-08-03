@@ -5,12 +5,12 @@
 
 .side-content__content {
     a {
-        color: $sideContentLinkColour;
+        color: var(--sideContentLinkColour);
     }
 }
 
 .side-content__topic-links {
-    color: $topicLinksHeadingColour;
+    color: var(--darkRed);
     margin-block-end: 4rem;
 
     .side-content__icon svg {
@@ -37,16 +37,16 @@
         margin-block: 1rem;
 
         & a {
-            color: $sideContentLinkColour;
+            color: var(--sideContentLinkColour);
         }
     }
 }
 
 .side-content__toolkits {
-    color: $toolkitsHeadingColour;
+    color: var(--toolkitsHeadingColour);
 
     .side-content__icon {
-        background-color: $toolkitsBorderColour;
+        background-color: var(--mediumTeal);
         border: 1px solid var(--fl-fgColor);
         padding: 1rem;
 
@@ -57,7 +57,7 @@
     }
 
     .side-content__content {
-        border: 1px solid $toolkitsBorderColour;
+        border: 1px solid var(--mediumTeal);
         border-top: none;
         padding: 1.5rem 2rem 2rem 2rem;
     }
@@ -80,7 +80,7 @@
         margin-block: 1rem;
 
         & a {
-            color: $sideContentLinkColour;
+            color: var(--sideContentLinkColour);
             font-weight: 500;
         }
     }

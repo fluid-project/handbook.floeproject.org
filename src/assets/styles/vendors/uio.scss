@@ -23,8 +23,8 @@
     [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
         @include mixins.menu-link-focus-hover-narrow;
 
-        background-color: var(--fl-linkColor, variables.$menuExpandedSelectedBGColour) !important;
-        color: var(--fl-bgColor, variables.$menuExpandedSelectedColour) !important;
+        background-color: var(--fl-linkColor, var(--darkRed)) !important;
+        color: var(--fl-bgColor, var(--menuExpandedSelectedColour)) !important;
     }
 }
 

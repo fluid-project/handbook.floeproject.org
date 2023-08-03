@@ -1,6 +1,6 @@
 .article-contents {
-    background-color: $sectionBGColour;
-    border: 0.125rem dashed $articleContentsBorderColour;
+    background-color: var(--sectionBGColour);
+    border: 0.125rem dashed var(--articleContentsBorderColour);
     margin-block: 3rem;
     padding: 0.1875rem;
 
@@ -8,7 +8,7 @@
     &:focus,
     &:focus-within,
     &:hover {
-        border: 0.3125rem solid $articleContentsBorderColour;
+        border: 0.3125rem solid var(--articleContentsBorderColour);
         padding: 0;
     }
 
@@ -18,7 +18,7 @@
         // the arrow icon's open state
         .article-contents__summary::marker,
         .article-contents__summary::-webkit-details-marker {
-            color: $articleContentsIconColour;
+            color: var(--articleContentsIconColour);
         }
     }
 }
@@ -32,7 +32,7 @@
     // the arrow icon's closed state
     &::marker,
     &::-webkit-details-marker {
-        color: $articleContentsIconColour;
+        color: var(--articleContentsIconColour);
     }
 }
 

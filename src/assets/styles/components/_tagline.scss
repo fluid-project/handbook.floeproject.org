@@ -1,5 +1,5 @@
 .tagline {
-    --ildh-wordmark-text-colour: var(--fl-fgColor, #{$footerColour});
+    --ildh-wordmark-text-colour: var(--fl-fgColor, #{var(--footerColour)});
 
     svg {
         margin-block-end: 2rem;

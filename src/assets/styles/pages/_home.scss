@@ -1,9 +1,11 @@
+@use '../abstracts/mixins';
+
 // Homepage-specific rules
 .home .banner {
-    height: $banner-height-full;
+    height: var(--banner-height-full);
 
     svg {
-        height: $banner-height-full;
+        height: var(--banner-height-full);
         position: absolute;
     }
 }
@@ -23,8 +25,8 @@
 }
 
 .home__intro {
-    background: $homeIntroBGColour;
-    color: $homeIntroColour;
+    background: var(--homeIntroBGColour);
+    color: var(--homeIntroColour);
     font-size: 2.375rem;
     line-height: 3.4375rem;
     padding-block: 1rem;
@@ -33,7 +35,7 @@
 
     > * {
         margin-inline: auto;
-        max-width: $max-content-width;
+        max-width: var(--max-content-width);
     }
 }
 
@@ -52,38 +54,38 @@
 
     & > * {
         margin-inline: auto;
-        max-width: $narrow-content-width;
+        max-width: var(--narrow-content-width);
     }
 }
 
 .home__details {
-    background-color: $homeDetailsBGColour;
+    background-color: var(--homeDetailsBGColour);
     padding-block: 2rem;
 }
 
 .home__get-involved {
-    background-color: $homeGetInvolvedBGColour;
+    background-color: var(--darkGrey);
     padding-block-end: 5rem;
     padding-block-start: 2rem;
 
     h2 {
-        color: $darkRed;
+        color: var(--darkRed);
         margin-block: 1rem;
         text-align: center;
     }
 }
 
-@include breakpoint-up(md) {
+@include mixins.breakpoint-up(md) {
     .home .banner {
-        height: $banner-height-full-large;
+        height: var(--banner-height-full-large);
 
         svg {
-            height: $banner-height-full-large;
+            height: var(--banner-height-full-large);
         }
     }
 }
 
-@include breakpoint-up(lg) {
+@include mixins.breakpoint-up(lg) {
     .home__intro {
         padding-block-start: 4rem;
     }

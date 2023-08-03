@@ -37,14 +37,14 @@
     background: unset;
     border-radius: unset;
     margin-inline: unset;
-    outline: solid 0.3125rem $darkRed;
+    outline: solid 0.3125rem var(--darkRed);
 }
 
 // Menu link focus & hover style overrides
 @mixin menu-link-focus-hover-narrow() {
-    background-color: variables.$menuExpandedSelectedBGColour;
+    background-color: var(--darkRed);
     border-radius: unset;
-    color: variables.$menuExpandedSelectedColour;
+    color: var(--menuExpandedSelectedColour);
     margin: unset;
     outline-color: transparent;
     padding-block: unset;
@@ -52,7 +52,7 @@
 
 @mixin menu-link-focus-hover-wide() {
     background-color: inherit;
-    border-bottom: 0.625rem solid variables.$menuExpandedSelectedBGColour;
+    border-bottom: 0.625rem solid var(--darkRed);
     color: currentColor;
     margin-left: 0;
     padding-inline-end: unset;
