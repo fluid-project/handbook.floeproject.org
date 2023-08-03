@@ -22,7 +22,6 @@ const navigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Import transforms
-const htmlMinTransform = require("./src/transforms/html-min-transform.js");
 const parseTransform = require("./src/transforms/parse-transform.js");
 
 // Import data files
@@ -48,7 +47,6 @@ module.exports = function (config) {
     config.setLibrary("md", markdownItLibrary);
 
     // Transforms
-    config.addTransform("htmlmin", htmlMinTransform);
     config.addTransform("parse", parseTransform);
 
     // Passthrough copy
@@ -59,7 +57,14 @@ module.exports = function (config) {
 
     // Plugins
     config.addPlugin(EleventyRenderPlugin);
-    config.addPlugin(fluidPlugin);
+    config.addPlugin(fluidPlugin, {
+		css: {
+			enabled: false
+		},
+		sass: {
+			enabled: true
+		}
+	});
     config.addPlugin(navigationPlugin);
     config.addPlugin(syntaxHighlightPlugin);
 

@@ -1,8 +1,11 @@
+@use './variables';
+@use './functions';
+
 // Mixins.
 
 // Media query breakpoint calculations
-@mixin breakpoint-up($name, $breakpoints: $breakpoints) {
-    $min: breakpoint-value($name, $breakpoints);
+@mixin breakpoint-up($name, $breakpoints: variables.$breakpoints) {
+    $min: functions.breakpoint-value($name, $breakpoints);
 
     @if $min {
         @media (min-width: $min) {
@@ -15,8 +18,8 @@
     }
 }
 
-@mixin breakpoint-down($name, $breakpoints: $breakpoints) {
-    $max: breakpoint-value($name, $breakpoints);
+@mixin breakpoint-down($name, $breakpoints: variables.$breakpoints) {
+    $max: functions.breakpoint-value($name, $breakpoints);
 
     @if $max {
         @media (max-width: $max) {
@@ -39,9 +42,9 @@
 
 // Menu link focus & hover style overrides
 @mixin menu-link-focus-hover-narrow() {
-    background-color: $menuExpandedSelectedBGColour;
+    background-color: variables.$menuExpandedSelectedBGColour;
     border-radius: unset;
-    color: $menuExpandedSelectedColour;
+    color: variables.$menuExpandedSelectedColour;
     margin: unset;
     outline-color: transparent;
     padding-block: unset;
@@ -49,7 +52,7 @@
 
 @mixin menu-link-focus-hover-wide() {
     background-color: inherit;
-    border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
+    border-bottom: 0.625rem solid variables.$menuExpandedSelectedBGColour;
     color: currentColor;
     margin-left: 0;
     padding-inline-end: unset;
