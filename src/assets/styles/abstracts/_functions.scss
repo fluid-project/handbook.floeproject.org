@@ -1,7 +1,0 @@
-@use './variables';
-
-// Functions.
-
-@function breakpoint-value($name, $breakpoints: variables.$breakpoints) {
-    @return map-get($breakpoints, $name);
-}

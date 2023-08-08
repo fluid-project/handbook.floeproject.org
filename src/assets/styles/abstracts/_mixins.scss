@@ -1,11 +1,10 @@
 @use './variables';
-@use './functions';
 
 // Mixins.
 
 // Media query breakpoint calculations
 @mixin breakpoint-up($name, $breakpoints: variables.$breakpoints) {
-    $min: functions.breakpoint-value($name, $breakpoints);
+    $min: map-get($breakpoints, $name);
 
     @if $min {
         @media (min-width: $min) {
@@ -19,7 +18,7 @@
 }
 
 @mixin breakpoint-down($name, $breakpoints: variables.$breakpoints) {
-    $max: functions.breakpoint-value($name, $breakpoints);
+    $max: map-get($breakpoints, $name);
 
     @if $max {
         @media (max-width: $max) {
