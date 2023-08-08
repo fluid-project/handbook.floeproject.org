@@ -7,16 +7,16 @@ The ILDH uses [Laravel Mix](https://laravel-mix.com) as a wrapper for webpack to
 
 By default, the Mix [configuration file](../../webpack.mix.js) includes configuration for processing the JavaScript
 files that are found in the [`/src/assets/scripts`](scripts) directory. The processed JavaScript files will be written
-to `/dist/assets/scripts`. Additional JavaScript files can be added to the Mix [configuration file](../../webpack.mix.js)
+to `/_site/assets/scripts`. Additional JavaScript files can be added to the Mix [configuration file](../../webpack.mix.js)
 if desired. For example, if you want to add a new JavaScript file called `widget.js`, you can make the following change
 to add it to Mix for processing:
 
 ```diff
 // Process JavaScript files with Babel.
-mix.js("./src/assets/scripts/app.js", "dist/assets/scripts");
-mix.js("./src/assets/scripts/matomo.js", "dist/assets/scripts");
-mix.js("./src/assets/scripts/uio.js", "dist/assets/scripts");
-+ mix.js("./src/assets/scripts/widget.js", "dist/assets/scripts");
+mix.js("./src/assets/scripts/app.js", "_site/assets/scripts");
+mix.js("./src/assets/scripts/matomo.js", "_site/assets/scripts");
+mix.js("./src/assets/scripts/uio.js", "_site/assets/scripts");
++ mix.js("./src/assets/scripts/widget.js", "_site/assets/scripts");
 ```
 
 ## Stylesheets
@@ -24,14 +24,14 @@ mix.js("./src/assets/scripts/uio.js", "dist/assets/scripts");
 The Mix [configuration file](../../webpack.mix.js) includes configuration for processing the Sass stylesheet files that
 are found in the [`/src/assets/styles`](styles) directory and its subdirectories following [the 7-1 pattern](https://sass-guidelin.es/#the-7-1-pattern)
 from the Sass Guidelines. The rules are organized using BEM, with some exceptions. The processed CSS file will be written
-to `/dist/assets/styles`. Additional CSS files can be added to the Mix [configuration file](../../webpack.mix.js) if
+to `/_site/assets/styles`. Additional CSS files can be added to the Mix [configuration file](../../webpack.mix.js) if
 desired. For example, if you want to add a new CSS file called `widget.css`, you can make the following change to add it
 to Mix for processing:
 
 ```diff
 // Process Sass stylesheets
-mix.sass("./src/assets/styles/main.scss", "dist/assets/styles");
-+ mix.sass("./src/assets/styles/widget.css", "dist/assets/styles");
+mix.sass("./src/assets/styles/main.scss", "_site/assets/styles");
++ mix.sass("./src/assets/styles/widget.css", "_site/assets/styles");
 ```
 
 ## Eleventy Integration
@@ -83,13 +83,13 @@ follows.
 
     ```diff
     // Process JavaScript files with Babel.
-    - mix.js("./src/assets/scripts/app.js", "dist/assets/scripts");
-    - mix.js("./src/assets/scripts/matomo.js", "dist/assets/scripts");
-    - mix.js("./src/assets/scripts/uio.js", "dist/assets/scripts");
+    - mix.js("./src/assets/scripts/app.js", "_site/assets/scripts");
+    - mix.js("./src/assets/scripts/matomo.js", "_site/assets/scripts");
+    - mix.js("./src/assets/scripts/uio.js", "_site/assets/scripts");
     + const scriptPaths = fg.sync("./src/assets/scripts/*.js");
     +
     + scriptPaths.forEach(entryPath => {
-    +     mix.js(entryPath, "dist/assets/scripts");
+    +     mix.js(entryPath, "_site/assets/scripts");
     + });
     ```
 

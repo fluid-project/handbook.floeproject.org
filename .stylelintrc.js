@@ -3,7 +3,7 @@
 module.exports = {
     extends: "stylelint-config-fluid",
     plugins: ["stylelint-use-logical-spec"],
-    ignoreFiles: ["dist/**/*.css"],
+    ignoreFiles: ["_site/**/*.css"],
     rules: {
         "custom-property-pattern": null,
         "import-notation": "string",

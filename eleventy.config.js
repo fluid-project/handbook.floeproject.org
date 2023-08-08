@@ -129,7 +129,7 @@ module.exports = function (config) {
             ready: function (err, bs) {
 
                 bs.addMiddleware("*", (req, res) => {
-                    const content_404 = fs.readFileSync("dist/404.html");
+                    const content_404 = fs.readFileSync("_site/404.html");
                     // Provides the 404 content without redirect.
                     res.write(content_404);
                     res.writeHead(404);
@@ -149,7 +149,6 @@ module.exports = function (config) {
     return {
         dir: {
             input: "src",
-            output: "dist",
             includes: "_includes"
         },
         passthroughFileCopy: true

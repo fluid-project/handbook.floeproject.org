@@ -30,16 +30,16 @@ If you make changes to the website, repeat the steps to build the image and star
 
 1. Install the required NPM packages: `npm install`
 2. Run the build script: `npm run build`
-3. Upload the contents of the `./dist/` directory to the web root of your server.
+3. Upload the contents of the `./_site/` directory to the web root of your server.
 
-If you make changes to the website, repeat step 2 to build the website and upload any changed files from the `./dist/`
+If you make changes to the website, repeat step 2 to build the website and upload any changed files from the `./_site/`
 directory to the web root of your server.
 
 ## Notes
 
-Modifications can be made to any source file or directory except for the contents of the `./dist/` directory. The
-`./dist/` directory is not versioned since it contains the built website that Eleventy generates from the source files,
-and  files in `dist` are overwritten at build time.
+Modifications can be made to any source file or directory except for the contents of the `./_site/` directory. The
+`./_site/` directory is not versioned since it contains the built website that Eleventy generates from the source files,
+and  files in `_site` are overwritten at build time.
 
 ### Trivet
 
@@ -58,7 +58,7 @@ It has been archived and can be found here:
 
 Trivet includes configuration for administering site content via [Netlify CMS](https://netlifycms.org/). This has not
 been included in the ILDH, though it can be re-enabled by copying the relevant lines and files from Trivet. In particular,
-the directory `src/admin` must be copied into the project and subsequently included in the `dist` directory upon building
+the directory `src/admin` must be copied into the project and subsequently included in the `_site` directory upon building
 the project.
 
 After enabling admin functionality, the Netlify CMS configuration can be edited in [`src/admin/config.yml`](src/admin/config.yml).

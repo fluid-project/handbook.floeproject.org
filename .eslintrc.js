@@ -5,7 +5,7 @@ module.exports = {
         "fluid",
         "plugin:yml/standard"
     ],
-    ignorePatterns: ["dist/", "src/_locales/messages.js", "!.*.cjs", "!.*.js"],
+    ignorePatterns: ["_site/", "src/_locales/messages.js", "!.*.cjs", "!.*.js"],
     env: {
         amd: true,
         browser: true,
