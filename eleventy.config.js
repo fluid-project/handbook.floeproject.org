@@ -20,13 +20,13 @@ const navigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Import transforms
-const parseTransform = require("./src/transforms/parse-transform.js");
+const parseTransform = require("./src/_transforms/parse-transform.js");
 
 // Import data files
 const siteConfig = require("./src/_data/config.json");
-const getResourceLinks = require("./src/utils/getResourceLinks.js");
-const getArticleContents = require("./src/utils/getArticleContents.js");
-const getContentsFromNavKey = require("./src/utils/getContentsFromNavKey.js");
+const getResourceLinks = require("./src/_utils/getResourceLinks.js");
+const getArticleContents = require("./src/_utils/getArticleContents.js");
+const getContentsFromNavKey = require("./src/_utils/getContentsFromNavKey.js");
 
 module.exports = function (config) {
     config.setUseGitIgnore(false);

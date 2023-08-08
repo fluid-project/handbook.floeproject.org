@@ -1,7 +1,7 @@
 "use strict";
 
-const generatePermalink = require("../../utils/generatePermalink.js");
-const getLang = require("../../utils/getLang.js");
+const generatePermalink = require("../../_utils/generatePermalink.js");
+const getLang = require("../../_utils/getLang.js");
 
 module.exports = {
     eleventyComputed: {

@@ -1,6 +1,6 @@
 "use strict";
 
-const getLang = require("../../utils/getLang.js");
+const getLang = require("../../_utils/getLang.js");
 
 module.exports = {
     tags: "cards",

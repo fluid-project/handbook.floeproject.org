@@ -1,7 +1,7 @@
 "use strict";
 
-const getLang = require("../../utils/getLang.js");
-const generatePermalink = require("../../utils/generatePermalink.js");
+const getLang = require("../../_utils/getLang.js");
+const generatePermalink = require("../../_utils/generatePermalink.js");
 
 module.exports = {
     layout: "layouts/page.njk",
