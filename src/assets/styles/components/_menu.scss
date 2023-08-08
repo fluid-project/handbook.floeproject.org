@@ -63,7 +63,7 @@
     padding-inline-start: 0;
 }
 
-.menu__link {
+a.menu__link {
     align-items: center;
     background-color: var(--fl-bgColor, var(--darkGrey));
     color: var(--fl-linkColor, var(--menuExpandedColour));
@@ -72,7 +72,7 @@
     font-weight: var(--fl-enhance-font-weight, 500);
     height: 3.5rem;
     line-height: 1.875rem;
-    padding-inline-start: 2rem;
+    padding-inline: 2rem;
     text-decoration: none;
 
     &[aria-current="page"],
@@ -110,24 +110,23 @@
     }
 
     .menu__list {
+        display: flex;
         height: 2.875rem;
     }
 
     .menu__item {
         border-bottom: none;
-        display: inline-block;
+        display: inline-flex;
         padding: 0;
-        padding-inline-end: 2rem;
     }
 
-    .menu__link {
+    a.menu__link {
         background-color: inherit;
+        border-bottom: 0.625rem solid transparent;
         color: var(--fl-linkColor, currentColor);
         font-size: 1.125rem;
         height: 2.25rem;
         margin: 0;
-        padding: 0;
-        padding-inline-start: 2rem;
         text-decoration: none;
         width: 100%;
 
