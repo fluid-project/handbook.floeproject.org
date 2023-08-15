@@ -57,7 +57,7 @@
         min-width: 3.75rem;
 
         svg {
-            --icon-arrowColour: var(--fl-buttonFgColor, #{var(--darkRed)});
+            --icon-arrowColour: var(--fl-buttonFgColor, var(--darkRed));
 
             color: var(--fl-bgColor, var(--mainColour));
             fill: none;

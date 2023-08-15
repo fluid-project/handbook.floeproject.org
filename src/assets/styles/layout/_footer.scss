@@ -7,7 +7,7 @@
 }
 
 .footer__container {
-    --ildh-wordmark-colour: var(--fl-bgColor, #{var(--footerBGColour)});
+    --ildh-wordmark-colour: var(--fl-bgColor, var(--footerBGColour));
 
     color: var(--footerColour);
     display: grid;

@@ -2,7 +2,7 @@
     "name": "handbook.floeproject.org",
     "author": "OCAD University",
     "license": "BSD-3-Clause",
-    "version": "1.2.0",
+    "version": "1.1.0",
     "description": "Strategies and good practices for inclusive learning content.",
     "repository": {
         "type": "git",
@@ -21,15 +21,16 @@
         "lint:css": "stylelint \"**/*.css\"",
         "lint:js": "eslint \"**/*.js\"",
         "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
+        "lint:yml": "eslint --no-error-on-unmatched-pattern \"**/*.yml\"",
         "start": "npm-run-all -l clean -p dev",
         "prepare": "husky install"
     },
     "dependencies": {
         "@11ty/eleventy": "2.0.1",
         "@11ty/eleventy-navigation": "0.3.5",
-        "@11ty/eleventy-plugin-rss": "1.2.0",
         "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
         "eleventy-plugin-fluid": "2.3.1",
+        "eleventy-plugin-i18n-gettext": "1.5.1",
         "infusion": "4.6.0"
     },
     "devDependencies": {

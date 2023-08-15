@@ -2,3 +2,8 @@
 // It exists only to allow PO editors to get translation keys from source code.
 _") }}")
 _("The most recent posts from %s")
+_("approach")
+_("page")
+_("perspective")
+_("technique")
+_("approaches")

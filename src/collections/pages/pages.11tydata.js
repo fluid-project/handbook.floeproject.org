@@ -1,9 +1,15 @@
 "use strict";
 
+const i18n = require("eleventy-plugin-i18n-gettext");
+const { generatePermalink } = require("eleventy-plugin-fluid");
 const getLang = require("../../_utils/getLang.js");
-const generatePermalink = require("../../_utils/generatePermalink.js");
 
 module.exports = {
+    /* Build a permalink using the page title and language. */
+    permalink: data => {
+        const locale = data.locale || data.config.defaultLanguage;
+        return generatePermalink(data, "pages", false, i18n._(locale, "page"));
+    },
     layout: "layouts/page.njk",
     eleventyComputed: {
         /* Determine the language of this item based on the language code in the file path. */
@@ -32,8 +38,6 @@ module.exports = {
                 };
             }
             return false;
-        },
-        /* Build a permalink using the page title and language key. */
-        permalink: data => generatePermalink(data, "pages")
+        }
     }
 };

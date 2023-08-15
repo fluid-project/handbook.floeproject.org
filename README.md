@@ -54,15 +54,15 @@ An older version of the ILDH website used from 2011 to 2015 was previously hoste
 It has been archived and can be found here:
 <https://github.com/fluid-project/2015-handbook.floeproject.org>
 
-## Working with Netlify CMS
+## Working with Decap CMS
 
-Trivet includes configuration for administering site content via [Netlify CMS](https://netlifycms.org/). This has not
+Trivet includes configuration for administering site content via [Decap CMS](https://decapcms.org/). This has not
 been included in the ILDH, though it can be re-enabled by copying the relevant lines and files from Trivet. In particular,
 the directory `src/admin` must be copied into the project and subsequently included in the `_site` directory upon building
 the project.
 
-After enabling admin functionality, the Netlify CMS configuration can be edited in [`src/admin/config.yml`](src/admin/config.yml).
-For full documentation, see the [Netlify CMS documentation](https://www.netlifycms.org/docs/).
+After enabling admin functionality, the Decap CMS configuration can be edited in [`src/admin/config.yml`](src/admin/config.yml).
+For full documentation, see the [Decap CMS documentation](https://decapcms.org/).
 
 ## Internationalization
 
