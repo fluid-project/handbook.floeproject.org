@@ -10,7 +10,8 @@
 
 .breadcrumb__item + li::before {
     content: ">";
-    padding: 0 0.6rem;
+    padding-block: 0;
+    padding-inline: 0.6rem;
 }
 
 .breadcrumb__link {
@@ -28,13 +29,10 @@
         &::after {
             background: var(--linkFocusHoverBackgroundColour);
             border-radius: 0.3125rem;
-            bottom: -0.3rem;
             content: "";
-            left: -0.3rem;
+            inset: -0.3rem;
             outline: 0.125rem solid var(--fl-linkColor, var(--mainColour));
             position: absolute;
-            right: -0.3rem;
-            top: -0.3rem;
             z-index: -1;
         }
     }

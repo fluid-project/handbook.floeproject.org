@@ -1,23 +1,10 @@
 // Base styles
 
-@use '../abstracts/mixins';
-
+@use "../abstracts/mixins";
 @import "reset";
 @import "typography";
 
 // Site-wide rules (except the homepage which has overriding rules)
-
-a {
-    &:focus,
-    &:hover {
-        background: var(--linkFocusHoverBackgroundColour);
-        border-radius: 0.3125rem;
-        box-decoration-break: clone;
-        margin: -0.3rem;
-        padding: 0.3rem;
-        text-decoration-thickness: 0.1875rem;
-    }
-}
 
 figure a {
     display: inline-block;
@@ -27,6 +14,16 @@ main {
     a {
         color: var(--linkColour);
     }
+}
+
+a:focus,
+a:hover {
+    background: var(--linkFocusHoverBackgroundColour);
+    border-radius: 0.3125rem;
+    box-decoration-break: clone;
+    margin: -0.3rem;
+    padding: 0.3rem;
+    text-decoration-thickness: 0.1875rem;
 }
 
 .main-content {
@@ -69,7 +66,7 @@ main {
     }
 
     img {
-        max-width: 100%;
+        max-inline-size: 100%;
     }
 
     figure {
@@ -97,7 +94,7 @@ main {
         grid-template-columns: minmax(30rem, 2fr) minmax(19rem, 1fr);
         justify-content: center;
         margin-inline: auto;
-        max-width: var(--max-content-width);
+        max-inline-size: var(--max-content-width);
         word-break: break-word;
     }
 

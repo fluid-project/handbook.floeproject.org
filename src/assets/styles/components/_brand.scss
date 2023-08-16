@@ -1,4 +1,4 @@
-@use '../abstracts/mixins';
+@use "../abstracts/mixins";
 
 .brand {
     flex: 1;
@@ -20,8 +20,8 @@ a.brand__desktop {
     }
 
     svg {
-        height: 5.4rem;
-        width: 18.75rem;
+        block-size: 5.4rem;
+        inline-size: 18.75rem;
     }
 }
 
@@ -37,8 +37,8 @@ a.brand__mobile {
     }
 
     svg {
-        height: 5rem;
-        width: 5rem;
+        block-size: 5rem;
+        inline-size: 5rem;
     }
 }
 

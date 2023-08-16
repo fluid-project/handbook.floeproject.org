@@ -3,10 +3,10 @@
 
     svg {
         margin-block-end: 2rem;
-        max-width: 100%;
+        max-inline-size: 100%;
 
         &.ildh-logo-ildh-wordmark {
-            height: 5rem;
+            block-size: 5rem;
         }
     }
 }

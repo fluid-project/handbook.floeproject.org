@@ -1,4 +1,4 @@
-@use '../abstracts/mixins';
+@use "../abstracts/mixins";
 
 // Rules specific to the Audio-Tactile design recommendations page
 
@@ -6,7 +6,7 @@
     main {
         background: var(--darkGrey);
         grid-template-columns: unset;
-        max-width: unset;
+        max-inline-size: unset;
         padding: 2rem;
     }
 
@@ -50,10 +50,10 @@
         text-align: center;
 
         svg {
-            height: 36.0625rem;
-            max-height: 77vw;
-            max-width: 100%;
-            width: 40.3125rem;
+            block-size: 36.0625rem;
+            inline-size: 40.3125rem;
+            max-block-size: 77vw;
+            max-inline-size: 100%;
         }
     }
 
@@ -89,7 +89,7 @@
                 "legend legend"
                 "secCtrl secCtrl"
                 "sections sections";
-            max-width: var(--xl-content-width);
+            max-inline-size: var(--xl-content-width);
         }
 
         .audio-tactile__intro,
@@ -106,9 +106,9 @@
         }
 
         .legend {
+            inline-size: 100%;
             justify-self: center;
-            max-width: 40.5rem;
-            width: 100%;
+            max-inline-size: 40.5rem;
         }
     }
 }

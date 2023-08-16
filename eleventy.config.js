@@ -12,10 +12,10 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 
 "use strict";
 
+// var slug = require("github-slugger").slug;
+
 const fluidPlugin = require("eleventy-plugin-fluid");
-const fs = require("fs");
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const MarkdownIt = require("markdown-it");
+// const markdownItAnchor = require("markdown-it-anchor");
 const navigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -31,15 +31,6 @@ const getContentsFromNavKey = require("./src/_utils/getContentsFromNavKey.js");
 module.exports = function (config) {
     config.setUseGitIgnore(false);
 
-    // Filters
-    const md = new MarkdownIt({
-        html: true,
-        quotes: "“”‘’"
-    });
-    config.addFilter("markdown", (content) => {
-        return md.render(content);
-    });
-
     // Transforms
     config.addTransform("parse", parseTransform);
 
@@ -50,8 +41,29 @@ module.exports = function (config) {
     config.addPassthroughCopy({"src/assets/images": "assets/images"});
 
     // Plugins
-    config.addPlugin(EleventyRenderPlugin);
     config.addPlugin(fluidPlugin, {
+        defaultLanguage: "en-CA",
+        localesDirectory: "src/_locales",
+        supportedLanguages: {
+            "en-CA": {
+                slug: "en",
+                name: "English"
+            },
+            "fr-CA": {
+                slug: "fr",
+                name: "Français",
+                dir: "ltr",
+                uioSlug: "fr"
+            }
+        },
+        // markdown: {
+        //     options: {
+        //         slugify: slug
+        //     },
+        //     plugins: [
+        //         markdownItAnchor
+        //     ]
+        // },
         css: {
             enabled: false
         },
@@ -123,22 +135,6 @@ module.exports = function (config) {
         return `<script>fluid.uiOptions.multilingual(".flc-prefsEditor-separatedPanel", ${JSON.stringify(options)});</script>`;
     });
 
-    // 404
-    config.setBrowserSyncConfig({
-        callbacks: {
-            ready: function (err, bs) {
-
-                bs.addMiddleware("*", (req, res) => {
-                    const content_404 = fs.readFileSync("_site/404.html");
-                    // Provides the 404 content without redirect.
-                    res.write(content_404);
-                    res.writeHead(404);
-                    res.end();
-                });
-            }
-        }
-    });
-
     config.on("beforeBuild", () => {
         if (!siteConfig.languages[siteConfig.defaultLanguage]) {
             process.exitCode = 1;
@@ -148,8 +144,7 @@ module.exports = function (config) {
 
     return {
         dir: {
-            input: "src",
-            includes: "_includes"
+            input: "src"
         },
         passthroughFileCopy: true,
         markdownTemplateEngine: "njk"

@@ -19,7 +19,7 @@ header {
     --ildh-wordmark-text-colour: var(--fl-fgColor, #000);
 }
 
-body {
+:root {
     /** Typography **/
     --family-sans-serif: "WorkSans", sans-serif;
     --family-serif: "Literata", serif;

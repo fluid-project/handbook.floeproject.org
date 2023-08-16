@@ -1,4 +1,4 @@
-@use '../abstracts/mixins';
+@use "../abstracts/mixins";
 
 .audio-tactile {
     .subsection {
@@ -14,6 +14,14 @@
         margin: 0;
     }
 
+    .subsection__title {
+        font-size: var(--fl-enhance-font-size, 1.5rem);
+        inline-size: 100%;
+        padding-block: 1rem;
+        padding-inline: 0 1rem;
+        text-align: start;
+    }
+
     .subsection__toggle {
         align-items: stretch;
         background-color: var(--fl-buttonBgColor, var(--sectionBGColour));
@@ -23,10 +31,11 @@
         display: flex;
         font-size: var(--fl-enhance-font-size, 1.8125rem);
         font-weight: var(--fl-enhance-font-weight, 400);
+        inline-size: 100%;
         justify-content: space-between;
         line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
-        padding: 0.25rem 0;
-        width: 100%;
+        padding-block: 0.25rem;
+        padding-inline: 0;
 
         &:focus,
         &:hover {
@@ -40,13 +49,6 @@
         }
     }
 
-    .subsection__title {
-        font-size: var(--fl-enhance-font-size, 1.5rem);
-        padding: 1rem 1rem 1rem 0;
-        text-align: start;
-        width: 100%;
-    }
-
     .subsection__icon {
         align-items: center;
         background-color: var(--fl-buttonBgColor, #fff);
@@ -54,15 +56,15 @@
         font-size: var(--fl-enhance-font-size, 1.125rem);
         font-weight: var(--fl-enhance-font-weight, 800);
         justify-content: center;
-        min-width: 3.75rem;
+        min-inline-size: 3.75rem;
 
         svg {
             --icon-arrowColour: var(--fl-buttonFgColor, var(--darkRed));
 
+            block-size: 1.875rem;
             color: var(--fl-bgColor, var(--mainColour));
             fill: none;
-            height: 1.875rem;
-            width: 1.125rem;
+            inline-size: 1.125rem;
         }
     }
 

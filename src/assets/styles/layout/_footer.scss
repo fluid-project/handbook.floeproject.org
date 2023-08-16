@@ -1,9 +1,10 @@
-@use '../abstracts/mixins';
+@use "../abstracts/mixins";
 
 .footer {
     background-color: var(--footerBGColour);
     margin-block-start: 5.75rem;
-    padding: 3.25rem 24px;
+    padding-block: 3.25rem;
+    padding-inline: 24px;
 }
 
 .footer__container {
@@ -16,7 +17,7 @@
     grid-template-columns: 1fr;
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.8125);
     margin-inline: auto;
-    max-width: var(--footer-max-width);
+    max-inline-size: var(--footer-max-width);
     row-gap: 2.625rem;
 }
 

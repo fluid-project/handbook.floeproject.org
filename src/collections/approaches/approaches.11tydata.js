@@ -2,26 +2,15 @@
 
 const i18n = require("eleventy-plugin-i18n-gettext");
 const { generatePermalink } = require("eleventy-plugin-fluid");
-const getLang = require("../../_utils/getLang.js");
 
 module.exports = {
     /* Build a permalink using the page title and language. */
     permalink: data => {
-        const locale = data.locale || data.config.defaultLanguage;
+        const locale = data.locale;
         return generatePermalink(data, "approaches", false, i18n._(locale, "approach"));
     },
     eleventyComputed: {
-        /* Determine the language of this item based on the language code in the file path. */
-        lang: data => getLang(data.page.filePathStem, "approaches"),
-        /* Set the translationKey, used for populating the language switcher, to the file slug. */
-        translationKey: data => {
-            const lang = getLang(data.page.filePathStem, "approaches");
-
-            if (data.page.fileSlug === lang) {
-                return "index";
-            }
-
-            return data.page.fileSlug;
-        }
+        lang: data => data.locale,
+        langDir: data => data.supportedLanguages[data.locale].dir
     }
 };

@@ -1,3 +1,17 @@
+.article-contents__summary {
+    cursor: pointer;
+    font-size: var(--fl-enhance-font-size, 1.5rem);
+    font-weight: var(--fl-enhance-font-weight, 600);
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+
+    // the arrow icon's closed state
+    &::marker,
+    &::-webkit-details-marker {
+        color: var(--articleContentsIconColour);
+    }
+}
+
 .article-contents {
     background-color: var(--sectionBGColour);
     border: 0.125rem dashed var(--articleContentsBorderColour);
@@ -20,19 +34,6 @@
         .article-contents__summary::-webkit-details-marker {
             color: var(--articleContentsIconColour);
         }
-    }
-}
-
-.article-contents__summary {
-    cursor: pointer;
-    font-size: var(--fl-enhance-font-size, 1.5rem);
-    font-weight: var(--fl-enhance-font-weight, 600);
-    padding: 1rem 1.5rem;
-
-    // the arrow icon's closed state
-    &::marker,
-    &::-webkit-details-marker {
-        color: var(--articleContentsIconColour);
     }
 }
 

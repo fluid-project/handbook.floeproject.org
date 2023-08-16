@@ -26,7 +26,8 @@
     cursor: pointer;
     font-size: var(--fl-enhance-font-size, 1.5rem);
     font-weight: var(--fl-enhance-font-weight, 600);
-    padding: 1rem 1.5rem;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
 
     // the arrow icon
     &::marker,
@@ -45,13 +46,13 @@
 
 .legend__list-separator {
     background-color: var(--mainColour);
+    block-size: 0.125rem;
     border-style: none;
     border-width: 0;
     box-sizing: border-box;
-    height: 0.125rem;
+    inline-size: calc(100% - 2.5rem);
     margin-block: 1rem;
     margin-inline: 1.25rem;
-    width: calc(100% - 2.5rem);
 }
 
 .legend__list-item:not(:last-child) {

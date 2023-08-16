@@ -9,39 +9,6 @@
     }
 }
 
-.side-content__topic-links {
-    color: var(--darkRed);
-    margin-block-end: 4rem;
-
-    .side-content__icon svg {
-        height: 1.5rem;
-        width: 2.5rem;
-    }
-
-    .side-content__content {
-        // to hide the links section altogether when it's empty
-        h2:only-child {
-            display: none;
-        }
-    }
-
-    .side-content__list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .side-content__list-item {
-        font-size: 1.25rem;
-        line-height: 2rem;
-        margin-block: 1rem;
-
-        & a {
-            color: var(--sideContentLinkColour);
-        }
-    }
-}
-
 .side-content__toolkits {
     color: var(--toolkitsHeadingColour);
 
@@ -51,15 +18,16 @@
         padding: 1rem;
 
         svg {
-            height: 3rem;
-            width: 3rem;
+            block-size: 3rem;
+            inline-size: 3rem;
         }
     }
 
     .side-content__content {
         border: 1px solid var(--mediumTeal);
-        border-top: none;
-        padding: 1.5rem 2rem 2rem 2rem;
+        border-block-start: none;
+        padding-block: 1.5rem 2rem;
+        padding-inline: 2rem;
     }
 
     .side-content__title {
@@ -82,6 +50,39 @@
         & a {
             color: var(--sideContentLinkColour);
             font-weight: 500;
+        }
+    }
+}
+
+.side-content__topic-links {
+    color: var(--darkRed);
+    margin-block-end: 4rem;
+
+    .side-content__icon svg {
+        block-size: 1.5rem;
+        inline-size: 2.5rem;
+    }
+
+    .side-content__content {
+        // to hide the links section altogether when it's empty
+        h2:only-child {
+            display: none;
+        }
+    }
+
+    .side-content__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .side-content__list-item {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-block: 1rem;
+
+        & a {
+            color: var(--sideContentLinkColour);
         }
     }
 }

@@ -18,10 +18,10 @@
         "clean": "rimraf _site",
         "dev": "cross-env NODE_ENV=development eleventy --serve",
         "lint": "run-s -l lint:*",
-        "lint:css": "stylelint \"**/*.css\"",
+        "lint:scss": "stylelint \"**/*.scss\"",
         "lint:js": "eslint \"**/*.js\"",
         "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
-        "lint:yml": "eslint --no-error-on-unmatched-pattern \".github/**/*.yml\" \"**/*.yml\"",
+        "lint:yml": "eslint \"**/*.yml\"",
         "start": "npm-run-all -l clean -p dev",
         "prepare": "husky install"
     },
@@ -39,22 +39,28 @@
         "eslint": "8.46.0",
         "eslint-config-fluid": "2.1.1",
         "eslint-plugin-jsdoc": "46.4.5",
+        "eslint-plugin-markdown": "3.0.1",
         "eslint-plugin-yml": "1.8.0",
         "github-slugger": "1.4.0",
         "husky": "8.0.3",
         "linkedom": "0.14.26",
         "lint-staged": "13.2.3",
+        "markdown-it-anchor": "8.6.4",
         "markdownlint-cli2": "0.8.1",
         "markdownlint-config-fluid": "0.1.5",
         "npm-run-all": "4.1.5",
         "rimraf": "3.0.2",
-        "stylelint": "14.16.1",
+        "stylelint": "15.10.2",
         "stylelint-config-fluid": "1.0.0",
+        "stylelint-config-standard-scss": "10.0.0",
         "stylelint-use-logical-spec": "5.0.0"
     },
     "lint-staged": {
-        "*.css": "stylelint --fix",
+        "*.scss": "stylelint --fix",
         "*.{js,yml}": "eslint --fix",
-        "*.md": "markdownlint-cli2 --fix"
+        "*.md": [
+            "markdownlint-cli2 --fix",
+            "eslint --fix"
+        ]
     }
 }

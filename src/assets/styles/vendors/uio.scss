@@ -1,4 +1,4 @@
-@use '../abstracts/mixins';
+@use "../abstracts/mixins";
 
 // UIO styles
 
@@ -29,9 +29,7 @@
 
 // Recreate .fl-focus rules for UIO panel buttons
 .fl-prefsEditor-buttons button:focus {
-    outline-color: var(--fl-fgColor);
-    outline-style: solid;
-    outline-width: 0.2rem;
+    outline: var(--fl-fgColor) solid 0.2rem;
 }
 
 // Styles for the Audio-Tactile recommendation cards page
@@ -49,9 +47,9 @@
     }
 
     .card__details {
-        border-bottom-color: var(--fl-fgColor) !important;
-        border-left-color: var(--fl-fgColor) !important;
-        border-right-color: var(--fl-fgColor) !important;
+        border-block-end-color: var(--fl-fgColor) !important;
+        border-inline-end-color: var(--fl-fgColor) !important;
+        border-inline-start-color: var(--fl-fgColor) !important;
     }
 
     .card__icon svg {
@@ -97,9 +95,9 @@
         }
 
         .card__details {
-            border-bottom-color: var(--fl-buttonBgColor) !important;
-            border-left-color: var(--fl-buttonBgColor) !important;
-            border-right-color: var(--fl-buttonBgColor) !important;
+            border-block-end-color: var(--fl-buttonBgColor) !important;
+            border-inline-end-color: var(--fl-buttonBgColor) !important;
+            border-inline-start-color: var(--fl-buttonBgColor) !important;
         }
 
         .card__icon svg {

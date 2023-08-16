@@ -1,13 +1,13 @@
-@use '../abstracts/mixins';
+@use "../abstracts/mixins";
 
 .header {
     align-items: center;
     box-sizing: border-box;
     display: flex;
+    inline-size: 100%;
     justify-content: space-between;
     padding-inline: 2rem;
     position: relative;
-    width: 100%;
 }
 
 .org-header {
