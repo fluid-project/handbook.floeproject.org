@@ -13,7 +13,6 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 "use strict";
 
 const fluidPlugin = require("eleventy-plugin-fluid");
-// const markdownItAnchor = require("markdown-it-anchor");
 const navigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
