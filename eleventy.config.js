@@ -12,8 +12,6 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 
 "use strict";
 
-// var slug = require("github-slugger").slug;
-
 const fluidPlugin = require("eleventy-plugin-fluid");
 // const markdownItAnchor = require("markdown-it-anchor");
 const navigationPlugin = require("@11ty/eleventy-navigation");
@@ -27,6 +25,7 @@ const siteConfig = require("./src/_data/config.json");
 const getResourceLinks = require("./src/_utils/getResourceLinks.js");
 const getArticleContents = require("./src/_utils/getArticleContents.js");
 const getContentsFromNavKey = require("./src/_utils/getContentsFromNavKey.js");
+const slugify = require("@sindresorhus/slugify");
 
 module.exports = function (config) {
     config.setUseGitIgnore(false);
@@ -56,14 +55,11 @@ module.exports = function (config) {
                 uioSlug: "fr"
             }
         },
-        // markdown: {
-        //     options: {
-        //         slugify: slug
-        //     },
-        //     plugins: [
-        //         markdownItAnchor
-        //     ]
-        // },
+        markdown: {
+            plugins: [
+                ["markdown-it-anchor", { slugify: s => slugify(s) }]
+            ]
+        },
         css: {
             enabled: false
         },
