@@ -80,8 +80,8 @@ module.exports = function (config) {
         return getResourceLinks(content, sideContentHeadings, lang);
     });
 
-    config.addShortcode("article_contents", (content, summary, headingsSelector, containerCssClass) => {
-        return getArticleContents(content, summary, headingsSelector, containerCssClass);
+    config.addShortcode("article_contents", (locale, content, summary, headingsSelector, containerCssClass) => {
+        return getArticleContents(locale, content, summary, headingsSelector, containerCssClass);
     });
 
     config.addShortcode("content_from_nav_key", (collection, navigationKey) => {

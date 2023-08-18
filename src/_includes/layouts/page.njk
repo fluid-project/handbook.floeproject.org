@@ -12,13 +12,13 @@
 
 {% block sideContent %}
     <div class="side-content__toolkits">
-        {% if not lang %}
-            {% set lang = config.defaultLanguage %}
+        {% if not locale %}
+            {% set locale = config.defaultLanguage %}
         {% endif %}
 
         {% set icon = "toolkits" %}
-        {% set sideContentTitle = sideContentHeadings[lang].toolkitsTitle %}
-        {% set toolkitsAndGuidesPath = "src/collections/pages/" + lang + "/toolkits-and-guides.md" %}
+        {% set sideContentTitle = sideContentHeadings[locale].toolkitsTitle %}
+        {% set toolkitsAndGuidesPath = "src/collections/pages/" + locale + "/toolkits-and-guides.md" %}
 
         {# TODO: find a tidier way of rendering the markdown content. `renderFile` doesn't seem to work #}
         {% set sideContentPreFilter %}

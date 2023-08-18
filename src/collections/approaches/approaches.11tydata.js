@@ -7,7 +7,7 @@ module.exports = {
     /* Build a permalink using the page title and language. */
     permalink: data => {
         const locale = data.locale;
-        return generatePermalink(data, "approaches", false, i18n._(locale, "approach"));
+        return generatePermalink(data, "approaches", i18n._(locale, "approaches"));
     },
     eleventyComputed: {
         lang: data => data.locale,

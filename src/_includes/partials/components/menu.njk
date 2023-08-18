@@ -1,11 +1,11 @@
 <nav class="menu" aria-label="menu">
     <button class="menu__button" aria-label="menu" aria-expanded="false" aria-controls="menu-list" type="button">
         {% svg_sprite "icon-menu" %}
-        <span class="menu__name">{{ translations[lang].menu }}</span>
+        <span class="menu__name">{_("Menu")}</span>
     </button>
 
     <div class="menu__panel">
-        <h2 class="menu__title">{{ translations[lang].menu }}</h2>
+        <h2 class="menu__title">{_("Menu")}</h2>
 
         <ul id="menu-list" class="menu__list">
             {% set siteNav = collections.all | eleventyNavigation("Home") %}
@@ -17,9 +17,9 @@
                 </li>
             {% endfor %}
             {% for item in collections.all %}
-                {# Find an item with a translation key which matches the current page's translation key but is not the same language. #}
-                {% if item.data.translationKey === translationKey and item.data.lang !== lang %}
-                <li class="menu__item" lang="{{ item.data.lang }}">
+                {# Find an item with a locale which matches the current page's translation key but is not the same locale. #}
+                {% if item.data.locale === locale and item.data.locale !== locale %}
+                <li class="menu__item" lang="{{ item.data.locale }}">
                     <a class="menu__link" href="{{ item.url }}">{{ config.languages[item.data.lang].name }}</a>
                 </li>
                 {% endif %}

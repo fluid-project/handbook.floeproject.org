@@ -1,5 +1,5 @@
 <details class="legend">
-    <summary id="legend__summary" class="legend__summary">{{ translations[lang].audioTactileLegendText | safe }}</summary>
+    <summary id="legend__summary" class="legend__summary">{{ _("Code Legend") | safe }}</summary>
     <nav aria-labelledby="legend__summary">
     {%- for section in collections.cards | eleventyNavigation("Audio Tactile Design Recommendations") -%}
         <ul class="legend__list {{ section.key | slugify }}">

@@ -1,6 +1,7 @@
 "use strict";
 
 const { parseHTML } = require("linkedom");
+const i18n = require("eleventy-plugin-i18n-gettext");
 
 /*
  * Given page content markup, this function prepares a list of links to all headings of a given level
@@ -9,6 +10,7 @@ const { parseHTML } = require("linkedom");
  * This work was undertaken to address GitHub issue #59:
  * https://github.com/fluid-project/handbook.floeproject.org/issues/59
  *
+ * @param {String} locale - the locale of the current page
  * @param {String} pageContent - the page content markup
  * @param {String} [summary] - the summary text to display at the top of the article contents list
  * @param {String} [headingsSelector] - a CSS selector to indicate which heading elements to list
@@ -16,7 +18,7 @@ const { parseHTML } = require("linkedom");
  *
  * @return {String} - the combined string containing the list markup and modified page markup
  */
-module.exports = (pageContent, summary = "Article Contents", headingsSelector = "h2", containerCssClass = "article-contents") => {
+module.exports = (locale, pageContent, summary, headingsSelector = "h2", containerCssClass = "article-contents") => {
     const {document} = parseHTML(pageContent);
     const headings = document.querySelectorAll(headingsSelector);
 
@@ -35,7 +37,7 @@ module.exports = (pageContent, summary = "Article Contents", headingsSelector = 
     }
 
     return articleContentsList ?
-        `<details class="${containerCssClass}"><summary id="${summaryCssClass}" class="${summaryCssClass}">${summary}</summary>` +
+        `<details class="${containerCssClass}"><summary id="${summaryCssClass}" class="${summaryCssClass}">${summary || i18n._(locale, "Article Contents")}</summary>` +
         `<nav aria-labelledby="${summaryCssClass}"><ul class="${listCssClass}">${articleContentsList}</ul></nav></details>` :
         "";
 };

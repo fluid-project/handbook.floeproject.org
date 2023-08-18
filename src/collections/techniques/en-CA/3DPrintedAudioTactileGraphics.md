@@ -3,7 +3,7 @@ title: 3D printed audio-tactile graphics
 eleventyNavigation:
     parent: Authoring Content
     key: 3D Printed Audio-Tactile Graphics
-    order: 4
+    order: 3
 ---
 This article introduces [a set of recommendations](/techniques/45-recommendations-for-3d-printed-audio-tactile-graphic-design/)
 which is intended for educators, designers, makers, or others who want to create inclusive materials for a wider range
