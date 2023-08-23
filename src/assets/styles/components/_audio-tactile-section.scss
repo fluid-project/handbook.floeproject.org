@@ -12,33 +12,35 @@
     .section__toggle {
         margin-block-end: 0;
 
+        &--expanded .section__title {
+            background: var(--darkRed);
+            color: var(--sectionBGColour);
+        }
+
         &:focus .section__title,
         &:hover .section__title {
             border-inline-start: none;
             font-weight: var(--fl-enhance-font-weight, 600);
-            padding: 0.7125rem 1rem 0.7125rem 1.25rem;
-        }
-
-        &--expanded .section__title {
-            background: $sectionBorderColour;
-            color: $sectionBGColour;
+            padding-block: 0.7125rem;
+            padding-inline: 1.25rem 1rem;
         }
     }
 
     .section__icon svg {
-        height: 1.875rem;
-        width: 1.125rem;
+        block-size: 1.875rem;
+        inline-size: 1.125rem;
     }
 
     .section__content {
-        background: $sectionBGColour;
-        border: 0.3125rem solid $sectionBorderColour;
+        background: var(--sectionBGColour);
+        border: 0.3125rem solid var(--darkRed);
         border-block-start: none;
-        padding: 0 1rem;
+        padding-block: 0;
+        padding-inline: 1rem;
     }
 
     .section__description {
-        border-block-end: 0.0625rem solid $mainColour;
+        border-block-end: 0.0625rem solid var(--mainColour);
         font-size: 1.5rem;
         line-height: 2.125rem;
         padding: 2.75rem;

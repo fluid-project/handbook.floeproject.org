@@ -1,29 +1,29 @@
+@use "./variables";
+
 // Mixins.
 
 // Media query breakpoint calculations
-@mixin breakpoint-up($name, $breakpoints: $breakpoints) {
-    $min: breakpoint-value($name, $breakpoints);
+@mixin breakpoint-up($name, $breakpoints: variables.$breakpoints) {
+    $min: map-get($breakpoints, $name);
 
     @if $min {
         @media (min-width: $min) {
             @content;
         }
     }
-
     @else {
         @content;
     }
 }
 
-@mixin breakpoint-down($name, $breakpoints: $breakpoints) {
-    $max: breakpoint-value($name, $breakpoints);
+@mixin breakpoint-down($name, $breakpoints: variables.$breakpoints) {
+    $max: map-get($breakpoints, $name);
 
     @if $max {
         @media (max-width: $max) {
             @content;
         }
     }
-
     @else {
         @content;
     }
@@ -34,14 +34,14 @@
     background: unset;
     border-radius: unset;
     margin-inline: unset;
-    outline: solid 0.3125rem $darkRed;
+    outline: solid 0.3125rem var(--darkRed);
 }
 
 // Menu link focus & hover style overrides
 @mixin menu-link-focus-hover-narrow() {
-    background-color: $menuExpandedSelectedBGColour;
+    background-color: var(--darkRed);
     border-radius: unset;
-    color: $menuExpandedSelectedColour;
+    color: var(--menuExpandedSelectedColour);
     margin: unset;
     outline-color: transparent;
     padding-block: unset;
@@ -49,10 +49,9 @@
 
 @mixin menu-link-focus-hover-wide() {
     background-color: inherit;
-    border-bottom: 0.625rem solid $menuExpandedSelectedBGColour;
-    color: currentColor;
-    margin-left: 0;
-    padding-inline-end: unset;
+    border-block-end: 0.625rem solid var(--darkRed);
+    color: currentcolor;
+    margin-inline-start: 0;
 }
 
 // Audio-tactile card section-specific colour overrides

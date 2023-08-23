@@ -1,23 +1,16 @@
 "use strict";
 
-const generatePermalink = require("../../utils/generatePermalink.js");
-const getLang = require("../../utils/getLang.js");
+const i18n = require("eleventy-plugin-i18n-gettext");
+const { generatePermalink } = require("eleventy-plugin-fluid");
 
 module.exports = {
+    /* Build a permalink using the page title and language. */
+    permalink: data => {
+        const locale = data.locale;
+        return generatePermalink(data, "techniques", i18n._(locale, "techniques"));
+    },
     eleventyComputed: {
-        /* Determine the language of this item based on the language code in the file path. */
-        lang: data => getLang(data.page.filePathStem, "techniques"),
-        /* Set the translationKey, used for populating the language switcher, to the file slug. */
-        translationKey: data => {
-            const lang = getLang(data.page.filePathStem, "techniques");
-
-            if (data.page.fileSlug === lang) {
-                return "index";
-            }
-
-            return data.page.fileSlug;
-        },
-        /* Build a permalink using the post title, language key, and translated collection type slug. */
-        permalink: data => generatePermalink(data, "techniques")
+        lang: data => data.locale,
+        langDir: data => data.supportedLanguages[data.locale].dir
     }
 };

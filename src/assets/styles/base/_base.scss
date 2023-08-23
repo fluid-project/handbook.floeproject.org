@@ -1,21 +1,10 @@
 // Base styles
 
+@use "../abstracts/mixins";
 @import "reset";
 @import "typography";
 
 // Site-wide rules (except the homepage which has overriding rules)
-
-a {
-    &:focus,
-    &:hover {
-        background: $linkFocusHoverBackgroundColour;
-        border-radius: 0.3125rem;
-        box-decoration-break: clone;
-        margin: -0.3rem;
-        padding: 0.3rem;
-        text-decoration-thickness: 0.1875rem;
-    }
-}
 
 figure a {
     display: inline-block;
@@ -23,8 +12,18 @@ figure a {
 
 main {
     a {
-        color: $linkColour;
+        color: var(--linkColour);
     }
+}
+
+a:focus,
+a:hover {
+    background: var(--linkFocusHoverBackgroundColour);
+    border-radius: 0.3125rem;
+    box-decoration-break: clone;
+    margin: -0.3rem;
+    padding: 0.3rem;
+    text-decoration-thickness: 0.1875rem;
 }
 
 .main-content {
@@ -55,7 +54,7 @@ main {
     }
 
     h2 {
-        color: $darkRed;
+        color: var(--darkRed);
         font-size: 1.5rem;
         line-height: 2.125rem;
         margin-block-start: 2rem;
@@ -67,7 +66,7 @@ main {
     }
 
     img {
-        max-width: 100%;
+        max-inline-size: 100%;
     }
 
     figure {
@@ -88,14 +87,14 @@ main {
     padding-inline: 2rem;
 }
 
-@include breakpoint-up(md) {
+@include mixins.breakpoint-up(md) {
     .main {
         display: grid;
         gap: 1rem;
         grid-template-columns: minmax(30rem, 2fr) minmax(19rem, 1fr);
         justify-content: center;
         margin-inline: auto;
-        max-width: $max-content-width;
+        max-inline-size: var(--max-content-width);
         word-break: break-word;
     }
 

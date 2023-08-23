@@ -12,73 +12,78 @@ https://github.com/fluid-project/handbook.floeproject.org/raw/main/LICENSE.md.
 
 "use strict";
 
-var slug = require("github-slugger").slug;
-
 const fluidPlugin = require("eleventy-plugin-fluid");
-const fs = require("fs");
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const MarkdownIt = require("markdown-it");
 const navigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // Import transforms
-const htmlMinTransform = require("./src/transforms/html-min-transform.js");
-const parseTransform = require("./src/transforms/parse-transform.js");
+const parseTransform = require("./src/_transforms/parse-transform.js");
 
 // Import data files
-const siteConfig = require("./src/_data/config.json");
-const getResourceLinks = require("./src/utils/getResourceLinks.js");
-const getArticleContents = require("./src/utils/getArticleContents.js");
-const getContentsFromNavKey = require("./src/utils/getContentsFromNavKey.js");
+const getResourceLinks = require("./src/_utils/getResourceLinks.js");
+const getArticleContents = require("./src/_utils/getArticleContents.js");
+const getContentsFromNavKey = require("./src/_utils/getContentsFromNavKey.js");
+const slugify = require("@sindresorhus/slugify");
 
-module.exports = function (config) {
-    config.setUseGitIgnore(false);
-
-    // Filters
-    const md = new MarkdownIt({
-        html: true,
-        quotes: "“”‘’"
-    });
-    config.addFilter("markdown", (content) => {
-        return md.render(content);
-    });
-
-    var markdownItLibrary = md.use(require("markdown-it-anchor"), { slugify: slug });
-
-    config.setLibrary("md", markdownItLibrary);
+module.exports = function (eleventyConfig) {
+    eleventyConfig.setUseGitIgnore(false);
 
     // Transforms
-    config.addTransform("htmlmin", htmlMinTransform);
-    config.addTransform("parse", parseTransform);
+    eleventyConfig.addTransform("parse", parseTransform);
 
     // Passthrough copy
-    config.addPassthroughCopy("src/_redirects");
-    config.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
-    config.addPassthroughCopy({"src/assets/icons": "/"});
-    config.addPassthroughCopy({"src/assets/images": "assets/images"});
+    eleventyConfig.addPassthroughCopy("src/_redirects");
+    eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
+    eleventyConfig.addPassthroughCopy({"src/assets/icons": "/"});
+    eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
 
     // Plugins
-    config.addPlugin(EleventyRenderPlugin);
-    config.addPlugin(fluidPlugin);
-    config.addPlugin(navigationPlugin);
-    config.addPlugin(syntaxHighlightPlugin);
+    eleventyConfig.addPlugin(fluidPlugin, {
+        defaultLanguage: "en-CA",
+        localesDirectory: "src/_locales",
+        supportedLanguages: {
+            "en-CA": {
+                slug: "en",
+                name: "English"
+            },
+            "fr-CA": {
+                slug: "fr",
+                name: "Français",
+                dir: "ltr",
+                uioSlug: "fr"
+            }
+        },
+        markdown: {
+            plugins: [
+                ["markdown-it-anchor", { slugify: s => slugify(s) }]
+            ]
+        },
+        css: {
+            enabled: false
+        },
+        sass: {
+            enabled: true
+        }
+    });
+    eleventyConfig.addPlugin(navigationPlugin);
+    eleventyConfig.addPlugin(syntaxHighlightPlugin);
 
     // Shortcodes
-    config.addShortcode("svg_sprite", (sprite, altText, ariaHidden = true) => {
+    eleventyConfig.addShortcode("svg_sprite", (sprite, altText, ariaHidden = true) => {
         const altTextMarkup = altText ? `<title>${altText}</title>` : "";
         const ariaHiddenMarkup = ariaHidden ? " aria-hidden=\"true\"" : "";
         return `<svg class="ildh-${sprite}"${ariaHiddenMarkup}>${altTextMarkup}<use xlink:href="/assets/images/sprites.svg#${sprite}"></use></svg>`;
     });
 
-    config.addShortcode("extract_resource_links", (content, sideContentHeadings, lang) => {
+    eleventyConfig.addShortcode("extract_resource_links", (content, sideContentHeadings, lang) => {
         return getResourceLinks(content, sideContentHeadings, lang);
     });
 
-    config.addShortcode("article_contents", (content, summary, headingsSelector, containerCssClass) => {
+    eleventyConfig.addShortcode("article_contents", (content, summary, headingsSelector, containerCssClass) => {
         return getArticleContents(content, summary, headingsSelector, containerCssClass);
     });
 
-    config.addShortcode("content_from_nav_key", (collection, navigationKey) => {
+    eleventyConfig.addShortcode("content_from_nav_key", (collection, navigationKey) => {
         return getContentsFromNavKey(collection, navigationKey.toString());
     });
 
@@ -90,7 +95,7 @@ module.exports = function (config) {
 
         https://github.com/fluid-project/handbook.floeproject.org/issues/57
     */
-    config.addShortcode("uioCustomInit", (locale, direction) => {
+    eleventyConfig.addShortcode("uioCustomInit", (locale, direction) => {
         let options = {
             preferences: [
                 "fluid.prefs.lineSpace",
@@ -124,35 +129,11 @@ module.exports = function (config) {
         return `<script>fluid.uiOptions.multilingual(".flc-prefsEditor-separatedPanel", ${JSON.stringify(options)});</script>`;
     });
 
-    // 404
-    config.setBrowserSyncConfig({
-        callbacks: {
-            ready: function (err, bs) {
-
-                bs.addMiddleware("*", (req, res) => {
-                    const content_404 = fs.readFileSync("dist/404.html");
-                    // Provides the 404 content without redirect.
-                    res.write(content_404);
-                    res.writeHead(404);
-                    res.end();
-                });
-            }
-        }
-    });
-
-    config.on("beforeBuild", () => {
-        if (!siteConfig.languages[siteConfig.defaultLanguage]) {
-            process.exitCode = 1;
-            throw new Error(`The default language, ${siteConfig.defaultLanguage}, configured in src/_data/config.json is not one of your site's supported languages.`);
-        }
-    });
-
     return {
         dir: {
-            input: "src",
-            output: "dist",
-            includes: "_includes"
+            input: "src"
         },
-        passthroughFileCopy: true
+        passthroughFileCopy: true,
+        markdownTemplateEngine: "njk"
     };
 };

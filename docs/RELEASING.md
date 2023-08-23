@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD013 -->
+
 # ILDH Release Process
 
 This guide provides instructions outlining the release process for the ILDH as hosted in its [primary fork](https://github.com/fluid-project/handbook.floeproject.org). The `git` commands shown in this guide assume that the [remote structure](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes) includes the upstream fork as `upstream`.

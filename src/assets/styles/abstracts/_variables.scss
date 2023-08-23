@@ -1,62 +1,3 @@
-/** Typography **/
-$family-sans-serif: "WorkSans", sans-serif;
-$family-serif: "Literata", serif;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
-
-/** Colors **/
-$darkRed: var(--fl-fgColor, #8d2a2d); // this colour has several uses
-$darkGrey: var(--fl-bgColor, #e5eaeb);
-$darkTeal: var(--fl-fgColor, #134d5f);
-$mediumTeal: #0b719e;
-$teal: var(--fl-fgColor, #1e97bd);
-
-$mainColour: var(--fl-fgColor, #000);
-$linkColour: var(--fl-linkColor, #0645ad);
-$headerOrgColour: var(--fl-bgColor, #000);
-$headerOrgLinkColour: var(--fl-linkColor, #000);
-$headerOrgBackgroundColour: var(--fl-bgColor, #fff);
-$footerColour: var(--fl-fgColor, #fff);
-$footerBGColour: var(--fl-bgColor, #153647);
-$footerLinkColour: var(--fl-linkColor, var(--fl-fgColor, #cfca6f));
-$rootContentColour: var(--fl-bgColor, #000);
-$rootContentBackgroundColour: var(--fl-bgColor, #f3f7f9);
-$topicContentBackgroundColour: var(--fl-bgColor, #f9faf6);
-$linkFocusHoverBackgroundColour: var(--fl-bgColor, #f8e886);
-$topicLinksHeadingColour: $darkRed;
-$menuTitleColour: $darkRed;
-$menuExpandedColour: var(--fl-fgColor, #000);
-$menuExpandedBGColour: $darkGrey;
-$menuExpandedSelectedColour: var(--fl-bgColor, #fff);
-$menuExpandedSelectedBGColour: $darkRed;
-$menuButtonStrokeColour: $darkRed;
-$sectionBGColour: var(--fl-bgColor, #fff);
-$sectionBorderColour: $darkRed;
-$sectionBorderColourAltOne: $darkTeal;
-$sectionBorderColourAltTwo: $teal;
-$audioTactileLegendColour: var(--fl-fgColor, $mediumTeal);
-$articleContentsBorderColour: var(--fl-bgColor, #bedee4);
-$articleContentsIconColour: var(--fl-fgColor, #12699a);
-$toolkitsBorderColour: var(--fl-bgColor, $mediumTeal);
-$toolkitsHeadingColour: var(--fl-fgColor, #095a7d);
-$sideContentLinkColour: var(--fl-linkColor, #2148a8);
-$homeIntroColour: var(--fl-fgColor, #235064);
-$homeIntroBGColour: var(--fl-bgColor, #fff);
-$homeDetailsBGColour: var(--fl-bgColor, #f9faf5);
-$homeGetInvolvedBGColour: $darkGrey;
-
-/** Dimensions **/
-$banner-height: 20px;
-$banner-height-large: 42px;
-$banner-height-full: 88px;
-$banner-height-full-large: 171px;
-$max-content-width: 69rem;
-$xl-content-width: 95rem;
-$narrow-content-width: 50rem;
-$footer-max-width: 90rem;
-
 // Responsive Breakpoints, shamelessy cribbed from Bootstrap.
 // @see https://github.com/twbs/bootstrap/blob/master/scss/mixins/_breakpoints.scss
 
@@ -76,4 +17,53 @@ footer,
 header {
     --ildh-wordmark-colour: var(--fl-bgColor, #fff);
     --ildh-wordmark-text-colour: var(--fl-fgColor, #000);
+}
+
+:root {
+    /** Typography **/
+    --family-sans-serif: "WorkSans", sans-serif;
+    --family-serif: "Literata", serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /** Colors **/
+    --darkRed: var(--fl-fgColor, #8d2a2d); // this colour has several uses
+    --darkGrey: var(--fl-bgColor, #e5eaeb);
+    --darkTeal: var(--fl-fgColor, #134d5f);
+    --mediumTeal: #0b719e;
+    --teal: var(--fl-fgColor, #1e97bd);
+    --mainColour: var(--fl-fgColor, #000);
+    --linkColour: var(--fl-linkColor, #0645ad);
+    --headerOrgColour: var(--fl-bgColor, #000);
+    --headerOrgLinkColour: var(--fl-linkColor, #000);
+    --headerOrgBackgroundColour: var(--fl-bgColor, #fff);
+    --footerColour: var(--fl-fgColor, #fff);
+    --footerBGColour: var(--fl-bgColor, #153647);
+    --footerLinkColour: var(--fl-linkColor, var(--fl-fgColor, #cfca6f));
+    --rootContentColour: var(--fl-bgColor, #000);
+    --rootContentBackgroundColour: var(--fl-bgColor, #f3f7f9);
+    --topicContentBackgroundColour: var(--fl-bgColor, #f9faf6);
+    --linkFocusHoverBackgroundColour: var(--fl-bgColor, #f8e886);
+    --menuExpandedColour: var(--fl-fgColor, #000);
+    --menuExpandedSelectedColour: var(--fl-bgColor, #fff);
+    --sectionBGColour: var(--fl-bgColor, #fff);
+    --articleContentsBorderColour: var(--fl-bgColor, #bedee4);
+    --articleContentsIconColour: var(--fl-fgColor, #12699a);
+    --toolkitsHeadingColour: var(--fl-fgColor, #095a7d);
+    --sideContentLinkColour: var(--fl-linkColor, #2148a8);
+    --homeIntroColour: var(--fl-fgColor, #235064);
+    --homeIntroBGColour: var(--fl-bgColor, #fff);
+    --homeDetailsBGColour: var(--fl-bgColor, #f9faf5);
+
+    /** Dimensions **/
+    --banner-height: 20px;
+    --banner-height-large: 42px;
+    --banner-height-full: 88px;
+    --banner-height-full-large: 171px;
+    --max-content-width: 69rem;
+    --xl-content-width: 95rem;
+    --narrow-content-width: 50rem;
+    --footer-max-width: 90rem;
 }

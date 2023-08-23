@@ -1,19 +1,19 @@
 .legend {
-    background-color: $sectionBGColour;
-    border: 0.125rem dashed $audioTactileLegendColour;
+    background-color: var(--sectionBGColour);
+    border: 0.125rem dashed var(--mediumTeal);
     margin-block: 3rem;
     padding: 0.1875rem;
 
     &:focus,
     &:focus-within {
-        border-color: $mainColour !important;
+        border-color: var(--mainColour) !important;
     }
 
     &[open],
     &:focus,
     &:focus-within,
     &:hover {
-        border: 0.3125rem solid $audioTactileLegendColour;
+        border: 0.3125rem solid var(--mediumTeal);
         padding: 0;
     }
 
@@ -26,17 +26,18 @@
     cursor: pointer;
     font-size: var(--fl-enhance-font-size, 1.5rem);
     font-weight: var(--fl-enhance-font-weight, 600);
-    padding: 1rem 1.5rem;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
 
     // the arrow icon
     &::marker,
     &::-webkit-details-marker {
-        color: $audioTactileLegendColour;
+        color: var(--mediumTeal);
     }
 }
 
 .legend__list {
-    border-inline-start: solid 0.3rem $sectionBorderColour;
+    border-inline-start: solid 0.3rem var(--darkRed);
     list-style: none;
     margin-inline-start: 1.85rem;
     padding-inline-end: 1.5rem;
@@ -44,14 +45,14 @@
 }
 
 .legend__list-separator {
-    background-color: $mainColour;
+    background-color: var(--mainColour);
+    block-size: 0.125rem;
     border-style: none;
     border-width: 0;
     box-sizing: border-box;
-    height: 0.125rem;
+    inline-size: calc(100% - 2.5rem);
     margin-block: 1rem;
     margin-inline: 1.25rem;
-    width: calc(100% - 2.5rem);
 }
 
 .legend__list-item:not(:last-child) {

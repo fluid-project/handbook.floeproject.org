@@ -5,17 +5,62 @@
 
 .side-content__content {
     a {
-        color: $sideContentLinkColour;
+        color: var(--sideContentLinkColour);
+    }
+}
+
+.side-content__toolkits {
+    color: var(--toolkitsHeadingColour);
+
+    .side-content__icon {
+        background-color: var(--mediumTeal);
+        border: 1px solid var(--fl-fgColor);
+        padding: 1rem;
+
+        svg {
+            block-size: 3rem;
+            inline-size: 3rem;
+        }
+    }
+
+    .side-content__content {
+        border: 1px solid var(--mediumTeal);
+        border-block-start: none;
+        padding-block: 1.5rem 2rem;
+        padding-inline: 2rem;
+    }
+
+    .side-content__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-block-start: 0;
+    }
+
+    ul,
+    .side-content__list {
+        padding-inline-start: 1rem;
+    }
+
+    li,
+    .side-content__list-item {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-block: 1rem;
+
+        & a {
+            color: var(--sideContentLinkColour);
+            font-weight: 500;
+        }
     }
 }
 
 .side-content__topic-links {
-    color: $topicLinksHeadingColour;
+    color: var(--darkRed);
     margin-block-end: 4rem;
 
     .side-content__icon svg {
-        height: 1.5rem;
-        width: 2.5rem;
+        block-size: 1.5rem;
+        inline-size: 2.5rem;
     }
 
     .side-content__content {
@@ -37,51 +82,7 @@
         margin-block: 1rem;
 
         & a {
-            color: $sideContentLinkColour;
-        }
-    }
-}
-
-.side-content__toolkits {
-    color: $toolkitsHeadingColour;
-
-    .side-content__icon {
-        background-color: $toolkitsBorderColour;
-        border: 1px solid var(--fl-fgColor);
-        padding: 1rem;
-
-        svg {
-            height: 3rem;
-            width: 3rem;
-        }
-    }
-
-    .side-content__content {
-        border: 1px solid $toolkitsBorderColour;
-        border-top: none;
-        padding: 1.5rem 2rem 2rem 2rem;
-    }
-
-    .side-content__title {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        margin-block-start: 0;
-    }
-
-    ul,
-    .side-content__list {
-        padding-inline-start: 1rem;
-    }
-
-    li,
-    .side-content__list-item {
-        font-size: 1.25rem;
-        line-height: 2rem;
-        margin-block: 1rem;
-
-        & a {
-            color: $sideContentLinkColour;
-            font-weight: 500;
+            color: var(--sideContentLinkColour);
         }
     }
 }

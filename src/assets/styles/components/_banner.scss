@@ -1,27 +1,29 @@
+@use "../abstracts/mixins";
+
 .banner {
     align-content: center;
     background-image: linear-gradient(to right, #158dcd 50%, #12699a 50%);
     background-position: center;
     background-repeat: no-repeat;
+    block-size: var(--banner-height);
     display: flex;
-    height: $banner-height;
     justify-content: center;
     overflow: hidden;
     position: relative;
 
     svg {
-        height: $banner-height-full;
+        block-size: var(--banner-height-full);
         left: -96rem;
         position: absolute;
     }
 }
 
-@include breakpoint-up(md) {
+@include mixins.breakpoint-up(md) {
     .banner {
-        height: $banner-height-large;
+        block-size: var(--banner-height-large);
 
         svg {
-            height: $banner-height-full-large;
+            block-size: var(--banner-height-full-large);
             left: unset;
         }
     }
