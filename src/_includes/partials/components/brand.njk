@@ -1,8 +1,8 @@
 <div class="brand">
-    {% if locale and locale !== config.defaultLanguage %}
-    {% set homeUrl = "/" + config.languages[locale].slug %}
+    {% if locale and locale !== defaultLanguage %}
+    {% set homeUrl = "/" + supportedLanguages[locale].slug %}
     {% else %}
-    {% set lang = config.defaultLanguage %}
+    {% set lang = defaultLanguage %}
     {% set homeUrl = "/" %}
     {% endif %}
 

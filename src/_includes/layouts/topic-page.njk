@@ -17,7 +17,7 @@
 
 {% block sideContent %}
     {% if not locale %}
-        {% set locale = config.defaultLanguage %}
+        {% set locale = defaultLanguage %}
     {% endif %}
     {% set icon = sideContentHeadings[locale].icon %}
     {% set sideContentTitle = sideContentHeadings[locale].title %}

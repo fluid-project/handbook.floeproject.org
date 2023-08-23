@@ -20,7 +20,7 @@
                 {# Find an item with a locale which matches the current page's translation key but is not the same locale. #}
                 {% if item.data.locale === locale and item.data.locale !== locale %}
                 <li class="menu__item" lang="{{ item.data.locale }}">
-                    <a class="menu__link" href="{{ item.url }}">{{ config.languages[item.data.lang].name }}</a>
+                    <a class="menu__link" href="{{ item.url }}">{{ supportedLanguages[item.data.lang].name }}</a>
                 </li>
                 {% endif %}
             {% endfor %}
