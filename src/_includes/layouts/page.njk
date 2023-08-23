@@ -25,7 +25,7 @@
             {% include toolkitsAndGuidesPath %}
         {% endset %}
         {% set sideContent %}
-            {{ sideContentPreFilter | markdown | safe }}
+            {% renderString sideContentPreFilter, "md" %}
         {% endset %}
 
         {% include "partials/components/side-content-item.njk" %}
