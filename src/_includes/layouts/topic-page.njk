@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-    {%- article_contents locale, content -%}
+    {%- article_contents content, _('Article Contents') -%}
     {{ content | safe }}
 {% endblock %}
 
