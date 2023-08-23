@@ -1,3 +1,5 @@
+@use "../abstracts/mixins";
+
 .brand {
     flex: 1;
 }
@@ -14,12 +16,12 @@ a.brand__desktop {
 
     &:focus,
     &:hover {
-        @include brand-focus-hover;
+        @include mixins.brand-focus-hover;
     }
 
     svg {
-        height: 5.4rem;
-        width: 18.75rem;
+        block-size: 5.4rem;
+        inline-size: 18.75rem;
     }
 }
 
@@ -29,18 +31,18 @@ a.brand__mobile {
 
     &:focus,
     &:hover {
-        @include brand-focus-hover;
+        @include mixins.brand-focus-hover;
 
         padding: unset;
     }
 
     svg {
-        height: 5rem;
-        width: 5rem;
+        block-size: 5rem;
+        inline-size: 5rem;
     }
 }
 
-@include breakpoint-up(md) {
+@include mixins.breakpoint-up(md) {
     a.brand__desktop {
         display: inline-block;
     }

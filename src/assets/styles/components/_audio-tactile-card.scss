@@ -1,14 +1,27 @@
+@use "../abstracts/mixins";
+
 .audio-tactile {
+    .card__details {
+        border: solid var(--darkRed) 0.125rem;
+        border-block-start: none;
+        box-sizing: border-box;
+        font-size: 1.25rem;
+        hyphens: auto;
+        line-height: 2rem;
+        padding: 0.1875rem; /* This padding reserves space for the thicker border on hover & focus */
+        padding-block-start: 0;
+    }
+
     .card__toggle {
-        background: $sectionBGColour;
+        background: var(--sectionBGColour);
         border: none;
-        color: $mainColour;
+        color: var(--mainColour);
         cursor: pointer;
         display: block;
-        font-family: $family-sans-serif; /* override for User Agent button-specific typefaces */
+        font-family: var(--family-sans-serif); /* override for User Agent button-specific typefaces */
+        inline-size: 100%;
         padding: 0;
         text-align: start;
-        width: 100%;
 
         &:focus,
         &:hover {
@@ -20,62 +33,23 @@
     }
 
     .card__title {
-        background-color: $sectionBorderColour;
+        background-color: var(--darkRed);
         box-sizing: border-box;
-        color: $sectionBGColour;
+        color: var(--sectionBGColour);
         font-size: var(--fl-enhance-font-size, 1.5rem);
         font-weight: var(--fl-enhance-font-weight, 700);
+        inline-size: 100%;
         line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
         margin: 0;
-        padding: 0.5rem 1.5rem;
-        width: 100%;
-    }
-
-    .card__details {
-        border: solid $sectionBorderColour 0.125rem;
-        border-block-start: none;
-        box-sizing: border-box;
-        font-size: 1.25rem;
-        hyphens: auto;
-        line-height: 2rem;
-        padding: 0.1875rem; /* This padding reserves space for the thicker border on hover & focus */
-        padding-block-start: 0;
+        padding-block: 0.5rem;
+        padding-inline: 1.5rem;
     }
 
     .card__description {
         align-content: center;
         display: grid;
-        min-height: 10rem;
+        min-block-size: 10rem;
         padding: 1rem;
-    }
-
-    .card__icon {
-        align-items: center;
-        display: block;
-        min-width: 3.75rem;
-        text-align: center;
-
-        &:empty {
-            height: 1.083125rem;
-        }
-
-        &:empty + .card__content {
-            display: none;
-        }
-
-        svg {
-            --icon-arrowColour: #{$sectionBorderColour};
-
-            color: var(--fl-bgColor, $mainColour);
-            fill: none;
-            height: 0.875rem;
-            transform: rotate(90deg);
-            width: 1.4375rem;
-        }
-    }
-
-    .card__toggle--expanded .card__icon svg {
-        transform: rotate(-90deg);
     }
 
     .card__content {
@@ -91,7 +65,36 @@
         display: block;
     }
 
-    @include breakpoint-up(sm) {
+    .card__icon {
+        align-items: center;
+        display: block;
+        min-inline-size: 3.75rem;
+        text-align: center;
+
+        &:empty {
+            block-size: 1.0831rem;
+        }
+
+        &:empty + .card__content {
+            display: none;
+        }
+
+        svg {
+            --icon-arrowColour: var(--darkRed);
+
+            block-size: 0.875rem;
+            color: var(--fl-bgColor, var(--mainColour));
+            fill: none;
+            inline-size: 1.4375rem;
+            transform: rotate(90deg);
+        }
+    }
+
+    .card__toggle--expanded .card__icon svg {
+        transform: rotate(-90deg);
+    }
+
+    @include mixins.breakpoint-up(sm) {
         .card__details {
             hyphens: unset;
             word-break: unset;

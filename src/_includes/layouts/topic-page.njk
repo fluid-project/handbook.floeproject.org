@@ -11,18 +11,18 @@
 {% endblock %}
 
 {% block content %}
-    {%- article_contents content, translations[lang].articleContentsSummary -%}
+    {%- article_contents content, _('Article Contents') -%}
     {{ content | safe }}
 {% endblock %}
 
 {% block sideContent %}
-    {% if not lang %}
-        {% set lang = config.defaultLanguage %}
+    {% if not locale %}
+        {% set locale = defaultLanguage %}
     {% endif %}
-    {% set icon = sideContentHeadings[lang].icon %}
-    {% set sideContentTitle = sideContentHeadings[lang].title %}
+    {% set icon = sideContentHeadings[locale].icon %}
+    {% set sideContentTitle = sideContentHeadings[locale].title %}
     {% set sideContent %}
-        {%- extract_resource_links content, sideContentHeadings, lang -%}
+        {%- extract_resource_links content, sideContentHeadings, locale -%}
     {% endset %}
     
     {%- if sideContent -%}

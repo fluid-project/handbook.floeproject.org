@@ -1,9 +1,11 @@
+@use "../abstracts/mixins";
+
 .audio-tactile {
     .subsection {
         margin-block-end: 0;
 
         &:not(:last-of-type) {
-            border-block-end: 0.0625rem solid $mainColour;
+            border-block-end: 0.0625rem solid var(--mainColour);
         }
     }
 
@@ -12,19 +14,28 @@
         margin: 0;
     }
 
+    .subsection__title {
+        font-size: var(--fl-enhance-font-size, 1.5rem);
+        inline-size: 100%;
+        padding-block: 1rem;
+        padding-inline: 0 1rem;
+        text-align: start;
+    }
+
     .subsection__toggle {
         align-items: stretch;
-        background-color: var(--fl-buttonBgColor, $sectionBGColour);
+        background-color: var(--fl-buttonBgColor, var(--sectionBGColour));
         border: none;
-        color: var(--fl-buttonFgColor, $mainColour);
+        color: var(--fl-buttonFgColor, var(--mainColour));
         cursor: pointer;
         display: flex;
         font-size: var(--fl-enhance-font-size, 1.8125rem);
         font-weight: var(--fl-enhance-font-weight, 400);
+        inline-size: 100%;
         justify-content: space-between;
         line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
-        padding: 0.25rem 0;
-        width: 100%;
+        padding-block: 0.25rem;
+        padding-inline: 0;
 
         &:focus,
         &:hover {
@@ -38,13 +49,6 @@
         }
     }
 
-    .subsection__title {
-        font-size: var(--fl-enhance-font-size, 1.5rem);
-        padding: 1rem 1rem 1rem 0;
-        text-align: start;
-        width: 100%;
-    }
-
     .subsection__icon {
         align-items: center;
         background-color: var(--fl-buttonBgColor, #fff);
@@ -52,15 +56,15 @@
         font-size: var(--fl-enhance-font-size, 1.125rem);
         font-weight: var(--fl-enhance-font-weight, 800);
         justify-content: center;
-        min-width: 3.75rem;
+        min-inline-size: 3.75rem;
 
         svg {
-            --icon-arrowColour: var(--fl-buttonFgColor, #{$sectionBorderColour});
+            --icon-arrowColour: var(--fl-buttonFgColor, var(--darkRed));
 
-            color: var(--fl-bgColor, $mainColour);
+            block-size: 1.875rem;
+            color: var(--fl-bgColor, var(--mainColour));
             fill: none;
-            height: 1.875rem;
-            width: 1.125rem;
+            inline-size: 1.125rem;
         }
     }
 
@@ -86,12 +90,12 @@
         margin-block-end: 2.5rem;
         padding-inline: 2rem;
 
-        @include breakpoint-up(sm) {
+        @include mixins.breakpoint-up(sm) {
             grid-template-columns: 1fr 1fr;
             padding-inline: 3.75rem;
         }
 
-        @include breakpoint-up(md-lg) {
+        @include mixins.breakpoint-up(md-lg) {
             grid-template-columns: 1fr 1fr 1fr;
         }
     }

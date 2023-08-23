@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD041 -->
+
 * [ ] This pull request has been linted by running `npm run lint` without errors
 * [ ] This pull request has been tested by running `npm run start` and reviewing affected routes
 * [ ] This pull request has been built by running `npm run build` without errors

@@ -15,7 +15,7 @@
             {% block content %}
                 {{ content | safe }}
                 <div class="audio-tactile__diagram">
-                    {%- svg_sprite "audio-tactile-card-diagram", translations[lang].audioTactileCardDiagramAltText, false -%}
+                    {%- svg_sprite "audio-tactile-card-diagram", _("Example of a card with three elements being pointed out by arrows: the recommendation code on the top-left, the recommendation in the centre of the card, and an interactive button bottom-centre that indicates there is additional information on the card."), false -%}
                 </div>
                 {%- include "partials/components/audio-tactile-legend.njk" -%}
             {% endblock %}
@@ -38,6 +38,6 @@
 
         https://github.com/fluid-project/handbook.floeproject.org/issues/57
     #}
-    {% uioCustomInit config.languages[lang].uioSlug, config.languages[lang].dir %}
+    {% uioCustomInit supportedLanguages[locale].uioSlug, supportedLanguages[locale].dir %}
 </body>
 {% endblock %}

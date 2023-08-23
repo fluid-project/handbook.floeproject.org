@@ -10,7 +10,7 @@
     <div class="section__content">
         {% if sectionIntro %}
         <div class="section__intro">
-            {{- sectionIntro | markdown | safe -}}
+            {% renderString sectionIntro, "md" %}
         </div>
         {% endif %}
         <ul class="section__subsections">

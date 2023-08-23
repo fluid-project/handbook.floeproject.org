@@ -1,13 +1,15 @@
+@use "../abstracts/mixins";
+
 .logos {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 
     svg {
+        block-size: 3rem;
         display: inline-block;
-        fill: $footerColour;
-        height: 3rem;
-        max-width: 100%;
+        fill: var(--footerColour);
+        max-inline-size: 100%;
     }
 }
 
@@ -16,27 +18,27 @@
     flex: 1 1 47%;
     gap: 2rem;
     justify-content: space-around;
-    max-width: 100%;
+    max-inline-size: 100%;
 }
 
 /* SVG-specific sizing */
 svg.ildh-logo-hewlett {
-    width: 15rem;
+    inline-size: 15rem;
 }
 
 svg.ildh-logo-floe {
-    width: 6rem;
+    inline-size: 6rem;
 }
 
 svg.ildh-logo-idrc-wordmark {
-    width: 8rem;
+    inline-size: 8rem;
 }
 
 svg.ildh-logo-ocadu {
-    width: 4rem;
+    inline-size: 4rem;
 }
 
-@include breakpoint-up(lg) {
+@include mixins.breakpoint-up(lg) {
     .logos {
         align-self: end;
         grid-column: 1;

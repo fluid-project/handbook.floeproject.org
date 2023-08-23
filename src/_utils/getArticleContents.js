@@ -16,7 +16,8 @@ const { parseHTML } = require("linkedom");
  *
  * @return {String} - the combined string containing the list markup and modified page markup
  */
-module.exports = (pageContent, summary = "Article Contents", headingsSelector = "h2", containerCssClass = "article-contents") => {
+
+module.exports = (pageContent, summary, headingsSelector = "h2", containerCssClass = "article-contents") => {
     const {document} = parseHTML(pageContent);
     const headings = document.querySelectorAll(headingsSelector);
 

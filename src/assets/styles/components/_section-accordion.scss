@@ -3,21 +3,31 @@
     margin: 0;
 }
 
+.section__title {
+    border: 0.0625rem dashed var(--fl-buttonBgColor, var(--darkRed));
+    border-inline-start: none;
+    inline-size: 100%;
+    line-height: 1.875rem;
+    padding-block: 1rem;
+    padding-inline: 1.25rem 1rem;
+    text-align: start;
+}
+
 .section__toggle {
     align-items: stretch;
-    background-color: var(--fl-buttonBgColor, $sectionBGColour);
+    background-color: var(--fl-buttonBgColor, var(--sectionBGColour));
     border: none;
-    color: var(--fl-buttonFgColor, $mainColour);
+    color: var(--fl-buttonFgColor, var(--mainColour));
     cursor: pointer;
     display: flex;
-    font-family: $family-sans-serif;
+    font-family: var(--family-sans-serif);
     font-size: var(--fl-enhance-font-size, 1.8125rem);
     font-weight: var(--fl-enhance-font-weight, 400);
+    inline-size: 100%;
     justify-content: space-between;
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.45);
     margin-block-end: 1.25rem;
     padding: 0;
-    width: 100%;
 
     &:focus,
     &:hover {
@@ -28,30 +38,22 @@
     &--expanded .section__title,
     &:focus .section__title,
     &:hover .section__title {
-        border: 0.35rem solid var(--fl-buttonFgColor, $sectionBorderColour);
+        border: 0.35rem solid var(--fl-buttonFgColor, var(--darkRed));
         border-inline-start: none;
         font-weight: var(--fl-enhance-font-weight, 600);
-        padding: 0.7125rem 1rem 0.7125rem 1.25rem;
+        padding-block: 0.7125rem;
+        padding-inline: 1.25rem 1rem;
     }
-}
-
-.section__title {
-    border: 0.0625rem dashed var(--fl-buttonBgColor, $sectionBorderColour);
-    border-inline-start: none;
-    line-height: 1.875rem;
-    padding: 1rem 1rem 1rem 1.25rem;
-    text-align: start;
-    width: 100%;
 }
 
 .section__icon {
     align-items: center;
-    background-color: var(--fl-buttonFgColor, $sectionBorderColour);
+    background-color: var(--fl-buttonFgColor, var(--darkRed));
     display: flex;
     font-size: var(--fl-enhance-font-size, 1.125rem);
     font-weight: var(--fl-enhance-font-weight, 800);
     justify-content: center;
-    min-width: 3.75rem;
+    min-inline-size: 3.75rem;
 
     svg {
         // TODO: Move this colour-setting to page-specific files
@@ -59,10 +61,10 @@
         //       table of contents accordions
         --icon-arrowColour: var(--fl-buttonBgColor, #fff);
 
-        color: var(--fl-bgColor, $mainColour);
+        block-size: 2rem;
+        color: var(--fl-bgColor, var(--mainColour));
         fill: none;
-        height: 2rem;
-        width: 1.75rem;
+        inline-size: 1.75rem;
     }
 }
 

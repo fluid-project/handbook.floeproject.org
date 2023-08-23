@@ -1,3 +1,5 @@
+@use "../abstracts/mixins";
+
 .sections-control {
     display: flex;
     flex-wrap: wrap;
@@ -8,26 +10,28 @@
 
 .sections-control__collapse-all,
 .sections-control__expand-all {
-    background: var(--fl-buttonBgColor, $rootContentBackgroundColour);
-    border: 1px solid $mainColour;
-    color: var(--fl-buttonFgColor, $mainColour);
+    background: var(--fl-buttonBgColor, var(--rootContentBackgroundColour));
+    border: 1px solid var(--mainColour);
+    color: var(--fl-buttonFgColor, var(--mainColour));
     cursor: pointer;
     flex-basis: 0;
     flex-grow: 1;
     font-size: 1.125rem;
     font-weight: var(--fl-enhance-font-weight, 600);
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
-    padding: 0.375rem 1.5rem;
+    padding-block: 0.375rem;
+    padding-inline: 1.5rem;
 
     &:focus,
     &:hover {
-        border: 0.1875rem solid var(--fl-buttonFgColor, $mainColour);
+        border: 0.1875rem solid var(--fl-buttonFgColor, var(--mainColour));
         box-sizing: border-box;
-        padding: 0.25rem 1.375rem;
+        padding-block: 0.25rem;
+        padding-inline: 1.375rem;
     }
 }
 
-@include breakpoint-up(md) {
+@include mixins.breakpoint-up(md) {
     .sections-control__collapse-all,
     .sections-control__expand-all {
         flex-basis: unset;

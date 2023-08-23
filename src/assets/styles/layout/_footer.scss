@@ -1,30 +1,33 @@
+@use "../abstracts/mixins";
+
 .footer {
-    background-color: $footerBGColour;
+    background-color: var(--footerBGColour);
     margin-block-start: 5.75rem;
-    padding: 3.25rem 24px;
+    padding-block: 3.25rem;
+    padding-inline: 24px;
 }
 
 .footer__container {
-    --ildh-wordmark-colour: var(--fl-bgColor, #{$footerBGColour});
+    --ildh-wordmark-colour: var(--fl-bgColor, var(--footerBGColour));
 
-    color: $footerColour;
+    color: var(--footerColour);
     display: grid;
     font-size: 1.125rem;
     font-weight: 500;
     grid-template-columns: 1fr;
     line-height: calc(var(--fl-lineSpace-factor, 1) * 1.8125);
     margin-inline: auto;
-    max-width: $footer-max-width;
+    max-inline-size: var(--footer-max-width);
     row-gap: 2.625rem;
 }
 
 .footer__container a {
-    color: $footerLinkColour;
+    color: var(--footerLinkColour);
 
     &:focus,
     &:hover {
-        background-color: var(--fl-linkColor, $footerColour);
-        color: var(--fl-bgColor, $footerBGColour);
+        background-color: var(--fl-linkColor, var(--footerColour));
+        color: var(--fl-bgColor, var(--footerBGColour));
     }
 }
 
@@ -36,7 +39,7 @@
     margin-block: 0;
 }
 
-@include breakpoint-up(lg) {
+@include mixins.breakpoint-up(lg) {
     .footer__container {
         column-gap: 10rem;
         grid-template-areas:
