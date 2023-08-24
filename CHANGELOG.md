@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.2.0...v1.3.0) (2023-08-24)
+
+
+### Features
+
+* adapt architecture from Trivet ([20fc837](https://github.com/fluid-project/handbook.floeproject.org/commit/20fc8377500213686ea9fffa0a52e26baf374092))
+* add Integrating Sign Language resource ([9fc4bab](https://github.com/fluid-project/handbook.floeproject.org/commit/9fc4bab17094b2a3ec68916541ffd6cd5fcb17d0))
+* content updates ([826d268](https://github.com/fluid-project/handbook.floeproject.org/commit/826d2681edaace816064918e7c767bd532ae3ecb))
+* update order of articles under Authoring Content ([91bff63](https://github.com/fluid-project/handbook.floeproject.org/commit/91bff63a49f0ca56bb42eb84a372b67435be295f))
+
 ## [1.2.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.1.0...v1.2.0) (2022-08-10)
 
 ### Features
