@@ -2,146 +2,146 @@
 @use "../abstracts/variables";
 
 .menu__button {
-    align-items: center;
-    align-self: flex-end;
-    background-color: var(--fl-buttonBgColor, inherit);
-    block-size: 2rem;
-    border: none;
-    color: var(--fl-buttonFgColor, currentColor);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  background-color: var(--fl-buttonBgColor, inherit);
+  block-size: 2rem;
+  border: none;
+  color: var(--fl-buttonFgColor, currentColor);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 
-    &:focus,
-    &:hover {
-        outline: var(--darkRed) solid 0.25rem;
-    }
+  &:focus,
+  &:hover {
+    outline: var(--darkRed) solid 0.25rem;
+  }
 }
 
 .menu__button svg {
-    block-size: 100%;
-    inline-size: 2rem;
+  block-size: 100%;
+  inline-size: 2rem;
 }
 
 .menu__title {
-    color: var(--darkRed);
-    font-family: var(--family-serif);
-    font-size: 2.875rem;
-    font-weight: 800;
-    line-height: 1.875rem;
-    padding-inline-start: 1rem;
+  color: var(--darkRed);
+  font-family: var(--family-serif);
+  font-size: 2.875rem;
+  font-weight: 800;
+  line-height: 1.875rem;
+  padding-inline-start: 1rem;
 }
 
 .menu__name {
-    display: inline-block;
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-    margin-inline-start: 0.5rem;
-    text-transform: lowercase;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-inline-start: 0.5rem;
+  text-transform: lowercase;
 }
 
 .menu {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .menu__panel {
-    background-color: var(--darkGrey);
-    box-sizing: border-box;
-    inline-size: 100%;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    z-index: 2;
+  background-color: var(--darkGrey);
+  box-sizing: border-box;
+  inline-size: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
 }
 
 .menu__list {
-    list-style: none;
-    padding-inline-start: 0;
+  list-style: none;
+  padding-inline-start: 0;
 }
 
 a.menu__link {
-    align-items: center;
-    background-color: var(--fl-bgColor, var(--darkGrey));
-    block-size: 3.5rem;
-    color: var(--fl-linkColor, var(--menuExpandedColour));
-    display: flex;
-    font-size: var(--fl-enhance-font-size, 1.5rem);
-    font-weight: var(--fl-enhance-font-weight, 500);
-    line-height: 1.875rem;
-    padding-inline: 2rem;
-    text-decoration: none;
+  align-items: center;
+  background-color: var(--fl-bgColor, var(--darkGrey));
+  block-size: 3.5rem;
+  color: var(--fl-linkColor, var(--menuExpandedColour));
+  display: flex;
+  font-size: var(--fl-enhance-font-size, 1.5rem);
+  font-weight: var(--fl-enhance-font-weight, 500);
+  line-height: 1.875rem;
+  padding-inline: 2rem;
+  text-decoration: none;
 
-    &[aria-current="page"],
-    &[aria-current="true"],
-    &:focus,
-    &:hover {
-        @include mixins.menu-link-focus-hover-narrow;
-    }
+  &[aria-current="page"],
+  &[aria-current="true"],
+  &:focus,
+  &:hover {
+    @include mixins.menu-link-focus-hover-narrow;
+  }
 }
 
 .menu > [aria-expanded="false"] + .menu__panel {
-    display: none;
+  display: none;
 }
 
 @include mixins.breakpoint-up(lg) {
-    .menu__button {
-        display: none;
+  .menu__button {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .menu__panel {
+    background-color: inherit;
+    display: block !important; /* Need important to beat specificy of narrow screen menu style */
+    inline-size: auto;
+    position: initial;
+  }
+
+  .menu__title {
+    display: none;
+  }
+
+  .menu__list {
+    block-size: 2.875rem;
+    display: flex;
+  }
+
+  .menu__item {
+    border-block-end: none;
+    display: inline-flex;
+    padding: 0;
+  }
+
+  a.menu__link {
+    background-color: inherit;
+    block-size: 2.25rem;
+    border-block-end: 0.625rem solid transparent;
+    color: var(--fl-linkColor, currentColor);
+    font-size: 1.125rem;
+    inline-size: 100%;
+    margin: 0;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      background-color: inherit;
+      color: inherit;
+      outline: 0.125rem solid var(--mainColour);
+      outline-offset: -0.125rem;
     }
 
-    .menu {
-        flex-direction: row;
-        justify-content: flex-end;
-        margin: 0;
+    &:focus,
+    &:hover,
+    &[aria-current="page"],
+    &[aria-current="true"] {
+      @include mixins.menu-link-focus-hover-wide;
     }
-
-    .menu__panel {
-        background-color: inherit;
-        display: block !important; /* Need important to beat specificy of narrow screen menu style */
-        inline-size: auto;
-        position: initial;
-    }
-
-    .menu__title {
-        display: none;
-    }
-
-    .menu__list {
-        block-size: 2.875rem;
-        display: flex;
-    }
-
-    .menu__item {
-        border-block-end: none;
-        display: inline-flex;
-        padding: 0;
-    }
-
-    a.menu__link {
-        background-color: inherit;
-        block-size: 2.25rem;
-        border-block-end: 0.625rem solid transparent;
-        color: var(--fl-linkColor, currentColor);
-        font-size: 1.125rem;
-        inline-size: 100%;
-        margin: 0;
-        text-decoration: none;
-
-        &:focus,
-        &:hover {
-            background-color: inherit;
-            color: inherit;
-            outline: 0.125rem solid var(--mainColour);
-            outline-offset: -0.125rem;
-        }
-
-        &:focus,
-        &:hover,
-        &[aria-current="page"],
-        &[aria-current="true"] {
-            @include mixins.menu-link-focus-hover-wide;
-        }
-    }
+  }
 }

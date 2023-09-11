@@ -1,44 +1,44 @@
 // Typefaces used
 @font-face {
-    font-display: swap;
-    font-family: Literata;
-    font-style: normal;
-    font-weight: 200 900;
-    src:
-        url("../fonts/Literata-VariableFont_opsz,wght.woff2") format("woff2-variations"),
-        url("../fonts/Literata-VariableFont_opsz,wght.woff2") format("woff2");
+  font-display: swap;
+  font-family: Literata;
+  font-style: normal;
+  font-weight: 200 900;
+  src:
+    url("../fonts/Literata-VariableFont_opsz,wght.woff2") format("woff2-variations"),
+    url("../fonts/Literata-VariableFont_opsz,wght.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: Literata;
-    font-style: italic;
-    font-weight: 200 900;
-    src:
-        url("../fonts/Literata-Italic-VariableFont_opsz,wght.woff2") format("woff2-variations"),
-        url("../fonts/Literata-Italic-VariableFont_opsz,wght.woff2") format("woff2");
+  font-display: swap;
+  font-family: Literata;
+  font-style: italic;
+  font-weight: 200 900;
+  src:
+    url("../fonts/Literata-Italic-VariableFont_opsz,wght.woff2") format("woff2-variations"),
+    url("../fonts/Literata-Italic-VariableFont_opsz,wght.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: WorkSans;
-    font-weight: 400 700;
-    src:
-        url("../fonts/WorkSans-VariableFont_wght.woff2") format("woff2-variations"),
-        url("../fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
+  font-display: swap;
+  font-family: WorkSans;
+  font-weight: 400 700;
+  src:
+    url("../fonts/WorkSans-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../fonts/WorkSans-VariableFont_wght.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: WorkSans;
-    font-style: italic;
-    font-weight: 400 700;
-    src:
-        url("../fonts/WorkSans-Italic-VariableFont_wght.woff2") format("woff2-variations"),
-        url("../fonts/WorkSans-Italic-VariableFont_wght.woff2") format("woff2");
+  font-display: swap;
+  font-family: WorkSans;
+  font-style: italic;
+  font-weight: 400 700;
+  src:
+    url("../fonts/WorkSans-Italic-VariableFont_wght.woff2") format("woff2-variations"),
+    url("../fonts/WorkSans-Italic-VariableFont_wght.woff2") format("woff2");
 }
 
 // Type rules
 body {
-    font-family: var(--family-sans-serif);
+  font-family: var(--family-sans-serif);
 }

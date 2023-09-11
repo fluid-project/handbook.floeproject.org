@@ -1,30 +1,30 @@
 @use "../abstracts/mixins";
 
 .banner {
-    align-content: center;
-    background-image: linear-gradient(to right, #158dcd 50%, #12699a 50%);
-    background-position: center;
-    background-repeat: no-repeat;
-    block-size: var(--banner-height);
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
+  align-content: center;
+  background-image: linear-gradient(to right, #158dcd 50%, #12699a 50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  block-size: var(--banner-height);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 
-    svg {
-        block-size: var(--banner-height-full);
-        left: -96rem;
-        position: absolute;
-    }
+  svg {
+    block-size: var(--banner-height-full);
+    left: -96rem;
+    position: absolute;
+  }
 }
 
 @include mixins.breakpoint-up(md) {
-    .banner {
-        block-size: var(--banner-height-large);
+  .banner {
+    block-size: var(--banner-height-large);
 
-        svg {
-            block-size: var(--banner-height-full-large);
-            left: unset;
-        }
+    svg {
+      block-size: var(--banner-height-full-large);
+      left: unset;
     }
+  }
 }

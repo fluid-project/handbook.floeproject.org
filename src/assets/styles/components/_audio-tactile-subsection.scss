@@ -1,102 +1,102 @@
 @use "../abstracts/mixins";
 
 .audio-tactile {
-    .subsection {
-        margin-block-end: 0;
+  .subsection {
+    margin-block-end: 0;
 
-        &:not(:last-of-type) {
-            border-block-end: 0.0625rem solid var(--mainColour);
-        }
+    &:not(:last-of-type) {
+      border-block-end: 0.0625rem solid var(--mainColour);
+    }
+  }
+
+  .subsection__heading {
+    line-height: calc(var(--fl-lineSpace-factor, 1) * 0.8);
+    margin: 0;
+  }
+
+  .subsection__title {
+    font-size: var(--fl-enhance-font-size, 1.5rem);
+    inline-size: 100%;
+    padding-block: 1rem;
+    padding-inline: 0 1rem;
+    text-align: start;
+  }
+
+  .subsection__toggle {
+    align-items: stretch;
+    background-color: var(--fl-buttonBgColor, var(--sectionBGColour));
+    border: none;
+    color: var(--fl-buttonFgColor, var(--mainColour));
+    cursor: pointer;
+    display: flex;
+    font-size: var(--fl-enhance-font-size, 1.8125rem);
+    font-weight: var(--fl-enhance-font-weight, 400);
+    inline-size: 100%;
+    justify-content: space-between;
+    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
+    padding-block: 0.25rem;
+    padding-inline: 0;
+
+    &:focus,
+    &:hover {
+      outline-color: var(--fl-buttonFgColor);
     }
 
-    .subsection__heading {
-        line-height: calc(var(--fl-lineSpace-factor, 1) * 0.8);
-        margin: 0;
+    &--expanded .subsection__title,
+    &:focus .subsection__title,
+    &:hover .subsection__title {
+      font-weight: var(--fl-enhance-font-weight, 700);
+    }
+  }
+
+  .subsection__icon {
+    align-items: center;
+    background-color: var(--fl-buttonBgColor, #fff);
+    display: flex;
+    font-size: var(--fl-enhance-font-size, 1.125rem);
+    font-weight: var(--fl-enhance-font-weight, 800);
+    justify-content: center;
+    min-inline-size: 3.75rem;
+
+    svg {
+      --icon-arrowColour: var(--fl-buttonFgColor, var(--darkRed));
+
+      block-size: 1.875rem;
+      color: var(--fl-bgColor, var(--mainColour));
+      fill: none;
+      inline-size: 1.125rem;
+    }
+  }
+
+  .subsection__toggle--expanded .subsection__icon svg {
+    transform: rotate(90deg);
+  }
+
+  .subsection__content {
+    display: none;
+  }
+
+  .subsection__content--show .subsection__content {
+    display: block;
+  }
+
+  /* The "Context, Use, and Inclusion" section is only cards, for the time being */
+  .subsection__cards,
+  .cui .section__subsections {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    list-style: none;
+    margin-block-end: 2.5rem;
+    padding-inline: 2rem;
+
+    @include mixins.breakpoint-up(sm) {
+      grid-template-columns: 1fr 1fr;
+      padding-inline: 3.75rem;
     }
 
-    .subsection__title {
-        font-size: var(--fl-enhance-font-size, 1.5rem);
-        inline-size: 100%;
-        padding-block: 1rem;
-        padding-inline: 0 1rem;
-        text-align: start;
+    @include mixins.breakpoint-up(md-lg) {
+      grid-template-columns: 1fr 1fr 1fr;
     }
-
-    .subsection__toggle {
-        align-items: stretch;
-        background-color: var(--fl-buttonBgColor, var(--sectionBGColour));
-        border: none;
-        color: var(--fl-buttonFgColor, var(--mainColour));
-        cursor: pointer;
-        display: flex;
-        font-size: var(--fl-enhance-font-size, 1.8125rem);
-        font-weight: var(--fl-enhance-font-weight, 400);
-        inline-size: 100%;
-        justify-content: space-between;
-        line-height: calc(var(--fl-lineSpace-factor, 1) * 1.875);
-        padding-block: 0.25rem;
-        padding-inline: 0;
-
-        &:focus,
-        &:hover {
-            outline-color: var(--fl-buttonFgColor);
-        }
-
-        &--expanded .subsection__title,
-        &:focus .subsection__title,
-        &:hover .subsection__title {
-            font-weight: var(--fl-enhance-font-weight, 700);
-        }
-    }
-
-    .subsection__icon {
-        align-items: center;
-        background-color: var(--fl-buttonBgColor, #fff);
-        display: flex;
-        font-size: var(--fl-enhance-font-size, 1.125rem);
-        font-weight: var(--fl-enhance-font-weight, 800);
-        justify-content: center;
-        min-inline-size: 3.75rem;
-
-        svg {
-            --icon-arrowColour: var(--fl-buttonFgColor, var(--darkRed));
-
-            block-size: 1.875rem;
-            color: var(--fl-bgColor, var(--mainColour));
-            fill: none;
-            inline-size: 1.125rem;
-        }
-    }
-
-    .subsection__toggle--expanded .subsection__icon svg {
-        transform: rotate(90deg);
-    }
-
-    .subsection__content {
-        display: none;
-    }
-
-    .subsection__content--show .subsection__content {
-        display: block;
-    }
-
-    /* The "Context, Use, and Inclusion" section is only cards, for the time being */
-    .subsection__cards,
-    .cui .section__subsections {
-        display: grid;
-        gap: 3rem;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-        list-style: none;
-        margin-block-end: 2.5rem;
-        padding-inline: 2rem;
-
-        @include mixins.breakpoint-up(sm) {
-            grid-template-columns: 1fr 1fr;
-            padding-inline: 3.75rem;
-        }
-
-        @include mixins.breakpoint-up(md-lg) {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    }
+  }
 }

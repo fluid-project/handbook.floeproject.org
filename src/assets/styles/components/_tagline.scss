@@ -1,12 +1,12 @@
 .tagline {
-    --ildh-wordmark-text-colour: var(--fl-fgColor, var(--footerColour));
+  --ildh-wordmark-text-colour: var(--fl-fgColor, var(--footerColour));
 
-    svg {
-        margin-block-end: 2rem;
-        max-inline-size: 100%;
+  svg {
+    margin-block-end: 2rem;
+    max-inline-size: 100%;
 
-        &.ildh-logo-ildh-wordmark {
-            block-size: 5rem;
-        }
+    &.ildh-logo-ildh-wordmark {
+      block-size: 5rem;
     }
+  }
 }

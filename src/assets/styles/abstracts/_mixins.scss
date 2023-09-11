@@ -4,99 +4,99 @@
 
 // Media query breakpoint calculations
 @mixin breakpoint-up($name, $breakpoints: variables.$breakpoints) {
-    $min: map-get($breakpoints, $name);
+  $min: map-get($breakpoints, $name);
 
-    @if $min {
-        @media (min-width: $min) {
-            @content;
-        }
+  @if $min {
+    @media (min-width: $min) {
+      @content;
     }
-    @else {
-        @content;
-    }
+  }
+  @else {
+    @content;
+  }
 }
 
 @mixin breakpoint-down($name, $breakpoints: variables.$breakpoints) {
-    $max: map-get($breakpoints, $name);
+  $max: map-get($breakpoints, $name);
 
-    @if $max {
-        @media (max-width: $max) {
-            @content;
-        }
+  @if $max {
+    @media (max-width: $max) {
+      @content;
     }
-    @else {
-        @content;
-    }
+  }
+  @else {
+    @content;
+  }
 }
 
 // Brand component focus & hover style overrides
 @mixin brand-focus-hover() {
-    background: unset;
-    border-radius: unset;
-    margin-inline: unset;
-    outline: solid 0.3125rem var(--darkRed);
+  background: unset;
+  border-radius: unset;
+  margin-inline: unset;
+  outline: solid 0.3125rem var(--darkRed);
 }
 
 // Menu link focus & hover style overrides
 @mixin menu-link-focus-hover-narrow() {
-    background-color: var(--darkRed);
-    border-radius: unset;
-    color: var(--menuExpandedSelectedColour);
-    margin: unset;
-    outline-color: transparent;
-    padding-block: unset;
+  background-color: var(--darkRed);
+  border-radius: unset;
+  color: var(--menuExpandedSelectedColour);
+  margin: unset;
+  outline-color: transparent;
+  padding-block: unset;
 }
 
 @mixin menu-link-focus-hover-wide() {
-    background-color: inherit;
-    border-block-end: 0.625rem solid var(--darkRed);
-    color: currentcolor;
-    margin-inline-start: 0;
+  background-color: inherit;
+  border-block-end: 0.625rem solid var(--darkRed);
+  color: currentcolor;
+  margin-inline-start: 0;
 }
 
 // Audio-tactile card section-specific colour overrides
 @mixin card-section-colour-override($selector, $colour) {
-    #{$selector} {
-        &.legend__list {
-            border-color: $colour;
-        }
-
-        .section__toggle {
-            &:hover .section__title {
-                border-color: var(--fl-buttonFgColor, $colour);
-            }
-
-            &--expanded .section__title {
-                background: $colour;
-            }
-        }
-
-        .section__content {
-            border-color: $colour;
-        }
-
-        .section__icon {
-            background-color: var(--fl-buttonFgColor, $colour);
-        }
-
-        .section__title {
-            border-color: var(--fl-buttonBgColor, $colour);
-        }
-
-        .subsection__icon svg {
-            --icon-arrowColour: var(--fl-buttonFgColor, #{$colour});
-        }
-
-        .card__title {
-            background-color: var(--fl-buttonFgColor, $colour);
-        }
-
-        .card__details {
-            border-color: $colour;
-        }
-
-        .card__icon svg {
-            --icon-arrowColour: #{$colour};
-        }
+  #{$selector} {
+    &.legend__list {
+      border-color: $colour;
     }
+
+    .section__toggle {
+      &:hover .section__title {
+        border-color: var(--fl-buttonFgColor, $colour);
+      }
+
+      &--expanded .section__title {
+        background: $colour;
+      }
+    }
+
+    .section__content {
+      border-color: $colour;
+    }
+
+    .section__icon {
+      background-color: var(--fl-buttonFgColor, $colour);
+    }
+
+    .section__title {
+      border-color: var(--fl-buttonBgColor, $colour);
+    }
+
+    .subsection__icon svg {
+      --icon-arrowColour: var(--fl-buttonFgColor, #{$colour});
+    }
+
+    .card__title {
+      background-color: var(--fl-buttonFgColor, $colour);
+    }
+
+    .card__details {
+      border-color: $colour;
+    }
+
+    .card__icon svg {
+      --icon-arrowColour: #{$colour};
+    }
+  }
 }
