@@ -1,42 +1,42 @@
 @use "../abstracts/mixins";
 
 .header {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    inline-size: 100%;
-    justify-content: space-between;
-    padding-inline: 2rem;
-    position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  inline-size: 100%;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  position: relative;
 }
 
 .org-header {
-    background-color: var(--headerOrgBackgroundColour);
-    border-block-end: 1px solid var(--darkGrey);
-    color: var(--headerOrgColour);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.33);
+  background-color: var(--headerOrgBackgroundColour);
+  border-block-end: 1px solid var(--darkGrey);
+  color: var(--headerOrgColour);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: calc(var(--fl-lineSpace-factor, 1) * 1.33);
 }
 
 .org-header__link {
-    &:focus,
-    &:hover {
-        outline: 0.125rem solid var(--fl-linkColor, var(--headerOrgLinkColour));
-    }
+  &:focus,
+  &:hover {
+    outline: 0.125rem solid var(--fl-linkColor, var(--headerOrgLinkColour));
+  }
 
-    color: var(--headerOrgLinkColour);
-    text-decoration: underline;
+  color: var(--headerOrgLinkColour);
+  text-decoration: underline;
 }
 
 .org-header__wrapper {
-    justify-content: start;
-    margin-inline-start: 1rem;
+  justify-content: start;
+  margin-inline-start: 1rem;
 }
 
 @include mixins.breakpoint-up(lg) {
-    .header {
-        align-items: flex-end;
-        padding-inline-start: 2rem;
-    }
+  .header {
+    align-items: flex-end;
+    padding-inline-start: 2rem;
+  }
 }

@@ -1,47 +1,47 @@
 @use "../abstracts/mixins";
 
 .logos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 
-    svg {
-        block-size: 3rem;
-        display: inline-block;
-        fill: var(--footerColour);
-        max-inline-size: 100%;
-    }
+  svg {
+    block-size: 3rem;
+    display: inline-block;
+    fill: var(--footerColour);
+    max-inline-size: 100%;
+  }
 }
 
 .logos__group {
-    display: flex;
-    flex: 1 1 47%;
-    gap: 2rem;
-    justify-content: space-around;
-    max-inline-size: 100%;
+  display: flex;
+  flex: 1 1 47%;
+  gap: 2rem;
+  justify-content: space-around;
+  max-inline-size: 100%;
 }
 
 /* SVG-specific sizing */
 svg.ildh-logo-hewlett {
-    inline-size: 15rem;
+  inline-size: 15rem;
 }
 
 svg.ildh-logo-floe {
-    inline-size: 6rem;
+  inline-size: 6rem;
 }
 
 svg.ildh-logo-idrc-wordmark {
-    inline-size: 8rem;
+  inline-size: 8rem;
 }
 
 svg.ildh-logo-ocadu {
-    inline-size: 4rem;
+  inline-size: 4rem;
 }
 
 @include mixins.breakpoint-up(lg) {
-    .logos {
-        align-self: end;
-        grid-column: 1;
-        grid-row-start: 2;
-    }
+  .logos {
+    align-self: end;
+    grid-column: 1;
+    grid-row-start: 2;
+  }
 }

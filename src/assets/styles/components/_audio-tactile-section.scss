@@ -1,52 +1,52 @@
 .audio-tactile {
-    .section__subsections {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+  .section__subsections {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section:not(:last-child) {
+    margin-block-end: 3rem;
+  }
+
+  .section__toggle {
+    margin-block-end: 0;
+
+    &--expanded .section__title {
+      background: var(--darkRed);
+      color: var(--sectionBGColour);
     }
 
-    .section:not(:last-child) {
-        margin-block-end: 3rem;
+    &:focus .section__title,
+    &:hover .section__title {
+      border-inline-start: none;
+      font-weight: var(--fl-enhance-font-weight, 600);
+      padding-block: 0.7125rem;
+      padding-inline: 1.25rem 1rem;
     }
+  }
 
-    .section__toggle {
-        margin-block-end: 0;
+  .section__icon svg {
+    block-size: 1.875rem;
+    inline-size: 1.125rem;
+  }
 
-        &--expanded .section__title {
-            background: var(--darkRed);
-            color: var(--sectionBGColour);
-        }
+  .section__content {
+    background: var(--sectionBGColour);
+    border: 0.3125rem solid var(--darkRed);
+    border-block-start: none;
+    padding-block: 0;
+    padding-inline: 1rem;
+  }
 
-        &:focus .section__title,
-        &:hover .section__title {
-            border-inline-start: none;
-            font-weight: var(--fl-enhance-font-weight, 600);
-            padding-block: 0.7125rem;
-            padding-inline: 1.25rem 1rem;
-        }
-    }
+  .section__description {
+    border-block-end: 0.0625rem solid var(--mainColour);
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    padding: 2.75rem;
+  }
 
-    .section__icon svg {
-        block-size: 1.875rem;
-        inline-size: 1.125rem;
-    }
-
-    .section__content {
-        background: var(--sectionBGColour);
-        border: 0.3125rem solid var(--darkRed);
-        border-block-start: none;
-        padding-block: 0;
-        padding-inline: 1rem;
-    }
-
-    .section__description {
-        border-block-end: 0.0625rem solid var(--mainColour);
-        font-size: 1.5rem;
-        line-height: 2.125rem;
-        padding: 2.75rem;
-    }
-
-    .cui .section__description {
-        margin-block-end: 3rem;
-    }
+  .cui .section__description {
+    margin-block-end: 3rem;
+  }
 }
