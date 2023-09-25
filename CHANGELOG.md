@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.1](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.0...v1.3.1) (2023-09-25)
+
+
+### Bug Fixes
+
+* resolve Stylelint issues ([#165](https://github.com/fluid-project/handbook.floeproject.org/issues/165)) ([b34b2a2](https://github.com/fluid-project/handbook.floeproject.org/commit/b34b2a29c3b6079ede5ebf9a4b26a21b32be6f10))
+* restore sidebar (resolves [#169](https://github.com/fluid-project/handbook.floeproject.org/issues/169)) ([#170](https://github.com/fluid-project/handbook.floeproject.org/issues/170)) ([cfd235f](https://github.com/fluid-project/handbook.floeproject.org/commit/cfd235fbe9c093cff652f72e03cde1b9f381f1a8))
+
 ## [1.3.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.2.0...v1.3.0) (2023-08-24)
 
 
