@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.2](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.1...v1.3.2) (2023-09-25)
+
+
+### Bug Fixes
+
+* mobile menu label ([#171](https://github.com/fluid-project/handbook.floeproject.org/issues/171)) ([8a06d09](https://github.com/fluid-project/handbook.floeproject.org/commit/8a06d097221fd6091944a861d631676efc7df03b))
+
 ## [1.3.1](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.0...v1.3.1) (2023-09-25)
 
 
