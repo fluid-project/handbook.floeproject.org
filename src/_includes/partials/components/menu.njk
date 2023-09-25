@@ -1,11 +1,11 @@
 <nav class="menu" aria-label="menu">
     <button class="menu__button" aria-label="menu" aria-expanded="false" aria-controls="menu-list" type="button">
         {% svg_sprite "icon-menu" %}
-        <span class="menu__name">{_("Menu")}</span>
+        <span class="menu__name">{{ _("Menu") }}</span>
     </button>
 
     <div class="menu__panel">
-        <h2 class="menu__title">{_("Menu")}</h2>
+        <h2 class="menu__title">{{ _("Menu") }}</h2>
 
         <ul id="menu-list" class="menu__list">
             {% set siteNav = collections.all | eleventyNavigation("Home") %}
