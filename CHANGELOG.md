@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.2](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.1...v1.3.2) (2023-09-25)
+
+
+### Bug Fixes
+
+* mobile menu label ([#171](https://github.com/fluid-project/handbook.floeproject.org/issues/171)) ([8a06d09](https://github.com/fluid-project/handbook.floeproject.org/commit/8a06d097221fd6091944a861d631676efc7df03b))
+
+## [1.3.1](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.0...v1.3.1) (2023-09-25)
+
+
+### Bug Fixes
+
+* resolve Stylelint issues ([#165](https://github.com/fluid-project/handbook.floeproject.org/issues/165)) ([b34b2a2](https://github.com/fluid-project/handbook.floeproject.org/commit/b34b2a29c3b6079ede5ebf9a4b26a21b32be6f10))
+* restore sidebar (resolves [#169](https://github.com/fluid-project/handbook.floeproject.org/issues/169)) ([#170](https://github.com/fluid-project/handbook.floeproject.org/issues/170)) ([cfd235f](https://github.com/fluid-project/handbook.floeproject.org/commit/cfd235fbe9c093cff652f72e03cde1b9f381f1a8))
+
+## [1.3.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.2.0...v1.3.0) (2023-08-24)
+
+
+### Features
+
+* adapt architecture from Trivet ([20fc837](https://github.com/fluid-project/handbook.floeproject.org/commit/20fc8377500213686ea9fffa0a52e26baf374092))
+* add Integrating Sign Language resource ([9fc4bab](https://github.com/fluid-project/handbook.floeproject.org/commit/9fc4bab17094b2a3ec68916541ffd6cd5fcb17d0))
+* content updates ([826d268](https://github.com/fluid-project/handbook.floeproject.org/commit/826d2681edaace816064918e7c767bd532ae3ecb))
+* update order of articles under Authoring Content ([91bff63](https://github.com/fluid-project/handbook.floeproject.org/commit/91bff63a49f0ca56bb42eb84a372b67435be295f))
+
 ## [1.2.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.1.0...v1.2.0) (2022-08-10)
 
 ### Features

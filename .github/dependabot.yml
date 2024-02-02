@@ -9,6 +9,8 @@ updates:
     ignore:
       - dependency-name: stylelint
         versions: [">14"]
+      - dependency-name: stylelint-config-standard-scss
+        versions: [">7"]
     target-branch: dev
   - package-ecosystem: github-actions
     directory: /
