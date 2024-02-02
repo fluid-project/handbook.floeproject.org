@@ -6,7 +6,6 @@
         border-block-start: none;
         box-sizing: border-box;
         font-size: 1.25rem;
-        hyphens: auto;
         line-height: 2rem;
         padding: 0.1875rem; /* This padding reserves space for the thicker border on hover & focus */
         padding-block-start: 0;
@@ -96,7 +95,6 @@
 
     @include mixins.breakpoint-up(sm) {
         .card__details {
-            hyphens: unset;
             word-break: unset;
         }
     }
