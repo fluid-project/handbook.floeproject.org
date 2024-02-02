@@ -1,56 +1,56 @@
 .article-contents__summary {
-    cursor: pointer;
-    font-size: var(--fl-enhance-font-size, 1.5rem);
-    font-weight: var(--fl-enhance-font-weight, 600);
-    padding-block: 1rem;
-    padding-inline: 1.5rem;
+  cursor: pointer;
+  font-size: var(--fl-enhance-font-size, 1.5rem);
+  font-weight: var(--fl-enhance-font-weight, 600);
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
 
-    // the arrow icon's closed state
-    &::marker,
-    &::-webkit-details-marker {
-        color: var(--articleContentsIconColour);
-    }
+  // the arrow icon's closed state
+  &::marker,
+  &::-webkit-details-marker {
+    color: var(--articleContentsIconColour);
+  }
 }
 
 .article-contents {
-    background-color: var(--sectionBGColour);
-    border: 0.125rem dashed var(--articleContentsBorderColour);
-    margin-block: 3rem;
-    padding: 0.1875rem;
+  background-color: var(--sectionBGColour);
+  border: 0.125rem dashed var(--articleContentsBorderColour);
+  margin-block: 3rem;
+  padding: 0.1875rem;
 
-    &[open],
-    &:focus,
-    &:focus-within,
-    &:hover {
-        border: 0.3125rem solid var(--articleContentsBorderColour);
-        padding: 0;
+  &[open],
+  &:focus,
+  &:focus-within,
+  &:hover {
+    border: 0.3125rem solid var(--articleContentsBorderColour);
+    padding: 0;
+  }
+
+  &[open] {
+    padding-block-end: 1rem;
+
+    // the arrow icon's open state
+    .article-contents__summary::marker,
+    .article-contents__summary::-webkit-details-marker {
+      color: var(--articleContentsIconColour);
     }
-
-    &[open] {
-        padding-block-end: 1rem;
-
-        // the arrow icon's open state
-        .article-contents__summary::marker,
-        .article-contents__summary::-webkit-details-marker {
-            color: var(--articleContentsIconColour);
-        }
-    }
+  }
 }
 
 .article-contents__list {
-    list-style: none;
-    margin: 0;
-    padding-inline: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding-inline: 1.5rem;
 }
 
 .article-contents__list-item:not(:last-child) {
-    margin-block-end: 1rem;
-    padding-inline-start: 1rem;
-    text-indent: -1rem;
+  margin-block-end: 1rem;
+  padding-inline-start: 1rem;
+  text-indent: -1rem;
 }
 
 .article-contents__link {
-    font-size: var(--fl-enhance-font-size, 1.3125rem);
-    font-weight: var(--fl-enhance-font-weight, 500);
-    line-height: 2.5rem;
+  font-size: var(--fl-enhance-font-size, 1.3125rem);
+  font-weight: var(--fl-enhance-font-weight, 500);
+  line-height: 2.5rem;
 }

@@ -1,69 +1,69 @@
 @use "../abstracts/mixins";
 
 .footer {
-    background-color: var(--footerBGColour);
-    margin-block-start: 5.75rem;
-    padding-block: 3.25rem;
-    padding-inline: 24px;
+  background-color: var(--footerBGColour);
+  margin-block-start: 5.75rem;
+  padding-block: 3.25rem;
+  padding-inline: 24px;
 }
 
 .footer__container {
-    --ildh-wordmark-colour: var(--fl-bgColor, var(--footerBGColour));
+  --ildh-wordmark-colour: var(--fl-bgColor, var(--footerBGColour));
 
-    color: var(--footerColour);
-    display: grid;
-    font-size: 1.125rem;
-    font-weight: 500;
-    grid-template-columns: 1fr;
-    line-height: calc(var(--fl-lineSpace-factor, 1) * 1.8125);
-    margin-inline: auto;
-    max-inline-size: var(--footer-max-width);
-    row-gap: 2.625rem;
+  color: var(--footerColour);
+  display: grid;
+  font-size: 1.125rem;
+  font-weight: 500;
+  grid-template-columns: 1fr;
+  line-height: calc(var(--fl-lineSpace-factor, 1) * 1.8125);
+  margin-inline: auto;
+  max-inline-size: var(--footer-max-width);
+  row-gap: 2.625rem;
 }
 
 .footer__container a {
-    color: var(--footerLinkColour);
+  color: var(--footerLinkColour);
 
-    &:focus,
-    &:hover {
-        background-color: var(--fl-linkColor, var(--footerColour));
-        color: var(--fl-bgColor, var(--footerBGColour));
-    }
+  &:focus,
+  &:hover {
+    background-color: var(--fl-linkColor, var(--footerColour));
+    color: var(--fl-bgColor, var(--footerBGColour));
+  }
 }
 
 .footer__container p:first-child {
-    margin-block-start: 0;
+  margin-block-start: 0;
 }
 
 .footer__container p:last-child {
-    margin-block: 0;
+  margin-block: 0;
 }
 
 @include mixins.breakpoint-up(lg) {
-    .footer__container {
-        column-gap: 10rem;
-        grid-template-areas:
-            "tagline context"
-            "tagline ."
-            "tagline credits"
-            "logos credits";
-        grid-template-columns: 1fr 1fr;
-        row-gap: 1.5rem;
-    }
+  .footer__container {
+    column-gap: 10rem;
+    grid-template-areas:
+      "tagline context"
+      "tagline ."
+      "tagline credits"
+      "logos credits";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+  }
 
-    .footer__container .tagline {
-        grid-area: tagline;
-    }
+  .footer__container .tagline {
+    grid-area: tagline;
+  }
 
-    .footer__container .context {
-        grid-area: context;
-    }
+  .footer__container .context {
+    grid-area: context;
+  }
 
-    .footer__container .credits {
-        grid-area: credits;
-    }
+  .footer__container .credits {
+    grid-area: credits;
+  }
 
-    .footer__container .logos {
-        grid-area: logos;
-    }
+  .footer__container .logos {
+    grid-area: logos;
+  }
 }

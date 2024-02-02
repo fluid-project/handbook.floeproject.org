@@ -1,7 +1,7 @@
 @use "../abstracts/mixins";
 
 .brand {
-    flex: 1;
+  flex: 1;
 }
 
 /*
@@ -9,45 +9,45 @@
  * greater specificity over site-wide hover rules
  */
 a.brand__desktop {
-    display: none;
-    margin-block-end: 1.875rem;
-    margin-block-start: 2.5rem;
-    padding: 0.75rem;
+  display: none;
+  margin-block-end: 1.875rem;
+  margin-block-start: 2.5rem;
+  padding: 0.75rem;
 
-    &:focus,
-    &:hover {
-        @include mixins.brand-focus-hover;
-    }
+  &:focus,
+  &:hover {
+    @include mixins.brand-focus-hover;
+  }
 
-    svg {
-        block-size: 5.4rem;
-        inline-size: 18.75rem;
-    }
+  svg {
+    block-size: 5.4rem;
+    inline-size: 18.75rem;
+  }
 }
 
 a.brand__mobile {
-    display: inline-block;
-    margin-block: 1.5rem;
+  display: inline-block;
+  margin-block: 1.5rem;
 
-    &:focus,
-    &:hover {
-        @include mixins.brand-focus-hover;
+  &:focus,
+  &:hover {
+    @include mixins.brand-focus-hover;
 
-        padding: unset;
-    }
+    padding: unset;
+  }
 
-    svg {
-        block-size: 5rem;
-        inline-size: 5rem;
-    }
+  svg {
+    block-size: 5rem;
+    inline-size: 5rem;
+  }
 }
 
 @include mixins.breakpoint-up(md) {
-    a.brand__desktop {
-        display: inline-block;
-    }
+  a.brand__desktop {
+    display: inline-block;
+  }
 
-    a.brand__mobile {
-        display: none;
-    }
+  a.brand__mobile {
+    display: none;
+  }
 }

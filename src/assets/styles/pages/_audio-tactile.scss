@@ -3,111 +3,111 @@
 // Rules specific to the Audio-Tactile design recommendations page
 
 .audio-tactile {
-    main {
-        background: var(--darkGrey);
-        grid-template-columns: unset;
-        max-inline-size: unset;
-        padding: 2rem;
+  main {
+    background: var(--darkGrey);
+    grid-template-columns: unset;
+    max-inline-size: unset;
+    padding: 2rem;
+  }
+
+  .footer {
+    margin-block-start: 0;
+  }
+
+  .audio-tactile__title {
+    font-size: 3rem;
+    font-weight: 700;
+    grid-area: title;
+    line-height: 3.5rem;
+    word-break: break-word;
+  }
+
+  .breadcrumb {
+    grid-area: bread;
+  }
+
+  .flc-toc-tocContainer {
+    grid-area: uioToc;
+  }
+
+  .audio-tactile__intro {
+    font-size: 1.25rem;
+    grid-area: intro;
+    line-height: 2.2rem;
+  }
+
+  .audio-tactile__credits {
+    font-size: 1.25rem;
+    font-style: italic;
+    grid-area: credits;
+    line-height: 2.2rem;
+    margin-inline: auto;
+  }
+
+  .audio-tactile__diagram {
+    grid-area: diagram;
+    text-align: center;
+
+    svg {
+      block-size: 36.0625rem;
+      inline-size: 40.3125rem;
+      max-block-size: 77vw;
+      max-inline-size: 100%;
+    }
+  }
+
+  .legend {
+    grid-area: legend;
+  }
+
+  .sections-control {
+    grid-area: secCtrl;
+  }
+
+  .audio-tactile__sections {
+    grid-area: sections;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* section-specific colour overrides */
+  @include mixins.card-section-colour-override(".mp", var(--darkTeal));
+  @include mixins.card-section-colour-override(".cui", var(--teal));
+
+  @include mixins.breakpoint-up(md) {
+    .audio-tactile__container {
+      column-gap: 2rem;
+      display: grid;
+      grid-template-areas:
+        "title title"
+        "bread bread"
+        "uioToc uioToc"
+        "intro diagram"
+        "credits diagram"
+        "legend legend"
+        "secCtrl secCtrl"
+        "sections sections";
+      max-inline-size: var(--xl-content-width);
     }
 
-    .footer {
-        margin-block-start: 0;
+    .audio-tactile__intro,
+    .audio-tactile__diagram {
+      margin-block-start: 3rem;
     }
 
-    .audio-tactile__title {
-        font-size: 3rem;
-        font-weight: 700;
-        grid-area: title;
-        line-height: 3.5rem;
-        word-break: break-word;
-    }
-
-    .breadcrumb {
-        grid-area: bread;
-    }
-
-    .flc-toc-tocContainer {
-        grid-area: uioToc;
-    }
-
-    .audio-tactile__intro {
-        font-size: 1.25rem;
-        grid-area: intro;
-        line-height: 2.2rem;
-    }
-
-    .audio-tactile__credits {
-        font-size: 1.25rem;
-        font-style: italic;
-        grid-area: credits;
-        line-height: 2.2rem;
-        margin-inline: auto;
+    .audio-tactile__intro > p:first-child {
+      margin-block-start: 0;
     }
 
     .audio-tactile__diagram {
-        grid-area: diagram;
-        text-align: center;
-
-        svg {
-            block-size: 36.0625rem;
-            inline-size: 40.3125rem;
-            max-block-size: 77vw;
-            max-inline-size: 100%;
-        }
+      align-self: center;
     }
 
     .legend {
-        grid-area: legend;
+      inline-size: 100%;
+      justify-self: center;
+      max-inline-size: 40.5rem;
     }
-
-    .sections-control {
-        grid-area: secCtrl;
-    }
-
-    .audio-tactile__sections {
-        grid-area: sections;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* section-specific colour overrides */
-    @include mixins.card-section-colour-override(".mp", var(--darkTeal));
-    @include mixins.card-section-colour-override(".cui", var(--teal));
-
-    @include mixins.breakpoint-up(md) {
-        .audio-tactile__container {
-            column-gap: 2rem;
-            display: grid;
-            grid-template-areas:
-                "title title"
-                "bread bread"
-                "uioToc uioToc"
-                "intro diagram"
-                "credits diagram"
-                "legend legend"
-                "secCtrl secCtrl"
-                "sections sections";
-            max-inline-size: var(--xl-content-width);
-        }
-
-        .audio-tactile__intro,
-        .audio-tactile__diagram {
-            margin-block-start: 3rem;
-        }
-
-        .audio-tactile__intro > p:first-child {
-            margin-block-start: 0;
-        }
-
-        .audio-tactile__diagram {
-            align-self: center;
-        }
-
-        .legend {
-            inline-size: 100%;
-            justify-self: center;
-            max-inline-size: 40.5rem;
-        }
-    }
+  }
 }

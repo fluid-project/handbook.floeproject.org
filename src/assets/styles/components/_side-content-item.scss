@@ -4,85 +4,85 @@
 //       so perhaps a mixin is warranted.
 
 .side-content__content {
-    a {
-        color: var(--sideContentLinkColour);
-    }
+  a {
+    color: var(--sideContentLinkColour);
+  }
 }
 
 .side-content__toolkits {
-    color: var(--toolkitsHeadingColour);
+  color: var(--toolkitsHeadingColour);
 
-    .side-content__icon {
-        background-color: var(--mediumTeal);
-        border: 1px solid var(--fl-fgColor);
-        padding: 1rem;
+  .side-content__icon {
+    background-color: var(--mediumTeal);
+    border: 1px solid var(--fl-fgColor);
+    padding: 1rem;
 
-        svg {
-            block-size: 3rem;
-            inline-size: 3rem;
-        }
+    svg {
+      block-size: 3rem;
+      inline-size: 3rem;
     }
+  }
 
-    .side-content__content {
-        border: 1px solid var(--mediumTeal);
-        border-block-start: none;
-        padding-block: 1.5rem 2rem;
-        padding-inline: 2rem;
+  .side-content__content {
+    border: 1px solid var(--mediumTeal);
+    border-block-start: none;
+    padding-block: 1.5rem 2rem;
+    padding-inline: 2rem;
+  }
+
+  .side-content__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-block-start: 0;
+  }
+
+  ul,
+  .side-content__list {
+    padding-inline-start: 1rem;
+  }
+
+  li,
+  .side-content__list-item {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-block: 1rem;
+
+    & a {
+      color: var(--sideContentLinkColour);
+      font-weight: 500;
     }
-
-    .side-content__title {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        margin-block-start: 0;
-    }
-
-    ul,
-    .side-content__list {
-        padding-inline-start: 1rem;
-    }
-
-    li,
-    .side-content__list-item {
-        font-size: 1.25rem;
-        line-height: 2rem;
-        margin-block: 1rem;
-
-        & a {
-            color: var(--sideContentLinkColour);
-            font-weight: 500;
-        }
-    }
+  }
 }
 
 .side-content__topic-links {
-    color: var(--darkRed);
-    margin-block-end: 4rem;
+  color: var(--darkRed);
+  margin-block-end: 4rem;
 
-    .side-content__icon svg {
-        block-size: 1.5rem;
-        inline-size: 2.5rem;
+  .side-content__icon svg {
+    block-size: 1.5rem;
+    inline-size: 2.5rem;
+  }
+
+  .side-content__content {
+    // to hide the links section altogether when it's empty
+    h2:only-child {
+      display: none;
     }
+  }
 
-    .side-content__content {
-        // to hide the links section altogether when it's empty
-        h2:only-child {
-            display: none;
-        }
+  .side-content__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .side-content__list-item {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-block: 1rem;
+
+    & a {
+      color: var(--sideContentLinkColour);
     }
-
-    .side-content__list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .side-content__list-item {
-        font-size: 1.25rem;
-        line-height: 2rem;
-        margin-block: 1rem;
-
-        & a {
-            color: var(--sideContentLinkColour);
-        }
-    }
+  }
 }

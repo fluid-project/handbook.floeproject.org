@@ -4,13 +4,13 @@
 
 // removes gradient and applies border to banner for UIO contrast themes
 [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) .banner {
-    background-image: none;
-    border: 1px solid var(--fl-fgColor);
+  background-image: none;
+  border: 1px solid var(--fl-fgColor);
 }
 
 // hides the Table of Contents on Article pages
 .topic .flc-toc-tocContainer {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -18,125 +18,125 @@
  * to match UIO's specificity for mobile menu link colours,
  */
 .menu__link {
-    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
-    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
-        @include mixins.menu-link-focus-hover-narrow;
+  [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+  [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
+    @include mixins.menu-link-focus-hover-narrow;
 
-        background-color: var(--fl-linkColor, var(--darkRed)) !important;
-        color: var(--fl-bgColor, var(--menuExpandedSelectedColour)) !important;
-    }
+    background-color: var(--fl-linkColor, var(--darkRed)) !important;
+    color: var(--fl-bgColor, var(--menuExpandedSelectedColour)) !important;
+  }
 }
 
 // Recreate .fl-focus rules for UIO panel buttons
 .fl-prefsEditor-buttons button:focus {
-    outline: var(--fl-fgColor) solid 0.2rem;
+  outline: var(--fl-fgColor) solid 0.2rem;
 }
 
 // Styles for the Audio-Tactile recommendation cards page
 [class*="fl-theme"]:not(.fl-theme-prefsEditor-default).audio-tactile {
-    .legend__list-separator {
-        background-color: var(--fl-fgColor) !important;
-    }
+  .legend__list-separator {
+    background-color: var(--fl-fgColor) !important;
+  }
 
-    button.subsection__toggle,
-    .subsection__icon,
-    .subsection__icon svg,
-    .subsection__title {
-        background-color: var(--fl-bgColor) !important;
-        color: var(--fl-buttonFgColor, var(--fl-fgColor)) !important;
-    }
+  button.subsection__toggle,
+  .subsection__icon,
+  .subsection__icon svg,
+  .subsection__title {
+    background-color: var(--fl-bgColor) !important;
+    color: var(--fl-buttonFgColor, var(--fl-fgColor)) !important;
+  }
 
-    .card__details {
-        border-block-end-color: var(--fl-fgColor) !important;
-        border-inline-end-color: var(--fl-fgColor) !important;
-        border-inline-start-color: var(--fl-fgColor) !important;
-    }
+  .card__details {
+    border-block-end-color: var(--fl-fgColor) !important;
+    border-inline-end-color: var(--fl-fgColor) !important;
+    border-inline-start-color: var(--fl-fgColor) !important;
+  }
 
-    .card__icon svg {
-        --icon-arrowColour: var(--fl-fgColor);
-    }
+  .card__icon svg {
+    --icon-arrowColour: var(--fl-fgColor);
+  }
 
-    .card__details,
-    .card__icon,
-    .card__icon svg,
-    .card__content {
-        background: var(--fl-bgColor) !important;
-    }
+  .card__details,
+  .card__icon,
+  .card__icon svg,
+  .card__content {
+    background: var(--fl-bgColor) !important;
+  }
 
-    // Overrides for UIO colour rules for elements within a button element
-    button.card__toggle *,
-    .card__details {
-        background: var(--fl-bgColor) !important;
-        color: var(--fl-fgColor) !important;
-    }
+  // Overrides for UIO colour rules for elements within a button element
+  button.card__toggle *,
+  .card__details {
+    background: var(--fl-bgColor) !important;
+    color: var(--fl-fgColor) !important;
+  }
 
-    .section__title,
-    .subsection__title {
-        color: var(--fl-buttonFgColor, var(--fl-fgColor)) !important;
-    }
+  .section__title,
+  .subsection__title {
+    color: var(--fl-buttonFgColor, var(--fl-fgColor)) !important;
+  }
 
-    h4.card__title {
-        background: var(--fl-fgColor) !important;
-        color: var(--fl-bgColor) !important;
-    }
+  h4.card__title {
+    background: var(--fl-fgColor) !important;
+    color: var(--fl-bgColor) !important;
+  }
 
-    .card__content a {
-        color: var(--fl-linkColor) !important;
-    }
+  .card__content a {
+    color: var(--fl-linkColor) !important;
+  }
 }
 
 // Rules specific to three-colour contrast themes
 [class*="fl-theme-bbr"].audio-tactile,
 [class*="fl-theme-gd"].audio-tactile {
-    .card__toggle { // Extra selector to win specificity, not good BEM
-        h4.card__title {
-            background: var(--fl-buttonBgColor) !important;
-            color: var(--fl-buttonFgColor) !important;
-        }
-
-        .card__details {
-            border-block-end-color: var(--fl-buttonBgColor) !important;
-            border-inline-end-color: var(--fl-buttonBgColor) !important;
-            border-inline-start-color: var(--fl-buttonBgColor) !important;
-        }
-
-        .card__icon svg {
-            --icon-arrowColour: var(--fl-buttonFgColor);
-        }
+  .card__toggle { // Extra selector to win specificity, not good BEM
+    h4.card__title {
+      background: var(--fl-buttonBgColor) !important;
+      color: var(--fl-buttonFgColor) !important;
     }
+
+    .card__details {
+      border-block-end-color: var(--fl-buttonBgColor) !important;
+      border-inline-end-color: var(--fl-buttonBgColor) !important;
+      border-inline-start-color: var(--fl-buttonBgColor) !important;
+    }
+
+    .card__icon svg {
+      --icon-arrowColour: var(--fl-buttonFgColor);
+    }
+  }
 }
 
 @include mixins.breakpoint-up(lg) {
-    .menu__link {
-        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
-        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
-            @include mixins.menu-link-focus-hover-wide;
+  .menu__link {
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus,
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:hover {
+      @include mixins.menu-link-focus-hover-wide;
 
-            background-color: inherit !important;
-            color: var(--fl-linkColor, currentColor) !important;
-        }
+      background-color: inherit !important;
+      color: var(--fl-linkColor, currentColor) !important;
     }
+  }
 
-    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) a:not(.breadcrumb__link) {
-        &:focus,
-        &:hover {
-            outline: 0.125rem solid;
-            outline-color: var(--fl-fgColor) !important;
-            outline-offset: -0.125rem;
-        }
+  [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) a:not(.breadcrumb__link) {
+    &:focus,
+    &:hover {
+      outline: 0.125rem solid;
+      outline-color: var(--fl-fgColor) !important;
+      outline-offset: -0.125rem;
     }
+  }
 }
 
 // Browser-specific user agent focus outline reset
 // https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible#selectively_showing_the_focus_indicator
 @supports selector(:focus-visible) {
-    .article-contents,
-    .sections-control__expand-all,
-    .sections-control__collapse-all,
-    .section__toggle {
-        [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus {
-            background: transparent;
-            outline: none;
-        }
+  .article-contents,
+  .sections-control__expand-all,
+  .sections-control__collapse-all,
+  .section__toggle {
+    [class*="fl-theme"]:not(.fl-theme-prefsEditor-default) &:focus {
+      background: transparent;
+      outline: none;
     }
+  }
 }

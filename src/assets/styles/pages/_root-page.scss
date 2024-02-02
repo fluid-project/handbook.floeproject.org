@@ -1,31 +1,31 @@
 @use "../abstracts/mixins";
 
 .root {
-    h1 {
-        color: var(--darkRed);
-        font-family: var(--family-serif);
-        font-size: 2.875rem;
-        font-weight: 800;
-        line-height: 1.875rem;
-        margin-block-end: 4rem;
+  h1 {
+    color: var(--darkRed);
+    font-family: var(--family-serif);
+    font-size: 2.875rem;
+    font-weight: 800;
+    line-height: 1.875rem;
+    margin-block-end: 4rem;
+  }
+
+  .main-content {
+    background-color: var(--rootContentBackgroundColour);
+
+    .content {
+      font-weight: 500;
     }
 
-    .main-content {
-        background-color: var(--rootContentBackgroundColour);
-
-        .content {
-            font-weight: 500;
-        }
-
-        h2 {
-            color: var(--rootContentColour);
-        }
+    h2 {
+      color: var(--rootContentColour);
     }
+  }
 }
 
 @include mixins.breakpoint-up(md) {
-    .root h1 {
-        margin-block-end: 2rem;
-        margin-block-start: 4rem;
-    }
+  .root h1 {
+    margin-block-end: 2rem;
+    margin-block-start: 4rem;
+  }
 }
