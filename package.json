@@ -53,7 +53,7 @@
         "stylelint": "14.16.1",
         "stylelint-config-fluid": "1.0.0",
         "stylelint-config-standard-scss": "6.1.0",
-        "stylelint-use-logical-spec": "5.0.0"
+        "stylelint-use-logical-spec": "5.0.1"
     },
     "lint-staged": {
         "*.scss": "stylelint --fix",
