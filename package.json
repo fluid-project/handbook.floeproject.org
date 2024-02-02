@@ -42,7 +42,7 @@
         "eslint-plugin-markdown": "3.0.1",
         "eslint-plugin-yml": "1.10.0",
         "github-slugger": "2.0.0",
-        "husky": "8.0.3",
+        "husky": "9.0.10",
         "linkedom": "0.16.8",
         "lint-staged": "13.2.3",
         "markdown-it-anchor": "8.6.7",
