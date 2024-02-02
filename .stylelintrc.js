@@ -5,6 +5,7 @@ module.exports = {
     plugins: ["stylelint-use-logical-spec"],
     ignoreFiles: ["_site/**/*.scss"],
     rules: {
+        indentation: 4,
         "custom-property-pattern": null,
         "import-notation": "string",
         "scss/at-if-closing-brace-space-after": null,
