@@ -1,66 +1,63 @@
 {
-    "name": "handbook.floeproject.org",
-    "author": "OCAD University",
-    "license": "BSD-3-Clause",
-    "version": "1.3.3",
-    "description": "Strategies and good practices for inclusive learning content.",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/fluid-project/handbook.floeproject.org.git"
-    },
-    "bugs": {
-        "url": "https://github.com/fluid-project/handbook.floeproject.org/issues"
-    },
-    "homepage": "https://github.com/fluid-project/handbook.floeproject.org#readme",
-    "scripts": {
-        "build": "npm-run-all -l clean build:eleventy",
-        "build:eleventy": "cross-env NODE_ENV=production eleventy",
-        "clean": "rimraf _site",
-        "dev": "cross-env NODE_ENV=development eleventy --serve",
-        "lint": "run-s -l lint:*",
-        "lint:styles": "stylelint \"**/*.scss\"",
-        "lint:scripts": "eslint \"**/*.js\"",
-        "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
-        "lint:yml": "eslint \"**/*.yml\"",
-        "start": "npm-run-all -l clean -p dev",
-        "prepare": "husky install"
-    },
-    "dependencies": {
-        "@11ty/eleventy": "2.0.1",
-        "@11ty/eleventy-navigation": "0.3.5",
-        "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
-        "eleventy-plugin-fluid": "2.7.1",
-        "infusion": "4.6.0"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "19.3.0",
-        "@commitlint/config-conventional": "18.6.0",
-        "cross-env": "7.0.3",
-        "eslint": "8.56.0",
-        "eslint-config-fluid": "2.1.1",
-        "eslint-plugin-jsdoc": "48.2.3",
-        "eslint-plugin-markdown": "3.0.1",
-        "eslint-plugin-yml": "1.12.2",
-        "github-slugger": "2.0.0",
-        "husky": "9.0.11",
-        "linkedom": "0.16.8",
-        "lint-staged": "15.2.2",
-        "markdown-it-anchor": "8.6.7",
-        "markdownlint-cli2": "0.12.1",
-        "markdownlint-config-fluid": "0.1.5",
-        "npm-run-all": "4.1.5",
-        "rimraf": "5.0.5",
-        "stylelint": "14.16.1",
-        "stylelint-config-fluid": "1.0.0",
-        "stylelint-config-standard-scss": "6.1.0",
-        "stylelint-use-logical-spec": "5.0.1"
-    },
-    "lint-staged": {
-        "*.scss": "stylelint --fix",
-        "*.{js,yml}": "eslint --fix",
-        "*.md": [
-            "markdownlint-cli2 --fix",
-            "eslint --fix"
-        ]
-    }
+  "name": "handbook.floeproject.org",
+  "author": "OCAD University",
+  "license": "BSD-3-Clause",
+  "version": "1.3.3",
+  "description": "Strategies and good practices for inclusive learning content.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluid-project/handbook.floeproject.org.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fluid-project/handbook.floeproject.org/issues"
+  },
+  "homepage": "https://github.com/fluid-project/handbook.floeproject.org#readme",
+  "scripts": {
+    "build": "npm-run-all -l clean build:eleventy",
+    "build:eleventy": "cross-env NODE_ENV=production eleventy",
+    "clean": "rimraf _site",
+    "dev": "cross-env NODE_ENV=development eleventy --serve",
+    "lint": "run-s -l lint:*",
+    "lint:styles": "stylelint \"**/*.scss\"",
+    "lint:scripts": "eslint \"**/*.js\"",
+    "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
+    "lint:yml": "eslint \"**/*.yml\"",
+    "start": "npm-run-all -l clean -p dev",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy-navigation": "0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
+    "eleventy-plugin-fluid": "2.7.1",
+    "infusion": "4.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "18.6.0",
+    "cross-env": "7.0.3",
+    "eslint": "8.56.0",
+    "eslint-config-fluid": "2.1.1",
+    "eslint-plugin-jsdoc": "48.2.3",
+    "eslint-plugin-markdown": "3.0.1",
+    "eslint-plugin-yml": "1.12.2",
+    "github-slugger": "2.0.0",
+    "husky": "9.0.11",
+    "linkedom": "0.16.8",
+    "lint-staged": "15.2.2",
+    "markdown-it-anchor": "8.6.7",
+    "markdownlint-cli2": "0.12.1",
+    "markdownlint-config-fluid": "0.1.5",
+    "npm-run-all": "4.1.5",
+    "rimraf": "5.0.5",
+    "stylelint": "14.16.1",
+    "stylelint-config-fluid": "1.0.0",
+    "stylelint-config-standard-scss": "6.1.0",
+    "stylelint-use-logical-spec": "5.0.1"
+  },
+  "lint-staged": {
+    "*.scss": "stylelint --fix",
+    "*.{js,yml}": "eslint --fix",
+    "*.md": ["markdownlint-cli2 --fix", "eslint --fix"]
+  }
 }
