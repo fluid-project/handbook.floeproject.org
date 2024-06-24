@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.3...v1.4.0) (2024-06-24)
+
+
+### Bug Fixes
+
+* typeo in the navigation menu ([#223](https://github.com/fluid-project/handbook.floeproject.org/issues/223)) ([86c9911](https://github.com/fluid-project/handbook.floeproject.org/commit/86c991175def2f2f617cb031d22466cc4e64391d))
+* upgrade commitlint config ([#218](https://github.com/fluid-project/handbook.floeproject.org/issues/218)) ([db5e8f8](https://github.com/fluid-project/handbook.floeproject.org/commit/db5e8f89defbef8738a134fd9dd2d014ce9da9ec))
+
+
+### Miscellaneous Chores
+
+* release 1.4.0 ([3386ba3](https://github.com/fluid-project/handbook.floeproject.org/commit/3386ba3d357d6300fe38af7650cdcfc716851d2a))
+
 ## [1.3.3](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.2...v1.3.3) (2024-02-02)
 
 
