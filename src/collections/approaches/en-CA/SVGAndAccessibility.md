@@ -3,7 +3,7 @@ title: SVG and Accessibility
 subheader:
 eleventyNavigation:
     parent: Inclusive Authoring
-    key: SVG and Accessiblity
+    key: SVG and Accessibility
     order: 7
 ---
 
