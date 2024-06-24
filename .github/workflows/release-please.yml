@@ -2,7 +2,7 @@ name: Publish release
 
 on:
   push:
-    branches: [main]
+    branches: [dev]
 
 jobs:
   release-please:
