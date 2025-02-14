@@ -48,7 +48,7 @@
     "markdown-it-anchor": "8.6.7",
     "markdownlint-cli2": "0.14.0",
     "markdownlint-config-fluid": "0.1.8",
-    "npm-run-all2": "5.0.0",
+    "npm-run-all2": "5.0.2",
     "rimraf": "5.0.10",
     "stylelint": "14.16.1",
     "stylelint-config-fluid": "1.0.0",
