@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.4.0...v1.5.0) (2025-02-14)
+
+
+### Features
+
+* add merge and sync workflows, switch to renovate ([#235](https://github.com/fluid-project/handbook.floeproject.org/issues/235)) ([19d5e0a](https://github.com/fluid-project/handbook.floeproject.org/commit/19d5e0a6abcdf77f86b254505eecf7950559a6c2))
+
+
+### Bug Fixes
+
+* **deps:** update dependency eleventy-plugin-fluid to v2.7.3 ([#248](https://github.com/fluid-project/handbook.floeproject.org/issues/248)) ([8d46572](https://github.com/fluid-project/handbook.floeproject.org/commit/8d4657237377f02585a17b4dc81e33ed50d153d0))
+
 ## [1.4.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.3.3...v1.4.0) (2024-06-24)
 
 
