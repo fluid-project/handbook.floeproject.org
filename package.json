@@ -29,7 +29,7 @@
     "@11ty/eleventy": "2.0.1",
     "@11ty/eleventy-navigation": "0.3.5",
     "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
-    "eleventy-plugin-fluid": "2.7.1",
+    "eleventy-plugin-fluid": "3.0.0",
     "infusion": "4.6.0"
   },
   "devDependencies": {
