@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.1](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.5.0...v1.5.1) (2025-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @11ty/eleventy-navigation to v1 ([#280](https://github.com/fluid-project/handbook.floeproject.org/issues/280)) ([20b7944](https://github.com/fluid-project/handbook.floeproject.org/commit/20b79441135ab926a390ecc88207fec036d783cf))
+
 ## [1.5.0](https://github.com/fluid-project/handbook.floeproject.org/compare/v1.4.0...v1.5.0) (2025-02-14)
 
 
