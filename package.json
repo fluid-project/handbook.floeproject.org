@@ -44,7 +44,7 @@
     "github-slugger": "2.0.0",
     "husky": "9.1.7",
     "linkedom": "0.18.9",
-    "lint-staged": "15.4.3",
+    "lint-staged": "15.5.2",
     "markdown-it-anchor": "9.2.0",
     "markdownlint-cli2": "0.17.2",
     "markdownlint-config-fluid": "0.1.8",
